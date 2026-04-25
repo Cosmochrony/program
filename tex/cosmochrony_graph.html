@@ -340,11 +340,11 @@
       tags:['QM','BI'],
       title:'Spectral Admissibility (Q₈)',
       desc:'First tractable instance on the quaternion group Q₈. Derives A^max_n = c_χ/√λ_n in the linearised regime.'},
-    {id:'SpCap',  lbl:'SpCap',    s:'open',       b:'II',  key:'Beau2026a2',
+    {id:'SpCap',  lbl:'SpCap',    s:'proved',     b:'II',  key:'Beau2026a2',
       url: BASE+'spectral/program/capacity',
       tags:['QM'],
       title:'Spectral Capacity Functional',
-      desc:'Capacity functional C(G,S). Binary-polyhedral maximality conjecture (open): 2I maximises C among finite SU(2) subgroups.'},
+      desc:'Capacity functional C(G,S) and penalised variants C_α. Binary-polyhedral maximality proved: adjoint identity Â_adj = 2M−I and icosahedral isotropy yield Δ(α) > 0 for all α > 0.'},
     {id:'SpG',    lbl:'SpGram',   s:'proved',     b:'II',  key:'Beau2026a3',
       url: BASE+'spectral/program/rigidity',
       tags:['QM'],
@@ -736,6 +736,16 @@
 
     /* initial fit */
     requestAnimationFrame(()=> fitAll(false));
+
+    /* hide legend items for statuses absent from the data */
+    (function pruneLegend(){
+      const usedStatuses = new Set(papers.map(p => p.s));
+      const statusToLi = {proved:'li-proved', structural:'li-struct', heuristic:'li-heur', open:'li-open'};
+      Object.entries(statusToLi).forEach(([status, liId]) => {
+        const el = document.getElementById(liId);
+        if(el && !usedStatuses.has(status)) el.style.display = 'none';
+      });
+    })();
   }
 
   /* ════════════════════════════════════════

@@ -248,8 +248,12 @@ A Structural Roadmap and Paper Inventory}
     regime, establishing the first analytically tractable instance of spectral admissibility (\sproved).
 
     \textbf{SpectralCapacity}~\cite{Beau2026a2} introduces the capacity functional $\mathcal{C}(G,S)$
-    and conjectures that the binary icosahedral group $2I$ maximises it among finite $\SU(2)$ subgroups
-    of comparable order (binary-polyhedral maximality conjecture, \sopen).
+    and proves the binary-polyhedral maximality conjecture: the adjoint identity
+    $\hat{A}_{\mathrm{adj}} = 2M - I$ (where $M$ is the second-moment tensor of the axis distribution)
+    shows that icosahedral isotropy forces $\mu_{\mathrm{adj}}(2I) = -\tfrac{1}{3}$,
+    while axis-plane confinement forces $\mu_{\mathrm{adj}}(\mathrm{Dic}_n) \geq 0$ for all $n \geq 3$;
+    combined with a Plancherel uniform bound, this yields a strictly increasing capacity gap
+    $\Delta(\alpha) > 0$ for all $\alpha > 0$ (\sproved).
 
     \textbf{SpectralGramRigidity}~\cite{Beau2026a3} (v1.0.1) shows that the geometry of neutral
     generating sets on $\SU(2)$ is fully encoded in pairwise character values
@@ -511,7 +515,7 @@ A Structural Roadmap and Paper Inventory}
 
 \node[P]  (BI)    at (0,-\dy)       {BornInfeld};
 \node[P]  (SpA)   at (\dx,-\dy)     {SpAdm};
-\node[Oc] (SpCap) at (2*\dx,-\dy)   {SpCap};
+\node[P] (SpCap) at (2*\dx,-\dy)   {SpCap};
 \node[P]  (SpG)   at (3*\dx,-\dy)   {SpGram};
 \node[S]  (ThGn)  at (4*\dx,-\dy)   {3Gen};
 \node[P]  (SpR)   at (\dx,-2*\dy)   {SpRel};
@@ -670,8 +674,9 @@ A Structural Roadmap and Paper Inventory}
     $A^{\max}_n = c_\chi/\sqrt{\lambda_n}$; first tractable instance &
     \sproved \\[3pt]
     SpCap & Spectral capacity & \cite{Beau2026a2} &
-    Capacity functional $\mathcal{C}(G,S)$; binary-polyhedral maximality conjecture &
-    \sopen \\[3pt]
+    Capacity functional $\mathcal{C}(G,S)$; binary-polyhedral maximality proved via
+    adjoint identity $\hat{A}_{\mathrm{adj}} = 2M - I$ and icosahedral isotropy &
+    \sproved \\[3pt]
     SpGram & Gram rigidity (v1.0.1) & \cite{Beau2026a3} &
     Neutral-generator geometry from $G_{st} = -\tfrac{1}{2}\chi_\rho(st)$ &
     \sproved \\[3pt]
@@ -877,6 +882,9 @@ A Structural Roadmap and Paper Inventory}
   from a single primitive.
   Branch~I (Foundation, ENI, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}) is formally closed: the Weil representation of
   $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ is a theorem.
+  The binary-polyhedral maximality conjecture (SpectralCapacity~\cite{Beau2026a2}) is now proved:
+  $2I$ uniquely maximises $\mathcal{C}_\alpha(G,S)$ for all $\alpha > 0$ among finite $\SU(2)$ subgroups
+  with neutral generating sets, closing the precursor programme for the O-series.
   Branch~II (O-series) has closed the unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
   analytically~(O24) and numerically validated for $q \in \{29, 61, 101, 151, 211\}$~(O25).
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
