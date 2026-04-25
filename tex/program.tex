@@ -1,0 +1,892 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes.geometric,backgrounds,fit,calc}
+
+\geometry{margin=2.4cm}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black
+}
+
+\newcommand{\Heis}{\mathrm{Heis}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\BI}{\mathrm{BI}}
+\definecolor{cproved}{RGB}{30,140,60}
+\definecolor{cstruct}{RGB}{40,100,200}
+\definecolor{cheur}{RGB}{200,130,0}
+\definecolor{copen}{RGB}{190,50,40}
+\newcommand{\sproved}{\textcolor{cproved}{\textbf{proved}}}
+\newcommand{\sstruct}{\textcolor{cstruct}{\textbf{structural}}}
+\newcommand{\sheur}{\textcolor{cheur}{\textbf{heuristic}}}
+\newcommand{\sopen}{\textcolor{copen}{\textbf{open}}}
+
+\title{The Cosmochrony Research Programme:\\[4pt]
+A Structural Roadmap and Paper Inventory}
+
+\author{J\'er\^ome Beau\\[4pt]
+\small Independent Researcher\\
+\small \texttt{jerome.beau@cosmochrony.org}}
+
+\date{2026}
+
+\begin{document}
+
+  \maketitle
+
+  \begin{abstract}
+    The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
+    spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
+    a single primitive: the local structure of admissible non-injective transitions between observable states.
+    The corpus now comprises more than 50 papers across three theory branches.
+    Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
+    Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
+    any background substrate or relaxation mechanism.
+    Branch~II (O-series) develops the spectral admissibility sub-programme, deriving and numerically
+    validating the transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$
+    connecting the BI saturation constant to the charged-lepton mass hierarchy.
+    Branch~III (Q-series and companion papers) derives quantum mechanics, spacetime geometry,
+    gauge structure, and further physical observables from Branch~I axioms and Branch~II spectral data.
+    This paper provides a complete inventory, a logical dependency map, and a structured account
+    of what is proved, structural, heuristic, or open.
+    It is intended both as an entry point for external readers and as an internal navigation reference.
+  \end{abstract}
+
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+
+  \bigskip
+
+  \section{Introduction and Purpose}
+
+    The Cosmochrony programme was initiated with a white paper~\cite{Cosmochrony} positing that
+    all physical structure emerges from a non-injective projection $\Pi : \Omega \to \mathcal{O}$
+    from a pre-geometric substrate $\chi$ onto observable space.
+    The initial framework postulated a Born--Infeld (BI) saturation constraint, a relaxation mechanism,
+    and an iterated projection cascade $U_{t+1} = \Pi \circ \sigma(U_t)$ as the engine of dynamics.
+
+    Over the course of 2026, the programme has evolved in two parallel directions.
+    On one side, the spectral admissibility sub-programme (O-series, papers O1--O27) has progressively
+    built the computational machinery for extracting physical observables from the spectral structure
+    of the substrate, culminating in the proof of the unconditional transfer chain in O24~\cite{Beau2026a28}.
+    On the other side, the Foundation paper~\cite{Beau2026m} has refounded the entire framework from
+    four axioms~(A1--A4), dispensing with any explicit substrate $\chi$ and relaxation mechanism:
+    these emerge as consequences of the axiomatic structure rather than being postulated.
+    The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
+    on top of the Foundation axioms and O-series spectral data.
+
+    The corpus now contains more than 50 papers with complex mutual dependencies.
+    A reader entering the programme faces two difficulties: it is not obvious where to start,
+    and the distinction between a theorem, a structural argument, and an open conjecture is not always
+    transparent from individual paper titles.
+    This roadmap addresses both difficulties.
+
+    \paragraph{Conventions on result status.}
+      Throughout this paper each result is classified as one of the following:
+      \sproved{} (formally proved as a theorem within the stated assumptions);
+      \sstruct{} (derived from structural arguments that are internally consistent but not yet fully
+      formalised);
+      \sheur{} (physically motivated and numerically supported but not yet rigorously derived);
+      \sopen{} (explicitly conjectured or known to be unsettled).
+      These classifications follow the original papers; this roadmap introduces no new claims.
+
+  \section{Conceptual Architecture}
+  \label{sec:architecture}
+
+  The programme is organised in three structural levels.
+
+  \paragraph{Level~1 --- Axiomatic primitive.}
+    The primitive is the local structure of admissible non-injective transitions.
+    No background spacetime, no quantum postulate, and no substrate field are introduced at this level.
+    The four axioms are: local projective admissibility~(A1), structural non-injectivity~(A2),
+    admissibility as non-premature selection~(A3), and projection locking~(A4).
+    From~A1--A2 alone, irreversibility and the arrow of time follow.
+    From~A3, the Heisenberg non-commutativity and the Weil representation emerge.
+    From~A4, the discreteness of quantum transitions follows.
+    Papers at this level: ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
+    HeisenbergStructure, noscale~\cite{Beau2026j}.
+
+  \paragraph{Level~2 --- Spectral fibre structure.}
+    The admissible fibre is proved to carry the Weil representation $V_\rho$ of
+    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for a prime~$q$ (Foundation Theorem~5.6;
+    detailed proof in HeisenbergStructure~\cite{Beau2026HeisenbergStructure}).
+    The O-series computes the spectral properties of this fibre --- in particular the capacity
+    exponent $\delta_{\mathrm{pair}}$ and its transfer to the cascade exponent $\beta^*$ governing
+    the charged-lepton mass hierarchy.
+    Papers at this level: SpectralAdmissibility~\cite{Beau2026a1},
+    SpectralCapacity~\cite{Beau2026a2},
+    SpectralGramRigidity~\cite{Beau2026a3}, SpectralRelaxation~\cite{Beau2026a5},
+    and O1--O27~(\cite{Beau2026a6}--\cite{Beau2026a31}).
+
+  \paragraph{Level~3 --- Physical observables.}
+    Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
+    waves, and cosmological observables are derived as consequences of Levels~1--2.
+    No additional physical postulates are introduced beyond the continuum-limit hypotheses of Q5a--Q5b.
+    Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2}, Q5a--Q6b), the gravity track
+    (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
+    and the companion papers~(\cite{Beau2026b,Beau2026c,Beau2026d,Beau2026e,Beau2026f,Beau2026g,Beau2026k}).
+
+  \section{Branch I: Axiomatic Foundations}
+  \label{sec:foundations}
+
+  \subsection{The White Paper}
+
+    The white paper~\cite{Cosmochrony} (``Cosmochrony: A Non-Injective Projection Theory of Emergent
+  Physics,'' v3.1) is the programme's primary overview document.
+    It introduces the substrate field~$\chi$, the non-injective projection~$\Pi$, the BI saturation
+    constraint, the relaxation mechanism, and the qualitative derivation of spacetime and quantum structure.
+    The spectral entropy functional $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ appears here as the
+    structural origin of the Einstein equation.
+
+    \textit{Role:} Programme overview; structural motivation; first formulation of the BI constraint
+    and the relaxation cascade.
+    \textit{Evolution note:} The explicit substrate~$\chi$ and relaxation mechanism of the white paper
+    are not postulated in the Foundation reformulation: they emerge from axioms~A1--A4.
+    The white paper remains the primary narrative reference; Branch~I papers are the formal foundation.
+
+  \subsection{Non-Injectivity as a Structural Necessity of Genuine Emergence}
+
+    The ENI paper~\cite{Beau2026l} proves the following no-go theorem.
+    Any genuinely emergent (non-isomorphic effective) physical description is necessarily non-injective
+    and intrinsically compressive.
+    The argument is purely structural: given a surjective $\Pi : \Omega \to \mathcal{O}$ such that
+    $\mathcal{O}$ carries no independent microstate-resolving structure beyond~$\Pi$,
+    non-isomorphism of levels forces non-injectivity.
+    A projection entropy $S_\Pi \geq 0$ is defined, and the equivalence
+    $\text{genuine emergence} \Leftrightarrow \Pi \text{ non-injective} \Leftrightarrow S_\Pi > 0$
+    is established (\sproved, Theorem~2.1 and Corollary~3.1).
+
+    \textit{Role:} Foundational justification for structural non-injectivity~(Axiom~A2).
+    Cited by Foundation, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, Q1~\cite{Beau2026q1}, Bell.
+
+  \subsection{Foundation: Admissible Non-Injective Transitions as the Primitive}
+    \label{sec:foundation}
+
+    The Foundation paper~\cite{Beau2026m} establishes the minimal axiomatic basis of the programme.
+    From the four axioms~A1--A4 alone it derives:
+    (i) irreversibility and the arrow of time (A1+A2);
+    (ii) the proto-state as a physically real unresolved configuration retaining phase coherence~(A3);
+    (iii) a non-trivial commutator between conjugate generators, forced by~A3 and the minimality of~A1;
+    (iv) the identification of the admissible fibre symmetry group as $\Heis_3(\mathbb{Z}/q\mathbb{Z})$
+    for a prime~$q$, together with BI parity (A1--A3);
+    (v) the identification $F_n \cong V_\rho$ (Weil representation) as a theorem (Theorem~5.6);
+    (vi) the discrete character of quantum transitions from~A4.
+
+    \textit{Status:} \sproved{} for the algebraic identification of the fibre;
+    \sstruct{} for the continuum limit (deferred to Q5a--Q5b).
+    \textit{Role:} Axiomatic spine.
+    Cited by all Q-series papers, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, noscale, and recent companion papers.
+
+  \subsection{Non-Factorisability and the Emergence of Heisenberg Structure}
+
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure} provides the detailed proof of Foundation Theorem~5.6, omitted from the
+    Foundation paper for concision.
+    The central structural lemma --- \emph{admissible non-factorisability} --- is a direct
+    formalisation of Axiom~A3 and requires no input beyond~A1--A3, BI parity, and classical
+    group-classification results.
+    As a corollary, the Heisenberg uncertainty principle is derived as a structural property
+    of the non-resolved proto-state, not as an independent postulate (\sproved).
+
+    \textit{Role:} Detailed proof of the algebraic core; cited by Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2}.
+
+  \subsection{No External Dimensional Scale at the Level of Admissibility}
+
+    The noscale paper~\cite{Beau2026j} establishes a structural rigidity result~(Level~1):
+    any deformation of the admissibility constraints that introduces a dimensional parameter
+    independent of~$c_\chi$ breaks at least one of BFS-consistent spectral scaling, structural
+    non-injectivity~(A2/ENI), or bounded admissibility closure~(A3--A4).
+    Dimensional analysis within the framework is therefore fully constrained by~$c_\chi$ alone (\sproved).
+
+    \textit{Role:} Closes the naturalness question for dimensional parameters.
+
+  \section{Branch II: Spectral Admissibility Sub-Programme (O-Series)}
+  \label{sec:oseries}
+
+  The O-series targets the derivation of the charged-lepton mass hierarchy from the spectral
+  structure of the admissible fibre.
+  The central quantity is the power-law exponent $\delta_{\mathrm{pair}}$ of the pair-level
+  capacity observable $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\cdot\sigma_{q-c}(n)$ along
+  the BFS cascade.
+  The main transfer chain is
+  \begin{equation}
+    c_\chi \;\longrightarrow\; \delta_{\mathrm{pair}} \;\longrightarrow\; \beta^* \approx 0.126
+    \;\longrightarrow\; m_e : m_\mu : m_\tau .
+    \label{eq:chain}
+  \end{equation}
+  This chain is proved unconditionally with respect to the fibre structure of $\Pi$
+  (O24~\cite{Beau2026a28}, Corollary~4.2).
+  The numerical validation of~\eqref{eq:chain} is the subject of O25~\cite{Beau2026a29} (in progress).
+
+  \subsection{Precursor Papers: SU(2) Admissibility Sub-Programme}
+
+    Three papers precede the O-series proper and explore spectral admissibility on Cayley graphs
+    of finite $\SU(2)$ subgroups.
+
+    \textbf{SpectralAdmissibility}~\cite{Beau2026a1} analyses the simplest case: the quaternion group
+    $Q_8$.
+    It derives the admissibility hierarchy $A^{\max}_n = c_\chi/\sqrt{\lambda_n}$ in the linearised
+    regime, establishing the first analytically tractable instance of spectral admissibility (\sproved).
+
+    \textbf{SpectralCapacity}~\cite{Beau2026a2} introduces the capacity functional $\mathcal{C}(G,S)$
+    and conjectures that the binary icosahedral group $2I$ maximises it among finite $\SU(2)$ subgroups
+    of comparable order (binary-polyhedral maximality conjecture, \sopen).
+
+    \textbf{SpectralGramRigidity}~\cite{Beau2026a3} (v1.0.1) shows that the geometry of neutral
+    generating sets on $\SU(2)$ is fully encoded in pairwise character values
+    $G_{st} = -\tfrac{1}{2}\chi_\rho(st)$ (\sproved).
+
+    \textbf{Three Particle Generations}~\cite{Beau2026a4} derives the three-generation structure
+    from the ADE stratigraphic levels of binary Cayley graphs (\sstruct).
+
+  \subsection{SpectralRelaxation: Expander Graph Dynamics}
+
+    The SpectralRelaxation paper~\cite{Beau2026a5} establishes $\Lambda_{\mathrm{proj}} \asymp \lambda_2$
+    for LPS expander families (\sproved), providing the entry point for the O-series dynamics.
+
+  \subsection{O1--O8: LPS Phase --- Cascade Exponent $\beta$}
+
+    \textbf{O1}~\cite{Beau2026a6}: LPS saturation is a fixed-valence artefact; growing valence restores
+    the pre-saturation window (\sproved).
+    (Note: O2 was not written; the O3 derivation path was chosen instead.)
+
+    \textbf{O3}~\cite{Beau2026a7}: First quantitative SM connection.
+    The phenomenological window $\beta^* \in (0.09, 0.13)$ is derived from the charged-lepton
+    mass ratios $m_e : m_\mu : m_\tau$ (\sstruct).
+
+    \textbf{O4}~\cite{Beau2026a8}: The structural upper bound $\beta \leq 1$ follows from the
+    BI flux constraint and the Cheeger isoperimetric inequality (\sproved).
+
+    \textbf{O5}~\cite{Beau2026a9}: Obstruction theorem.
+    The $\beta$~gap cannot be closed by any purely representation-theoretic or
+    fixed-representation approach (\sproved).
+
+    \textbf{O6}~\cite{Beau2026a10}: Matrix-level confinement of the cascade exponent (\sproved).
+
+    \textbf{O7}~\cite{Beau2026a11}: Reformulates the target as a capacity exponent
+    $\delta \in [7.4, 10.6]$ on three-step path fingerprints (\sstruct).
+
+    \textbf{O8}~\cite{Beau2026a12}: Establishes the geometric obstruction closing the LPS phase.
+    Exponential shell growth $|S_n| \sim p^n$ on LPS graphs compresses the
+    pre-saturation window to $O(\log q)$ BFS steps (\sproved).
+
+  \subsection{O9--O15: Heisenberg Transition}
+
+    The geometric obstruction identified in O8 motivates replacing LPS graphs by Cayley graphs of
+    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$.
+
+    \textbf{O9}~\cite{Beau2026a13}: Structural transition.
+    Polynomial ball growth $|B_n| \sim n^4$ provides $\Theta(q)$ usable BFS steps (\sproved).
+    This is the key structural transition of the O-series.
+
+    \textbf{O10}~\cite{Beau2026a14}: First large-$q$ computation ($q=101$).
+    Confirms $n^4$ growth; a TensorSketch representation obstruction is identified at large~$q$ (\sproved).
+
+    \textbf{O11}~\cite{Beau2026a15}: Bidimensional Fourier-character proxy overcomes the
+    TensorSketch obstruction (\sstruct).
+
+    \textbf{O12}~\cite{Beau2026a16}: Exact Weil-block fingerprints resolve the final obstruction.
+    Establishes $\hat\delta_{\mathrm{exact}} \approx 4.3$--$4.8$ for $q \in \{29, 61, 101, 151, 211\}$ (\sproved).
+
+    \textbf{O13}~\cite{Beau2026a17}: $\hat\delta_{\mathrm{exact}}(q)$ decreases monotonically from 4.80
+    to 3.59; the finite-size hypothesis is definitively refuted (\sproved).
+
+    \textbf{O14}~\cite{Beau2026a18}: Corrects the $\delta \mapsto \beta^*$ relation via block
+    normalisation and central-phase contributions (\sstruct).
+
+    \textbf{O15}~\cite{Beau2026a19}: Block-level no-go.
+    No reweighting of individual block data can raise $\hat\delta_{\mathrm{exact}}$ to
+    $\delta \in [7.4, 10.6]$ (Corollary~4.8, \sproved).
+    This result forces the pair observable introduced in O16.
+
+  \subsection{O16--O24: Pair Observable and Unconditional Transfer Chain}
+
+    \textbf{O16}~\cite{Beau2026a20}: Identifies the misidentification of the observable.
+    The physically relevant quantity is $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\cdot\sigma_{q-c}(n)$
+    on conjugate pairs $\{c, q-c\}$.
+    The exponent doubling $\delta_{\mathrm{pair}} = 2\delta_c \approx 7.44$ resolves the gap (\sstruct).
+
+    \textbf{O17}~\cite{Beau2026a21}: Structural derivation.
+    $\rho_{q-c} = \bar\rho_c$ is forced by fibre-level admissibility;
+    the pair structure is derived, not postulated (\sproved).
+
+    \textbf{O18}~\cite{Beau2026a22}: Foundational derivation of the parity involution $c \leftrightarrow q-c$.
+    BI parity is the only global symmetry of $S_{\mathrm{BI}}[\chi]$, ensuring each fibre of~$\Pi$ is
+    exactly $\{\chi, -\chi\}$ (minimal fibre condition, \sproved, Theorem~4.1).
+
+    \textbf{O19}~\cite{Beau2026a23}: The residual amplitude factor $r(c,q) \in \{1,2,3,4\}$ does not
+    affect $\delta_{\mathrm{pair}}$; the observable is pipeline-independent (\sproved).
+
+    \textbf{O20}~\cite{Beau2026a24}: Dynamical selection criterion for admissible modes via
+    projective persistence (\sstruct).
+
+    \textbf{O21}~\cite{Beau2026a25}: Defines the observable saturation rank $n_3^{\mathrm{obs}}$ via
+    $\Sigma_c(n_3) = 3$ and constructs the transfer $\delta_{\mathrm{pair}} \to \beta^*$ (\sstruct).
+
+    \textbf{O22}~\cite{Beau2026a26}: BI projection locking forces $n_3^{\mathrm{obs}}$ onto a BFS
+    shell (Theorem~3.2, \sproved).
+
+    \textbf{O23}~\cite{Beau2026a27}: The threshold $\Sigma_c(n_3) = 3$ follows from the quaternionic
+    maximality of the admissible neutral generating set (\sproved).
+
+    \textbf{O24}~\cite{Beau2026a28}: Capstone of the analytical O-series.
+    The Verticality Lemma (``$\ker\Pi$ is free, $\mathrm{Im}\,\Pi$ is constrained'') closes the
+    unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
+    (Corollary~4.2: $\beta^* \approx 0.126$, \sproved).
+
+  \subsection{O25--O27 and PTO: Numerical Validation and Structural Completion}
+
+    \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
+    Current results: $q=29 \to 8.89\pm 0.54$;
+    $q=61 \to 9.98\pm 0.26$;
+    $q=101 \to 9.55\pm 0.16$.
+    Inter-pair variance decreases with~$q$ as predicted by O24.
+    Runs for $q \in \{151, 211, 307, 401\}$ are in progress (\sheur{} pending full campaign).
+
+    \textbf{O26}~\cite{Beau2026a30}: Dictionary between conjugate Weil blocks and rank-1 matrices in
+    $M_2(\mathbb{C})$, connecting the Heisenberg fibre to $2I \subset \SU(2)$ (\sstruct).
+
+    \textbf{O27}~\cite{Beau2026a31}: Every admissible morphism $\Phi_{q,\rho}$ satisfying involution
+    equivariance, quadratic compatibility, and naturality factors through $\mathfrak{su}(2)$ (\sproved).
+
+    \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
+    $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
+    hence compatible with an arrow of time.
+    Confirmed numerically for $q \in \{29, 61, 101, 151\}$ (\sstruct).
+
+  \section{Branch III: Q-Series and Physical Applications}
+  \label{sec:qseries}
+
+  \subsection{Q-Series: Quantum Mechanics and Spacetime Emergence}
+
+    The Q-series derives quantum-mechanical and geometric structure from the Foundation axioms,
+    taking as input the fibre identification $F_n \cong V_\rho$ and selected O-series results.
+
+    \textbf{Q1}~\cite{Beau2026q1}: Phase coherence is a structural consequence of projective admissibility (not a
+    postulate).
+    Theorem~2.7 proves that any admissible transition preserves the BI indiscernibility of conjugate
+    Weil blocks $\rho_c$ and $\rho_{q-c}$, maintaining the metaplectic phase coherence of the fibre.
+    The singlet correlator $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ and the Tsirelson bound
+    are derived from admissibility, O18, and O23 (\sproved; numerically validated for $q=29$).
+
+    \textbf{Q2}~\cite{Beau2026q2}: Extends the programme to spin-$\tfrac{3}{2}$.
+    On the binary icosahedral group~$2I$, the spin-$\tfrac{1}{2}$ and spin-$\tfrac{3}{2}$ sectors
+    share the Laplacian eigenvalue $\lambda_{1/2} = \lambda_{3/2} = 18$ (co-admissibility).
+    The Born rule, singlet correlator, and Tsirelson bound are derived for spin-$\tfrac{3}{2}$
+    without new postulates.
+    $\SU(2)$ is established as the stable fixed point of the admissibility flow (\sproved{} for
+    spin-$\tfrac{3}{2}$; general-$j$ extension \sopen).
+
+    \textbf{Q5a}~\cite{Beau2026q5a}: Under Mosco hypotheses, the admissibility forms~$\mathcal{E}_q$
+    on $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ converge to $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$
+    (\sstruct, conditional).
+
+    \textbf{Q5b}~\cite{Beau2026q5b}: Under the lifting hypothesis~[H-lift], the BFS shell stratification
+    of $\Heis_3(\mathbb{R})$ produces a four-dimensional Lorentzian spacetime, with the temporal
+    direction identified with the BFS depth (\sstruct, conditional).
+
+    \textbf{Q6a}~\cite{Beau2026q6a}: Gauge charges are the invariants of the projection-fibre
+    equivalence classes.
+    $\mathrm{U}(1)$ and $\SU(2)$ are identified as fixed points of the admissibility flow.
+    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ is proposed as a composite (\sstruct; $\SU(3)$: \sopen).
+
+    \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
+    $\Pi_q$; inherits Q5a--Q5b hypotheses (\sstruct, conditional).
+
+  \subsection{Gravity and Spacetime Track}
+
+    \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
+    on a relational substrate without any background manifold (\sstruct).
+
+    \textbf{Gravity}~\cite{Beau2026h}: Derives $G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from the
+    metric variation of $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$, via heat-kernel and zeta
+    regularisation (\sproved{} at leading IR order).
+
+    \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics}: Develops a local thermodynamic interpretation.
+    The diagonal heat kernel yields a local multiplier field
+    $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x) + O(\nabla^2 R)$, and a spectral first law
+    $\delta S_\Pi = \int \beta(x)^{-1}\,\delta E_\Pi(x)$ recasts the Einstein equation as a
+    spectral equilibrium condition (\sstruct; Lorentzian extension and matter coupling: \sopen).
+
+    \textbf{Lorentz}~\cite{Beau2026i}: Lorentzian completion of the spectral action.
+    Causal propagation and gravitational wave propagation follow from the hyperbolic continuation
+    (\sproved{} for the Lorentzian extension; GW spectrum: \sstruct).
+
+  \subsection{Standard Model Companion Papers}
+
+    \textbf{BornInfeld}~\cite{Beau2026c}: BI action as the unique minimal local representation
+    consistent with a universal bound on admissible relational gradients (\sproved).
+
+    \textbf{TopologicalInvariants}~\cite{Beau2026k}: Charge quantisation ($\pi_1(S^1) \cong \mathbb{Z}$)
+    and absence of magnetic monopoles from the Hopf fibration $S^1 \hookrightarrow S^3 \to S^2$
+    of the projection fibre (\sproved; $\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model:
+    \sopen, Remark~4.2).
+
+    \textbf{SMchargemass}~\cite{Beau2026e}: Mass and electric charge as BI-saturated responses
+    (\sstruct; baryon-to-photon ratio~$\eta$: \sopen).
+
+    \textbf{Bell}~\cite{Beau2026b}: Bell-inequality violations from non-injectivity alone, without
+    nonlocality or additional hidden variables (\sproved).
+
+    \textbf{SchwingerLamb}~\cite{Beau2026f}: Fine-structure constant~$\alpha$ as a projective invariant;
+    Lamb shift and Schwinger correction rederived in the pre-geometric framework
+    (\sstruct; quantitative radiative corrections: \sheur).
+
+  \subsection{Cosmological and Condensed-Matter Applications}
+
+    \textbf{Cosmology}~\cite{Beau2026d}: Flat galaxy rotation curves and the Hubble tension from a
+    common effective mechanism; no dark matter or modified gravity (\sstruct; quantitative fit: \sheur).
+
+    \textbf{Superconductivity}~\cite{Beau2026g}: Projective phase locking as the structural origin of
+    superconducting coherence across BCS, cuprate, and nickelate systems (\sstruct).
+
+  \section{Dependency Structure}
+  \label{sec:graph}
+
+  Figure~\ref{fig:dag} presents the logical dependency DAG.
+  Three entry paths emerge for external readers.
+
+  \paragraph{Foundational path.}
+    $\text{ENI} \to \text{Foundation} \to \text{HeisenbergStructure} \to \text{noscale}$.
+    Requires least prior knowledge; establishes the axiomatic core.
+
+  \paragraph{Spectral path.}
+    $\text{BornInfeld} \to \text{SpAdm} \to \text{SpRel} \to \text{O1} \to \cdots \to \text{O24} \to \text{O25}$.
+    Develops the spectral machinery and the transfer chain.
+
+  \paragraph{Physical path.}
+    Foundation $+ $ O18 $+$ O22 $+$ O23 $\to$ Q1 $\to$ Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
+    parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz.
+
+    \begin{figure}[p]
+      \centering
+      \resizebox{\textwidth}{!}{%
+        \begin{tikzpicture}[
+          every node/.style={font=\small\sffamily},
+          box/.style={draw, rounded corners=3pt, inner sep=4pt,
+          minimum width=1.7cm, minimum height=0.6cm},
+          P/.style={box, fill=green!8,  draw=cproved,  text=black},
+          S/.style={box, fill=blue!6,   draw=cstruct,  text=black},
+          H/.style={box, fill=orange!10,draw=cheur,    text=black},
+          Oc/.style={box, fill=red!6,   draw=copen,    text=black},
+          arr/.style={-{Stealth[length=4pt,width=3pt]}, gray!60, line width=0.9pt},
+          spine/.style={-{Stealth[length=5pt,width=3.5pt]}, black!55, line width=1.4pt},
+        ]
+
+\newcommand{\dx}{2.1cm}
+\newcommand{\dy}{1.35cm}
+
+\node[P] (WP)     at (0,0)          {WP};
+\node[P] (ENI)    at (\dx,0)        {ENI};
+\node[P] (Found)  at (2*\dx,0)      {Found};
+\node[P] (Heis)   at (3*\dx,0)      {HeisStr};
+\node[P] (nos)    at (4*\dx,0)      {noscale};
+
+\draw[spine] (WP)--(ENI);
+\draw[spine] (ENI)--(Found);
+\draw[spine] (Found)--(Heis);
+\draw[arr]   (Found)--(nos);
+
+\node[P]  (BI)    at (0,-\dy)       {BornInfeld};
+\node[P]  (SpA)   at (\dx,-\dy)     {SpAdm};
+\node[Oc] (SpCap) at (2*\dx,-\dy)   {SpCap};
+\node[P]  (SpG)   at (3*\dx,-\dy)   {SpGram};
+\node[S]  (ThGn)  at (4*\dx,-\dy)   {3Gen};
+\node[P]  (SpR)   at (\dx,-2*\dy)   {SpRel};
+
+\draw[arr]   (WP)--(BI);
+\draw[arr]   (BI)--(SpA);
+\draw[arr]   (SpA)--(SpCap);
+\draw[arr]   (SpCap)--(SpG);
+\draw[arr]   (SpG)--(ThGn);
+\draw[spine] (SpA)--(SpR);
+
+\node[P] (O1)  at (0,-3*\dy)        {O1};
+\node[S] (O3)  at (\dx,-3*\dy)      {O3};
+\node[P] (O4)  at (2*\dx,-3*\dy)    {O4};
+\node[P] (O5)  at (3*\dx,-3*\dy)    {O5};
+\node[S] (O7)  at (4*\dx,-3*\dy)    {O7};
+\node[P] (O8)  at (5*\dx,-3*\dy)    {O8};
+
+\draw[spine] (SpR) to[out=-90,in=90] (O1);
+\draw[arr]   (O1)--(O3);
+\draw[arr]   (O3)--(O4);
+\draw[arr]   (O4)--(O5);
+\draw[arr]   (O5)--(O7);
+\draw[spine] (O7)--(O8);
+
+\node[P] (O9)   at (0,-4*\dy)       {O9};
+\node[P] (O12)  at (\dx,-4*\dy)     {O12};
+\node[P] (O13)  at (2*\dx,-4*\dy)   {O13};
+\node[P] (O15)  at (3*\dx,-4*\dy)   {O15};
+
+\draw[spine] (O8) to[out=-90,in=90] (O9);
+\draw[arr,dashed] (O9) -- node[above,font=\tiny]{O10--O11} (O12);
+\draw[arr]   (O12)--(O13);
+\draw[spine] (O13)--(O15);
+
+\node[S] (O16)  at (0,-5*\dy)       {O16};
+\node[P] (O17)  at (\dx,-5*\dy)     {O17};
+\node[P] (O18)  at (2*\dx,-5*\dy)   {O18};
+\node[P] (O19)  at (3*\dx,-5*\dy)   {O19};
+\node[P] (O22)  at (4*\dx,-5*\dy)   {O22};
+\node[P] (O23)  at (5*\dx,-5*\dy)   {O23};
+\node[P] (O24)  at (6*\dx,-5*\dy)   {O24};
+
+\draw[spine] (O15) to[out=-90,in=90] (O16);
+\draw[arr]   (O16)--(O17);
+\draw[spine] (O17)--(O18);
+\draw[arr]   (O18)--(O19);
+\draw[arr,dashed] (O19) -- node[above,font=\tiny]{O20--O21} (O22);
+\draw[arr]   (O22)--(O23);
+\draw[spine] (O23)--(O24);
+
+\node[H] (O25)  at (4*\dx,-6*\dy)   {O25};
+\node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
+\node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
+\node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
+
+\draw[spine] (O24) -- (O25);
+\draw[arr]   (O24) -- (O26);
+\draw[arr]   (O26) -- (O27);
+\draw[arr]   (O24) -- (PTO);
+
+\node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
+\node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
+\node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
+\node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
+\node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
+\node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
+
+\draw[spine] (Found) to[out=0,in=90] (Q1);
+\draw[arr]   (O18)   to[out=10,in=180] (Q1);
+\draw[arr]   (O22)   to[out=10,in=180] (Q1);
+\draw[arr]   (O23)   to[out=10,in=180] (Q1);
+\draw[arr]   (Q1)--(Q2);
+\draw[arr]   (Q2)--(Q5a);
+\draw[spine] (Q5a)--(Q5b);
+\draw[arr]   (Q5b)--(Q6a);
+\draw[arr]   (Q6a)--(Q6b);
+
+\node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
+\node[P] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
+\node[S] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
+\node[P] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
+
+\draw[arr]   (WP) to[out=-90,in=90] (Sp2);
+\draw[spine] (Sp2)--(Grav);
+\draw[arr]   (Grav)--(Thm);
+\draw[arr]   (Thm)--(Lor);
+
+\node[P] (TopI) at (0,-8*\dy)        {TopInv};
+\node[S] (SMcm) at (\dx,-8*\dy)      {SMcm};
+\node[P] (Bell) at (2*\dx,-8*\dy)    {Bell};
+\node[S] (Schw) at (3*\dx,-8*\dy)    {SchLamb};
+\node[S] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
+\node[S] (Supra)at (5*\dx,-8*\dy)    {Supra};
+
+\draw[arr] (Found) to[out=-90,in=90] (TopI);
+\draw[arr] (BI)    to[out=-90,in=90] (SMcm);
+\draw[arr] (Found) to[out=-90,in=90] (Bell);
+\draw[arr] (ENI)   to[out=-90,in=90] (Bell);
+\draw[arr] (Found) to[out=-90,in=90] (Schw);
+\draw[arr] (BI)    to[out=-90,in=90] (Cosm);
+\draw[arr] (Found) to[out=-90,in=90] (Supra);
+
+        \end{tikzpicture}
+      }
+      \caption{Logical dependency DAG of the Cosmochrony programme.
+      Colour coding: \textcolor{cproved}{$\blacksquare$}~\sproved{},
+        \textcolor{cstruct}{$\blacksquare$}~\sstruct{},
+        \textcolor{cheur}{$\blacksquare$}~\sheur{},
+        \textcolor{copen}{$\blacksquare$}~\sopen{}.
+        Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
+        Dashed arrows with labels abbreviate linear sub-chains.
+        The interactive version with clickable nodes is provided as a companion HTML file.}
+      \label{fig:dag}
+    \end{figure}
+
+    \clearpage
+
+  \section{Full Paper Inventory}
+  \label{sec:inventory}
+
+  Table~\ref{tab:inventory} lists all papers in the programme.
+  The \textbf{Key} column gives the \texttt{cosmochrony-bibliography} citation key.
+
+  \setlength\LTleft{0pt}
+  \setlength\LTright{0pt}
+  \begin{longtable}{@{}p{1.45cm}p{3.4cm}p{1.5cm}p{6.5cm}p{1.3cm}@{}}
+    \toprule
+    \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
+    \midrule
+    \endhead
+    \midrule\multicolumn{5}{r}{\small\itshape continued\ldots}\\\midrule
+    \endfoot
+    \bottomrule
+    \endlastfoot
+    WP & White Paper & \cite{Cosmochrony} &
+    Programme overview; substrate~$\chi$; iterated projection; BI constraint; relaxation cascade &
+    \sstruct \\[3pt]
+    ENI & Emergence \& non-injectivity & \cite{Beau2026l} &
+    No-go: genuine emergence $\Leftrightarrow$ $\Pi$ non-injective; projection entropy $S_\Pi$ &
+    \sproved \\[3pt]
+    Found & Foundation & \cite{Beau2026m} &
+    Axioms A1--A4; derives $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $V_\rho$ as theorems (Thm~5.6) &
+    \sproved \\[3pt]
+    HeisStr & Heisenberg structure & \cite{Beau2026HeisenbergStructure} &
+    Detailed proof of Found. Thm~5.6; uncertainty principle from A3 alone &
+    \sproved \\[3pt]
+    noscale & No external scale & \cite{Beau2026j} &
+    No independent dimensional parameter beyond $c_\chi$ &
+    \sproved \\[3pt]
+    \midrule
+    BornInfeld & Born--Infeld geometry & \cite{Beau2026c} &
+    BI action as unique minimal bounded-flux representation &
+    \sproved \\[3pt]
+    SpAdm & Spectral admissibility ($Q_8$) & \cite{Beau2026a1} &
+    $A^{\max}_n = c_\chi/\sqrt{\lambda_n}$; first tractable instance &
+    \sproved \\[3pt]
+    SpCap & Spectral capacity & \cite{Beau2026a2} &
+    Capacity functional $\mathcal{C}(G,S)$; binary-polyhedral maximality conjecture &
+    \sopen \\[3pt]
+    SpGram & Gram rigidity (v1.0.1) & \cite{Beau2026a3} &
+    Neutral-generator geometry from $G_{st} = -\tfrac{1}{2}\chi_\rho(st)$ &
+    \sproved \\[3pt]
+    3Gen & Three generations & \cite{Beau2026a4} &
+    Three-generation structure from ADE stratigraphic levels &
+    \sstruct \\[3pt]
+    SpRel & Spectral relaxation & \cite{Beau2026a5} &
+    $\Lambda_{\mathrm{proj}} \asymp \lambda_2$ for LPS expander families &
+    \sproved \\[3pt]
+    \midrule
+    O1 & Variable-valence graphs & \cite{Beau2026a6} &
+    LPS saturation is a fixed-valence artefact; growing valence restores window &
+    \sproved \\[3pt]
+    O3 & Mass hierarchy & \cite{Beau2026a7} &
+    First SM connection: $\beta^* \in (0.09, 0.13)$ from lepton mass ratios &
+    \sstruct \\[3pt]
+    O4 & Upper bound $\beta \leq 1$ & \cite{Beau2026a8} &
+    BI flux $+$ Cheeger $\Rightarrow \beta \leq 1$ &
+    \sproved \\[3pt]
+    O5 & Rep-theoretic obstruction & \cite{Beau2026a9} &
+    Fixed-repr.\ approaches cannot close the $\beta$ gap &
+    \sproved \\[3pt]
+    O6 & Matrix redundancy & \cite{Beau2026a10} &
+    Matrix-level confinement of cascade exponent &
+    \sproved \\[3pt]
+    O7 & Continuum target & \cite{Beau2026a11} &
+    Target: $\delta \in [7.4, 10.6]$ on 3-step fingerprints &
+    \sstruct \\[3pt]
+    O8 & LPS geometric obstruction & \cite{Beau2026a12} &
+    Exponential shell growth $\Rightarrow$ usable window $= O(\log q)$ BFS steps &
+    \sproved \\[3pt]
+    \midrule
+    O9 & Heisenberg graphs & \cite{Beau2026a13} &
+    Structural transition: $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ with $|B_n| \sim n^4$ replaces LPS &
+    \sproved \\[3pt]
+    O10 & Large-$q$ computation & \cite{Beau2026a14} &
+    Confirms $n^4$ growth; TensorSketch obstruction identified &
+    \sproved \\[3pt]
+    O11 & Fourier-character proxy & \cite{Beau2026a15} &
+    Bidimensional proxy overcomes TensorSketch obstruction &
+    \sstruct \\[3pt]
+    O12 & Exact Weil blocks & \cite{Beau2026a16} &
+    $\hat\delta_{\mathrm{exact}} \approx 4.3$--$4.8$ for $q \leq 211$; final obstruction resolved &
+    \sproved \\[3pt]
+    O13 & Extended prime range & \cite{Beau2026a17} &
+    $\hat\delta(q): 4.80 \to 3.59$; finite-size hypothesis refuted &
+    \sproved \\[3pt]
+    O14 & Observable-class correction & \cite{Beau2026a18} &
+    Corrects $\delta \mapsto \beta^*$ via block normalisation &
+    \sstruct \\[3pt]
+    O15 & Block-level no-go & \cite{Beau2026a19} &
+    No reweighting of individual blocks reaches $\delta \in [7.4, 10.6]$ (Cor.~4.8) &
+    \sproved \\[3pt]
+    \midrule
+    O16 & Pair observable & \cite{Beau2026a20} &
+    $\sigma_{\mathrm{pair}} = \sigma_c \sigma_{q-c}$;
+    exponent doubling $\delta_{\mathrm{pair}} \approx 7.44$ &
+    \sstruct \\[3pt]
+    O17 & Structural derivation of pair & \cite{Beau2026a21} &
+    $\rho_{q-c} = \bar\rho_c$ forced by fibre admissibility: pair is derived, not postulated &
+    \sproved \\[3pt]
+    O18 & BI parity involution & \cite{Beau2026a22} &
+    Minimal fibre condition $\{\chi,-\chi\}$; BI parity is the unique global symmetry of $S_{\mathrm{BI}}$ &
+    \sproved \\[3pt]
+    O19 & Canonical normalisation & \cite{Beau2026a23} &
+    $r(c,q)$ does not affect $\delta_{\mathrm{pair}}$; observable pipeline-independent &
+    \sproved \\[3pt]
+    O20 & Persistence criterion & \cite{Beau2026a24} &
+    Dynamical selection of admissible modes via projective persistence &
+    \sstruct \\[3pt]
+    O21 & Shell saturation & \cite{Beau2026a25} &
+    Observable rank $n_3^{\mathrm{obs}}$ via $\Sigma_c(n_3)=3$;
+    transfer $\delta_{\mathrm{pair}} \to \beta^*$ &
+    \sstruct \\[3pt]
+    O22 & Projection locking & \cite{Beau2026a26} &
+    BI projection locking forces $n_3^{\mathrm{obs}}$ onto a BFS shell (Thm~3.2) &
+    \sproved \\[3pt]
+    O23 & Quaternionic minimality & \cite{Beau2026a27} &
+    $\Sigma_c(n_3)=3$ from quaternionic maximality of neutral generators &
+    \sproved \\[3pt]
+    O24 & Observable rank rigidity & \cite{Beau2026a28} &
+    Verticality Lemma; unconditional transfer
+    $c_\chi \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$ (Cor.~4.2) &
+    \sproved \\[3pt]
+    \midrule
+    O25 & Numerical campaign & \cite{Beau2026a29} &
+    Systematic $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ pairs;
+    runs for $q \in \{151,\ldots,401\}$ in progress &
+    \sheur \\[3pt]
+    O26 & Quadratic completion & \cite{Beau2026a30} &
+    Dictionary: Weil blocks $\leftrightarrow$ rank-1 matrices in $M_2(\mathbb{C})$;
+    connects $\Heis_3$ to $2I \subset \SU(2)$ &
+    \sstruct \\[3pt]
+    O27 & Quaternionic rigidity & \cite{Beau2026a31} &
+    Every admissible $\Phi_{q,\rho}$ satisfying three structural constraints factors through
+    $\mathfrak{su}(2)$ &
+    \sproved \\[3pt]
+    PTO & Temporal ordering & \cite{Beau2026pto} &
+    $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
+    temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
+    \sstruct \\[3pt]
+    \midrule
+    Q1 & Phase coherence & \cite{Beau2026q1} &
+    Phase coherence from admissibility (Thm~2.7);
+    singlet correlator and Tsirelson bound derived &
+    \sproved \\[3pt]
+    Q2 & Beyond spin-$\tfrac{1}{2}$ & \cite{Beau2026q2} &
+    Spin-$\tfrac{3}{2}$ quantum structure; $\SU(2)$ as admissibility fixed point &
+    \sproved \\[3pt]
+    Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
+    Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional &
+    \sstruct \\[3pt]
+    Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
+    BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime; conditional &
+    \sstruct \\[3pt]
+    Q6a & Gauge structure & \cite{Beau2026q6a} &
+    $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
+    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ proposed &
+    \sstruct \\[3pt]
+    Q6b & Effective spacetime & \cite{Beau2026q6b} &
+    Effective Lorentzian geometry from $\Pi_q$; inherits Q5a--Q5b hypotheses &
+    \sstruct \\[3pt]
+    \midrule
+    Spec2 & Relational spacetime & \cite{Beau2026a} &
+    Operational metric from graph Laplacians; spacetime from spectral correlations &
+    \sstruct \\[3pt]
+    Gravity & IR Einstein response & \cite{Beau2026h} &
+    $G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from $\delta S_\Pi/\delta g$ at leading IR order &
+    \sproved \\[3pt]
+    Thermo & Spectral thermodynamics & \cite{Beau2026Thermodynamics} &
+    Local spectral first law; Einstein equation as spectral equilibrium condition &
+    \sstruct \\[3pt]
+    Lorentz & Gravitational waves & \cite{Beau2026i} &
+    Lorentzian completion; causal propagation; GW spectrum &
+    \sproved \\[3pt]
+    TopInv & Topological invariants & \cite{Beau2026k} &
+    Charge quantisation ($\pi_1 \cong \mathbb{Z}$), no monopoles, chirality (Hopf fibration) &
+    \sproved \\[3pt]
+    SMcm & Charge, mass, inertia & \cite{Beau2026e} &
+    Mass and charge as BI-saturated responses &
+    \sstruct \\[3pt]
+    Bell & Bell non-locality & \cite{Beau2026b} &
+    Bell violations from non-injectivity alone &
+    \sproved \\[3pt]
+    SchLamb & Fine-structure constant & \cite{Beau2026f} &
+    $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
+    \sstruct \\[3pt]
+    Cosmol & Rotation curves / Hubble & \cite{Beau2026d} &
+    Flat rotation curves and Hubble tension from a common effective mechanism &
+    \sstruct \\[3pt]
+    Supra & Superconductivity & \cite{Beau2026g} &
+    Projective phase locking as origin of superconducting coherence &
+    \sstruct \\[3pt]
+  \end{longtable}
+
+  \section{Open Problems and Roadmap}
+  \label{sec:open}
+
+  \subsection{Branch II (O-Series)}
+
+    \paragraph{Completing O25 (numerical campaign).}
+      Runs for $q \in \{151, 211, 307, 401\}$ are in progress.
+      The goal is to confirm inter-pair concentration and the convergence of
+      $\delta_{\mathrm{pair}}$ within $[7.4, 10.6]$ across all target primes,
+      validating the transfer chain~\eqref{eq:chain} numerically.
+
+    \paragraph{Notation consolidation: $c_\chi \to c_{\mathrm{BI}}$.}
+      A coordinated rename of the BI saturation constant across all papers is planned and deferred
+      pending consistency with already-deposited O-series papers.
+
+  \subsection{Branch III (Q-Series and Applications)}
+
+  \paragraph{Unconditional continuum limit (Q5a).}
+    Lifting the Mosco and lifting hypotheses to unconditional results is the main open problem
+    in the geometric emergence track.
+
+  \paragraph{$\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model
+    (TopologicalInvariants, Remark~4.2).}
+    General proof of this topological property is open.
+
+  \paragraph{Full SM gauge group (Q6a).}
+    A structural derivation of $\mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$
+    as a composite of admissibility fixed points is proposed but not yet proved.
+
+  \paragraph{Baryon-to-photon ratio (SMchargemass).}
+    Quantitative derivation of $\eta \sim 10^{-10}$ is open.
+
+  \paragraph{$V-A$ chiral structure.}
+    Formal derivation of the $V - A$ coupling from spectral selection is open.
+
+  \paragraph{Spin-$j$ extension (Q2).}
+    The structural derivation of quantum mechanics for all~$j$ in the
+    $Q_8 \hookrightarrow 2I \hookrightarrow \SU(2)$ chain is open beyond spin-$\tfrac{3}{2}$.
+
+  \paragraph{Thermodynamics: Lorentzian extension and matter coupling.}
+    The local spectral first law is derived in the Riemannian setting.
+    Analytic continuation and the explicit form of $W_\Pi$ for matter fields are open.
+
+  \subsection{Administrative}
+
+  \paragraph{Bibliography: remaining duplicate.}
+    The key \texttt{NoScaleL1} appears to be an erroneous duplicate of \texttt{Beau2026j},
+    with a truncated title (``o External\ldots'' rather than ``No External\ldots'').
+    It should be removed from \texttt{cosmochrony-bibliography.bib}.
+
+  \section{Conclusion}
+
+  The Cosmochrony programme has established a coherent, multi-level derivation of physical structure
+  from a single primitive.
+  Branch~I (Foundation, ENI, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}) is formally closed: the Weil representation of
+  $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ is a theorem.
+  Branch~II (O-series) has closed the unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
+  analytically~(O24) and is in numerical validation~(O25).
+  Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
+  at the structural level, with several results conditional on explicitly stated hypotheses.
+
+  For an external reader, three entry sequences are suggested.
+  For the quantum structure thread:
+  ENI $\to$ Foundation $\to$ O18 $\to$ O22 $\to$ O23 $\to$ Q1.
+  For the spectral mass hierarchy thread:
+  ENI $\to$ Foundation $\to$ O16 $\to$ O24.
+  For the spacetime thread:
+  Spectral2 $\to$ Gravity $\to$ (Thermodynamics or Lorentz).
+
+  \bibliography{cosmochrony-bibliography}
+  \bibliographystyle{plainurl}
+
+\end{document}
