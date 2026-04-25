@@ -86,7 +86,7 @@ A Structural Roadmap and Paper Inventory}
   and an iterated projection cascade $U_{t+1} = \Pi \circ \sigma(U_t)$ as the engine of dynamics.
 
   Over the course of 2026, the programme has evolved in two parallel directions.
-  On one side, the spectral admissibility sub-programme (O-series, papers O1--O27) has progressively
+  On one side, the spectral admissibility sub-programme (O-series, papers O1--O28) has progressively
   built the computational machinery for extracting physical observables from the spectral structure
   of the substrate, culminating in the proof of the unconditional transfer chain in O24~\cite{Beau2026a28}.
   On the other side, the Foundation paper~\cite{Beau2026m} has refounded the entire framework from
@@ -136,7 +136,7 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: SpectralAdmissibility~\cite{Beau2026a1},
     SpectralCapacity~\cite{Beau2026a2},
     SpectralGramRigidity~\cite{Beau2026a3}, SpectralRelaxation~\cite{Beau2026a5},
-    and O1--O27~(\cite{Beau2026a6}--\cite{Beau2026a31}).
+    and O1--O28~(\cite{Beau2026a6}--\cite{Beau2026a32}).
 
   \paragraph{Level~3 --- Physical observables.}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
@@ -357,7 +357,7 @@ A Structural Roadmap and Paper Inventory}
     unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
     (Corollary~4.2: $\beta^* \approx 0.126$, \sproved).
 
-  \subsection{O25--O27 and PTO: Numerical Validation and Structural Completion}
+  \subsection{O25--O28 and PTO: Numerical Validation and Structural Completion}
 
     \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
     Computes $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ conjugate pairs with $M=50$ independent
@@ -374,6 +374,20 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{O27}~\cite{Beau2026a31}: Every admissible morphism $\Phi_{q,\rho}$ satisfying involution
     equivariance, quadratic compatibility, and naturality factors through $\mathfrak{su}(2)$ (\sproved).
+
+    \textbf{O28}~\cite{Beau2026a32}: Two measurements from the Q5a-O5 checkpoints.
+    Part~A: the BFS window ratio $n_1(q)/q$ decreases from 0.138 to 0.066 over
+    $q \in \{29, 61, 101, 151, 211\}$ (Scenario~S2, pre-asymptotic regime); OLS fit
+    $n_1(q) = \hat\alpha\,q + \hat\beta$ gives $\hat\alpha \approx 0.053$;
+    $\delta_{\mathrm{corr}}(q) \in [7.4, 10.6]$ for all tested primes, confirming O25.
+    Part~B: formal effective-dimension computation of O26 Criterion~5.4 in
+    $\mathrm{End}(H_{\mathrm{eff}})$, $H_{\mathrm{eff}} = \mathbb{C}^3$
+    ($\mathrm{HEFF\_DIM} = 3$, consistent with $\Sigma_c(n_3) = 3$ from O23).
+    The covariance $\mathcal{C}_c$ has rank exactly~$3$ for every conjugate pair and every
+    $q \in \{61, 101, 151\}$ (100\% of pairs), with invariant eigenvalue structure
+    $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$.
+    The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
+    identification of $V_\rho \subset H_{\mathrm{eff}}$ is deferred to O29 (\sstruct).
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -477,7 +491,7 @@ A Structural Roadmap and Paper Inventory}
     Requires least prior knowledge; establishes the axiomatic core.
 
   \paragraph{Spectral path.}
-    $\text{BornInfeld} \to \text{SpAdm} \to \text{SpRel} \to \text{O1} \to \cdots \to \text{O24} \to \text{O25}$.
+    $\text{BornInfeld} \to \text{SpAdm} \to \text{SpRel} \to \text{O1} \to \cdots \to \text{O24} \to \text{O25} \to \text{O28}$.
     Develops the spectral machinery and the transfer chain.
 
   \paragraph{Physical path.}
@@ -570,12 +584,15 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (O25)  at (4*\dx,-6*\dy)   {O25};
 \node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
 \node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
+\node[S] (O28)  at (7*\dx,-6*\dy)   {O28};
 \node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
 
 \draw[spine] (O24) -- (O25);
 \draw[arr]   (O24) -- (O26);
 \draw[arr]   (O26) -- (O27);
 \draw[arr]   (O24) -- (PTO);
+\draw[spine] (O25) -- (O28);
+\draw[arr]   (O27) -- (O28);
 
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
@@ -774,6 +791,11 @@ A Structural Roadmap and Paper Inventory}
     Every admissible $\Phi_{q,\rho}$ satisfying three structural constraints factors through
     $\mathfrak{su}(2)$ &
     \sproved \\[3pt]
+    O28 & Window calibration \& $r_{\mathrm{eff}}$ & \cite{Beau2026a32} &
+    $n_1(q)/q$ decreasing (Scenario~S2); $\delta_{\mathrm{corr}} \in [7.4,10.6]$ confirmed;
+    $r_{\mathrm{eff}}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, eigenstructure
+    $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
+    \sstruct \\[3pt]
     PTO & Temporal ordering & \cite{Beau2026pto} &
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
     temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
@@ -837,12 +859,21 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch II (O-Series)}
 
-    \paragraph{Analytical control of $n_1(q)/q$ (O25).}
-      The O25 campaign is complete for $q \in \{29, 61, 101, 151, 211\}$.
-      The central remaining open direction, identified in O25 Section~5, is the analytical control of the
-      ratio $n_1(q)/q$, where $n_1(q)$ is the upper BFS boundary of the fitting window.
-      This ratio governs the leading finite-size correction to $\delta_{\mathrm{pair}}$
-      and is required to identify the asymptotic value $\delta_\infty$.
+    \paragraph{Identification of $V_\rho \subset H_{\mathrm{eff}}$ (O28 $\to$ O29).}
+      O28 established that the covariance $\mathcal{C}_c$ has rank exactly~$3$ in
+      $\mathrm{End}(H_{\mathrm{eff}})$ with eigenvalue structure $[1:\tfrac{1}{2}:\tfrac{1}{2}]$,
+      filling the admissible projection space $H_{\mathrm{eff}} = \mathbb{C}^3$ completely.
+      The gap from the spin-$\tfrac{1}{2}$ prediction $d_\rho^2 = 4$ reflects that
+      $H_{\mathrm{eff}} \neq V_\rho$.
+      The central open direction is the identification of the irreducible sector
+      $V_\rho \subset H_{\mathrm{eff}}$ and the computation of $r_{\mathrm{eff}}$ in
+      $\mathrm{End}(V_\rho)$, using the $\mathfrak{su}(2)$ factorisation of O27.
+
+    \paragraph{Analytical control of $n_1(q)/q$.}
+      The BFS window ratio $n_1(q)/q$ continues to decrease through $q = 211$
+      (Scenario~S2, O28); the asymptotic constant $\hat\alpha$ is bounded below
+      by $0.053$ but not yet stabilised.
+      Extending the campaign to $q \in \{307, 401\}$ would constrain $\hat\alpha$ further.
 
     \paragraph{Notation consolidation: $c_\chi \to c_{\mathrm{BI}}$.}
       A coordinated rename of the BI saturation constant across all papers is planned and deferred
