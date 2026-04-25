@@ -4,489 +4,892 @@
   <meta charset="UTF-8">
   <title>Cosmochrony — Dependency Graph</title>
   <style>
+    /* ── Colour tokens: dark mode (default) ── */
     :root {
-      --bg: #0d1117; --surface: #161b22; --border: #21262d;
-      --text: #e6edf3; --dim: #6e7681;
+      --bg:         #0d1117;
+      --surface:    #161b22;
+      --surface2:   #1c2128;
+      --border:     #21262d;
+      --text:       #e6edf3;
+      --text-dim:   #9198a1;
+      --text-faint: #4d5566;
       --proved:     #3fb950; --proved-bg:     #0d2e1c;
-      --structural: #58a6ff; --structural-bg: #0c1e3a;
-      --heuristic:  #e3b341; --heuristic-bg:  #2e1f05;
+      --struct:     #58a6ff; --struct-bg:     #0c1e3a;
+      --heur:       #e3b341; --heur-bg:       #2a1c04;
       --open:       #f85149; --open-bg:       #2e0a0a;
-      --accent: #bc8cff;
-      --branch1: #a5d6ff; --branch2: #f9a825; --branch3: #80cbc4;
+      --accent:     #bc8cff;
+      --edge-base:  #2a3040;
+      --edge-spine: #3a4560;
+      --node-text:  #e6edf3;
+      --chip-bg:    #21262d;
+      --chip-text:  #c9d1d9;
+      --branch1:    #79c0ff;
+      --branch2:    #f0b429;
+      --branch3:    #56d364;
+      --branch1-bg: #0a1e35;
+      --branch2-bg: #2a1c04;
+      --branch3-bg: #0a2a15;
+      --topic-a: #ff9580; /* mass */
+      --topic-b: #72d5f5; /* spacetime */
+      --topic-c: #b490f5; /* time */
+      --topic-d: #6bdc8f; /* QM */
+      --topic-e: #f0cb6a; /* gravity */
+      --topic-f: #f086a0; /* SM */
+      --topic-g: #85d4a8; /* BI */
+      --topic-h: #c0a0ff; /* emergence */
+      --shadow:   0 2px 12px rgba(0,0,0,.5);
     }
+    /* ── Light mode overrides ── */
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg:         #f6f8fa;
+        --surface:    #ffffff;
+        --surface2:   #f0f2f5;
+        --border:     #d0d7de;
+        --text:       #1f2328;
+        --text-dim:   #57606a;
+        --text-faint: #adb5bd;
+        --proved-bg:  #dafbe1; --proved:     #1a7f37;
+        --struct-bg:  #ddf4ff; --struct:     #0969da;
+        --heur-bg:    #fff8c5; --heur:       #9a6700;
+        --open-bg:    #ffebe9; --open:       #cf222e;
+        --accent:     #8250df;
+        --edge-base:  #c8d0da;
+        --edge-spine: #9eaab8;
+        --node-text:  #1f2328;
+        --chip-bg:    #eaeef2;
+        --chip-text:  #1f2328;
+        --branch1:    #0550ae;
+        --branch2:    #7d4e00;
+        --branch3:    #116329;
+        --branch1-bg: #ddf4ff;
+        --branch2-bg: #fff8c5;
+        --branch3-bg: #dafbe1;
+        --shadow:     0 2px 8px rgba(0,0,0,.12);
+      }
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'SF Mono', 'Fira Code', monospace;
-      height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
-
-    header {
-      padding: 10px 16px; border-bottom: 1px solid var(--border); display: flex;
-      align-items: center; gap: 12px; flex-shrink: 0; background: var(--surface);
+    html, body { height: 100%; overflow: hidden; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, 'Segoe UI', sans-serif;
+      display: flex; flex-direction: column;
     }
-    header h1 { font-size: 12px; font-weight: 600; color: var(--accent); letter-spacing: .06em; text-transform: uppercase; }
-    .legend { display: flex; gap: 10px; font-size: 10px; margin-left: 12px; }
-    .li { display: flex; align-items: center; gap: 4px; }
-    .dot { width: 9px; height: 9px; border-radius: 2px; }
-    .controls { margin-left: auto; display: flex; gap: 6px; align-items: center; }
-    .btn { background: var(--border); color: var(--dim); border: none; padding: 3px 9px;
-      font-size: 10px; border-radius: 4px; cursor: pointer; font-family: inherit; }
-    .btn:hover { background: #30363d; color: var(--text); }
-    .btn.active { background: #1f6feb; color: #fff; }
-    .branch-btn { padding: 3px 9px; border-radius: 4px; font-size: 10px; cursor: pointer;
-      font-family: inherit; border: none; color: #000; }
 
-    .main { display: flex; flex: 1; overflow: hidden; }
-    #cw { flex: 1; overflow: hidden; position: relative; }
-    svg { width: 100%; height: 100%; }
+    /* ── Header ── */
+    header {
+      flex-shrink: 0; background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 14px; display: flex; align-items: center;
+      gap: 10px; flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 12px; font-weight: 700; color: var(--accent);
+      letter-spacing: .06em; text-transform: uppercase; white-space: nowrap;
+    }
+    .legend { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .li {
+      display: flex; align-items: center; gap: 3px; font-size: 10px; color: var(--text-dim);
+      cursor: pointer; padding: 2px 6px; border-radius: 5px; border: 1px solid transparent;
+      transition: background .1s, border-color .1s, color .1s; user-select: none;
+    }
+    .li:hover { background: var(--surface2); color: var(--text); border-color: var(--border); }
+    .li.on { border-color: currentColor; background: color-mix(in srgb, currentColor 10%, transparent); }
+    .dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
 
-    .sidebar { width: 290px; border-left: 1px solid var(--border); background: var(--surface);
-      overflow-y: auto; padding: 14px; flex-shrink: 0; font-size: 11px; line-height: 1.6; }
-    .sidebar h2 { font-size: 10px; text-transform: uppercase; letter-spacing: .1em; color: var(--dim); margin-bottom: 10px; }
-    .branch-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
-    .branch-tag { font-size: 9px; padding: 1px 6px; border-radius: 10px; font-weight: 600; }
-    .def-msg { color: var(--dim); font-size: 11px; }
+    /* ── Control groups ── */
+    .ctrl-group { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+    .ctrl-sep { width: 1px; height: 18px; background: var(--border); flex-shrink: 0; }
+    .ctrl-label { font-size: 9px; text-transform: uppercase; letter-spacing: .07em;
+      color: var(--text-faint); white-space: nowrap; }
+    .spacer { flex: 1; min-width: 8px; }
+    .btn {
+      background: var(--surface2); color: var(--text-dim); border: 1px solid var(--border);
+      padding: 3px 9px; font-size: 10px; border-radius: 5px; cursor: pointer;
+      font-family: inherit; white-space: nowrap; transition: background .1s, color .1s;
+    }
+    .btn:hover { background: var(--border); color: var(--text); }
+    .btn.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+    .topic-btn {
+      padding: 2px 8px; border-radius: 10px; font-size: 10px; cursor: pointer;
+      font-family: inherit; border: 1.5px solid transparent; transition: all .12s;
+      white-space: nowrap;
+    }
+    .topic-btn:hover { filter: brightness(1.2); }
+    .topic-btn.on { filter: brightness(1.15); }
 
-    #detail h3 { font-size: 12px; font-weight: 700; margin-bottom: 4px; }
-    #detail .stag { display: inline-block; font-size: 9px; letter-spacing: .08em;
-      text-transform: uppercase; padding: 1px 6px; border-radius: 3px; margin-bottom: 6px; }
-    #detail .key { color: var(--dim); font-size: 10px; margin-bottom: 6px; }
-    #detail p { color: var(--dim); font-size: 11px; margin-bottom: 8px; }
-    .dep-section { margin-top: 6px; }
-    .dep-title { font-size: 9px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim); margin-bottom: 3px; }
-    .chip { display: inline-block; background: var(--border); color: var(--text); padding: 1px 6px;
-      border-radius: 3px; font-size: 9px; margin: 2px 2px 2px 0; cursor: pointer; }
-    .chip:hover { background: #30363d; }
+    /* ── Search ── */
+    #search-box {
+      background: var(--surface2); color: var(--text);
+      border: 1px solid var(--border); border-radius: 5px;
+      padding: 3px 8px; font-size: 10px; font-family: inherit;
+      width: 130px; outline: none; transition: border-color .15s;
+    }
+    #search-box:focus { border-color: var(--accent); }
+    #search-box::placeholder { color: var(--text-faint); }
 
+    /* ── Main layout ── */
+    .main { flex: 1; display: flex; overflow: hidden; min-height: 0; }
+    #cw { flex: 1; overflow: hidden; position: relative; background: var(--bg); }
+    svg { width: 100%; height: 100%; display: block; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 300px; flex-shrink: 0; overflow-y: auto;
+      background: var(--surface); border-left: 1px solid var(--border);
+      padding: 14px; font-size: 12px; line-height: 1.65; color: var(--text);
+    }
+    .sidebar h2 {
+      font-size: 10px; text-transform: uppercase; letter-spacing: .1em;
+      color: var(--text-dim); margin-bottom: 10px;
+    }
+    .branch-legend { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .bl {
+      font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px;
+      white-space: nowrap;
+    }
+    .def-msg { color: var(--text-dim); font-size: 11px; line-height: 1.6; }
+
+    /* Paper detail */
+    #detail h3 { font-size: 13px; font-weight: 700; margin-bottom: 5px; color: var(--text); }
+    .stag {
+      display: inline-block; font-size: 9px; letter-spacing: .08em; text-transform: uppercase;
+      padding: 1px 6px; border-radius: 3px; margin-right: 4px; margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .brtag {
+      display: inline-block; font-size: 10px; font-weight: 600;
+      padding: 1px 8px; border-radius: 10px; margin-bottom: 8px;
+    }
+    .bib-key {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      color: var(--text-dim); font-size: 10px; margin-bottom: 8px;
+    }
+    .desc-text { color: var(--text-dim); font-size: 11px; margin-bottom: 10px; line-height: 1.6; }
+    .tags-row { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 10px; }
+    .ptag {
+      font-size: 9px; padding: 1px 6px; border-radius: 8px;
+      font-weight: 600; border: 1px solid;
+    }
+    .dep-section { margin-top: 8px; }
+    .dep-title {
+      font-size: 9px; text-transform: uppercase; letter-spacing: .08em;
+      color: var(--text-faint); margin-bottom: 4px;
+    }
+    .chip {
+      display: inline-block; background: var(--chip-bg); color: var(--chip-text);
+      padding: 2px 7px; border-radius: 4px; font-size: 10px;
+      margin: 2px 3px 2px 0; cursor: pointer; border: 1px solid var(--border);
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      transition: background .1s;
+    }
+    .chip:hover { background: var(--border); }
+
+    /* ── SVG nodes & edges ── */
     .node { cursor: pointer; }
-    .node rect { rx: 4; transition: filter .12s; }
-    .node:hover rect { filter: brightness(1.35); }
-    .node.hi rect { stroke-width: 2.5 !important; filter: brightness(1.4); }
-    .node.dim rect { opacity: .18; }
-    .node.dim text { opacity: .18; }
-    .node text { font-size: 8.5px; font-weight: 700; pointer-events: none;
-      dominant-baseline: middle; text-anchor: middle; fill: #e6edf3; font-family: 'SF Mono', monospace; }
-    .edge { fill: none; stroke: #21262d; stroke-width: 1.1; }
-    .edge.spine { stroke: #30363d; stroke-width: 1.6; }
-    .edge.hi { stroke: var(--accent); stroke-width: 2; }
+    .node rect { transition: filter .12s; }
+    .node:hover rect { filter: brightness(1.4) !important; }
+    .node.hi rect { stroke-width: 2.5 !important; filter: brightness(1.45) !important; }
+    .node.dim rect { opacity: .12; }
+    .node.dim text { opacity: .12; }
+    .node text {
+      font-size: 8.5px; font-weight: 700; pointer-events: none;
+      dominant-baseline: middle; text-anchor: middle;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+    .edge { fill: none; stroke: var(--edge-base); stroke-width: 1.1; }
+    .edge.spine { stroke: var(--edge-spine); stroke-width: 1.6; }
+    .edge.hi { stroke: var(--accent) !important; stroke-width: 2.2 !important; }
+    .edge.topic-hi { stroke-width: 1.8 !important; opacity: .9; }
+
+    /* ── Smooth SVG pan/zoom transition ── */
+    #mg { transition: transform .45s cubic-bezier(.4,0,.2,1); }
+
+    /* ── Tooltip ── */
+    #tooltip {
+      position: fixed; pointer-events: none; z-index: 100;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 7px; padding: 8px 11px; max-width: 260px;
+      box-shadow: var(--shadow); display: none;
+    }
+    #tooltip .tt-title { font-size: 11px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+    #tooltip .tt-desc  { font-size: 10px; color: var(--text-dim); line-height: 1.5; }
   </style>
 </head>
 <body>
 <header>
-  <h1>Cosmochrony &mdash; Dependency Graph</h1>
+  <h1>Cosmochrony &mdash; Paper Graph</h1>
+
   <div class="legend">
-    <div class="li"><div class="dot" style="background:var(--proved-bg);border:1.5px solid var(--proved)"></div>
-      <span style="color:var(--proved)">proved</span></div>
-    <div class="li"><div class="dot" style="background:var(--structural-bg);border:1.5px solid var(--structural)"></div>
-      <span style="color:var(--structural)">structural</span></div>
-    <div class="li"><div class="dot" style="background:var(--heuristic-bg);border:1.5px solid var(--heuristic)"></div>
-      <span style="color:var(--heuristic)">heuristic</span></div>
-    <div class="li"><div class="dot" style="background:var(--open-bg);border:1.5px solid var(--open)"></div>
-      <span style="color:var(--open)">open</span></div>
+    <div class="li" id="li-proved"   style="color:var(--proved)"   onclick="filterStatus('proved')"    ><div class="dot" style="background:var(--proved-bg);border:1.5px solid var(--proved)"></div>proved</div>
+    <div class="li" id="li-struct"   style="color:var(--struct)"   onclick="filterStatus('structural')" ><div class="dot" style="background:var(--struct-bg);border:1.5px solid var(--struct)"></div>structural</div>
+    <div class="li" id="li-heur"     style="color:var(--heur)"     onclick="filterStatus('heuristic')"  ><div class="dot" style="background:var(--heur-bg);border:1.5px solid var(--heur)"></div>heuristic</div>
+    <div class="li" id="li-open"     style="color:var(--open)"     onclick="filterStatus('open')"       ><div class="dot" style="background:var(--open-bg);border:1.5px solid var(--open)"></div>open</div>
   </div>
-  <div class="controls">
-    <button class="btn" id="btnAll" onclick="filterBy('all')" >All</button>
-    <button class="btn" onclick="filterBy('proved')">Proved only</button>
-    <button class="btn" onclick="filterBy('I')">Branch I</button>
-    <button class="btn" onclick="filterBy('II')">Branch II</button>
-    <button class="btn" onclick="filterBy('III')">Branch III</button>
-    <button class="btn" onclick="resetView()">↺ Reset</button>
+
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Branch</span>
+  <div class="ctrl-group">
+    <button class="btn" onclick="filterBranch('I')">I</button>
+    <button class="btn" onclick="filterBranch('II')">II</button>
+    <button class="btn" onclick="filterBranch('III')">III</button>
   </div>
+
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Topic</span>
+  <div class="ctrl-group" id="topic-btns"></div>
+
+  <div class="ctrl-sep"></div>
+  <input id="search-box" type="text" placeholder="Search…" oninput="onSearch(this.value)">
+
+  <div class="ctrl-sep"></div>
+  <button class="btn" onclick="resetAll()">↺ Reset</button>
 </header>
+
+<div id="tooltip"><div class="tt-title"></div><div class="tt-desc"></div></div>
 <div class="main">
   <div id="cw"><svg id="svg"></svg></div>
   <div class="sidebar">
-    <h2>Paper details</h2>
-    <div class="branch-tags">
-      <span class="branch-tag" style="background:#1a3a4a;color:var(--branch1)">■ Branch I: Foundations</span>
-      <span class="branch-tag" style="background:#3a2a05;color:var(--branch2)">■ Branch II: O-series</span>
-      <span class="branch-tag" style="background:#0d2e2a;color:var(--branch3)">■ Branch III: Q + Apps</span>
+    <h2>Navigation</h2>
+    <div class="branch-legend">
+      <span class="bl" style="background:var(--branch1-bg);color:var(--branch1)">■ I: Foundations</span>
+      <span class="bl" style="background:var(--branch2-bg);color:var(--branch2)">■ II: O-series</span>
+      <span class="bl" style="background:var(--branch3-bg);color:var(--branch3)">■ III: Q + Apps</span>
     </div>
-    <div id="def-msg" class="def-msg">Click any node to see details and dependencies.</div>
+    <div id="def-msg" class="def-msg">
+      Click a node to inspect it.<br>
+      Use topic buttons or the search box to highlight thematic clusters.<br>
+      Any selection auto-zooms to the highlighted papers.
+    </div>
     <div id="detail" style="display:none"></div>
   </div>
 </div>
+
 <script>
+  /* ════════════════════════════════════════
+     DATA
+  ════════════════════════════════════════ */
+
+  const TOPICS = [
+    {id:'mass',   label:'Mass',      color:'var(--topic-a)'},
+    {id:'spt',    label:'Spacetime', color:'var(--topic-b)'},
+    {id:'time',   label:'Time',      color:'var(--topic-c)'},
+    {id:'QM',     label:'QM',        color:'var(--topic-d)'},
+    {id:'grav',   label:'Gravity',   color:'var(--topic-e)'},
+    {id:'SM',     label:'SM / Gauge',color:'var(--topic-f)'},
+    {id:'BI',     label:'BI / Flux', color:'var(--topic-g)'},
+    {id:'emer',   label:'Emergence', color:'var(--topic-h)'},
+  ];
+
   const SC = {
-    proved:     {fill:'#0d2e1c', stroke:'#3fb950'},
-    structural: {fill:'#0c1e3a', stroke:'#58a6ff'},
-    heuristic:  {fill:'#2e1f05', stroke:'#e3b341'},
-    open:       {fill:'#2e0a0a', stroke:'#f85149'},
+    proved:     {fill:'var(--proved-bg)',  stroke:'var(--proved)'},
+    structural: {fill:'var(--struct-bg)',  stroke:'var(--struct)'},
+    heuristic:  {fill:'var(--heur-bg)',    stroke:'var(--heur)'},
+    open:       {fill:'var(--open-bg)',    stroke:'var(--open)'},
   };
-  const BRANCHES = {I:'#1a3a4a', II:'#3a2a05', III:'#0d2e2a'};
+  const BRCOL = {I:'var(--branch1)', II:'var(--branch2)', III:'var(--branch3)'};
+  const BRBG  = {I:'var(--branch1-bg)', II:'var(--branch2-bg)', III:'var(--branch3-bg)'};
 
   const papers = [
     {id:'WP',     lbl:'WP',       s:'structural', b:'I',   key:'Cosmochrony',
-      title:'White Paper',
+      tags:['emer','BI','spt','QM'],
+      title:'White Paper (Cosmochrony)',
       desc:'Programme overview; substrate χ; iterated projection U_{t+1}=Π∘σ(U_t); BI constraint; relaxation cascade. Primary narrative reference.'},
     {id:'ENI',    lbl:'ENI',      s:'proved',     b:'I',   key:'Beau2026l',
+      tags:['emer','time'],
       title:'Emergence & Non-Injectivity',
       desc:'No-go theorem (Thm 2.1): genuine emergence ⟺ Π non-injective ⟺ S_Π > 0. Foundational justification for Axiom A2.'},
     {id:'Found',  lbl:'Found',    s:'proved',     b:'I',   key:'Beau2026m',
+      tags:['emer','QM','BI','time'],
       title:'Foundation (Admissible Non-Injective Transitions)',
       desc:'4 axioms A1–A4. Derives Heis₃(ℤ/qℤ) and Weil representation Vρ as theorems (Thm 5.6). Replaces substrate χ and relaxation by pure axiomatic construction.'},
     {id:'Heis',   lbl:'HeisStr',  s:'proved',     b:'I',   key:'Beau2026HeisenbergStructure',
+      tags:['QM','emer'],
       title:'Heisenberg Structure',
       desc:'Detailed proof of Foundation Thm 5.6. Admissible non-factorisability (Axiom A3) forces Heis₃ structure. Uncertainty principle as structural corollary.'},
     {id:'nos',    lbl:'noscale',  s:'proved',     b:'I',   key:'Beau2026j',
+      tags:['BI'],
       title:'No External Scale',
       desc:'Rigidity: any deformation introducing a dimensional parameter independent of c_χ breaks spectral scaling, non-injectivity, or bounded admissibility closure.'},
-
     {id:'BI',     lbl:'BornInfeld',s:'proved',    b:'II',  key:'Beau2026c',
+      tags:['BI','emer'],
       title:'Born–Infeld Geometry',
       desc:'BI action as unique minimal bounded-flux local representation. Derives the universal bound on admissible relational gradients.'},
     {id:'SpA',    lbl:'SpAdm',    s:'proved',     b:'II',  key:'Beau2026a1',
+      tags:['QM','BI'],
       title:'Spectral Admissibility (Q₈)',
       desc:'First tractable instance on the quaternion group Q₈. Derives A^max_n = c_χ/√λ_n in the linearised regime.'},
     {id:'SpCap',  lbl:'SpCap',    s:'open',       b:'II',  key:'Beau2026a2',
+      tags:['QM'],
       title:'Spectral Capacity Functional',
       desc:'Capacity functional C(G,S). Binary-polyhedral maximality conjecture (open): 2I maximises C among finite SU(2) subgroups.'},
     {id:'SpG',    lbl:'SpGram',   s:'proved',     b:'II',  key:'Beau2026a3',
+      tags:['QM'],
       title:'Gram Rigidity (v1.0.1)',
       desc:'Neutral-generator geometry fully encoded in G_st = −½χ_ρ(st). All information about the SU(2) structure is in pairwise characters.'},
     {id:'ThGn',   lbl:'3Gen',     s:'structural', b:'II',  key:'Beau2026a4',
+      tags:['SM','mass'],
       title:'Three Generations',
       desc:'Three-generation structure from ADE stratigraphic levels of binary Cayley graphs.'},
     {id:'SpR',    lbl:'SpRel',    s:'proved',     b:'II',  key:'Beau2026a5',
+      tags:['spt'],
       title:'Spectral Relaxation',
       desc:'Λ_proj ≍ λ₂ for LPS expander families. Entry point for the O-series dynamics on LPS graphs.'},
-
     {id:'O1',     lbl:'O1',       s:'proved',     b:'II',  key:'Beau2026a6',
+      tags:['mass'],
       title:'O1 — Variable-Valence Graphs',
-      desc:'LPS saturation is a fixed-valence artefact. Growing valence along the cascade restores the pre-saturation window. (Note: O2 was never written; O3 path chosen instead.)'},
+      desc:'LPS saturation is a fixed-valence artefact. Growing valence restores the pre-saturation window. (O2 was never written; O3 path was chosen.)'},
     {id:'O3',     lbl:'O3',       s:'structural', b:'II',  key:'Beau2026a7',
-      title:'O3 — Mass Hierarchy Amplification',
+      tags:['mass','SM'],
+      title:'O3 — Mass Hierarchy',
       desc:'First quantitative SM connection: β* ∈ (0.09, 0.13) from charged-lepton mass ratios m_e:m_μ:m_τ.'},
     {id:'O4',     lbl:'O4',       s:'proved',     b:'II',  key:'Beau2026a8',
+      tags:['mass','BI'],
       title:'O4 — Upper Bound β ≤ 1',
       desc:'BI flux + Cheeger isoperimetric inequality ⇒ β ≤ 1.'},
     {id:'O5',     lbl:'O5',       s:'proved',     b:'II',  key:'Beau2026a9',
+      tags:['mass'],
       title:'O5 — Rep-Theoretic Obstruction',
       desc:'Fixed-representation approaches cannot close the β gap (obstruction theorem).'},
     {id:'O6',     lbl:'O6',       s:'proved',     b:'II',  key:'Beau2026a10',
+      tags:['mass'],
       title:'O6 — Matrix Redundancy',
       desc:'Matrix-level dynamic redundancy; structural confinement of cascade exponent β.'},
     {id:'O7',     lbl:'O7',       s:'structural', b:'II',  key:'Beau2026a11',
+      tags:['mass'],
       title:'O7 — Continuum Target',
       desc:'Target reformulated as capacity exponent δ ∈ [7.4, 10.6] on 3-step path fingerprints.'},
     {id:'O8',     lbl:'O8',       s:'proved',     b:'II',  key:'Beau2026a12',
+      tags:['mass'],
       title:'O8 — LPS Geometric Obstruction',
-      desc:'Key obstruction: exponential shell growth |S_n| ∼ p^n on LPS graphs compresses the pre-saturation window to O(log q) BFS steps. Forces Heisenberg transition.'},
-
+      desc:'Exponential shell growth |S_n| ∼ p^n on LPS graphs compresses the pre-saturation window to O(log q) BFS steps. Forces Heisenberg transition.'},
     {id:'O9',     lbl:'O9',       s:'proved',     b:'II',  key:'Beau2026a13',
+      tags:['mass','QM'],
       title:'O9 — Heisenberg Transition',
-      desc:'Key structural shift: Heis₃(ℤ/qℤ) with |B_n| ∼ n⁴ replaces LPS. Provides Θ(q) usable BFS steps. Most important transition of the O-series.'},
+      desc:'Key structural shift: Heis₃(ℤ/qℤ) with |B_n| ∼ n⁴ replaces LPS. Θ(q) usable BFS steps.'},
     {id:'O10',    lbl:'O10',      s:'proved',     b:'II',  key:'Beau2026a14',
+      tags:['mass'],
       title:'O10 — Large-q Computation',
-      desc:'First computation at q=101. Confirms n⁴ growth; identifies TensorSketch representation obstruction at large q.'},
+      desc:'First computation at q=101. Confirms n⁴ growth; identifies TensorSketch representation obstruction.'},
     {id:'O11',    lbl:'O11',      s:'structural', b:'II',  key:'Beau2026a15',
+      tags:['mass'],
       title:'O11 — Fourier-Character Proxy',
       desc:'Bidimensional Fourier-character proxy for Weil-block decomposition overcomes TensorSketch obstruction.'},
     {id:'O12',    lbl:'O12',      s:'proved',     b:'II',  key:'Beau2026a16',
+      tags:['mass'],
       title:'O12 — Exact Weil Blocks',
-      desc:'Exact Weil-block fingerprints resolve the final obstruction. δ̂_exact ≈ 4.3–4.8 for q ∈ {29,…,211}.'},
+      desc:'Exact Weil-block fingerprints. δ̂_exact ≈ 4.3–4.8 for q ∈ {29,…,211}.'},
     {id:'O13',    lbl:'O13',      s:'proved',     b:'II',  key:'Beau2026a17',
+      tags:['mass'],
       title:'O13 — Extended Prime Range',
-      desc:'δ̂(q) decreases monotonically 4.80 → 3.59 as q grows. Finite-size hypothesis definitively refuted.'},
+      desc:'δ̂(q): 4.80 → 3.59 as q grows. Finite-size hypothesis definitively refuted.'},
     {id:'O14',    lbl:'O14',      s:'structural', b:'II',  key:'Beau2026a18',
+      tags:['mass'],
       title:'O14 — Observable-Class Correction',
-      desc:'Corrects the δ ↦ β* relation by accounting for block normalisation and central-phase contribution.'},
+      desc:'Corrects the δ ↦ β* relation via block normalisation and central-phase contribution.'},
     {id:'O15',    lbl:'O15',      s:'proved',     b:'II',  key:'Beau2026a19',
+      tags:['mass'],
       title:'O15 — Block-Level No-Go',
-      desc:'Corollary 4.8: no reweighting of individual block data can raise δ̂_exact to δ ∈ [7.4, 10.6]. Forces the pair observable.'},
-
+      desc:'Corollary 4.8: no reweighting of individual blocks raises δ̂ to [7.4, 10.6]. Forces the pair observable.'},
     {id:'O16',    lbl:'O16',      s:'structural', b:'II',  key:'Beau2026a20',
+      tags:['mass'],
       title:'O16 — Pair Observable',
-      desc:'Identifies σ_pair(n) = σ_c(n)·σ_{q−c}(n) on conjugate pairs {c, q−c}. Exponent doubling δ_pair = 2δ_c ≈ 7.44 resolves the gap.'},
+      desc:'σ_pair = σ_c·σ_{q−c} on conjugate pairs {c, q−c}. Exponent doubling δ_pair = 2δ_c ≈ 7.44 resolves the gap.'},
     {id:'O17',    lbl:'O17',      s:'proved',     b:'II',  key:'Beau2026a21',
+      tags:['mass','QM'],
       title:'O17 — Structural Derivation of Pair',
-      desc:'ρ_{q−c} = ρ̄_c is forced by fibre admissibility; the pair structure is derived, not postulated.'},
+      desc:'ρ_{q−c} = ρ̄_c is forced by fibre admissibility; pair structure is derived, not postulated.'},
     {id:'O18',    lbl:'O18',      s:'proved',     b:'II',  key:'Beau2026a22',
+      tags:['mass','BI','QM'],
       title:'O18 — BI Parity Involution',
       desc:'Thm 4.1: BI parity is the only global symmetry of S_BI[χ]. Minimal fibre condition: fibre = {χ, −χ}. Cited by Q1, Q2.'},
     {id:'O19',    lbl:'O19',      s:'proved',     b:'II',  key:'Beau2026a23',
+      tags:['mass'],
       title:'O19 — Canonical Normalisation',
-      desc:'Residual amplitude factor r(c,q) ∈ {1,2,3,4} does not affect δ_pair. Observable is pipeline-independent.'},
+      desc:'r(c,q) ∈ {1,2,3,4} does not affect δ_pair. Observable is pipeline-independent.'},
     {id:'O20',    lbl:'O20',      s:'structural', b:'II',  key:'Beau2026a24',
+      tags:['mass'],
       title:'O20 — Persistence Criterion',
-      desc:'Dynamical selection criterion for the physical sub-spectrum via projective persistence of admissible modes.'},
+      desc:'Dynamical selection of admissible modes via projective persistence.'},
     {id:'O21',    lbl:'O21',      s:'structural', b:'II',  key:'Beau2026a25',
+      tags:['mass'],
       title:'O21 — Shell Saturation',
-      desc:'Observable saturation rank n₃^obs via Σ_c(n₃) = 3. Constructs the transfer δ_pair → β*.'},
+      desc:'Observable rank n₃^obs via Σ_c(n₃) = 3. Transfer δ_pair → β*.'},
     {id:'O22',    lbl:'O22',      s:'proved',     b:'II',  key:'Beau2026a26',
+      tags:['mass','BI'],
       title:'O22 — Projection Locking',
-      desc:'Thm 3.2: BI projection locking forces n₃^obs to align with a BFS shell.'},
+      desc:'Thm 3.2: BI projection locking forces n₃^obs onto a BFS shell.'},
     {id:'O23',    lbl:'O23',      s:'proved',     b:'II',  key:'Beau2026a27',
+      tags:['mass','QM'],
       title:'O23 — Quaternionic Minimality',
-      desc:'Σ_c(n₃) = 3 follows from quaternionic maximality of the admissible neutral generating set.'},
+      desc:'Σ_c(n₃) = 3 from quaternionic maximality of the admissible neutral generating set.'},
     {id:'O24',    lbl:'O24',      s:'proved',     b:'II',  key:'Beau2026a28',
+      tags:['mass'],
       title:'O24 — Observable Rank Rigidity',
-      desc:'Verticality Lemma: ker Π is free, Im Π is constrained. Closes the unconditional transfer chain c_χ → δ_pair → β* ≈ 0.126 (Cor. 4.2).'},
-
+      desc:'Verticality Lemma. Unconditional transfer c_χ → δ_pair → β* ≈ 0.126 (Cor. 4.2).'},
     {id:'O25',    lbl:'O25',      s:'heuristic',  b:'II',  key:'Beau2026a29',
+      tags:['mass'],
       title:'O25 — Numerical Campaign',
-      desc:'Systematic δ_pair across all (q−1)/2 conjugate pairs. q=29→8.89±0.54, q=61→9.98±0.26, q=101→9.55±0.16. Runs for {151,211,307,401} in progress.'},
+      desc:'Systematic δ_pair across all (q−1)/2 pairs. q=29→8.89±0.54, q=61→9.98±0.26, q=101→9.55±0.16. Runs in progress for q∈{151,211,307,401}.'},
     {id:'O26',    lbl:'O26',      s:'structural', b:'II',  key:'Beau2026a30',
+      tags:['mass','QM'],
       title:'O26 — Quadratic Completion',
-      desc:'Dictionary: conjugate Weil blocks ↔ rank-1 matrices in M₂(ℂ). Connects Heis₃ fibre to 2I ⊂ SU(2).'},
+      desc:'Dictionary: Weil blocks ↔ rank-1 matrices in M₂(ℂ). Connects Heis₃ fibre to 2I ⊂ SU(2).'},
     {id:'O27',    lbl:'O27',      s:'proved',     b:'II',  key:'Beau2026a31',
+      tags:['mass','QM'],
       title:'O27 — Quaternionic Rigidity',
-      desc:'Every admissible Φ_{q,ρ} satisfying involution equivariance + quadratic compatibility + naturality factors through su(2).'},
+      desc:'Every admissible Φ_{q,ρ} satisfying three structural constraints factors through su(2).'},
     {id:'PTO',    lbl:'PTO',      s:'structural', b:'II',  key:'Beau2026pto',
+      tags:['time'],
       title:'Projective Temporal Ordering',
-      desc:'I(n) = σ_pair(0) − σ_pair(n) is strictly non-decreasing, providing the first clean numerical result on the notion of time in Cosmochrony. Confirmed for q ∈ {29,61,101,151}.'},
-
+      desc:'I(n) = σ_pair(0)−σ_pair(n) is strictly non-decreasing: first clean numerical result on the notion of time. Confirmed for q∈{29,61,101,151}.'},
     {id:'Q1',     lbl:'Q1',       s:'proved',     b:'III', key:'Beau2026q1',
-      title:'Q1 — Phase Coherence from Admissibility',
-      desc:'Thm 2.7: admissible transitions preserve BI indiscernibility of conjugate Weil blocks ρ_c and ρ_{q−c}. Derives singlet correlator E(â,b̂)=−â·b̂ and Tsirelson bound. Depends on O18, O22, O23.'},
+      tags:['QM','emer'],
+      title:'Q1 — Phase Coherence',
+      desc:'Thm 2.7: admissible transitions preserve BI indiscernibility of conjugate Weil blocks. Derives singlet correlator E(â,b̂)=−â·b̂ and Tsirelson bound.'},
     {id:'Q2',     lbl:'Q2',       s:'proved',     b:'III', key:'Beau2026q2',
-      title:'Q2 — Quantum Structure beyond Spin-½',
-      desc:'Spin-3/2 quantum structure on 2I; co-admissibility with spin-½. SU(2) as stable admissibility fixed point. Born rule and Tsirelson bound extend without new postulates.'},
+      tags:['QM','SM'],
+      title:'Q2 — Quantum beyond Spin-½',
+      desc:'Spin-3/2 structure on 2I; SU(2) as stable admissibility fixed point. Born rule and Tsirelson bound derived without new postulates.'},
     {id:'Q5a',    lbl:'Q5a',      s:'structural', b:'III', key:'Beau2026q5a',
+      tags:['spt','QM'],
       title:'Q5a — Large-q Operator Limit',
-      desc:'Mosco convergence (conditional): admissibility forms E_q on Heis₃(ℤ/qℤ) → L_Π = −A∂²_x on L²(ℝ).'},
+      desc:'Mosco convergence (conditional): E_q → L_Π = −A∂²_x on L²(ℝ).'},
     {id:'Q5b',    lbl:'Q5b',      s:'structural', b:'III', key:'Beau2026q5b',
+      tags:['spt','time'],
       title:'Q5b — 4D Lorentzian Geometry',
-      desc:'BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime (conditional on [H-lift]). Temporal direction = BFS depth; spatial = centre-free ℝ².'},
+      desc:'BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime (conditional on [H-lift]). Temporal direction = BFS depth.'},
     {id:'Q6a',    lbl:'Q6a',      s:'structural', b:'III', key:'Beau2026q6a',
+      tags:['SM','spt'],
       title:'Q6a — Gauge Structure',
-      desc:'Gauge charges as projection-fibre invariants. U(1) and SU(2) as admissibility fixed points. SU(3)×SU(2)×U(1) proposed as composite (SU(3): open).'},
+      desc:'Gauge charges as projection-fibre invariants. U(1) and SU(2) as admissibility fixed points. SU(3)×SU(2)×U(1) proposed as composite.'},
     {id:'Q6b',    lbl:'Q6b',      s:'structural', b:'III', key:'Beau2026q6b',
-      title:'Q6b — Effective Spacetime Geometry',
+      tags:['spt'],
+      title:'Q6b — Effective Spacetime',
       desc:'Effective Lorentzian geometry from admissibility filter Π_q. Inherits Q5a–Q5b hypotheses.'},
-
     {id:'Sp2',    lbl:'Spec2',    s:'structural', b:'III', key:'Beau2026a',
+      tags:['spt'],
       title:'Spectral2 — Relational Spacetime',
-      desc:'Operational metric distances from graph Laplacians; spacetime from correlations alone, without background manifold.'},
+      desc:'Operational metric distances from graph Laplacians, without background manifold.'},
     {id:'Grav',   lbl:'Gravity',  s:'proved',     b:'III', key:'Beau2026h',
+      tags:['grav','spt'],
       title:'Gravity — IR Einstein Response',
-      desc:'G_μν = 8πG_N T^(Π)_μν derived from δS_Π[g]/δg via heat-kernel and zeta regularisation (proved at leading IR order).'},
+      desc:'G_μν = 8πG_N T^(Π)_μν from δS_Π[g]/δg via heat-kernel and zeta regularisation (proved at leading IR order).'},
     {id:'Thm',    lbl:'Thermo',   s:'structural', b:'III', key:'Beau2026Thermodynamics',
+      tags:['grav','spt','time'],
       title:'Thermodynamics — Spectral First Law',
-      desc:'Local spectral first law δS_Π = ∫β(x)⁻¹ δE_Π(x). Einstein equation as spectral equilibrium condition. Lorentzian extension: open.'},
+      desc:'Local spectral first law δS_Π = ∫β(x)⁻¹ δE_Π(x). Einstein equation as spectral equilibrium condition.'},
     {id:'Lor',    lbl:'Lorentz',  s:'proved',     b:'III', key:'Beau2026i',
+      tags:['grav','spt'],
       title:'Lorentz — Gravitational Waves',
-      desc:'Lorentzian completion of spectral entropy framework. Causal propagation and GW propagation from hyperbolic spectral action.'},
+      desc:'Lorentzian completion of spectral action. Causal propagation and GW propagation from hyperbolic spectral action.'},
     {id:'TopI',   lbl:'TopInv',   s:'proved',     b:'III', key:'Beau2026k',
+      tags:['SM','BI'],
       title:'Topological Invariants',
-      desc:'Charge quantisation (π₁≅ℤ) and absence of monopoles from Hopf fibration S¹↪S³→S². Projective chirality. π₂(C_eff)=0 beyond canonical model: open.'},
+      desc:'Charge quantisation (π₁≅ℤ), no monopoles, chirality from Hopf fibration S¹↪S³→S². π₂(C_eff)=0: open.'},
     {id:'SMcm',   lbl:'SMcm',     s:'structural', b:'III', key:'Beau2026e',
+      tags:['SM','mass','BI'],
       title:'Charge, Mass, Inertia',
       desc:'Mass and electric charge as BI-saturated responses of the relational gradient. Baryon-to-photon ratio η: open.'},
     {id:'Bell',   lbl:'Bell',     s:'proved',     b:'III', key:'Beau2026b',
+      tags:['QM','emer'],
       title:'Bell — Non-Injective Factorisation',
       desc:'Bell violations from non-injectivity alone, without nonlocality or hidden variables.'},
     {id:'Schw',   lbl:'SchLamb',  s:'structural', b:'III', key:'Beau2026f',
+      tags:['QM','SM'],
       title:'Schwinger & Lamb Shift',
-      desc:'Fine-structure constant α as projective invariant. Lamb shift and Schwinger g−2 rederived in pre-geometric framework.'},
+      desc:'Fine-structure constant α as projective invariant. Lamb shift and Schwinger g−2 in pre-geometric framework.'},
     {id:'Cosm',   lbl:'Cosmol',   s:'structural', b:'III', key:'Beau2026d',
+      tags:['spt','SM'],
       title:'Cosmology — Rotation Curves & Hubble',
-      desc:'Flat galaxy rotation curves + Hubble tension from a common effective mechanism. No dark matter or modified gravity.'},
+      desc:'Flat rotation curves and Hubble tension from a common effective mechanism. No dark matter or modified gravity.'},
     {id:'Supra',  lbl:'Supra',    s:'structural', b:'III', key:'Beau2026g',
+      tags:[],
       title:'Superconductivity',
       desc:'Projective phase locking as structural origin of superconducting coherence (BCS → cuprates → nickelates).'},
   ];
 
   const edges = [
-    {f:'WP',  t:'ENI', sp:true}, {f:'ENI', t:'Found', sp:true}, {f:'Found',t:'Heis', sp:true},
-    {f:'Found',t:'nos'},
-    {f:'WP',  t:'BI'},  {f:'BI',  t:'SpA'},    {f:'SpA',  t:'SpCap'}, {f:'SpCap',t:'SpG'},
-    {f:'SpG', t:'ThGn'},{f:'SpA', t:'SpR', sp:true},
-    {f:'SpR', t:'O1', sp:true}, {f:'O1',t:'O3'}, {f:'O3',t:'O4'}, {f:'O4',t:'O5'},
-    {f:'O5',t:'O6'}, {f:'O6',t:'O7'}, {f:'O7',t:'O8', sp:true},
-    {f:'O8', t:'O9', sp:true}, {f:'O9',t:'O10'}, {f:'O10',t:'O11'}, {f:'O11',t:'O12',sp:true},
-    {f:'O12',t:'O13'}, {f:'O13',t:'O14'}, {f:'O14',t:'O15',sp:true},
-    {f:'O15',t:'O16',sp:true}, {f:'O16',t:'O17'}, {f:'O17',t:'O18',sp:true},
-    {f:'O18',t:'O19'}, {f:'O19',t:'O20'}, {f:'O20',t:'O21'}, {f:'O21',t:'O22'},
-    {f:'O22',t:'O23'}, {f:'O23',t:'O24',sp:true},
-    {f:'O24',t:'O25',sp:true}, {f:'O24',t:'O26'}, {f:'O26',t:'O27'}, {f:'O24',t:'PTO'},
-    {f:'Found',t:'Q1',sp:true}, {f:'O18',t:'Q1'}, {f:'O22',t:'Q1'}, {f:'O23',t:'Q1'},
-    {f:'Q1',t:'Q2'}, {f:'Q2',t:'Q5a'}, {f:'Q5a',t:'Q5b',sp:true}, {f:'Q5b',t:'Q6a'}, {f:'Q6a',t:'Q6b'},
-    {f:'WP', t:'Sp2'}, {f:'Sp2',t:'Grav',sp:true}, {f:'Grav',t:'Thm'}, {f:'Thm',t:'Lor'},
-    {f:'Found',t:'TopI'}, {f:'BI',t:'SMcm'}, {f:'Found',t:'Bell'}, {f:'ENI',t:'Bell'},
-    {f:'Found',t:'Schw'}, {f:'BI',t:'Cosm'}, {f:'Found',t:'Supra'},
+    {f:'WP', t:'ENI',sp:1},{f:'ENI',t:'Found',sp:1},{f:'Found',t:'Heis',sp:1},{f:'Found',t:'nos'},
+    {f:'WP', t:'BI'},{f:'BI',t:'SpA'},{f:'SpA',t:'SpCap'},{f:'SpCap',t:'SpG'},{f:'SpG',t:'ThGn'},
+    {f:'SpA',t:'SpR',sp:1},
+    {f:'SpR',t:'O1',sp:1},{f:'O1',t:'O3'},{f:'O3',t:'O4'},{f:'O4',t:'O5'},{f:'O5',t:'O6'},
+    {f:'O6',t:'O7'},{f:'O7',t:'O8',sp:1},
+    {f:'O8',t:'O9',sp:1},{f:'O9',t:'O10'},{f:'O10',t:'O11'},{f:'O11',t:'O12',sp:1},
+    {f:'O12',t:'O13'},{f:'O13',t:'O14'},{f:'O14',t:'O15',sp:1},
+    {f:'O15',t:'O16',sp:1},{f:'O16',t:'O17'},{f:'O17',t:'O18',sp:1},{f:'O18',t:'O19'},
+    {f:'O19',t:'O20'},{f:'O20',t:'O21'},{f:'O21',t:'O22'},{f:'O22',t:'O23'},
+    {f:'O23',t:'O24',sp:1},
+    {f:'O24',t:'O25',sp:1},{f:'O24',t:'O26'},{f:'O26',t:'O27'},{f:'O24',t:'PTO'},
+    {f:'Found',t:'Q1',sp:1},{f:'O18',t:'Q1'},{f:'O22',t:'Q1'},{f:'O23',t:'Q1'},
+    {f:'Q1',t:'Q2'},{f:'Q2',t:'Q5a'},{f:'Q5a',t:'Q5b',sp:1},{f:'Q5b',t:'Q6a'},{f:'Q6a',t:'Q6b'},
+    {f:'WP',t:'Sp2'},{f:'Sp2',t:'Grav',sp:1},{f:'Grav',t:'Thm'},{f:'Thm',t:'Lor'},
+    {f:'Found',t:'TopI'},{f:'BI',t:'SMcm'},{f:'Found',t:'Bell'},{f:'ENI',t:'Bell'},
+    {f:'Found',t:'Schw'},{f:'BI',t:'Cosm'},{f:'Found',t:'Supra'},
   ];
 
-  // Layout: columns (x) and rows (y). Unit = 85x55
-  const L = {};
-  const X=85, Y=58;
-  // Row 0: Branch I foundations
-  L.WP={x:0,y:0}; L.ENI={x:X,y:0}; L.Found={x:2*X,y:0}; L.Heis={x:3*X,y:0}; L.nos={x:4*X,y:0};
-  // Row 1: SU(2) precursors
-  L.BI={x:0,y:Y}; L.SpA={x:X,y:Y}; L.SpCap={x:2*X,y:Y}; L.SpG={x:3*X,y:Y}; L.ThGn={x:4*X,y:Y};
-  L.SpR={x:X,y:2*Y};
-  // Rows 3-4: LPS phase
-  L.O1={x:0,y:3*Y}; L.O3={x:X,y:3*Y}; L.O4={x:2*X,y:3*Y}; L.O5={x:3*X,y:3*Y};
-  L.O6={x:4*X,y:3*Y}; L.O7={x:5*X,y:3*Y}; L.O8={x:6*X,y:3*Y};
-  // Row 4: Heisenberg phase
-  L.O9={x:0,y:4*Y}; L.O10={x:X,y:4*Y}; L.O11={x:2*X,y:4*Y}; L.O12={x:3*X,y:4*Y};
-  L.O13={x:4*X,y:4*Y}; L.O14={x:5*X,y:4*Y}; L.O15={x:6*X,y:4*Y};
-  // Row 5: Pair observable
-  L.O16={x:0,y:5*Y}; L.O17={x:X,y:5*Y}; L.O18={x:2*X,y:5*Y}; L.O19={x:3*X,y:5*Y};
-  L.O20={x:4*X,y:5*Y}; L.O21={x:5*X,y:5*Y}; L.O22={x:6*X,y:5*Y}; L.O23={x:7*X,y:5*Y}; L.O24={x:8*X,y:5*Y};
-  // Row 6: Validation
-  L.O25={x:5*X,y:6*Y}; L.O26={x:6*X,y:6*Y}; L.O27={x:7*X,y:6*Y}; L.PTO={x:8*X,y:6*Y};
-  // Q-series (right column, rows 3-8)
-  L.Q1={x:10*X,y:3*Y}; L.Q2={x:10*X,y:4*Y}; L.Q5a={x:10*X,y:5*Y}; L.Q5b={x:10*X,y:6*Y};
-  L.Q6a={x:10*X,y:7*Y}; L.Q6b={x:10*X,y:8*Y};
-  // Gravity track (left column)
-  L.Sp2={x:-X,y:4*Y}; L.Grav={x:-X,y:5*Y}; L.Thm={x:-X,y:6*Y}; L.Lor={x:-X,y:7*Y};
-  // Applications (row 8)
-  L.TopI={x:0,y:8*Y}; L.SMcm={x:X,y:8*Y}; L.Bell={x:2*X,y:8*Y}; L.Schw={x:3*X,y:8*Y};
-  L.Cosm={x:4*X,y:8*Y}; L.Supra={x:5*X,y:8*Y};
-
   const NW=72, NH=22;
+  const X=85, Y=58;
+
+  /* Layout */
+  const L = {
+    WP:{x:0,y:0}, ENI:{x:X,y:0}, Found:{x:2*X,y:0}, Heis:{x:3*X,y:0}, nos:{x:4*X,y:0},
+    BI:{x:0,y:Y}, SpA:{x:X,y:Y}, SpCap:{x:2*X,y:Y}, SpG:{x:3*X,y:Y}, ThGn:{x:4*X,y:Y},
+    SpR:{x:X,y:2*Y},
+    O1:{x:0,y:3*Y}, O3:{x:X,y:3*Y}, O4:{x:2*X,y:3*Y}, O5:{x:3*X,y:3*Y},
+    O6:{x:4*X,y:3*Y}, O7:{x:5*X,y:3*Y}, O8:{x:6*X,y:3*Y},
+    O9:{x:0,y:4*Y}, O10:{x:X,y:4*Y}, O11:{x:2*X,y:4*Y}, O12:{x:3*X,y:4*Y},
+    O13:{x:4*X,y:4*Y}, O14:{x:5*X,y:4*Y}, O15:{x:6*X,y:4*Y},
+    O16:{x:0,y:5*Y}, O17:{x:X,y:5*Y}, O18:{x:2*X,y:5*Y}, O19:{x:3*X,y:5*Y},
+    O20:{x:4*X,y:5*Y}, O21:{x:5*X,y:5*Y}, O22:{x:6*X,y:5*Y}, O23:{x:7*X,y:5*Y}, O24:{x:8*X,y:5*Y},
+    O25:{x:5*X,y:6*Y}, O26:{x:6*X,y:6*Y}, O27:{x:7*X,y:6*Y}, PTO:{x:8*X,y:6*Y},
+    Q1:{x:10*X,y:3*Y}, Q2:{x:10*X,y:4*Y}, Q5a:{x:10*X,y:5*Y},
+    Q5b:{x:10*X,y:6*Y}, Q6a:{x:10*X,y:7*Y}, Q6b:{x:10*X,y:8*Y},
+    Sp2:{x:-X,y:4*Y}, Grav:{x:-X,y:5*Y}, Thm:{x:-X,y:6*Y}, Lor:{x:-X,y:7*Y},
+    TopI:{x:0,y:8*Y}, SMcm:{x:X,y:8*Y}, Bell:{x:2*X,y:8*Y}, Schw:{x:3*X,y:8*Y},
+    Cosm:{x:4*X,y:8*Y}, Supra:{x:5*X,y:8*Y},
+  };
+
+  /* Dependency maps */
   const depMap={}, rdepMap={};
   papers.forEach(p=>{depMap[p.id]=[];rdepMap[p.id]=[];});
   edges.forEach(e=>{depMap[e.t].push(e.f);rdepMap[e.f].push(e.t);});
 
-  let sel=null, tf={x:40,y:30,s:1}, drag=false, ds=null, ts=null;
+  /* ════════════════════════════════════════
+     STATE
+  ════════════════════════════════════════ */
+  let tf = {x:0, y:0, s:1};
+  let activeTopic = null;
+  let activeSearch = '';
 
+  /* ════════════════════════════════════════
+     BUILD TOPIC BUTTONS
+  ════════════════════════════════════════ */
+  (function(){
+    const wrap = document.getElementById('topic-btns');
+    TOPICS.forEach(t=>{
+      const btn = document.createElement('button');
+      btn.className = 'topic-btn';
+      btn.dataset.tid = t.id;
+      btn.textContent = t.label;
+      btn.style.cssText = `color:${t.color};background:color-mix(in srgb,${t.color} 12%,transparent);border-color:${t.color}40`;
+      btn.addEventListener('click', ()=>toggleTopic(t.id));
+      wrap.appendChild(btn);
+    });
+  })();
+
+  /* ════════════════════════════════════════
+     BUILD SVG
+  ════════════════════════════════════════ */
   function buildSVG(){
-    const svg=document.getElementById('svg'); svg.innerHTML='';
-    const ns='http://www.w3.org/2000/svg';
-    const defs=document.createElementNS(ns,'defs');
-    function mk(id,col){
-      const m=document.createElementNS(ns,'marker');
+    const svg = document.getElementById('svg');
+    svg.innerHTML = '';
+    const ns = 'http://www.w3.org/2000/svg';
+
+    /* markers */
+    const defs = document.createElementNS(ns,'defs');
+    function mk(id, color){
+      const m = document.createElementNS(ns,'marker');
       m.setAttribute('id',id); m.setAttribute('markerWidth','7'); m.setAttribute('markerHeight','7');
       m.setAttribute('refX','6'); m.setAttribute('refY','3'); m.setAttribute('orient','auto');
-      const p=document.createElementNS(ns,'path'); p.setAttribute('d','M 0 0 L 7 3 L 0 6 z');
-      p.setAttribute('fill',col); m.appendChild(p); defs.appendChild(m);
+      const p = document.createElementNS(ns,'path');
+      p.setAttribute('d','M 0 0 L 7 3 L 0 6 z'); p.setAttribute('fill',color);
+      m.appendChild(p); defs.appendChild(m);
     }
-    mk('arr','#21262d'); mk('arr-sp','#30363d'); mk('arr-hi','#bc8cff');
+    mk('arr',   '#3a4560');
+    mk('arr-sp','#4a5580');
+    mk('arr-hi','#bc8cff');
+    TOPICS.forEach(t=> mk('arr-t-'+t.id, t.color));
     svg.appendChild(defs);
-    const g=document.createElementNS(ns,'g'); g.id='mg';
-    g.setAttribute('transform',`translate(${tf.x},${tf.y}) scale(${tf.s})`);
-    svg.appendChild(g);
 
-    // Branch backgrounds
-    const bg=document.createElementNS(ns,'g'); bg.id='bgr'; g.appendChild(bg);
-    function rect(x,y,w,h,col,label){
-      const r=document.createElementNS(ns,'rect');
-      r.setAttribute('x',x-6); r.setAttribute('y',y-6); r.setAttribute('width',w+12); r.setAttribute('height',h+12);
-      r.setAttribute('rx',8); r.setAttribute('fill',col); r.setAttribute('opacity','0.08');
-      bg.appendChild(r);
-      const t=document.createElementNS(ns,'text');
-      t.setAttribute('x',x-2); t.setAttribute('y',y-10);
-      t.setAttribute('font-size','9'); t.setAttribute('font-family','SF Mono, monospace');
-      t.setAttribute('font-weight','700'); t.setAttribute('fill',col); t.setAttribute('opacity','0.7');
-      t.textContent=label; bg.appendChild(t);
+    const g = document.createElementNS(ns,'g'); g.id='mg'; svg.appendChild(g);
+
+    /* branch backgrounds */
+    const bgG = document.createElementNS(ns,'g'); g.appendChild(bgG);
+    function bgRect(x,y,w,h,varCol,label){
+      const rr = document.createElementNS(ns,'rect');
+      rr.setAttribute('x',x-6); rr.setAttribute('y',y-6);
+      rr.setAttribute('width',w+12); rr.setAttribute('height',h+12);
+      rr.setAttribute('rx',8);
+      rr.setAttribute('class','br-bg');
+      rr.setAttribute('fill',varCol); rr.setAttribute('opacity','0.07');
+      bgG.appendChild(rr);
+      if(label){
+        const t = document.createElementNS(ns,'text');
+        t.setAttribute('x',x-2); t.setAttribute('y',y-11);
+        t.setAttribute('font-size','9'); t.setAttribute('font-weight','700');
+        t.setAttribute('fill',varCol); t.setAttribute('opacity','0.65');
+        t.setAttribute('font-family','system-ui,sans-serif');
+        t.textContent = label; bgG.appendChild(t);
+      }
     }
-    rect(-X,0, 5*X+NW, Y+NH, '#a5d6ff','Branch I: Axiomatic Foundations');
-    rect(-X,Y, 9*X+NW, 5*Y+NH, '#f9a825','Branch II: Spectral Admissibility Sub-Programme (O-series)');
-    rect(10*X-6, 3*Y-6, NW+12, 5*Y+NH+12, '#80cbc4','Branch III: Q-series');
-    rect(-X-6, 4*Y-6, NW+12, 4*Y+NH+12, '#80cbc4','');
+    bgRect(-X, 0, 5*X+NW, Y+NH, 'var(--branch1)', 'Branch I: Foundations');
+    bgRect(-X, Y, 9*X+NW, 5*Y+NH, 'var(--branch2)', 'Branch II: O-series');
+    bgRect(10*X-6, 3*Y-6, NW+12, 5*Y+NH+12, 'var(--branch3)', 'Branch III: Q');
+    bgRect(-X-6, 4*Y-6, NW+12, 4*Y+NH+12, 'var(--branch3)', '');
 
-    // Edges
-    const eg=document.createElementNS(ns,'g'); eg.id='eg'; g.appendChild(eg);
+    /* edges */
+    const eG = document.createElementNS(ns,'g'); eG.id='eg'; g.appendChild(eG);
     edges.forEach(e=>{
       const fl=L[e.f], tl=L[e.t]; if(!fl||!tl) return;
       const x1=fl.x+NW/2, y1=fl.y+NH/2, x2=tl.x+NW/2, y2=tl.y+NH/2;
-      const el=document.createElementNS(ns,'path');
+      const el = document.createElementNS(ns,'path');
       const dx=x2-x1, dy=y2-y1;
-      el.setAttribute('d',`M ${x1} ${y1} C ${x1+dx*.25} ${y1+dy*.1}, ${x2-dx*.25} ${y2-dy*.1}, ${x2} ${y2}`);
+      el.setAttribute('d',`M${x1} ${y1} C${x1+dx*.25} ${y1+dy*.1},${x2-dx*.25} ${y2-dy*.1},${x2} ${y2}`);
       el.setAttribute('class', e.sp ? 'edge spine' : 'edge');
       el.setAttribute('marker-end', e.sp ? 'url(#arr-sp)' : 'url(#arr)');
       el.setAttribute('data-f',e.f); el.setAttribute('data-t',e.t);
-      eg.appendChild(el);
+      eG.appendChild(el);
     });
 
-    // Nodes
-    const ng=document.createElementNS(ns,'g'); ng.id='ng'; g.appendChild(ng);
+    /* nodes */
+    const nG = document.createElementNS(ns,'g'); nG.id='ng'; g.appendChild(nG);
     papers.forEach(p=>{
       const pos=L[p.id]; if(!pos) return;
-      const c=SC[p.s]||SC.structural;
-      const g2=document.createElementNS(ns,'g');
+      const c = SC[p.s]||SC.structural;
+      const g2 = document.createElementNS(ns,'g');
       g2.setAttribute('class','node'); g2.setAttribute('data-id',p.id);
       g2.setAttribute('transform',`translate(${pos.x},${pos.y})`);
-      const r=document.createElementNS(ns,'rect');
-      r.setAttribute('width',NW); r.setAttribute('height',NH);
-      r.setAttribute('rx',4); r.setAttribute('fill',c.fill);
-      r.setAttribute('stroke',c.stroke); r.setAttribute('stroke-width','1.5');
+      const r = document.createElementNS(ns,'rect');
+      r.setAttribute('width',NW); r.setAttribute('height',NH); r.setAttribute('rx',4);
+      r.setAttribute('fill', c.fill); r.setAttribute('stroke', c.stroke);
+      r.setAttribute('stroke-width','1.5');
       g2.appendChild(r);
-      const t=document.createElementNS(ns,'text');
+      const t = document.createElementNS(ns,'text');
       t.setAttribute('x',NW/2); t.setAttribute('y',NH/2);
-      t.textContent=p.lbl; g2.appendChild(t);
+      t.setAttribute('fill','var(--node-text)');
+      t.textContent = p.lbl; g2.appendChild(t);
       g2.addEventListener('click',()=>selectNode(p.id));
-      ng.appendChild(g2);
+      g2.addEventListener('mouseenter', ev=>showTooltip(p, ev));
+      g2.addEventListener('mousemove',  ev=>moveTooltip(ev));
+      g2.addEventListener('mouseleave', hideTooltip);
+      nG.appendChild(g2);
     });
+
+    /* initial fit */
+    requestAnimationFrame(()=> fitAll(false));
   }
 
+  /* ════════════════════════════════════════
+     VIEW / ZOOM
+  ════════════════════════════════════════ */
+  function applyTf(animate=true){
+    const g = document.getElementById('mg'); if(!g) return;
+    g.style.transition = animate ? 'transform .45s cubic-bezier(.4,0,.2,1)' : 'none';
+    g.setAttribute('transform', `translate(${tf.x},${tf.y}) scale(${tf.s})`);
+  }
+
+  function fitNodes(ids, padding=50, animate=true){
+    if(!ids.length) return;
+    let mnX=Infinity, mnY=Infinity, mxX=-Infinity, mxY=-Infinity;
+    ids.forEach(id=>{
+      const p=L[id]; if(!p) return;
+      mnX=Math.min(mnX,p.x); mnY=Math.min(mnY,p.y);
+      mxX=Math.max(mxX,p.x+NW); mxY=Math.max(mxY,p.y+NH);
+    });
+    if(mnX===Infinity) return;
+    const cw=document.getElementById('cw');
+    const vw=cw.clientWidth, vh=cw.clientHeight;
+    const gw=mxX-mnX+2*padding, gh=mxY-mnY+2*padding;
+    const s=Math.min(vw/gw, vh/gh, 2.2);
+    const cx=mnX-padding+gw/2, cy=mnY-padding+gh/2;
+    tf = {x: vw/2 - cx*s, y: vh/2 - cy*s, s};
+    applyTf(animate);
+  }
+
+  function fitAll(animate=true){
+    fitNodes(papers.map(p=>p.id).filter(id=>L[id]), 50, animate);
+  }
+
+  /* ════════════════════════════════════════
+     NODE SELECTION
+  ════════════════════════════════════════ */
   function selectNode(id){
-    sel=id;
-    const p=papers.find(x=>x.id===id);
-    const rel=new Set([id,...depMap[id],...rdepMap[id]]);
+    const p = papers.find(x=>x.id===id);
+    const rel = new Set([id,...depMap[id],...rdepMap[id]]);
+
     document.querySelectorAll('.node').forEach(n=>{
-      const nid=n.getAttribute('data-id');
+      const nid = n.getAttribute('data-id');
       n.classList.toggle('hi', nid===id);
       n.classList.toggle('dim', !rel.has(nid));
     });
-    document.querySelectorAll('.edge,.edge.spine').forEach(e=>{
+    document.querySelectorAll('.edge').forEach(e=>{
       const ef=e.getAttribute('data-f'), et=e.getAttribute('data-t');
-      const isRel=(ef===id&&rdepMap[id].includes(et))||(et===id&&depMap[id].includes(ef));
+      const isRel = (ef===id&&rdepMap[id].includes(et))||(et===id&&depMap[id].includes(ef));
       e.classList.toggle('hi', isRel);
       if(isRel) e.setAttribute('marker-end','url(#arr-hi)');
       else e.setAttribute('marker-end', e.classList.contains('spine') ? 'url(#arr-sp)' : 'url(#arr)');
     });
-    const c=SC[p.s]||SC.structural;
-    const bcolor={'I':'#a5d6ff','II':'#f9a825','III':'#80cbc4'}[p.b]||'#6e7681';
-    const depsHtml=depMap[id].map(d=>{const dp=papers.find(x=>x.id===d);
-      return `<span class="chip" onclick="selectNode('${d}')">${dp?dp.lbl:d}</span>`;}).join('');
-    const rdepsHtml=rdepMap[id].map(d=>{const dp=papers.find(x=>x.id===d);
-      return `<span class="chip" onclick="selectNode('${d}')">${dp?dp.lbl:d}</span>`;}).join('');
-    document.getElementById('def-msg').style.display='none';
-    const det=document.getElementById('detail'); det.style.display='block';
-    det.innerHTML=`
+
+    /* auto-zoom to neighbourhood */
+    fitNodes([...rel].filter(id=>L[id]));
+
+    /* sidebar */
+    const c = SC[p.s]||SC.structural;
+    const tagsHtml = (p.tags||[]).map(tid=>{
+      const t = TOPICS.find(x=>x.id===tid);
+      return t ? `<span class="ptag" style="color:${t.color};border-color:${t.color}60;background:color-mix(in srgb,${t.color} 10%,transparent)">${t.label}</span>` : '';
+    }).join('');
+    const depsHtml  = depMap[id].map(d=>{const dp=papers.find(x=>x.id===d); return dp?`<span class="chip" onclick="selectNode('${d}')">${dp.lbl}</span>`:''}).join('');
+    const rdepsHtml = rdepMap[id].map(d=>{const dp=papers.find(x=>x.id===d); return dp?`<span class="chip" onclick="selectNode('${d}')">${dp.lbl}</span>`:''}).join('');
+
+    document.getElementById('def-msg').style.display = 'none';
+    const det = document.getElementById('detail'); det.style.display='block';
+    det.innerHTML = `
     <h3>${p.title}</h3>
     <span class="stag" style="background:${c.fill};color:${c.stroke};border:1px solid ${c.stroke}">${p.s}</span>
-    <span class="branch-tag" style="background:${bcolor}22;color:${bcolor};margin-left:4px">Branch ${p.b||'?'}</span>
-    ${p.key?`<div class="key">\\cite{${p.key}}</div>`:'<div class="key" style="color:#f85149">no bib key yet</div>'}
-    <p>${p.desc}</p>
+    <span class="brtag" style="background:${BRBG[p.b]};color:${BRCOL[p.b]}">Branch ${p.b||'?'}</span>
+    <div class="bib-key">${p.key||'?'}</div>
+    <div class="desc-text">${p.desc}</div>
+    ${tagsHtml?`<div class="tags-row">${tagsHtml}</div>`:''}
     ${depsHtml?`<div class="dep-section"><div class="dep-title">↑ depends on</div>${depsHtml}</div>`:''}
     ${rdepsHtml?`<div class="dep-section"><div class="dep-title">↓ used by</div>${rdepsHtml}</div>`:''}
   `;
   }
 
-  function resetView(){
-    sel=null; tf={x:40,y:30,s:1}; applyTf();
-    document.querySelectorAll('.node').forEach(n=>{n.classList.remove('hi','dim');});
-    document.querySelectorAll('.edge,.edge.spine').forEach(e=>{
-      e.classList.remove('hi');
+  /* ════════════════════════════════════════
+     FILTERS
+  ════════════════════════════════════════ */
+  function clearAllHighlights(){
+    document.querySelectorAll('.node').forEach(n=>n.classList.remove('hi','dim'));
+    document.querySelectorAll('.edge').forEach(e=>{
+      e.classList.remove('hi','topic-hi');
       e.setAttribute('marker-end', e.classList.contains('spine') ? 'url(#arr-sp)' : 'url(#arr)');
     });
-    document.getElementById('def-msg').style.display='block';
-    document.getElementById('detail').style.display='none';
   }
 
-  function filterBy(mode){
-    papers.forEach(p=>{
-      const n=document.querySelector(`.node[data-id="${p.id}"]`); if(!n) return;
-      let hide=false;
-      if(mode==='proved') hide=p.s!=='proved';
-      else if(mode==='I') hide=p.b!=='I';
-      else if(mode==='II') hide=p.b!=='II';
-      else if(mode==='III') hide=p.b!=='III';
-      n.classList.toggle('dim', hide);
+  function applyDim(matchIds){
+    const s = new Set(matchIds);
+    document.querySelectorAll('.node').forEach(n=>{
+      const nid = n.getAttribute('data-id');
+      n.classList.toggle('hi', s.has(nid));
+      n.classList.toggle('dim', !s.has(nid));
     });
+    fitNodes([...s].filter(id=>L[id]));
   }
 
-  function applyTf(){
-    const g=document.getElementById('mg');
-    if(g) g.setAttribute('transform',`translate(${tf.x},${tf.y}) scale(${tf.s})`);
+  function filterBranch(b){
+    clearAllHighlights();
+    activeTopic = null; activeStatus = null;
+    document.querySelectorAll('.topic-btn').forEach(btn=>btn.classList.remove('on'));
+    clearLegendOn();
+    const matched = papers.filter(p=>p.b===b).map(p=>p.id);
+    applyDim(matched);
+    hideSidebar();
   }
 
-  const cw=document.getElementById('cw');
-  cw.addEventListener('mousedown',e=>{if(e.target.closest('.node')) return;
-    drag=true; ds={x:e.clientX,y:e.clientY}; ts={x:tf.x,y:tf.y}; cw.style.cursor='grabbing';});
-  document.addEventListener('mousemove',e=>{if(!drag) return;
-    tf.x=ts.x+(e.clientX-ds.x); tf.y=ts.y+(e.clientY-ds.y); applyTf();});
-  document.addEventListener('mouseup',()=>{drag=false; cw.style.cursor='';});
-  cw.addEventListener('wheel',e=>{
-    e.preventDefault();
-    const f=e.deltaY<0?1.1:0.9;
-    const r=cw.getBoundingClientRect();
-    const mx=e.clientX-r.left, my=e.clientY-r.top;
-    tf.x=mx-(mx-tf.x)*f; tf.y=my-(my-tf.y)*f; tf.s*=f; applyTf();
-  },{passive:false});
+  const STATUS_LI = {proved:'li-proved', structural:'li-struct', heuristic:'li-heur', open:'li-open'};
+  let activeStatus = null;
 
+  function filterStatus(s){
+    clearAllHighlights();
+    activeTopic = null;
+    document.querySelectorAll('.topic-btn').forEach(btn=>btn.classList.remove('on'));
+    if(activeStatus === s){ activeStatus=null; clearLegendOn(); fitAll(); hideSidebar(); return; }
+    activeStatus = s;
+    clearLegendOn();
+    const el = document.getElementById(STATUS_LI[s]);
+    if(el) el.classList.add('on');
+    const matched = papers.filter(p=>p.s===s).map(p=>p.id);
+    applyDim(matched);
+    hideSidebar();
+  }
+
+  function clearLegendOn(){
+    Object.values(STATUS_LI).forEach(id=>{ const el=document.getElementById(id); if(el) el.classList.remove('on'); });
+  }
+
+  function toggleTopic(tid){
+    const btn = document.querySelector(`.topic-btn[data-tid="${tid}"]`);
+    if(activeTopic === tid){ resetAll(); return; }
+    activeTopic = tid; activeStatus = null;
+    document.querySelectorAll('.topic-btn').forEach(b=>b.classList.remove('on'));
+    clearLegendOn();
+    btn.classList.add('on');
+    clearAllHighlights();
+
+    const matched = papers.filter(p=>(p.tags||[]).includes(tid)).map(p=>p.id);
+    const mset = new Set(matched);
+    document.querySelectorAll('.node').forEach(n=>{
+      const nid = n.getAttribute('data-id');
+      n.classList.toggle('hi', mset.has(nid));
+      n.classList.toggle('dim', !mset.has(nid));
+    });
+    /* colour edges between matched nodes */
+    const t = TOPICS.find(x=>x.id===tid);
+    document.querySelectorAll('.edge').forEach(e=>{
+      const ef=e.getAttribute('data-f'), et=e.getAttribute('data-t');
+      if(mset.has(ef)&&mset.has(et)){
+        e.classList.add('topic-hi');
+        e.style.stroke = t.color;
+        e.setAttribute('marker-end', `url(#arr-t-${tid})`);
+      }
+    });
+    fitNodes(matched.filter(id=>L[id]));
+    hideSidebar();
+  }
+
+  function onSearch(q){
+    activeSearch = q.trim().toLowerCase();
+    activeTopic = null;
+    document.querySelectorAll('.topic-btn').forEach(b=>b.classList.remove('on'));
+    clearAllHighlights();
+    if(!activeSearch){ fitAll(); hideSidebar(); return; }
+    const matched = papers.filter(p=>
+      p.title.toLowerCase().includes(activeSearch) ||
+      p.desc.toLowerCase().includes(activeSearch) ||
+      p.lbl.toLowerCase().includes(activeSearch) ||
+      (p.key||'').toLowerCase().includes(activeSearch) ||
+      (p.tags||[]).some(t=>t.toLowerCase().includes(activeSearch))
+    ).map(p=>p.id);
+    applyDim(matched);
+    hideSidebar();
+  }
+
+  function resetAll(){
+    activeTopic = null; activeStatus = null; activeSearch = '';
+    document.getElementById('search-box').value = '';
+    document.querySelectorAll('.topic-btn').forEach(b=>b.classList.remove('on'));
+    clearLegendOn();
+    clearAllHighlights();
+    hideSidebar();
+    fitAll();
+  }
+
+  function hideSidebar(){
+    document.getElementById('def-msg').style.display = 'block';
+    document.getElementById('detail').style.display = 'none';
+  }
+
+  /* ════════════════════════════════════════
+     TOOLTIP
+  ════════════════════════════════════════ */
+  const ttEl    = document.getElementById('tooltip');
+  const ttTitle = ttEl.querySelector('.tt-title');
+  const ttDesc  = ttEl.querySelector('.tt-desc');
+  const TRUNC   = 110;
+
+  function showTooltip(p, ev){
+    ttTitle.textContent = p.title;
+    const short = p.desc.length > TRUNC ? p.desc.slice(0, TRUNC).replace(/\s\S+$/, '') + '…' : p.desc;
+    ttDesc.textContent = short;
+    ttEl.style.display = 'block';
+    moveTooltip(ev);
+  }
+  function moveTooltip(ev){
+    const pad = 14;
+    let x = ev.clientX + pad, y = ev.clientY + pad;
+    if(x + 270 > window.innerWidth)  x = ev.clientX - 270 - pad;
+    if(y + ttEl.offsetHeight > window.innerHeight) y = ev.clientY - ttEl.offsetHeight - pad;
+    ttEl.style.left = x + 'px';
+    ttEl.style.top  = y + 'px';
+  }
+  function hideTooltip(){ ttEl.style.display = 'none'; }
+
+  /* ════════════════════════════════════════
+     INIT
+  ════════════════════════════════════════ */
   buildSVG();
 </script>
 </body>
