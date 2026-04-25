@@ -228,7 +228,7 @@ A Structural Roadmap and Paper Inventory}
   \end{equation}
   This chain is proved unconditionally with respect to the fibre structure of $\Pi$
   (O24~\cite{Beau2026a28}, Corollary~4.2).
-  The numerical validation of~\eqref{eq:chain} is the subject of O25~\cite{Beau2026a29} (in progress).
+  The numerical validation of~\eqref{eq:chain} is the subject of O25~\cite{Beau2026a29}.
 
   \subsection{Precursor Papers: SU(2) Admissibility Sub-Programme}
 
@@ -349,11 +349,14 @@ A Structural Roadmap and Paper Inventory}
   \subsection{O25--O27 and PTO: Numerical Validation and Structural Completion}
 
     \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
-    Current results: $q=29 \to 8.89\pm 0.54$;
-    $q=61 \to 9.98\pm 0.26$;
-    $q=101 \to 9.55\pm 0.16$.
-    Inter-pair variance decreases with~$q$ as predicted by O24.
-    Runs for $q \in \{151, 211, 307, 401\}$ are in progress (\sheur{} pending full campaign).
+    Computes $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ conjugate pairs with $M=50$ independent
+    block samples per pair, for $q \in \{29, 61, 101, 151, 211\}$.
+    Results: $\bar\delta_{\mathrm{pair}} \in \{8.89, 9.98, 9.55, 9.13, 8.78\}$ with inter-pair standard
+    deviation decreasing from 0.54 to 0.11, confirming $\delta_{\mathrm{pair}}$ as a structural invariant.
+    After the O14 normalisation correction, corrected values $\delta_{\mathrm{corr}}(q) \in [7.7, 9.0]$
+    fall consistently within the admissible window $[7.4, 10.6]$ for $q \in \{61, 101, 151, 211\}$.
+    Direct extrapolation to $q \to \infty$ is shown to be structurally degenerate;
+    the central open direction is the analytical control of $n_1(q)/q$ (\sstruct).
 
     \textbf{O26}~\cite{Beau2026a30}: Dictionary between conjugate Weil blocks and rank-1 matrices in
     $M_2(\mathbb{C})$, connecting the Heisenberg fibre to $2I \subset \SU(2)$ (\sstruct).
@@ -553,7 +556,7 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr]   (O22)--(O23);
 \draw[spine] (O23)--(O24);
 
-\node[H] (O25)  at (4*\dx,-6*\dy)   {O25};
+\node[S] (O25)  at (4*\dx,-6*\dy)   {O25};
 \node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
 \node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
 \node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
@@ -748,9 +751,9 @@ A Structural Roadmap and Paper Inventory}
     \sproved \\[3pt]
     \midrule
     O25 & Numerical campaign & \cite{Beau2026a29} &
-    Systematic $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ pairs;
-    runs for $q \in \{151,\ldots,401\}$ in progress &
-    \sheur \\[3pt]
+    $\bar\delta_{\mathrm{pair}} \in \{8.89, 9.98, 9.55, 9.13, 8.78\}$ for $q \in \{29,61,101,151,211\}$;
+    inter-pair $\sigma_q: 0.54 \to 0.11$; $\delta_{\mathrm{corr}} \in [7.7,9.0] \subset [7.4,10.6]$ &
+    \sstruct \\[3pt]
     O26 & Quadratic completion & \cite{Beau2026a30} &
     Dictionary: Weil blocks $\leftrightarrow$ rank-1 matrices in $M_2(\mathbb{C})$;
     connects $\Heis_3$ to $2I \subset \SU(2)$ &
@@ -822,11 +825,12 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch II (O-Series)}
 
-    \paragraph{Completing O25 (numerical campaign).}
-      Runs for $q \in \{151, 211, 307, 401\}$ are in progress.
-      The goal is to confirm inter-pair concentration and the convergence of
-      $\delta_{\mathrm{pair}}$ within $[7.4, 10.6]$ across all target primes,
-      validating the transfer chain~\eqref{eq:chain} numerically.
+    \paragraph{Analytical control of $n_1(q)/q$ (O25).}
+      The O25 campaign is complete for $q \in \{29, 61, 101, 151, 211\}$.
+      The central remaining open direction, identified in O25 Section~5, is the analytical control of the
+      ratio $n_1(q)/q$, where $n_1(q)$ is the upper BFS boundary of the fitting window.
+      This ratio governs the leading finite-size correction to $\delta_{\mathrm{pair}}$
+      and is required to identify the asymptotic value $\delta_\infty$.
 
     \paragraph{Notation consolidation: $c_\chi \to c_{\mathrm{BI}}$.}
       A coordinated rename of the BI saturation constant across all papers is planned and deferred
@@ -867,7 +871,7 @@ A Structural Roadmap and Paper Inventory}
   Branch~I (Foundation, ENI, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}) is formally closed: the Weil representation of
   $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ is a theorem.
   Branch~II (O-series) has closed the unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
-  analytically~(O24) and is in numerical validation~(O25).
+  analytically~(O24) and numerically validated for $q \in \{29, 61, 101, 151, 211\}$~(O25).
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
 
