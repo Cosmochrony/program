@@ -142,7 +142,7 @@ A Structural Roadmap and Paper Inventory}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
     waves, and cosmological observables are derived as consequences of Levels~1--2.
     No additional physical postulates are introduced beyond the continuum-limit hypotheses of Q5a--Q5b.
-    Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2}, Q5a--Q6b), the gravity track
+    Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2}, Q5a--Q7), the gravity track
     (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
     and the companion papers~(\cite{Beau2026b,Beau2026c,Beau2026d,Beau2026e,Beau2026f,Beau2026g,Beau2026k}).
 
@@ -454,6 +454,19 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
     $\Pi_q$; inherits Q5a--Q5b hypotheses (\sstruct, conditional).
 
+    \textbf{Q7}~\cite{Beau2026q7}: Bridge candidate between the admissible dimension
+    $\dim H_{\mathrm{eff}} = 3$ (O23--O29) and the three spatial dimensions of Q5b.
+    Proves $[\mathrm{su}(2)] \not\cong \mathrm{heis}_3$ (the bridge cannot be a Lie algebra
+    isomorphism) and identifies $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$ as the spin-1
+    representation of $\mathrm{su}(2)$ (O29).
+    Establishes structural uniqueness of the bridge via Schur's lemma, and reduces the
+    identification to the isotropy condition $A_H = A_z$ on $\sigma_2(L_{\mathrm{eff}})$.
+    Proves analytically $[F_c, L_{\mathrm{Weil}}] = 0$, which forces the cross terms
+    $k_X k_Z = k_Y k_Z = 0$ structurally.
+    Numerical evidence on O25 checkpoints ($q \in \{61,101,151\}$) gives
+    $A_z = C_{\mathfrak{su}(2)} = 2$ universally and $|A_H - A_z| \to 0$
+    (\sstruct; isotropy $A_H = A_z$: \sopen).
+
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -517,6 +530,7 @@ A Structural Roadmap and Paper Inventory}
 
   \paragraph{Physical path.}
     Foundation $+ $ O18 $+$ O22 $+$ O23 $\to$ Q1 $\to$ Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
+    O23 $+$ O28 $+$ O29 $+$ Q5b $\to$ Q7 (dimensional bridge);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz.
 
     \begin{figure}[p]
@@ -624,6 +638,7 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
 \node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
 \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
+\node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
 
 \draw[spine] (Found) to[out=0,in=90] (Q1);
 \draw[arr]   (O18)   to[out=10,in=180] (Q1);
@@ -634,6 +649,10 @@ A Structural Roadmap and Paper Inventory}
 \draw[spine] (Q5a)--(Q5b);
 \draw[arr]   (Q5b)--(Q6a);
 \draw[arr]   (Q6a)--(Q6b);
+\draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
+\draw[arr]   (O23)   to[out=-10,in=180] (Q7);
+\draw[arr]   (O28)   to[out=-10,in=180] (Q7);
+\draw[arr]   (O29)   to[out=-10,in=180] (Q7);
 
 \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
 \node[P] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
@@ -850,6 +869,10 @@ A Structural Roadmap and Paper Inventory}
     \sstruct \\[3pt]
     Q6b & Effective spacetime & \cite{Beau2026q6b} &
     Effective Lorentzian geometry from $\Pi_q$; inherits Q5a--Q5b hypotheses &
+    \sstruct \\[3pt]
+    Q7 & Dimensional bridge & \cite{Beau2026q7} &
+    $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$; $[F_c, L_{\mathrm{Weil}}]=0$;
+    $A_z = C_{\mathfrak{su}(2)} = 2$; isotropy gap $|A_H - A_z| \to 0$ &
     \sstruct \\[3pt]
     \midrule
     Spec2 & Relational spacetime & \cite{Beau2026a} &
