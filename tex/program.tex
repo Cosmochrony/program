@@ -136,7 +136,7 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: SpectralAdmissibility~\cite{Beau2026a1},
     SpectralCapacity~\cite{Beau2026a2},
     SpectralGramRigidity~\cite{Beau2026a3}, SpectralRelaxation~\cite{Beau2026a5},
-    and O1--O28~(\cite{Beau2026a6}--\cite{Beau2026a32}).
+    and O1--O29~(\cite{Beau2026a6}--\cite{Beau2026a33}).
 
   \paragraph{Level~3 --- Physical observables.}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
@@ -357,7 +357,7 @@ A Structural Roadmap and Paper Inventory}
     unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
     (Corollary~4.2: $\beta^* \approx 0.126$, \sproved).
 
-  \subsection{O25--O28 and PTO: Numerical Validation and Structural Completion}
+  \subsection{O25--O29 and PTO: Numerical Validation and Sector Identification}
 
     \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
     Computes $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ conjugate pairs with $M=50$ independent
@@ -390,7 +390,25 @@ A Structural Roadmap and Paper Inventory}
     Born--Infeld parity involution $c \leftrightarrow q-c$ (O18), which correlates conjugate
     projections and constrains $\mathcal{C}_c$ to a symmetric subspace.
     The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
-    identification of $V_\rho \subset H_{\mathrm{eff}}$ is deferred to O29 (\sstruct).
+    analysis of $V_\rho \subset H_{\mathrm{eff}}$ is carried out in O29.
+
+    \textbf{O29}~\cite{Beau2026a33}: Spin-$\tfrac{1}{2}$ sector identification via the
+    symmetric rank formula (\sstruct, numerically confirmed).
+    The Born--Infeld parity constraint $\pi_{q-c}(v) = \overline{\pi_c(v)}$ (O18) is proved to force
+    every outer product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ into the complex symmetric
+    subspace $\mathrm{Sym}(V_\rho, \mathbb{C}) \subset \mathrm{End}(H_{\mathrm{eff}})$.
+    This is an algebraic identity, not lifted by any complex-linear reparametrisation.
+    The resulting covariance rank satisfies the \emph{symmetric rank formula}
+    $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$, whose unique positive integer inversion at
+    $r_{\mathrm{eff}} = 3$ gives $d_\rho = 2$, confirming the spin-$\tfrac{1}{2}$ sector.
+    Numerically: $r_{\mathrm{eff}} = 3$ universally for $q = 61$ (30/30 pairs) and
+    $q = 151$ (75/75 pairs) with zero inter-pair variance; at $q = 101$, modal $r_{\mathrm{eff}} = 3$
+    is confirmed by a dedicated multi-sample analysis ($M = 5$ resamples per anomalous pair,
+    89\% of cells satisfy $r_{\mathrm{eff}} = 3$), resolving the single-sample anomaly as a
+    Monte Carlo artefact.
+    The O26 Criterion~5.4 is reformulated for conjugate-pair data:
+    $d_\rho^2 = 4 \to d_\rho(d_\rho+1)/2$; spin-$\tfrac{1}{2}$ satisfies the
+    reformulated criterion exactly.
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -494,7 +512,7 @@ A Structural Roadmap and Paper Inventory}
     Requires least prior knowledge; establishes the axiomatic core.
 
   \paragraph{Spectral path.}
-    $\text{BornInfeld} \to \text{SpAdm} \to \text{SpRel} \to \text{O1} \to \cdots \to \text{O24} \to \text{O25} \to \text{O28}$.
+    $\text{BornInfeld} \to \text{SpAdm} \to \text{SpRel} \to \text{O1} \to \cdots \to \text{O24} \to \text{O25} \to \text{O28} \to \text{O29}$.
     Develops the spectral machinery and the transfer chain.
 
   \paragraph{Physical path.}
@@ -588,6 +606,7 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
 \node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
 \node[S] (O28)  at (7*\dx,-6*\dy)   {O28};
+\node[S] (O29)  at (8*\dx,-6*\dy)   {O29};
 \node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
 
 \draw[spine] (O24) -- (O25);
@@ -596,6 +615,8 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr]   (O24) -- (PTO);
 \draw[spine] (O25) -- (O28);
 \draw[arr]   (O27) -- (O28);
+\draw[spine] (O28) -- (O29);
+\draw[arr]   (O27) -- (O29);
 
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
@@ -799,6 +820,12 @@ A Structural Roadmap and Paper Inventory}
     $r_{\mathrm{eff}}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, eigenstructure
     $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
     \sstruct \\[3pt]
+    O29 & Symmetric rank formula \& sector ID & \cite{Beau2026a33} &
+    BI parity forces $M_j \in \mathrm{Sym}(V_\rho,\mathbb{C})$;
+    $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$; unique inversion at $r_{\mathrm{eff}}=3$ gives
+    $d_\rho=2$ (spin-$\tfrac{1}{2}$); confirmed for $q \in \{61,101,151\}$;
+    $q=101$ anomaly resolved by multi-sample analysis &
+    \sstruct \\[3pt]
     PTO & Temporal ordering & \cite{Beau2026pto} &
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
     temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
@@ -862,15 +889,22 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch II (O-Series)}
 
-    \paragraph{Identification of $V_\rho \subset H_{\mathrm{eff}}$ (O28 $\to$ O29).}
-      O28 established that the covariance $\mathcal{C}_c$ has rank exactly~$3$ in
-      $\mathrm{End}(H_{\mathrm{eff}})$ with eigenvalue structure $[1:\tfrac{1}{2}:\tfrac{1}{2}]$,
-      filling the admissible projection space $H_{\mathrm{eff}} = \mathbb{C}^3$ completely.
-      The gap from the spin-$\tfrac{1}{2}$ prediction $d_\rho^2 = 4$ reflects that
-      $H_{\mathrm{eff}} \neq V_\rho$.
-      The central open direction is the identification of the irreducible sector
-      $V_\rho \subset H_{\mathrm{eff}}$ and the computation of $r_{\mathrm{eff}}$ in
-      $\mathrm{End}(V_\rho)$, using the $\mathfrak{su}(2)$ factorisation of O27.
+    \paragraph{Spin-$\tfrac{1}{2}$ sector identification (O29, closed).}
+      O29 proves that the Born--Infeld parity constraint (O18) forces every outer product
+      $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ into the complex symmetric subspace
+      $\mathrm{Sym}(V_\rho, \mathbb{C})$, an algebraic identity not lifted by any
+      complex-linear reparametrisation.
+      The symmetric rank formula $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$, combined with the
+      observed $r_{\mathrm{eff}} = 3$, uniquely identifies $d_\rho = 2$ (spin-$\tfrac{1}{2}$).
+      This result is confirmed numerically for $q \in \{61, 101, 151\}$ with zero inter-pair
+      variance at $q = 61$ and $q = 151$; the $q = 101$ anomaly is resolved as a
+      single-sample Monte Carlo artefact by a dedicated multi-sample analysis.
+      The O26 Criterion~5.4 is reformulated for conjugate-pair data ($d_\rho^2 \to d_\rho(d_\rho+1)/2$)
+      and satisfied exactly.
+      The remaining open directions within Branch~II are: (a) analytical derivation of
+      the eigenvalue ratio $\lambda_2/\lambda_1$ from the group structure; (b) extension
+      of the computation to $q \in \{211, 307, 401\}$; (c) a measurement protocol using
+      non-conjugate block data to probe the full rank $d_\rho^2 = 4$.
 
     \paragraph{Analytical control of $n_1(q)/q$.}
       The BFS window ratio $n_1(q)/q$ continues to decrease through $q = 211$
@@ -921,6 +955,9 @@ A Structural Roadmap and Paper Inventory}
   with neutral generating sets, closing the precursor programme for the O-series.
   Branch~II (O-series) has closed the unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
   analytically~(O24) and numerically validated for $q \in \{29, 61, 101, 151, 211\}$~(O25).
+  The spin-$\tfrac{1}{2}$ sector identification is now complete~(O29): the symmetric rank formula
+  $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$ uniquely identifies $d_\rho = 2$ from the observed $r_{\mathrm{eff}} = 3$,
+  confirmed numerically for $q \in \{61, 101, 151\}$.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
 
@@ -934,6 +971,6 @@ A Structural Roadmap and Paper Inventory}
 
   \clearpage
   \bibliography{cosmochrony-bibliography}
-  \bibliographystyle{plainurl}
+  \bibliographystyle{plain}
 
 \end{document}
