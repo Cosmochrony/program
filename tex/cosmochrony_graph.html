@@ -541,10 +541,34 @@
       desc:'Bridge candidate between dim H_eff=3 (O23–O29) and three spatial dimensions (Q5b). ' +
         'Proves su(2)≇heis₃; identifies H_eff≅Sym²(V_ρ) (spin-1). ' +
         'Proves [F_c,L_Weil]=0, forcing k_X·k_Z=k_Y·k_Z=0 structurally. ' +
-        'Numerical evidence: A_z=C_{su(2)}=2 universal; |A_H−A_z|→0 as q→∞. ' +
-        'Open: isotropy A_H=A_z (target q∈{211,307,401}).'},
+        'Bridge non-obstruction proved (Q9 excludes pathological Case 3). ' +
+        'Isotropy A_H=A_z and A_z=2 proved in Q8–Q10, U1.'},
+    {id:'Q8',     lbl:'Q8',       s:'structural', b:'III', key:'BeauQ8',
+      tags:['spt','spec'],
+      title:'Q8 — Casimir Rigidity',
+      desc:'A_Z = C_{su(2)} = 2 unconditionally under Q5a. ' +
+        'Proportionality constant λ fixed by horizontal sector consistency (A_H→2). ' +
+        'Revised after Q9/Q10/U1: no free scalar, no [H-lift] assumption needed.'},
+    {id:'Q9',     lbl:'Q9',       s:'proved',     b:'III', key:'Beau2026q9',
+      tags:['spt'],
+      title:'Q9 — [H-lift] Proved',
+      desc:'Modulation generator X suppressed at rate O(q⁻¹): position sector subcritical. ' +
+        'Mosco limit selects kinetic sector only → [H-lift] is a theorem under Q5a. ' +
+        'Corollary: A_H>0 by coercivity, independently of bridge (Case 3 excluded).'},
+    {id:'Q10',    lbl:'Q10',      s:'structural', b:'III', key:'Beau2026q10',
+      tags:['spt','spec'],
+      title:'Q10 — Asymptotic Isotropy A_H→2',
+      desc:'Universality [U] ⇒ su(2)-isotropy ⇒ A_H→2 (Casimir). ' +
+        '|A_H−2| ≤ C·ε(q) with ε(q)=O(q⁻¹/²) from U1. ' +
+        'Bridge conjecture resolved (isotropic case) under [U]+Q5a.'},
+    {id:'U1',     lbl:'U1',       s:'proved',     b:'III', key:'Beau2026u1',
+      tags:['spt','spec'],
+      title:'U1 — Spectral Universality [U] Proved',
+      desc:'Weil-generator Lipschitz bound: |σ_c(n)−σ_{c′}(n)| ≤ 8π|c−c′|/q. ' +
+        'BFS–CC convergence (Q5b) ⇒ pointwise σ_c→σ_* at O(q⁻¹/²). ' +
+        'Arzelà–Ascoli on [θ₁,½] + Lipschitz triangle for small θ ⇒ ε(q)=O(q⁻¹/²). ' +
+        'Closes [U] under Q5a hypotheses. No BI input for small-θ regime.'},
     {id:'Sp2',    lbl:'Spec2',    s:'structural', b:'III', key:'Beau2026a',
-      url: ZEN+'18356037',
       tags:['spt'],
       title:'Spectral2 — Relational Spacetime',
       desc:'Operational metric distances from graph Laplacians, without background manifold.'},
@@ -612,6 +636,9 @@
     {f:'Found',t:'Q1',sp:1},{f:'O18',t:'Q1'},{f:'O22',t:'Q1'},{f:'O23',t:'Q1'},
     {f:'Q1',t:'Q2'},{f:'Q2',t:'Q5a'},{f:'Q5a',t:'Q5b',sp:1},{f:'Q5b',t:'Q6a'},{f:'Q6a',t:'Q6b'},
     {f:'Q5b',t:'Q7'},{f:'O23',t:'Q7'},{f:'O28',t:'Q7'},{f:'O29',t:'Q7'},
+    {f:'Q7',t:'Q8'},{f:'Q7',t:'Q9'},{f:'Q5a',t:'Q9'},
+    {f:'Q9',t:'Q10'},{f:'Q8',t:'Q10'},{f:'O25',t:'Q10'},
+    {f:'Q10',t:'U1'},{f:'Q5b',t:'U1'},
     {f:'WP',t:'Sp2'},{f:'Sp2',t:'Grav',sp:1},{f:'Grav',t:'Thm'},{f:'Thm',t:'Lor'},
     {f:'Found',t:'TopI'},{f:'BI',t:'SMcm'},{f:'Found',t:'Bell'},{f:'ENI',t:'Bell'},
     {f:'Found',t:'Schw'},{f:'BI',t:'Cosm'},{f:'Found',t:'Supra'},
@@ -634,6 +661,7 @@
     O25:{x:5*X,y:6*Y}, O26:{x:6*X,y:6*Y}, O27:{x:7*X,y:6*Y}, O28:{x:8*X,y:6*Y}, O29:{x:9*X,y:6*Y}, PTO:{x:6*X,y:7*Y},
     Q1:{x:10*X,y:3*Y}, Q2:{x:10*X,y:4*Y}, Q5a:{x:10*X,y:5*Y},
     Q5b:{x:10*X,y:6*Y}, Q6a:{x:10*X,y:7*Y}, Q6b:{x:10*X,y:8*Y}, Q7:{x:10*X,y:9*Y},
+    Q8:{x:11*X,y:9*Y}, Q9:{x:10*X,y:10*Y}, Q10:{x:11*X,y:10*Y}, U1:{x:10*X,y:11*Y},
     Sp2:{x:-X,y:4*Y}, Grav:{x:-X,y:5*Y}, Thm:{x:-X,y:6*Y}, Lor:{x:-X,y:7*Y},
     TopI:{x:0,y:8*Y}, SMcm:{x:X,y:8*Y}, Bell:{x:2*X,y:8*Y}, Schw:{x:3*X,y:8*Y},
     Cosm:{x:4*X,y:8*Y}, Supra:{x:5*X,y:8*Y},
