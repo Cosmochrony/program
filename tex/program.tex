@@ -647,6 +647,14 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
 \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
 \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
+\node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
+(geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}Q8--Q10\\U1\end{tabular}};
+
+\draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
+\draw[arr]   (O23)   to[out=-10,in=180] (Q7);
+\draw[arr]   (O28)   to[out=-10,in=180] (Q7);
+\draw[arr]   (O29)   to[out=-10,in=180] (Q7);
+\draw[arr,dashed,draw=cproved]   (Q7)--(geom);
 
 \draw[spine] (Found) to[out=0,in=90] (Q1);
 \draw[arr]   (O18)   to[out=10,in=180] (Q1);
@@ -657,10 +665,6 @@ A Structural Roadmap and Paper Inventory}
 \draw[spine] (Q5a)--(Q5b);
 \draw[arr]   (Q5b)--(Q6a);
 \draw[arr]   (Q6a)--(Q6b);
-\draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
-\draw[arr]   (O23)   to[out=-10,in=180] (Q7);
-\draw[arr]   (O28)   to[out=-10,in=180] (Q7);
-\draw[arr]   (O29)   to[out=-10,in=180] (Q7);
 
 \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
 \node[P] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
@@ -696,243 +700,316 @@ A Structural Roadmap and Paper Inventory}
         \textcolor{copen}{$\blacksquare$}~\sopen{}.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
+        The dashed green arrow from Q7 leads to the geometric emergence closure block
+        Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
       \label{fig:dag}
     \end{figure}
 
     \clearpage
 
-  \section{Full Paper Inventory}
-  \label{sec:inventory}
+    \begin{figure}[p]
+      \centering
+      \resizebox{\textwidth}{!}{%
+        \begin{tikzpicture}[
+          every node/.style={font=\small\sffamily},
+          box/.style={draw, rounded corners=3pt, inner sep=5pt,
+          minimum width=2.0cm, minimum height=0.7cm, align=center},
+          P/.style={box, fill=green!8,  draw=cproved,  text=black},
+          S/.style={box, fill=blue!6,   draw=cstruct,  text=black},
+          spine/.style={-{Stealth[length=5pt]}, line width=1.2pt},
+          arr/.style={-{Stealth[length=4pt]}, thin},
+        ]
 
-  Table~\ref{tab:inventory} lists all papers in the programme.
-  The \textbf{Key} column gives the \texttt{cosmochrony-bibliography} citation key.
+        \def\dx{3.2cm}
+        \def\dy{1.4cm}
 
-  \setlength\LTleft{0pt}
-  \setlength\LTright{0pt}
-  \begin{longtable}{@{}p{1.45cm}p{3.4cm}p{1.5cm}p{6.5cm}p{1.3cm}@{}}
-    \toprule
-    \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
-    \midrule
-    \endhead
-    \midrule\multicolumn{5}{r}{\small\itshape continued\ldots}\\\midrule
-    \endfoot
-    \bottomrule
-    \endlastfoot
-    WP & White Paper & \cite{Cosmochrony} &
-    Programme overview; substrate~$\chi$; iterated projection; BI constraint; relaxation cascade &
-    \sstruct \\[3pt]
-    ENI & Emergence \& non-injectivity & \cite{Beau2026l} &
-    No-go: genuine emergence $\Leftrightarrow$ $\Pi$ non-injective; projection entropy $S_\Pi$ &
-    \sproved \\[3pt]
-    Found & Foundation & \cite{Beau2026m} &
-    Axioms A1--A4; derives $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $V_\rho$ as theorems (Thm~5.6) &
-    \sproved \\[3pt]
-    HeisStr & Heisenberg structure & \cite{Beau2026HeisenbergStructure} &
-    Detailed proof of Found. Thm~5.6; uncertainty principle from A3 alone &
-    \sproved \\[3pt]
-    noscale & No external scale & \cite{Beau2026j} &
-    No independent dimensional parameter beyond $c_\chi$ &
-    \sproved \\[3pt]
-    \midrule
-    BornInfeld & Born--Infeld geometry & \cite{Beau2026c} &
-    BI action as unique minimal bounded-flux representation &
-    \sproved \\[3pt]
-    SpAdm & Spectral admissibility ($Q_8$) & \cite{Beau2026a1} &
-    $A^{\max}_n = c_\chi/\sqrt{\lambda_n}$; first tractable instance &
-    \sproved \\[3pt]
-    SpCap & Spectral capacity & \cite{Beau2026a2} &
-    Capacity functional $\mathcal{C}(G,S)$; binary-polyhedral maximality proved via
-    adjoint identity $\hat{A}_{\mathrm{adj}} = 2M - I$ and icosahedral isotropy &
-    \sproved \\[3pt]
-    SpGram & Gram rigidity (v1.0.1) & \cite{Beau2026a3} &
-    Neutral-generator geometry from $G_{st} = -\tfrac{1}{2}\chi_\rho(st)$ &
-    \sproved \\[3pt]
-    3Gen & Three generations & \cite{Beau2026a4} &
-    Three-generation structure from ADE stratigraphic levels &
-    \sstruct \\[3pt]
-    SpRel & Spectral relaxation & \cite{Beau2026a5} &
-    $\Lambda_{\mathrm{proj}} \asymp \lambda_2$ for LPS expander families &
-    \sproved \\[3pt]
-    \midrule
-    O1 & Variable-valence graphs & \cite{Beau2026a6} &
-    LPS saturation is a fixed-valence artefact; growing valence restores window &
-    \sproved \\[3pt]
-    O3 & Mass hierarchy & \cite{Beau2026a7} &
-    First SM connection: $\beta^* \in (0.09, 0.13)$ from lepton mass ratios &
-    \sstruct \\[3pt]
-    O4 & Upper bound $\beta \leq 1$ & \cite{Beau2026a8} &
-    BI flux $+$ Cheeger $\Rightarrow \beta \leq 1$ &
-    \sproved \\[3pt]
-    O5 & Rep-theoretic obstruction & \cite{Beau2026a9} &
-    Fixed-repr.\ approaches cannot close the $\beta$ gap &
-    \sproved \\[3pt]
-    O6 & Matrix redundancy & \cite{Beau2026a10} &
-    Matrix-level confinement of cascade exponent &
-    \sproved \\[3pt]
-    O7 & Continuum target & \cite{Beau2026a11} &
-    Target: $\delta \in [7.4, 10.6]$ on 3-step fingerprints &
-    \sstruct \\[3pt]
-    O8 & LPS geometric obstruction & \cite{Beau2026a12} &
-    Exponential shell growth $\Rightarrow$ usable window $= O(\log q)$ BFS steps &
-    \sproved \\[3pt]
-    \midrule
-    O9 & Heisenberg graphs & \cite{Beau2026a13} &
-    Structural transition: $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ with $|B_n| \sim n^4$ replaces LPS &
-    \sproved \\[3pt]
-    O10 & Large-$q$ computation & \cite{Beau2026a14} &
-    Confirms $n^4$ growth; TensorSketch obstruction identified &
-    \sproved \\[3pt]
-    O11 & Fourier-character proxy & \cite{Beau2026a15} &
-    Bidimensional proxy overcomes TensorSketch obstruction &
-    \sstruct \\[3pt]
-    O12 & Exact Weil blocks & \cite{Beau2026a16} &
-    $\hat\delta_{\mathrm{exact}} \approx 4.3$--$4.8$ for $q \leq 211$; final obstruction resolved &
-    \sproved \\[3pt]
-    O13 & Extended prime range & \cite{Beau2026a17} &
-    $\hat\delta(q): 4.80 \to 3.59$; finite-size hypothesis refuted &
-    \sproved \\[3pt]
-    O14 & Observable-class correction & \cite{Beau2026a18} &
-    Corrects $\delta \mapsto \beta^*$ via block normalisation &
-    \sstruct \\[3pt]
-    O15 & Block-level no-go & \cite{Beau2026a19} &
-    No reweighting of individual blocks reaches $\delta \in [7.4, 10.6]$ (Cor.~4.8) &
-    \sproved \\[3pt]
-    \midrule
-    O16 & Pair observable & \cite{Beau2026a20} &
-    $\sigma_{\mathrm{pair}} = \sigma_c \sigma_{q-c}$;
-    exponent doubling $\delta_{\mathrm{pair}} \approx 7.44$ &
-    \sstruct \\[3pt]
-    O17 & Structural derivation of pair & \cite{Beau2026a21} &
-    $\rho_{q-c} = \bar\rho_c$ forced by fibre admissibility: pair is derived, not postulated &
-    \sproved \\[3pt]
-    O18 & BI parity involution & \cite{Beau2026a22} &
-    Minimal fibre condition $\{\chi,-\chi\}$; BI parity is the unique global symmetry of $S_{\mathrm{BI}}$ &
-    \sproved \\[3pt]
-    O19 & Canonical normalisation & \cite{Beau2026a23} &
-    $r(c,q)$ does not affect $\delta_{\mathrm{pair}}$; observable pipeline-independent &
-    \sproved \\[3pt]
-    O20 & Persistence criterion & \cite{Beau2026a24} &
-    Dynamical selection of admissible modes via projective persistence &
-    \sstruct \\[3pt]
-    O21 & Shell saturation & \cite{Beau2026a25} &
-    Observable rank $n_3^{\mathrm{obs}}$ via $\Sigma_c(n_3)=3$;
-    transfer $\delta_{\mathrm{pair}} \to \beta^*$ &
-    \sstruct \\[3pt]
-    O22 & Projection locking & \cite{Beau2026a26} &
-    BI projection locking forces $n_3^{\mathrm{obs}}$ onto a BFS shell (Thm~3.2) &
-    \sproved \\[3pt]
-    O23 & Quaternionic minimality & \cite{Beau2026a27} &
-    $\Sigma_c(n_3)=3$ from quaternionic maximality of neutral generators &
-    \sproved \\[3pt]
-    O24 & Observable rank rigidity & \cite{Beau2026a28} &
-    Verticality Lemma; unconditional transfer
-    $c_\chi \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$ (Cor.~4.2) &
-    \sproved \\[3pt]
-    \midrule
-    O25 & Numerical campaign & \cite{Beau2026a29} &
-    $\bar\delta_{\mathrm{pair}} \in \{8.89, 9.98, 9.55, 9.13, 8.78\}$ for $q \in \{29,61,101,151,211\}$;
-    inter-pair $\sigma_q: 0.54 \to 0.11$; $\delta_{\mathrm{corr}} \in [7.7,9.0] \subset [7.4,10.6]$ &
-    \sstruct \\[3pt]
-    O26 & Quadratic completion & \cite{Beau2026a30} &
-    Dictionary: Weil blocks $\leftrightarrow$ rank-1 matrices in $M_2(\mathbb{C})$;
-    connects $\Heis_3$ to $2I \subset \SU(2)$ &
-    \sstruct \\[3pt]
-    O27 & Quaternionic rigidity & \cite{Beau2026a31} &
-    Every admissible $\Phi_{q,\rho}$ satisfying three structural constraints factors through
-    $\mathfrak{su}(2)$ &
-    \sproved \\[3pt]
-    O28 & Window calibration \& $r_{\mathrm{eff}}$ & \cite{Beau2026a32} &
-    $n_1(q)/q$ decreasing (Scenario~S2); $\delta_{\mathrm{corr}} \in [7.4,10.6]$ confirmed;
-    $r_{\mathrm{eff}}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, eigenstructure
-    $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
-    \sstruct \\[3pt]
-    O29 & Symmetric rank formula \& sector ID & \cite{Beau2026a33} &
-    BI parity forces $M_j \in \mathrm{Sym}(V_\rho,\mathbb{C})$;
-    $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$; unique inversion at $r_{\mathrm{eff}}=3$ gives
-    $d_\rho=2$ (spin-$\tfrac{1}{2}$); confirmed for $q \in \{61,101,151\}$;
-    $q=101$ anomaly resolved by multi-sample analysis &
-    \sstruct \\[3pt]
-    PTO & Temporal ordering & \cite{Beau2026pto} &
-    $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
-    temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
-    \sstruct \\[3pt]
-    \midrule
-    Q1 & Phase coherence & \cite{Beau2026q1} &
-    Phase coherence from admissibility (Thm~2.7);
-    singlet correlator and Tsirelson bound derived &
-    \sproved \\[3pt]
-    Q2 & Beyond spin-$\tfrac{1}{2}$ & \cite{Beau2026q2} &
-    Spin-$\tfrac{3}{2}$ quantum structure; $\SU(2)$ as admissibility fixed point &
-    \sproved \\[3pt]
-    Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
-    Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional &
-    \sstruct \\[3pt]
-    Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
-    BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime; conditional &
-    \sstruct \\[3pt]
-    Q6a & Gauge structure & \cite{Beau2026q6a} &
-    $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
-    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ proposed &
-    \sstruct \\[3pt]
-    Q6b & Effective spacetime & \cite{Beau2026q6b} &
-    Effective Lorentzian geometry from $\Pi_q$; inherits Q5a--Q5b hypotheses &
-    \sstruct \\[3pt]
-    Q7 & Dimensional bridge & \cite{Beau2026q7} &
-    $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$; $[F_c, L_{\mathrm{Weil}}]=0$;
-    bridge non-obstruction (Case~3 excluded by Q9); $A_z = C_{\mathfrak{su}(2)} = 2$;
-    uniqueness of $\varphi$ up to scalar &
-    \sstruct \\[3pt]
-    Q8 & Casimir rigidity & \cite{BeauQ8} &
-    $A_Z = C_{\mathfrak{su}(2)} = 2$ unconditionally under Q5a;
-    $\lambda$ fixed by horizontal sector consistency;
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ established &
-    \sstruct \\[3pt]
-    Q9 & [H-lift] proved & \cite{Beau2026q9} &
-    Kinetic-sector identification: modulation generator suppressed at rate $O(q^{-1/2})$;
-    [H-lift] is a theorem under Q5a; $A_H > 0$ proved by coercivity, independently of bridge &
-    \sproved \\[3pt]
-    Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
-    $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
-    universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
-    bridge conjecture resolved (isotropic case) under [U] &
-    \sstruct \\[3pt]
-    U1 & Universality [U] proved & \cite{Beau2026u1} &
-    $\varepsilon(q) = O(q^{-1/2})$ from Weil-generator Lipschitz bound and
-    BFS--Carnot--Carathéodory convergence; no BI input required for small-$\theta$ regime &
-    \sproved \\[3pt]
-    \midrule
-    Spec2 & Relational spacetime & \cite{Beau2026a} &
-    Operational metric from graph Laplacians; spacetime from spectral correlations &
-    \sstruct \\[3pt]
-    Gravity & IR Einstein response & \cite{Beau2026h} &
-    $G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from $\delta S_\Pi/\delta g$ at leading IR order &
-    \sproved \\[3pt]
-    Thermo & Spectral thermodynamics & \cite{Beau2026Thermodynamics} &
-    Local spectral first law; Einstein equation as spectral equilibrium condition &
-    \sstruct \\[3pt]
-    Lorentz & Gravitational waves & \cite{Beau2026i} &
-    Lorentzian completion; causal propagation; GW spectrum &
-    \sproved \\[3pt]
-    TopInv & Topological invariants & \cite{Beau2026k} &
-    Charge quantisation ($\pi_1 \cong \mathbb{Z}$), no monopoles, chirality (Hopf fibration) &
-    \sproved \\[3pt]
-    SMcm & Charge, mass, inertia & \cite{Beau2026e} &
-    Mass and charge as BI-saturated responses &
-    \sstruct \\[3pt]
-    Bell & Bell non-locality & \cite{Beau2026b} &
-    Bell violations from non-injectivity alone &
-    \sproved \\[3pt]
-    SchLamb & Fine-structure constant & \cite{Beau2026f} &
-    $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
-    \sstruct \\[3pt]
-    Cosmol & Rotation curves / Hubble & \cite{Beau2026d} &
-    Flat rotation curves and Hubble tension from a common effective mechanism &
-    \sstruct \\[3pt]
-    Supra & Superconductivity & \cite{Beau2026g} &
-    Projective phase locking as origin of superconducting coherence &
-    \sstruct \\[3pt]
-  \end{longtable}
+        % ── Inputs (left column) ──────────────────────────────
+        \node[S] (Q5a) at (0,0)        {Q5a};
+        \node[S] (Q5b) at (0,-\dy)     {Q5b};
+        \node[S] (O25) at (-\dx,-2*\dy){O25};
+
+        % ── Core chain (centre column) ───────────────────────
+        \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
+        \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$}};
+        \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-lift]}};
+        \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
+        \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
+
+        % ── Result (bottom) ──────────────────────────────────
+        \node[P,minimum width=4cm] (Met)
+        at (\dx+0.5*\dx,-6*\dy)
+          {$g^{\mu\nu}=\mathrm{diag}(-A_\tau,2,2,2)$};
+
+        % ── Edges ────────────────────────────────────────────
+        \draw[spine] (Q5a)--(Q5b);
+        \draw[arr]   (Q5a) to[out=0,in=90] (Q7);
+        \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
+        \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
+        \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
+        \draw[arr]   (O25) to[out=0,in=180] (Q10);
+
+        \draw[spine] (Q7)--(Q9);
+        \draw[arr]   (Q7) to[out=0,in=90] (Q8);
+        \draw[spine] (Q9)--(Q10);
+        \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
+        \draw[spine] (Q10)--(U1);
+
+        \draw[spine] (U1)  to[out=-90,in=135] (Met);
+        \draw[arr]   (Q8)  to[out=-90,in=45]  (Met);
+
+        % ── Status annotations ───────────────────────────────
+        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
+          {coercivity $\Rightarrow A_H\!>\!0$};
+        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
+          {rate $O(q^{-1/2})$};
+
+        \end{tikzpicture}
+      }
+      \caption{Geometric emergence sub-programme: logical chain from the continuum-limit
+      hypotheses Q5a--Q5b to the effective Lorentzian co-metric.
+      \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
+        independently of the bridge.
+        \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
+        normalisation fixed by horizontal sector.
+        \textbf{Q10}~(\sstruct{}): universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy
+        $\Rightarrow$ $A_H \to 2$, conditional on~[U].
+        \textbf{U1}~(\sproved{}): [U] proved with rate $O(q^{-1/2})$ from Weil-generator
+        Lipschitz bound and BFS--Carnot--Carath\'eodory convergence (Q5b).
+        The effective metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ is established
+        under the Q5a hypotheses.}
+      \label{fig:geom}
+    \end{figure}
+    \label{sec:inventory}
+
+    Table~\ref{tab:inventory} lists all papers in the programme.
+    The \textbf{Key} column gives the \texttt{cosmochrony-bibliography} citation key.
+
+    \setlength\LTleft{0pt}
+    \setlength\LTright{0pt}
+    \begin{longtable}{@{}p{1.45cm}p{3.4cm}p{1.5cm}p{6.5cm}p{1.3cm}@{}}
+      \toprule
+      \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
+      \midrule
+      \endhead
+      \midrule\multicolumn{5}{r}{\small\itshape continued\ldots}\\\midrule
+      \endfoot
+      \bottomrule
+      \endlastfoot
+      WP & White Paper & \cite{Cosmochrony} &
+      Programme overview; substrate~$\chi$; iterated projection; BI constraint; relaxation cascade &
+      \sstruct \\[3pt]
+      ENI & Emergence \& non-injectivity & \cite{Beau2026l} &
+      No-go: genuine emergence $\Leftrightarrow$ $\Pi$ non-injective; projection entropy $S_\Pi$ &
+      \sproved \\[3pt]
+      Found & Foundation & \cite{Beau2026m} &
+      Axioms A1--A4; derives $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $V_\rho$ as theorems (Thm~5.6) &
+      \sproved \\[3pt]
+      HeisStr & Heisenberg structure & \cite{Beau2026HeisenbergStructure} &
+      Detailed proof of Found. Thm~5.6; uncertainty principle from A3 alone &
+      \sproved \\[3pt]
+      noscale & No external scale & \cite{Beau2026j} &
+      No independent dimensional parameter beyond $c_\chi$ &
+      \sproved \\[3pt]
+      \midrule
+      BornInfeld & Born--Infeld geometry & \cite{Beau2026c} &
+      BI action as unique minimal bounded-flux representation &
+      \sproved \\[3pt]
+      SpAdm & Spectral admissibility ($Q_8$) & \cite{Beau2026a1} &
+      $A^{\max}_n = c_\chi/\sqrt{\lambda_n}$; first tractable instance &
+      \sproved \\[3pt]
+      SpCap & Spectral capacity & \cite{Beau2026a2} &
+      Capacity functional $\mathcal{C}(G,S)$; binary-polyhedral maximality proved via
+      adjoint identity $\hat{A}_{\mathrm{adj}} = 2M - I$ and icosahedral isotropy &
+      \sproved \\[3pt]
+      SpGram & Gram rigidity (v1.0.1) & \cite{Beau2026a3} &
+      Neutral-generator geometry from $G_{st} = -\tfrac{1}{2}\chi_\rho(st)$ &
+      \sproved \\[3pt]
+      3Gen & Three generations & \cite{Beau2026a4} &
+      Three-generation structure from ADE stratigraphic levels &
+      \sstruct \\[3pt]
+      SpRel & Spectral relaxation & \cite{Beau2026a5} &
+      $\Lambda_{\mathrm{proj}} \asymp \lambda_2$ for LPS expander families &
+      \sproved \\[3pt]
+      \midrule
+      O1 & Variable-valence graphs & \cite{Beau2026a6} &
+      LPS saturation is a fixed-valence artefact; growing valence restores window &
+      \sproved \\[3pt]
+      O3 & Mass hierarchy & \cite{Beau2026a7} &
+      First SM connection: $\beta^* \in (0.09, 0.13)$ from lepton mass ratios &
+      \sstruct \\[3pt]
+      O4 & Upper bound $\beta \leq 1$ & \cite{Beau2026a8} &
+      BI flux $+$ Cheeger $\Rightarrow \beta \leq 1$ &
+      \sproved \\[3pt]
+      O5 & Rep-theoretic obstruction & \cite{Beau2026a9} &
+      Fixed-repr.\ approaches cannot close the $\beta$ gap &
+      \sproved \\[3pt]
+      O6 & Matrix redundancy & \cite{Beau2026a10} &
+      Matrix-level confinement of cascade exponent &
+      \sproved \\[3pt]
+      O7 & Continuum target & \cite{Beau2026a11} &
+      Target: $\delta \in [7.4, 10.6]$ on 3-step fingerprints &
+      \sstruct \\[3pt]
+      O8 & LPS geometric obstruction & \cite{Beau2026a12} &
+      Exponential shell growth $\Rightarrow$ usable window $= O(\log q)$ BFS steps &
+      \sproved \\[3pt]
+      \midrule
+      O9 & Heisenberg graphs & \cite{Beau2026a13} &
+      Structural transition: $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ with $|B_n| \sim n^4$ replaces LPS &
+      \sproved \\[3pt]
+      O10 & Large-$q$ computation & \cite{Beau2026a14} &
+      Confirms $n^4$ growth; TensorSketch obstruction identified &
+      \sproved \\[3pt]
+      O11 & Fourier-character proxy & \cite{Beau2026a15} &
+      Bidimensional proxy overcomes TensorSketch obstruction &
+      \sstruct \\[3pt]
+      O12 & Exact Weil blocks & \cite{Beau2026a16} &
+      $\hat\delta_{\mathrm{exact}} \approx 4.3$--$4.8$ for $q \leq 211$; final obstruction resolved &
+      \sproved \\[3pt]
+      O13 & Extended prime range & \cite{Beau2026a17} &
+      $\hat\delta(q): 4.80 \to 3.59$; finite-size hypothesis refuted &
+      \sproved \\[3pt]
+      O14 & Observable-class correction & \cite{Beau2026a18} &
+      Corrects $\delta \mapsto \beta^*$ via block normalisation &
+      \sstruct \\[3pt]
+      O15 & Block-level no-go & \cite{Beau2026a19} &
+      No reweighting of individual blocks reaches $\delta \in [7.4, 10.6]$ (Cor.~4.8) &
+      \sproved \\[3pt]
+      \midrule
+      O16 & Pair observable & \cite{Beau2026a20} &
+      $\sigma_{\mathrm{pair}} = \sigma_c \sigma_{q-c}$;
+      exponent doubling $\delta_{\mathrm{pair}} \approx 7.44$ &
+      \sstruct \\[3pt]
+      O17 & Structural derivation of pair & \cite{Beau2026a21} &
+      $\rho_{q-c} = \bar\rho_c$ forced by fibre admissibility: pair is derived, not postulated &
+      \sproved \\[3pt]
+      O18 & BI parity involution & \cite{Beau2026a22} &
+      Minimal fibre condition $\{\chi,-\chi\}$; BI parity is the unique global symmetry of $S_{\mathrm{BI}}$ &
+      \sproved \\[3pt]
+      O19 & Canonical normalisation & \cite{Beau2026a23} &
+      $r(c,q)$ does not affect $\delta_{\mathrm{pair}}$; observable pipeline-independent &
+      \sproved \\[3pt]
+      O20 & Persistence criterion & \cite{Beau2026a24} &
+      Dynamical selection of admissible modes via projective persistence &
+      \sstruct \\[3pt]
+      O21 & Shell saturation & \cite{Beau2026a25} &
+      Observable rank $n_3^{\mathrm{obs}}$ via $\Sigma_c(n_3)=3$;
+      transfer $\delta_{\mathrm{pair}} \to \beta^*$ &
+      \sstruct \\[3pt]
+      O22 & Projection locking & \cite{Beau2026a26} &
+      BI projection locking forces $n_3^{\mathrm{obs}}$ onto a BFS shell (Thm~3.2) &
+      \sproved \\[3pt]
+      O23 & Quaternionic minimality & \cite{Beau2026a27} &
+      $\Sigma_c(n_3)=3$ from quaternionic maximality of neutral generators &
+      \sproved \\[3pt]
+      O24 & Observable rank rigidity & \cite{Beau2026a28} &
+      Verticality Lemma; unconditional transfer
+      $c_\chi \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$ (Cor.~4.2) &
+      \sproved \\[3pt]
+      \midrule
+      O25 & Numerical campaign & \cite{Beau2026a29} &
+      $\bar\delta_{\mathrm{pair}} \in \{8.89, 9.98, 9.55, 9.13, 8.78\}$ for $q \in \{29,61,101,151,211\}$;
+      inter-pair $\sigma_q: 0.54 \to 0.11$; $\delta_{\mathrm{corr}} \in [7.7,9.0] \subset [7.4,10.6]$ &
+      \sstruct \\[3pt]
+      O26 & Quadratic completion & \cite{Beau2026a30} &
+      Dictionary: Weil blocks $\leftrightarrow$ rank-1 matrices in $M_2(\mathbb{C})$;
+      connects $\Heis_3$ to $2I \subset \SU(2)$ &
+      \sstruct \\[3pt]
+      O27 & Quaternionic rigidity & \cite{Beau2026a31} &
+      Every admissible $\Phi_{q,\rho}$ satisfying three structural constraints factors through
+      $\mathfrak{su}(2)$ &
+      \sproved \\[3pt]
+      O28 & Window calibration \& $r_{\mathrm{eff}}$ & \cite{Beau2026a32} &
+      $n_1(q)/q$ decreasing (Scenario~S2); $\delta_{\mathrm{corr}} \in [7.4,10.6]$ confirmed;
+      $r_{\mathrm{eff}}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, eigenstructure
+      $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
+      \sstruct \\[3pt]
+      O29 & Symmetric rank formula \& sector ID & \cite{Beau2026a33} &
+      BI parity forces $M_j \in \mathrm{Sym}(V_\rho,\mathbb{C})$;
+      $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$; unique inversion at $r_{\mathrm{eff}}=3$ gives
+      $d_\rho=2$ (spin-$\tfrac{1}{2}$); confirmed for $q \in \{61,101,151\}$;
+      $q=101$ anomaly resolved by multi-sample analysis &
+      \sstruct \\[3pt]
+      PTO & Temporal ordering & \cite{Beau2026pto} &
+      $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
+      temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
+      \sstruct \\[3pt]
+      \midrule
+      Q1 & Phase coherence & \cite{Beau2026q1} &
+      Phase coherence from admissibility (Thm~2.7);
+      singlet correlator and Tsirelson bound derived &
+      \sproved \\[3pt]
+      Q2 & Beyond spin-$\tfrac{1}{2}$ & \cite{Beau2026q2} &
+      Spin-$\tfrac{3}{2}$ quantum structure; $\SU(2)$ as admissibility fixed point &
+      \sproved \\[3pt]
+      Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
+      Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional &
+      \sstruct \\[3pt]
+      Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
+      BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime; conditional &
+      \sstruct \\[3pt]
+      Q6a & Gauge structure & \cite{Beau2026q6a} &
+      $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
+      $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ proposed &
+      \sstruct \\[3pt]
+      Q6b & Effective spacetime & \cite{Beau2026q6b} &
+      Effective Lorentzian geometry from $\Pi_q$; inherits Q5a--Q5b hypotheses &
+      \sstruct \\[3pt]
+      Q7 & Dimensional bridge & \cite{Beau2026q7} &
+      $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$; $[F_c, L_{\mathrm{Weil}}]=0$;
+      bridge non-obstruction (Case~3 excluded by Q9); $A_z = C_{\mathfrak{su}(2)} = 2$;
+      uniqueness of $\varphi$ up to scalar &
+      \sstruct \\[3pt]
+      Q8 & Casimir rigidity & \cite{BeauQ8} &
+      $A_Z = C_{\mathfrak{su}(2)} = 2$ unconditionally under Q5a;
+      $\lambda$ fixed by horizontal sector consistency;
+      $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ established &
+      \sstruct \\[3pt]
+      Q9 & [H-lift] proved & \cite{Beau2026q9} &
+      Kinetic-sector identification: modulation generator suppressed at rate $O(q^{-1/2})$;
+      [H-lift] is a theorem under Q5a; $A_H > 0$ proved by coercivity, independently of bridge &
+      \sproved \\[3pt]
+      Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
+      $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
+      universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
+      bridge conjecture resolved (isotropic case) under [U] &
+      \sstruct \\[3pt]
+      U1 & Universality [U] proved & \cite{Beau2026u1} &
+      $\varepsilon(q) = O(q^{-1/2})$ from Weil-generator Lipschitz bound and
+      BFS--Carnot--Carathéodory convergence; no BI input required for small-$\theta$ regime &
+      \sproved \\[3pt]
+      \midrule
+      Spec2 & Relational spacetime & \cite{Beau2026a} &
+      Operational metric from graph Laplacians; spacetime from spectral correlations &
+      \sstruct \\[3pt]
+      Gravity & IR Einstein response & \cite{Beau2026h} &
+      $G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from $\delta S_\Pi/\delta g$ at leading IR order &
+      \sproved \\[3pt]
+      Thermo & Spectral thermodynamics & \cite{Beau2026Thermodynamics} &
+      Local spectral first law; Einstein equation as spectral equilibrium condition &
+      \sstruct \\[3pt]
+      Lorentz & Gravitational waves & \cite{Beau2026i} &
+      Lorentzian completion; causal propagation; GW spectrum &
+      \sproved \\[3pt]
+      TopInv & Topological invariants & \cite{Beau2026k} &
+      Charge quantisation ($\pi_1 \cong \mathbb{Z}$), no monopoles, chirality (Hopf fibration) &
+      \sproved \\[3pt]
+      SMcm & Charge, mass, inertia & \cite{Beau2026e} &
+      Mass and charge as BI-saturated responses &
+      \sstruct \\[3pt]
+      Bell & Bell non-locality & \cite{Beau2026b} &
+      Bell violations from non-injectivity alone &
+      \sproved \\[3pt]
+      SchLamb & Fine-structure constant & \cite{Beau2026f} &
+      $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
+      \sstruct \\[3pt]
+      Cosmol & Rotation curves / Hubble & \cite{Beau2026d} &
+      Flat rotation curves and Hubble tension from a common effective mechanism &
+      \sstruct \\[3pt]
+      Supra & Superconductivity & \cite{Beau2026g} &
+      Projective phase locking as origin of superconducting coherence &
+      \sstruct \\[3pt]
+    \end{longtable}
 
   \section{Open Problems and Roadmap}
   \label{sec:open}
