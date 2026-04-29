@@ -63,6 +63,11 @@ A Structural Roadmap and Paper Inventory}
     connecting the BI saturation constant to the charged-lepton mass hierarchy.
     Branch~III (Q-series and companion papers) derives quantum mechanics, spacetime geometry,
     gauge structure, and further physical observables from Branch~I axioms and Branch~II spectral data.
+    The geometric emergence sub-programme (Q5a--Q10, U1) has now closed the effective spacetime
+    identification: under the Q5a continuum-limit hypotheses, the lifting hypothesis~[H-lift]
+    is proved (Q9), asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ is proved (Q10), and
+    the O-series spectral universality~[U] underpinning it is proved with rate $O(q^{-1/2})$ (U1),
+    yielding the effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$.
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -875,8 +880,27 @@ A Structural Roadmap and Paper Inventory}
     \sstruct \\[3pt]
     Q7 & Dimensional bridge & \cite{Beau2026q7} &
     $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$; $[F_c, L_{\mathrm{Weil}}]=0$;
-    $A_z = C_{\mathfrak{su}(2)} = 2$; isotropy gap $|A_H - A_z| \to 0$ &
+    bridge non-obstruction (Case~3 excluded by Q9); $A_z = C_{\mathfrak{su}(2)} = 2$;
+    uniqueness of $\varphi$ up to scalar &
     \sstruct \\[3pt]
+    Q8 & Casimir rigidity & \cite{BeauQ8} &
+    $A_Z = C_{\mathfrak{su}(2)} = 2$ unconditionally under Q5a;
+    $\lambda$ fixed by horizontal sector consistency;
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ established &
+    \sstruct \\[3pt]
+    Q9 & [H-lift] proved & \cite{Beau2026q9} &
+    Kinetic-sector identification: modulation generator suppressed at rate $O(q^{-1/2})$;
+    [H-lift] is a theorem under Q5a; $A_H > 0$ proved by coercivity, independently of bridge &
+    \sproved \\[3pt]
+    Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
+    $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
+    universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
+    bridge conjecture resolved (isotropic case) under [U] &
+    \sstruct \\[3pt]
+    U1 & Universality [U] proved & \cite{Beau2026u1} &
+    $\varepsilon(q) = O(q^{-1/2})$ from Weil-generator Lipschitz bound and
+    BFS--Carnot--Carathéodory convergence; no BI input required for small-$\theta$ regime &
+    \sproved \\[3pt]
     \midrule
     Spec2 & Relational spacetime & \cite{Beau2026a} &
     Operational metric from graph Laplacians; spacetime from spectral correlations &
@@ -944,9 +968,17 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch III (Q-Series and Applications)}
 
-  \paragraph{Unconditional continuum limit (Q5a).}
-    Lifting the Mosco and lifting hypotheses to unconditional results is the main open problem
-    in the geometric emergence track.
+  \paragraph{Effective Lorentzian geometry (Q5a--U1, partially closed).}
+    The geometric emergence sub-programme has reached the following status.
+    The lifting hypothesis~[H-lift] is now a theorem~(Q9) under the Q5a hypotheses.
+    Asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ with rate $O(q^{-1/2})$ is proved~(Q10, U1),
+    yielding $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ and resolving Q5b-O2.
+    The remaining open hypotheses in Q5a are:
+    [H1] (Weil-block-compatible embeddings in full generality);
+    [H-w] (convergence $a_q(s) \to A > 0$ of admissibility weights, derivable from O-series bounds);
+    [H-E1] (uniform Poincaré inequality, follows from BFS spectral gap);
+    [C] (Mosco tightness, the hardest --- requires the Nash inequality programme).
+    Of these, [H-w] is the most accessible next target, as U1's Lipschitz framework provides the natural tool.
 
   \paragraph{$\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model
     (TopologicalInvariants, Remark~4.2).}
@@ -986,6 +1018,13 @@ A Structural Roadmap and Paper Inventory}
   confirmed numerically for $q \in \{61, 101, 151\}$.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
+  The geometric emergence sub-programme has advanced substantially: Q9 proves [H-lift] and
+  $A_H > 0$ (unconditionally under Q5a); Q10 proves $A_H \to 2$ under spectral universality~[U];
+  U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability.
+  The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ is thereby
+  established under the Q5a foundational hypotheses and [U].
+  The remaining analytical targets are the Q5a hypotheses themselves ([H-w], [H1], [H-E1], [C]),
+  of which [H-w] is the most directly accessible via the O-series spectral framework.
 
   For an external reader, three entry sequences are suggested.
   For the quantum structure thread:
@@ -993,7 +1032,9 @@ A Structural Roadmap and Paper Inventory}
   For the spectral mass hierarchy thread:
   ENI $\to$ Foundation $\to$ O16 $\to$ O24.
   For the spacetime thread:
-  Spectral2 $\to$ Gravity $\to$ (Thermodynamics or Lorentz).
+  Spectral2 $\to$ Gravity $\to$ (Thermodynamics or Lorentz);
+  for the geometric emergence thread:
+  Q5a $\to$ Q5b $\to$ Q7 $\to$ Q9 $\to$ Q10 $\to$ U1.
 
   \clearpage
   \bibliography{cosmochrony-bibliography}
