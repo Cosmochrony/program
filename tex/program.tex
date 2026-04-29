@@ -666,7 +666,7 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
 \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
 \node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
-(geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}Q8--Q10\\U1\end{tabular}};
+(geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}Q8--Q10\\U1, W1\end{tabular}};
 
 \draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
 \draw[arr]   (O23)   to[out=-10,in=180] (Q7);
@@ -753,6 +753,7 @@ A Structural Roadmap and Paper Inventory}
         \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-lift]}};
         \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
         \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
+        \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
 
         % ── Result (bottom) ──────────────────────────────────
         \node[P,minimum width=4cm] (Met)
@@ -772,15 +773,20 @@ A Structural Roadmap and Paper Inventory}
         \draw[spine] (Q9)--(Q10);
         \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
         \draw[spine] (Q10)--(U1);
+        \draw[spine] (U1)--(W1);
+        \draw[arr]   (Q5a) to[out=-45,in=90] (W1);
 
         \draw[spine] (U1)  to[out=-90,in=135] (Met);
         \draw[arr]   (Q8)  to[out=-90,in=45]  (Met);
+        \draw[arr]   (W1)  to[out=-90,in=45]  (Met);
 
         % ── Status annotations ───────────────────────────────
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
           {coercivity $\Rightarrow A_H\!>\!0$};
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
           {rate $O(q^{-1/2})$};
+        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (W1.east)
+          {fibre-inv.\ $\Rightarrow$ uniform};
 
         \end{tikzpicture}
       }
@@ -794,6 +800,8 @@ A Structural Roadmap and Paper Inventory}
         $\Rightarrow$ $A_H \to 2$, conditional on~[U].
         \textbf{U1}~(\sproved{}): [U] proved with rate $O(q^{-1/2})$ from Weil-generator
         Lipschitz bound and BFS--Carnot--Carath\'eodory convergence (Q5b).
+        \textbf{W1}~(\sproved{}): [H-w] proved as a structural consequence of fibre-invariance
+        ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
         The effective metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ is established
         under the Q5a hypotheses.}
       \label{fig:geom}
