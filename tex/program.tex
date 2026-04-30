@@ -65,11 +65,13 @@ A Structural Roadmap and Paper Inventory}
     gauge structure, and further physical observables from Branch~I axioms and Branch~II spectral data.
     The geometric emergence sub-programme (Q5a--Q10, U1, W1) has now closed the effective spacetime
     identification: under the Q5a continuum-limit hypotheses, the lifting hypothesis~[H-lift]
-    is proved (Q9), asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ is proved (Q10),
-    the O-series spectral universality~[U] underpinning it is proved with rate $O(q^{-1/2})$ (U1),
-    and the admissibility weight convergence~[H-w] is proved as a structural consequence of
-    fibre-invariance and~[U] (W1),
+    is proved (Q9), asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ is proved (Q10, U1),
+    the admissibility weight convergence~[H-w] is proved (W1),
     yielding the effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$.
+    Q5a v2.0 establishes that [H1] is not needed in full generality.
+    Q5a-O2 proves spectral atomicity of the admissible sector (each pair spans three pure Fourier modes)
+    and closes hypotheses [H-$\mathcal{E}$1] and [C] without Nash inequalities;
+    the sole remaining Q5a target is [H2].
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -492,6 +494,8 @@ A Structural Roadmap and Paper Inventory}
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
     observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved, under Q5a [H1],[H2]).
     After W1, the open Q5a hypotheses reduce to three: [H1], [H-E1], and [C].
+    Q5a-O2 subsequently proves that [H1] is not needed in full generality on the admissible sector,
+    and closes [H-E1] and [C] via spectral atomicity; the sole remaining hypothesis is [H2].
 
   \subsection{Gravity and Spacetime Track}
 
@@ -661,6 +665,7 @@ A Structural Roadmap and Paper Inventory}
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
 \node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
+\node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
 \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
 \node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
 \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
@@ -680,6 +685,9 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr]   (O23)   to[out=10,in=180] (Q1);
 \draw[arr]   (Q1)--(Q2);
 \draw[arr]   (Q2)--(Q5a);
+\draw[arr]   (Q5a)--(Q5aO2);
+\node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
+  {\begin{tabular}{l}[H-$\mathcal{E}$1], [C]\\proved\end{tabular}};
 \draw[spine] (Q5a)--(Q5b);
 \draw[arr]   (Q5b)--(Q6a);
 \draw[arr]   (Q6a)--(Q6b);
@@ -743,9 +751,10 @@ A Structural Roadmap and Paper Inventory}
         \def\dy{1.4cm}
 
         % ── Inputs (left column) ──────────────────────────────
-        \node[S] (Q5a) at (0,0)        {Q5a};
-        \node[S] (Q5b) at (0,-\dy)     {Q5b};
-        \node[S] (O25) at (-\dx,-2*\dy){O25};
+        \node[S] (Q5a)   at (0,0)          {Q5a};
+        \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
+        \node[S] (Q5b)   at (0,-\dy)       {Q5b};
+        \node[S] (O25)   at (-\dx,-2*\dy)  {O25};
 
         % ── Core chain (centre column) ───────────────────────
         \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
@@ -761,8 +770,10 @@ A Structural Roadmap and Paper Inventory}
           {$g^{\mu\nu}=\mathrm{diag}(-A_\tau,2,2,2)$};
 
         % ── Edges ────────────────────────────────────────────
+        \draw[arr]   (Q5a)--(Q5aO2);
         \draw[spine] (Q5a)--(Q5b);
         \draw[arr]   (Q5a) to[out=0,in=90] (Q7);
+        \draw[arr]   (Q5aO2) to[out=-90,in=90] (W1);
         \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
         \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
         \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
@@ -781,6 +792,8 @@ A Structural Roadmap and Paper Inventory}
         \draw[arr]   (W1)  to[out=-90,in=45]  (Met);
 
         % ── Status annotations ───────────────────────────────
+        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
+          {spectral atomicity};
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
           {coercivity $\Rightarrow A_H\!>\!0$};
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
@@ -790,8 +803,10 @@ A Structural Roadmap and Paper Inventory}
 
         \end{tikzpicture}
       }
-      \caption{Geometric emergence sub-programme: logical chain from the continuum-limit
-      hypotheses Q5a--Q5b to the effective Lorentzian co-metric.
+      \caption{Geometric emergence sub-programme: logical chain from Q5a to the effective
+      Lorentzian co-metric.
+      \textbf{Q5a-O2}~(\sproved{}): spectral atomicity of $\mathrm{ran}(\Pi_q)$;
+      proves [H-$\mathcal{E}$1] and [C]; closes all Q5a hypotheses except [H2].
       \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
         independently of the bridge.
         \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
@@ -803,7 +818,7 @@ A Structural Roadmap and Paper Inventory}
         \textbf{W1}~(\sproved{}): [H-w] proved as a structural consequence of fibre-invariance
         ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
         The effective metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ is established
-        under the Q5a hypotheses.}
+        under the Q5a hypotheses; [H2] is the sole remaining open hypothesis.}
       \label{fig:geom}
     \end{figure}
     \label{sec:inventory}
@@ -969,8 +984,17 @@ A Structural Roadmap and Paper Inventory}
       Spin-$\tfrac{3}{2}$ quantum structure; $\SU(2)$ as admissibility fixed point &
       \sproved \\[3pt]
       Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
-      Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional &
+      Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional on [H2].
+      v2.0: [H1] established on admissible sector (not needed in full generality);
+      [H-$\mathcal{E}$1] and [C] proved by Q5a-O2; only [H2] remains open &
       \sstruct \\[3pt]
+      Q5a-O2 & Spectral atomicity \& Mosco closure & \phantom{---} &
+      Admissible sector spectrally atomic: $\mathrm{ran}(\Pi_q^{(c)}) =
+      \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$, $\xi_c/q \to \omega_c \neq 0$.
+      Proves [H-$\mathcal{E}$1'] (scaled coercivity, $\beta=1$ optimal) and [C]
+      (Mosco compactness via Bolzano--Weierstrass in $\mathbb{C}^2$, no Nash inequality needed).
+      Numerical confirmation $K_q=1$ at machine precision for $q \in \{29,61,101,151\}$ &
+      \sproved \\[3pt]
       Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
       BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime; conditional &
       \sstruct \\[3pt]
@@ -1007,7 +1031,7 @@ A Structural Roadmap and Paper Inventory}
       W1 & [H-w] proved & \cite{Beau2026w1} &
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
       ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$;
-      Q5a open hypotheses reduced to [H1], [H-E1], [C] &
+      after W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only &
       \sproved \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
@@ -1076,18 +1100,24 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch III (Q-Series and Applications)}
 
-  \paragraph{Effective Lorentzian geometry (Q5a--W1, partially closed).}
+  \paragraph{Effective Lorentzian geometry (Q5a--W1 + Q5a-O2, substantially closed).}
     The geometric emergence sub-programme has reached the following status.
     The lifting hypothesis~[H-lift] is now a theorem~(Q9) under the Q5a hypotheses.
     Asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ with rate $O(q^{-1/2})$ is proved~(Q10, U1),
     yielding $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ and resolving Q5b-O2.
     Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the admissibility weights) is now
     proved~(W1) as a structural consequence of fibre-invariance, made quantitative by U1.
-    The remaining open hypotheses in Q5a are:
-    [H1] (Weil-block-compatible embeddings in full generality);
-    [H-E1] (uniform Poincaré inequality, follows from BFS spectral gap);
-    [C] (Mosco tightness, the hardest --- requires the Nash inequality programme).
-    These three hypotheses are now logically independent of each other and of [H-w].
+    Q5a v2.0 establishes that [H1] is not needed in full generality: it holds on the
+    admissible low-frequency sector, which suffices for the main results T1--T3.
+    Q5a-O2 proves that the admissible sector is \emph{spectrally atomic}
+    ($\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$,
+    $\xi_c/q \to \omega_c \neq 0$), from which
+    [H-$\mathcal{E}$1'] (scaled coercivity at the optimal diffusive exponent $\beta=1$) and [C]
+    (Mosco compactness, via Bolzano--Weierstrass in $\mathbb{C}^2$, without Nash inequalities)
+    are proved unconditionally.
+    The sole remaining open hypothesis in Q5a is:
+    [H2] (strong convergence of the rescaled generators), which constrains the full identification
+    of the limiting operator $L_\Pi$ but is not required for compactness.
 
   \paragraph{$\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model
     (TopologicalInvariants, Remark~4.2).}
@@ -1133,8 +1163,13 @@ A Structural Roadmap and Paper Inventory}
   W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ is thereby
   established under the Q5a foundational hypotheses and [U].
-  The remaining analytical targets are the Q5a hypotheses [H1], [H-E1], and [C],
-  which are now logically independent of each other and of the proved [H-w].
+  Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
+  Q5a-O2 proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
+  each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
+  diffusive scale follows from the non-zero limiting frequency, and Mosco compactness reduces to
+  Bolzano--Weierstrass in $\mathbb{C}^2$.
+  The sole remaining analytical target in Q5a is hypothesis~[H2] (strong convergence of the
+  rescaled generators), which controls the identification of the limiting operator $L_\Pi$.
 
   For an external reader, three entry sequences are suggested.
   For the quantum structure thread:

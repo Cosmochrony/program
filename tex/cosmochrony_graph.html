@@ -518,8 +518,17 @@
     {id:'Q5a',    lbl:'Q5a',      s:'structural', b:'III', key:'Beau2026q5a',
       url: ZEN+'19642369',
       tags:['spt','QM'],
-      title:'Q5a — Large-q Operator Limit',
-      desc:'Mosco convergence (conditional): E_q → L_Π = −A∂²_x on L²(ℝ).'},
+      title:'Q5a — Large-q Operator Limit (v2.0)',
+      desc:'Mosco convergence (conditional on [H2] only): E_q → L_Π = −A∂²_x on L²(ℝ). ' +
+        'v2.0: [H1] not needed in full generality (holds on admissible low-frequency sector). ' +
+        '[H-E1] and [C] proved by Q5a-O2. Sole open hypothesis: [H2] (generator convergence).'},
+    {id:'Q5aO2', lbl:'Q5a-O2',   s:'proved',     b:'III',
+      tags:['spt','spec'],
+      title:'Q5a-O2 — Spectral Atomicity & Mosco Closure',
+      desc:'Admissible sector spectrally atomic: ran(Π_q^(c)) = span{e_0, e_{ξ_c}, e_{q−ξ_c}}, ξ_c/q → ω_c ≠ 0. ' +
+        'Proves [H-E1′] (scaled coercivity Eq(f,f) ≥ c·q⁻¹·‖f‖², optimal exponent β=1) via spectral gap. ' +
+        'Proves [C] (Mosco compactness) by Bolzano–Weierstrass in ℂ², no Nash inequalities. ' +
+        'Numerical confirmation K_q=1 at machine precision for q ∈ {29,61,101,151}.'},
     {id:'Q5b',    lbl:'Q5b',      s:'structural', b:'III', key:'Beau2026q5b',
       url: ZEN+'19686700',
       tags:['spt','time'],
@@ -575,7 +584,7 @@
       desc:'a_q(s) → A > 0 uniformly in s. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; ' +
         '(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. ' +
         'Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. ' +
-        'After W1, open Q5a hypotheses reduce to [H1], [H-E1], [C].'},
+        'After W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only.'},
     {id:'Sp2',    lbl:'Spec2',    s:'structural', b:'III', key:'Beau2026a',
       tags:['spt'],
       title:'Spectral2 — Relational Spacetime',
@@ -642,7 +651,7 @@
     {f:'O25',t:'O28',sp:1},{f:'O27',t:'O28'},
     {f:'O28',t:'O29',sp:1},{f:'O27',t:'O29'},
     {f:'Found',t:'Q1',sp:1},{f:'O18',t:'Q1'},{f:'O22',t:'Q1'},{f:'O23',t:'Q1'},
-    {f:'Q1',t:'Q2'},{f:'Q2',t:'Q5a'},{f:'Q5a',t:'Q5b',sp:1},{f:'Q5b',t:'Q6a'},{f:'Q6a',t:'Q6b'},
+    {f:'Q1',t:'Q2'},{f:'Q2',t:'Q5a'},{f:'Q5a',t:'Q5aO2'},{f:'Q5aO2',t:'Q5b',sp:1},{f:'Q5a',t:'Q5b',sp:1},{f:'Q5b',t:'Q6a'},{f:'Q6a',t:'Q6b'},
     {f:'Q5b',t:'Q7'},{f:'O23',t:'Q7'},{f:'O28',t:'Q7'},{f:'O29',t:'Q7'},
     {f:'Q7',t:'Q8'},{f:'Q7',t:'Q9'},{f:'Q5a',t:'Q9'},
     {f:'Q9',t:'Q10'},{f:'Q8',t:'Q10'},{f:'O25',t:'Q10'},
@@ -668,7 +677,7 @@
     O16:{x:0,y:5*Y}, O17:{x:X,y:5*Y}, O18:{x:2*X,y:5*Y}, O19:{x:3*X,y:5*Y},
     O20:{x:4*X,y:5*Y}, O21:{x:5*X,y:5*Y}, O22:{x:6*X,y:5*Y}, O23:{x:7*X,y:5*Y}, O24:{x:8*X,y:5*Y},
     O25:{x:5*X,y:6*Y}, O26:{x:6*X,y:6*Y}, O27:{x:7*X,y:6*Y}, O28:{x:8*X,y:6*Y}, O29:{x:9*X,y:6*Y}, PTO:{x:6*X,y:7*Y},
-    Q1:{x:10*X,y:3*Y}, Q2:{x:10*X,y:4*Y}, Q5a:{x:10*X,y:5*Y},
+    Q1:{x:10*X,y:3*Y}, Q2:{x:10*X,y:4*Y}, Q5a:{x:10*X,y:5*Y}, Q5aO2:{x:11*X,y:5*Y},
     Q5b:{x:10*X,y:6*Y}, Q6a:{x:10*X,y:7*Y}, Q6b:{x:10*X,y:8*Y}, Q7:{x:10*X,y:9*Y},
     Q8:{x:11*X,y:9*Y}, Q9:{x:10*X,y:10*Y}, Q10:{x:11*X,y:10*Y}, U1:{x:10*X,y:11*Y}, W1:{x:11*X,y:11*Y},
     Sp2:{x:-X,y:4*Y}, Grav:{x:-X,y:5*Y}, Thm:{x:-X,y:6*Y}, Lor:{x:-X,y:7*Y},
