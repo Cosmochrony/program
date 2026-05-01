@@ -54,7 +54,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus now comprises more than 50 papers across three theory branches.
+    The corpus now comprises more than 60 papers (66 at the time of writing) across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -63,15 +63,16 @@ A Structural Roadmap and Paper Inventory}
     connecting the BI saturation constant to the charged-lepton mass hierarchy.
     Branch~III (Q-series and companion papers) derives quantum mechanics, spacetime geometry,
     gauge structure, and further physical observables from Branch~I axioms and Branch~II spectral data.
-    The geometric emergence sub-programme (Q5a--Q10, U1, W1) has now closed the effective spacetime
+    The geometric emergence sub-programme (Q5a--Q10, U1, W1, H2) has now closed the effective spacetime
     identification: under the Q5a continuum-limit hypotheses, the lifting hypothesis~[H-lift]
     is proved (Q9), asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ is proved (Q10, U1),
     the admissibility weight convergence~[H-w] is proved (W1),
     yielding the effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$.
     Q5a v2.0 establishes that [H1] is not needed in full generality.
     Q5a-O2 proves spectral atomicity of the admissible sector (each pair spans three pure Fourier modes)
-    and closes hypotheses [H-$\mathcal{E}$1] and [C] without Nash inequalities;
-    the sole remaining Q5a target is [H2].
+    and closes hypotheses [H-$\mathcal{E}$1] and [C] without Nash inequalities.
+    Hypothesis~[H2] (strong convergence of the rescaled Weil generators) is now proved (H2~paper),
+    closing all hypotheses of the Q5a large-$q$ convergence theorem unconditionally on the admissible sector.
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -107,7 +108,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus now contains more than 50 papers with complex mutual dependencies.
+  The corpus now contains more than 60 papers (66 at the time of writing) with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -489,13 +490,18 @@ A Structural Roadmap and Paper Inventory}
     character-independence forces $\mathfrak{su}(2)$-isotropy of the effective form,
     and the unique such form is the Casimir with value~2 (\sstruct, conditional on [U]).
     U1~\cite{Beau2026u1} proves [U] with rate $\varepsilon(q) = O(q^{-1/2})$ from the Weil-generator
-    Lipschitz bound and BFS--Carnot--Carathéodory convergence (\sproved, under Q5a [H1],[H2]).
+    Lipschitz bound and BFS--Carnot--Carathéodory convergence (\sproved{}).
     W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
-    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved, under Q5a [H1],[H2]).
+    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved{}).
     After W1, the open Q5a hypotheses reduce to three: [H1], [H-E1], and [C].
     Q5a-O2 subsequently proves that [H1] is not needed in full generality on the admissible sector,
-    and closes [H-E1] and [C] via spectral atomicity; the sole remaining hypothesis is [H2].
+    and closes [H-E1] and [C] via spectral atomicity.
+    H2~\cite{Beau2026h2} proves the last open hypothesis, [H2] (strong convergence of the rescaled
+    Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$), via a quantitative
+    Poisson aliasing lemma and a discrete Sobolev identity (\sproved{}).
+    All hypotheses of the Q5a large-$q$ convergence theorem are now verified unconditionally
+    on the admissible sector.
 
   \subsection{Gravity and Spacetime Track}
 
@@ -672,12 +678,17 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
 \node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
 (geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}Q8--Q10\\U1, W1\end{tabular}};
+\node[P] (H2)   at (9*\dx,-7*\dy)   {H2};
+\node[font=\tiny\sffamily,text=cproved,right=2pt] at (H2.east)
+  {[H2] proved};
 
 \draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
 \draw[arr]   (O23)   to[out=-10,in=180] (Q7);
 \draw[arr]   (O28)   to[out=-10,in=180] (Q7);
 \draw[arr]   (O29)   to[out=-10,in=180] (Q7);
 \draw[arr,dashed,draw=cproved]   (Q7)--(geom);
+\draw[spine] (Q5a)   to[out=0,in=90]   (H2);
+\draw[arr]   (H2)    to[out=-90,in=0]  (geom);
 
 \draw[spine] (Found) to[out=0,in=90] (Q1);
 \draw[arr]   (O18)   to[out=10,in=180] (Q1);
@@ -986,7 +997,8 @@ A Structural Roadmap and Paper Inventory}
       Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
       Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional on [H2].
       v2.0: [H1] established on admissible sector (not needed in full generality);
-      [H-$\mathcal{E}$1] and [C] proved by Q5a-O2; only [H2] remains open &
+      [H-$\mathcal{E}$1] and [C] proved by Q5a-O2; [H2] proved by H2~paper:
+      all hypotheses now verified on the admissible sector &
       \sstruct \\[3pt]
       Q5a-O2 & Spectral atomicity \& Mosco closure & \phantom{---} &
       Admissible sector spectrally atomic: $\mathrm{ran}(\Pi_q^{(c)}) =
@@ -1032,6 +1044,12 @@ A Structural Roadmap and Paper Inventory}
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
       ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$;
       after W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only &
+      \sproved \\[3pt]
+      H2 & [H2] proved & \cite{Beau2026h2} &
+      Strong convergence $\hat{X}_q \to x$, $\hat{P}_q \to -i\partial_x$ on
+      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$: quantitative Poisson aliasing lemma (rate $O(q^{-1})$),
+      discrete Sobolev identity, quasi-isometry of sinc embedding;
+      closes last open hypothesis of Q5a Theorem~7.1 &
       \sproved \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
@@ -1100,24 +1118,19 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch III (Q-Series and Applications)}
 
-  \paragraph{Effective Lorentzian geometry (Q5a--W1 + Q5a-O2, substantially closed).}
-    The geometric emergence sub-programme has reached the following status.
-    The lifting hypothesis~[H-lift] is now a theorem~(Q9) under the Q5a hypotheses.
+  \paragraph{Effective Lorentzian geometry (Q5a--W1 + Q5a-O2 + H2, closed).}
+    The geometric emergence sub-programme is now formally closed.
+    The lifting hypothesis~[H-lift] is a theorem~(Q9) under the Q5a hypotheses.
     Asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ with rate $O(q^{-1/2})$ is proved~(Q10, U1),
     yielding $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ and resolving Q5b-O2.
-    Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the admissibility weights) is now
-    proved~(W1) as a structural consequence of fibre-invariance, made quantitative by U1.
-    Q5a v2.0 establishes that [H1] is not needed in full generality: it holds on the
-    admissible low-frequency sector, which suffices for the main results T1--T3.
-    Q5a-O2 proves that the admissible sector is \emph{spectrally atomic}
-    ($\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$,
-    $\xi_c/q \to \omega_c \neq 0$), from which
-    [H-$\mathcal{E}$1'] (scaled coercivity at the optimal diffusive exponent $\beta=1$) and [C]
-    (Mosco compactness, via Bolzano--Weierstrass in $\mathbb{C}^2$, without Nash inequalities)
-    are proved unconditionally.
-    The sole remaining open hypothesis in Q5a is:
-    [H2] (strong convergence of the rescaled generators), which constrains the full identification
-    of the limiting operator $L_\Pi$ but is not required for compactness.
+    Hypothesis~[H-w] is proved~(W1) as a structural consequence of fibre-invariance.
+    Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
+    Q5a-O2 proves spectral atomicity and closes [H-$\mathcal{E}$1] and [C] unconditionally.
+    Hypothesis~[H2] (strong convergence of the rescaled Weil generators) is proved~(H2~paper)
+    via a quantitative Poisson aliasing lemma and a discrete Sobolev identity,
+    yielding also a reusable quasi-isometry bound with rate $O(q^{-1})$ for Q5a-O5.
+    All six hypotheses of Q5a Theorem~7.1 are now verified on the admissible sector;
+    the large-$q$ convergence theorem holds unconditionally.
 
   \paragraph{$\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model
     (TopologicalInvariants, Remark~4.2).}
@@ -1169,8 +1182,10 @@ A Structural Roadmap and Paper Inventory}
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
   diffusive scale follows from the non-zero limiting frequency, and Mosco compactness reduces to
   Bolzano--Weierstrass in $\mathbb{C}^2$.
-  The sole remaining analytical target in Q5a is hypothesis~[H2] (strong convergence of the
-  rescaled generators), which controls the identification of the limiting operator $L_\Pi$.
+  The H2 paper proves the last open hypothesis [H2] (strong convergence of the rescaled Weil
+  generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$) via a quantitative Poisson
+  aliasing lemma and a discrete Sobolev identity; all hypotheses of Q5a Theorem~7.1 are now
+  verified on the admissible sector, and the large-$q$ convergence theorem holds unconditionally.
 
   For an external reader, three entry sequences are suggested.
   For the quantum structure thread:

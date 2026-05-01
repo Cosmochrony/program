@@ -907,9 +907,9 @@
       url: BASE + "spectral/program/q5/a",
       tags: ["spt", "QM"],
       title: "Q5a — Large-q Operator Limit (v2.0)",
-      desc: "Mosco convergence (conditional on [H2] only): E_q → L_Π = −A∂²_x on L²(ℝ). " +
+      desc: "Mosco convergence E_q → L_Π = −A∂²_x on L²(ℝ). " +
         "v2.0: [H1] not needed in full generality (holds on admissible low-frequency sector). " +
-        "[H-E1] and [C] proved by Q5a-O2. Sole open hypothesis: [H2] (generator convergence)."
+        "[H-E1] and [C] proved by Q5a-O2. [H2] proved by H2 paper. All hypotheses verified on admissible sector."
     },
     {
       id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III",
@@ -993,7 +993,18 @@
       desc: "a_q(s) → A > 0 uniformly in s. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
         "(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. " +
         "Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. " +
-        "After W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only."
+        "After W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only — proved by H2 paper."
+    },
+    {
+      id: "H2", lbl: "H2", s: "proved", b: "III", key: "Beau2026h2",
+      url: ZEN + "19962051",
+      tags: ["spt", "emer"],
+      title: "H2 — Hypothesis [H2] Proved",
+      desc: "Strong convergence X̂_q → x and P̂_q → −i∂_x on Heis₃(ℤ/qℤ). " +
+        "Proof: quantitative Poisson aliasing lemma (rate O(q⁻¹)), discrete Sobolev identity (centered difference), " +
+        "quasi-isometry of sinc embedding. " +
+        "Closes last open hypothesis of Q5a Theorem 7.1; all hypotheses now verified unconditionally on admissible sector. " +
+        "Quasi-isometry bound O(q⁻¹) also provides the quantitative input for Q5a-O5 (identification of A in terms of c_BI)."
     },
     {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
@@ -1100,6 +1111,7 @@
     { f: "Q9", t: "Q10" }, { f: "Q8", t: "Q10" }, { f: "O25", t: "Q10" },
     { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
+    { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
@@ -1163,6 +1175,7 @@
     Q10: { x: 11 * X, y: 10 * Y },
     U1: { x: 10 * X, y: 11 * Y },
     W1: { x: 11 * X, y: 11 * Y },
+    H2: { x: 12 * X, y: 11 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
@@ -1276,7 +1289,7 @@
 
     bgRect(-X, 0, 5 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
     bgRect(-X, Y, 9 * X + NW, 5 * Y + NH, "var(--branch2)", "Branch II: O-series")
-    bgRect(10 * X - 6, 3 * Y - 6, NW + 12, 5 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
+    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 5 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
 
     /* edges */
