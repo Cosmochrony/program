@@ -54,7 +54,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 66 papers across three theory branches.
+    The corpus comprises 67 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -63,6 +63,11 @@ A Structural Roadmap and Paper Inventory}
     connecting the BI saturation constant to the charged-lepton mass hierarchy.
     Branch~III (Q-series and companion papers) derives quantum mechanics, spacetime geometry,
     gauge structure, and further physical observables from Branch~I axioms and Branch~II spectral data.
+    Paper Q3 completes the $\SU(2)$ quantum sector: by combining BI indiscernibility with
+    Schur's lemma on the Clebsch--Gordan decomposition of $\chi_{2j+1}\otimes\chi_{2j+1}$, the
+    universal singlet correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ and the
+    Born rule are derived for all five admissible sectors of~$2I$, closing the general-$j$ extension
+    that was open in~Q2.
     The geometric emergence sub-programme (Q5a--Q10, U1, W1, H2) closes the effective spacetime
     identification: under the Q5a continuum-limit hypotheses, the lifting hypothesis~[H-lift]
     is proved (Q9), asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ is proved (Q10, U1),
@@ -108,7 +113,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 66 papers with complex mutual dependencies.
+  The corpus comprises 67 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -155,7 +160,8 @@ A Structural Roadmap and Paper Inventory}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
     waves, and cosmological observables are derived as consequences of Levels~1--2.
     No additional physical postulates are introduced beyond the continuum-limit hypotheses of Q5a--Q5b.
-    Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2}, Q5a--Q7), the gravity track
+    Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2},
+    Q3~\cite{Beau2026q3}, Q5a--Q7), the gravity track
     (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
     and the companion papers~(\cite{Beau2026b,Beau2026c,Beau2026d,Beau2026e,Beau2026f,Beau2026g,Beau2026k}).
 
@@ -449,7 +455,18 @@ A Structural Roadmap and Paper Inventory}
     The Born rule, singlet correlator, and Tsirelson bound are derived for spin-$\tfrac{3}{2}$
     without new postulates.
     $\SU(2)$ is established as the stable fixed point of the admissibility flow (\sproved{} for
-    spin-$\tfrac{3}{2}$; general-$j$ extension \sopen).
+    spin-$\tfrac{3}{2}$; general-$j$ extension proved in Q3~\cite{Beau2026q3}).
+
+    \textbf{Q3}~\cite{Beau2026q3}: Completes the $\SU(2)$ quantum sector for all admissible~$j$.
+    BI indiscernibility forces the bipartite proto-state to be invariant under the diagonal
+    $2I$-action on $V_{\chi_{2j+1}}\otimes V_{\chi_{2j+1}}$; Schur's lemma applied to the
+    Clebsch--Gordan decomposition $\chi_{2j+1}\otimes\chi_{2j+1} = \bigoplus_{J=0}^{2j}\chi_{2J+1}$
+    uniquely identifies the proto-state as the singlet $|\Omega_j\rangle$.
+    The universal correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ and the Born
+    rule are derived for all five admissible sectors
+    $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ of~$2I$ (\sproved).
+    Closes the open step of~Q2 (identification of the isotropic fibre state with the
+    proto-state for spin-$\tfrac{3}{2}$, and general-$j$ extension).
 
     \textbf{Q5a}~\cite{Beau2026q5a}: Under Mosco hypotheses, the admissibility forms~$\mathcal{E}_q$
     on $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ converge to $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$
@@ -566,7 +583,7 @@ A Structural Roadmap and Paper Inventory}
     Develops the spectral machinery and the transfer chain.
 
   \paragraph{Physical path.}
-    Foundation $+ $ O18 $+$ O22 $+$ O23 $\to$ Q1 $\to$ Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
+    Foundation $+ $ O18 $+$ O22 $+$ O23 $\to$ Q1 $\to$ Q2 $\to$ Q3; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
     O23 $+$ O28 $+$ O29 $+$ Q5b $\to$ Q7 (dimensional bridge);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz.
 
@@ -671,6 +688,9 @@ A Structural Roadmap and Paper Inventory}
 
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
+\node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
+\node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q3.east)
+  {general-$j$ complete};
 \node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
 \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
 \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
@@ -696,6 +716,7 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr]   (O22)   to[out=10,in=180] (Q1);
 \draw[arr]   (O23)   to[out=10,in=180] (Q1);
 \draw[arr]   (Q1)--(Q2);
+\draw[arr]   (Q2)--(Q3);
 \draw[arr]   (Q2)--(Q5a);
 \draw[arr]   (Q5a)--(Q5aO2);
 \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
@@ -841,6 +862,7 @@ A Structural Roadmap and Paper Inventory}
     \setlength\LTleft{0pt}
     \setlength\LTright{0pt}
     \begin{longtable}{@{}p{1.45cm}p{3.4cm}p{1.5cm}p{6.5cm}p{1.3cm}@{}}
+      \label{tab:inventory}\\
       \toprule
       \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
       \midrule
@@ -995,6 +1017,11 @@ A Structural Roadmap and Paper Inventory}
       Q2 & Beyond spin-$\tfrac{1}{2}$ & \cite{Beau2026q2} &
       Spin-$\tfrac{3}{2}$ quantum structure; $\SU(2)$ as admissibility fixed point &
       \sproved \\[3pt]
+      Q3 & Universal spin-$j$ singlet & \cite{Beau2026q3} &
+      Schur + BI indiscernibility identify proto-state as singlet $|\Omega_j\rangle$ for all
+      $j \in \{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}$; universal correlator and Born rule
+      derived; closes Q2 open step &
+      \sproved \\[3pt]
       Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
       Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional on [H2].
       v2.0: [H1] established on admissible sector (not needed in full generality);
@@ -1138,10 +1165,6 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{$V-A$ chiral structure.}
     Formal derivation of the $V - A$ coupling from spectral selection is open.
 
-  \paragraph{Spin-$j$ extension (Q2).}
-    The structural derivation of quantum mechanics for all~$j$ in the
-    $Q_8 \hookrightarrow 2I \hookrightarrow \SU(2)$ chain is open beyond spin-$\tfrac{3}{2}$.
-
   \paragraph{Thermodynamics: Lorentzian extension and matter coupling.}
     The local spectral first law is derived in the Riemannian setting.
     Analytic continuation and the explicit form of $W_\Pi$ for matter fields are open.
@@ -1163,6 +1186,10 @@ A Structural Roadmap and Paper Inventory}
   confirmed numerically for $q \in \{61, 101, 151\}$.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
+  The $\SU(2)$ quantum sector is now complete: Q3 closes the general-$j$ open step of Q2 by
+  identifying the proto-state as the singlet for all five admissible sectors of $2I$ via
+  Schur's lemma, and derives the universal correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$
+  and Born rule for $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ (\sproved).
   The geometric emergence sub-programme has advanced substantially: Q9 proves [H-lift] and
   $A_H > 0$ (unconditionally under Q5a); Q10 proves $A_H \to 2$ under spectral universality~[U];
   U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability;
