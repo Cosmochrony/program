@@ -54,7 +54,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 67 papers across three theory branches.
+    The corpus comprises 68 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -113,7 +113,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 67 papers with complex mutual dependencies.
+  The corpus comprises 68 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -154,7 +154,7 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: SpectralAdmissibility~\cite{Beau2026a1},
     SpectralCapacity~\cite{Beau2026a2},
     SpectralGramRigidity~\cite{Beau2026a3}, SpectralRelaxation~\cite{Beau2026a5},
-    and O1--O29~(\cite{Beau2026a6}--\cite{Beau2026a33}).
+    and O1--O30~(\cite{Beau2026a6}--\cite{Beau2026a34}).
 
   \paragraph{Level~3 --- Physical observables.}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
@@ -376,7 +376,7 @@ A Structural Roadmap and Paper Inventory}
     unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
     (Corollary~4.2: $\beta^* \approx 0.126$, \sproved).
 
-  \subsection{O25--O29 and PTO: Numerical Validation and Sector Identification}
+  \subsection{O25--O30 and PTO: Numerical Validation, Sector Identification, and Eigenvalue Ratio}
 
     \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
     Computes $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ conjugate pairs with $M=50$ independent
@@ -428,6 +428,25 @@ A Structural Roadmap and Paper Inventory}
     The O26 Criterion~5.4 is reformulated for conjugate-pair data:
     $d_\rho^2 = 4 \to d_\rho(d_\rho+1)/2$; spin-$\tfrac{1}{2}$ satisfies the
     reformulated criterion exactly.
+
+    \textbf{O30}~\cite{Beau2026a34}: Analytical derivation of the eigenvalue ratio
+    $\lambda_1/\lambda_2 = 2$ (\sproved).
+    The Born--Infeld parity anti-linearity $\rho_{q-c} = \bar\rho_c$ forces every admissible
+    trajectory vector $w_j = \pi_c(v_j) \in V_\rho \cong \mathbb{C}^2$ to satisfy
+    $|\alpha_j| = |\beta_j|$ (equatorial constraint), i.e., $w_j$ lives on an
+    equatorial $S^1 \subset S^3$ in $V_\rho$.
+    In the equatorial regime, the central component $\sqrt{2}\,\alpha_j\beta_j$ of
+    $\operatorname{vec}(M_j)$ is phase-independent (the phases cancel exactly), while the
+    diagonal components $\alpha_j^2$ and $\beta_j^2$ oscillate as $e^{\pm 2i\phi_j}$.
+    The covariance then diagonalises under the single-harmonic phase decorrelation condition
+    $\langle e^{2i\phi_j}\rangle = 0$, yielding
+    $\mathcal{C}_c = \langle r_j^4\rangle \cdot \mathrm{diag}(1/4, 1/2, 1/4)$
+    and spectral ratio $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ exactly.
+    The factor of~$2$ is purely structural: it is the squared symmetric-tensor normalisation
+    coefficient in $e_0 = (v_+\!\otimes v_- + v_-\!\otimes v_+)/\sqrt{2}$, isolated by the
+    equatorial constraint as the sole source of eigenvalue asymmetry.
+    The correction to the equatorial condition is $O(q^{-1/2})$ from U1~\cite{Beau2026u1}.
+    This closes the open direction of O28--O29 \S7.4.
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -674,7 +693,10 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
 \node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
 \node[S] (O28)  at (7*\dx,-6*\dy)   {O28};
-\node[S] (O29)  at (8*\dx,-6*\dy)   {O29};
+\node[S] (O29)  at (7*\dx,-7*\dy)   {O29};
+\node[P] (O30)  at (7*\dx,-8*\dy)   {O30};
+\node[font=\tiny\sffamily,text=cproved,right=2pt] at (O30.east)
+  {$\lambda_1/\lambda_2=2$};
 \node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
 
 \draw[spine] (O24) -- (O25);
@@ -685,6 +707,7 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr]   (O27) -- (O28);
 \draw[spine] (O28) -- (O29);
 \draw[arr]   (O27) -- (O29);
+\draw[spine] (O29) -- (O30);
 
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
@@ -1005,6 +1028,13 @@ A Structural Roadmap and Paper Inventory}
       $d_\rho=2$ (spin-$\tfrac{1}{2}$); confirmed for $q \in \{61,101,151\}$;
       $q=101$ anomaly resolved by multi-sample analysis &
       \sstruct \\[3pt]
+      O30 & Eigenvalue ratio $\lambda_1/\lambda_2$ & \cite{Beau2026a34} &
+      BI parity forces equatorial constraint $|\alpha_j|=|\beta_j|$;
+      phase-independent central component gives
+      $\mathcal{C}_c = \langle r^4\rangle\,\mathrm{diag}(1/4,1/2,1/4)$;
+      ratio $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ derived analytically;
+      factor of~$2$ is purely structural (Carnot degree-$2$ of $Z=[X,Y]$) &
+      \sproved \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
       temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
@@ -1117,12 +1147,6 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch II (O-Series)}
 
-    \paragraph{Eigenvalue ratio $\lambda_2/\lambda_1$ (O29).}
-      The invariant eigenvalue structure $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$
-      of the per-pair covariance $\mathcal{C}_c$ is confirmed numerically (O28--O29),
-      but an analytical derivation of the ratio $\lambda_2/\lambda_1 = \tfrac{1}{2}$
-      from the group structure of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ is open.
-
     \paragraph{Extension of O29 to larger primes.}
       The symmetric rank formula is confirmed for $q \in \{61, 101, 151\}$.
       Extension of the numerical computation to $q \in \{211, 307, 401\}$ is pending.
@@ -1184,6 +1208,10 @@ A Structural Roadmap and Paper Inventory}
   The spin-$\tfrac{1}{2}$ sector identification is complete~(O29): the symmetric rank formula
   $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$ uniquely identifies $d_\rho = 2$ from the observed $r_{\mathrm{eff}} = 3$,
   confirmed numerically for $q \in \{61, 101, 151\}$.
+  The invariant eigenvalue ratio $\lambda_1/\lambda_2 = 2$ of the per-pair covariance is
+  now analytically derived~(O30): the Born--Infeld parity anti-linearity forces an equatorial
+  constraint on the admissible fibre, and the factor of~$2$ is purely structural---the squared
+  symmetric-tensor normalisation of the Carnot-degree-$2$ central generator $Z=[X,Y]$.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
   The $\SU(2)$ quantum sector is now complete: Q3 closes the general-$j$ open step of Q2 by

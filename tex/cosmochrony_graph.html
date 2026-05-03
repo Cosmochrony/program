@@ -882,6 +882,13 @@
       desc: "BI parity forces M_j∈Sym(V_ρ,ℂ) (proved). Symmetric rank formula r_eff=d_ρ(d_ρ+1)/2; unique inversion r_eff=3 ⟹ d_ρ=2 (spin-½). Confirmed for q∈{61,101,151}: 100% of pairs at q=61 and q=151; q=101 anomaly resolved as single-sample Monte Carlo artefact (89% of cells r_eff=3 on multi-sample analysis). O26 Criterion 5.4 reformulated for conjugate-pair data."
     },
     {
+      id: "O30", lbl: "O30", s: "proved", b: "II", key: "Beau2026a34",
+      url: ZEN + "20014707",
+      tags: ["mass", "QM"],
+      title: "O30 — Eigenvalue Ratio λ₁/λ₂ = 2 (Analytical Derivation)",
+      desc: "First analytical derivation of the invariant [1:\u00bd:\u00bd] covariance spectrum. BI parity anti-linearity \u03c1_{q-c}=\u03c1\u0305_c forces equatorial constraint |\u03b1_j|=|\u03b2_j| on admissible fibre. Central component \u221a2\u00b7\u03b1_j\u00b7\u03b2_j is phase-independent (phases cancel exactly). Under single-harmonic phase decorrelation \u27e8e^{2i\u03c6_j}\u27e9=0, covariance diagonalises: C_c=\u27e8r\u2074\u27e9\u00b7diag(\u00bc,\u00bd,\u00bc), ratio [1:\u00bd:\u00bd] exactly. Factor 2 is purely structural: squared symmetric-tensor normalisation of Carnot-degree-2 generator Z=[X,Y]. Correction O(q^{-1/2}) from U1. Closes O28\u2013O29 \u00a77.4."
+    },
+    {
       id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
       url: BASE + "spectral/program/projective_temporal_ordering",
       tags: ["time"],
@@ -1107,6 +1114,7 @@
     { f: "O24", t: "O25", sp: 1 }, { f: "O24", t: "O26" }, { f: "O26", t: "O27" }, { f: "O24", t: "PTO" },
     { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
+    { f: "O29", t: "O30", sp: 1 },
     { f: "Found", t: "Q1", sp: 1 }, { f: "O18", t: "Q1" }, { f: "O22", t: "Q1" }, { f: "O23", t: "Q1" },
     { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
@@ -1167,7 +1175,8 @@
     O26: { x: 6 * X, y: 6 * Y },
     O27: { x: 7 * X, y: 6 * Y },
     O28: { x: 8 * X, y: 6 * Y },
-    O29: { x: 9 * X, y: 6 * Y },
+    O29: { x: 8 * X, y: 7 * Y },
+    O30: { x: 8 * X, y: 8 * Y },
     PTO: { x: 6 * X, y: 7 * Y },
     Q1: { x: 10 * X, y: 3 * Y },
     Q2: { x: 10 * X, y: 4 * Y },
