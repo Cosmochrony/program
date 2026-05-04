@@ -54,7 +54,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 68 papers across three theory branches.
+    The corpus comprises 69 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -74,10 +74,15 @@ A Structural Roadmap and Paper Inventory}
     the admissibility weight convergence~[H-w] is proved (W1),
     yielding the effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$.
     Q5a v2.0 establishes that [H1] is not needed in full generality.
-    Q5a-O2 proves spectral atomicity of the admissible sector (each pair spans three pure Fourier modes)
+    Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector
+    (each pair spans three pure Fourier modes)
     and closes hypotheses [H-$\mathcal{E}$1] and [C] without Nash inequalities.
     Hypothesis~[H2] (strong convergence of the rescaled Weil generators) is proved (H2~paper),
     closing all hypotheses of the Q5a large-$q$ convergence theorem unconditionally on the admissible sector.
+    O31 develops the structural framework for the SU(3) identification: the metaplectic
+    intertwining of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ forces triplet co-admissibility
+    unconditionally for the colour-adapted Cayley graph, and SU(3) is thereby identified as the
+    symmetry group of the co-admissible colour triplet conditional on~[H-color].
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -113,7 +118,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 68 papers with complex mutual dependencies.
+  The corpus comprises 69 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -133,7 +138,7 @@ A Structural Roadmap and Paper Inventory}
 
   The programme is organised in three structural levels.
 
-  \paragraph{Level~1 --- Axiomatic primitive.}
+  \paragraph{Level 1 --- Axiomatic primitive.}
     The primitive is the local structure of admissible non-injective transitions.
     No background spacetime, no quantum postulate, and no substrate field are introduced at this level.
     The four axioms are: local projective admissibility~(A1), structural non-injectivity~(A2),
@@ -144,7 +149,7 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
     HeisenbergStructure, noscale~\cite{Beau2026j}.
 
-  \paragraph{Level~2 --- Spectral fibre structure.}
+  \paragraph{Level 2 --- Spectral fibre structure.}
     The admissible fibre is proved to carry the Weil representation $V_\rho$ of
     $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for a prime~$q$ (Foundation Theorem~5.6;
     detailed proof in HeisenbergStructure~\cite{Beau2026HeisenbergStructure}).
@@ -154,9 +159,9 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: SpectralAdmissibility~\cite{Beau2026a1},
     SpectralCapacity~\cite{Beau2026a2},
     SpectralGramRigidity~\cite{Beau2026a3}, SpectralRelaxation~\cite{Beau2026a5},
-    and O1--O30~(\cite{Beau2026a6}--\cite{Beau2026a34}).
+    and O1--O31~(\cite{Beau2026a6}--\cite{Beau2026a35}).
 
-  \paragraph{Level~3 --- Physical observables.}
+  \paragraph{Level 3 --- Physical observables.}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
     waves, and cosmological observables are derived as consequences of Levels~1--2.
     No additional physical postulates are introduced beyond the continuum-limit hypotheses of Q5a--Q5b.
@@ -448,6 +453,23 @@ A Structural Roadmap and Paper Inventory}
     The correction to the equatorial condition is $O(q^{-1/2})$ from U1~\cite{Beau2026u1}.
     This closes the open direction of O28--O29 \S7.4.
 
+    \textbf{O31}~\cite{Beau2026a35}: Structural framework for the SU(3) identification (\sstruct).
+    Shows the O23 Hurwitz argument cannot directly produce $d_\rho = 3$ (proved).
+    Defines the \emph{colour triplet} $\{c_1,c_2,c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$
+    with $c_1+c_2+c_3 \equiv 0 \pmod{q}$; such triplets exist iff $q \equiv 1 \pmod{3}$ (proved).
+    The metaplectic automorphism $\phi_\omega(a,b,z) = (\omega a, \omega^{-1}b, z)$
+    forces $\sigma_c(n) = \sigma_{\omega c}(n)$ for all shells on the colour-adapted Cayley
+    graph $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$ (proved, Theorem~4.4).
+    Conditional on Hypothesis~[H-color] (triplet co-admissibility for the standard graph),
+    the symmetry group of the co-admissible triplet is exactly $\SU(3)$, with
+    $\mathrm{U}(3)$, $\mathrm{SO}(3)$, $\mathrm{U}(2)$, $G_2$ excluded (proved).
+    The Standard Model gauge group $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$
+    follows as a composite of three admissibility fixed points (proved for $\mathcal{S}_q^{(3)}$;
+    conditional on [H-color] for $\mathcal{S}_q$).
+    U1 universality implies $|\sigma_c - \sigma_{\omega c}| = O(q^{-1/2})$ for any generating
+    set, so the identification is generating-set-independent in the large-$q$ limit.
+    Numerical test deferred to O32 ($q \in \{61,151,211,307\}$, $q \equiv 1 \pmod{3}$).
+
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
     hence compatible with an arrow of time.
@@ -498,7 +520,8 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q6a}~\cite{Beau2026q6a}: Gauge charges are the invariants of the projection-fibre
     equivalence classes.
     $\mathrm{U}(1)$ and $\SU(2)$ are identified as fixed points of the admissibility flow.
-    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ is proposed as a composite (\sstruct; $\SU(3)$: \sopen).
+    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ is derived as a composite (\sstruct; $\SU(3)$:
+    conditional on [H-color], see O31~\cite{Beau2026a35}).
 
     \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
     $\Pi_q$; inherits Q5a--Q5b hypotheses (\sstruct, conditional).
@@ -532,7 +555,7 @@ A Structural Roadmap and Paper Inventory}
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
     observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved{}).
     After W1, the open Q5a hypotheses reduce to three: [H1], [H-E1], and [C].
-    Q5a-O2 subsequently proves that [H1] is not needed in full generality on the admissible sector,
+    Q5a-O2~\cite{Beau2026q5ao2} subsequently proves that [H1] is not needed in full generality on the admissible sector,
     and closes [H-E1] and [C] via spectral atomicity.
     H2~\cite{Beau2026h2} proves the last open hypothesis, [H2] (strong convergence of the rescaled
     Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$), via a quantitative
@@ -697,6 +720,9 @@ A Structural Roadmap and Paper Inventory}
 \node[P] (O30)  at (7*\dx,-8*\dy)   {O30};
 \node[font=\tiny\sffamily,text=cproved,right=2pt] at (O30.east)
   {$\lambda_1/\lambda_2=2$};
+\node[S] (O31)  at (7*\dx,-9*\dy)   {O31};
+\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O31.east)
+  {SU(3) [H-color]};
 \node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
 
 \draw[spine] (O24) -- (O25);
@@ -708,6 +734,7 @@ A Structural Roadmap and Paper Inventory}
 \draw[spine] (O28) -- (O29);
 \draw[arr]   (O27) -- (O29);
 \draw[spine] (O29) -- (O30);
+\draw[spine] (O30) -- (O31);
 
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
@@ -746,6 +773,7 @@ A Structural Roadmap and Paper Inventory}
   {\begin{tabular}{l}[H-$\mathcal{E}$1], [C]\\proved\end{tabular}};
 \draw[spine] (Q5a)--(Q5b);
 \draw[arr]   (Q5b)--(Q6a);
+\draw[arr]   (O31) to[out=0,in=-150] (Q6a);
 \draw[arr]   (Q6a)--(Q6b);
 
 \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
@@ -861,7 +889,7 @@ A Structural Roadmap and Paper Inventory}
       }
       \caption{Geometric emergence sub-programme: logical chain from Q5a to the effective
       Lorentzian co-metric.
-      \textbf{Q5a-O2}~(\sproved{}): spectral atomicity of $\mathrm{ran}(\Pi_q)$;
+      \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{}): spectral atomicity of $\mathrm{ran}(\Pi_q)$;
       proves [H-$\mathcal{E}$1] and [C]; closes all Q5a hypotheses except [H2].
       \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
         independently of the bridge.
@@ -1035,6 +1063,15 @@ A Structural Roadmap and Paper Inventory}
       ratio $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ derived analytically;
       factor of~$2$ is purely structural (Carnot degree-$2$ of $Z=[X,Y]$) &
       \sproved \\[3pt]
+      O31 & SU(3) from colour triplets & \cite{Beau2026a35} &
+      Hurwitz obstruction ($d_\rho=3$ cannot arise from single-fibre argument, proved);
+      colour triplets exist iff $q\equiv 1\pmod{3}$ (proved);
+      metaplectic intertwining proves $\sigma_c=\sigma_{\omega c}$ on $\mathcal{S}_q^{(3)}$
+      (proved, Thm~4.4); conditional on [H-color],
+      $\SU(3)$ is the unique triplet symmetry group (proved; $\mathrm{U}(3)$, $\mathrm{SO}(3)$,
+      $\mathrm{U}(2)$, $G_2$ excluded); $G_{\mathrm{SM}}$ derived for $\mathcal{S}_q^{(3)}$;
+      O32 tests [H-color] on standard graph &
+      \sstruct \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
       temporal proxy; confirmed for $q \in \{29, 61, 101, 151\}$ &
@@ -1055,10 +1092,10 @@ A Structural Roadmap and Paper Inventory}
       Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
       Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional on [H2].
       v2.0: [H1] established on admissible sector (not needed in full generality);
-      [H-$\mathcal{E}$1] and [C] proved by Q5a-O2; [H2] proved by H2~paper:
+      [H-$\mathcal{E}$1] and [C] proved by Q5a-O2~\cite{Beau2026q5ao2}; [H2] proved by H2~paper:
       all hypotheses verified on the admissible sector &
       \sstruct \\[3pt]
-      Q5a-O2 & Spectral atomicity \& Mosco closure & \phantom{---} &
+      Q5a-O2 & Spectral atomicity \& Mosco closure & \cite{Beau2026q5ao2} &
       Admissible sector spectrally atomic: $\mathrm{ran}(\Pi_q^{(c)}) =
       \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$, $\xi_c/q \to \omega_c \neq 0$.
       Proves [H-$\mathcal{E}$1'] (scaled coercivity, $\beta=1$ optimal) and [C]
@@ -1070,7 +1107,8 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
-      $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ proposed &
+      $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ derived (O31~\cite{Beau2026a35},
+      conditional on [H-color]) &
       \sstruct \\[3pt]
       Q6b & Effective spacetime & \cite{Beau2026q6b} &
       Effective Lorentzian geometry from $\Pi_q$; inherits Q5a--Q5b hypotheses &
@@ -1101,7 +1139,7 @@ A Structural Roadmap and Paper Inventory}
       W1 & [H-w] proved & \cite{Beau2026w1} &
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
       ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$;
-      after W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only &
+      after W1 + Q5a-O2~\cite{Beau2026q5ao2}, open Q5a hypotheses reduced to [H2] only &
       \sproved \\[3pt]
       H2 & [H2] proved & \cite{Beau2026h2} &
       Strong convergence $\hat{X}_q \to x$, $\hat{P}_q \to -i\partial_x$ on
@@ -1179,9 +1217,12 @@ A Structural Roadmap and Paper Inventory}
     (TopologicalInvariants, Remark~4.2).}
     General proof of this topological property is open.
 
-  \paragraph{Full SM gauge group (Q6a).}
-    A structural derivation of $\mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)$
-    as a composite of admissibility fixed points is proposed but not yet proved.
+  \paragraph{Full SM gauge group: [H-color] and O32 (Q6a, O31).}
+    O31~\cite{Beau2026a35} derives $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ as a composite of
+    admissibility fixed points unconditionally for the colour-adapted Cayley graph, and
+    conditionally on Hypothesis~[H-color] for the standard graph.
+    What remains open is the derivation of [H-color] from Foundation~M axioms, and its
+    numerical verification in O32 ($q \in \{61, 151, 211, 307\}$, $q \equiv 1 \pmod{3}$).
 
   \paragraph{Baryon-to-photon ratio (SMchargemass).}
     Quantitative derivation of $\eta \sim 10^{-10}$ is open.
@@ -1212,6 +1253,10 @@ A Structural Roadmap and Paper Inventory}
   now analytically derived~(O30): the Born--Infeld parity anti-linearity forces an equatorial
   constraint on the admissible fibre, and the factor of~$2$ is purely structural---the squared
   symmetric-tensor normalisation of the Carnot-degree-$2$ central generator $Z=[X,Y]$.
+  O31 develops the structural framework for SU(3): the metaplectic intertwining of
+  $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ forces triplet co-admissibility unconditionally for the
+  colour-adapted Cayley graph, and SU(3) is thereby identified as the symmetry group of the
+  co-admissible colour triplet, conditional on Hypothesis~[H-color] for the standard graph.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
   The $\SU(2)$ quantum sector is now complete: Q3 closes the general-$j$ open step of Q2 by
@@ -1225,7 +1270,7 @@ A Structural Roadmap and Paper Inventory}
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ is thereby
   established under the Q5a foundational hypotheses and [U].
   Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
-  Q5a-O2 proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
+  Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
   diffusive scale follows from the non-zero limiting frequency, and Mosco compactness reduces to
   Bolzano--Weierstrass in $\mathbb{C}^2$.
