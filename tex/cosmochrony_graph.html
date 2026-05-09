@@ -1028,6 +1028,18 @@
         "Quasi-isometry bound O(q⁻¹) also provides the quantitative input for Q5a-O5 (identification of A in terms of c_BI)."
     },
     {
+      id: "Q11", lbl: "Q11", s: "structural", b: "III", key: "Beau2026q11",
+      url: ZEN + "20098387",
+      tags: ["spt", "emer"],
+      title: "Q11 — Temporal Casimir Rigidity: Identification of A_τ = 2",
+      desc: "Closes open problem Q5b-O3. " +
+        "Cascade internalization lemma: τ is the BFS depth index (Q5b Remark 3.3); " +
+        "∂_τ is the Carnot–Carathéodory limit of the cascade increment T (Q5b Thm 3.2, Pansu). " +
+        "[U] (proved in U1) forces T to be asymptotically SU(2)-equivariant. " +
+        "Schur's lemma + Q8 normalisation: A_τ = C_{su(2)} = 2. " +
+        "The effective co-metric is uniquely determined: g^{μν} = 2η^{μν}, no free parameter."
+    },
+    {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
       tags: ["spt"],
       title: "Spectral2 — Relational Spacetime",
@@ -1135,12 +1147,13 @@
     { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
+    { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
   ]
 
-  const NW = 72, NH = 22
+  const NW = 73, NH = 22
   const X = 85, Y = 58
 
   /* Layout */
@@ -1202,6 +1215,7 @@
     U1: { x: 10 * X, y: 11 * Y },
     W1: { x: 11 * X, y: 11 * Y },
     H2: { x: 12 * X, y: 11 * Y },
+    Q11: { x: 11 * X, y: 12 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
