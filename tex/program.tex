@@ -120,7 +120,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 69 papers with complex mutual dependencies.
+  The corpus comprises 70 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -870,7 +870,8 @@ A Structural Roadmap and Paper Inventory}
         \node[S] (Q5a)   at (0,0)          {Q5a};
         \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
         \node[S] (Q5b)   at (0,-\dy)       {Q5b};
-        \node[S] (O25)   at (-\dx,-2*\dy)  {O25};
+        \node[S] (Q6b)   at (-\dx,-2*\dy)  {Q6b};
+        \node[S] (O25)   at (-2*\dx,-2*\dy){O25};
 
         % ── Core chain (centre column) ───────────────────────
         \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
@@ -897,6 +898,8 @@ A Structural Roadmap and Paper Inventory}
         \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
         \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
         \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
+        \draw[arr]   (Q5b) to[out=180,in=90] (Q6b);
+        \draw[arr]   (Q6b) to[out=-30,in=135] (Met);
         \draw[arr]   (O25) to[out=0,in=180] (Q10);
 
         \draw[spine] (Q7)--(Q9);
@@ -922,12 +925,18 @@ A Structural Roadmap and Paper Inventory}
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (W1.east)
           {fibre-inv.\ $\Rightarrow$ uniform};
 
+        \node[font=\tiny\sffamily,text=cstruct,below=2pt] at (Q6b.south)
+          {metric structure};
+
         \end{tikzpicture}
       }
       \caption{Geometric emergence sub-programme: logical chain from Q5a to the effective
       Lorentzian co-metric.
       \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{}): spectral atomicity of $\mathrm{ran}(\Pi_q)$;
       proves [H-$\mathcal{E}$1] and [C]; closes all Q5a hypotheses except [H2].
+      \textbf{Q6b}~\cite{Beau2026q6b}~(\sstruct{}): derives the effective Lorentzian metric
+      structure from the admissibility operator $L_{\mathrm{eff}}$ of Q5b;
+      closes the link $\Pi_q \xrightarrow{Q5a} L_{\mathrm{eff}} \xrightarrow{Q6b} g^{\mu\nu}$.
       \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
         independently of the bridge.
         \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
@@ -1323,6 +1332,11 @@ A Structural Roadmap and Paper Inventory}
   Q11~\cite{Beau2026q11} closes open problem Q5b-O3 by identifying $A_\tau = 2$ via cascade
   internalization and Casimir rigidity, yielding the uniquely determined metric
   $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ with no remaining free parameter.
+  Q6b~\cite{Beau2026q6b} establishes the middle link of the geometry derivation chain,
+  extracting the effective Lorentzian metric structure directly from the admissibility
+  operator $L_{\mathrm{eff}}$ of Q5b and thereby closing the chain
+  $\Pi_q \xrightarrow{Q5a} L_{\mathrm{eff}} \xrightarrow{Q6b} g^{\mu\nu}
+  \xrightarrow{\mathrm{Gravity}} G_{\mu\nu}$ (\sstruct, conditional on Q5a).
   Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
   Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
@@ -1341,7 +1355,7 @@ A Structural Roadmap and Paper Inventory}
   For the spacetime thread:
   Spectral2 $\to$ Gravity $\to$ (Thermodynamics or Lorentz);
   for the geometric emergence thread:
-  Q5a $\to$ Q5b $\to$ Q7 $\to$ Q9 $\to$ Q10 $\to$ U1 $\to$ W1 $\to$ Q11.
+  Q5a $\to$ Q5b $\to$ Q6b $\to$ Q7 $\to$ Q9 $\to$ Q10 $\to$ U1 $\to$ W1 $\to$ Q11.
 
   \clearpage
   \bibliography{cosmochrony-bibliography}
