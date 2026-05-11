@@ -54,7 +54,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 70 papers across three theory branches.
+    The corpus comprises 71 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -68,13 +68,12 @@ A Structural Roadmap and Paper Inventory}
     universal singlet correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ and the
     Born rule are derived for all five admissible sectors of~$2I$, closing the general-$j$ extension
     that was open in~Q2.
-    The geometric emergence sub-programme (Q5a--Q11, U1, W1, H2) closes the effective spacetime
+    The geometric emergence sub-programme (Q5a--Q10, U1, W1, H2) closes the effective spacetime
     identification: under the Q5a continuum-limit hypotheses, the lifting hypothesis~[H-lift]
     is proved (Q9), asymptotic $\mathfrak{su}(2)$-isotropy $A_H \to 2$ is proved (Q10, U1),
     the admissibility weight convergence~[H-w] is proved (W1),
-    and the temporal coefficient is identified as $A_\tau = 2$ by cascade internalization
-    and Casimir rigidity (Q11), yielding the fully determined effective Lorentzian co-metric
-    $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ with no free parameter.
+    yielding the effective Lorentzian co-metric
+    $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$ ($A_\tau = 2$, Q11~\cite{Beau2026q11}).
     Q5a v2.0 establishes that [H1] is not needed in full generality.
     Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector
     (each pair spans three pure Fourier modes)
@@ -120,7 +119,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 70 papers with complex mutual dependencies.
+  The corpus comprises 69 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -203,12 +202,17 @@ A Structural Roadmap and Paper Inventory}
     is established (\sproved, Theorem~2.1 and Corollary~3.1).
 
     \textit{Role:} Foundational justification for structural non-injectivity~(Axiom~A2).
-    Cited by Foundation, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, Q1~\cite{Beau2026q1}, Bell.
+    Version~2 adds Corollary~6 (recursive non-injectivity: any tower of genuinely
+    distinct emergent levels carries one independent non-injective projection per stratum)
+    and Section~5 (towers of emergence, structural colour confinement as projective
+    necessity).
+    Cited by Foundation, HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
+    Q1~\cite{Beau2026q1}, Bell, O32~\cite{Beau2026a36}.
 
   \subsection{Foundation: Admissible Non-Injective Transitions as the Primitive}
     \label{sec:foundation}
 
-    The Foundation paper~\cite{Beau2026m} establishes the minimal axiomatic basis of the programme.
+    The Foundation paper~\cite{Beau2026m} (v1.6) establishes the minimal axiomatic basis of the programme.
     From the four axioms~A1--A4 alone it derives:
     (i) irreversibility and the arrow of time (A1+A2);
     (ii) the proto-state as a physically real unresolved configuration retaining phase coherence~(A3);
@@ -441,12 +445,12 @@ A Structural Roadmap and Paper Inventory}
     $r_{\mathrm{eff}} = 3$ gives $d_\rho = 2$, confirming the spin-$\tfrac{1}{2}$ sector.
     Numerically: $r_{\mathrm{eff}} = 3$ universally for $q = 61$ (30/30 pairs) and
     $q = 151$ (75/75 pairs) with zero inter-pair variance;
-    at $q = 211$ (103/105 pairs, $98\%$), $r_{\mathrm{eff}} = 3$ holds for all but two pairs,
-    consistent with a single-sample Monte Carlo artefact;
+    at $q = 211$ (105/105 pairs, $100\%$, multi-sample confirmed), $r_{\mathrm{eff}} = 3$
+    holds universally (the 2 single-sample anomalies confirmed as artefacts);
     at $q = 101$, modal $r_{\mathrm{eff}} = 3$
     is confirmed by a dedicated multi-sample analysis ($M = 5$ resamples per anomalous pair,
-    89\% of cells satisfy $r_{\mathrm{eff}} = 3$), resolving the single-sample anomaly as a
-    Monte Carlo artefact.
+    $76.7\%$ of (pair, sample) cells satisfy $r_{\mathrm{eff}} = 3$, with modal $r_{\mathrm{eff}}=3$
+    for all $18$ pairs), confirming $d_\rho=2$ at the modal level.
     The O26 Criterion~5.4 is reformulated for conjugate-pair data:
     $d_\rho^2 = 4 \to d_\rho(d_\rho+1)/2$; spin-$\tfrac{1}{2}$ satisfies the
     reformulated criterion exactly.
@@ -485,7 +489,14 @@ A Structural Roadmap and Paper Inventory}
     conditional on [H-color] for $\mathcal{S}_q$).
     U1 universality implies $|\sigma_c - \sigma_{\omega c}| = O(q^{-1/2})$ for any generating
     set, so the identification is generating-set-independent in the large-$q$ limit.
-    Numerical test deferred to O32 ($q \in \{61,151,211,307\}$, $q \equiv 1 \pmod{3}$).
+    \textbf{O32}~\cite{Beau2026a36} (preliminary): tests [H-color] numerically.
+    For $q = 61$: normalised inter-triplet variance ratio $R = 1.69$ (passes, $R \leq 3$).
+    For $q = 151$: $R_{\mathrm{var}} = 7.1 \times 10^{-4}$, a factor~5 below $q=61$.
+    All triplet covariance matrices $C_{\mathrm{color}}$ have numerical rank~1
+    and $\delta_{\mathrm{tri}} \approx 3\delta_c$ at the sub-percent level.
+    Both primes: $M = 50$ blocks each, fitting window auto-calibrated.
+    Results for $q \in \{211, 307\}$ pending (in preparation).
+    Status: \sstruct{} (numerical; [H-color] supported, not yet analytically proved).
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -561,7 +572,7 @@ A Structural Roadmap and Paper Inventory}
     (\sstruct; asymptotic isotropy $A_H \to 2 = A_Z$ proved by Q10 and U1, conditionally on~[U];
     bridge existence at finite~$q$: \sopen).
 
-    \textbf{Q8--Q11, U1, W1 (Geometric emergence cluster).}
+    \textbf{Q8--Q11, U1, W1, H2 (Geometric emergence cluster).}
     Q8~\cite{BeauQ8} establishes $A_Z = C_{\mathfrak{su}(2)} = 2$ unconditionally under Q5a
     via Casimir rigidity (\sstruct).
     Q9~\cite{Beau2026q9} proves [H-lift] as a theorem: the modulation generator is suppressed at
@@ -575,13 +586,6 @@ A Structural Roadmap and Paper Inventory}
     W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
     observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved{}).
-    Q11~\cite{Beau2026q11} closes open problem Q5b-O3 by proving $A_\tau = 2$ (\sstruct,
-    conditional on [U]): the temporal coordinate $\tau$ is identified with the BFS depth index~$n$
-    (Q5b Remark~3.3), the cascade increment operator $T$ passes to the continuum derivative
-    $\partial_\tau$ by Carnot--Carathéodory convergence, [U] forces $T$ to be asymptotically
-    $\SU(2)$-equivariant, and Schur's lemma with the Q8 normalisation gives $A_\tau = 2$.
-    The effective co-metric is thereby uniquely determined:
-    $g^{\mu\nu} = 2\,\eta^{\mu\nu}$, with no remaining free parameter.
     After W1, the open Q5a hypotheses reduce to three: [H1], [H-E1], and [C].
     Q5a-O2~\cite{Beau2026q5ao2} subsequently proves that [H1] is not needed in full generality on the admissible sector,
     and closes [H-E1] and [C] via spectral atomicity.
@@ -590,6 +594,15 @@ A Structural Roadmap and Paper Inventory}
     Poisson aliasing lemma and a discrete Sobolev identity (\sproved{}).
     All hypotheses of the Q5a large-$q$ convergence theorem are verified unconditionally
     on the admissible sector.
+    \textbf{Q11}~\cite{Beau2026q11}: Temporal Casimir rigidity closes Q5b open problem~O3
+    (identification of $A_\tau$ from admissibility data) (\sstruct).
+    The cascade increment operator internalises no new irreducible representation
+    (Schur rigidity); asymptotic $\mathfrak{su}(2)$-equivariance forces the temporal
+    coefficient $A_\tau = 2$, identical to the spatial Casimir value.
+    The effective Lorentzian co-metric is thereby fully identified:
+    $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$ (Minkowski).
+    The derivation chain Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$
+    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 closed is now complete.
 
   \subsection{Gravity and Spacetime Track}
 
@@ -870,8 +883,7 @@ A Structural Roadmap and Paper Inventory}
         \node[S] (Q5a)   at (0,0)          {Q5a};
         \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
         \node[S] (Q5b)   at (0,-\dy)       {Q5b};
-        \node[S] (Q6b)   at (-\dx,-2*\dy)  {Q6b};
-        \node[S] (O25)   at (-2*\dx,-2*\dy){O25};
+        \node[S] (O25)   at (-\dx,-2*\dy)  {O25};
 
         % ── Core chain (centre column) ───────────────────────
         \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
@@ -882,13 +894,9 @@ A Structural Roadmap and Paper Inventory}
         \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
 
         % ── Result (bottom) ──────────────────────────────────
-        \node[S,minimum width=4cm] (Met)
+        \node[P,minimum width=4cm] (Met)
         at (\dx+0.5*\dx,-6*\dy)
-          {$g^{\mu\nu}=\mathrm{diag}(-A_\tau,2,2,2)$};
-
-        \node[S,minimum width=4cm] (Q11)
-        at (\dx+0.5*\dx,-7*\dy)
-          {Q11\quad $A_\tau=2$\quad $g^{\mu\nu}=2\,\eta^{\mu\nu}$};
+          {$g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ (Q11)};
 
         % ── Edges ────────────────────────────────────────────
         \draw[arr]   (Q5a)--(Q5aO2);
@@ -898,8 +906,6 @@ A Structural Roadmap and Paper Inventory}
         \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
         \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
         \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
-        \draw[arr]   (Q5b) to[out=180,in=90] (Q6b);
-        \draw[arr]   (Q6b) to[out=-30,in=135] (Met);
         \draw[arr]   (O25) to[out=0,in=180] (Q10);
 
         \draw[spine] (Q7)--(Q9);
@@ -913,7 +919,6 @@ A Structural Roadmap and Paper Inventory}
         \draw[spine] (U1)  to[out=-90,in=135] (Met);
         \draw[arr]   (Q8)  to[out=-90,in=45]  (Met);
         \draw[arr]   (W1)  to[out=-90,in=45]  (Met);
-        \draw[spine] (Met) -- (Q11);
 
         % ── Status annotations ───────────────────────────────
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
@@ -925,18 +930,12 @@ A Structural Roadmap and Paper Inventory}
         \node[font=\tiny\sffamily,text=cproved,right=2pt] at (W1.east)
           {fibre-inv.\ $\Rightarrow$ uniform};
 
-        \node[font=\tiny\sffamily,text=cstruct,below=2pt] at (Q6b.south)
-          {metric structure};
-
         \end{tikzpicture}
       }
       \caption{Geometric emergence sub-programme: logical chain from Q5a to the effective
       Lorentzian co-metric.
       \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{}): spectral atomicity of $\mathrm{ran}(\Pi_q)$;
       proves [H-$\mathcal{E}$1] and [C]; closes all Q5a hypotheses except [H2].
-      \textbf{Q6b}~\cite{Beau2026q6b}~(\sstruct{}): derives the effective Lorentzian metric
-      structure from the admissibility operator $L_{\mathrm{eff}}$ of Q5b;
-      closes the link $\Pi_q \xrightarrow{Q5a} L_{\mathrm{eff}} \xrightarrow{Q6b} g^{\mu\nu}$.
       \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
         independently of the bridge.
         \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
@@ -947,13 +946,8 @@ A Structural Roadmap and Paper Inventory}
         Lipschitz bound and BFS--Carnot--Carath\'eodory convergence (Q5b).
         \textbf{W1}~(\sproved{}): [H-w] proved as a structural consequence of fibre-invariance
         ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
-        The co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ is established
-        under the Q5a hypotheses; [H2] is the sole remaining open hypothesis.
-        \textbf{Q11}~(\sstruct{}): cascade internalization identifies $\partial_\tau$ with the
-        BFS cascade generator via Carnot--Carath\'eodory convergence; [U] forces
-        $\SU(2)$-equivariance; Schur's lemma and Q8 normalisation give $A_\tau = 2$.
-        The effective metric is uniquely determined: $g^{\mu\nu} = 2\,\eta^{\mu\nu}$.
-        Q5b-O3 is closed.}
+        The effective metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ is established
+        under the Q5a hypotheses; [H2] is the sole remaining open hypothesis.}
       \label{fig:geom}
     \end{figure}
     \label{sec:inventory}
@@ -1121,7 +1115,8 @@ A Structural Roadmap and Paper Inventory}
       (proved, Thm~4.4); conditional on [H-color],
       $\SU(3)$ is the unique triplet symmetry group (proved; $\mathrm{U}(3)$, $\mathrm{SO}(3)$,
       $\mathrm{U}(2)$, $G_2$ excluded); $G_{\mathrm{SM}}$ derived for $\mathcal{S}_q^{(3)}$;
-      O32 tests [H-color] on standard graph &
+      O32: [H-color] passes for $q\in\{61,151\}$,
+      $R\leq 2$ (noise floor); $q\in\{211,307\}$ pending &
       \sstruct \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
@@ -1198,11 +1193,6 @@ A Structural Roadmap and Paper Inventory}
       discrete Sobolev identity, quasi-isometry of sinc embedding;
       closes last open hypothesis of Q5a Theorem~7.1 &
       \sproved \\[3pt]
-      Q11 & Temporal Casimir rigidity & \cite{Beau2026q11} &
-      Cascade internalization: $\partial_\tau$ is the Carnot limit of $T=\Delta_n$;
-      [U] forces $T$ $\SU(2)$-equivariant; Schur + Q8 normalisation give $A_\tau=2$;
-      $g^{\mu\nu}=2\,\eta^{\mu\nu}$; Q5b-O3 closed &
-      \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
       Operational metric from graph Laplacians; spacetime from spectral correlations &
@@ -1243,7 +1233,7 @@ A Structural Roadmap and Paper Inventory}
 
     \paragraph{Extension of O29 to larger primes.}
       The symmetric rank formula is confirmed for $q \in \{61, 101, 151, 211\}$
-      ($103/105$ pairs at $q=211$, $98\%$).
+      ($105/105$ pairs at $q=211$, $100\%$, multi-sample confirmed).
       Extension of the numerical computation to $q \in \{307, 401\}$ is pending.
 
     \paragraph{Non-conjugate block protocol.}
@@ -1262,15 +1252,12 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Branch III (Q-Series and Applications)}
 
-  \paragraph{Bridge existence at finite $q$ (Q7--Q11).}
+  \paragraph{Bridge existence at finite $q$ (Q7--Q10).}
     The asymptotic isotropy $A_H \to 2 = A_Z$ is proved by Q10 and U1 (conditionally on~[U]),
-    and $A_\tau = 2$ is proved by Q11 (conditionally on~[U]), establishing
-    $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ and closing Q5b-O3.
+    establishing the isotropic limit of Q7 Conjecture~4.7.
     What remains open is the finite-$q$ structural question: whether an explicit
     $\mathfrak{su}(2)$-equivariant isomorphism $\varphi_q : \mathrm{Sym}^2(V_\rho) \xrightarrow{\sim} W_{\mathrm{sp}}$
-    exists at each prime~$q$, not only in the limit (Q11-O1).
-    A complementary derivation of $A_\tau$ from Born--Infeld saturation data~\cite{Beau2026pto}
-    independently of [U] is also open (Q11-O2).
+    exists at each prime~$q$, not only in the limit.
 
   \paragraph{$\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model (TopologicalInvariants, Remark 4.2).}
     General proof of this topological property is open.
@@ -1279,8 +1266,12 @@ A Structural Roadmap and Paper Inventory}
     O31~\cite{Beau2026a35} derives $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ as a composite of
     admissibility fixed points unconditionally for the colour-adapted Cayley graph, and
     conditionally on Hypothesis~[H-color] for the standard graph.
-    What remains open is the derivation of [H-color] from Foundation~M axioms, and its
-    numerical verification in O32 ($q \in \{61, 151, 211, 307\}$, $q \equiv 1 \pmod{3}$).
+    O32~\cite{Beau2026a36} provides preliminary numerical evidence: [H-color] passes
+    for $q = 61$ ($R = 1.69 \leq 3$) and $q = 151$ ($R_{\mathrm{var}} = 7.1 \times 10^{-4}$,
+    factor~5 below $q=61$); results for $q \in \{211, 307\}$ are in preparation.
+    What remains open: analytical derivation of [H-color] from Foundation axioms;
+    transfer chain $\delta_{\mathrm{tri}} \to \alpha_s$ (strong coupling constant);
+    identification of quarks as stable projected configurations carrying colour quantum numbers.
 
   \paragraph{Baryon-to-photon ratio (SMchargemass).}
     Quantitative derivation of $\eta \sim 10^{-10}$ is open.
@@ -1327,16 +1318,8 @@ A Structural Roadmap and Paper Inventory}
   $A_H > 0$ (unconditionally under Q5a); Q10 proves $A_H \to 2$ under spectral universality~[U];
   U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability;
   W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
-  The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau, 2, 2, 2)$ is thereby
-  established under the Q5a foundational hypotheses and [U];
-  Q11~\cite{Beau2026q11} closes open problem Q5b-O3 by identifying $A_\tau = 2$ via cascade
-  internalization and Casimir rigidity, yielding the uniquely determined metric
-  $g^{\mu\nu} = 2\,\eta^{\mu\nu}$ with no remaining free parameter.
-  Q6b~\cite{Beau2026q6b} establishes the middle link of the geometry derivation chain,
-  extracting the effective Lorentzian metric structure directly from the admissibility
-  operator $L_{\mathrm{eff}}$ of Q5b and thereby closing the chain
-  $\Pi_q \xrightarrow{Q5a} L_{\mathrm{eff}} \xrightarrow{Q6b} g^{\mu\nu}
-  \xrightarrow{\mathrm{Gravity}} G_{\mu\nu}$ (\sstruct, conditional on Q5a).
+  The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
+  ($A_\tau = 2$ from Q11~\cite{Beau2026q11}) is thereby established under the Q5a foundational hypotheses and~[U].
   Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
   Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
@@ -1355,7 +1338,7 @@ A Structural Roadmap and Paper Inventory}
   For the spacetime thread:
   Spectral2 $\to$ Gravity $\to$ (Thermodynamics or Lorentz);
   for the geometric emergence thread:
-  Q5a $\to$ Q5b $\to$ Q6b $\to$ Q7 $\to$ Q9 $\to$ Q10 $\to$ U1 $\to$ W1 $\to$ Q11.
+  Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$ U1 $\to$ W1 $\to$ H2 $\to$ Q11.
 
   \clearpage
   \bibliography{cosmochrony-bibliography}
