@@ -620,7 +620,9 @@
       url: BASE + "emergence-non-injectivity",
       tags: ["emer", "time"],
       title: "Emergence & Non-Injectivity",
-      desc: "No-go theorem (Thm 2.1): genuine emergence ⟺ Π non-injective ⟺ S_Π > 0. Foundational justification for Axiom A2."
+      desc: "No-go theorem (Thm 2.1): genuine emergence ⟺ Π non-injective ⟺ S_Π > 0. Foundational justification for Axiom A2. " +
+        "v2 adds Corollary 6 (recursive non-injectivity): any tower of genuinely distinct emergent levels carries one non-injective projection per stratum. " +
+        "Section 5: colour confinement is structural necessity of Π_colour non-injectivity. Cited by O32."
     },
     {
       id: "Found", lbl: "Found", s: "proved", b: "I", key: "Beau2026m",
@@ -893,7 +895,20 @@
       url: ZEN + "20030491",
       tags: ["SM", "gauge"],
       title: "O31 — SU(3) from Colour Triplet Co-admissibility",
-      desc: "Structural framework for the SU(3) identification. Hurwitz obstruction: O23 argument cannot yield d_ρ=3 (proved). Colour triplets {c,ωc,ω²c} with c₁+c₂+c₃≡0 (mod q) exist iff q≡1 (mod 3) (proved). Metaplectic automorphism φ_ω forces σ_c(n)=σ_{ωc}(n) on colour-adapted Cayley graph S_q^(3) (proved, Thm 4.4). Conditional on [H-color], SU(3) is the unique symmetry group of the co-admissible triplet; U(3), SO(3), U(2), G₂ excluded (proved). G_SM=SU(3)×SU(2)×U(1) derived for S_q^(3); conditional on [H-color] for standard graph. U1 universality gives |σ_c−σ_{ωc}|=O(q^{-1/2}) for any generating set. O32 tests [H-color] numerically."
+      desc: "Structural framework for the SU(3) identification. Hurwitz obstruction: O23 argument cannot yield d_ρ=3 (proved). Colour triplets {c,ωc,ω²c} with c₁+c₂+c₃≡0 (mod q) exist iff q≡1 (mod 3) (proved). Metaplectic automorphism φ_ω forces σ_c(n)=σ_{ωc}(n) on colour-adapted Cayley graph S_q^(3) (proved, Thm 4.4). Conditional on [H-color], SU(3) is the unique symmetry group of the co-admissible triplet; U(3), SO(3), U(2), G₂ excluded (proved). G_SM=SU(3)×SU(2)×U(1) derived for S_q^(3); conditional on [H-color] for standard graph. U1 universality gives |σ_c−σ_{ωc}|=O(q^{-1/2}) for any generating set. O32 (prelim): [H-color] passes for q=61 (R=1.69) and q=151 (R_var=7.1e-4); q=211 in progress."
+    },
+    {
+      id: "O32", lbl: "O32", s: "structural", b: "II", key: "Beau2026a36",
+      url: ZEN + "20145607",
+      tags: ["SM", "emer"],
+      title: "O32 — Colour Triplet Co-admissibility: Numerical Test of [H-color]",
+      desc:
+        "Numerical test of Hypothesis [H-color] on the standard Cayley graph Cay(G_q, S_q). " +
+        "q=61 (M=50): normalised inter-triplet variance ratio R=1.69 ≤ 3 — passes. " +
+        "q=151 (M=50): R_var=7.1×10⁻⁴, factor 5 below q=61; δ_tri≈3δ_c at sub-percent level; " +
+        "all C_color rank 1 (profiles co-linear). " +
+        "Power-law R_var ∝ q^{−1.75} consistent with asymptotic co-admissibility. " +
+        "q=211: computation in progress. q=307: planned."
     },
     {
       id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
@@ -1134,7 +1149,7 @@
     { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "O29", t: "O30", sp: 1 },
-    { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "Q6a" },
+    { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32", sp: 1 }, { f: "O31", t: "Q6a" },
     { f: "Found", t: "Q1", sp: 1 }, { f: "O18", t: "Q1" }, { f: "O22", t: "Q1" }, { f: "O23", t: "Q1" },
     { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
@@ -1147,7 +1162,7 @@
     { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
-    { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" },
+    { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
@@ -1199,6 +1214,7 @@
     O29: { x: 8 * X, y: 7 * Y },
     O30: { x: 8 * X, y: 8 * Y },
     O31: { x: 8 * X, y: 9 * Y },
+    O32: { x: 8 * X, y: 10 * Y },
     PTO: { x: 6 * X, y: 7 * Y },
     Q1: { x: 10 * X, y: 3 * Y },
     Q2: { x: 10 * X, y: 4 * Y },
@@ -1328,8 +1344,8 @@
     }
 
     bgRect(-X, 0, 5 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
-    bgRect(-X, Y, 9 * X + NW, 5 * Y + NH, "var(--branch2)", "Branch II: O-series")
-    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 5 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
+    bgRect(-X, Y, 9 * X + NW, 9 * Y + NH, "var(--branch2)", "Branch II: O-series")
+    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 9 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
 
     /* edges */
