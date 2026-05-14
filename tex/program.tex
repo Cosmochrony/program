@@ -606,6 +606,36 @@ A Structural Roadmap and Paper Inventory}
     The derivation chain Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$
     U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 closed is now complete.
 
+    \textbf{Q12}~\cite{Beau2026q12}: Yang--Mills dynamics from the vertical variation of
+    the projective spectral entropy (\sstruct, conditional on Q6a for the gauge group;
+    $\SU(3)$ sector inherits [H-color] conditionality from~\cite{Beau2026q6a,Beau2026a35}).
+    The Gravity paper~\cite{Beau2026h} derived the Einstein tensor as the infrared-dominant
+    horizontal response of $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ (the $a_2$ coefficient).
+    Q12 carries out the complementary vertical variation: the operator $A_g$ is extended to
+    $A_{g,\mathcal{A}} = -(\nabla^\mathcal{A})^2 + E$ on the associated vector bundle of the
+    admissible principal bundle $P_{G_\Pi}(M, G_\Pi)$, and the Seeley--DeWitt coefficient $a_4$
+    is computed:
+    \[
+      a_4(A_{g,\mathcal{A}})\big|_{\mathrm{gauge}}
+      = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})
+        \sqrt{g}\,\mathrm{d}^4 x\,.
+    \]
+    The extended spectral entropy $S_\Pi[g,\mathcal{A}]$ therefore contains the renormalized
+    Yang--Mills term with logarithmic coupling $g_{\mathrm{YM}}^{-2}
+    \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$,
+    and the vertical variation $\delta_\mathcal{A}S_\Pi = 0$ yields the Yang--Mills equations
+    $D_\mu F^{a\mu\nu} = 0$ in the current-free sector (\sproved{} for the $a_4$ derivation
+    given $G_\Pi$).
+    The induced Newton's constant $G_N^{-1} \sim \ell_{\mathrm{sp}}^{-2}$ (quadratic UV)
+    and the induced gauge coupling (logarithmic UV) share the same spectral cutoff
+    $\ell_{\mathrm{sp}}$; the gauge--gravity hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is a
+    structural consequence of the Seeley--DeWitt expansion and requires no fine-tuning.
+    The horizontal--vertical decoupling lemma guarantees that the Einstein and Yang--Mills
+    sectors are independent at orders $a_2$ and~$a_4$: $a_2 \to \text{Einstein}$,
+    $a_4 \to \text{Yang--Mills}$, from the single functional $S_\Pi[g,\mathcal{A}]$.
+    The gauge--gravity synthesis (joint equations of motion, ratio $G_N g_{\mathrm{YM}}^2$,
+    Born--Infeld completion) is deferred to Q13 (Gauge--Gravity Spectral Synthesis).
+
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -854,6 +884,12 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr] (Found) to[out=-90,in=90] (Schw);
 \draw[arr] (BI)    to[out=-90,in=90] (Cosm);
 \draw[arr] (Found) to[out=-90,in=90] (Supra);
+
+\node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
+\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)
+  {YM from $a_4$};
+\draw[arr] (Grav) to[out=-90,in=135] (Q12);
+\draw[arr] (Q6a)  to[out=200,in=60]  (Q12);
 
         \end{tikzpicture}
       }
@@ -1209,6 +1245,18 @@ A Structural Roadmap and Paper Inventory}
       discrete Sobolev identity, quasi-isometry of sinc embedding;
       closes last open hypothesis of Q5a Theorem~7.1 &
       \sproved \\[3pt]
+      Q11 & Temporal Casimir rigidity & \cite{Beau2026q11} &
+      Closes Q5b open problem~O3: Schur rigidity forces $A_\tau = C_{\mathfrak{su}(2)} = 2$;
+      effective Lorentzian co-metric fully determined:
+      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$ &
+      \sstruct \\[3pt]
+      Q12 & Yang--Mills from $a_4$ & \cite{Beau2026q12} &
+      Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{Tr}(F^2)$;
+      vertical variation $\delta_\mathcal{A} S_\Pi = 0$ yields $D_\mu F^{a\mu\nu} = 0$;
+      induced coupling $g_{\mathrm{YM}}^{-2} \sim \log(\Lambda/\mu)$;
+      gauge--gravity hierarchy structural (\sproved{} for $a_4$ derivation;
+      conditional on Q6a for $G_\Pi$) &
+      \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
       Operational metric from graph Laplacians; spacetime from spectral correlations &
@@ -1297,6 +1345,21 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{$V-A$ chiral structure.}
     Formal derivation of the $V - A$ coupling from spectral selection is open.
 
+  \paragraph{Gauge--gravity synthesis (Q12 $\to$ Q13).}
+    Q12 establishes Einstein gravity and Yang--Mills dynamics as independent ($a_2$ and $a_4$)
+    sectors of the single functional $S_\Pi[g,\mathcal{A}]$.
+    The joint variational problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ (coupled Einstein--Yang--Mills
+    equations), the precise ratio $G_N g_{\mathrm{YM}}^2$, the Born--Infeld gauge-sector
+    completion, and the extension to include projected matter currents $J^{a\nu}$ are deferred
+    to Q13 (Gauge--Gravity Spectral Synthesis).
+
+  \paragraph{Yang--Mills uniqueness for SU(3) (Q12, O31).}
+    Q12 derives the Yang--Mills equations for any compact $G_\Pi$ from the $a_4$
+    heat-kernel coefficient; the SU(3) sector is inherited from O31/Q6a.
+    What remains open is the internal SU(3) uniqueness problem (O31 §9.2):
+    showing that the SU(3) gauge dynamics emerge \emph{uniquely} from the colour
+    triplet co-admissibility structure, without inputting the group as data.
+
   \paragraph{Thermodynamics: Lorentzian extension and matter coupling.}
     The local spectral first law is derived in the Riemannian setting.
     Analytic continuation and the explicit form of $W_\Pi$ for matter fields are open.
@@ -1338,6 +1401,13 @@ A Structural Roadmap and Paper Inventory}
   W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
   ($A_\tau = 2$ from Q11~\cite{Beau2026q11}) is thereby established under the Q5a foundational hypotheses and~[U].
+  Q12~\cite{Beau2026q12} completes the spectral derivation of gauge dynamics:
+  the Seeley--DeWitt $a_4$ coefficient of the operator $A_{g,\mathcal{A}}$ on the
+  admissible vector bundle contains the Yang--Mills density $\tfrac{1}{12}\mathrm{Tr}(F^2)$,
+  and the vertical variation $\delta_\mathcal{A}S_\Pi = 0$ yields $D_\mu F^{a\mu\nu} = 0$.
+  The gauge--gravity hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is thereby a structural consequence
+  of the Seeley--DeWitt expansion ($a_2$ quadratic vs.\ $a_4$ logarithmic UV divergence),
+  emerging from the single functional $S_\Pi[g,\mathcal{A}]$.
   Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
   Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal

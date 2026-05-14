@@ -1055,6 +1055,18 @@
         "The effective co-metric is uniquely determined: g^{μν} = 2η^{μν}, no free parameter."
     },
     {
+      id: "Q12", lbl: "Q12", s: "structural", b: "III", key: "Beau2026q12",
+      url: ZEN + "20189137",
+      tags: ["grav", "SM"],
+      title: "Q12 — Yang–Mills from Projective Spectral Entropy (a₄)",
+      desc: "Vertical companion to the Gravity paper. " +
+        "Extends A_g to A_{g,𝒜} = −(∇^𝒜)² + E on the associated vector bundle of the admissible principal bundle P_{G_Π}. " +
+        "Seeley–DeWitt a₄ ⊃ (1/12)·Tr(F²)/(16π²); vertical variation δ_𝒜 S_Π = 0 yields D_μ F^{aμν} = 0. " +
+        "Induced coupling g_YM⁻² ∼ (12·16π²)⁻¹ log(Λ/μ) (logarithmic); G_N⁻¹ ∼ ℓ_sp⁻² (quadratic). " +
+        "Gauge–gravity hierarchy G_N g_YM² ≪ 1 is structural: a₂ → Einstein (quadratic UV), a₄ → Yang–Mills (logarithmic UV). " +
+        "Gauge group G_Π taken as input from Q6a/O31; SU(3) sector inherits [H-color] conditionality."
+    },
+    {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
       tags: ["spt"],
       title: "Spectral2 — Relational Spacetime",
@@ -1163,6 +1175,7 @@
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
     { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
+    { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
@@ -1232,6 +1245,7 @@
     W1: { x: 11 * X, y: 11 * Y },
     H2: { x: 12 * X, y: 11 * Y },
     Q11: { x: 11 * X, y: 12 * Y },
+    Q12: { x: 9 * X, y: 13 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
@@ -1345,7 +1359,7 @@
 
     bgRect(-X, 0, 5 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
     bgRect(-X, Y, 9 * X + NW, 9 * Y + NH, "var(--branch2)", "Branch II: O-series")
-    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 9 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
+    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 10 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
 
     /* edges */
