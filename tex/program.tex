@@ -645,8 +645,35 @@ A Structural Roadmap and Paper Inventory}
     group-theoretic: the difficulty of reconciling gravity with the gauge-theoretic
     Standard Model may reflect a difference of Seeley--DeWitt order rather than
     the absence of a common symmetry group~$G_{\mathrm{unif}}$.
-    The gauge--gravity synthesis (joint equations of motion, ratio $G_N g_{\mathrm{YM}}^2$,
-    Born--Infeld completion) is deferred to Q13 (Gauge--Gravity Spectral Synthesis).
+    The gauge--gravity synthesis is carried out in Q13.
+
+    \textbf{Q13}~\cite{Beau2026q13}: Gauge--gravity spectral synthesis (\sstruct, conditional
+    on Q12 and the Gravity paper; SU(3) sector inherits [H-color] conditionality).
+    Q13 completes the trilogy (Gravity, Q12, Q13) by solving the \emph{joint} variational
+    problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ and deriving the coupled Einstein--Yang--Mills
+    system.
+    The metric variation of the $a_4$ coefficient yields the Yang--Mills stress tensor as the
+    source term for gravity: $G_{\mu\nu} = 8\pi G_N T^{YM}_{\mu\nu} + \mathcal{O}(a_6)$
+    (\sproved{} modulo the Lemma on metric-independence of $F_{\mu\nu}$).
+    The $a_6$ Seeley--DeWitt coefficient is computed and produces the leading gauge--gravity
+    cross-coupling $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$, suppressed by
+    $\ell_{\mathrm{sp}}^2$ (\sstruct).
+    The Eddington--Born--Infeld completion of the joint functional is constructed from the
+    same $c_\chi$ saturation bound, recovering both sector-specific BI completions as limits
+    (\sstruct, with residual ambiguity in the tensor $\Xi_{\mu\nu}$).
+    The gauge--gravity hierarchy is a structural output:
+    \[
+      G_N g_{\mathrm{YM}}^2
+      \;\sim\;
+      \frac{\ell_{\mathrm{sp}}^2}{\dim V}\cdot\Bigl[\log\frac{\Lambda}{\mu}\Bigr]^{-1}
+      \;\ll\; 1,
+    \]
+    without fine-tuning, as a direct consequence of the Seeley--DeWitt stratification
+    ($a_2 \to$ gravity at quadratic UV, $a_4 \to$ gauge at logarithmic UV).
+    The central conceptual contribution is the identification of the spectral stratification
+    principle: gravity and gauge dynamics are not unified by enlarging the symmetry group,
+    but are \emph{stratified by Seeley--DeWitt order} within the single operator
+    $\mathcal{A}_{g,\mathcal{A}}$.
 
   \subsection{Gravity and Spacetime Track}
 
@@ -902,6 +929,13 @@ A Structural Roadmap and Paper Inventory}
   {YM from $a_4$};
 \draw[arr] (Grav) to[out=-90,in=135] (Q12);
 \draw[arr] (Q6a)  to[out=200,in=60]  (Q12);
+
+\node[S] (Q13) at (3*\dx,-12*\dy) {Q13};
+\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q13.east)
+  {EYM + hierarchy};
+\draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
+\draw[arr] (Grav) to[out=-90,in=150] (Q13);
+\draw[arr] (BI)   to[out=-90,in=180] (Q13);
 
         \end{tikzpicture}
       }
@@ -1269,6 +1303,13 @@ A Structural Roadmap and Paper Inventory}
       gauge--gravity hierarchy structural (\sproved{} for $a_4$ derivation;
       conditional on Q6a for $G_\Pi$) &
       \sstruct \\[3pt]
+      Q13 & Gauge--gravity spectral synthesis & \cite{Beau2026q13} &
+      Joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ yields coupled Einstein--Yang--Mills system;
+      $a_6$ cross-coupling $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$ (suppressed by
+      $\ell_{\mathrm{sp}}^2$); Eddington--Born--Infeld joint completion;
+      hierarchy ratio $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot
+      [\log(\Lambda/\mu)]^{-1}$ without fine-tuning &
+      \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
       Operational metric from graph Laplacians; spacetime from spectral correlations &
@@ -1360,10 +1401,14 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Gauge--gravity synthesis (Q12 $\to$ Q13).}
     Q12 establishes Einstein gravity and Yang--Mills dynamics as independent ($a_2$ and $a_4$)
     sectors of the single functional $S_\Pi[g,\mathcal{A}]$.
-    The joint variational problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ (coupled Einstein--Yang--Mills
-    equations), the precise ratio $G_N g_{\mathrm{YM}}^2$, the Born--Infeld gauge-sector
-    completion, and the extension to include projected matter currents $J^{a\nu}$ are deferred
-    to Q13 (Gauge--Gravity Spectral Synthesis).
+    Q13~\cite{Beau2026q13} completes this synthesis: the joint variational problem
+    $\delta_{g,\mathcal{A}} S_\Pi = 0$ yields the coupled Einstein--Yang--Mills system,
+    the precise hierarchy ratio $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)
+    \cdot [\log(\Lambda/\mu)]^{-1}$, and the Eddington--Born--Infeld completion of the
+    joint functional.
+    Residual open points: EBI tensor $\Xi_{\mu\nu}$ ambiguity (subleading),
+    numerical $a_6$ coefficients, Lorentzian extension of the joint EBI functional,
+    and extension to include projected matter currents $J^{a\nu}$.
 
   \paragraph{Yang--Mills uniqueness for SU(3) (Q12, O31).}
     Q12 derives the Yang--Mills equations for any compact $G_\Pi$ from the $a_4$
@@ -1417,9 +1462,14 @@ A Structural Roadmap and Paper Inventory}
   the Seeley--DeWitt $a_4$ coefficient of the operator $A_{g,\mathcal{A}}$ on the
   admissible vector bundle contains the Yang--Mills density $\tfrac{1}{12}\mathrm{Tr}(F^2)$,
   and the vertical variation $\delta_\mathcal{A}S_\Pi = 0$ yields $D_\mu F^{a\mu\nu} = 0$.
-  The gauge--gravity hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is thereby a structural consequence
-  of the Seeley--DeWitt expansion ($a_2$ quadratic vs.\ $a_4$ logarithmic UV divergence),
-  emerging from the single functional $S_\Pi[g,\mathcal{A}]$.
+  Q13~\cite{Beau2026q13} completes the gauge--gravity synthesis: the joint variational problem
+  $\delta_{g,\mathcal{A}} S_\Pi = 0$ yields the coupled Einstein--Yang--Mills system, and the
+  gauge--gravity hierarchy $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot
+  [\log(\Lambda/\mu)]^{-1} \ll 1$ emerges as a structural consequence of the spectral
+  stratification ($a_2$ quadratic vs.\ $a_4$ logarithmic UV divergence), without fine-tuning.
+  The Cosmochrony programme can now be stated in one sentence: it is a \emph{spectrally
+  stratified theory of emergent interactions}, in which the type of a fundamental interaction
+  is determined by the Seeley--DeWitt order at which the admissible operator responds.
   Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
   Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
