@@ -1067,6 +1067,30 @@
         "Gauge group G_Π taken as input from Q6a/O31; SU(3) sector inherits [H-color] conditionality."
     },
     {
+      id: "Q13", lbl: "Q13", s: "structural", b: "III", key: "Beau2026q13",
+      url: ZEN + "20209859",
+      tags: ["grav", "SM"],
+      title: "Q13 — Gauge–Gravity Spectral Synthesis",
+      desc: "Completes the Q12–Gravity trilogy by solving the joint variational problem δ_{g,𝒜} S_Π = 0. " +
+        "Yields the coupled Einstein–Yang–Mills system G_μν = 8πG_N T^YM_μν + O(a₆). " +
+        "a₆ Seeley–DeWitt coefficient produces gauge–gravity cross-coupling R_μνρσ F^μν F^ρσ (suppressed by ℓ_sp²). " +
+        "Eddington–Born–Infeld joint completion from the same c_χ saturation bound. " +
+        "Hierarchy ratio G_N g_YM² ∼ ℓ_sp²/(dim V)·[log(Λ/μ)]⁻¹ ≪ 1 without fine-tuning: structural consequence of spectral stratification."
+    },
+    {
+      id: "Q14", lbl: "Q14", s: "structural", b: "III", key: "Beau2026q14",
+      url: ZEN + "20218410",
+      tags: ["SM"],
+      title: "Q14 — Fermionic Matter and Chirality from Projective Dirac Admissibility",
+      desc: "Extends the gauge–gravity synthesis to the fermionic sector. " +
+        "Fermions arise as the spinorial face of the Weil module V_ρ under Lorentzian complexification mp(2,ℝ)_ℂ ≅ sl₂(ℂ). " +
+        "(i) Admissible spinor bundle S_Π reproduces SU(2)_L × U(1)_Y electroweak structure. " +
+        "(ii) Projected Dirac endomorphism E_Π, under spinorial BI-parity lift, enforces V−A chirality; " +
+        "γ₅-weighted a₄ fixes hypercharge by anomaly-cancellation (not a free parameter). " +
+        "(iii) Saturation invariant σ_c(n₃) = 3 yields gauge-singlet three-generation factor ℂ³_gen. " +
+        "Quark colour sector conditional on [H-color]."
+    },
+    {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
       tags: ["spt"],
       title: "Spectral2 — Relational Spacetime",
@@ -1176,6 +1200,8 @@
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
     { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
     { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
+    { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" }, { f: "BI", t: "Q13" },
+    { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
@@ -1246,6 +1272,8 @@
     H2: { x: 12 * X, y: 11 * Y },
     Q11: { x: 11 * X, y: 12 * Y },
     Q12: { x: 9 * X, y: 13 * Y },
+    Q13: { x: 9 * X, y: 14 * Y },
+    Q14: { x: 9 * X, y: 15 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
