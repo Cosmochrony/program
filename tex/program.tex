@@ -674,6 +674,31 @@ A Structural Roadmap and Paper Inventory}
     principle: gravity and gauge dynamics are not unified by enlarging the symmetry group,
     but are \emph{stratified by Seeley--DeWitt order} within the single operator
     $\mathcal{A}_{g,\mathcal{A}}$.
+    The fermionic extension is carried out in Q14.
+
+    \textbf{Q14}~\cite{Beau2026q14}: Fermionic matter and chirality (\sstruct, conditional
+    on Q13, the Gravity paper, and the BI paper; colour sector inherits [H-color] conditionality).
+    Q14 extends the gauge--gravity synthesis to the fermionic sector.
+    Fermions are not postulated as external fields: they arise as the spinorial face of the
+    Weil module $V_\rho$ already forced by non-injective admissibility, once its metaplectic
+    Lie-algebraic structure is complexified by the Lorentzian metric.
+    Three structural results are proved.
+    (i)~The admissible Weil module induces, through its metaplectic lift and the complexification
+    $\mathfrak{mp}(2,\mathbb{R})_{\mathbb{C}} \simeq \mathfrak{sl}_2(\mathbb{C})$, an admissible
+    spinor bundle $S_\Pi$ whose symmetric and determinant tensor sectors reproduce the
+    $\SU(2)_L \times U(1)_Y$ electroweak bundle structure (\sstruct).
+    (ii)~The projected Dirac operator $\mathcal{D}_{\Pi,g,A}$ contains a canonical zero-order
+    endomorphism $E_\Pi$ (the internal spectral residue of non-injective projection) which,
+    under the spinorial lift of BI parity, is left-admissible and enforces the $V{-}A$ chiral
+    structure; the $\gamma_5$-weighted $a_4$ Seeley--DeWitt coefficient then imposes
+    anomaly-cancellation trace constraints on the hypercharge weights, making hypercharge
+    a spectral coherence datum rather than a free parameter (\sstruct).
+    (iii)~The saturation invariant $\sigma_c(n_3) = 3$ admits a spinorial multiplicity reading,
+    distinct from its geometric reading as three spatial directions, yielding a gauge-singlet
+    three-generation factor
+    $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\SU(2)} \oplus Y)$ (\sstruct).
+    The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$,
+    conditional on [H-color].
 
   \subsection{Gravity and Spacetime Track}
 
@@ -936,6 +961,13 @@ A Structural Roadmap and Paper Inventory}
 \draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
 \draw[arr] (Grav) to[out=-90,in=150] (Q13);
 \draw[arr] (BI)   to[out=-90,in=180] (Q13);
+
+\node[S] (Q14) at (3*\dx,-13*\dy) {Q14};
+\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q14.east)
+  {Fermions + chirality};
+\draw[arr] (Q13) to[out=-90,in=90]  (Q14);
+\draw[arr] (Grav) to[out=-90,in=160] (Q14);
+\draw[arr] (BI)   to[out=-90,in=175] (Q14);
 
         \end{tikzpicture}
       }
@@ -1310,6 +1342,13 @@ A Structural Roadmap and Paper Inventory}
       hierarchy ratio $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot
       [\log(\Lambda/\mu)]^{-1}$ without fine-tuning &
       \sstruct \\[3pt]
+      Q14 & Fermionic matter \& chirality & \cite{Beau2026q14} &
+      Admissible spinor bundle $S_\Pi$ reproduces $\SU(2)_L \times U(1)_Y$;
+      projected Dirac endomorphism $E_\Pi$ enforces $V{-}A$ chirality under spinorial BI parity;
+      $\gamma_5$-weighted $a_4$ fixes hypercharge by anomaly cancellation;
+      $\sigma_c(n_3) = 3$ yields three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$;
+      quark colour sector conditional on [H-color] &
+      \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
       Operational metric from graph Laplacians; spacetime from spectral correlations &
@@ -1395,8 +1434,15 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Baryon-to-photon ratio (SMchargemass).}
     Quantitative derivation of $\eta \sim 10^{-10}$ is open.
 
-  \paragraph{$V-A$ chiral structure.}
-    Formal derivation of the $V - A$ coupling from spectral selection is open.
+  \paragraph{$V-A$ chiral structure and fermionic matter (Q14).}
+    Q14~\cite{Beau2026q14} addresses the formal derivation of the $V{-}A$ coupling:
+    the projected Dirac endomorphism $E_\Pi$, under the spinorial lift of BI parity,
+    is left-admissible and enforces chiral selection.
+    Hypercharge is not a free parameter but is fixed by anomaly-cancellation constraints
+    on the $\gamma_5$-weighted $a_4$ Seeley--DeWitt coefficient.
+    The three-generation multiplicity follows from $\sigma_c(n_3) = 3$.
+    Residual open points: Lorentzian extension of the projected Dirac operator,
+    explicit mass generation mechanism, and quark colour sector (conditional on [H-color]).
 
   \paragraph{Gauge--gravity synthesis (Q12 $\to$ Q13).}
     Q12 establishes Einstein gravity and Yang--Mills dynamics as independent ($a_2$ and $a_4$)
@@ -1467,6 +1513,15 @@ A Structural Roadmap and Paper Inventory}
   gauge--gravity hierarchy $G_N g_{\mathrm{YM}}^2 \sim \ell_{\mathrm{sp}}^2/(\dim V)\cdot
   [\log(\Lambda/\mu)]^{-1} \ll 1$ emerges as a structural consequence of the spectral
   stratification ($a_2$ quadratic vs.\ $a_4$ logarithmic UV divergence), without fine-tuning.
+  Q14~\cite{Beau2026q14} extends this to the fermionic sector: the admissible Weil module
+  induces a spinor bundle $S_\Pi$ reproducing $\SU(2)_L \times U(1)_Y$; the projected Dirac
+  endomorphism $E_\Pi$ enforces $V{-}A$ chirality under the spinorial lift of BI parity;
+  hypercharge is fixed by anomaly-cancellation constraints on the $\gamma_5$-weighted $a_4$
+  coefficient; and the saturation invariant $\sigma_c(n_3) = 3$ yields a gauge-singlet
+  three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$.
+  Together, Q12--Q14 establish that the bosonic gauge and gravitational fields and the
+  fermionic matter content of the Standard Model arise from a single structural source:
+  the non-injective projection admissibility constraint on the Weil module.
   The Cosmochrony programme can now be stated in one sentence: it is a \emph{spectrally
   stratified theory of emergent interactions}, in which the type of a fundamental interaction
   is determined by the Seeley--DeWitt order at which the admissible operator responds.
