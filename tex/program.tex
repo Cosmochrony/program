@@ -521,6 +521,30 @@ A Structural Roadmap and Paper Inventory}
     conditional on [H-color] for $\mathcal{S}_q$).
     U1 universality implies $|\sigma_c - \sigma_{\omega c}| = O(q^{-1/2})$ for any generating
     set, so the identification is generating-set-independent in the large-$q$ limit.
+    The generating-set independence operates at two levels (\emph{two-tier result}):
+    (i)~exactly, for the colour-adapted graph $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$
+    (metaplectic argument, Theorem~4.4);
+    (ii)~up to $O(q^{-1/2})$, for \emph{any} generating set including $\mathcal{S}_q$
+    (U1 universality, Proposition~4.7).
+    Proposition~4.6 shows that $\mathcal{S}_q^{(3)}$ is the \emph{canonical} colour-sector
+    generating set: the minimal extension of $\mathcal{S}_q$ closed under $\phi_\omega$,
+    in exact analogy with $\mathcal{S}_q$ being canonical for the pair sector under $\phi_{-1}$.
+    Additionally, Theorem~5.3 (\emph{generator-twist isospectrality}) proves that the
+    Weil-sector Markov operator is isospectral under the generator twist
+    $\mathcal{S}_q \mapsto \phi_\omega(\mathcal{S}_q)$:
+    $\operatorname{spec}(\rho_c(P_{\mathcal{S}_q})) = \operatorname{spec}(\rho_c(P_{\phi_\omega(\mathcal{S}_q)}))$
+    for all $c \in (\mathbb{Z}/q\mathbb{Z})^*$, confirmed to machine precision
+    ($|\Delta\lambda| < 10^{-12}$) for all $q \equiv 1\pmod{3}$, $q \leq 157$.
+    However, this isospectrality does \emph{not} extend across distinct central characters:
+    $\operatorname{spec}(\rho_c(P_{\mathcal{S}_q})) \neq
+    \operatorname{spec}(\rho_{\omega c}(P_{\mathcal{S}_q}))$ in general
+    ($\max|\Delta\lambda| \approx 0.3$--$0.4$), establishing that [H-color] on the standard graph
+    cannot be proved through global Markov-spectrum equality; the BFS capacity is a strictly
+    finer observable.
+    Section~6 provides the conceptual unification: $\mathrm{U}(1)$, $\SU(2)$, $\SU(3)$ arise
+    from BI-admissible fibre orbits of size~$1$, $2$, $3$ respectively (phase non-injectivity,
+    minimal correlated non-injectivity, relational correlated non-injectivity), with
+    non-factorisability (Foundation~M, Axiom~A3) as the uniform structural origin.
     \textbf{O32}~\cite{Beau2026a36}: tests [H-color] numerically on
     $q\in\{61,151,211\}$ (test, $q\equiv 1\pmod{3}$) and $q\in\{29,101\}$ (controls).
     Combined noise floor $\mathtt{ctrl\_ref} = 3.81\times10^{-3}$.
