@@ -177,11 +177,31 @@ A Structural Roadmap and Paper Inventory}
   \subsection{The White Paper}
 
     The white paper~\cite{Cosmochrony} (``Cosmochrony: A Non-Injective Projection Theory of Emergent
-  Physics,'' v3.1) is the programme's primary overview document.
+  Physics,'' v3.2) is the programme's primary overview document.
     It introduces the substrate field~$\chi$, the non-injective projection~$\Pi$, the BI saturation
     constraint, the relaxation mechanism, and the qualitative derivation of spacetime and quantum structure.
     The spectral entropy functional $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ appears here as the
     structural origin of the Einstein equation.
+
+    Version~3.2 incorporates several structural refinements informed by the O-series and Foundation
+    results:
+    \begin{itemize}
+      \item \textit{Oriented state machine:} the admissible cascade is reformulated as a directed
+        graph on admissible projections; physical histories are directed paths, and the first
+        transition is guaranteed by non-commutativity $[X,\sigma(X)] = Z \neq 0$~\cite{Beau2026m}.
+      \item \textit{Initial conditions dissolved:} the minimal state~$\chi_0$ cannot be a global
+        minimum of the cascade; the fibre non-commutativity prevents any admissible projection from
+        having trivial kernel, so the cascade begins as a structural necessity.
+      \item \textit{Inaccessibility of absolute zero:} the Heisenberg structure of the admissible
+        fibre forbids projective stasis $U_{n+1} = U_n$ at any stage.
+      \item \textit{Algebraic necessity of fluctuations (Remark):} no admissible projection can have
+        trivial kernel, so quantum vacuum fluctuations are a structural necessity, not a contingent
+        feature.
+      \item \textit{Schr\"{o}dinger as Mosco limit:} the continuous Schr\"{o}dinger equation is
+        derived as the Mosco limit of the discrete oriented admissibility cascade.
+      \item \textit{Extended numerical scope:} the PTO monotonicity is verified for
+        $q \in \{29,61,101,151,211\}$, with~274 conjugate pairs and~360 post-burn-in steps.
+    \end{itemize}
 
     \textit{Role:} Programme overview; structural motivation; first formulation of the BI constraint
     and the relaxation cascade.
@@ -206,13 +226,19 @@ A Structural Roadmap and Paper Inventory}
     distinct emergent levels carries one independent non-injective projection per stratum)
     and Section~5 (towers of emergence, structural colour confinement as projective
     necessity).
+    A new Remark (algebraic route) shows that in frameworks whose fibre carries a Heisenberg
+    algebra $[X,Y]=Z\neq 0$, $S_\Pi > 0$ also follows directly from fibre non-commutativity:
+    a trivial-kernel projection would require simultaneous diagonalisation of $X$ and $Y$,
+    which is structurally forbidden.
+    The two derivations are complementary: Theorem~2.1 answers \emph{what} is forced
+    (framework-independently); the algebraic route answers \emph{why} in Heisenberg-fibred frameworks.
     Cited by Foundation, HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
     Q1~\cite{Beau2026q1}, Bell, O32~\cite{Beau2026a36}.
 
   \subsection{Foundation: Admissible Non-Injective Transitions as the Primitive}
     \label{sec:foundation}
 
-    The Foundation paper~\cite{Beau2026m} (v1.6) establishes the minimal axiomatic basis of the programme.
+    The Foundation paper~\cite{Beau2026m} (v1.7) establishes the minimal axiomatic basis of the programme.
     From the four axioms~A1--A4 alone it derives:
     (i) irreversibility and the arrow of time (A1+A2);
     (ii) the proto-state as a physically real unresolved configuration retaining phase coherence~(A3);
@@ -220,7 +246,13 @@ A Structural Roadmap and Paper Inventory}
     (iv) the identification of the admissible fibre symmetry group as $\Heis_3(\mathbb{Z}/q\mathbb{Z})$
     for a prime~$q$, together with BI parity (A1--A3);
     (v) the identification $F_n \cong V_\rho$ (Weil representation) as a theorem (Theorem~5.6);
-    (vi) the discrete character of quantum transitions from~A4.
+    (vi) the discrete character of quantum transitions from~A4;
+    (vii) projective incompleteness (Corollary to Theorem~5.4): every admissible projection
+    $\Pi_n$ has a non-trivial kernel, so no observable description is ever complete —
+    a direct consequence of $[X, \sigma(X)] = Z \neq 0$.
+    The paper also establishes the threefold role of~$\Pi_n$ (Remark~3.5):
+    admissibility filter, generator of temporal order, and revelation operator —
+    three roles that are algebraically inseparable and all sourced in the non-commutativity.
 
     \textit{Status:} \sproved{} for the algebraic identification of the fibre;
     \sstruct{} for the continuum limit (deferred to Q5a--Q5b).
@@ -503,7 +535,16 @@ A Structural Roadmap and Paper Inventory}
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
     hence compatible with an arrow of time.
-    Confirmed numerically for $q \in \{29, 61, 101, 151\}$ (\sstruct).
+    Confirmed numerically for $q \in \{29, 61, 101, 151, 211\}$ (\sstruct).
+    The admissible cascade is shown to carry the structure of an oriented state machine:
+    nodes are admissible projections, edges are admissible transitions, and branching weights
+    play the role of quantum probabilities.
+    The first transition $U_0 \to U_1$ is guaranteed by projective incompleteness
+    (Foundation Corollary to Theorem~5.4): temporal ordering starts as a structural necessity,
+    not a postulate.
+    Open: whether the characteristic shell $n^*(q)$ coincides with the locking depth $n_c(q)$
+    at which BFS coverage transitions from locally to universally dominated — which would connect
+    the spectral ordering to the effective geometry results of Q10~\cite{Beau2026q10}.
 
   \section{Branch III: Q-Series and Physical Applications}
   \label{sec:qseries}
