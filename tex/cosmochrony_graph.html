@@ -620,7 +620,9 @@
       url: BASE + "emergence-non-injectivity",
       tags: ["emer", "time"],
       title: "Emergence & Non-Injectivity",
-      desc: "No-go theorem (Thm 2.1): genuine emergence ⟺ Π non-injective ⟺ S_Π > 0. Foundational justification for Axiom A2."
+      desc: "No-go theorem (Thm 2.1): genuine emergence ⟺ Π non-injective ⟺ S_Π > 0. Foundational justification for Axiom A2. " +
+        "v2 adds Corollary 6 (recursive non-injectivity): any tower of genuinely distinct emergent levels carries one non-injective projection per stratum. " +
+        "Section 5: colour confinement is structural necessity of Π_colour non-injectivity. Cited by O32."
     },
     {
       id: "Found", lbl: "Found", s: "proved", b: "I", key: "Beau2026m",
@@ -882,6 +884,33 @@
       desc: "BI parity forces M_j∈Sym(V_ρ,ℂ) (proved). Symmetric rank formula r_eff=d_ρ(d_ρ+1)/2; unique inversion r_eff=3 ⟹ d_ρ=2 (spin-½). Confirmed for q∈{61,101,151}: 100% of pairs at q=61 and q=151; q=101 anomaly resolved as single-sample Monte Carlo artefact (89% of cells r_eff=3 on multi-sample analysis). O26 Criterion 5.4 reformulated for conjugate-pair data."
     },
     {
+      id: "O30", lbl: "O30", s: "proved", b: "II", key: "Beau2026a34",
+      url: ZEN + "20014707",
+      tags: ["mass", "QM"],
+      title: "O30 — Eigenvalue Ratio λ₁/λ₂ = 2 (Analytical Derivation)",
+      desc: "First analytical derivation of the invariant [1:½:½] covariance spectrum. BI parity anti-linearity ρ_{q-c}=ρ̄_c forces equatorial constraint |α_j|=|β_j| on admissible fibre. Central component √2·α_j·β_j is phase-independent (phases cancel exactly). Under single-harmonic phase decorrelation ⟨e^{2iφ_j}⟩=0, covariance diagonalises: C_c=⟨r⁴⟩·diag(¼,½,¼), ratio [1:½:½] exactly. Factor 2 is purely structural: squared symmetric-tensor normalisation of Carnot-degree-2 generator Z=[X,Y]. Correction O(q^{-1/2}) from U1. Closes O28–O29 §7.4."
+    },
+    {
+      id: "O31", lbl: "O31", s: "structural", b: "II", key: "Beau2026a35",
+      url: ZEN + "20030491",
+      tags: ["SM", "gauge"],
+      title: "O31 — SU(3) from Colour Triplet Co-admissibility",
+      desc: "Structural framework for the SU(3) identification. Hurwitz obstruction: O23 argument cannot yield d_ρ=3 (proved). Colour triplets {c,ωc,ω²c} with c₁+c₂+c₃≡0 (mod q) exist iff q≡1 (mod 3) (proved). Metaplectic automorphism φ_ω forces σ_c(n)=σ_{ωc}(n) on colour-adapted Cayley graph S_q^(3) (proved, Thm 4.4). Conditional on [H-color], SU(3) is the unique symmetry group of the co-admissible triplet; U(3), SO(3), U(2), G₂ excluded (proved). G_SM=SU(3)×SU(2)×U(1) derived for S_q^(3); conditional on [H-color] for standard graph. U1 universality gives |σ_c−σ_{ωc}|=O(q^{-1/2}) for any generating set. O32 (prelim): [H-color] passes for q=61 (R=1.69) and q=151 (R_var=7.1e-4); q=211 in progress."
+    },
+    {
+      id: "O32", lbl: "O32", s: "structural", b: "II", key: "Beau2026a36",
+      url: ZEN + "20145607",
+      tags: ["SM", "emer"],
+      title: "O32 — Colour Triplet Co-admissibility: Numerical Test of [H-color]",
+      desc:
+        "Numerical test of Hypothesis [H-color] on the standard Cayley graph Cay(G_q, S_q). " +
+        "q=61 (M=50): normalised inter-triplet variance ratio R=1.69 ≤ 3 — passes. " +
+        "q=151 (M=50): R_var=7.1×10⁻⁴, factor 5 below q=61; δ_tri≈3δ_c at sub-percent level; " +
+        "all C_color rank 1 (profiles co-linear). " +
+        "Power-law R_var ∝ q^{−1.75} consistent with asymptotic co-admissibility. " +
+        "q=211: computation in progress. q=307: planned."
+    },
+    {
       id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
       url: BASE + "spectral/program/projective_temporal_ordering",
       tags: ["time"],
@@ -940,14 +969,14 @@
       url: ZEN + "19655294",
       tags: ["SM", "spt"],
       title: "Q6a — Gauge Structure",
-      desc: "Gauge charges as projection-fibre invariants. U(1) and SU(2) as admissibility fixed points. SU(3)×SU(2)×U(1) proposed as composite."
+      desc: "Gauge charges as projection-fibre invariants. U(1) and SU(2) as admissibility fixed points (proved). SU(3)×SU(2)×U(1) derived as composite via O31 colour-triplet framework (proved for colour-adapted Cayley graph; conditional on [H-color] for standard graph)."
     },
     {
       id: "Q6b", lbl: "Q6b", s: "structural", b: "III", key: "Beau2026q6b",
-      url: ZEN + "19744005",
+      url: ZEN + "20257944",
       tags: ["spt"],
       title: "Q6b — Effective Spacetime",
-      desc: "Effective Lorentzian geometry from admissibility filter Π_q. Inherits Q5a–Q5b hypotheses."
+      desc: "g^μν = diag(−2,2,2,2) from Π_q; Schwarzschild from flux conservation; Einstein equations as consistency conditions; closes chain Π_q → L_eff → g^μν → G_μν. [H-lift] closed by Q9."
     },
     {
       id: "Q7", lbl: "Q7", s: "structural", b: "III", key: "Beau2026q7",
@@ -1012,6 +1041,54 @@
         "quasi-isometry of sinc embedding. " +
         "Closes last open hypothesis of Q5a Theorem 7.1; all hypotheses now verified unconditionally on admissible sector. " +
         "Quasi-isometry bound O(q⁻¹) also provides the quantitative input for Q5a-O5 (identification of A in terms of c_BI)."
+    },
+    {
+      id: "Q11", lbl: "Q11", s: "structural", b: "III", key: "Beau2026q11",
+      url: ZEN + "20098387",
+      tags: ["spt", "emer"],
+      title: "Q11 — Temporal Casimir Rigidity: Identification of A_τ = 2",
+      desc: "Closes open problem Q5b-O3. " +
+        "Cascade internalization lemma: τ is the BFS depth index (Q5b Remark 3.3); " +
+        "∂_τ is the Carnot–Carathéodory limit of the cascade increment T (Q5b Thm 3.2, Pansu). " +
+        "[U] (proved in U1) forces T to be asymptotically SU(2)-equivariant. " +
+        "Schur's lemma + Q8 normalisation: A_τ = C_{su(2)} = 2. " +
+        "The effective co-metric is uniquely determined: g^{μν} = 2η^{μν}, no free parameter."
+    },
+    {
+      id: "Q12", lbl: "Q12", s: "structural", b: "III", key: "Beau2026q12",
+      url: ZEN + "20189137",
+      tags: ["grav", "SM"],
+      title: "Q12 — Yang–Mills from Projective Spectral Entropy (a₄)",
+      desc: "Vertical companion to the Gravity paper. " +
+        "Extends A_g to A_{g,𝒜} = −(∇^𝒜)² + E on the associated vector bundle of the admissible principal bundle P_{G_Π}. " +
+        "Seeley–DeWitt a₄ ⊃ (1/12)·Tr(F²)/(16π²); vertical variation δ_𝒜 S_Π = 0 yields D_μ F^{aμν} = 0. " +
+        "Induced coupling g_YM⁻² ∼ (12·16π²)⁻¹ log(Λ/μ) (logarithmic); G_N⁻¹ ∼ ℓ_sp⁻² (quadratic). " +
+        "Gauge–gravity hierarchy G_N g_YM² ≪ 1 is structural: a₂ → Einstein (quadratic UV), a₄ → Yang–Mills (logarithmic UV). " +
+        "Gauge group G_Π taken as input from Q6a/O31; SU(3) sector inherits [H-color] conditionality."
+    },
+    {
+      id: "Q13", lbl: "Q13", s: "structural", b: "III", key: "Beau2026q13",
+      url: ZEN + "20209859",
+      tags: ["grav", "SM"],
+      title: "Q13 — Gauge–Gravity Spectral Synthesis",
+      desc: "Completes the Q12–Gravity trilogy by solving the joint variational problem δ_{g,𝒜} S_Π = 0. " +
+        "Yields the coupled Einstein–Yang–Mills system G_μν = 8πG_N T^YM_μν + O(a₆). " +
+        "a₆ Seeley–DeWitt coefficient produces gauge–gravity cross-coupling R_μνρσ F^μν F^ρσ (suppressed by ℓ_sp²). " +
+        "Eddington–Born–Infeld joint completion from the same c_χ saturation bound. " +
+        "Hierarchy ratio G_N g_YM² ∼ ℓ_sp²/(dim V)·[log(Λ/μ)]⁻¹ ≪ 1 without fine-tuning: structural consequence of spectral stratification."
+    },
+    {
+      id: "Q14", lbl: "Q14", s: "structural", b: "III", key: "Beau2026q14",
+      url: ZEN + "20218410",
+      tags: ["SM"],
+      title: "Q14 — Fermionic Matter and Chirality from Projective Dirac Admissibility",
+      desc: "Extends the gauge–gravity synthesis to the fermionic sector. " +
+        "Fermions arise as the spinorial face of the Weil module V_ρ under Lorentzian complexification mp(2,ℝ)_ℂ ≅ sl₂(ℂ). " +
+        "(i) Admissible spinor bundle S_Π reproduces SU(2)_L × U(1)_Y electroweak structure. " +
+        "(ii) Projected Dirac endomorphism E_Π, under spinorial BI-parity lift, enforces V−A chirality; " +
+        "γ₅-weighted a₄ fixes hypercharge by anomaly-cancellation (not a free parameter). " +
+        "(iii) Saturation invariant σ_c(n₃) = 3 yields gauge-singlet three-generation factor ℂ³_gen. " +
+        "Quark colour sector conditional on [H-color]."
     },
     {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
@@ -1107,6 +1184,8 @@
     { f: "O24", t: "O25", sp: 1 }, { f: "O24", t: "O26" }, { f: "O26", t: "O27" }, { f: "O24", t: "PTO" },
     { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
+    { f: "O29", t: "O30", sp: 1 },
+    { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32", sp: 1 }, { f: "O31", t: "Q6a" },
     { f: "Found", t: "Q1", sp: 1 }, { f: "O18", t: "Q1" }, { f: "O22", t: "Q1" }, { f: "O23", t: "Q1" },
     { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
@@ -1119,12 +1198,16 @@
     { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
+    { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
+    { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
+    { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" }, { f: "BI", t: "Q13" },
+    { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
   ]
 
-  const NW = 72, NH = 22
+  const NW = 73, NH = 22
   const X = 85, Y = 58
 
   /* Layout */
@@ -1167,7 +1250,10 @@
     O26: { x: 6 * X, y: 6 * Y },
     O27: { x: 7 * X, y: 6 * Y },
     O28: { x: 8 * X, y: 6 * Y },
-    O29: { x: 9 * X, y: 6 * Y },
+    O29: { x: 8 * X, y: 7 * Y },
+    O30: { x: 8 * X, y: 8 * Y },
+    O31: { x: 8 * X, y: 9 * Y },
+    O32: { x: 8 * X, y: 10 * Y },
     PTO: { x: 6 * X, y: 7 * Y },
     Q1: { x: 10 * X, y: 3 * Y },
     Q2: { x: 10 * X, y: 4 * Y },
@@ -1184,6 +1270,10 @@
     U1: { x: 10 * X, y: 11 * Y },
     W1: { x: 11 * X, y: 11 * Y },
     H2: { x: 12 * X, y: 11 * Y },
+    Q11: { x: 11 * X, y: 12 * Y },
+    Q12: { x: 9 * X, y: 13 * Y },
+    Q13: { x: 9 * X, y: 14 * Y },
+    Q14: { x: 9 * X, y: 15 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
@@ -1296,8 +1386,8 @@
     }
 
     bgRect(-X, 0, 5 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
-    bgRect(-X, Y, 9 * X + NW, 5 * Y + NH, "var(--branch2)", "Branch II: O-series")
-    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 5 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
+    bgRect(-X, Y, 9 * X + NW, 9 * Y + NH, "var(--branch2)", "Branch II: O-series")
+    bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 10 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
 
     /* edges */
