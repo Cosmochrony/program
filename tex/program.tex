@@ -571,8 +571,13 @@ A Structural Roadmap and Paper Inventory}
     All three pass $R \leq 3$; $\delta_{\mathrm{tri}} \approx 3\delta_c$ at sub-percent level;
     $C_{\mathrm{color}}$ has numerical rank~1 in all cases.
     $q = 307$: in progress.
+    Additionally proves analytically (Proposition~avg-hcolor) that
+    $\mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1})$,
+    establishing $\Hcolor_{\mathrm{eff}}$ (capacity-exponent equality) in the $q\to\infty$
+    limit; the observed $R_{\mathrm{var}} \propto q^{-1}$ decrease is the predicted
+    modulation bias.
     Status: \sstruct{} ([H-color] numerically confirmed for $q\in\{151,211\}$;
-  analytical proof open).
+    $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise proof open).
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -1340,10 +1345,11 @@ A Structural Roadmap and Paper Inventory}
       $\mathrm{U}(2)$, $G_2$ excluded); $G_{\mathrm{SM}}$ derived for $\mathcal{S}_q^{(3)}$ &
       \sstruct \\[3pt]
       O32 & [H-color] numerical test & \cite{Beau2026a36} &
-      [H-color] passes for $q\in\{61,151,211\}$
-      ($R\leq 0.9$, noise floor $\mathtt{ctrl\_ref}=3.81\times10^{-3}$;
-      controls $q\in\{29,101\}$); $C_{\mathrm{color}}$ rank~1 in all cases;
-      $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent; $q=307$ in progress &
+      [H-color] passes for $q\in\{61,151,211\}$; $C_{\mathrm{color}}$ rank~1;
+      $\delta_{\mathrm{tri}}\approx 3\delta_c$;
+      $\Hcolor_{\mathrm{eff}}$ proved analytically in expectation (Prop.~avg-hcolor,
+      $\mathbb{E}[\sigma_c]=\mathbb{E}[\sigma_{\omega c}]+O(q^{-1})$);
+      pointwise proof open &
       \sstruct \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
