@@ -1118,6 +1118,13 @@
       desc: "Lorentzian completion of spectral action. Causal propagation and GW propagation from hyperbolic spectral action."
     },
     {
+      id: "LorCap", lbl: "LorCap", s: "structural", b: "III", key: "Beau2026n",
+      url: BASE + "lorentz-capacity",
+      tags: ["grav", "spt", "O7"],
+      title: "Lorentz Factor from Projective Capacity",
+      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction open."
+    },
+    {
       id: "TopI", lbl: "TopInv", s: "proved", b: "III", key: "Beau2026k",
       url: BASE + "topological-invariants",
       tags: ["SM", "BI"],
@@ -1203,11 +1210,12 @@
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" }, { f: "BI", t: "Q13" },
     { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
+    { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
   ]
 
-  const NW = 73, NH = 22
+  const NW = 74, NH = 22
   const X = 85, Y = 58
 
   /* Layout */
