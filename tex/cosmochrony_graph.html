@@ -1122,7 +1122,21 @@
       url: BASE + "lorentz-capacity",
       tags: ["grav", "spt", "O7"],
       title: "Lorentz Factor from Projective Capacity",
-      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction open."
+      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction: closed by TempProj."
+    },
+    {
+      id: "TempProj", lbl: "TempProj", s: "proved", b: "III", key: "Beau2026tp",
+      url: BASE + "temporal-projection",
+      tags: ["grav", "spt", "O7"],
+      title: "Temporal Residual Map",
+      desc: "Constructs P_τ^Q5b explicitly as the unique map compatible with Lorentzian splitting, BI sphere, and Weil filling law. P_τ^Q5b Σ_n^tot = √(1-B_n²). Closes LorCap open problem."
+    },
+    {
+      id: "LCII", lbl: "LCII", s: "structural", b: "III", key: "Beau2026lco2",
+      url: BASE + "lc-o2",
+      tags: ["grav", "spt"],
+      title: "Fibrewise Capacity Lapse and Gravitational Time Dilation",
+      desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x). Gravitational time dilation dτ/dn|_x = R(x)/γ."
     },
     {
       id: "TopI", lbl: "TopInv", s: "proved", b: "III", key: "Beau2026k",
@@ -1210,7 +1224,8 @@
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" }, { f: "BI", t: "Q13" },
     { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
-    { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" },
+    { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" }, { f: "PTO", t: "LorCap" },
+    { f: "LorCap", t: "TempProj", sp: 1 }, { f: "TempProj", t: "LCII", sp: 1 }, { f: "Grav", t: "LCII" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
   ]

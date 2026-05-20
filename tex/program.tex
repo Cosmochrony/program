@@ -828,6 +828,8 @@ A Structural Roadmap and Paper Inventory}
     Causal propagation and gravitational wave propagation follow from the hyperbolic continuation
     (\sproved{} for the Lorentzian extension; GW spectrum: \sstruct).
 
+  \subsection{Lorentz Capacity Sub-Programme}
+
     \textbf{LorentzCapacity}~\cite{Beau2026n}: Derives the Lorentz factor and relativistic
     mobility $\beta\gamma$ from the O7 saturation parameter $\eta_n^{\mathrm{O7}}$ under the
     Born--Infeld admissibility budget. The analytic factorization (central coordinate $c$
@@ -835,9 +837,27 @@ A Structural Roadmap and Paper Inventory}
     and does not by itself yield the Lorentz factor. The conditional mechanism via the
     temporally projected residual $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$
     and a quadratic normalization gives $\eta_n^\tau \to \beta\gamma$ and
-    $\Phi(\eta_n^\tau) \to 1/\gamma$; the temporal projection operator remains the open technical
-    task (\sproved{} for the algebraic BI target and the factorization; $\mathcal{P}_\tau^{\mathrm{Q5b}}$
-    construction: \sopen).
+    $\Phi(\eta_n^\tau) \to 1/\gamma$ (\sproved{} for the algebraic BI target and the factorization;
+    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp}).
+
+    \textbf{TempProj}~\cite{Beau2026tp}: Closes the open construction of
+    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ from LorentzCapacity.
+    Constructs the temporal residual map as the unique positive function compatible with the
+    Lorentzian splitting of the Q5b completed co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$,
+    the Born--Infeld unit capacity-flow sphere, and the exact Weil filling law
+    $\Sigma_n^{\mathrm{tot}} = 1 - B_n$.
+    The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$
+    follows from a fibre-by-fibre uniqueness argument; Lemma~1 and Theorem~1 of LorentzCapacity
+    become unconditional (\sproved{} conditional on [U]; three-input necessity: \sproved).
+
+    \textbf{LCII}~\cite{Beau2026lco2}: Extends TempProj to the non-homogeneous fibrewise regime.
+    A localised spectral occupancy $\epsilon(x)$ reduces the local BI capacity radius to
+    $R(x)^2 = 1-\epsilon(x)$; the fibrewise map factorises as
+    $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)
+    = R(x)\sqrt{f(x,n)(2-f(x,n))}$.
+    Gravitational time dilation is identified as $d\tau/dn|_x = R(x)/\gamma$,
+    with $R(x)^2 = -2g_{\tau\tau}(x)$ linking the local capacity budget to the metric
+    (\sstruct; open: derivation of $R(x)$ from $\epsilon(x)$ without the Einstein equation).
 
   \subsection{Standard Model Companion Papers}
 
@@ -885,7 +905,8 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Physical path.}
     Foundation $+ $ O18 $+$ O22 $+$ O23 $\to$ Q1 $\to$ Q2 $\to$ Q3; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
     O23 $+$ O28 $+$ O29 $+$ Q5b $\to$ Q7 (dimensional bridge);
-    parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz.
+    parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz;
+    Q5b $+$ Q11 $+$ PTO $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII.
 
     \begin{figure}[p]
       \centering
@@ -984,7 +1005,14 @@ A Structural Roadmap and Paper Inventory}
 \node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
 \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
   {$q{=}61,151,211$ pass; 307 prog.};
-\node[S] (PTO)  at (5*\dx,-7*\dy)   {PTO};
+\node[S] (PTO)    at (5*\dx,-7*\dy)   {PTO};
+\node[S] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
+\node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
+\node[S] (LCII)   at (5*\dx,-10*\dy) {LCII};
+
+\draw[arr]   (PTO)    -- (LorCap);
+\draw[spine] (LorCap) -- (TempPr);
+\draw[arr]   (TempPr) -- (LCII);
 
 \draw[spine] (O24) -- (O25);
 \draw[arr]   (O24) -- (O26);
@@ -1490,7 +1518,15 @@ A Structural Roadmap and Paper Inventory}
       LorCap & Lorentz factor from capacity & \cite{Beau2026n} &
       $\eta_n^\tau \to \beta\gamma$; $\Phi(\eta_n^\tau) \to 1/\gamma$;
       BI factorization and central-phase factorization (\sproved);
-      $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction (\sopen) &
+      $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp} &
+      \sstruct \\[3pt]
+      TempProj & Temporal residual map & \cite{Beau2026tp} &
+      $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$; uniqueness
+      (three-input necessity); Lemma~1 of LorCap proved unconditionally (cond.\ on [U]) &
+      \sproved \\[3pt]
+      LCII & Fibrewise capacity lapse & \cite{Beau2026lco2} &
+      Fibrewise extension to non-homogeneous regime; $d\tau/dn|_x = R(x)/\gamma$;
+      gravitational time dilation from local BI capacity radius $R(x)^2 = -2g_{\tau\tau}(x)$ &
       \sstruct \\[3pt]
       TopInv & Topological invariants & \cite{Beau2026k} &
       Charge quantisation ($\pi_1 \cong \mathbb{Z}$), no monopoles, chirality (Hopf fibration) &
@@ -1591,6 +1627,19 @@ A Structural Roadmap and Paper Inventory}
     What remains open is the internal SU(3) uniqueness problem (O31 §9.2):
     showing that the SU(3) gauge dynamics emerge \emph{uniquely} from the colour
     triplet co-admissibility structure, without inputting the group as data.
+
+  \paragraph{Lorentz Capacity Sub-Programme.}
+    TempProj closes the $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction of LorCap.
+    Three open problems remain:
+    \begin{itemize}
+      \item \textbf{LC-O1} (Length contraction): Reconstruction of effective Lorentz
+      transformations between inertial observers from projective temporal ordering data.
+      \item \textbf{LC-O2-O1} (Spectral derivation of $R(x)$): Derive the local BI capacity
+      radius $R(x)$ directly from the local spectral occupancy $\epsilon(x)$, without
+      importing the Einstein equations from the Gravity paper~\cite{Beau2026h}.
+      \item \textbf{LC-O3} (Finite-$q$ corrections at saturation): The quadratic law
+      is exact for $n < q/2$; corrections near saturation are open.
+    \end{itemize}
 
   \paragraph{Thermodynamics: Lorentzian extension and matter coupling.}
     The local spectral first law is derived in the Riemannian setting.
