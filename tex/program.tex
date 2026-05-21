@@ -567,12 +567,11 @@ A Structural Roadmap and Paper Inventory}
     non-factorisability (Foundation~M, Axiom~A3) as the uniform structural origin.
     \textbf{O32}~\cite{Beau2026a36}: tests [H-color] numerically on
     $q\in\{61,151,211\}$ (test, $q\equiv 1\pmod{3}$) and $q\in\{29,101\}$ (controls).
-    Combined noise floor $\mathtt{ctrl\_ref} = 3.81\times10^{-3}$.
-    Normalised ratios: $R = 0.90$ ($q=61$, 1/4 triplets valid),
-    $R = 0.19$ ($q=151$, 4/4 triplets), $R = 0.42$ ($q=211$, 4/4 triplets).
-    All three pass $R \leq 3$; $\delta_{\mathrm{tri}} \approx 3\delta_c$ at sub-percent level;
-    $C_{\mathrm{color}}$ has numerical rank~1 in all cases.
-    $q = 307$: $R=0.31$, 4/4 triplets (confirmed).
+    Noise floor $\mathtt{ctrl\_ref} = 1.657\times10^{-3}$.
+    Normalised ratios: $R = 2.1$ ($q=61$, 1/4 triplets valid),
+    $R = 0.4$ ($q=151$), $R = 1.0$ ($q=211$), $R = 0.7$ ($q=307$).
+    All four pass $R\leq 3$; $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
+    $C_{\mathrm{color}}$ numerical rank~1 in all cases.
     Additionally proves analytically (Proposition~avg-hcolor) that
     $\mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1})$,
     establishing $\Hcolor_{\mathrm{eff}}$ (capacity-exponent equality) in the $q\to\infty$
@@ -1409,8 +1408,9 @@ A Structural Roadmap and Paper Inventory}
       $\mathrm{U}(2)$, $G_2$ excluded); $G_{\mathrm{SM}}$ derived for $\mathcal{S}_q^{(3)}$ &
       \sstruct \\[3pt]
       O32 & [H-color] numerical test & \cite{Beau2026a36} &
-      [H-color] passes for all $q\in\{61,151,211,307\}$ ($R\leq 0.9$,
-      noise floor $3.81\times10^{-3}$); $q=307$: $R=0.31$;
+      [H-color] passes for all $q\in\{61,151,211,307\}$
+      ($R\leq 3$, ctrl\_ref $=1.657\times10^{-3}$;
+      $R=2.1,\,0.4,\,1.0,\,0.7$ respectively);
       $C_{\mathrm{color}}$ rank~1 in all cases;
       $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
       pointwise analytical proof open &
@@ -1614,8 +1614,9 @@ A Structural Roadmap and Paper Inventory}
     admissibility fixed points unconditionally for the colour-adapted Cayley graph, and
     conditionally on Hypothesis~[H-color] for the standard graph.
     O32~\cite{Beau2026a36} confirms [H-color] numerically for all four test primes
-    $q\in\{61,151,211,307\}$: all pass $R\leq 1$ (noise floor
-    $\mathtt{ctrl\_ref}=3.81\times10^{-3}$, controls $q\in\{29,101\}$).
+    $q\in\{61,151,211,307\}$: all pass $R\leq 3$ (noise floor
+    $\mathtt{ctrl\_ref}=1.657\times10^{-3}$, controls $q\in\{29,101\}$;
+    $R=2.1,\,0.4,\,1.0,\,0.7$ respectively).
     What remains open: analytical derivation of [H-color] from Foundation axioms;
     transfer chain $\delta_{\mathrm{tri}} \to \alpha_s$ (strong coupling constant);
     identification of quarks as stable projected configurations carrying colour quantum numbers.
