@@ -1605,6 +1605,7 @@
     document.querySelectorAll(".node").forEach(n => n.classList.remove("hi", "dim"))
     document.querySelectorAll(".edge").forEach(e => {
       e.classList.remove("hi", "topic-hi")
+      e.style.removeProperty("stroke")
       e.setAttribute("marker-end", e.classList.contains("spine") ? "url(#arr-sp)" : "url(#arr)")
     })
   }
