@@ -1148,6 +1148,20 @@
       desc: "Closes LC-O2-O1 (Remark 3.2 of LCII): R(x)² = 1-ε(x) = -2g^ττ(x) from local admissibility alone, via SU(2)-Schur reduction A_τ(x) = 2(1-ε(x)) and the principal-symbol identification g^ττ = -A_τ/4. No Einstein equation."
     },
     {
+      id: "LCo1", lbl: "LCo1", s: "proved", b: "III", key: "Beau2026lco1",
+      url: BASE + "lc-o1",
+      tags: ["spt", "kin"],
+      title: "Lorentz Transformations from Projective Temporal Ordering",
+      desc: "Closes LC-O1: the unique proper orthochronous transformation between inertial splittings of g^μν = 2η^μν is the standard Lorentz boost. Length contraction ℓ = ℓ₀/γ as a corollary."
+    },
+    {
+      id: "LCo3", lbl: "LCo3", s: "proved", b: "III", key: "Beau2026lco3",
+      url: BASE + "lc-o3",
+      tags: ["spt", "BI"],
+      title: "Finite-q Corrections to the Carnot Capacity Identification",
+      desc: "Closes LC-O3: with R := (q-1)/2 and n = R+m, the parabolic Carnot formula deviates from the exact torus capacity by Δ_q(n) = 4m²/q². The quadratic identity B_n² + (F_n^τ)² = 1 is exact; Carnot identification holds for n ≤ R."
+    },
+    {
       id: "TopI", lbl: "TopInv", s: "proved", b: "III", key: "Beau2026k",
       url: BASE + "topological-invariants",
       tags: ["SM", "BI"],
@@ -1236,6 +1250,7 @@
     { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" }, { f: "PTO", t: "LorCap" },
     { f: "LorCap", t: "TempProj", sp: 1 }, { f: "TempProj", t: "LCII", sp: 1 }, { f: "Grav", t: "LCII" },
     { f: "LCII", t: "LCIIo1", sp: 1 }, { f: "W1", t: "LCIIo1" }, { f: "Q6b", t: "LCIIo1" }, { f: "Q11", t: "LCIIo1" },
+    { f: "TempProj", t: "LCo1" }, { f: "PTO", t: "LCo1" }, { f: "LCII", t: "LCo3" }, { f: "BI", t: "LCo3" },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
   ]
@@ -1292,6 +1307,8 @@
     TempProj: { x: 6 * X, y: 9 * Y },
     LCII:     { x: 6 * X, y: 10 * Y },
     LCIIo1:   { x: 6 * X, y: 11 * Y },
+    LCo1:     { x: 5 * X, y: 11 * Y },
+    LCo3:     { x: 7 * X, y: 11 * Y },
     Q1: { x: 10 * X, y: 3 * Y },
     Q2: { x: 10 * X, y: 4 * Y },
     Q3: { x: 11 * X, y: 4 * Y },
