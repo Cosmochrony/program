@@ -189,20 +189,20 @@ A Structural Roadmap and Paper Inventory}
     results:
     \begin{itemize}
       \item \textit{Oriented state machine:} the admissible cascade is reformulated as a directed
-        graph on admissible projections; physical histories are directed paths, and the first
-        transition is guaranteed by non-commutativity $[X,\sigma(X)] = Z \neq 0$~\cite{Beau2026m}.
+      graph on admissible projections; physical histories are directed paths, and the first
+      transition is guaranteed by non-commutativity $[X,\sigma(X)] = Z \neq 0$~\cite{Beau2026m}.
       \item \textit{Initial conditions dissolved:} the minimal state~$\chi_0$ cannot be a global
-        minimum of the cascade; the fibre non-commutativity prevents any admissible projection from
-        having trivial kernel, so the cascade begins as a structural necessity.
+      minimum of the cascade; the fibre non-commutativity prevents any admissible projection from
+      having trivial kernel, so the cascade begins as a structural necessity.
       \item \textit{Inaccessibility of absolute zero:} the Heisenberg structure of the admissible
-        fibre forbids projective stasis $U_{n+1} = U_n$ at any stage.
+      fibre forbids projective stasis $U_{n+1} = U_n$ at any stage.
       \item \textit{Algebraic necessity of fluctuations (Remark):} no admissible projection can have
-        trivial kernel, so quantum vacuum fluctuations are a structural necessity, not a contingent
-        feature.
+      trivial kernel, so quantum vacuum fluctuations are a structural necessity, not a contingent
+      feature.
       \item \textit{Schr\"{o}dinger as Mosco limit:} the continuous Schr\"{o}dinger equation is
-        derived as the Mosco limit of the discrete oriented admissibility cascade.
+      derived as the Mosco limit of the discrete oriented admissibility cascade.
       \item \textit{Extended numerical scope:} the PTO monotonicity is verified for
-        $q \in \{29,61,101,151,211\}$, with~274 conjugate pairs and~360 post-burn-in steps.
+      $q \in \{29,61,101,151,211\}$, with~274 conjugate pairs and~360 post-burn-in steps.
     \end{itemize}
 
     \textit{Role:} Programme overview; structural motivation; first formulation of the BI constraint
@@ -572,14 +572,14 @@ A Structural Roadmap and Paper Inventory}
     $R = 0.19$ ($q=151$, 4/4 triplets), $R = 0.42$ ($q=211$, 4/4 triplets).
     All three pass $R \leq 3$; $\delta_{\mathrm{tri}} \approx 3\delta_c$ at sub-percent level;
     $C_{\mathrm{color}}$ has numerical rank~1 in all cases.
-    $q = 307$: in progress.
+    $q = 307$: $R=0.31$, 4/4 triplets (confirmed).
     Additionally proves analytically (Proposition~avg-hcolor) that
     $\mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1})$,
     establishing $\Hcolor_{\mathrm{eff}}$ (capacity-exponent equality) in the $q\to\infty$
     limit; the observed $R_{\mathrm{var}} \propto q^{-1}$ decrease is the predicted
     modulation bias.
     Status: \sstruct{} ([H-color] numerically confirmed for $q\in\{151,211\}$;
-    $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise proof open).
+  $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise proof open).
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -722,11 +722,11 @@ A Structural Roadmap and Paper Inventory}
     \[
       a_4(A_{g,\mathcal{A}})\big|_{\mathrm{gauge}}
       = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})
-        \sqrt{g}\,\mathrm{d}^4 x\,.
+      \sqrt{g}\,\mathrm{d}^4 x\,.
     \]
     The extended spectral entropy $S_\Pi[g,\mathcal{A}]$ therefore contains the renormalized
     Yang--Mills term with logarithmic coupling $g_{\mathrm{YM}}^{-2}
-    \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$,
+  \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$,
     and the vertical variation $\delta_\mathcal{A}S_\Pi = 0$ yields the Yang--Mills equations
     $D_\mu F^{a\mu\nu} = 0$ in the current-free sector (\sproved{} for the $a_4$ derivation
     given $G_\Pi$).
@@ -1021,7 +1021,7 @@ A Structural Roadmap and Paper Inventory}
   {SU(3) [H-color]};
 \node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
 \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
-  {$q{=}61,151,211$ pass; 307 prog.};
+  {$q{=}61,151,211,307$ all pass};
 \node[S] (PTO)    at (5*\dx,-7*\dy)   {PTO};
 \node[S] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
 \node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
@@ -1409,11 +1409,11 @@ A Structural Roadmap and Paper Inventory}
       $\mathrm{U}(2)$, $G_2$ excluded); $G_{\mathrm{SM}}$ derived for $\mathcal{S}_q^{(3)}$ &
       \sstruct \\[3pt]
       O32 & [H-color] numerical test & \cite{Beau2026a36} &
-      [H-color] passes for $q\in\{61,151,211\}$; $C_{\mathrm{color}}$ rank~1;
-      $\delta_{\mathrm{tri}}\approx 3\delta_c$;
-      $\Hcolor_{\mathrm{eff}}$ proved analytically in expectation (Prop.~avg-hcolor,
-      $\mathbb{E}[\sigma_c]=\mathbb{E}[\sigma_{\omega c}]+O(q^{-1})$);
-      pointwise proof open &
+      [H-color] passes for all $q\in\{61,151,211,307\}$ ($R\leq 0.9$,
+      noise floor $3.81\times10^{-3}$); $q=307$: $R=0.31$;
+      $C_{\mathrm{color}}$ rank~1 in all cases;
+      $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
+      pointwise analytical proof open &
       \sstruct \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
@@ -1613,10 +1613,9 @@ A Structural Roadmap and Paper Inventory}
     O31~\cite{Beau2026a35} derives $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ as a composite of
     admissibility fixed points unconditionally for the colour-adapted Cayley graph, and
     conditionally on Hypothesis~[H-color] for the standard graph.
-    O32~\cite{Beau2026a36} confirms [H-color] numerically for $q\in\{61,151,211\}$:
-    all three pass $R \leq 1$ relative to the control noise floor
-    $\mathtt{ctrl\_ref} = 3.81\times10^{-3}$ (calibrated from $q\in\{29,101\}$);
-    $q=307$ is in progress.
+    O32~\cite{Beau2026a36} confirms [H-color] numerically for all four test primes
+    $q\in\{61,151,211,307\}$: all pass $R\leq 1$ (noise floor
+    $\mathtt{ctrl\_ref}=3.81\times10^{-3}$, controls $q\in\{29,101\}$).
     What remains open: analytical derivation of [H-color] from Foundation axioms;
     transfer chain $\delta_{\mathrm{tri}} \to \alpha_s$ (strong coupling constant);
     identification of quarks as stable projected configurations carrying colour quantum numbers.
