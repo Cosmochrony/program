@@ -831,6 +831,22 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Lorentz Capacity Sub-Programme}
 
+    The Lorentz-capacity (LC) sub-programme isolates a single structural question: where does the
+    Lorentz factor $\gamma$ originate, given that the Lorentzian metric is itself an effective object
+    reconstructed from admissible non-injective projection? The answer is that $\gamma$ is not a
+    kinematic postulate but the temporal residual of a bounded Born--Infeld capacity budget, lifted to
+    special-relativistic observer transformations through the Q5b--Q11 effective co-metric
+    $g^{\mu\nu} = 2\eta^{\mu\nu}$. A guiding distinction runs throughout: the Born--Infeld capacity
+    sphere $(F^\tau)^2 + \beta^2 = 1$ supplies the load $\beta$ and the clock factor $1/\gamma$, while
+    the Lorentz group acts as the isometry group of the effective metric, not of the capacity sphere.
+    The completed chain is
+    \[
+      \text{BI budget} \to F^\tau = 1/\gamma \to g^{\mu\nu} = 2\eta^{\mu\nu} \to \Lambda(\beta)
+      \to R(x)^2 = 1-\epsilon(x) \to \text{finite-}q\text{ domain.}
+    \]
+    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} gathers the six constituent papers
+    below into this single account; their individual contributions follow.
+
     \textbf{LorentzCapacity}~\cite{Beau2026n}: Derives the Lorentz factor and relativistic
     mobility $\beta\gamma$ from the O7 saturation parameter $\eta_n^{\mathrm{O7}}$ under the
     Born--Infeld admissibility budget. The analytic factorization (central coordinate $c$
@@ -1045,6 +1061,7 @@ A Structural Roadmap and Paper Inventory}
 \node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
 \node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
 \node[P] (LCo3)   at (6*\dx,-11*\dy) {LCo3};
+\node[P] (LCsyn)  at (5*\dx,-12*\dy) {LC-Synth};
 
 \draw[arr]   (PTO)    -- (LorCap);
 \draw[spine] (LorCap) -- (TempPr);
@@ -1052,6 +1069,9 @@ A Structural Roadmap and Paper Inventory}
 \draw[spine] (LCII)   -- (LCIIo1);
 \draw[arr]   (TempPr) to[out=-110,in=90] (LCo1);
 \draw[arr]   (LCII)   to[out=-50,in=90]  (LCo3);
+\draw[spine] (LCIIo1) -- (LCsyn);
+\draw[arr]   (LCo1)   to[out=-90,in=160] (LCsyn);
+\draw[arr]   (LCo3)   to[out=-90,in=20]  (LCsyn);
 
 \draw[spine] (O24) -- (O25);
 \draw[arr]   (O24) -- (O26);

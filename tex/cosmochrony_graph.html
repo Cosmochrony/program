@@ -1121,45 +1121,52 @@
     },
     {
       id: "LorCap", lbl: "LorCap", s: "structural", b: "III", key: "Beau2026n",
-      url: BASE + "lorentz-capacity",
+      url: BASE + "lc/lorentz-capacity",
       tags: ["grav", "spt", "O7"],
       title: "Lorentz Factor from Projective Capacity",
       desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction: closed by TempProj."
     },
     {
       id: "TempProj", lbl: "TempProj", s: "proved", b: "III", key: "Beau2026tp",
-      url: BASE + "temporal-projection",
+      url: BASE + "lc/temporal-projection",
       tags: ["grav", "spt", "O7"],
       title: "Temporal Residual Map",
       desc: "Constructs P_τ^Q5b explicitly as the unique map compatible with Lorentzian splitting, BI sphere, and Weil filling law. P_τ^Q5b Σ_n^tot = √(1-B_n²). Closes LorCap open problem."
     },
     {
       id: "LCII", lbl: "LCII", s: "structural", b: "III", key: "Beau2026lco2",
-      url: BASE + "lc-o2",
+      url: BASE + "lc/lc-o2",
       tags: ["grav", "spt"],
       title: "Fibrewise Capacity Lapse and Gravitational Time Dilation",
       desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x). Gravitational time dilation dτ/dn|_x = R(x)/γ."
     },
     {
       id: "LCIIo1", lbl: "LCIIo1", s: "proved", b: "III", key: "Beau2026lco2o1",
-      url: BASE + "lc-o2-o1",
+      url: BASE + "lc/lc-o2-o1",
       tags: ["grav", "spt"],
       title: "Local Spectral Closure of the Capacity-Metric Bridge",
       desc: "Closes LC-O2-O1 (Remark 3.2 of LCII): R(x)² = 1-ε(x) = -2g^ττ(x) from local admissibility alone, via SU(2)-Schur reduction A_τ(x) = 2(1-ε(x)) and the principal-symbol identification g^ττ = -A_τ/4. No Einstein equation."
     },
     {
       id: "LCo1", lbl: "LCo1", s: "proved", b: "III", key: "Beau2026lco1",
-      url: BASE + "lc-o1",
+      url: BASE + "lc/lc-o1",
       tags: ["spt", "kin"],
       title: "Lorentz Transformations from Projective Temporal Ordering",
       desc: "Closes LC-O1: the unique proper orthochronous transformation between inertial splittings of g^μν = 2η^μν is the standard Lorentz boost. Length contraction ℓ = ℓ₀/γ as a corollary."
     },
     {
       id: "LCo3", lbl: "LCo3", s: "proved", b: "III", key: "Beau2026lco3",
-      url: BASE + "lc-o3",
+      url: BASE + "lc/lc-o3",
       tags: ["spt", "BI"],
       title: "Finite-q Corrections to the Carnot Capacity Identification",
       desc: "Closes LC-O3: with R := (q-1)/2 and n = R+m, the parabolic Carnot formula deviates from the exact torus capacity by Δ_q(n) = 4m²/q². The quadratic identity B_n² + (F_n^τ)² = 1 is exact; Carnot identification holds for n ≤ R."
+    },
+    {
+      id: "LCsyn", lbl: "LC", s: "proved", b: "III", key: "Beau2026lcsyn",
+      url: BASE + "lc",
+      tags: ["grav", "spt", "kin"],
+      title: "Lorentz-Capacity Sub-Programme (Synthesis)",
+      desc: "Synthesis of the LC sub-programme: projective origin of the Lorentz factor. Chain BI budget → F^τ=1/γ → g^μν=2η^μν → Λ(β) → R(x)²=1-ε(x) → finite-q domain. The Born–Infeld capacity sphere supplies β and 1/γ; the Q5b–Q11 closure supplies the Lorentzian metric on which the Lorentz group acts."
     },
     {
       id: "TopI", lbl: "TopInv", s: "proved", b: "III", key: "Beau2026k",
@@ -1251,6 +1258,7 @@
     { f: "LorCap", t: "TempProj", sp: 1 }, { f: "TempProj", t: "LCII", sp: 1 }, { f: "Grav", t: "LCII" },
     { f: "LCII", t: "LCIIo1", sp: 1 }, { f: "W1", t: "LCIIo1" }, { f: "Q6b", t: "LCIIo1" }, { f: "Q11", t: "LCIIo1" },
     { f: "TempProj", t: "LCo1" }, { f: "PTO", t: "LCo1" }, { f: "LCII", t: "LCo3" }, { f: "BI", t: "LCo3" },
+    { f: "LorCap", t: "LCsyn" }, { f: "TempProj", t: "LCsyn" }, { f: "LCII", t: "LCsyn" }, { f: "LCIIo1", t: "LCsyn" }, { f: "LCo1", t: "LCsyn" }, { f: "LCo3", t: "LCsyn", sp: 1 },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
   ]
