@@ -977,6 +977,7 @@ A Structural Roadmap and Paper Inventory}
           Oc/.style={box, fill=red!6,   draw=copen,    text=black},
           arr/.style={-{Stealth[length=4pt,width=3pt]}, gray!60, line width=0.9pt},
           spine/.style={-{Stealth[length=5pt,width=3.5pt]}, black!55, line width=1.4pt},
+          synth/.style={-{Stealth[length=3pt,width=2pt]}, draw=cstruct!45, line width=0.35pt, opacity=0.55},
         ]
 
 \newcommand{\dx}{2.1cm}
@@ -1092,6 +1093,13 @@ A Structural Roadmap and Paper Inventory}
 \draw[spine] (O30) -- (O31);
 \draw[spine] (O31) -- (O32);
 
+% Spectral admissibility sub-programme synthesis (presentation note):
+% aggregates all constituent papers (5 precursors + O-series).
+\node[S] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
+\foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
+  O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
+  \draw[synth] (\n) to[out=-90,in=90] (SpANote);
+
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
 \node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
@@ -1189,6 +1197,9 @@ A Structural Roadmap and Paper Inventory}
         \textcolor{copen}{$\blacksquare$}~\sopen{}.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
+        The faint converging edges (lower left) gather all constituent papers of the spectral
+        admissibility sub-programme into its synthesis node \textbf{SpAdm-Note}; likewise the
+        Lorentz-capacity papers converge into \textbf{LC-Synth}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
