@@ -457,6 +457,12 @@
       opacity: .9;
     }
 
+    .edge.syn {
+      stroke-width: .5;
+      opacity: .28;
+      stroke-dasharray: 3 3;
+    }
+
     /* ── Smooth SVG pan/zoom transition ── */
     #mg {
       transition: transform .45s cubic-bezier(.4, 0, .2, 1);
@@ -913,6 +919,16 @@
         "Four-prime dataset q∈{61,151,211,307} complete (ctrl_ref=1.657×10⁻³, criterion R≤3)."
     },
     {
+      id: "SpANote", lbl: "SpAdm-Note", s: "structural", b: "II", key: "Beau2026a1note",
+      url: BASE + "spectral/program",
+      tags: ["QM", "BI", "SM"],
+      title: "Spectral Admissibility Sub-Programme (Presentation Note)",
+      desc:
+        "Synthesis and entry point of the spectral admissibility sub-programme: from the Born–Infeld bounded-flux constraint on the Weil representation of Heis₃(Z/qZ) to the cascade exponent β*≈0.126. " +
+        "Maps the five precursor papers (SpAdm, SpCap, SpGram, 3Gen, SpRel) and the O-series O1–O32 into the single chain c_χ → δ_pair → β*, recording each result as proved, structural, numerical, or open. " +
+        "Open deliverables: pointwise proof of [H-color]; numerical campaign at q=401."
+    },
+    {
       id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
       url: BASE + "spectral/program/projective_temporal_ordering",
       tags: ["time"],
@@ -1237,6 +1253,11 @@
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "O29", t: "O30", sp: 1 },
     { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32", sp: 1 }, { f: "O31", t: "Q6a" },
+    { f: "SpA", t: "SpANote", syn: 1 }, { f: "SpCap", t: "SpANote", syn: 1 }, { f: "SpG", t: "SpANote", syn: 1 }, { f: "ThGn", t: "SpANote", syn: 1 }, { f: "SpR", t: "SpANote", syn: 1 },
+    { f: "O1", t: "SpANote", syn: 1 }, { f: "O3", t: "SpANote", syn: 1 }, { f: "O4", t: "SpANote", syn: 1 }, { f: "O5", t: "SpANote", syn: 1 }, { f: "O6", t: "SpANote", syn: 1 }, { f: "O7", t: "SpANote", syn: 1 }, { f: "O8", t: "SpANote", syn: 1 },
+    { f: "O9", t: "SpANote", syn: 1 }, { f: "O10", t: "SpANote", syn: 1 }, { f: "O11", t: "SpANote", syn: 1 }, { f: "O12", t: "SpANote", syn: 1 }, { f: "O13", t: "SpANote", syn: 1 }, { f: "O14", t: "SpANote", syn: 1 }, { f: "O15", t: "SpANote", syn: 1 },
+    { f: "O16", t: "SpANote", syn: 1 }, { f: "O17", t: "SpANote", syn: 1 }, { f: "O18", t: "SpANote", syn: 1 }, { f: "O19", t: "SpANote", syn: 1 }, { f: "O20", t: "SpANote", syn: 1 }, { f: "O21", t: "SpANote", syn: 1 }, { f: "O22", t: "SpANote", syn: 1 }, { f: "O23", t: "SpANote", syn: 1 }, { f: "O24", t: "SpANote", syn: 1 },
+    { f: "O25", t: "SpANote", syn: 1 }, { f: "O26", t: "SpANote", syn: 1 }, { f: "O27", t: "SpANote", syn: 1 }, { f: "O28", t: "SpANote", syn: 1 }, { f: "O29", t: "SpANote", syn: 1 }, { f: "O30", t: "SpANote", syn: 1 }, { f: "O31", t: "SpANote", syn: 1 }, { f: "O32", t: "SpANote", syn: 1 },
     { f: "Found", t: "Q1", sp: 1 }, { f: "O18", t: "Q1" }, { f: "O22", t: "Q1" }, { f: "O23", t: "Q1" },
     { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
@@ -1310,6 +1331,7 @@
     O30: { x: 8 * X, y: 8 * Y },
     O31: { x: 8 * X, y: 9 * Y },
     O32: { x: 8 * X, y: 10 * Y },
+    SpANote:  { x: 2 * X, y: 13 * Y },
     PTO:      { x: 6 * X, y: 7 * Y },
     LorCap:   { x: 6 * X, y: 8 * Y },
     TempProj: { x: 6 * X, y: 9 * Y },
@@ -1464,7 +1486,7 @@
       const el = document.createElementNS(ns, "path")
       const dx = x2 - x1, dy = y2 - y1
       el.setAttribute("d", `M${x1} ${y1} C${x1 + dx * .25} ${y1 + dy * .1},${x2 - dx * .25} ${y2 - dy * .1},${x2} ${y2}`)
-      el.setAttribute("class", e.sp ? "edge spine" : "edge")
+      el.setAttribute("class", e.sp ? "edge spine" : (e.syn ? "edge syn" : "edge"))
       el.setAttribute("marker-end", e.sp ? "url(#arr-sp)" : "url(#arr)")
       el.setAttribute("data-f", e.f)
       el.setAttribute("data-t", e.t)
