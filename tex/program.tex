@@ -636,6 +636,13 @@ A Structural Roadmap and Paper Inventory}
     Closes the open step of~Q2 (identification of the isotropic fibre state with the
     proto-state for spin-$\tfrac{3}{2}$, and general-$j$ extension).
 
+    The papers Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, and H2 form the \emph{emergent geometry
+    sub-programme}, whose synthesis paper is the presentation note \textbf{EG-Note}~\cite{Beau2026egnote}.
+    It maps these twelve papers into the chain $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} = 2\eta^{\mu\nu}$,
+    deriving the effective four-dimensional Lorentzian metric from the admissibility filter acting on the
+    Weil representation, with all four metric coefficients fixed by the $\mathfrak{su}(2)$-Casimir on the
+    spin-$1$ module $\mathrm{Sym}^2(V_\rho)$. Their individual contributions follow.
+
     \textbf{Q5a}~\cite{Beau2026q5a}: Under Mosco hypotheses, the admissibility forms~$\mathcal{E}_q$
     on $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ converge to $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$
     (\sstruct, conditional).
@@ -1127,6 +1134,13 @@ A Structural Roadmap and Paper Inventory}
 \draw[spine] (Q5a)   to[out=0,in=90]   (H2);
 \draw[arr]   (H2)    to[out=-90,in=0]  (geom);
 
+% Emergent geometry sub-programme synthesis (presentation note):
+% aggregates the geometric emergence papers (Q5a, Q5a-O2, Q5b, Q6b, Q7, H2,
+% and the Q8--Q10/U1/W1 block).
+\node[S] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
+\foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
+  \draw[synth] (\n) to[out=-30,in=120] (EGNote);
+
 \draw[spine] (Found) to[out=0,in=90] (Q1);
 \draw[arr]   (O18)   to[out=10,in=180] (Q1);
 \draw[arr]   (O22)   to[out=10,in=180] (Q1);
@@ -1197,9 +1211,10 @@ A Structural Roadmap and Paper Inventory}
         \textcolor{copen}{$\blacksquare$}~\sopen{}.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
-        The faint converging edges (lower left) gather all constituent papers of the spectral
-        admissibility sub-programme into its synthesis node \textbf{SpAdm-Note}; likewise the
-        Lorentz-capacity papers converge into \textbf{LC-Synth}.
+        The faint converging edges gather the constituent papers of each thematic sub-programme into
+        its synthesis node: the spectral admissibility papers into \textbf{SpAdm-Note}, the
+        Lorentz-capacity papers into \textbf{LC-Synth}, and the geometric emergence papers into
+        \textbf{EG-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
