@@ -936,6 +936,17 @@
       desc: "I(n) = σ_pair(0)−σ_pair(n) is strictly non-decreasing: first clean numerical result on the notion of time. Confirmed for q∈{29,61,101,151}."
     },
     {
+      id: "FibreErase", lbl: "FibreErase", s: "structural", b: "II", key: "Beau2026fe",
+      url: BASE + "fibre-erasure/",
+      tags: ["emer", "time"],
+      title: "Projective Information Loss and Fibre Erasure",
+      desc:
+        "Hub paper between ENI and the BFS spectral cascade. Defines residual fibre-information I(c;σ(ℓ)) on the coarse-graining axis ℓ (orthogonal to the temporal axis n of PTO). " +
+        "Conditional on [H-suff], the data-processing inequality gives I(c;σ(ℓ′)) ≤ I(c;σ(ℓ)) (Thm 4.1). " +
+        "[H-suff] is proved unconditionally at the BFS rank level (Prop. 3.6, Schur's lemma); numerically supported at the capacity level for q∈{61,151,211}. " +
+        "Not a c-theorem (open as [O-2])."
+    },
+    {
       id: "Q1", lbl: "Q1", s: "proved", b: "III", key: "Beau2026q1",
       url: ZEN + "19561060",
       tags: ["QM", "emer"],
@@ -1269,6 +1280,7 @@
     { f: "O19", t: "O20" }, { f: "O20", t: "O21" }, { f: "O21", t: "O22" }, { f: "O22", t: "O23" },
     { f: "O23", t: "O24", sp: 1 },
     { f: "O24", t: "O25", sp: 1 }, { f: "O24", t: "O26" }, { f: "O26", t: "O27" }, { f: "O24", t: "PTO" },
+    { f: "ENI", t: "FibreErase", sp: 1 }, { f: "Found", t: "FibreErase" }, { f: "O24", t: "FibreErase" }, { f: "O32", t: "FibreErase" },
     { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "O29", t: "O30", sp: 1 },
@@ -1357,7 +1369,8 @@
     O31: { x: 8 * X, y: 9 * Y },
     O32: { x: 8 * X, y: 10 * Y },
     SpANote:  { x: 2 * X, y: 13 * Y },
-    PTO:      { x: 6 * X, y: 7 * Y },
+    PTO:        { x: 6 * X, y: 7 * Y },
+    FibreErase: { x: 7 * X, y: 7 * Y },
     LorCap:   { x: 6 * X, y: 8 * Y },
     TempProj: { x: 6 * X, y: 9 * Y },
     LCII:     { x: 6 * X, y: 10 * Y },
