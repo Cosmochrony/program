@@ -84,8 +84,10 @@ A Structural Roadmap and Paper Inventory}
     closing all hypotheses of the Q5a large-$q$ convergence theorem unconditionally on the admissible sector.
     O31 develops the structural framework for the SU(3) identification: the metaplectic
     intertwining of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ forces triplet co-admissibility
-    unconditionally for the colour-adapted Cayley graph, and SU(3) is thereby identified as the
-    symmetry group of the co-admissible colour triplet conditional on~[H-color].
+    unconditionally for the colour-adapted Cayley graph, and the single-frequency BI fingerprint
+    mechanism (v1.5) makes [H-color] exact pointwise on the standard graph at finite~$q$, so
+    SU(3) and the Standard Model composite $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$
+    are identified unconditionally for the standard graph.
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -526,12 +528,17 @@ A Structural Roadmap and Paper Inventory}
     The metaplectic automorphism $\phi_\omega(a,b,z) = (\omega a, \omega^{-1}b, z)$
     forces $\sigma_c(n) = \sigma_{\omega c}(n)$ for all shells on the colour-adapted Cayley
     graph $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$ (proved, Theorem~4.4).
-    Conditional on Hypothesis~[H-color] (triplet co-admissibility for the standard graph),
-    the symmetry group of the co-admissible triplet is exactly $\SU(3)$, with
+    The symmetry group of the co-admissible triplet is exactly $\SU(3)$, with
     $\mathrm{U}(3)$, $\mathrm{SO}(3)$, $\mathrm{U}(2)$, $G_2$ excluded (proved).
     The Standard Model gauge group $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$
-    follows as a composite of three admissibility fixed points (proved for $\mathcal{S}_q^{(3)}$;
-    conditional on [H-color] for $\mathcal{S}_q$).
+    follows as a composite of three admissibility fixed points. In v1.5 the identification is
+    made \emph{unconditional} for the standard graph: each Born--Infeld fingerprint vector is a
+    single additive character of frequency $B = c_1 b_1 + c_2 b_2 + c_3 b_3$
+    (Lemma~single-frequency, proved), so the capacity observable $\sigma_c(n)$ counts distinct
+    frequencies and the orbit dilation $B \mapsto \omega B$ preserves it exactly
+    (Proposition~hcolor-frequency, proved). This establishes [H-color] pointwise on the standard
+    graph at finite~$q$, so $\SU(3)$ and~$G_{\mathrm{SM}}$ hold unconditionally for the standard
+    graph.
     U1 universality implies $|\sigma_c - \sigma_{\omega c}| = O(q^{-1/2})$ for any generating
     set, so the identification is generating-set-independent in the large-$q$ limit.
     The generating-set independence operates at two levels (\emph{two-tier result}):
@@ -566,8 +573,9 @@ A Structural Roadmap and Paper Inventory}
     $r_c(n) = r_{\omega c}(n) = r_{\omega^2 c}(n)$ for all BFS depths~$n$ and any seed,
     unconditionally on the standard graph.
     This proves [H-color] at the level of BFS sector ranks without reference to the global Markov
-    spectrum; whether the full O12/O32 capacity functional $\sigma_c(n)$ inherits this equality
-    is addressed numerically by~O32.
+    spectrum; v1.5 strengthens this to the full O12/O32 capacity functional $\sigma_c(n)$ via the
+    single-frequency BI fingerprint mechanism above. The O32 numerical campaign provides
+    independent confirmation across the four-prime dataset.
     Section~6 provides the conceptual unification: $\mathrm{U}(1)$, $\SU(2)$, $\SU(3)$ arise
     from BI-admissible fibre orbits of size~$1$, $2$, $3$ respectively (phase non-injectivity,
     minimal correlated non-injectivity, relational correlated non-injectivity), with
@@ -582,11 +590,14 @@ A Structural Roadmap and Paper Inventory}
     Additionally proves analytically (Proposition~avg-hcolor) that
     $\mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1})$,
     establishing $\Hcolor_{\mathrm{eff}}$ (capacity-exponent equality) in the $q\to\infty$
-    limit; the observed $R_{\mathrm{var}} \propto q^{-1}$ decrease is the predicted
-    modulation bias.
+    limit. In v1.5, the companion result of O31 (single-frequency BI fingerprint) makes pointwise
+    [H-color] \emph{exact} on the standard graph at finite~$q$: the residual $R_{\mathrm{var}}$
+    is reinterpreted as the finite-sample footprint of independent auxiliary draws, with expected
+    $R_{\mathrm{var}} \propto q^{-1}$ scaling consistent with the observed factor~5 decrease
+    from $q=61$ to $q=151$.
     Status: \sstruct{} ([H-color] numerically confirmed for all
-  $q\in\{61,151,211,307\}$;
-  $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise proof open).
+  $q\in\{61,151,211,307\}$; $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise
+  [H-color] proved analytically via O31 v1.5).
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -670,7 +681,8 @@ A Structural Roadmap and Paper Inventory}
     equivalence classes.
     $\mathrm{U}(1)$ and $\SU(2)$ are identified as fixed points of the admissibility flow.
     $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ is derived as a composite (\sstruct; $\SU(3)$:
-    conditional on [H-color], see O31~\cite{Beau2026a35}).
+    unconditional for the standard graph via the v1.5 single-frequency BI fingerprint mechanism,
+    see O31~\cite{Beau2026a35}).
 
     \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
     $\Pi_q$; inherits Q5a hypotheses only ([H-lift] closed by Q9).
