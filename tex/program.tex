@@ -661,7 +661,7 @@ A Structural Roadmap and Paper Inventory}
     proto-state for spin-$\tfrac{3}{2}$, and general-$j$ extension).
 
     The papers Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, and H2 form the \emph{emergent geometry
-    sub-programme}, whose synthesis paper is the presentation note \textbf{EG-Note}~\cite{Beau2026egnote}.
+  sub-programme}, whose synthesis paper is the presentation note \textbf{EG-Note}~\cite{Beau2026egnote}.
     It maps these twelve papers into the chain $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} = 2\eta^{\mu\nu}$,
     deriving the effective four-dimensional Lorentzian metric from the admissibility filter acting on the
     Weil representation, with all four metric coefficients fixed by the $\mathfrak{su}(2)$-Casimir on the
@@ -749,9 +749,9 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Q12}~\cite{Beau2026q12}: Yang--Mills dynamics from the vertical variation of
     the projective spectral entropy (\sstruct, conditional on Q6a for the gauge group;
-    $\SU(3)$ sector unconditional at the effective level:
-    $[H\text{-color}]_{\mathrm{eff}}$ proved analytically
-    in~\cite{Beau2026a35,Beau2026a36}).
+    $\SU(3)$ sector unconditional at the pointwise level:
+    $[H\text{-color}]_{\mathrm{pointwise}}$ proved analytically
+    in~\cite{Beau2026a35}).
     The Gravity paper~\cite{Beau2026h} derived the Einstein tensor as the infrared-dominant
     horizontal response of $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ (the $a_2$ coefficient).
     Q12 carries out the complementary vertical variation: the operator $A_g$ is extended to
@@ -791,8 +791,8 @@ A Structural Roadmap and Paper Inventory}
     The gauge--gravity synthesis is carried out in Q13.
 
     \textbf{Q13}~\cite{Beau2026q13}: Gauge--gravity spectral synthesis (\sstruct, conditional
-    on Q12 and the Gravity paper; SU(3) sector unconditional at the effective level
-    ($[H\text{-color}]_{\mathrm{eff}}$ proved in~\cite{Beau2026a35,Beau2026a36})).
+    on Q12 and the Gravity paper; SU(3) sector unconditional at the pointwise level
+    ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35})).
     Q13 completes the trilogy (Gravity, Q12, Q13) by solving the \emph{joint} variational
     problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ and deriving the coupled Einstein--Yang--Mills
     system.
@@ -821,8 +821,8 @@ A Structural Roadmap and Paper Inventory}
     The fermionic extension is carried out in Q14.
 
     \textbf{Q14}~\cite{Beau2026q14}: Fermionic matter and chirality (\sstruct, conditional
-    on Q13, the Gravity paper, and the BI paper; colour sector unconditional at the effective
-    level ($[H\text{-color}]_{\mathrm{eff}}$ proved in~\cite{Beau2026a35,Beau2026a36})).
+    on Q13, the Gravity paper, and the BI paper; colour sector unconditional at the pointwise
+    level ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35})).
     Q14 extends the gauge--gravity synthesis to the fermionic sector.
     Fermions are not postulated as external fields: they arise as the spinorial face of the
     Weil module $V_\rho$ already forced by non-injective admissibility, once its metaplectic
@@ -843,8 +843,8 @@ A Structural Roadmap and Paper Inventory}
     three-generation factor
     $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\SU(2)} \oplus Y)$ (\sstruct).
     The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$,
-    unconditional at the effective level
-    ($[H\text{-color}]_{\mathrm{eff}}$ proved in~\cite{Beau2026a35,Beau2026a36}).
+    unconditional at the pointwise level
+    ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35}).
 
   \subsection{Gravity and Spacetime Track}
 
@@ -1140,8 +1140,8 @@ A Structural Roadmap and Paper Inventory}
 % aggregates all constituent papers (5 precursors + O-series).
 \node[S] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
 \foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
-  O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
-  \draw[synth] (\n) to[out=-90,in=90] (SpANote);
+O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
+\draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
@@ -1175,7 +1175,7 @@ A Structural Roadmap and Paper Inventory}
 % and the Q8--Q10/U1/W1 block).
 \node[S] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
 \foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
-  \draw[synth] (\n) to[out=-30,in=120] (EGNote);
+\draw[synth] (\n) to[out=-30,in=120] (EGNote);
 
 \draw[spine] (Found) to[out=0,in=90] (Q1);
 \draw[arr]   (O18)   to[out=10,in=180] (Q1);
@@ -1513,9 +1513,10 @@ A Structural Roadmap and Paper Inventory}
       Hurwitz obstruction ($d_\rho=3$ cannot arise from single-fibre argument, proved);
       colour triplets exist iff $q\equiv 1\pmod{3}$ (proved);
       metaplectic intertwining proves $\sigma_c=\sigma_{\omega c}$ on $\mathcal{S}_q^{(3)}$
-      (proved, Thm~4.4); conditional on [H-color],
-      $\SU(3)$ is the unique triplet symmetry group (proved; $\mathrm{U}(3)$, $\mathrm{SO}(3)$,
-      $\mathrm{U}(2)$, $G_2$ excluded); $G_{\mathrm{SM}}$ derived for $\mathcal{S}_q^{(3)}$ &
+      (proved, Thm~4.4); single-frequency fingerprint structure (Lem.~4.22)
+      proves $[H\text{-color}]_{\mathrm{pointwise}}$ exactly on the standard graph
+      (Prop.~4.23); $\SU(3)$ is the unique triplet symmetry group (proved);
+      $G_{\mathrm{SM}}$ derived unconditionally for $\mathcal{S}_q^{(3)}$ and $\mathcal{S}_q$ &
       \sstruct \\[3pt]
       O32 & [H-color] numerical test & \cite{Beau2026a36} &
       [H-color] passes for all $q\in\{61,151,211,307\}$
@@ -1523,7 +1524,8 @@ A Structural Roadmap and Paper Inventory}
       $R=2.1,\,0.4,\,1.0,\,0.7$ respectively);
       $C_{\mathrm{color}}$ rank~1 in all cases;
       $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
-      pointwise analytical proof open &
+      $[H\text{-color}]_{\mathrm{avg}}$ proved to $O(q^{-1})$;
+      $[H\text{-color}]_{\mathrm{pointwise}}$ proved analytically in O31 (Prop.~4.23) &
       \sstruct \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
@@ -1567,7 +1569,7 @@ A Structural Roadmap and Paper Inventory}
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
       $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ derived (O31~\cite{Beau2026a35},
-      conditional on [H-color]) &
+      proved for $\mathcal{S}_q$ via $[H\text{-color}]_{\mathrm{pointwise}}$) &
       \sstruct \\[3pt]
       Q6b & Effective spacetime & \cite{Beau2026q6b} &
       $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ from $\Pi_q$;
@@ -1633,7 +1635,7 @@ A Structural Roadmap and Paper Inventory}
       projected Dirac endomorphism $E_\Pi$ enforces $V{-}A$ chirality under spinorial BI parity;
       $\gamma_5$-weighted $a_4$ fixes hypercharge by anomaly cancellation;
       $\sigma_c(n_3) = 3$ yields three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$;
-      quark colour sector unconditional at effective level ($\Hcolor_{\mathrm{eff}}$ proved) &
+      quark colour sector unconditional at pointwise level ($\Hcolor_{\mathrm{pointwise}}$ proved) &
       \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
@@ -1736,8 +1738,9 @@ A Structural Roadmap and Paper Inventory}
 
   \paragraph{Full SM gauge group: [H-color] and O32 (Q6a, O31).}
     O31~\cite{Beau2026a35} derives $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ as a composite of
-    admissibility fixed points unconditionally for the colour-adapted Cayley graph, and
-    conditionally on Hypothesis~[H-color] for the standard graph.
+    admissibility fixed points unconditionally for the colour-adapted Cayley graph and,
+    with $[\mathrm{H\text{-}color}]$ proved analytically (Proposition~4.23 of O31),
+    unconditionally for the standard graph as well.
     O32~\cite{Beau2026a36} confirms [H-color] numerically for all four test primes
     $q\in\{61,151,211,307\}$: all pass $R\leq 3$ (noise floor
     $\mathtt{ctrl\_ref}=1.657\times10^{-3}$, controls $q\in\{29,101\}$;
@@ -1820,7 +1823,8 @@ A Structural Roadmap and Paper Inventory}
   O31 develops the structural framework for SU(3): the metaplectic intertwining of
   $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ forces triplet co-admissibility unconditionally for the
   colour-adapted Cayley graph, and SU(3) is thereby identified as the symmetry group of the
-  co-admissible colour triplet, conditional on Hypothesis~[H-color] for the standard graph.
+  co-admissible colour triplet, proved for the standard graph by
+  Proposition~4.23 of O31~\cite{Beau2026a35}.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
   The $\SU(2)$ quantum sector is now complete: Q3 closes the general-$j$ open step of Q2 by
