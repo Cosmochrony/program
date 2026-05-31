@@ -444,7 +444,7 @@ A Structural Roadmap and Paper Inventory}
     unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
     (Corollary~4.2: $\beta^* \approx 0.126$, \sproved).
 
-  \subsection{O25--O30 and PTO: Numerical Validation, Sector Identification, and Eigenvalue Ratio}
+  \subsection{O25--O30, PTO, and Fibre Erasure: Numerical Validation, Sector Identification, Eigenvalue Ratio, and Information-Theoretic Axes}
 
     \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
     Computes $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ conjugate pairs with $M=50$ independent
@@ -601,6 +601,19 @@ A Structural Roadmap and Paper Inventory}
     Open: whether the characteristic shell $n^*(q)$ coincides with the locking depth $n_c(q)$
     at which BFS coverage transitions from locally to universally dominated — which would connect
     the spectral ordering to the effective geometry results of Q10~\cite{Beau2026q10}.
+
+    \textbf{Fibre Erasure}~\cite{Beau2026fe}: Hub paper between ENI~\cite{Beau2026l} and the BFS
+    spectral cascade. Defines a residual fibre-information functional $I(c;\sigma(\ell))$ on the
+    BFS coarse-graining axis~$\ell$, distinct from and orthogonal to the temporal axis~$n$ of PTO.
+    Conditional on the structural sufficiency hypothesis~[H-suff], the data-processing inequality
+    implies that $I(c;\sigma(\ell))$ is non-increasing in~$\ell$: fibre information is erased,
+    not created, under admissible coarse-graining (Thm~4.1). [H-suff] is proved unconditionally
+    at the BFS rank level (Prop.~3.6, label-blindness from Schur's lemma); for the full
+    Born--Infeld capacity it is numerically supported for $q \in \{61, 151, 211\}$.
+    Strictly not a $c$-theorem: no counting of effective degrees of freedom is claimed (listed
+    as open problem [O-2]). Together with PTO, constitutes the information-theoretic architecture
+    of the admissibility cascade: resolution axis~$\ell$ (Fibre Erasure) and temporal axis~$n$
+    (PTO) are structurally orthogonal.
 
   \section{Branch III: Q-Series and Physical Applications}
   \label{sec:qseries}
@@ -1503,6 +1516,11 @@ A Structural Roadmap and Paper Inventory}
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
       temporal proxy; confirmed for $q \in \{29, 61, 101, 151, 211\}$ &
+      \sstruct \\[3pt]
+      FibreErase & Fibre erasure & \cite{Beau2026fe} &
+      Monotone $I(c;\sigma(\ell))$ on BFS coarse-graining axis~$\ell$ via DPI (Thm~4.1,
+      conditional on [H-suff]); [H-suff] proved at the rank level (Prop.~3.6); capacity-level
+      numerical evidence for $q\in\{61,151,211\}$; explicitly not a $c$-theorem &
       \sstruct \\[3pt]
       \midrule
       Q1 & Phase coherence & \cite{Beau2026q1} &
