@@ -980,14 +980,22 @@ A Structural Roadmap and Paper Inventory}
     conjugate Weil pair $\{c,q-c\}$, the reduced entropy on the residual fibre-level support of the
     Gram--Schmidt span is exactly
     $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$, the logarithm of the residual Gram--Schmidt
-    rank, with no surviving spectral weighting (the flat Schmidt spectrum follows from the
-    numerically observed orthogonality of admitted Weil fingerprints for
-    $q \in \{29,61,101,151\}$).
+    rank, with no surviving spectral weighting.
     Structural monotonicity of $S_{\mathrm{ent}}$ along the cascade follows from the Gram--Schmidt
     construction alone. The note thus reduces entanglement to a pure O-series observable and
     connects the projected mass hierarchy --- tracked by the pair-capacity exponent
-    $\delta_{\mathrm{pair}}$ --- to a downstream trace of the stabilization profile (\sstruct;
-    fingerprint orthogonality for all $q$: \sopen).
+    $\delta_{\mathrm{pair}}$ --- to a downstream trace of the stabilization profile.
+
+    \textbf{ENT-E1}~\cite{Beau2026ent1}: closes the open analytic strengthening of ENT-Note by
+    explicit computation. The $k{=}3$ Weil fingerprint of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
+    for any block $(c_1,c_2,c_3)$ factors as a global phase times a single discrete Fourier mode
+    at frequency $A = c_1b_1+c_2b_2+c_3b_3 \bmod q$. Since distinct Fourier modes are orthogonal,
+    every newly admitted fingerprint is already orthogonal to the current span, so the admission
+    residual $w_j=1$ is an \emph{exact} algebraic identity --- not a numerical accident. For
+    matched single-character blocks the conjugate pair samples sign-reflected frequencies and the
+    closure hypothesis of ENT-Note becomes a theorem; the flat Schmidt spectrum
+    $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is then derived analytically (\sproved;
+    literal Schmidt pairing for independently sampled canonical O25 blocks: \sopen).
 
     \textbf{SchwingerLamb}~\cite{Beau2026f}: Fine-structure constant~$\alpha$ as a projective invariant;
     Lamb shift and Schwinger correction rederived in the pre-geometric framework
@@ -1235,6 +1243,11 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 
 \node[S] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
 \draw[arr] (Bell) to[out=-90,in=90] (ENTn);
+
+\node[P] (ENTe1) at (3*\dx,-9*\dy)   {E1};
+\node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe1.east)
+  {Weil ortho.};
+\draw[arr] (ENTn) to[out=0,in=180] (ENTe1);
 
 \node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
 \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)
