@@ -974,6 +974,21 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Bell}~\cite{Beau2026b}: Bell-inequality violations from non-injectivity alone, without
     nonlocality or additional hidden variables (\sproved).
 
+    The Bell paper opens the \emph{entanglement sub-programme}, whose presentation paper is
+    \textbf{ENT-Note}~\cite{Beau2026entnote}.
+    The note locates entanglement \emph{inside} the spectral admissibility cascade: for a closed
+    conjugate Weil pair $\{c,q-c\}$, the reduced entropy on the residual fibre-level support of the
+    Gram--Schmidt span is exactly
+    $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$, the logarithm of the residual Gram--Schmidt
+    rank, with no surviving spectral weighting (the flat Schmidt spectrum follows from the
+    numerically observed orthogonality of admitted Weil fingerprints for
+    $q \in \{29,61,101,151\}$).
+    Structural monotonicity of $S_{\mathrm{ent}}$ along the cascade follows from the Gram--Schmidt
+    construction alone. The note thus reduces entanglement to a pure O-series observable and
+    connects the projected mass hierarchy --- tracked by the pair-capacity exponent
+    $\delta_{\mathrm{pair}}$ --- to a downstream trace of the stabilization profile (\sstruct;
+    fingerprint orthogonality for all $q$: \sopen).
+
     \textbf{SchwingerLamb}~\cite{Beau2026f}: Fine-structure constant~$\alpha$ as a projective invariant;
     Lamb shift and Schwinger correction rederived in the pre-geometric framework
     (\sstruct; quantitative radiative corrections: \sheur).
@@ -1217,6 +1232,9 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \draw[arr] (Found) to[out=-90,in=90] (Schw);
 \draw[arr] (BI)    to[out=-90,in=90] (Cosm);
 \draw[arr] (Found) to[out=-90,in=90] (Supra);
+
+\node[S] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
+\draw[arr] (Bell) to[out=-90,in=90] (ENTn);
 
 \node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
 \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)

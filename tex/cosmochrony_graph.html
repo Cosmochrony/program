@@ -1256,6 +1256,17 @@
       tags: [],
       title: "Superconductivity",
       desc: "Projective phase locking as structural origin of superconducting coherence (BCS → cuprates → nickelates)."
+    },
+    {
+      id: "ENTNote", lbl: "ENT-Note", s: "structural", b: "III", key: "Beau2026entnote",
+      url: BASE + "entanglement",
+      tags: ["QM", "emer"],
+      title: "Entanglement Sub-Programme (Presentation Note)",
+      desc:
+        "Synthesis and entry point of the entanglement sub-programme: locates entanglement inside the spectral admissibility cascade. " +
+        "For a closed conjugate Weil pair {c, q−c}, the reduced entropy on the residual fibre-level support of the Gram–Schmidt span is S_ent(n) = log r_pair(n), the logarithm of the residual rank — the flat Schmidt spectrum follows from the numerically observed orthogonality of admitted Weil fingerprints (q ∈ {29, 61, 101, 151}). " +
+        "Structural monotonicity of S_ent along the cascade follows from the Gram–Schmidt construction alone. " +
+        "Open: analytic proof of fingerprint orthogonality for all q; analytic proof of capacity-level one-way activation ΔI ≥ 0."
     }
   ]
 
@@ -1318,7 +1329,8 @@
     { f: "TempProj", t: "LCo1" }, { f: "PTO", t: "LCo1" }, { f: "LCII", t: "LCo3" }, { f: "BI", t: "LCo3" },
     { f: "LorCap", t: "LCsyn" }, { f: "TempProj", t: "LCsyn" }, { f: "LCII", t: "LCsyn" }, { f: "LCIIo1", t: "LCsyn" }, { f: "LCo1", t: "LCsyn" }, { f: "LCo3", t: "LCsyn", sp: 1 },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
-    { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" }
+    { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" },
+    { f: "Bell", t: "ENTNote", sp: 1 }, { f: "O25", t: "ENTNote", syn: 1 }
   ]
 
   const NW = 74, NH = 22
@@ -1408,7 +1420,8 @@
     Bell: { x: 2 * X, y: 8 * Y },
     Schw: { x: 3 * X, y: 8 * Y },
     Cosm: { x: 4 * X, y: 8 * Y },
-    Supra: { x: 5 * X, y: 8 * Y }
+    Supra: { x: 5 * X, y: 8 * Y },
+    ENTNote: { x: 2 * X, y: 9 * Y }
   }
 
   /* Dependency maps */
