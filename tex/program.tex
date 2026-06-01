@@ -997,6 +997,24 @@ A Structural Roadmap and Paper Inventory}
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is then derived analytically (\sproved;
     literal Schmidt pairing for independently sampled canonical O25 blocks: \sopen).
 
+    \textbf{ENT-E2}~\cite{Beau2026ent2}: separates two genuinely distinct entanglement entropies
+    that ENT-Note and ENT-E1 establish on two different projections of the conjugate Weil pair.
+    The \emph{admissible pair entropy} lives on the rank-3 admissible projection $\Pi_q$:
+    spectral atomicity~\cite{Beau2026q5ao2} fixes
+    $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$ and the mean-zero
+    lemma removes the constant mode, leaving the two-dimensional Born--Infeld parity pair
+    $\{e_{\xi_c}, e_{q-\xi_c}\}$ identified with the spin-$\tfrac12$ representation; the singlet
+    identification of \emph{Q3}~\cite{Beau2026q3} then gives
+    $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$ for general canonical blocks. This is the entropy of
+    the state behind the singlet correlator and the unconditional Tsirelson
+    bound~\cite{Beau2026q1}. The \emph{full residual-rank entropy}
+    $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ lives on the full Gram--Schmidt basis (rank
+    $q$ at saturation, not rank~3) and is a pipeline-level contraction observable, unconditional
+    for matched blocks (ENT-E1) and otherwise conditional on the residual admissibility
+    indiscernibility hypothesis $[\mathrm{H}_{\mathrm{res}}]$; the metaplectic dilation of
+    \emph{O30}~\cite{Beau2026a34} is excluded as a bridge for $[\mathrm{H}_{\mathrm{res}}]$
+    (\sproved; $[\mathrm{H}_{\mathrm{res}}]$ for general canonical blocks: \sopen).
+
     \textbf{SchwingerLamb}~\cite{Beau2026f}: Fine-structure constant~$\alpha$ as a projective invariant;
     Lamb shift and Schwinger correction rederived in the pre-geometric framework
     (\sstruct; quantitative radiative corrections: \sheur).
@@ -1248,6 +1266,12 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe1.east)
   {Weil ortho.};
 \draw[arr] (ENTn) to[out=0,in=180] (ENTe1);
+
+\node[P] (ENTe2) at (2*\dx,-10*\dy)  {E2};
+\node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe2.east)
+  {two entropies};
+\draw[arr] (ENTn)  to[out=-90,in=90] (ENTe2);
+\draw[arr] (ENTe1) to[out=-150,in=30] (ENTe2);
 
 \node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
 \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)

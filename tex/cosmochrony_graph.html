@@ -1279,6 +1279,17 @@
         "Since distinct Fourier modes are orthogonal, every newly admitted fingerprint is already orthogonal to the current span, so the admission residual w_j = 1 is an exact algebraic identity — not a numerical accident. " +
         "For matched single-character blocks, the conjugate pair samples sign-reflected frequencies and the flat Schmidt spectrum S_ent(n) = log r_pair(n) is derived analytically. " +
         "Open: literal Schmidt-partner pairing for independently sampled canonical O25 blocks (equal rank by O17 counting; literal pairing requires canonical block-parameter identification)."
+    },
+    {
+      id: "ENTe2", lbl: "ENT-E2", s: "proved", b: "III", key: "Beau2026ent2",
+      url: BASE + "entanglement/e2",
+      tags: ["QM", "emer"],
+      title: "Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair",
+      desc:
+        "Separates two genuinely distinct entanglement entropies of the conjugate Weil pair, attached to projections of different rank. " +
+        "Admissible pair entropy (rank-3 admissible projection Π_q → spin-1/2 parity pair after the mean-zero lemma → singlet from Q3): S_ent_adm = log 2, unconditional for general canonical blocks; this is the entropy behind the singlet correlator and the Tsirelson bound (Q1). " +
+        "Full residual-rank entropy (full Gram–Schmidt basis, rank q at saturation): S_ent(n) = log r_pair(n), proved for matched blocks by E1; for general canonical blocks conditional on the residual admissibility indiscernibility hypothesis [H_res]. " +
+        "The metaplectic dilation of O30 is excluded as a bridge for [H_res] (acts between blocks, not within the residual support of a single block)."
     }
   ]
 
@@ -1344,7 +1355,9 @@
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" },
     { f: "Bell", t: "ENTNote", sp: 1 }, { f: "O25", t: "ENTNote", syn: 1 },
     { f: "ENTNote", t: "ENTe1", sp: 1 }, { f: "O11", t: "ENTe1" }, { f: "O12", t: "ENTe1" }, { f: "O17", t: "ENTe1" },
-    { f: "ENTe1", t: "ENTNote", syn: 1 }
+    { f: "ENTe1", t: "ENTNote", syn: 1 },
+    { f: "ENTNote", t: "ENTe2", sp: 1 }, { f: "ENTe1", t: "ENTe2" }, { f: "O17", t: "ENTe2" }, { f: "Q1", t: "ENTe2" }, { f: "Q3", t: "ENTe2" }, { f: "Q5aO2", t: "ENTe2" },
+    { f: "ENTe2", t: "ENTNote", syn: 1 }
   ]
 
   const NW = 74, NH = 22
@@ -1436,7 +1449,8 @@
     Cosm: { x: 4 * X, y: 8 * Y },
     Supra: { x: 5 * X, y: 8 * Y },
     ENTNote: { x: 2 * X, y: 9 * Y },
-    ENTe1: { x: 3 * X, y: 9 * Y }
+    ENTe1: { x: 3 * X, y: 9 * Y },
+    ENTe2: { x: 2 * X, y: 10 * Y }
   }
 
   /* Dependency maps */
