@@ -298,6 +298,38 @@ A Structural Roadmap and Paper Inventory}
 
     \textit{Role:} Closes the naturalness question for dimensional parameters.
 
+  \subsection{Branch~I Synthesis: NIF-Note}
+    \label{sec:nifnote}
+
+    The papers ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, and noscale~\cite{Beau2026j}
+    form the \emph{non-injective foundations sub-programme}, whose synthesis paper is the
+    presentation note \textbf{NIF-Note}~\cite{Beau2026ninote} (Presentation Note~5).
+    NIF-Note maps these four constituents into the single axiomatic chain
+    \[
+      \text{A1--A4}
+      \;\Longrightarrow\;
+      \Pi \text{ non-injective},\; S_\Pi > 0
+      \;\Longrightarrow\;
+      [X,\sigma(X)] = Z \neq 0
+      \;\Longrightarrow\;
+      \Heis_3(\mathbb{Z}/q\mathbb{Z})
+      \;\Longrightarrow\;
+      V_\rho,
+    \]
+    and records the formal liquidation of the white paper's preliminary $\chi$/relaxation/iterated-projection
+    vocabulary: the substrate is static, the admissibility constraint replaces relaxation
+    throughout the corpus, and observable evolution is an induced ordering of admissible
+    projections rather than a dynamics of~$\chi$.
+    NIF-Note identifies two open structural deliverables for the sub-programme:
+    extension of the Born rule beyond the $\SU(2)$ sector~(Q3) and the Level~2 scale determination
+    of noscale (every emergent scale as a functional of~$c_\chi$ alone).
+
+    \textit{Role:} Synthesis of Branch~I. Provides the explicit input/output table of the
+    axiomatic foundations and is the canonical entry point for downstream sub-programmes
+    (Notes~1--4 of the spectral admissibility, emergent geometry, gauge structure, and spectral
+    gravity tracks).
+
   \section{Branch II: Spectral Admissibility Sub-Programme (O-Series)}
   \label{sec:oseries}
 
@@ -1195,6 +1227,12 @@ A Structural Roadmap and Paper Inventory}
 O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
+% Non-injective foundations sub-programme synthesis (presentation note 5):
+% aggregates the four constituents of Branch I (ENI, Foundation, HeisStr, noscale).
+\node[S] (NIFNote) at (2*\dx,\dy) {NIF-Note};
+\foreach \n in {ENI,Found,Heis,nos}
+\draw[synth] (\n) to[out=90,in=-90] (NIFNote);
+
 \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
 \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
 \node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
@@ -1314,7 +1352,8 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
         The faint converging edges gather the constituent papers of each thematic sub-programme into
-        its synthesis node: the spectral admissibility papers into \textbf{SpAdm-Note}, the
+        its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
+        \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
         Lorentz-capacity papers into \textbf{LC-Synth}, and the geometric emergence papers into
         \textbf{EG-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
