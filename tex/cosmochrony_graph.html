@@ -1269,6 +1269,19 @@
         "Open: Born rule for general observables beyond SU(2); numerical validation across q ∈ {61, 101, 151, 211, 307, 401}."
     },
     {
+      id: "GGSNote", lbl: "GGS-Note", s: "structural", b: "III", key: "Beau2026ggsnote",
+      url: BASE + "gauge-gravity-stratification",
+      tags: ["grav", "SM"],
+      title: "Gauge–Gravity Stratification Sub-Programme (Presentation Note 8)",
+      desc:
+        "Synthesis and entry point of the gauge–gravity stratification sub-programme: derives the dynamics of gauge and gravitational fields from the joint spectral entropy functional S_Π[g,A] = ½ log det' A_{g,A} via the spectral stratification principle a_2 → gravity, a_4 → gauge, a_6 → mixed. " +
+        "Two constituent papers (Q12, Q13) — Q12 shared with the gauge-structure sub-programme (Note 3). " +
+        "Yang–Mills equations D_μ F^{a μν} = 0 from the vertical a_4 variation (Q12 Thm 1, structural given G_Π); horizontal–vertical decoupling (Q12 Lemma 1, proved); UV hierarchy G_N^{−1} ∼ ℓ_sp^{−2} vs. g_YM^{−2} ∼ log(Λ/μ) (Q12 §6). " +
+        "Coupled Einstein–Yang–Mills system G_μν = 8π G_N T^{YM}_μν (Q13 Thm 3.2, structural); a_6 cross-coupling R_{μνρσ} F^{μν} F^{ρσ} (Q13 Thm 4.1, structural, normalisation open); Eddington–Born–Infeld joint completion (Q13 Thm 5.3, cond. on [H-ext]); structural hierarchy ratio G_N g_YM^2 ≪ 1 without fine-tuning (Q13 Prop 6.1). " +
+        "Per O31 Prop 4.23, G_Π = SU(3) × SU(2) × U(1) is unconditional input at the pointwise level, so the a_4 derivation holds unconditionally for the full Standard Model gauge group. " +
+        "Open: a_6 phenomenological normalisation; derivation of [H-ext] from A1–A4; coupled equations with fermionic matter currents from Note 6."
+    },
+    {
       id: "ENTNote", lbl: "ENT-Note", s: "structural", b: "III", key: "Beau2026entnote",
       url: BASE + "entanglement",
       tags: ["QM", "emer"],
@@ -1365,6 +1378,7 @@
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" },
     { f: "Q1", t: "QSNote", syn: 1 }, { f: "Q2", t: "QSNote", syn: 1 }, { f: "Q3", t: "QSNote", syn: 1 }, { f: "Bell", t: "QSNote", syn: 1 },
+    { f: "Q12", t: "GGSNote", syn: 1 }, { f: "Q13", t: "GGSNote", syn: 1 },
     { f: "Bell", t: "ENTNote", sp: 1 }, { f: "O25", t: "ENTNote", syn: 1 },
     { f: "ENTNote", t: "ENTe1", sp: 1 }, { f: "O11", t: "ENTe1" }, { f: "O12", t: "ENTe1" }, { f: "O17", t: "ENTe1" },
     { f: "ENTe1", t: "ENTNote", syn: 1 },
@@ -1463,7 +1477,8 @@
     ENTNote: { x: 2 * X, y: 9 * Y },
     ENTe1: { x: 3 * X, y: 9 * Y },
     ENTe2: { x: 2 * X, y: 10 * Y },
-    QSNote: { x: 12 * X, y: 3 * Y }
+    QSNote: { x: 12 * X, y: 3 * Y },
+    GGSNote: { x: 10 * X, y: 14 * Y }
   }
 
   /* Dependency maps */
