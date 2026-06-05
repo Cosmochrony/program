@@ -1258,6 +1258,17 @@
       desc: "Projective phase locking as structural origin of superconducting coherence (BCS → cuprates → nickelates)."
     },
     {
+      id: "QSNote", lbl: "QS-Note", s: "structural", b: "III", key: "Beau2026qsnote",
+      url: BASE + "quantum-structure",
+      tags: ["QM"],
+      title: "Quantum Structure Sub-Programme (Presentation Note 7)",
+      desc:
+        "Synthesis and entry point of the quantum structure sub-programme: derives the structures of quantum mechanics from the admissibility axioms A1–A4 on the binary icosahedral group 2I and the Weil representation V_ρ, without importing any quantum postulate. " +
+        "Six-step chain: phase coherence from BI indiscernibility (Q1 Thm 2.7); singlet correlator E(â,b̂) = −â·b̂ from four structural inputs (Q1 Thm 2.14); Tsirelson bound |S_CHSH| ≤ 2√2 as corollary (Q1 Cor 2.16); Born rule from structural uniqueness (Q1 Thm 2.18, no Gleason); SU(2) as the unique stable fixed point of the admissibility flow (Q2 Thm 8.6); universal spin-j correlator E = −j(j+1)/3·(â·b̂) for the five admissible sectors of 2I (Q3 Thm 5.2). " +
+        "Bell factorizability structurally non-applicable in non-injective frameworks (Bell paper, published in Quantum Reports). " +
+        "Open: Born rule for general observables beyond SU(2); numerical validation across q ∈ {61, 101, 151, 211, 307, 401}."
+    },
+    {
       id: "ENTNote", lbl: "ENT-Note", s: "structural", b: "III", key: "Beau2026entnote",
       url: BASE + "entanglement",
       tags: ["QM", "emer"],
@@ -1353,6 +1364,7 @@
     { f: "LorCap", t: "LCsyn" }, { f: "TempProj", t: "LCsyn" }, { f: "LCII", t: "LCsyn" }, { f: "LCIIo1", t: "LCsyn" }, { f: "LCo1", t: "LCsyn" }, { f: "LCo3", t: "LCsyn", sp: 1 },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" },
+    { f: "Q1", t: "QSNote", syn: 1 }, { f: "Q2", t: "QSNote", syn: 1 }, { f: "Q3", t: "QSNote", syn: 1 }, { f: "Bell", t: "QSNote", syn: 1 },
     { f: "Bell", t: "ENTNote", sp: 1 }, { f: "O25", t: "ENTNote", syn: 1 },
     { f: "ENTNote", t: "ENTe1", sp: 1 }, { f: "O11", t: "ENTe1" }, { f: "O12", t: "ENTe1" }, { f: "O17", t: "ENTe1" },
     { f: "ENTe1", t: "ENTNote", syn: 1 },
@@ -1450,7 +1462,8 @@
     Supra: { x: 5 * X, y: 8 * Y },
     ENTNote: { x: 2 * X, y: 9 * Y },
     ENTe1: { x: 3 * X, y: 9 * Y },
-    ENTe2: { x: 2 * X, y: 10 * Y }
+    ENTe2: { x: 2 * X, y: 10 * Y },
+    QSNote: { x: 12 * X, y: 3 * Y }
   }
 
   /* Dependency maps */
