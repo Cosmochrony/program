@@ -882,6 +882,34 @@ A Structural Roadmap and Paper Inventory}
     $\mathcal{A}_{g,\mathcal{A}}$.
     The fermionic extension is carried out in Q14.
 
+    Q12 and Q13 form the \emph{gauge--gravity stratification sub-programme}, whose synthesis
+    paper is the presentation note
+    \textbf{GGS-Note}~\cite{Beau2026ggsnote} (Presentation Note~8).
+    GGS-Note organises the two constituents into the spectral stratification chain
+    $a_2 \to G_{\mu\nu}$ (horizontal $\delta_g$),
+    $a_4 \to D_\mu F^{a\mu\nu} = 0$ (vertical $\delta_A$),
+    $a_6 \to R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$ (mixed, structural),
+    all from the single functional
+    $S_\Pi[g,A] = \tfrac{1}{2}\log\det'\mathcal{A}_{g,\mathcal{A}}$.
+    Q12 is shared with the gauge-structure sub-programme (Note~3), where it provides the
+    gauge group identification; GGS-Note draws on its $a_4$ vertical variation, on the
+    horizontal--vertical decoupling Lemma~1, and on the UV-hierarchy comparison
+    $G_N^{-1} \sim \ell_{\mathrm{sp}}^{-2}$ vs.\
+    $g_{\mathrm{YM}}^{-2} \sim \log(\Lambda/\mu)$.
+    Q13 supplies the coupled Einstein--Yang--Mills system, the $a_6$ cross-coupling, the
+    Eddington--Born--Infeld joint completion (conditional on [H-ext]), and the structural
+    hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$.
+    The note isolates the upstream inputs consumed (Note~4 for $S_\Pi[g]$ and the $a_2$
+    sector; Note~3 for $G_\Pi$ and the principal bundle; Note~2 for the effective Lorentzian
+    base manifold; BornInfeld for the saturation bound $c_\chi$ and the conditionality
+    [H-ext]) and records the three open deliverables: $a_6$ phenomenological normalisation,
+    analytical derivation of [H-ext] from A1--A4, and the coupled equations with fermionic
+    matter currents from Q14 (Note~6).
+    Per O31 Prop.~4.23, $[H\text{-color}]_{\mathrm{pointwise}}$ is proved on the standard
+    graph at finite $q$, making $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ an
+    unconditional input to the stratification chain; the $a_4$ Yang--Mills derivation of Q12
+    therefore holds unconditionally for the full Standard Model gauge group.
+
     \textbf{Q14}~\cite{Beau2026q14}: Fermionic matter and chirality (\sstruct, conditional
     on Q13, the Gravity paper, and the BI paper; colour sector unconditional at the pointwise
     level ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35})).
@@ -1381,6 +1409,12 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \draw[arr] (Grav) to[out=-90,in=150] (Q13);
 \draw[arr] (BI)   to[out=-90,in=180] (Q13);
 
+% Gauge-gravity stratification sub-programme synthesis (presentation note 8):
+% aggregates Q12 and Q13.
+\node[S] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
+\draw[synth] (Q12) to[out=0,in=180] (GGSNote);
+\draw[synth] (Q13) to[out=0,in=200] (GGSNote);
+
 \node[S] (Q14) at (3*\dx,-13*\dy) {Q14};
 \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q14.east)
   {Fermions + chirality};
@@ -1407,7 +1441,8 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
-        \textbf{QS-Note}, and Q14 into the fermionic-matter \textbf{FM-Note}.
+        \textbf{QS-Note}, Q12 and Q13 into the gauge--gravity stratification
+        \textbf{GGS-Note}, and Q14 into the fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
