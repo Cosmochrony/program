@@ -699,6 +699,29 @@ A Structural Roadmap and Paper Inventory}
     Closes the open step of~Q2 (identification of the isotropic fibre state with the
     proto-state for spin-$\tfrac{3}{2}$, and general-$j$ extension).
 
+    The papers Q1, Q2, Q3, and the Bell paper~\cite{Beau2026b} form the \emph{quantum structure
+    sub-programme}, whose synthesis paper is the presentation note
+    \textbf{QS-Note}~\cite{Beau2026qsnote} (Presentation Note~7).
+    QS-Note organises these four constituents into the six-step structural chain
+    \emph{BI indiscernibility} $\Rightarrow$ \emph{phase coherence} (Q1 Thm~2.7)
+    $\Rightarrow$ \emph{singlet correlator $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$}
+    (Q1 Thm~2.14, from four structural inputs)
+    $\Rightarrow$ \emph{Tsirelson bound $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$} (Q1 Cor~2.16)
+    $\Rightarrow$ \emph{Born rule} (Q1 Thm~2.18, no Gleason theorem)
+    $\Rightarrow$ \emph{$\SU(2)$ as stable fixed point of the admissibility flow}
+    (Q2 Thm~8.6)
+    $\Rightarrow$ \emph{universal spin-$j$ correlator} (Q3 Thm~5.2 for all five admissible
+    sectors of~$2I$).
+    Bell~\cite{Beau2026b} contributes the structural non-applicability of Bell-type
+    factorizability in any non-injective effective description (published in
+    \emph{Quantum Reports}).
+    The note isolates the upstream inputs consumed (Notes~1 and~5 for the Weil fibre and the
+    admissibility thread; O18, O22, O23, BornInfeld for the parity/isotropy/indiscernibility
+    inputs; ENI for the Bell argument), records the proved/numerical/open status of every
+    result, and states the two open deliverables: Born rule for general observables beyond
+    $\SU(2)$, and numerical validation of the rank-$W_n^{(c)}=0$ coherence witness across
+    $q \in \{29, 61, 101, 151, 211, 307, 401\}$.
+
     The papers Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, and H2 form the \emph{emergent geometry
   sub-programme}, whose synthesis paper is the presentation note \textbf{EG-Note}~\cite{Beau2026egnote}.
     It maps these twelve papers into the chain $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} = 2\eta^{\mu\nu}$,
@@ -1252,6 +1275,15 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
 \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q3.east)
   {general-$j$ complete};
+
+% Quantum structure sub-programme synthesis (presentation note 7):
+% aggregates Q1, Q2, Q3, and the Bell paper.
+\node[S] (QSNote) at (10*\dx,-4*\dy) {QS-Note};
+\draw[synth] (Q1)   to[out=0,in=180]  (QSNote);
+\draw[synth] (Q2)   to[out=0,in=-150] (QSNote);
+\draw[synth] (Q3)   to[out=30,in=-120] (QSNote);
+\draw[synth] (Bell) to[out=30,in=-170] (QSNote);
+
 \node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
 \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
 \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
@@ -1374,7 +1406,8 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
-        \textbf{EG-Note}, and Q14 into the fermionic-matter \textbf{FM-Note}.
+        \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
+        \textbf{QS-Note}, and Q14 into the fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
