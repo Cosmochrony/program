@@ -885,6 +885,20 @@ A Structural Roadmap and Paper Inventory}
     unconditional at the pointwise level
     ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35}).
 
+    Q14 is the sole constituent of the \emph{fermionic matter sub-programme}, whose synthesis
+    paper is the presentation note \textbf{FM-Note}~\cite{Beau2026fmnote} (Presentation Note~6).
+    FM-Note organises Theorems~A--C into the chain
+    $\Pi \Rightarrow F_n \simeq V_\rho \Rightarrow \mathrm{Mp}(2,\mathbb{R}) \Rightarrow
+    \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C}) \rightsquigarrow
+    \Spin(3,1) \simeq \SL(2,\mathbb{C}) \Rightarrow \mathcal{S}_\Pi$,
+    isolates the four upstream layers consumed (Notes~1,~5 for the Weil fibre; Note~2 for the
+    Lorentzian closure; Note~3 for the gauge bundle; Q13~\cite{Beau2026q13} for the
+    gauge--gravity synthesis), and records the three open deliverables of the sub-programme:
+    derivation of Hypothesis~3.5 from A1--A4, explicit construction of $E_\Pi$ as a spectral
+    operator, and the full Lorentzian-signature matter content
+    $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes \mathbb{C}^3_{\mathrm{gen}}$
+    with explicit Yukawa structure.
+
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -1342,6 +1356,11 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \draw[arr] (Grav) to[out=-90,in=160] (Q14);
 \draw[arr] (BI)   to[out=-90,in=175] (Q14);
 
+% Fermionic matter sub-programme synthesis (presentation note 6):
+% aggregates the sole constituent Q14.
+\node[S] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
+\draw[synth] (Q14) to[out=0,in=180] (FMNote);
+
         \end{tikzpicture}
       }
       \caption{Logical dependency DAG of the Cosmochrony programme.
@@ -1354,8 +1373,8 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         The faint converging edges gather the constituent papers of each thematic sub-programme into
         its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
-        Lorentz-capacity papers into \textbf{LC-Synth}, and the geometric emergence papers into
-        \textbf{EG-Note}.
+        Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
+        \textbf{EG-Note}, and Q14 into the fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
