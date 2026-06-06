@@ -27,6 +27,8 @@
 
 \newcommand{\Heis}{\mathrm{Heis}}
 \newcommand{\SU}{\mathrm{SU}}
+\providecommand{\SL}{\mathrm{SL}}
+\providecommand{\Spin}{\mathrm{Spin}}
 \newcommand{\BI}{\mathrm{BI}}
 \newcommand{\Sym}{\mathrm{Sym}}
 \newcommand{\Hcolor}{[H\text{-color}]}
@@ -700,7 +702,7 @@ A Structural Roadmap and Paper Inventory}
     proto-state for spin-$\tfrac{3}{2}$, and general-$j$ extension).
 
     The papers Q1, Q2, Q3, and the Bell paper~\cite{Beau2026b} form the \emph{quantum structure
-    sub-programme}, whose synthesis paper is the presentation note
+  sub-programme}, whose synthesis paper is the presentation note
     \textbf{QS-Note}~\cite{Beau2026qsnote} (Presentation Note~7).
     QS-Note organises these four constituents into the six-step structural chain
     \emph{BI indiscernibility} $\Rightarrow$ \emph{phase coherence} (Q1 Thm~2.7)
@@ -711,7 +713,7 @@ A Structural Roadmap and Paper Inventory}
     $\Rightarrow$ \emph{$\SU(2)$ as stable fixed point of the admissibility flow}
     (Q2 Thm~8.6)
     $\Rightarrow$ \emph{universal spin-$j$ correlator} (Q3 Thm~5.2 for all five admissible
-    sectors of~$2I$).
+  sectors of~$2I$).
     Bell~\cite{Beau2026b} contributes the structural non-applicability of Bell-type
     factorizability in any non-injective effective description (published in
     \emph{Quantum Reports}).
@@ -924,7 +926,8 @@ A Structural Roadmap and Paper Inventory}
     $\SU(2)_L \times U(1)_Y$ electroweak bundle structure (\sstruct).
     (ii)~The projected Dirac operator $\mathcal{D}_{\Pi,g,A}$ contains a canonical zero-order
     endomorphism $E_\Pi$ (the internal spectral residue of non-injective projection) which,
-    under the spinorial lift of BI parity, is left-admissible and enforces the $V{-}A$ chiral
+    via the spinorial lift of BI parity (proved in Q14 as the antilinear $J_\Pi = HK$), is
+    left-admissible and enforces the $V{-}A$ chiral
     structure; the $\gamma_5$-weighted $a_4$ Seeley--DeWitt coefficient then imposes
     anomaly-cancellation trace constraints on the hypercharge weights, making hypercharge
     a spectral coherence datum rather than a free parameter (\sstruct).
@@ -944,8 +947,8 @@ A Structural Roadmap and Paper Inventory}
     \Spin(3,1) \simeq \SL(2,\mathbb{C}) \Rightarrow \mathcal{S}_\Pi$,
     isolates the four upstream layers consumed (Notes~1,~5 for the Weil fibre; Note~2 for the
     Lorentzian closure; Note~3 for the gauge bundle; Q13~\cite{Beau2026q13} for the
-    gauge--gravity synthesis), and records the three open deliverables of the sub-programme:
-    derivation of Hypothesis~3.5 from A1--A4, explicit construction of $E_\Pi$ as a spectral
+    gauge--gravity synthesis), and records the two open deliverables of the sub-programme:
+    explicit construction of $E_\Pi$ as a spectral
     operator, and the full Lorentzian-signature matter content
     $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes \mathbb{C}^3_{\mathrm{gen}}$
     with explicit Yukawa structure.
@@ -1310,7 +1313,6 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 \draw[synth] (Q1)   to[out=0,in=180]  (QSNote);
 \draw[synth] (Q2)   to[out=0,in=-150] (QSNote);
 \draw[synth] (Q3)   to[out=30,in=-120] (QSNote);
-\draw[synth] (Bell) to[out=30,in=-170] (QSNote);
 
 \node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
 \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
@@ -1384,6 +1386,7 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 
 \node[S] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
 \draw[arr] (Bell) to[out=-90,in=90] (ENTn);
+\draw[synth] (Bell) to[out=30,in=-170] (QSNote);
 
 \node[P] (ENTe1) at (3*\dx,-9*\dy)   {E1};
 \node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe1.east)
@@ -1824,7 +1827,7 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
       \sstruct \\[3pt]
       Q14 & Fermionic matter \& chirality & \cite{Beau2026q14} &
       Admissible spinor bundle $S_\Pi$ reproduces $\SU(2)_L \times U(1)_Y$;
-      projected Dirac endomorphism $E_\Pi$ enforces $V{-}A$ chirality under spinorial BI parity;
+      projected Dirac endomorphism $E_\Pi$ enforces $V{-}A$ chirality via the spinorial BI parity lift (proved);
       $\gamma_5$-weighted $a_4$ fixes hypercharge by anomaly cancellation;
       $\sigma_c(n_3) = 3$ yields three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$;
       quark colour sector unconditional at pointwise level ($\Hcolor_{\mathrm{pointwise}}$ proved) &
@@ -1946,7 +1949,7 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
 
   \paragraph{$V-A$ chiral structure and fermionic matter (Q14).}
     Q14~\cite{Beau2026q14} addresses the formal derivation of the $V{-}A$ coupling:
-    the projected Dirac endomorphism $E_\Pi$, under the spinorial lift of BI parity,
+    the projected Dirac endomorphism $E_\Pi$, via the spinorial lift of BI parity (now proved),
     is left-admissible and enforces chiral selection.
     Hypercharge is not a free parameter but is fixed by anomaly-cancellation constraints
     on the $\gamma_5$-weighted $a_4$ Seeley--DeWitt coefficient.
@@ -2040,7 +2043,7 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
   stratification ($a_2$ quadratic vs.\ $a_4$ logarithmic UV divergence), without fine-tuning.
   Q14~\cite{Beau2026q14} extends this to the fermionic sector: the admissible Weil module
   induces a spinor bundle $S_\Pi$ reproducing $\SU(2)_L \times U(1)_Y$; the projected Dirac
-  endomorphism $E_\Pi$ enforces $V{-}A$ chirality under the spinorial lift of BI parity;
+  endomorphism $E_\Pi$ enforces $V{-}A$ chirality via the spinorial lift of BI parity (now proved);
   hypercharge is fixed by anomaly-cancellation constraints on the $\gamma_5$-weighted $a_4$
   coefficient; and the saturation invariant $\sigma_c(n_3) = 3$ yields a gauge-singlet
   three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$.
