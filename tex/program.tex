@@ -981,6 +981,36 @@ A Structural Roadmap and Paper Inventory}
     chiral curvature $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$ of the saturated Born--Infeld
     functional along the $J_\Pi$-odd modulus.
 
+    \textbf{AAR}~\cite{Beau2026aar}: Reduction of the angular amplitude observable (\sstruct,
+    working note). Fixes, before any Weil--BFS computation, the precise observable whose
+    measurement tests the absolute normalisation of the Q14~\S6 angular generation split. A short
+    Baker--Campbell--Hausdorff reduction identifies the per-step $J_\Pi$-odd $J_3$ component of
+    the metaplectic cascade generator with the oriented symplectic area swept per step --- the
+    central Carnot-degree-2 increment of $\mathrm{Heis}_3$ --- not a free shear parameter. The
+    quantity to be measured is the accumulated oriented $J_3$-odd area along the Weil--BFS
+    cascade, normalised by the projected capacity $\widehat I(n)$; at $n_3^{\mathrm{obs}}$ this
+    equals $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$, to be compared with the dictionary
+    value $\varepsilon = 1/10$ without fitting. In the O12 fingerprint the two sectors are the two
+    terms of the exponent: frequency $B_c$ carries the radial capacity $\sigma_c$, central phase
+    $A_c$ carries the angular split. A direct evaluation on symmetric BFS shells returns
+    $\Theta_{\mathrm{raw}} = 0$ identically; the orientation prescription is an irreducible input
+    prior to $\mathcal{N}_A$.
+
+    \textbf{Q11OF}~\cite{Beau2026q11of}: The oriented frontier observable (\sstruct, diagnostic).
+    Frontier-transfer diagnostic note on the recursive existence of the $J_3$-odd cascade signal
+    underlying the Q14~\S6 splitting mechanism. The symmetric-capacity obstruction makes the raw
+    shell observable vanish identically ($\Theta_{\mathrm{raw}} = 0$): the involution
+    $g \mapsto g^{-1}$ pairs opposite central phases on symmetric BFS shells, erasing the
+    oriented $J_\Pi$-odd component before the radial recursion can act. The honest replacement is
+    a frontier transfer observable on the directed outgoing edges $g \to gs$, whose central
+    increment is the Heisenberg cocycle $a(g)\,s_b$, discrete counterpart of the BCH term
+    $\tfrac{1}{2}[X,Y]$ and hence of the dynamical $J_3$. The orientation is the recursive arrow
+    $\partial_\tau = \log g$ from the projection origin. The first test is the existence of an
+    oriented signal $\langle \Delta A_c \rangle_{\partial^+ S_m} \neq 0$; the discriminating
+    anti-bias control is the symmetrised-frontier cancellation. No normalisation, no dictionary
+    value, no $\varepsilon$ enters: the note tests only whether the recursion produces a non-zero,
+    bias-free oriented signal.
+
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -1459,11 +1489,23 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
   {Schur form of $E_\Pi$};
 \draw[arr] (Q14) to[out=-90,in=90]  (PRS);
 
+\node[S] (AAR) at (2*\dx,-14*\dy) {AAR};
+\node[font=\tiny\sffamily,text=cstruct,left=2pt] at (AAR.west)
+  {angular obs.};
+\draw[arr] (Q14) to[out=-150,in=30]  (AAR);
+
+\node[S] (Q11OF) at (2*\dx,-15*\dy) {Q11OF};
+\node[font=\tiny\sffamily,text=cstruct,left=2pt] at (Q11OF.west)
+  {oriented frontier};
+\draw[arr] (AAR) to[out=-90,in=90]  (Q11OF);
+
 % Fermionic matter sub-programme synthesis (presentation note 6):
-% aggregates Q14 and PRS.
+% aggregates Q14, PRS, AAR and Q11OF.
 \node[S] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
-\draw[synth] (Q14) to[out=0,in=180]  (FMNote);
-\draw[synth] (PRS) to[out=30,in=-150] (FMNote);
+\draw[synth] (Q14)   to[out=0,in=180]   (FMNote);
+\draw[synth] (PRS)   to[out=30,in=-150] (FMNote);
+\draw[synth] (AAR)   to[out=50,in=-160] (FMNote);
+\draw[synth] (Q11OF) to[out=40,in=-170] (FMNote);
 
         \end{tikzpicture}
       }
@@ -1480,7 +1522,8 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
         \textbf{QS-Note}, Q12 and Q13 into the gauge--gravity stratification
-        \textbf{GGS-Note}, and Q14 with the companion PRS into the fermionic-matter \textbf{FM-Note}.
+        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR and Q11OF into the
+        fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
         The interactive version with clickable nodes is provided as a companion HTML file.}
@@ -1876,6 +1919,25 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
       operator $u$ = spectral $u$ on flat effective metric;
       reduces open problem to Lorentzian chiral curvature
       $\mu_\chi^2 := \partial_s^2 \mathcal{B}(0)$ &
+      \sstruct \\[3pt]
+      AAR & Angular amplitude observable & \cite{Beau2026aar} &
+      BCH reduction identifies per-step $J_\Pi$-odd $J_3$ component of metaplectic cascade
+      generator with oriented symplectic area swept per step (Carnot-degree-2 increment of
+      $\mathrm{Heis}_3$);
+      observable is accumulated oriented $J_3$-odd area along Weil--BFS cascade normalised by
+      $\widehat I(n)$, equals $\varepsilon_{\mathrm{Weil}}(n_3^{\mathrm{obs}})$ to be compared
+      with dictionary $\varepsilon = 1/10$ without fitting;
+      O12 fingerprint: $B_c$ carries radial $\sigma_c$, $A_c$ carries angular split;
+      symmetric BFS shells give $\Theta_{\mathrm{raw}} = 0$ identically &
+      \sstruct \\[3pt]
+      Q11OF & Oriented frontier observable & \cite{Beau2026q11of} &
+      Symmetric-capacity obstruction makes raw shell observable vanish identically
+      ($g \mapsto g^{-1}$ pairs opposite central phases);
+      frontier transfer observable on directed outgoing edges $g \to gs$ with central increment
+      Heisenberg cocycle $a(g)\,s_b$ (discrete BCH $\tfrac{1}{2}[X,Y]$);
+      orientation is recursive arrow $\partial_\tau = \log g$;
+      first test is existence of oriented signal $\langle\Delta A_c\rangle_{\partial^+ S_m} \neq 0$;
+      anti-bias control via symmetrised-frontier cancellation &
       \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
