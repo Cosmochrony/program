@@ -1023,6 +1023,23 @@ A Structural Roadmap and Paper Inventory}
     value, no $\varepsilon$ enters: the note tests only whether the recursion produces a non-zero,
     bias-free oriented signal.
 
+    \textbf{A4-Note}~\cite{Beau2026a4note}: The Born--Infeld saturation margin of the chiral
+    modulus (\sstruct). Companion note to PRS discharging its first open deliverable: definition
+    of the Lorentzian saturation functional $\mathcal{B}_{\mathrm{sat}}(s)$ along the
+    $J_\Pi$-odd modulus controlling $u$. An antisymmetry lemma shows that the generation modulus
+    is $J_\Pi$-odd while the symmetric square $M = F_\chi F_\chi$ is $J_\Pi$-even from birth, so
+    the primary modulus variable must be an antisymmetric chiral two-form $F_{\chi,\mu\nu}(s)$.
+    $\mathcal{B}_{\mathrm{sat}}(s)$ is then defined as the Born--Infeld determinantal saturation
+    margin of this two-form, with sign locked by the admissibility role of
+    $\mathcal{B}_{\mathrm{sat}}$ (axiom~A4 selects saturated minima), not by Maxwell weak-field
+    matching --- this neutralises the convention sign-trap on the split sign. The second
+    variation reduces to
+    $\mu_\chi := \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2} P_{\chi,\mu\nu} P_\chi^{\mu\nu}$,
+    so the existence and stability of the split are governed entirely by the Lorentzian genus of
+    the chiral polarisation $P_\chi$ in $g^{\mu\nu} = 2\eta^{\mu\nu}$. The identification of the
+    Schur projector tilt with the Born--Infeld saturation modulus on the A4 locus is conditional
+    only on Schur transversality; the Lorentzian genus computation is deliberately deferred.
+
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -1511,13 +1528,19 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
   {oriented frontier};
 \draw[arr] (AAR) to[out=-90,in=90]  (Q11OF);
 
+\node[S] (A4Note) at (3*\dx,-15*\dy) {A4-Note};
+\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (A4Note.east)
+  {BI saturation margin};
+\draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
+
 % Fermionic matter sub-programme synthesis (presentation note 6):
-% aggregates Q14, PRS, AAR and Q11OF.
+% aggregates Q14, PRS, AAR, Q11OF and A4-Note.
 \node[S] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
-\draw[synth] (Q14)   to[out=0,in=180]   (FMNote);
-\draw[synth] (PRS)   to[out=30,in=-150] (FMNote);
-\draw[synth] (AAR)   to[out=50,in=-160] (FMNote);
-\draw[synth] (Q11OF) to[out=40,in=-170] (FMNote);
+\draw[synth] (Q14)    to[out=0,in=180]   (FMNote);
+\draw[synth] (PRS)    to[out=30,in=-150] (FMNote);
+\draw[synth] (AAR)    to[out=50,in=-160] (FMNote);
+\draw[synth] (Q11OF)  to[out=40,in=-170] (FMNote);
+\draw[synth] (A4Note) to[out=20,in=-160] (FMNote);
 
         \end{tikzpicture}
       }
@@ -1534,7 +1557,7 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
         \textbf{QS-Note}, Q12 and Q13 into the gauge--gravity stratification
-        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR and Q11OF into the
+        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR, Q11OF and A4-Note into the
         fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
@@ -1950,6 +1973,16 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
       orientation is recursive arrow $\partial_\tau = \log g$;
       first test is existence of oriented signal $\langle\Delta A_c\rangle_{\partial^+ S_m} \neq 0$;
       anti-bias control via symmetrised-frontier cancellation &
+      \sstruct \\[3pt]
+      A4-Note & BI saturation margin of the chiral modulus & \cite{Beau2026a4note} &
+      Discharges PRS open deliverable~1: defines Lorentzian
+      $\mathcal{B}_{\mathrm{sat}}(s)$ along $J_\Pi$-odd modulus;
+      antisymmetry lemma forces antisymmetric chiral two-form $F_{\chi,\mu\nu}(s)$;
+      sign locked by admissibility role of $\mathcal{B}_{\mathrm{sat}}$ (A4 selects saturated minima),
+      not by Maxwell weak-field matching;
+      genus reduction
+      $\mu_\chi = \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2} P_{\chi,\mu\nu} P_\chi^{\mu\nu}$;
+      split existence/stability reduced to Lorentzian genus of $P_\chi$ in $g^{\mu\nu} = 2\eta^{\mu\nu}$ &
       \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
