@@ -1291,285 +1291,291 @@ A Structural Roadmap and Paper Inventory}
           synth/.style={-{Stealth[length=3pt,width=2pt]}, draw=cstruct!45, line width=0.35pt, opacity=0.55},
         ]
 
-\newcommand{\dx}{2.1cm}
-\newcommand{\dy}{1.35cm}
+          \newcommand{\dx}{2.1cm}
+          \newcommand{\dy}{1.35cm}
 
-\node[P] (WP)     at (0,0)          {WP};
-\node[P] (ENI)    at (\dx,0)        {ENI};
-\node[P] (Found)  at (2*\dx,0)      {Found};
-\node[P] (Heis)   at (3*\dx,0)      {HeisStr};
-\node[P] (nos)    at (4*\dx,0)      {noscale};
+          \node[P] (WP)     at (0,0)          {WP};
+          \node[P] (ENI)    at (\dx,0)        {ENI};
+          \node[P] (Found)  at (2*\dx,0)      {Found};
+          \node[P] (Heis)   at (3*\dx,0)      {HeisStr};
+          \node[P] (nos)    at (4*\dx,0)      {noscale};
 
-\draw[spine] (WP)--(ENI);
-\draw[spine] (ENI)--(Found);
-\draw[spine] (Found)--(Heis);
-\draw[arr]   (Found)--(nos);
+          \draw[spine] (WP)--(ENI);
+          \draw[spine] (ENI)--(Found);
+          \draw[spine] (Found)--(Heis);
+          \draw[arr]   (Found)--(nos);
 
-\node[P]  (BI)    at (0,-\dy)       {BornInfeld};
-\node[P]  (SpA)   at (\dx,-\dy)     {SpAdm};
-\node[P] (SpCap) at (2*\dx,-\dy)   {SpCap};
-\node[P]  (SpG)   at (3*\dx,-\dy)   {SpGram};
-\node[S]  (ThGn)  at (4*\dx,-\dy)   {3Gen};
-\node[P]  (SpR)   at (\dx,-2*\dy)   {SpRel};
+          \node[P]  (BI)    at (0,-\dy)       {BornInfeld};
+          \node[P]  (SpA)   at (\dx,-\dy)     {SpAdm};
+          \node[P] (SpCap) at (2*\dx,-\dy)   {SpCap};
+          \node[P]  (SpG)   at (3*\dx,-\dy)   {SpGram};
+          \node[S]  (ThGn)  at (4*\dx,-\dy)   {3Gen};
+          \node[P]  (SpR)   at (\dx,-2*\dy)   {SpRel};
 
-\draw[arr]   (WP)--(BI);
-\draw[arr]   (BI)--(SpA);
-\draw[arr]   (SpA)--(SpCap);
-\draw[arr]   (SpCap)--(SpG);
-\draw[arr]   (SpG)--(ThGn);
-\draw[spine] (SpA)--(SpR);
+          \draw[arr]   (WP)--(BI);
+          \draw[arr]   (BI)--(SpA);
+          \draw[arr]   (SpA)--(SpCap);
+          \draw[arr]   (SpCap)--(SpG);
+          \draw[arr]   (SpG)--(ThGn);
+          \draw[spine] (SpA)--(SpR);
 
-\node[P] (O1)  at (0,-3*\dy)        {O1};
-\node[S] (O3)  at (\dx,-3*\dy)      {O3};
-\node[P] (O4)  at (2*\dx,-3*\dy)    {O4};
-\node[P] (O5)  at (3*\dx,-3*\dy)    {O5};
-\node[S] (O7)  at (4*\dx,-3*\dy)    {O7};
-\node[P] (O8)  at (5*\dx,-3*\dy)    {O8};
+          \node[P] (O1)  at (0,-3*\dy)        {O1};
+          \node[S] (O3)  at (\dx,-3*\dy)      {O3};
+          \node[P] (O4)  at (2*\dx,-3*\dy)    {O4};
+          \node[P] (O5)  at (3*\dx,-3*\dy)    {O5};
+          \node[S] (O7)  at (4*\dx,-3*\dy)    {O7};
+          \node[P] (O8)  at (5*\dx,-3*\dy)    {O8};
 
-\draw[spine] (SpR) to[out=-90,in=90] (O1);
-\draw[arr]   (O1)--(O3);
-\draw[arr]   (O3)--(O4);
-\draw[arr]   (O4)--(O5);
-\draw[arr]   (O5)--(O7);
-\draw[spine] (O7)--(O8);
+          \draw[spine] (SpR) to[out=-90,in=90] (O1);
+          \draw[arr]   (O1)--(O3);
+          \draw[arr]   (O3)--(O4);
+          \draw[arr]   (O4)--(O5);
+          \draw[arr]   (O5)--(O7);
+          \draw[spine] (O7)--(O8);
 
-\node[P] (O9)   at (0,-4*\dy)       {O9};
-\node[P] (O12)  at (\dx,-4*\dy)     {O12};
-\node[P] (O13)  at (2*\dx,-4*\dy)   {O13};
-\node[P] (O15)  at (3*\dx,-4*\dy)   {O15};
+          \node[P] (O9)   at (0,-4*\dy)       {O9};
+          \node[P] (O12)  at (\dx,-4*\dy)     {O12};
+          \node[P] (O13)  at (2*\dx,-4*\dy)   {O13};
+          \node[P] (O15)  at (3*\dx,-4*\dy)   {O15};
 
-\draw[spine] (O8) to[out=-90,in=90] (O9);
-\draw[arr,dashed] (O9) -- node[above,font=\tiny]{O10--O11} (O12);
-\draw[arr]   (O12)--(O13);
-\draw[spine] (O13)--(O15);
+          \draw[spine] (O8) to[out=-90,in=90] (O9);
+          \draw[arr,dashed] (O9) -- node[above,font=\tiny]{O10--O11} (O12);
+          \draw[arr]   (O12)--(O13);
+          \draw[spine] (O13)--(O15);
 
-\node[S] (O16)  at (0,-5*\dy)       {O16};
-\node[P] (O17)  at (\dx,-5*\dy)     {O17};
-\node[P] (O18)  at (2*\dx,-5*\dy)   {O18};
-\node[P] (O19)  at (3*\dx,-5*\dy)   {O19};
-\node[P] (O22)  at (4*\dx,-5*\dy)   {O22};
-\node[P] (O23)  at (5*\dx,-5*\dy)   {O23};
-\node[P] (O24)  at (6*\dx,-5*\dy)   {O24};
+          \node[S] (O16)  at (0,-5*\dy)       {O16};
+          \node[P] (O17)  at (\dx,-5*\dy)     {O17};
+          \node[P] (O18)  at (2*\dx,-5*\dy)   {O18};
+          \node[P] (O19)  at (3*\dx,-5*\dy)   {O19};
+          \node[P] (O22)  at (4*\dx,-5*\dy)   {O22};
+          \node[P] (O23)  at (5*\dx,-5*\dy)   {O23};
+          \node[P] (O24)  at (6*\dx,-5*\dy)   {O24};
 
-\draw[spine] (O15) to[out=-90,in=90] (O16);
-\draw[arr]   (O16)--(O17);
-\draw[spine] (O17)--(O18);
-\draw[arr]   (O18)--(O19);
-\draw[arr,dashed] (O19) -- node[above,font=\tiny]{O20--O21} (O22);
-\draw[arr]   (O22)--(O23);
-\draw[spine] (O23)--(O24);
+          \draw[spine] (O15) to[out=-90,in=90] (O16);
+          \draw[arr]   (O16)--(O17);
+          \draw[spine] (O17)--(O18);
+          \draw[arr]   (O18)--(O19);
+          \draw[arr,dashed] (O19) -- node[above,font=\tiny]{O20--O21} (O22);
+          \draw[arr]   (O22)--(O23);
+          \draw[spine] (O23)--(O24);
 
-\node[S] (O25)  at (4*\dx,-6*\dy)   {O25};
-\node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
-\node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
-\node[S] (O28)  at (7*\dx,-6*\dy)   {O28};
-\node[S] (O29)  at (7*\dx,-7*\dy)   {O29};
-\node[P] (O30)  at (7*\dx,-8*\dy)   {O30};
-\node[font=\tiny\sffamily,text=cproved,right=2pt] at (O30.east)
-  {$\lambda_1/\lambda_2=2$};
-\node[S] (O31)  at (7*\dx,-9*\dy)   {O31};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O31.east)
-  {SU(3) [H-color]};
-\node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
-  {$q{=}61,151,211,307$ all pass};
-\node[S] (PTO)    at (5*\dx,-7*\dy)   {PTO};
-\node[S] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
-\node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
-\node[S] (LCII)   at (5*\dx,-10*\dy) {LCII};
-\node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
-\node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
-\node[P] (LCo3)   at (6*\dx,-11*\dy) {LCo3};
-\node[P] (LCsyn)  at (5*\dx,-12*\dy) {LC-Synth};
+          \node[S] (O25)  at (4*\dx,-6*\dy)   {O25};
+          \node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
+          \node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
+          \node[S] (O28)  at (7*\dx,-6*\dy)   {O28};
+          \node[S] (O29)  at (7*\dx,-7*\dy)   {O29};
+          \node[P] (O30)  at (7*\dx,-8*\dy)   {O30};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (O30.east)
+            {$\lambda_1/\lambda_2=2$};
+          \node[S] (O31)  at (7*\dx,-9*\dy)   {O31};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O31.east)
+            {SU(3) [H-color]};
+          \node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
+            {$q{=}61,151,211,307$ all pass};
+          \node[S] (PTO)    at (5*\dx,-7*\dy)   {PTO};
+          \node[S] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
+          \node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
+          \node[S] (LCII)   at (5*\dx,-10*\dy) {LCII};
+          \node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
+          \node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
+          \node[P] (LCo3)   at (6*\dx,-11*\dy) {LCo3};
+          \node[P] (LCsyn)  at (5*\dx,-12*\dy) {LC-Synth};
 
-\draw[arr]   (PTO)    -- (LorCap);
-\draw[spine] (LorCap) -- (TempPr);
-\draw[arr]   (TempPr) -- (LCII);
-\draw[spine] (LCII)   -- (LCIIo1);
-\draw[arr]   (TempPr) to[out=-110,in=90] (LCo1);
-\draw[arr]   (LCII)   to[out=-50,in=90]  (LCo3);
-\draw[spine] (LCIIo1) -- (LCsyn);
-\draw[arr]   (LCo1)   to[out=-90,in=160] (LCsyn);
-\draw[arr]   (LCo3)   to[out=-90,in=20]  (LCsyn);
+          \draw[arr]   (PTO)    -- (LorCap);
+          \draw[spine] (LorCap) -- (TempPr);
+          \draw[arr]   (TempPr) -- (LCII);
+          \draw[spine] (LCII)   -- (LCIIo1);
+          \draw[arr]   (TempPr) to[out=-110,in=90] (LCo1);
+          \draw[arr]   (LCII)   to[out=-50,in=90]  (LCo3);
+          \draw[spine] (LCIIo1) -- (LCsyn);
+          \draw[arr]   (LCo1)   to[out=-90,in=160] (LCsyn);
+          \draw[arr]   (LCo3)   to[out=-90,in=20]  (LCsyn);
 
-\draw[spine] (O24) -- (O25);
-\draw[arr]   (O24) -- (O26);
-\draw[arr]   (O26) -- (O27);
-\draw[arr]   (O24) -- (PTO);
-\draw[spine] (O25) -- (O28);
-\draw[arr]   (O27) -- (O28);
-\draw[spine] (O28) -- (O29);
-\draw[arr]   (O27) -- (O29);
-\draw[spine] (O29) -- (O30);
-\draw[spine] (O30) -- (O31);
-\draw[spine] (O31) -- (O32);
+          \draw[spine] (O24) -- (O25);
+          \draw[arr]   (O24) -- (O26);
+          \draw[arr]   (O26) -- (O27);
+          \draw[arr]   (O24) -- (PTO);
+          \draw[spine] (O25) -- (O28);
+          \draw[arr]   (O27) -- (O28);
+          \draw[spine] (O28) -- (O29);
+          \draw[arr]   (O27) -- (O29);
+          \draw[spine] (O29) -- (O30);
+          \draw[spine] (O30) -- (O31);
+          \draw[spine] (O31) -- (O32);
 
 % Spectral admissibility sub-programme synthesis (presentation note):
 % aggregates all constituent papers (5 precursors + O-series).
-\node[S] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
-\foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
-O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
-\draw[synth] (\n) to[out=-90,in=90] (SpANote);
+          \node[S] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
+          \foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
+          O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
+          \draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
 % Non-injective foundations sub-programme synthesis (presentation note 5):
 % aggregates the four constituents of Branch I (ENI, Foundation, HeisStr, noscale).
-\node[S] (NIFNote) at (2*\dx,\dy) {NIF-Note};
-\foreach \n in {ENI,Found,Heis,nos}
-\draw[synth] (\n) to[out=90,in=-90] (NIFNote);
+          \node[S] (NIFNote) at (2*\dx,\dy) {NIF-Note};
+          \foreach \n in {ENI,Found,Heis,nos}
+          \draw[synth] (\n) to[out=90,in=-90] (NIFNote);
 
-\node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
-\node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
-\node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
-\node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q3.east)
-  {general-$j$ complete};
+          \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
+          \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
+          \node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q3.east)
+            {general-$j$ complete};
 
 % Quantum structure sub-programme synthesis (presentation note 7):
 % aggregates Q1, Q2, Q3, and the Bell paper.
-\node[S] (QSNote) at (10*\dx,-4*\dy) {QS-Note};
-\draw[synth] (Q1)   to[out=0,in=180]  (QSNote);
-\draw[synth] (Q2)   to[out=0,in=-150] (QSNote);
-\draw[synth] (Q3)   to[out=30,in=-120] (QSNote);
+          \node[S] (QSNote) at (10*\dx,-4*\dy) {QS-Note};
+          \draw[synth] (Q1)   to[out=0,in=180]  (QSNote);
+          \draw[synth] (Q2)   to[out=0,in=-150] (QSNote);
+          \draw[synth] (Q3)   to[out=30,in=-120] (QSNote);
 
-\node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
-\node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
-\node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
-\node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
-\node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
-\node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
-\node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
-(geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}
-                               Q8--Q10\\U1, W1
-\end{tabular}};
-\node[P] (H2)   at (9*\dx,-7*\dy)   {H2};
-\node[font=\tiny\sffamily,text=cproved,right=2pt] at (H2.east)
-  {[H2] proved};
+          \node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
+          \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
+          \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
+          \node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
+          \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
+          \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
+          \node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
+          (geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}
+                                         Q8--Q10\\U1, W1
+          \end{tabular}};
+          \node[P] (H2)   at (9*\dx,-7*\dy)   {H2};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (H2.east)
+            {[H2] proved};
 
-\draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
-\draw[arr]   (O23)   to[out=-10,in=180] (Q7);
-\draw[arr]   (O28)   to[out=-10,in=180] (Q7);
-\draw[arr]   (O29)   to[out=-10,in=180] (Q7);
-\draw[arr,dashed,draw=cproved]   (Q7)--(geom);
-\draw[spine] (Q5a)   to[out=0,in=90]   (H2);
-\draw[arr]   (H2)    to[out=-90,in=0]  (geom);
+          \draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
+          \draw[arr]   (O23)   to[out=-10,in=180] (Q7);
+          \draw[arr]   (O28)   to[out=-10,in=180] (Q7);
+          \draw[arr]   (O29)   to[out=-10,in=180] (Q7);
+          \draw[arr,dashed,draw=cproved]   (Q7)--(geom);
+          \draw[spine] (Q5a)   to[out=0,in=90]   (H2);
+          \draw[arr]   (H2)    to[out=-90,in=0]  (geom);
 
 % Emergent geometry sub-programme synthesis (presentation note):
 % aggregates the geometric emergence papers (Q5a, Q5a-O2, Q5b, Q6b, Q7, H2,
 % and the Q8--Q10/U1/W1 block).
-\node[S] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
-\foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
-\draw[synth] (\n) to[out=-30,in=120] (EGNote);
+          \node[S] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
+          \foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
+          \draw[synth] (\n) to[out=-30,in=120] (EGNote);
 
-\draw[spine] (Found) to[out=0,in=90] (Q1);
-\draw[arr]   (O18)   to[out=10,in=180] (Q1);
-\draw[arr]   (O22)   to[out=10,in=180] (Q1);
-\draw[arr]   (O23)   to[out=10,in=180] (Q1);
-\draw[arr]   (Q1)--(Q2);
-\draw[arr]   (Q2)--(Q3);
-\draw[arr]   (Q2)--(Q5a);
-\draw[arr]   (Q5a)--(Q5aO2);
-\node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
-  {\begin{tabular}{l}[H-$\mathcal{E}$1], [C]\\proved
-\end{tabular}};
-\draw[spine] (Q5a)--(Q5b);
-\draw[arr]   (Q5b)--(Q6a);
-\draw[arr]   (O31) to[out=0,in=-150] (Q6a);
-\draw[arr]   (Q6a)--(Q6b);
+          \draw[spine] (Found) to[out=0,in=90] (Q1);
+          \draw[arr]   (O18)   to[out=10,in=180] (Q1);
+          \draw[arr]   (O22)   to[out=10,in=180] (Q1);
+          \draw[arr]   (O23)   to[out=10,in=180] (Q1);
+          \draw[arr]   (Q1)--(Q2);
+          \draw[arr]   (Q2)--(Q3);
+          \draw[arr]   (Q2)--(Q5a);
+          \draw[arr]   (Q5a)--(Q5aO2);
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
+            {\begin{tabular}{l}[H-$\mathcal{E}$1], [C]\\proved
+          \end{tabular}};
+          \draw[spine] (Q5a)--(Q5b);
+          \draw[arr]   (Q5b)--(Q6a);
+          \draw[arr]   (O31) to[out=0,in=-150] (Q6a);
+          \draw[arr]   (Q6a)--(Q6b);
 
-\node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
-\node[P] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
-\node[S] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
-\node[P] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
+          \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
+          \node[P] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
+          \node[S] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
+          \node[P] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
 
-\draw[arr]   (WP) to[out=-90,in=90] (Sp2);
-\draw[spine] (Sp2)--(Grav);
-\draw[arr]   (Grav)--(Thm);
-\draw[arr]   (Thm)--(Lor);
+          \draw[arr]   (WP) to[out=-90,in=90] (Sp2);
+          \draw[spine] (Sp2)--(Grav);
+          \draw[arr]   (Grav)--(Thm);
+          \draw[arr]   (Thm)--(Lor);
 
-\node[P] (TopI) at (0,-8*\dy)        {TopInv};
-\node[S] (SMcm) at (\dx,-8*\dy)      {SMcm};
-\node[P] (Bell) at (2*\dx,-8*\dy)    {Bell};
-\node[S] (Schw) at (3*\dx,-8*\dy)    {SchLamb};
-\node[S] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
-\node[S] (Supra)at (5*\dx,-8*\dy)    {Supra};
+          \node[P] (TopI) at (0,-8*\dy)        {TopInv};
+          \node[S] (SMcm) at (\dx,-8*\dy)      {SMcm};
+          \node[P] (Bell) at (2*\dx,-8*\dy)    {Bell};
+          \node[S] (Schw) at (3*\dx,-8*\dy)    {SchLamb};
+          \node[S] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
+          \node[S] (Supra)at (5*\dx,-8*\dy)    {Supra};
 
-\draw[arr] (Found) to[out=-90,in=90] (TopI);
-\draw[arr] (BI)    to[out=-90,in=90] (SMcm);
-\draw[arr] (Found) to[out=-90,in=90] (Bell);
-\draw[arr] (ENI)   to[out=-90,in=90] (Bell);
-\draw[arr] (Found) to[out=-90,in=90] (Schw);
-\draw[arr] (BI)    to[out=-90,in=90] (Cosm);
-\draw[arr] (Found) to[out=-90,in=90] (Supra);
+          \draw[arr] (Found) to[out=-90,in=90] (TopI);
+          \draw[arr] (BI)    to[out=-90,in=90] (SMcm);
+          \draw[arr] (Found) to[out=-90,in=90] (Bell);
+          \draw[arr] (ENI)   to[out=-90,in=90] (Bell);
+          \draw[arr] (Found) to[out=-90,in=90] (Schw);
+          \draw[arr] (BI)    to[out=-90,in=90] (Cosm);
+          \draw[arr] (Found) to[out=-90,in=90] (Supra);
 
-\node[S] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
-\draw[arr] (Bell) to[out=-90,in=90] (ENTn);
-\draw[synth] (Bell) to[out=30,in=-170] (QSNote);
+          \node[S] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
+          \draw[arr] (Bell) to[out=-90,in=90] (ENTn);
+          \draw[synth] (Bell) to[out=30,in=-170] (QSNote);
 
-\node[P] (ENTe1) at (3*\dx,-9*\dy)   {E1};
-\node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe1.east)
-  {Weil ortho.};
-\draw[arr] (ENTn) to[out=0,in=180] (ENTe1);
+          \node[P] (ENTe1) at (3*\dx,-9*\dy)   {E1};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe1.east)
+            {Weil ortho.};
+          \draw[arr] (ENTn) to[out=0,in=180] (ENTe1);
 
-\node[P] (ENTe2) at (2*\dx,-10*\dy)  {E2};
-\node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe2.east)
-  {two entropies};
-\draw[arr] (ENTn)  to[out=-90,in=90] (ENTe2);
-\draw[arr] (ENTe1) to[out=-150,in=30] (ENTe2);
+          \node[P] (ENTe2) at (2*\dx,-10*\dy)  {E2};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe2.east)
+            {two entropies};
+          \draw[arr] (ENTn)  to[out=-90,in=90] (ENTe2);
+          \draw[arr] (ENTe1) to[out=-150,in=30] (ENTe2);
 
-\node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)
-  {YM from $a_4$};
-\draw[arr] (Grav) to[out=-90,in=135] (Q12);
-\draw[arr] (Q6a)  to[out=200,in=60]  (Q12);
+          \node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)
+            {YM from $a_4$};
+          \draw[arr] (Grav) to[out=-90,in=135] (Q12);
+          \draw[arr] (Q6a)  to[out=200,in=60]  (Q12);
 
-\node[S] (Q13) at (3*\dx,-12*\dy) {Q13};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q13.east)
-  {EYM + hierarchy};
-\draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
-\draw[arr] (Grav) to[out=-90,in=150] (Q13);
-\draw[arr] (BI)   to[out=-90,in=180] (Q13);
+          \node[S] (Q13) at (3*\dx,-12*\dy) {Q13};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q13.east)
+            {EYM + hierarchy};
+          \draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
+          \draw[arr] (Grav) to[out=-90,in=150] (Q13);
+          \draw[arr] (BI)   to[out=-90,in=180] (Q13);
 
 % Gauge-gravity stratification sub-programme synthesis (presentation note 8):
 % aggregates Q12 and Q13.
-\node[S] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
-\draw[synth] (Q12) to[out=0,in=180] (GGSNote);
-\draw[synth] (Q13) to[out=0,in=200] (GGSNote);
+          \node[S] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
+          \draw[synth] (Q12) to[out=0,in=180] (GGSNote);
+          \draw[synth] (Q13) to[out=0,in=200] (GGSNote);
 
-\node[S] (Q14) at (3*\dx,-13*\dy) {Q14};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q14.east)
-  {Fermions + chirality};
-\draw[arr] (Q13) to[out=-90,in=90]  (Q14);
-\draw[arr] (Grav) to[out=-90,in=160] (Q14);
-\draw[arr] (BI)   to[out=-90,in=175] (Q14);
-\draw[arr,dashed] (O30) to[out=-120,in=25]  (Q14);
+          \node[S] (Q14) at (3*\dx,-13*\dy) {Q14};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q14.east)
+            {Fermions + chirality};
+          \draw[arr] (Q13) to[out=-90,in=90]  (Q14);
+          \draw[arr] (Grav) to[out=-90,in=160] (Q14);
+          \draw[arr] (BI)   to[out=-90,in=175] (Q14);
+          \draw[arr,dashed] (O30) to[out=-120,in=25]  (Q14);
 
-\node[S] (PRS) at (3*\dx,-14*\dy) {PRS};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (PRS.east)
-  {Schur form of $E_\Pi$};
-\draw[arr] (Q14) to[out=-90,in=90]  (PRS);
+          \node[S] (PRS) at (3*\dx,-14*\dy) {PRS};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (PRS.east)
+            {Schur form of $E_\Pi$};
+          \draw[arr] (Q14) to[out=-90,in=90]  (PRS);
 
-\node[S] (AAR) at (2*\dx,-14*\dy) {AAR};
-\node[font=\tiny\sffamily,text=cstruct,left=2pt] at (AAR.west)
-  {angular obs.};
-\draw[arr] (Q14) to[out=-150,in=30]  (AAR);
+          \node[S] (AAR) at (2*\dx,-14*\dy) {AAR};
+          \node[font=\tiny\sffamily,text=cstruct,left=2pt] at (AAR.west)
+            {angular obs.};
+          \draw[arr] (Q14) to[out=-150,in=30]  (AAR);
 
-\node[S] (Q11OF) at (2*\dx,-15*\dy) {Q11OF};
-\node[font=\tiny\sffamily,text=cstruct,left=2pt] at (Q11OF.west)
-  {oriented frontier};
-\draw[arr] (AAR) to[out=-90,in=90]  (Q11OF);
+          \node[S] (Q11OF) at (2*\dx,-15*\dy) {Q11OF};
+          \node[font=\tiny\sffamily,text=cstruct,left=2pt] at (Q11OF.west)
+            {oriented frontier};
+          \draw[arr] (AAR) to[out=-90,in=90]  (Q11OF);
 
-\node[S] (A4Note) at (3*\dx,-15*\dy) {A4-Note};
-\node[font=\tiny\sffamily,text=cstruct,right=2pt] at (A4Note.east)
-  {BI saturation margin};
-\draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
+          \node[S] (A4Note) at (3*\dx,-15*\dy) {A4-Note};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (A4Note.east)
+            {BI saturation margin};
+          \draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
+
+          \node[S] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
+          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (AOG.east)
+            {ADE gate status};
+          \draw[arr,dashed] (Q14) to[out=-45,in=180] (AOG);
 
 % Fermionic matter sub-programme synthesis (presentation note 6):
-% aggregates Q14, PRS, AAR, Q11OF and A4-Note.
-\node[S] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
-\draw[synth] (Q14)    to[out=0,in=180]   (FMNote);
-\draw[synth] (PRS)    to[out=30,in=-150] (FMNote);
-\draw[synth] (AAR)    to[out=50,in=-160] (FMNote);
-\draw[synth] (Q11OF)  to[out=40,in=-170] (FMNote);
-\draw[synth] (A4Note) to[out=20,in=-160] (FMNote);
+% aggregates Q14, PRS, AAR, Q11OF, A4-Note and AOG-Note.
+          \node[S] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
+          \draw[synth] (Q14)    to[out=0,in=180]   (FMNote);
+          \draw[synth] (PRS)    to[out=30,in=-150] (FMNote);
+          \draw[synth] (AAR)    to[out=50,in=-160] (FMNote);
+          \draw[synth] (Q11OF)  to[out=40,in=-170] (FMNote);
+          \draw[synth] (A4Note) to[out=20,in=-160] (FMNote);
+          \draw[synth] (AOG)    to[out=90,in=-90]  (FMNote);
 
         \end{tikzpicture}
       }
@@ -1586,7 +1592,7 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
         \textbf{QS-Note}, Q12 and Q13 into the gauge--gravity stratification
-        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR, Q11OF and A4-Note into the
+        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR, Q11OF, A4-Note and AOG-Note into the
         fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
@@ -1609,62 +1615,62 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
           arr/.style={-{Stealth[length=4pt]}, thin},
         ]
 
-        \def\dx{3.2cm}
-        \def\dy{1.4cm}
+          \def\dx{3.2cm}
+          \def\dy{1.4cm}
 
-        % ── Inputs (left column) ──────────────────────────────
-        \node[S] (Q5a)   at (0,0)          {Q5a};
-        \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
-        \node[S] (Q5b)   at (0,-\dy)       {Q5b};
-        \node[S] (O25)   at (-\dx,-2*\dy)  {O25};
+          % ── Inputs (left column) ──────────────────────────────
+          \node[S] (Q5a)   at (0,0)          {Q5a};
+          \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
+          \node[S] (Q5b)   at (0,-\dy)       {Q5b};
+          \node[S] (O25)   at (-\dx,-2*\dy)  {O25};
 
-        % ── Core chain (centre column) ───────────────────────
-        \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
-        \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$}};
-        \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-lift]}};
-        \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
-        \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
-        \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
+          % ── Core chain (centre column) ───────────────────────
+          \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
+          \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$}};
+          \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-lift]}};
+          \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
+          \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
+          \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
 
-        % Q11 and final result
-        \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
-          {Q11\\{\tiny $A_\tau\!=\!2$}};
-        \node[P,minimum width=4cm] (Met)
-        at (\dx+0.5*\dx,-7*\dy)
-          {$g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$};
+          % Q11 and final result
+          \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
+            {Q11\\{\tiny $A_\tau\!=\!2$}};
+          \node[P,minimum width=4cm] (Met)
+          at (\dx+0.5*\dx,-7*\dy)
+            {$g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$};
 
-        % ── Edges ────────────────────────────────────────────
-        \draw[arr]   (Q5a)--(Q5aO2);
-        \draw[spine] (Q5a)--(Q5b);
-        \draw[arr]   (Q5a) to[out=0,in=90] (Q7);
-        \draw[arr]   (Q5aO2) to[out=-90,in=90] (W1);
-        \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
-        \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
-        \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
-        \draw[arr]   (O25) to[out=0,in=180] (Q10);
+          % ── Edges ────────────────────────────────────────────
+          \draw[arr]   (Q5a)--(Q5aO2);
+          \draw[spine] (Q5a)--(Q5b);
+          \draw[arr]   (Q5a) to[out=0,in=90] (Q7);
+          \draw[arr]   (Q5aO2) to[out=-90,in=90] (W1);
+          \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
+          \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
+          \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
+          \draw[arr]   (O25) to[out=0,in=180] (Q10);
 
-        \draw[spine] (Q7)--(Q9);
-        \draw[arr]   (Q7) to[out=0,in=90] (Q8);
-        \draw[spine] (Q9)--(Q10);
-        \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
-        \draw[spine] (Q10)--(U1);
-        \draw[spine] (U1)--(W1);
-        \draw[arr]   (Q5a) to[out=-45,in=90] (W1);
+          \draw[spine] (Q7)--(Q9);
+          \draw[arr]   (Q7) to[out=0,in=90] (Q8);
+          \draw[spine] (Q9)--(Q10);
+          \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
+          \draw[spine] (Q10)--(U1);
+          \draw[spine] (U1)--(W1);
+          \draw[arr]   (Q5a) to[out=-45,in=90] (W1);
 
-        \draw[spine] (U1)  to[out=-90,in=135] (Q11);
-        \draw[arr]   (Q8)  to[out=-90,in=45]  (Q11);
-        \draw[arr]   (W1)  to[out=-90,in=45]  (Q11);
-        \draw[spine] (Q11) -- (Met);
+          \draw[spine] (U1)  to[out=-90,in=135] (Q11);
+          \draw[arr]   (Q8)  to[out=-90,in=45]  (Q11);
+          \draw[arr]   (W1)  to[out=-90,in=45]  (Q11);
+          \draw[spine] (Q11) -- (Met);
 
-        % ── Status annotations ───────────────────────────────
-        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
-          {spectral atomicity};
-        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
-          {coercivity $\Rightarrow A_H\!>\!0$};
-        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
-          {rate $O(q^{-1/2})$};
-        \node[font=\tiny\sffamily,text=cproved,right=2pt] at (W1.east)
-          {fibre-inv.\ $\Rightarrow$ uniform};
+          % ── Status annotations ───────────────────────────────
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
+            {spectral atomicity};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
+            {coercivity $\Rightarrow A_H\!>\!0$};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
+            {rate $O(q^{-1/2})$};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (W1.east)
+            {fibre-inv.\ $\Rightarrow$ uniform};
 
         \end{tikzpicture}
       }
@@ -2015,6 +2021,17 @@ O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
       $\mu_\chi = \partial_s^2 \mathcal{B}_{\mathrm{sat}}(0) = \tfrac{1}{2} P_{\chi,\mu\nu} P_\chi^{\mu\nu}$;
       split existence/stability reduced to Lorentzian genus of $P_\chi$ in $g^{\mu\nu} = 2\eta^{\mu\nu}$;
       genus determined electric in the Schur-transverse branch ($\mu_\chi^2 < 0$, $u \neq 0$), amplitude $|u|$ open &
+      \sstruct \\[3pt]
+      AOG-Note & Arithmetic orthogonality of the ADE gate & \cite{Beau2026aog} &
+      $\varepsilon = 1/10$ is a theorem modulo the ADE case-selection gate:
+      $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ trivial and
+      case-independent (proved);
+      obstruction characterised as arithmetic orthogonality in $\mathbb{Q}(\zeta_q,\sqrt{5})$: BI parity is complex
+      conjugation $(\zeta_q\mapsto\zeta_q^{-1},\sqrt{5}\mapsto\sqrt{5})$, in a distinct Galois factor from the
+      Galois-spin action $(\zeta_q\mapsto\zeta_q,\sqrt{5}\mapsto-\sqrt{5})$ (proved);
+      order-five vs order-ten below projective parity resolution;
+      negative theorem proved modulo type-rigidity along the recursive non-injectivity tower
+      (base fibre closed, recursive strata open) &
       \sstruct \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
