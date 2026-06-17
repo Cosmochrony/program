@@ -1140,6 +1140,19 @@
         "Quark colour sector conditional on [H-color]."
     },
     {
+      id: "CHO", lbl: "CHO", s: "structural", b: "III", key: "Beau2026cho",
+      url: ZEN + "20735907",
+      tags: ["SM"],
+      title: "CHO — Chiral Orientation of the Directed Heisenberg Frontier",
+      desc: "Resolves the chiral weight σ_L left deferred by the oriented-frontier diagnostic. " +
+        "σ_L is not a function of the cascade generator T(e) (edge inversion and the residual reflection φ both " +
+        "send T→−T, forcing equal arrow/φ parity), but the Weyl representation type 2 vs 2̄: group inversion " +
+        "preserves it, complex conjugation exchanges it. In the inherited Heisenberg central-phase lift the edge " +
+        "phase is the linear cyclotomic character ζ_q^(ΔA_c) — no Gauss, Maslov, or √5 component — giving ρ_χ=1 " +
+        "and N_A=θ_max≠0, q-invariant on q∈{61,101,151}. [H-orient] closed in the inherited lift; residual open: " +
+        "an additional spin-Galois (√5 / ADE-spin) phase orthogonal to ζ_q. Does not derive u≠0 (Schur transport)."
+    },
+    {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
       tags: ["spt"],
       title: "Spectral2 — Relational Spacetime",
@@ -1368,7 +1381,7 @@
     { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
     { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" }, { f: "BI", t: "Q13" },
-    { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
+    { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" }, { f: "Q14", t: "CHO" },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
     { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" }, { f: "PTO", t: "LorCap" },
     { f: "LorCap", t: "TempProj", sp: 1 }, { f: "TempProj", t: "LCII", sp: 1 }, { f: "Grav", t: "LCII" },
@@ -1464,6 +1477,7 @@
     Q12: { x: 9 * X, y: 13 * Y },
     Q13: { x: 9 * X, y: 14 * Y },
     Q14: { x: 9 * X, y: 15 * Y },
+    CHO: { x: 9 * X, y: 16 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
