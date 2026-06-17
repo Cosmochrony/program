@@ -1032,6 +1032,23 @@ A Structural Roadmap and Paper Inventory}
     value, no $\varepsilon$ enters: the note tests only whether the recursion produces a non-zero,
     bias-free oriented signal.
 
+    \textbf{CHO}~\cite{Beau2026cho}: Chiral orientation of the directed Heisenberg frontier (\sstruct,
+    conditional). Companion note resolving the chiral weight $\sigma_L$ left deferred by Q11OF. A parity argument
+    closes the route $\sigma_L = f(T(e))$: edge inversion $U(e^{-1}) = U(e)^{-1}$ and the residual reflection both
+    send the $J_\Pi$-odd cascade generator $T(e) \mapsto -T(e)$, so every function of $T$ has equal arrow- and
+    $\varphi$-parity, whereas the admissible weight must be arrow-even and $\varphi$-odd (\sproved). The resolution
+    is that $\sigma_L$ is the Weyl representation type $\mathbf{2}$ versus $\bar{\mathbf{2}}$: group inversion
+    preserves the representation and complex conjugation exchanges it, the unique label distinguished by the
+    conjugation that separates $\varphi$ from arrow inversion (\sstruct). In the inherited Heisenberg central-phase
+    lift the edge phase is the linear cyclotomic character $\zeta_q^{\Delta A_c}$, with no Gauss, Maslov, or
+    $\sqrt{5}$ component, and the natural branch gives $\sigma_L = \mathrm{sign}\,\Delta A_c$ on the cocycle
+    support, hence $\rho_\chi = 1$ and $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-invariant on
+    $q \in \{61,101,151\}$ (\sproved\ within that convention). Thus [H-orient] is closed in the inherited
+    central-phase lift; the residual open point is an additional spin-Galois phase of the full Lorentzian chiral
+    lift, in particular a $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$, the same arithmetic orthogonality
+    governing the ADE gate~\cite{Beau2026aog} (\sopen). It fixes the frontier amplitude datum conditionally and
+    does not derive $u \neq 0$, which still requires the Schur transport~\cite{Beau2026prs}.
+
     \textbf{A4-Note}~\cite{Beau2026bim}: The Born--Infeld saturation margin of the chiral
     modulus (\sstruct). Companion note to PRS discharging its first open deliverable: definition
     of the Lorentzian saturation functional $\mathcal{B}_{\mathrm{sat}}(s)$ along the
@@ -1558,6 +1575,11 @@ A Structural Roadmap and Paper Inventory}
             {oriented frontier};
           \draw[arr] (AAR) to[out=-90,in=90]  (Q11OF);
 
+          \node[S] (CHO) at (2*\dx,-16*\dy) {CHO};
+          \node[font=\tiny\sffamily,text=cstruct,left=2pt] at (CHO.west)
+            {[H-orient] inherited};
+          \draw[arr] (Q11OF) to[out=-90,in=90]  (CHO);
+
           \node[S] (A4Note) at (3*\dx,-15*\dy) {A4-Note};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (A4Note.east)
             {BI saturation margin};
@@ -1577,6 +1599,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[synth] (Q11OF)  to[out=40,in=-170] (FMNote);
           \draw[synth] (A4Note) to[out=20,in=-160] (FMNote);
           \draw[synth] (AOG)    to[out=90,in=-90]  (FMNote);
+          \draw[synth] (CHO)    to[out=10,in=-178] (FMNote);
 
         \end{tikzpicture}
       }
@@ -1593,7 +1616,7 @@ A Structural Roadmap and Paper Inventory}
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
         \textbf{QS-Note}, Q12 and Q13 into the gauge--gravity stratification
-        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR, Q11OF, A4-Note and AOG-Note into the
+        \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR, Q11OF, CHO, A4-Note and AOG-Note into the
         fermionic-matter \textbf{FM-Note}.
         The dashed green arrow from Q7 leads to the geometric emergence closure block
         Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
