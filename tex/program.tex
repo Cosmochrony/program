@@ -1044,10 +1044,12 @@ A Structural Roadmap and Paper Inventory}
     $\sqrt{5}$ component, and the natural branch gives $\sigma_L = \mathrm{sign}\,\Delta A_c$ on the cocycle
     support, hence $\rho_\chi = 1$ and $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-invariant on
     $q \in \{61,101,151\}$ (\sproved\ within that convention). Thus [H-orient] is closed in the inherited
-    central-phase lift; the residual open point is an additional spin-Galois phase of the full Lorentzian chiral
-    lift, in particular a $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$, the same arithmetic orthogonality
-    governing the ADE gate~\cite{Beau2026aog} (\sopen). It fixes the frontier amplitude datum conditionally and
-    does not derive $u \neq 0$, which still requires the Schur transport~\cite{Beau2026prs}.
+    central-phase lift; the residual point --- a possible additional spin-Galois phase of the full Lorentzian chiral
+    lift, in particular a $\sqrt{5}$ or ADE-spin factor orthogonal to $\zeta_q$ --- is now discharged by the
+    chiral-lift corollary of AOG-Note~\cite{Beau2026aog}: the same arithmetic orthogonality shows the Lorentzian lift
+    induces no action on $\mathbb{Q}(\sqrt{5})$, so [H-orient] holds unconditionally within the present spin stratum
+    (\sproved). It fixes the frontier amplitude datum $\mathcal{N}_A \neq 0$ but does not derive $u \neq 0$, which
+    still requires the Schur transport~\cite{Beau2026prs}.
 
     \textbf{A4-Note}~\cite{Beau2026bim}: The Born--Infeld saturation margin of the chiral
     modulus (\sstruct). Companion note to PRS discharging its first open deliverable: definition
@@ -1071,9 +1073,9 @@ A Structural Roadmap and Paper Inventory}
     amplitude reduces to the sign of the cubic backreaction $P_\chi \cdot R_\chi$ and a boundary-versus-interior
     selection of the saturation problem, leaving $|u|$ as the open deliverable.
 
-    \textbf{AOG-Note}~\cite{Beau2026aog}: Arithmetic orthogonality of the ADE case-selection gate
-    (\sproved\ for the gate, with one \sopen\ point). Transversal note isolating the logical status of the
-    generation-split value
+    \textbf{AOG-Note}~\cite{Beau2026aog}: Spin-stratum type-rigidity --- orthogonality of the ADE gate and closure of
+    the chiral lift (\sproved\ for the gate and the chiral lift, with the full-tower generalisation \sopen).
+    Transversal note isolating the logical status of the generation-split value
     $\varepsilon = 1/10$. It is shown to be a theorem modulo the ADE case-selection gate: the algebra
     $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ is trivial and
     case-independent (\sproved), so the first-principles status of $\varepsilon$ is exactly that of the gate.
@@ -1086,6 +1088,13 @@ A Structural Roadmap and Paper Inventory}
     The negative theorem --- that A1--A4, ENI~Corollary~6~\cite{Beau2026l} and the A4 locking do not supply the
     Galois-spin action --- is \sproved\ as a no-go for the gate, unconditional in the present corpus construction by a
     character-table audit of $2I$; only the full-tower generalisation remains \sopen.
+    The same spin-stratum type-rigidity has a second consequence of opposite sign (the chiral-lift corollary): the
+    Lorentzian chiral lift of the ordered cascade step induces no action on $\mathbb{Q}(\sqrt{5})$ --- the chiral
+    weight $\sigma_L$ is the Weyl-conjugation type, living in the parity factor and not the $\sqrt{5}$ factor --- so it
+    discharges the residual obstruction of the chiral orientation note and closes [H-orient] with
+    $\mathcal{N}_A \neq 0$ unconditionally within the present spin stratum~\cite{Beau2026cho} (\sproved).
+    For the gate the rigidity is fatal, the required $\sqrt{5}$ action being absent; for the chiral lift it is the
+    closure, the feared $\sqrt{5}$ action being absent.
 
   \subsection{Gravity and Spacetime Track}
 
@@ -1589,6 +1598,8 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (AOG.east)
             {ADE gate status};
           \draw[arr,dashed] (Q14) to[out=-45,in=180] (AOG);
+          \draw[arr,dashed] (AOG) to[out=-135,in=-10]
+            node[font=\tiny\sffamily,text=cproved,below=1pt,midway] {chiral-lift cor.} (CHO);
 
 % Fermionic matter sub-programme synthesis (presentation note 6):
 % aggregates Q14, PRS, AAR, Q11OF, A4-Note and AOG-Note.
@@ -2046,7 +2057,7 @@ A Structural Roadmap and Paper Inventory}
       split existence/stability reduced to Lorentzian genus of $P_\chi$ in $g^{\mu\nu} = 2\eta^{\mu\nu}$;
       genus determined electric in the Schur-transverse branch ($\mu_\chi^2 < 0$, $u \neq 0$), amplitude $|u|$ open &
       \sstruct \\[3pt]
-      AOG-Note & Arithmetic orthogonality of the ADE gate & \cite{Beau2026aog} &
+      AOG-Note & Spin-stratum type-rigidity: ADE gate orthogonality + chiral-lift closure & \cite{Beau2026aog} &
       $\varepsilon = 1/10$ is a theorem modulo the ADE case-selection gate:
       $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ trivial and
       case-independent (proved);
@@ -2055,7 +2066,10 @@ A Structural Roadmap and Paper Inventory}
       Galois-spin action $(\zeta_q\mapsto\zeta_q,\sqrt{5}\mapsto-\sqrt{5})$ (proved);
       order-five vs order-ten below projective parity resolution;
       negative theorem a no-go for the gate, unconditional in the present construction by a character-table audit of
-      $2I$, with only the full-tower generalisation open &
+      $2I$, with only the full-tower generalisation open;
+      chiral-lift corollary: same rigidity discharges the residual obstruction of CHO, the Lorentzian lift inducing no
+      $\sqrt{5}$ action, closing [H-orient] with $\mathcal{N}_A\neq0$ unconditionally in the present spin stratum
+      (proved) &
       \sproved\ /\ \sopen \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
