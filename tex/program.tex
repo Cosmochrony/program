@@ -1092,6 +1092,19 @@ A Structural Roadmap and Paper Inventory}
     $Y_\Pi : \mathcal{S}_{L,\Pi} \otimes L_Y \to \mathcal{S}_{R,\Pi}$, whose norm, the sign of $u$, and the complex
     mixing phase carry the absolute masses and the mixing; no mass value is claimed.
 
+    \textbf{PYO}~\cite{Beau2026pyo}: Projected Yukawa operator and chiral polar factor (\sstruct).
+    Companion note taking the second step of the mass-sector frontier, with a sharp partial no-go at its entry.
+    The Schur-residue sector determines the positive hermitian square $H_\Pi := Y_\Pi^\dagger Y_\Pi$, with
+    $\mathrm{Spec}(H_\Pi)|_{\mathbb{C}^3_{\mathrm{gen}}} = \lambda_Y^2\,\{1, \tfrac12 + u, \tfrac12 - u\}$, so
+    $E_\Pi^2|_{\mathbb{C}^3_{\mathrm{gen}}}$ fixes the squared Yukawa levels, not the morphism.
+    By polar decomposition $Y_\Pi = U_\Pi H_\Pi^{1/2}$ with $U_\Pi$ a unitary chiral map on the support of $H_\Pi$, so
+    $H_\Pi$ determines $Y_\Pi$ only up to $U_\Pi$: the chiral orientation and the complex mixing phase live in $U_\Pi$,
+    while the positive norm $\lambda_Y$ is a separate scale of $H_\Pi$, neither visible to $E_\Pi^2$.
+    The CP-real branch $U_\Pi = \mathbf{1}$ is the diagonal no-mixing choice ($v = 0$); a non-trivial $U_\Pi$ needs the
+    complex metaplectic phase.
+    Front~3b is thereby closed as a squared-Yukawa-levels result, not a mixing result: $E_\Pi^2$ can close
+    $H_\Pi = Y_\Pi^\dagger Y_\Pi$ but cannot close $Y_\Pi$ unless $U_\Pi$ is fixed.
+
     \textbf{AOG-Note}~\cite{Beau2026aog}: Spin-stratum type-rigidity --- orthogonality of the ADE gate and closure of
     the chiral lift (\sproved\ for the gate and the chiral lift, with the full-tower generalisation \sopen).
     Transversal note isolating the logical status of the generation-split value
@@ -2101,6 +2114,15 @@ A Structural Roadmap and Paper Inventory}
       method lock: $L_Y$ fixes the coupling line, $E_\Pi^2$ fixes the levels, the mass comes after;
       open downstream: the Yukawa operator $Y_\Pi$, its norm, $\operatorname{sign}(u)$, and the mixing phase &
       \sstruct \\[3pt]
+      PYO & Projected Yukawa operator + chiral polar factor & \cite{Beau2026pyo} &
+      Second mass-sector step, partial no-go: the Schur-residue sector fixes the positive hermitian square
+      $H_\Pi := Y_\Pi^\dagger Y_\Pi$ with $\mathrm{Spec}(H_\Pi)|_{\mathbb{C}^3_{\mathrm{gen}}} =
+      \lambda_Y^2\{1,\tfrac12+u,\tfrac12-u\}$, so $E_\Pi^2$ fixes the squared Yukawa levels, not the morphism;
+      polar decomposition $Y_\Pi = U_\Pi H_\Pi^{1/2}$ leaves the unitary chiral factor $U_\Pi$ (chiral orientation +
+      complex mixing phase) free, with the norm $\lambda_Y$ a separate scale of $H_\Pi$, neither seen by $E_\Pi^2$;
+      CP-real branch $U_\Pi = \mathbf{1}$ is diagonal no-mixing ($v=0$);
+      Front~3b closed as squared-Yukawa levels, not mixing &
+      \sstruct \\[3pt]
       AOG-Note & Spin-stratum type-rigidity: ADE gate orthogonality + chiral-lift closure & \cite{Beau2026aog} &
       $\varepsilon = 1/10$ is a theorem modulo the ADE case-selection gate:
       $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ trivial and
@@ -2246,8 +2268,12 @@ A Structural Roadmap and Paper Inventory}
     projected Dirac operator.
     In the mass sector the Yukawa line is now closed: $L_Y = \wedge^2(\mathcal{S}_\Pi)$ and the generation-level
     assignment from $E_\Pi^2|_{\mathbb{C}^3_{\mathrm{gen}}} = \mathrm{diag}(1, \tfrac12+u, \tfrac12-u)$ are
-    structural~\cite{Beau2026pyl}, leaving open the projected Yukawa operator $Y_\Pi$, its norm $\|Y_\Pi\|$,
-    $\operatorname{sign}(u)$, and the mixing phase, hence the absolute masses and mixing.
+    structural~\cite{Beau2026pyl}.
+    The Yukawa operator splits further: its hermitian square $H_\Pi = Y_\Pi^\dagger Y_\Pi$ is closed, with
+    $\mathrm{Spec}(H_\Pi)|_{\mathbb{C}^3_{\mathrm{gen}}} = \lambda_Y^2\{1,\tfrac12+u,\tfrac12-u\}$, so $E_\Pi^2$ fixes
+    the squared Yukawa levels, not the morphism~\cite{Beau2026pyo}; what stays open is the chiral polar factor $U_\Pi$
+    in $Y_\Pi = U_\Pi H_\Pi^{1/2}$ (chiral orientation and complex mixing phase), the separate norm $\lambda_Y$, and
+    hence the absolute masses and mixing.
     The radial factor of the split modulus is fixed in form, $s_* = \beta/|E_P|$ in the affine electric
     gauge~\cite{Beau2026bim}, without numerical prediction.
 
