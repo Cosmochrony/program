@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: program.aux
 The style file: plain.bst
 Database file #1: cosmochrony-bibliography.bib
-You've used 99 entries,
+You've used 100 entries,
             2118 wiz_defined-function locations,
-            899 strings with 33069 characters,
-and the built_in function-call counts, 20416 in all, are:
-= -- 1881
-> -- 693
+            903 strings with 33391 characters,
+and the built_in function-call counts, 20624 in all, are:
+= -- 1900
+> -- 700
 < -- 0
-+ -- 297
-- -- 198
-* -- 596
-:= -- 3377
-add.period$ -- 297
-call.type$ -- 99
-change.case$ -- 396
++ -- 300
+- -- 200
+* -- 602
+:= -- 3413
+add.period$ -- 300
+call.type$ -- 100
+change.case$ -- 400
 chr.to.int$ -- 0
-cite$ -- 99
-duplicate$ -- 693
-empty$ -- 2179
-format.name$ -- 198
-if$ -- 4456
+cite$ -- 100
+duplicate$ -- 700
+empty$ -- 2201
+format.name$ -- 200
+if$ -- 4501
 int.to.chr$ -- 0
-int.to.str$ -- 99
+int.to.str$ -- 100
 missing$ -- 0
-newline$ -- 498
-num.names$ -- 198
-pop$ -- 891
+newline$ -- 503
+num.names$ -- 200
+pop$ -- 900
 preamble$ -- 1
-purify$ -- 297
+purify$ -- 300
 quote$ -- 0
-skip$ -- 692
+skip$ -- 698
 stack$ -- 0
-substring$ -- 495
-swap$ -- 99
+substring$ -- 500
+swap$ -- 100
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 396
+type$ -- 400
 warning$ -- 0
-while$ -- 198
-width$ -- 101
-write$ -- 992
+while$ -- 200
+width$ -- 103
+write$ -- 1002

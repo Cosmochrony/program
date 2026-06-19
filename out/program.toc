@@ -22,27 +22,27 @@
 \contentsline {section}{\numberline {5}Branch III: Q-Series and Physical Applications}{10}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Q-Series: Quantum Mechanics and Spacetime Emergence}{10}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Gravity and Spacetime Track}{16}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Lorentz Capacity Sub-Programme}{16}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Standard Model Companion Papers}{17}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Cosmological and Condensed-Matter Applications}{18}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.3}Lorentz Capacity Sub-Programme}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Standard Model Companion Papers}{18}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Cosmological and Condensed-Matter Applications}{19}{subsection.5.5}%
 \contentsline {section}{\numberline {6}Dependency Structure}{19}{section.6}%
 \contentsline {paragraph}{Foundational path.}{19}{section*.7}%
 \contentsline {paragraph}{Spectral path.}{19}{section*.8}%
 \contentsline {paragraph}{Physical path.}{19}{section*.9}%
-\contentsline {section}{\numberline {7}Open Problems}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Branch II (O-Series)}{31}{subsection.7.1}%
-\contentsline {paragraph}{Extension of O29 to larger primes.}{31}{section*.10}%
-\contentsline {paragraph}{Non-conjugate block protocol.}{31}{section*.11}%
-\contentsline {paragraph}{Analytical control of $n_1(q)/q$.}{31}{section*.12}%
-\contentsline {paragraph}{Notation consolidation: $c_\chi \to c_{\mathrm {BI}}$.}{31}{section*.13}%
-\contentsline {subsection}{\numberline {7.2}Branch III (Q-Series and Applications)}{31}{subsection.7.2}%
-\contentsline {paragraph}{Bridge existence at finite $q$ (Q7--Q10).}{31}{section*.14}%
-\contentsline {paragraph}{$\pi _2(\mathcal {C}_{\mathrm {eff}}) = 0$ beyond the canonical model (TopologicalInvariants, Remark 4.2).}{31}{section*.15}%
-\contentsline {paragraph}{Full SM gauge group: [H-color] and O32 (Q6a, O31).}{31}{section*.16}%
-\contentsline {paragraph}{Baryon-to-photon ratio (SMchargemass).}{31}{section*.17}%
-\contentsline {paragraph}{$V-A$ chiral structure and fermionic matter (Q14).}{31}{section*.18}%
+\contentsline {section}{\numberline {7}Open Problems}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Branch II (O-Series)}{30}{subsection.7.1}%
+\contentsline {paragraph}{Extension of O29 to larger primes.}{30}{section*.10}%
+\contentsline {paragraph}{Non-conjugate block protocol.}{30}{section*.11}%
+\contentsline {paragraph}{Analytical control of $n_1(q)/q$.}{30}{section*.12}%
+\contentsline {paragraph}{Notation consolidation: $c_\chi \to c_{\mathrm {BI}}$.}{30}{section*.13}%
+\contentsline {subsection}{\numberline {7.2}Branch III (Q-Series and Applications)}{32}{subsection.7.2}%
+\contentsline {paragraph}{Bridge existence at finite $q$ (Q7--Q10).}{32}{section*.14}%
+\contentsline {paragraph}{$\pi _2(\mathcal {C}_{\mathrm {eff}}) = 0$ beyond the canonical model (TopologicalInvariants, Remark 4.2).}{32}{section*.15}%
+\contentsline {paragraph}{Full SM gauge group: [H-color] and O32 (Q6a, O31).}{32}{section*.16}%
+\contentsline {paragraph}{Baryon-to-photon ratio (SMchargemass).}{32}{section*.17}%
+\contentsline {paragraph}{$V-A$ chiral structure and fermionic matter (Q14).}{32}{section*.18}%
 \contentsline {paragraph}{Gauge--gravity synthesis (Q12 $\to $ Q13).}{32}{section*.19}%
 \contentsline {paragraph}{Yang--Mills uniqueness for SU(3) (Q12, O31).}{32}{section*.20}%
-\contentsline {paragraph}{Lorentz Capacity Sub-Programme.}{32}{section*.21}%
-\contentsline {paragraph}{Thermodynamics: Lorentzian extension and matter coupling.}{32}{section*.22}%
-\contentsline {section}{\numberline {8}Conclusion}{33}{section.8}%
+\contentsline {paragraph}{Lorentz Capacity Sub-Programme.}{33}{section*.21}%
+\contentsline {paragraph}{Thermodynamics: Lorentzian extension and matter coupling.}{33}{section*.22}%
+\contentsline {section}{\numberline {8}Conclusion}{34}{section.8}%

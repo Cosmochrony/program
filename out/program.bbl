@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Beau2026a12}
 J.~Beau.
@@ -599,6 +599,14 @@ J\'er\^ome Beau.
   $L_Y=\wedge^2(\mathcal{S}_\Pi)$ and the generation-level assignment from
   $E_\Pi^2|_{\mathrm{gen}}=\mathrm{diag}(1,\tfrac12+u,\tfrac12-u)$ --- without
   deriving mass values, \doi{10.5281/zenodo.20767265}.
+
+\bibitem{Beau2026pyo}
+J\'er\^ome Beau.
+\newblock {Projected Yukawa Operator and Chiral Polar Factor}, 2026.
+\newblock Fermionic matter sub-programme companion note: the squared Yukawa
+  observable $H_\Pi=Y_\Pi^\dagger Y_\Pi$ and the chiral polar ambiguity
+  $Y_\Pi=U_\Pi H_\Pi^{1/2}$ --- $E_\Pi^2$ fixes the squared levels, not the
+  morphism, \doi{10.5281/zenodo.20767498}.
 
 \bibitem{Beau2026fe}
 J\'er\^ome Beau.
