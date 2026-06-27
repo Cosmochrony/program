@@ -44,5 +44,5 @@
 \contentsline {paragraph}{Gauge--gravity synthesis (Q12 $\to $ Q13).}{34}{section*.19}%
 \contentsline {paragraph}{Yang--Mills uniqueness for SU(3) (Q12, O31).}{34}{section*.20}%
 \contentsline {paragraph}{Lorentz Capacity Sub-Programme.}{34}{section*.21}%
-\contentsline {paragraph}{Thermodynamics: Lorentzian extension and matter coupling.}{34}{section*.22}%
-\contentsline {section}{\numberline {8}Conclusion}{35}{section.8}%
+\contentsline {paragraph}{Thermodynamics: Lorentzian extension and matter coupling.}{35}{section*.22}%
+\contentsline {section}{\numberline {8}Conclusion}{36}{section.8}%
