@@ -522,15 +522,18 @@ A Structural Roadmap and Paper Inventory}
     The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
     analysis of $V_\rho \subset H_{\mathrm{eff}}$ is carried out in O29.
 
-    \textbf{O29}~\cite{Beau2026a33}: Spin-$\tfrac{1}{2}$ sector identification via the
-    symmetric rank formula (\sstruct, numerically confirmed).
-    The Born--Infeld parity constraint $\pi_{q-c}(v) = \overline{\pi_c(v)}$ (O18) is proved to force
-    every outer product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ into the complex symmetric
-    subspace $\mathrm{Sym}(V_\rho, \mathbb{C}) \subset \mathrm{End}(H_{\mathrm{eff}})$.
-    This is an algebraic identity, not lifted by any complex-linear reparametrisation.
-    The resulting covariance rank satisfies the \emph{symmetric rank formula}
-    $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$, whose unique positive integer inversion at
-    $r_{\mathrm{eff}} = 3$ gives $d_\rho = 2$, confirming the spin-$\tfrac{1}{2}$ sector.
+    \textbf{O29}~\cite{Beau2026a33}: Carrier identification via the Veronese collapse
+    (\sstruct, numerically confirmed).
+    The Born--Infeld parity constraint $\pi_{q-c}(v) = \overline{\pi_c(v)}$ (O18) is anti-linear, so every outer
+    product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ is complex symmetric; the conjugate-pair target
+    $d_\rho^2 = 4$ is inaccessible by construction and is restored only by the locking-broken control.
+    On the O25/Q5a checkpoints the admissible trajectory spans all three complex dimensions of
+    $H_{\mathrm{eff}}$, and $r_{\mathrm{eff}} = 3$ is the hard $6 \to 3$ collapse of the Veronese (squaring)
+    image: the three constraint forms span $\mathfrak{so}(3)$ and the action on $H_{\mathrm{eff}} = \mathbb{C}^3$
+    is irreducible (one-dimensional Schur commutant).
+    Thus $r_{\mathrm{eff}} = 3$ identifies the irreducible adjoint carrier
+    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2) \cong \mathrm{Sym}^2(V_\rho)$, the spin-$1$ (vector)
+    representation, consistent with Q7~\cite{Beau2026q7}.
     Numerically: $r_{\mathrm{eff}} = 3$ universally for $q = 61$ (30/30 pairs) and
     $q = 151$ (75/75 pairs) with zero inter-pair variance;
     at $q = 211$ (105/105 pairs, $100\%$, multi-sample confirmed), $r_{\mathrm{eff}} = 3$
@@ -539,9 +542,10 @@ A Structural Roadmap and Paper Inventory}
     is confirmed by a dedicated multi-sample analysis ($M = 5$ resamples per anomalous pair,
     $76.7\%$ of (pair, sample) cells satisfy $r_{\mathrm{eff}} = 3$, with modal $r_{\mathrm{eff}}=3$
     for all $18$ pairs), confirming $d_\rho=2$ at the modal level.
-    The O26 Criterion~5.4 is reformulated for conjugate-pair data:
-    $d_\rho^2 = 4 \to d_\rho(d_\rho+1)/2$; spin-$\tfrac{1}{2}$ satisfies the
-    reformulated criterion exactly.
+    The O26 Criterion~5.4 is thereby reinterpreted as a carrier test: $r_{\mathrm{eff}} = 3$ identifies the
+    spin-$1$ carrier $H_{\mathrm{eff}}$.
+    The spin-$\tfrac{1}{2}$ sector is the Schur target $V_\rho$ of $\bar\Phi : \mathfrak{su}(2) \to V_\rho$,
+    not identified by Test~4; it stays selected by the minimality argument of O26.
 
     \textbf{O30}~\cite{Beau2026a34}: Analytical derivation of the eigenvalue ratio
     $\lambda_1/\lambda_2 = 2$ (\sproved).
@@ -1951,11 +1955,11 @@ A Structural Roadmap and Paper Inventory}
       $r_{\mathrm{eff}}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, eigenstructure
       $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
       \sstruct \\[3pt]
-      O29 & Symmetric rank formula \& sector ID & \cite{Beau2026a33} &
-      BI parity forces $M_j \in \mathrm{Sym}(V_\rho,\mathbb{C})$;
-      $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$; unique inversion at $r_{\mathrm{eff}}=3$ gives
-      $d_\rho=2$ (spin-$\tfrac{1}{2}$); confirmed for $q \in \{61,101,151,211\}$;
-      $q=101$ anomaly resolved by multi-sample analysis &
+      O29 & Veronese collapse \& carrier ID & \cite{Beau2026a33} &
+      BI parity (anti-linear) makes $d_\rho^2=4$ inaccessible; $r_{\mathrm{eff}}=3$ is the hard $6\to3$ Veronese
+      collapse ($\mathfrak{so}(3)$ constraint forms, irreducible action), identifying the adjoint spin-$1$ carrier
+      $H_{\mathrm{eff}}\simeq\mathfrak{su}(2)\cong\mathrm{Sym}^2(V_\rho)$; spin-$\tfrac{1}{2}$ is the Schur target
+      $V_\rho$, not identified by Test~4; confirmed for $q \in \{61,101,151,211\}$ &
       \sstruct \\[3pt]
       O30 & Eigenvalue ratio $\lambda_1/\lambda_2$ & \cite{Beau2026a34} &
       BI parity forces equatorial constraint $|\alpha_j|=|\beta_j|$;
@@ -2261,9 +2265,10 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Branch II (O-Series)}
 
     \paragraph{Extension of O29 to larger primes.}
-      The symmetric rank formula is confirmed for $q \in \{61, 101, 151, 211\}$
+      The carrier rank $r_{\mathrm{eff}} = 3$ is confirmed for $q \in \{61, 101, 151, 211\}$
       ($105/105$ pairs at $q=211$, $100\%$, multi-sample confirmed).
-      Extension of the numerical computation to $q \in \{307, 401\}$ is pending.
+      Extension of the carrier diagnostics (Veronese collapse, $\mathfrak{so}(3)$ span, Schur commutant) to
+      $q \in \{307, 401\}$ is pending.
 
     \paragraph{Non-conjugate block protocol.}
       A measurement protocol using non-conjugate block data (e.g.\ the $c$-block at
@@ -2442,9 +2447,10 @@ A Structural Roadmap and Paper Inventory}
   with neutral generating sets, closing the precursor programme for the O-series.
   Branch~II (O-series) has closed the unconditional transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^*$
   analytically~(O24) and numerically validated for $q \in \{29, 61, 101, 151, 211\}$~(O25).
-  The spin-$\tfrac{1}{2}$ sector identification is complete~(O29): the symmetric rank formula
-  $r_{\mathrm{eff}} = d_\rho(d_\rho+1)/2$ uniquely identifies $d_\rho = 2$ from the observed $r_{\mathrm{eff}} = 3$,
-  confirmed numerically for $q \in \{61, 101, 151\}$.
+  The carrier identification is complete~(O29): $r_{\mathrm{eff}} = 3$ is the hard $6 \to 3$ Veronese-collapse
+  invariant of the irreducible adjoint (spin-$1$) carrier $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$, confirmed
+  numerically for $q \in \{61, 101, 151, 211\}$; the spin-$\tfrac{1}{2}$ sector is the Schur target $V_\rho$,
+  selected by minimality and not identified by Test~4.
   The invariant eigenvalue ratio $\lambda_1/\lambda_2 = 2$ of the per-pair covariance is
   now analytically derived~(O30): the Born--Infeld parity anti-linearity forces an equatorial
   constraint on the admissible fibre, and the factor of~$2$ is purely structural---the squared
