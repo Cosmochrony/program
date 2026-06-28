@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {5.3}Lorentz Capacity Sub-Programme}{17}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Standard Model Companion Papers}{18}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Cosmological and Condensed-Matter Applications}{19}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Dependency Structure}{19}{section.6}%
+\contentsline {section}{\numberline {6}Dependency Structure}{20}{section.6}%
 \contentsline {paragraph}{Foundational path.}{20}{section*.7}%
 \contentsline {paragraph}{Spectral path.}{20}{section*.8}%
 \contentsline {paragraph}{Physical path.}{20}{section*.9}%
@@ -43,6 +43,6 @@
 \contentsline {paragraph}{$V-A$ chiral structure and fermionic matter (Q14).}{33}{section*.18}%
 \contentsline {paragraph}{Gauge--gravity synthesis (Q12 $\to $ Q13).}{34}{section*.19}%
 \contentsline {paragraph}{Yang--Mills uniqueness for SU(3) (Q12, O31).}{34}{section*.20}%
-\contentsline {paragraph}{Lorentz Capacity Sub-Programme.}{34}{section*.21}%
+\contentsline {paragraph}{Lorentz Capacity Sub-Programme.}{35}{section*.21}%
 \contentsline {paragraph}{Thermodynamics: Lorentzian extension and matter coupling.}{35}{section*.22}%
 \contentsline {section}{\numberline {8}Conclusion}{36}{section.8}%
