@@ -880,7 +880,14 @@
       url: BASE + "spectral/program/o28",
       tags: ["mass", "QM"],
       title: "O28 — Window Calibration & r_eff",
-      desc: "Part A: n₁(q)/q decreasing 0.138→0.066 (Scenario S2); δ_corr∈[7.4,10.6] for all q∈{29,61,101,151,211}. Part B: r_eff=3 in End(H_eff), eigenstructure [1:½:½] invariant across all pairs and q∈{61,101,151}. Gap from d_ρ²=4 reflects H_eff≠V_ρ; analysis completed in O29."
+      desc: "Part A: out of sample to q=601 the linear law fails (overpredicts up to +88%) and n₁(q)/q→0 (only the linear hypothesis excluded; reframed via x₁(q) in CC-Note). Part B: r_eff=3 in End(H_eff), eigenstructure [1:½:½] invariant across all pairs and q∈{61,101,151}. Gap from d_ρ²=4 reflects H_eff≠V_ρ; analysis completed in O29."
+    },
+    {
+      id: "CCNote", lbl: "CC-Note", s: "open", b: "II", key: "Beau2026ccnote",
+      url: BASE + "spectral/program/critical-coverage",
+      tags: ["mass", "QM"],
+      title: "CC-Note — Critical Coverage & the Saturation Depth Problem",
+      desc: "Reframes the O25–O28 saturation-depth open direction. n₁ is a marginal-novelty stop (rank far from full at n₁). With |B_n|~C_Heis·n⁴ (D=4) and λ₂≈4π²/q², the exact reduction n₁=(x₁/C_Heis)^{1/4}√q collapses the asymptotics onto the critical coverage x₁(q)=|B_{n₁}|/q². x₁ falls 0.61→0.15 (q=101→601), excluding the constant-coverage (clean √q) scenario; front: Φ'(x₁)=ε_sat·q. Open: a structural law for x₁(q)."
     },
     {
       id: "O29", lbl: "O29", s: "structural", b: "II", key: "Beau2026a33",
@@ -1377,6 +1384,7 @@
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "O29", t: "O30", sp: 1 },
     { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32", sp: 1 }, { f: "O31", t: "Q6a" },
+    { f: "O25", t: "CCNote", sp: 1 }, { f: "O28", t: "CCNote", sp: 1 },
     { f: "SpA", t: "SpANote", syn: 1 }, { f: "SpCap", t: "SpANote", syn: 1 }, { f: "SpG", t: "SpANote", syn: 1 }, { f: "ThGn", t: "SpANote", syn: 1 }, { f: "SpR", t: "SpANote", syn: 1 },
     { f: "O1", t: "SpANote", syn: 1 }, { f: "O3", t: "SpANote", syn: 1 }, { f: "O4", t: "SpANote", syn: 1 }, { f: "O5", t: "SpANote", syn: 1 }, { f: "O6", t: "SpANote", syn: 1 }, { f: "O7", t: "SpANote", syn: 1 }, { f: "O8", t: "SpANote", syn: 1 },
     { f: "O9", t: "SpANote", syn: 1 }, { f: "O10", t: "SpANote", syn: 1 }, { f: "O11", t: "SpANote", syn: 1 }, { f: "O12", t: "SpANote", syn: 1 }, { f: "O13", t: "SpANote", syn: 1 }, { f: "O14", t: "SpANote", syn: 1 }, { f: "O15", t: "SpANote", syn: 1 },

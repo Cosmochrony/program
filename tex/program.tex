@@ -506,9 +506,11 @@ A Structural Roadmap and Paper Inventory}
     equivariance, quadratic compatibility, and naturality factors through $\mathfrak{su}(2)$ (\sproved).
 
     \textbf{O28}~\cite{Beau2026a32}: Two measurements from the Q5a-O5 checkpoints.
-    Part~A: the BFS window ratio $n_1(q)/q$ decreases from 0.138 to 0.066 over
-    $q \in \{29, 61, 101, 151, 211\}$ (Scenario~S2, pre-asymptotic regime); OLS fit
-    $n_1(q) = \hat\alpha\,q + \hat\beta$ gives $\hat\alpha \approx 0.053$;
+    Part~A: out of sample (now to $q = 601$) the linear law $n_1 \sim \hat\alpha\,q$ calibrated on
+    $q \le 211$ fails, overpredicting $n_1$ by up to $+88\%$, and $n_1(q)/q$ decreases monotonically to
+    0.032, establishing $n_1(q)/q \to 0$; only the linear scaling hypothesis is excluded, the asymptotic
+    law of $n_1$ being otherwise open (reframed around the critical coverage $x_1(q) = |B_{n_1}|/q^2$ in
+    the CC-Note~\cite{Beau2026ccnote});
     $\delta_{\mathrm{corr}}(q) \in [7.4, 10.6]$ for all tested primes, confirming O25.
     Part~B: formal effective-dimension computation of O26 Criterion~5.4 in
     $\mathrm{End}(H_{\mathrm{eff}})$, $H_{\mathrm{eff}} = \mathbb{C}^3$
@@ -521,6 +523,16 @@ A Structural Roadmap and Paper Inventory}
     projections and constrains $\mathcal{C}_c$ to a symmetric subspace.
     The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
     analysis of $V_\rho \subset H_{\mathrm{eff}}$ is carried out in O29.
+
+    \textbf{CC-Note}~\cite{Beau2026ccnote}: Reframes the saturation-depth open direction of O25--O28.
+    At the window edge the cumulative Weil-fingerprint rank is far from full, so $n_1$ is a stop of
+    marginal novelty, not a basis-filling time (\sstruct).
+    With $|B_n| \sim C_{\mathrm{Heis}} n^4$ ($D=4$) and the diffusive gap $\lambda_2 \approx 4\pi^2/q^2$,
+    the exact reduction $n_1(q) = (x_1(q)/C_{\mathrm{Heis}})^{1/4}\sqrt{q}$ collapses the whole asymptotic
+    content of $n_1$ onto the critical coverage $x_1(q) = |B_{n_1}|/q^2$.
+    Empirically $x_1$ falls $0.61 \to 0.15$ over $q = 101 \to 601$, excluding the constant-coverage
+    (clean $\sqrt{q}$) scenario; the governing front is the tension $\Phi'(x_1) = \varepsilon_{\mathrm{sat}}\,q$,
+    and the open deliverable is a structural law for $x_1(q)$ (\sopen).
 
     \textbf{O29}~\cite{Beau2026a33}: Carrier identification via the Veronese collapse
     (\sstruct, numerically confirmed).
