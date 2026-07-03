@@ -489,15 +489,19 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{O25--O30, PTO, and Fibre Erasure: Numerical Validation, Sector Identification, Eigenvalue Ratio, and Information-Theoretic Axes}
 
-    \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign.
-    Computes $\delta_{\mathrm{pair}}$ across all $(q-1)/2$ conjugate pairs with $M=50$ independent
-    block samples per pair, for $q \in \{29, 61, 101, 151, 211\}$.
-    Results: $\bar\delta_{\mathrm{pair}} \in \{8.89, 9.98, 9.55, 9.13, 8.78\}$ with inter-pair standard
-    deviation decreasing from 0.54 to 0.11, confirming $\delta_{\mathrm{pair}}$ as a structural invariant.
-    After the O14 normalisation correction, corrected values $\delta_{\mathrm{corr}}(q) \in [7.7, 9.0]$
-    fall consistently within the admissible window $[7.4, 10.6]$ for $q \in \{61, 101, 151, 211\}$.
-    Direct extrapolation to $q \to \infty$ is shown to be structurally degenerate;
-    the central open direction is the analytical control of $n_1(q)/q$ (\sstruct).
+    \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign, extended to large primes.
+    Computes $\delta_{\mathrm{pair}}$ across the $(q-1)/2$ conjugate pairs ($M=50$ at
+    $q \in \{29, 61, 101, 151, 211\}$; extended by a capped-BFS construction --- reproducing the
+    observable exactly --- to $q \in \{307, 401, 601\}$ with reduced sampling $M = 16, 8$).
+    The inter-pair concentration confirms $\delta_{\mathrm{pair}}$ as a structural invariant.
+    Central result of the extension: the \emph{raw} exponent $\delta_{\mathrm{global}}(q)$ descends
+    monotonically into the admissible window $[7.4, 10.6]$ on its own, reaching $7.61$ at $q = 601$,
+    with no correction; the O14 finite-size correction, needed at small $q$, becomes unnecessary and
+    eventually \emph{overcorrects} at large $q$ (sending $\delta_{\mathrm{corr}}$ below $7.4$).
+    The asymptotic value $\delta_\infty$ is not pinned ($1/q$ and $1/\sqrt{q}$ laws remain equally
+    viable at $q \le 601$); as a secondary consequence the transfer parameter
+    $\beta^* = 1/(\delta_{\mathrm{pair}} + \tfrac12)$ stays in the narrow band $0.108$--$0.123$,
+    consistent with O24 (\sstruct).
 
     \textbf{O26}~\cite{Beau2026a30}: Dictionary between conjugate Weil blocks and rank-1 matrices in
     $M_2(\mathbb{C})$, connecting the Heisenberg fibre to $2I \subset \SU(2)$ (\sstruct).
@@ -511,7 +515,8 @@ A Structural Roadmap and Paper Inventory}
     0.032, establishing $n_1(q)/q \to 0$; only the linear scaling hypothesis is excluded, the asymptotic
     law of $n_1$ being otherwise open (reframed around the critical coverage $x_1(q) = |B_{n_1}|/q^2$ in
     the CC-Note~\cite{Beau2026ccnote});
-    $\delta_{\mathrm{corr}}(q) \in [7.4, 10.6]$ for all tested primes, confirming O25.
+    the raw $\delta_{\mathrm{pair}}$ descends into $[7.4, 10.6]$ as $q$ grows (O25 extension),
+    the O14 correction being a small-$q$ device that overcorrects at large $q$.
     Part~B: formal effective-dimension computation of O26 Criterion~5.4 in
     $\mathrm{End}(H_{\mathrm{eff}})$, $H_{\mathrm{eff}} = \mathbb{C}^3$
     ($\mathrm{HEFF\_DIM} = 3$, consistent with $\Sigma_c(n_3) = 3$ from O23).
@@ -1976,9 +1981,10 @@ A Structural Roadmap and Paper Inventory}
       $c_\chi \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$ (Cor.~4.2) &
       \sproved \\[3pt]
       \midrule
-      O25 & Numerical campaign & \cite{Beau2026a29} &
-      $\bar\delta_{\mathrm{pair}} \in \{8.89, 9.98, 9.55, 9.13, 8.78\}$ for $q \in \{29,61,101,151,211\}$;
-      inter-pair $\sigma_q: 0.54 \to 0.11$; $\delta_{\mathrm{corr}} \in [7.7,9.0] \subset [7.4,10.6]$ &
+      O25 & Numerical campaign (extended to $q=601$) & \cite{Beau2026a29} &
+      Raw $\delta_{\mathrm{global}} \to 7.61$ at $q=601$, descending into $[7.4,10.6]$ unaided;
+      O14 correction overcorrects at large $q$; $\delta_\infty$ not pinned;
+      $\beta^* \in 0.108\text{--}0.123$ &
       \sstruct \\[3pt]
       O26 & Quadratic completion & \cite{Beau2026a30} &
       Dictionary: Weil blocks $\leftrightarrow$ rank-1 matrices in $M_2(\mathbb{C})$;
