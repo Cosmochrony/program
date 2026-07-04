@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "version": "1.77",
+  "version": "1.78",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
