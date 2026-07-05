@@ -98,6 +98,14 @@ J.~Beau.
   2026.
 \newblock original white paper, \doi{10.5281/zenodo.17957509}.
 
+\bibitem{Beau2026ccnote}
+J.~Beau.
+\newblock {Critical Coverage and the Saturation Depth Problem}, 2026.
+\newblock Reframes the BFS saturation-depth problem of O25--O28 around the
+  critical coverage $x_1(q) = |B_{n_1}|/q^2$, via the exact reduction $n_1 =
+  (x_1/C_{\mathrm{Heis}})^{1/4}\sqrt{q}$; establishes $n_1(q)/q \to 0$ and
+  excludes the constant-coverage scenario, \doi{10.5281/zenodo.21049163}.
+
 \bibitem{Beau2026q6b}
 J.~Beau.
 \newblock {Effective Spacetime Geometry from Admissible Non-Injective
@@ -540,7 +548,7 @@ J.~Beau.
   Closing the Unconditional Transfer $c_\chi \to \delta_{\mathrm{pair}} \to
   \beta^*$}, 2026.
 \newblock O24 spectral admissibility subprogram "O24" paper,
-  \doi{10.5281/zenodo.19386581}.
+  \doi{10.5281/zenodo.19386580}.
 
 \bibitem{Beau2026a15}
 J.~Beau.
@@ -598,6 +606,19 @@ J\'er\^ome Beau.
   Spectral Entropy}, 2026.
 \newblock "Q13" paper, \doi{10.5281/zenodo.20209859}.
 
+\bibitem{Beau2026dhc}
+J\'er\^ome Beau.
+\newblock {Low-Multipole Suppression from Distinguishable-History Capacity},
+  2026.
+\newblock Replaces the white-paper phenomenological low-$\ell$ envelope by a
+  parameter-free small-$N$ distinguishable-history mechanism (canonical Pell
+  count): a no-fit $2\times2$ grid of envelopes and angular dictionaries,
+  quadrupole-anchored, improves the Planck TT low-$\ell$ diagnostic $\chi^2$
+  from 27.4 to 17.3 in the theoretically preferred cell, with TE neutral and EE
+  mildly disfavoured (open transfer step); staircase envelope as discrete
+  signature; $S^3$ $8/3$ witness re-audited with its own observable
+  $\sqrt{8/3}$. \doi{10.5281/zenodo.21204352}.
+
 \bibitem{Beau2026pyl}
 J\'er\^ome Beau.
 \newblock {Projected Yukawa Line and Generation-Level Assignment}, 2026.
@@ -620,6 +641,22 @@ J\'er\^ome Beau.
 \newblock {Projective Information Loss and Fibre Erasure in Admissible
   Non-Injective Projection}, 2026.
 \newblock \doi{10.5281/zenodo.20466459}.
+
+\bibitem{Beau2026tb}
+J\'er\^ome Beau.
+\newblock {Projective Trajectory Branching and the de Sitter Limit}, 2026.
+\newblock Result note: the LPS $\to$ Heisenberg transfer relocates exponential
+  growth from endpoint volumes (polynomial, Bass--Guivarc'h degree 4) to
+  projectively distinguishable histories. Endpoint-based distinguishability
+  (D1--D3) provably collapses; the canonical O12-compatible residual channel is
+  $b$-only (the central charge is unconditionally erased from mono-path norms)
+  and its distinguishable-history count is the Pell count
+  $N(n)=2N(n-1)+N(n-2)$, rate $h_b=\log(1+\sqrt2)$, proved for a generic probe
+  and witnessed exactly at $q=211$. Structural bridge from the admissibility
+  cascade to a de Sitter-like component independent of matter content; the
+  full-history Gabor channel keeps a projective-compression profile as the open
+  candidate for an evolving effective equation of state.
+  \doi{10.5281/zenodo.21197757}.
 
 \bibitem{Beau2026q9}
 J\'er\^ome Beau.
@@ -680,6 +717,21 @@ J\'er\^ome Beau.
   Identification of $A_\tau = 2$}, 2026.
 \newblock "Q11" paper, \doi{10.5281/zenodo.20098387}.
 
+\bibitem{Beau2026tpc}
+J\'er\^ome Beau.
+\newblock {Ternary Phase Carrier: Colour Confinement, Generation Splitting, and
+  Koide Dispersion}, 2026.
+\newblock Fermionic matter sub-programme note (speculative bridge): one complex
+  three-phase carrier $z_g=S+A\,e^{i(\delta+2\pi g/3)}$ read two ways --
+  pure-phase part sums to zero ($1+\omega+\omega^2=0$, colour-neutral class),
+  real part $S+A\cos(\delta+2\pi g/3)$ is the square-root mass profile of the
+  unit-dispersion note. The singlet amplitude $S$ is the master dial: $S=0$
+  pure-phase (colour, confined); $S\neq0$ real offset (masses); $A=\sqrt2 S$
+  singlet-doublet equipartition (Koide, CV=1); $\delta$ near a node gives the
+  hierarchy. Candidate admissibility filter: capacity balance
+  $\|r_{dbl}\|\le\|r_{sing}\|$ saturated at CV=1. Not a derivation; states the
+  construction charge sheet. \doi{10.5281/zenodo.21115977}.
+
 \bibitem{Beau2026bim}
 J\'er\^ome Beau.
 \newblock {The Born--Infeld Saturation Margin of the Chiral Modulus:
@@ -704,6 +756,20 @@ J\'er\^ome Beau.
   modulus on the A4 locus is conditional only on Schur transversality; the
   Lorentzian genus computation is deliberately deferred,
   \doi{10.5281/zenodo.20633931}.
+
+\bibitem{Beau2026kud}
+J\'er\^ome Beau.
+\newblock {The Charged-Lepton Koide Relation as a Unit-Dispersion Constraint},
+  2026.
+\newblock Fermionic matter sub-programme source note: recasts the
+  charged-lepton Koide relation as a unit coefficient-of-variation condition on
+  the square-root mass vector, $Q_\ell=(1+\mathrm{CV}(r_\ell)^2)/3$, hence
+  $Q_\ell=2/3 \iff \mathrm{CV}(r_\ell)=1$ ($\sigma_r=\bar r$); separates the
+  dispersion constraint from the hierarchy phase (node placement); records the
+  cascade-ladder dispersion obstruction $\mathrm{CV}\le 1/\sqrt2$, $Q\le 1/2$;
+  states the maximum-entropy reading as an open $S_\Pi$-variational test.
+  Target invariant for the fermionic-mass sector, not a mass formula.
+  \doi{10.5281/zenodo.21109812}.
 
 \bibitem{Beau2026ebj}
 J\'er\^ome Beau.
