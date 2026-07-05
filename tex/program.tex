@@ -58,7 +58,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 107 papers across three theory branches.
+    The corpus comprises 108 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -125,7 +125,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 107 papers with complex mutual dependencies.
+  The corpus comprises 108 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -1418,7 +1418,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{TrajectoryBranching}~\cite{Beau2026tb}: Projective trajectory branching and the de Sitter limit
     (endpoint no-gos, $b$-only reduction and generic-probe Pell rate: \sproved; full-history compression rate
-    $\log 2$: \sproved; exact class count: verified/conjectural; cosmological reading: \sstruct).
+    $\log 2$: \sproved; exact class count: \sproved; cosmological reading: \sstruct).
     The LPS $\to$ Heisenberg transfer relocates exponential growth from endpoint volumes (polynomial by
     Bass--Guivarc'h, degree $4$) to projectively distinguishable histories (D4): any endpoint-based
     distinguishability collapses, while the canonical O12-compatible residual channel is $b$-only (the central
@@ -1429,10 +1429,15 @@ A Structural Roadmap and Paper Inventory}
     matter content.
     Since v1.1.0 the full-history Gabor channel is itself a theorem: the Gabor span exhausts the abelian
     $\ell^1$ disk, so nonzero symbols are confined to $\ell^1$-outward geodesics (geodesic death), and for a
-    generic probe (Lawrence--Pfander--Walnut full spark plus a Chebotar\"ev-based separation lemma) the count is
-    bracketed by $2^n$ and $2^{n+2}$: exactly pinned compression rate $\log 2 < \log(1+\sqrt2)$, with the
-    finite-$n$ profile retained as the candidate input for an evolving effective equation of state, deferred to
-    the cosmological branch.
+    generic probe (Lawrence--Pfander--Walnut full spark plus a Chebotar\"ev-based separation lemma) the
+    compression rate is exactly pinned at $\log 2 < \log(1+\sqrt2)$.
+    Version 1.2.0 upgrades the class count itself to a theorem,
+    $N^{\mathrm{V3}}_{\mathrm{dist}}(n) = 2^{n+2}-4n-1$ ($n \ge 2$, window $q > (4n-1)(2n+3)$): the last
+    separation step ($a$-mirror pairs at equal $|b|$) is closed by the generic non-vanishing of a mixed
+    two-anchor coefficient --- a Hermitian jet at the orthogonal point of an anchor moment domain --- combined
+    with a Klein rigidity property of outward geodesics, so the $b$-mirror is the only generic degeneracy of
+    the projective history record; the finite-$n$ profile is retained as the candidate input for an evolving
+    effective equation of state, deferred to the cosmological branch.
 
     \textbf{LowLCapacity}~\cite{Beau2026dhc}: Low-multipole suppression from distinguishable-history capacity
     (mechanism and no-fit grid: \sstruct/numerical; entropy-to-power step and TE/EE transfer: \sopen).
@@ -2380,7 +2385,8 @@ A Structural Roadmap and Paper Inventory}
       Exponential growth relocated from endpoint volumes (polynomial, Bass--Guivarc'h) to projectively
       distinguishable histories; canonical O12-compatible channel is $b$-only with exact Pell count,
       $h_b = \log(1+\sqrt2)$ (generic probe, exact $q=211$ witness); full-history channel proved strictly
-      compressive by geodesic death, pinned rate $\log 2$ ($w(n)$ candidate) &
+      compressive by geodesic death, pinned rate $\log 2$ and exact class count $2^{n+2}-4n-1$
+      (generic $a$-mirror separation via the mixed two-anchor coefficient; $w(n)$ candidate) &
       \sproved \\[3pt]
       LowLCap & Low-$\ell$ from history capacity & \cite{Beau2026dhc} &
       Parameter-free small-$N$ replacement of the phenomenological low-$\ell$ envelope: no-fit
