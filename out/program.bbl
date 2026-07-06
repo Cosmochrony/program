@@ -648,6 +648,19 @@ J\'er\^ome Beau.
   $Y_\Pi=U_\Pi H_\Pi^{1/2}$ --- $E_\Pi^2$ fixes the squared levels, not the
   morphism, \doi{10.5281/zenodo.20767498}.
 
+\bibitem{Beau2026pce}
+J\'er\^ome Beau.
+\newblock {Projection as Conditional Expectation and the Capacity Ceiling},
+  2026.
+\newblock Derives the amplitude-level action of the non-injective projection as
+  the conditional expectation onto the distinguishable-record sigma-algebra,
+  under four graded hypotheses and by two independent classical
+  characterisations (contractive projections; Moy--Rota--Douglas averaging
+  operators); converts it into strict ensemble-power suppression (law of total
+  variance) and the parameter-free capacity ceiling $(N-1)/N$ for a complex
+  Gaussian mode on $N$ distinguishable histories --- identically the Bessel
+  envelope of the low-$\ell$ capacity note. \doi{10.5281/zenodo.21227547}.
+
 \bibitem{Beau2026fe}
 J\'er\^ome Beau.
 \newblock {Projective Information Loss and Fibre Erasure in Admissible
