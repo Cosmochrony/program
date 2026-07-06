@@ -58,7 +58,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 108 papers across three theory branches.
+    The corpus comprises 109 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -125,7 +125,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 108 papers with complex mutual dependencies.
+  The corpus comprises 109 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -240,6 +240,27 @@ A Structural Roadmap and Paper Inventory}
     (framework-independently); the algebraic route answers \emph{why} in Heisenberg-fibred frameworks.
     Cited by Foundation, HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
     Q1~\cite{Beau2026q1}, Bell, O32~\cite{Beau2026a36}.
+
+  \subsection{Projection as Conditional Expectation and the Capacity Ceiling}
+
+    The ProjCE note~\cite{Beau2026pce} (v1.0.0) derives the amplitude-level action of the non-injective
+    projection: under four graded hypotheses --- fibre-invariance (forced by the ENI emergence
+    criterion), fixity on resolved content, linearity (the load-bearing structural transfer, at the tier
+    of the ENI pivot lemma), and non-amplification (or a positivity/equivariance module variant) --- the
+    assignment of observed values is the conditional expectation onto the sigma-algebra of the
+    distinguishable-history record, by two independent classical characterisations (contractive
+    projections; Moy--Rota--Douglas averaging operators), with the operator invariant under the degraded
+    minimum-distortion selection (hypotheses \sstruct; theorems \sproved{} given the hypotheses).
+    Two consequences follow as mathematics: strict ensemble-power suppression equal to the erased
+    intra-fibre power (law of total variance; the structural answer to the cosmic-variance objection),
+    and the parameter-free capacity ceiling $(N-1)/N$ for a complex Gaussian mode supported on $N$
+    distinguishable histories (one-shot rate--distortion converse) --- identically the Bessel envelope of
+    LowLCapacity~\cite{Beau2026dhc}, upgraded from estimator heuristic to information-theoretic bound.
+
+    \textit{Role:} Closes the entropy-to-power step of LowLCapacity as a conditional theorem chain;
+    supplies the counting-to-power converter consumed by the low-$\ell$ note, the cosmological
+    branch~\cite{Beau2026d}, and any $w(n)$ extraction from full-history
+    compression~\cite{Beau2026tb}.
 
   \subsection{Foundation: Admissible Non-Injective Transitions as the Primitive}
     \label{sec:foundation}
@@ -1440,7 +1461,8 @@ A Structural Roadmap and Paper Inventory}
     effective equation of state, deferred to the cosmological branch.
 
     \textbf{LowLCapacity}~\cite{Beau2026dhc}: Low-multipole suppression from distinguishable-history capacity
-    (mechanism and no-fit grid: \sstruct/numerical; entropy-to-power step and TE/EE transfer: \sopen).
+    (mechanism and no-fit grid: \sstruct/numerical; entropy-to-power step: conditional theorem chain in
+    ProjCE~\cite{Beau2026pce}; TE/EE transfer: \sopen).
     Replaces the white-paper phenomenological low-$\ell$ envelope (two free parameters, illustrative
     comparison) by a small-$N$ mechanism: the largest angular modes probe the first admissibility ranks, which
     contain only $3$, $7$, $17$ distinguishable histories (canonical Pell count~\cite{Beau2026tb}).
@@ -2393,6 +2415,12 @@ A Structural Roadmap and Paper Inventory}
       $2\times2$ grid improves Planck TT diagnostic $\chi^2$ $27.4\to17.3$ (preferred cell), TE neutral,
       EE mildly disfavoured (open transfer); staircase envelope; $8/3$ witness re-audited with observable
       $\sqrt{8/3}$ &
+      \sstruct \\[3pt]
+      ProjCE & Projection kernel / capacity ceiling & \cite{Beau2026pce} &
+      Amplitude-level projection derived as conditional expectation onto the distinguishable-record
+      algebra (two classical characterisations, graded hypotheses, operator invariant under degraded
+      selection); strict ensemble-power suppression by total variance, and the parameter-free ceiling
+      $(N-1)/N$ --- identically the Bessel envelope of the low-$\ell$ note &
       \sstruct \\[3pt]
     \end{longtable}
 
