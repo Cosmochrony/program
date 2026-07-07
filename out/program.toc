@@ -43,7 +43,7 @@
 \contentsline {paragraph}{Baryon-to-photon ratio (SMchargemass).}{37}{section*.17}%
 \contentsline {paragraph}{$V-A$ chiral structure and fermionic matter (Q14).}{37}{section*.18}%
 \contentsline {paragraph}{Gauge--gravity synthesis (Q12 $\to $ Q13).}{38}{section*.19}%
-\contentsline {paragraph}{Yang--Mills uniqueness for SU(3) (Q12, O31).}{38}{section*.20}%
+\contentsline {paragraph}{Yang--Mills uniqueness for SU(3) (Q12, O31).}{39}{section*.20}%
 \contentsline {paragraph}{Lorentz Capacity Sub-Programme.}{39}{section*.21}%
 \contentsline {paragraph}{Thermodynamics: Lorentzian extension and matter coupling.}{39}{section*.22}%
 \contentsline {section}{\numberline {8}Conclusion}{40}{section.8}%
