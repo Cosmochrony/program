@@ -1,6 +1,4 @@
 .DS_Store
 **/.DS_Store
 .idea/
-out/*.log
-out/.*.log
-pdfs/
+out/
