@@ -43,7 +43,6 @@ pdflatex -output-directory=out tex/program.tex
 
 ## Links
 
-- 📄 [Paper PDF](out/program.pdf)
 - 🔗 DOI: [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)
 - 🌐 Interactive dependency graph: https://cosmochrony.org/science/cosmochrony_graph
 
