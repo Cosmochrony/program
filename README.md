@@ -1,8 +1,8 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
 This repository contains the source of the **programme synthesis paper**
-[*The Cosmochrony Research Programme: A Structural Roadmap and Paper
-Inventory*](out/program.pdf).
+*The Cosmochrony Research Programme: A Structural Roadmap and Paper
+Inventory*.
 
 It is the **central registry** of the whole Cosmochrony corpus: it inventories every paper,
 documents the dependency graph between them, and tracks their status. It is the reference to
