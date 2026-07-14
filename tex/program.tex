@@ -58,7 +58,7 @@ A Structural Roadmap and Paper Inventory}
     The Cosmochrony programme develops a pre-geometric framework in which physical structure ---
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between observable states.
-    The corpus comprises 109 papers across three theory branches.
+    The corpus comprises 110 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems, without
     any background substrate or relaxation mechanism.
@@ -90,6 +90,9 @@ A Structural Roadmap and Paper Inventory}
     mechanism (v1.5) makes [H-color] exact pointwise on the standard graph at finite~$q$, so
     SU(3) and the Standard Model composite $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$
     are identified unconditionally for the standard graph.
+    O33~\cite{Beau2026a37} gives an exact arithmetic description of the O12 three-character
+    filtration, derives its Mackey--Hecke multiplicity doublets and Harper split, and proves a
+    parity-closure obstruction protecting the odd Weyl-symbol sector.
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -166,7 +169,7 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: SpectralAdmissibility~\cite{Beau2026a1},
     SpectralCapacity~\cite{Beau2026a2},
     SpectralGramRigidity~\cite{Beau2026a3}, SpectralRelaxation~\cite{Beau2026a5},
-    and O1--O31~(\cite{Beau2026a6}--\cite{Beau2026a35}).
+    and O1--O33~(\cite{Beau2026a6}--\cite{Beau2026a37}).
 
   \paragraph{Level 3 --- Physical observables.}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
@@ -373,7 +376,7 @@ A Structural Roadmap and Paper Inventory}
 
   The presentation note \textbf{SpAdm-Note}~\cite{Beau2026a1note} is the synthesis paper of this
   sub-programme: it maps the constituent papers below --- the five precursor papers and the O-series
-  O1--O32 --- into a single account of the derivation chain~\eqref{eq:chain}, recording the status of
+  O1--O33 --- into a single account of the derivation chain~\eqref{eq:chain}, recording the status of
   every result as proved, structural, numerical, or open, and stating the two remaining open
   deliverables (the pointwise proof of hypothesis $[\mathrm{H\text{-}color}]$ and the extension of
   the numerical campaign to $q = 401$). Their individual contributions follow.
@@ -681,6 +684,24 @@ A Structural Roadmap and Paper Inventory}
     Status: \sstruct{} ([H-color] numerically confirmed for all
   $q\in\{61,151,211,307\}$; $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise
   [H-color] proved analytically via O31 v1.5).
+
+    \textbf{O33}~\cite{Beau2026a37}: arithmetic Mackey--Hecke structure of the O12
+    three-character filtration (draft; exact core).
+    The cumulative Fourier mode set is proved to be the cyclic sumset
+    $K_n=c[-(n+1),n+1]+\{0,\pm(c_2+c_3)\}+\{0,\pm c_3\}$.
+    This yields an exact cyclic-spacing criterion for boundary porosity and reduces the full
+    Weil stabiliser to the multiplicative symmetry group $A_K=\{a:aK=K\}$.
+    Weyl quantisation realises the induced Mackey carrier internally in
+    $\operatorname{End}(V_\rho)\cong\mathbf{1}\oplus\mathcal{D}_+\oplus\mathcal{D}_-$.
+    Generic principal-series pairs carry canonical $M_2(\mathbb{C})$ commutants; Harper
+    dynamics gives the normalised split $1\pm q^{-1/2}$.
+    The eliminated residue supplies a second axis exactly when its cyclotomic phase
+    determinant is non-zero.
+    The deposited parity-even operator algebra has zero projection onto $\mathcal{D}_-$,
+    proving an odd-sector protection theorem.
+    Multi-prime audits find exact $C_4$ and $C_6$ stabiliser exceptions and
+    character-selective cyclotomic cancellations; no Standard-Model or Dirac-mass
+    identification is claimed.
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -1624,6 +1645,9 @@ A Structural Roadmap and Paper Inventory}
           \node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
             {$q{=}61,151,211,307$ all pass};
+          \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
+          \node[font=\tiny\sffamily,text=cproved,right=2pt] at (O33.east)
+            {Weil doublets};
           \node[S] (PTO)    at (5*\dx,-7*\dy)   {PTO};
           \node[S] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
           \node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
@@ -1654,12 +1678,14 @@ A Structural Roadmap and Paper Inventory}
           \draw[spine] (O29) -- (O30);
           \draw[spine] (O30) -- (O31);
           \draw[spine] (O31) -- (O32);
+          \draw[arr]   (O12) to[out=0,in=90] (O33);
+          \draw[arr]   (PTO) to[out=-20,in=180] (O33);
 
 % Spectral admissibility sub-programme synthesis (presentation note):
 % aggregates all constituent papers (5 precursors + O-series).
           \node[S] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
           \foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
-          O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32}
+          O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32,O33}
           \draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
 % Non-injective foundations sub-programme synthesis (presentation note 5):
@@ -2130,6 +2156,13 @@ A Structural Roadmap and Paper Inventory}
       $[H\text{-color}]_{\mathrm{avg}}$ proved to $O(q^{-1})$;
       $[H\text{-color}]_{\mathrm{pointwise}}$ proved analytically in O31 (Prop.~4.23) &
       \sstruct \\[3pt]
+      O33 & Arithmetic Weil doublets and mixing & \cite{Beau2026a37} &
+      Closed sumset formula and spacing theorem proved;
+      stabiliser reduced exactly to $A_K$ with $C_4,C_6$ exceptions;
+      internal Mackey--Hecke $M_2(\mathbb{C})$ doublets and Harper split derived;
+      boundary mixing controlled by an exact cyclotomic phase determinant;
+      odd sector protected by parity closure &
+      \sproved \\[3pt]
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
       temporal proxy; confirmed for $q \in \{29, 61, 101, 151, 211\}$ &
