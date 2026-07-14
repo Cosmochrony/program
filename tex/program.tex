@@ -93,6 +93,9 @@ A Structural Roadmap and Paper Inventory}
     O33~\cite{Beau2026a37} gives an exact arithmetic description of the O12 three-character
     filtration, derives its Mackey--Hecke multiplicity doublets and Harper split, and proves a
     parity-closure obstruction protecting the odd Weyl-symbol sector.
+    Its stabiliser analysis now includes an orbit-divisibility sieve and uniform exact
+    $C_4$ and $C_6$ exceptional families; completeness of those two exceptional orders is
+    supported exhaustively through $q=73$ but remains open.
     This paper provides a complete inventory, a logical dependency map, and a structured account
     of what is proved, structural, heuristic, or open.
     It is intended both as an entry point for external readers and as an internal navigation reference.
@@ -699,9 +702,12 @@ A Structural Roadmap and Paper Inventory}
     determinant is non-zero.
     The deposited parity-even operator algebra has zero projection onto $\mathcal{D}_-$,
     proving an odd-sector protection theorem.
-    Multi-prime audits find exact $C_4$ and $C_6$ stabiliser exceptions and
-    character-selective cyclotomic cancellations; no Standard-Model or Dirac-mass
-    identification is claimed.
+    The stabiliser order divides $\gcd(q-1,|K|-1)$, and two uniform constructions give
+    exactly $C_4$ from a square root of $-1$ and $C_6$ from a primitive cubic root.
+    An exhaustive audit of all normalised parameters and pre-saturation depths through
+    $q=73$ finds no other order; completeness of the $C_2,C_4,C_6$ list remains conjectural.
+    Multi-prime audits also find character-selective cyclotomic cancellations;
+    no Standard-Model or Dirac-mass identification is claimed.
 
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
@@ -2158,7 +2164,8 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       O33 & Arithmetic Weil doublets and mixing & \cite{Beau2026a37} &
       Closed sumset formula and spacing theorem proved;
-      stabiliser reduced exactly to $A_K$ with $C_4,C_6$ exceptions;
+      stabiliser reduced exactly to $A_K$, with an orbit-divisibility sieve and uniform
+      exact $C_4,C_6$ families (completeness open);
       internal Mackey--Hecke $M_2(\mathbb{C})$ doublets and Harper split derived;
       boundary mixing controlled by an exact cyclotomic phase determinant;
       odd sector protected by parity closure &
