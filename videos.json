@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "videos": [
+    {
+      "id": "one-reality-multiple-descriptions",
+      "title": "One Reality, Multiple Descriptions",
+      "youtube_id": "cz4ralii728",
+      "youtube_url": "https://www.youtube.com/watch?v=cz4ralii728",
+      "channel": "Cosmochrony",
+      "channel_url": "https://www.youtube.com/@cosmochrony",
+      "language": "en",
+      "publication_status": "published",
+      "publication_date": "2026-07-16",
+      "duration_seconds": 43.233,
+      "canonical_owner": {
+        "repository": "Cosmochrony/emergence-non-injectivity",
+        "source_path": "video/",
+        "paper_url": "https://cosmochrony.org/science/non-injective/emergence-non-injectivity/"
+      },
+      "associated_results": [
+        "Non-injectivity as a structural necessity of genuine emergence",
+        "Strictly positive projection entropy under the paper's hypotheses"
+      ],
+      "associated_programmes": [
+        "Non-Injective Foundations"
+      ],
+      "website_pages": [
+        "https://cosmochrony.org/science/non-injective/emergence-non-injectivity/",
+        "https://cosmochrony.org/science/non-injective/",
+        "https://cosmochrony.org/science/"
+      ]
+    }
+  ]
+}
