@@ -83,6 +83,11 @@ Treat the voice as a production choice, not a permanent scientific convention; d
 - Keep on-screen text concise and complementary to the narration.
 - Avoid claims that are stronger, broader, or more experimentally suggestive than the paper.
 - Use consistent notation with the owning paper.
+- When a video and its surrounding page draw on sources with different notation, add a local notation bridge rather
+  than silently identifying the symbols. In particular, ENI uses $\Omega$ for its framework-independent fine-grained
+  configuration space, whereas the preliminary Cosmochrony white paper uses $\chi$ for its proposed static relational
+  substrate. Do not present $\Omega$ and $\chi$ as synonyms or claim a concrete identification not established by the
+  owning paper.
 - Pronounce symbols through readable English in narration while retaining mathematical notation on screen.
 
 Review the narration as prose before rendering.
