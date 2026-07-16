@@ -999,8 +999,9 @@ A Structural Roadmap and Paper Inventory}
     SG-Note answers why the effective metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ satisfies the Einstein
     equations: from the projective spectral entropy $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ it
     derives the Einstein tensor as the infrared-dominant horizontal response (the $a_2$
-    coefficient), reformulates it as a spectral equilibrium condition, extends it causally to
-    gravitational-wave propagation, and provides its ultraviolet Born--Infeld completion.
+    coefficient, whose finite normalisation remains a matching datum), recasts it as a conditional
+    variational stationarity, extends it causally to gravitational-wave propagation, and provides its
+    ultraviolet Born--Infeld completion.
     The $a_2$ Einstein sector is the gravitational input consumed by the gauge--gravity
     stratification sub-programme below (Note~8).
 
@@ -1337,24 +1338,41 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
     on a relational substrate without any background manifold (\sstruct).
 
-    \textbf{Gravity}~\cite{Beau2026h}: Derives $G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from the
-    metric variation of $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$, via heat-kernel and zeta
-    regularisation (\sproved{} at leading IR order). Establishes that the UV completion is uniquely
-    determined to be of determinantal Born--Infeld form
-    $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$,
-    with Einstein gravity as the universal two-derivative IR sector (\sproved).
+    \textbf{Gravity}~\cite{Beau2026h} (v3.3, retitled \emph{Conditions for an Infrared Einstein Sector from
+    Spectral Geometry}): Determines the conditions under which the metric variation of
+    $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ supports a local infrared Einstein sector. Version~3.3 separates two
+    regularisation statements that earlier versions conflated: a physical proper-time cutoff
+    $\Lambda = \ell_{\mathrm{sp}}^{-1}$ carries the power-sensitive terms $a_0\Lambda^4$ and $a_2\Lambda^2$,
+    while zeta regularisation carries the finite determinant and the logarithmic scale dependence governed in
+    four dimensions by $a_4 = \zeta_A(0)$. One minimal scalar contributes
+    $\Delta c_{\mathrm{EH}}^{\Lambda} = -\Lambda^2/[12(4\pi)^2]$, which is \emph{negative}: the finite
+    renormalised coefficient $c_{\mathrm{EH}}^{\mathrm{ren}} = (16\pi G_N)^{-1}$, its sign, and hence a positive
+    Newton constant are \emph{matching data} fixed by a renormalisation condition and the complete operator
+    content — they are not predicted by the minimal determinant (\sopen). Once the coefficients are supplied,
+    the variation decomposes into Einstein, cosmological, higher-derivative and non-local sectors, the Einstein
+    term dominating locally when $R L_4^2 \ll 1$ with $L_4^2 = |\beta^{\mathrm{ren}}/c_{\mathrm{EH}}^{\mathrm{ren}}|$
+    (\sproved{} given the supplied coefficients). Under the separate coherence-extensivity hypothesis, the
+    tensorial completion of a supplied Einstein infrared term remains of determinantal Born--Infeld form
+    $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$ (\sstruct).
 
-    \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics}: Develops a local thermodynamic interpretation.
-    The diagonal heat kernel yields a local multiplier field
-    $\beta(x)^{-1} = \beta_0^{-1} - \tfrac{1}{6}R(x) + O(\nabla^2 R)$, and a spectral first law
-    $\delta S_\Pi = \int \beta(x)^{-1}\,\delta E_\Pi(x)$ recasts the Einstein equation as a
-    spectral equilibrium condition (\sstruct; Lorentzian extension and matter coupling: \sopen).
-    A subsequent notational and structural clarification separates the global matter--geometry multiplier
-    $\vartheta_*^{-1}$ from the local spectral field $\beta(x)^{-1}$ and from the cascade exponent $\beta^*$.
-    In the gauge sector, $\vartheta_*^{-1} = 1$ is identified conditionally as the single-determinant value
-    fixed by the relative $a_2/a_4$ normalisation of the joint spectral functional~\cite{Beau2026q13}.
-    The off-equilibrium term renormalises the coupling to the same matter content rather than defining an
-    independent fluid, while the $a_2$ channel is classically silent for traceless radiation (\sstruct).
+    \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics} (v2.0, retitled \emph{Einstein--Matter Coupling from
+    Spectral Stationarity: A Conditional Variational Result and the Open Thermodynamic Bridge}):
+    Version~2.0 \emph{withdraws} the thermodynamic identifications claimed up to v1.1 and retains only a
+    conditional variational core. Assuming a renormalised infrared metric response (supplied by Gravity~v3.3,
+    where the finite Einstein coefficient is a matching datum) and an effective matter functional
+    $W_\Pi[g,\psi]$, stationarity of $\Gamma_\Pi = S_\Pi^{\mathrm{ren}} - W_\Pi$ yields
+    $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ at leading derivative order
+    (\sproved{} given the supplied coefficients); the factor $8\pi G_N$ is the ratio between the matter
+    variation factor $\tfrac{1}{2}$ and the geometric coefficient $(16\pi G_N)^{-1}$, not an independent
+    prediction. A dimensional audit of the diagonal heat-kernel quantity
+    $u(x;t) = -\partial_t\log K(x,x;t)$ shows it carries dimension $L^{-2}$ — an eigenvalue scale — with
+    $u = 2/t - R/6 + O(t\mathcal{R}^2, t\nabla^2 R)$ and normalised form
+    $b(x;t) = t\,u(x;t)/2 = 1 - tR/12 + \cdots$. Neither is a temperature, an inverse temperature, or an energy
+    density absent a calibration map; consequently \emph{no local first law follows from the heat kernel alone},
+    and the earlier multiplier field $\beta(x)^{-1}$ and spectral first law are retracted. A thermodynamic
+    completion requires an independently defined heat one-form on configuration space, a physical energy notion,
+    and a Carath\'{e}odory--Jauch--Roberts integrability theorem establishing $\delta Q = T\,\mathrm{d}S$
+    (\sopen). Reading the stationarity as \emph{equilibrium} is a programme-level interpretation, not a result.
 
     \textbf{Lorentz}~\cite{Beau2026i}: Lorentzian completion of the spectral action.
     Causal propagation and gravitational wave propagation follow from the hyperbolic continuation
@@ -1569,7 +1587,7 @@ A Structural Roadmap and Paper Inventory}
     the full-history profile is confined to the early low-rank window, and under the minimal count-to-density
     mapping class the exact counts do not supply an observable evolving equation of state (conditional no-go:
     \sproved\ given the stated hypotheses; remaining evolving-$w$ routes: rank-dependent dictionary
-    corrections or the spectral-equilibrium route~\cite{Beau2026Thermodynamics}); it also records the
+    corrections or the spectral-stationarity route~\cite{Beau2026Thermodynamics}); it also records the
     arithmetic identity of the canonical count (Pell equations, $\sqrt2$ convergents) and its effective memory
     depth one (transfer matrix).
 
@@ -2486,12 +2504,14 @@ A Structural Roadmap and Paper Inventory}
       Spec2 & Relational spacetime & \cite{Beau2026a} &
       Operational metric from graph Laplacians; spacetime from spectral correlations &
       \sstruct \\[3pt]
-      Gravity & IR Einstein response + BI UV completion & \cite{Beau2026h} &
-      $G_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from $\delta S_\Pi/\delta g$ at leading IR order;
-      unique BI determinantal UV completion &
-      \sproved \\[3pt]
-      Thermo & Spectral thermodynamics & \cite{Beau2026Thermodynamics} &
-      Local spectral first law; Einstein equation as spectral equilibrium condition &
+      Gravity & Conditions for an IR Einstein sector & \cite{Beau2026h} &
+      Cutoff ($a_0\Lambda^4$, $a_2\Lambda^2$) and zeta ($a_4 = \zeta_A(0)$) sectors separated;
+      $c_{\mathrm{EH}}^{\mathrm{ren}}$, its sign and $G_N > 0$ are matching data, not predicted;
+      BI determinantal UV completion under coherence-extensivity &
+      \sopen \\[3pt]
+      Thermo & Conditional Einstein--matter coupling & \cite{Beau2026Thermodynamics} &
+      $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from stationarity of
+      $\Gamma_\Pi$, given supplied coefficients; $u \sim L^{-2}$ is not a temperature; no local first law &
       \sstruct \\[3pt]
       Lorentz & Gravitational waves & \cite{Beau2026i} &
       Lorentzian completion; causal propagation; GW spectrum;
@@ -2738,9 +2758,13 @@ A Structural Roadmap and Paper Inventory}
     $n \leq R := (q-1)/2$ with deviation $\Delta_q(n) = 4m^2/q^2$ for $n = R+m$, while the
     quadratic identity $B_n^2 + (F_n^\tau)^2 = 1$ is exact.
 
-  \paragraph{Thermodynamics: Lorentzian extension and matter coupling.}
-    The local spectral first law is derived in the Riemannian setting.
-    Analytic continuation and the explicit form of $W_\Pi$ for matter fields are open.
+  \paragraph{Thermodynamics: the integrability bridge, Lorentzian extension and matter coupling.}
+    The v1.1 local spectral first law was withdrawn in v2.0: the heat-kernel quantity $u \sim L^{-2}$ is an
+    eigenvalue scale, not a temperature, so no first law follows from the determinant alone.
+    Establishing one requires an independently defined heat one-form $\xi_{\mathrm{sp}}$ on configuration space,
+    a physical energy notion, and a Carath\'{e}odory--Jauch--Roberts integrability result showing
+    $\ker\xi_{\mathrm{sp}}$ is flat, hence $\delta Q = T\,\mathrm{d}S$.
+    Analytic continuation and the explicit form of $W_\Pi$ for matter fields also remain open.
 
     \clearpage
 
