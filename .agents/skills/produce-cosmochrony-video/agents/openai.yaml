@@ -1,0 +1,4 @@
+interface:
+  display_name: "Produce Cosmochrony Video"
+  short_description: "Create and publish scientific videos"
+  default_prompt: "Use $produce-cosmochrony-video to produce and publish a Cosmochrony research video."

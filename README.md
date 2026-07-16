@@ -31,6 +31,11 @@ states. The corpus comprises **109 papers** across three theory branches:
   is copied to the website for publication at https://cosmochrony.org.
 - **Coherence**: updated whenever a new result is obtained or a new paper is created, so the
   programme stays traceable.
+- **Video workflow**: [`VIDEO-WORKFLOW.md`](VIDEO-WORKFLOW.md) is the source of truth for scientific
+  video production and publication; [`videos.json`](videos.json) is the canonical video inventory.
+- **Portable video skill**:
+  [`.agents/skills/produce-cosmochrony-video/SKILL.md`](.agents/skills/produce-cosmochrony-video/SKILL.md)
+  applies the workflow through the open Agent Skills format supported by Codex and Claude Code.
 
 ## Compilation
 
