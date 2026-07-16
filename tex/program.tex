@@ -211,8 +211,7 @@ A Structural Roadmap and Paper Inventory}
     The spectral entropy functional $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ appears here as the
     structural origin of the Einstein equation.
 
-    Version~3.2 incorporates several structural refinements informed by the O-series and Foundation
-    results:
+    Several structural refinements informed by the O-series and Foundation results are incorporated:
     \begin{itemize}
       \item \textit{Oriented state machine:} the admissible cascade is reformulated as a directed
       graph on admissible projections; physical histories are directed paths, and the first
@@ -250,11 +249,11 @@ A Structural Roadmap and Paper Inventory}
     is established (\sproved, Theorem~2.1 and Corollary~3.1).
 
     \textit{Role:} Foundational justification for structural non-injectivity~(Axiom~A2).
-    Version~2 adds Corollary~6 (recursive non-injectivity: any tower of genuinely
-    distinct emergent levels carries one independent non-injective projection per stratum)
-    and Section~5 (towers of emergence, structural colour confinement as projective
-    necessity).
-    A new Remark (algebraic route) shows that in frameworks whose fibre carries a Heisenberg
+    Corollary~6 establishes recursive non-injectivity: any tower of genuinely
+    distinct emergent levels carries one independent non-injective projection per stratum;
+    Section~5 covers towers of emergence and structural colour confinement as projective
+    necessity.
+    A Remark (algebraic route) shows that in frameworks whose fibre carries a Heisenberg
     algebra $[X,Y]=Z\neq 0$, $S_\Pi > 0$ also follows directly from fibre non-commutativity:
     a trivial-kernel projection would require simultaneous diagonalisation of $X$ and $Y$,
     which is structurally forbidden.
@@ -1338,10 +1337,10 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
     on a relational substrate without any background manifold (\sstruct).
 
-    \textbf{Gravity}~\cite{Beau2026h} (v3.3, retitled \emph{Conditions for an Infrared Einstein Sector from
+    \textbf{Gravity}~\cite{Beau2026h} (\emph{Conditions for an Infrared Einstein Sector from
     Spectral Geometry}): Determines the conditions under which the metric variation of
-    $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ supports a local infrared Einstein sector. Version~3.3 separates two
-    regularisation statements that earlier versions conflated: a physical proper-time cutoff
+    $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ supports a local infrared Einstein sector. It separates two
+    regularisation statements that must not be conflated: a physical proper-time cutoff
     $\Lambda = \ell_{\mathrm{sp}}^{-1}$ carries the power-sensitive terms $a_0\Lambda^4$ and $a_2\Lambda^2$,
     while zeta regularisation carries the finite determinant and the logarithmic scale dependence governed in
     four dimensions by $a_4 = \zeta_A(0)$. One minimal scalar contributes
@@ -1355,10 +1354,10 @@ A Structural Roadmap and Paper Inventory}
     tensorial completion of a supplied Einstein infrared term remains of determinantal Born--Infeld form
     $\sqrt{-\det(g_{\mu\nu}+\ell_{\mathrm{sp}}^2 R_{\mu\nu})}-\sqrt{-g}$ (\sstruct).
 
-    \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics} (v2.0, retitled \emph{Einstein--Matter Coupling from
+    \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics} (\emph{Einstein--Matter Coupling from
     Spectral Stationarity: A Conditional Variational Result and the Open Thermodynamic Bridge}):
-    Version~2.0 \emph{withdraws} the thermodynamic identifications claimed up to v1.1 and retains only a
-    conditional variational core. Assuming a renormalised infrared metric response (supplied by Gravity~v3.3,
+    Establishes a conditional variational core, and no thermodynamics.
+    Assuming a renormalised infrared metric response (supplied by Gravity,
     where the finite Einstein coefficient is a matching datum) and an effective matter functional
     $W_\Pi[g,\psi]$, stationarity of $\Gamma_\Pi = S_\Pi^{\mathrm{ren}} - W_\Pi$ yields
     $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ at leading derivative order
@@ -1368,15 +1367,24 @@ A Structural Roadmap and Paper Inventory}
     $u(x;t) = -\partial_t\log K(x,x;t)$ shows it carries dimension $L^{-2}$ — an eigenvalue scale — with
     $u = 2/t - R/6 + O(t\mathcal{R}^2, t\nabla^2 R)$ and normalised form
     $b(x;t) = t\,u(x;t)/2 = 1 - tR/12 + \cdots$. Neither is a temperature, an inverse temperature, or an energy
-    density absent a calibration map; consequently \emph{no local first law follows from the heat kernel alone},
-    and the earlier multiplier field $\beta(x)^{-1}$ and spectral first law are retracted. A thermodynamic
+    density absent a calibration map; consequently \emph{no local first law follows from the heat kernel alone}.
+    A thermodynamic
     completion requires an independently defined heat one-form on configuration space, a physical energy notion,
     and a Carath\'{e}odory--Jauch--Roberts integrability theorem establishing $\delta Q = T\,\mathrm{d}S$
     (\sopen). Reading the stationarity as \emph{equilibrium} is a programme-level interpretation, not a result.
 
-    \textbf{Lorentz}~\cite{Beau2026i}: Lorentzian completion of the spectral action.
-    Causal propagation and gravitational wave propagation follow from the hyperbolic continuation
-    (\sproved{} for the Lorentzian extension; GW spectrum: \sstruct).
+    \textbf{Lorentz}~\cite{Beau2026i} (\emph{No Quartic Graviton Dispersion from the Local Covariant
+    Four-Derivative Truncation}): A negative result about a posited kernel. A Lorentzian counterpart of $S_\Pi$
+    is not available --- an in-in construction on a closed time path is required and is \sopen{} --- so the local
+    Lorentzian transverse-traceless kernel $\mathcal{O}_{\mathrm{TT}} = \Box(c_{\mathrm{EH}} + \beta\Box)$ is posited, not derived.
+    For $c_{\mathrm{EH}} \neq 0$ its kernel is the \emph{direct sum} $\ker\Box \oplus \ker(c_{\mathrm{EH}}+\beta\Box)$:
+    the massless summand obeys $\omega^2 = |\vec k|^2$ exactly, with no correction at any order (\sproved{} given
+    the posit). No quartic deformation of the graviton dispersion follows, hence $A_4 = 0$ on the massless branch,
+    no mapping $A_4 \leftrightarrow \ell_\chi$, and no bound on $\ell_\chi$ resting on that identification.
+    For $\beta \neq 0$ a helicity-$2$ pole appears with opposite residue --- a ghost independently of the sign of
+    $c_{\mathrm{EH}}/\beta$ --- at signed mass squared $m_2^2 = -c_{\mathrm{EH}}^{\mathrm{ren}}/\beta^{\mathrm{ren}}$,
+    a matching datum not tied to $\ell_\chi$. The resemblance to quadratic gravity is a comparison: the five-polarization
+    massive spin-$2$ multiplet is not established, and the $R^2$ sector leaves a massive scalar unexcluded (\sopen).
     The sourced vector sector yields the gravitomagnetic constraint
     $\nabla^2 \bar h_{0i} \propto T^{(\Pi)}_{0i}$, fixing the frame-dragging potential $g_{0i}$ as in
     linearized general relativity once a projected momentum density $T^{(\Pi)}_{0i}$ is supplied
@@ -2513,10 +2521,11 @@ A Structural Roadmap and Paper Inventory}
       $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from stationarity of
       $\Gamma_\Pi$, given supplied coefficients; $u \sim L^{-2}$ is not a temperature; no local first law &
       \sstruct \\[3pt]
-      Lorentz & Gravitational waves & \cite{Beau2026i} &
-      Lorentzian completion; causal propagation; GW spectrum;
+      Lorentz & No quartic graviton dispersion & \cite{Beau2026i} &
+      Posited local four-derivative TT kernel factorizes; massless branch exactly $\omega^2=|\vec k|^2$, no $A_4$,
+      no $\ell_\chi$ bound; pole mass and in-in construction open;
       gravitomagnetic constraint $g_{0i}$ (conditional on $T^{(\Pi)}_{0i}$) &
-      \sproved \\[3pt]
+      \sopen \\[3pt]
       LorCap & Lorentz factor from capacity & \cite{Beau2026n} &
       $\eta_n^\tau \to \beta\gamma$; $\Phi(\eta_n^\tau) \to 1/\gamma$;
       BI factorization and central-phase factorization (\sproved);
