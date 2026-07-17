@@ -931,34 +931,31 @@ A Structural Roadmap and Paper Inventory}
     is computed:
     \[
       a_4(A_{g,\mathcal{A}})\big|_{\mathrm{gauge}}
-      = \frac{1}{16\pi^2}\int \frac{1}{12}\,\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})
-      \sqrt{g}\,\mathrm{d}^4 x\,.
+      = \int \frac{1}{12}\,\mathrm{tr}_\rho(F_{\mu\nu}F^{\mu\nu})
+      \sqrt{g}\,\mathrm{d}^4 x\,,
     \]
-    The extended spectral entropy $S_\Pi[g,\mathcal{A}]$ therefore contains the renormalized
-    Yang--Mills term with logarithmic coupling $g_{\mathrm{YM}}^{-2}
-  \sim (12\cdot 16\pi^2)^{-1}\log(\Lambda/\mu)$,
-    and the vertical variation $\delta_\mathcal{A}S_\Pi = 0$ yields the Yang--Mills equations
-    $D_\mu F^{a\mu\nu} = 0$ in the current-free sector (\sproved{} for the $a_4$ derivation
-    given $G_\Pi$).
-    The induced Newton's constant $G_N^{-1} \sim \ell_{\mathrm{sp}}^{-2}$ (quadratic UV)
-    and the induced gauge coupling (logarithmic UV) share the same spectral cutoff
-    $\ell_{\mathrm{sp}}$; the gauge--gravity hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is a
-    structural consequence of the Seeley--DeWitt expansion and requires no fine-tuning.
-    The horizontal--vertical decoupling lemma guarantees that the Einstein and Yang--Mills
-    sectors are independent at orders $a_2$ and~$a_4$: $a_2 \to \text{Einstein}$,
-    $a_4 \to \text{Yang--Mills}$, from the single functional $S_\Pi[g,\mathcal{A}]$.
-    Beyond the technical derivation, Q12 identifies a conceptual principle:
+    the gauge component $\Omega^{\mathrm{gauge}}_{\mu\nu} = F_{\mu\nu}$ being isolated from the
+    total bundle curvature and the overall $(4\pi)^{-2}$ carried once by the heat-kernel prefactor.
+    The extended spectral entropy $S_\Pi[g,\mathcal{A}]$ therefore contains a local logarithmic
+    Yang--Mills term, and the vertical variation $\delta_\mathcal{A}S_\Pi = 0$ at fixed base metric
+    yields the Yang--Mills equations $D_\mu F^{a\mu\nu} = 0$ in the current-free sector
+    (\sproved{} for the $a_4$ derivation given $G_\Pi$).
+    The coefficient of the induced logarithmic running of $g_{\mathrm{YM}}^{-2}$ is
+    $I_\rho/(12\cdot 16\pi^2)$, depending on the representation through the Dynkin index $I_\rho$
+    and hence not universal; the physical $g_{\mathrm{YM}}$ and $G_N$ are renormalized matching
+    data, of which only the logarithmic running is computed.
+    What is structural is the difference in UV divergence degree between the two sectors ---
+    quadratic at $a_2$ for gravity, logarithmic at $a_4$ for gauge; no predictive $G_N$ formula
+    and no tuning-free hierarchy is claimed (aligned with Gravity~3.3).
+    At fixed base metric the vertical variation isolates the Yang--Mills sector, but full
+    horizontal--vertical decoupling does not hold: the metric variation of $F^2$ is the
+    Yang--Mills stress tensor $T^{\mathrm{YM}}_{\mu\nu}$, an $a_4$-order back-reaction treated in Q13.
+    Beyond the technical derivation, Q12 offers an interpretive outlook (not a theorem):
     gravity and gauge dynamics are separated by geometric direction (horizontal
-    vs.\ vertical variation on the admissible bundle) \emph{and} by spectral order
-    in the Seeley--DeWitt hierarchy, not by a missing symmetry group.
-    The distinct UV behaviours --- quadratic divergence for gravity, logarithmic
-    for gauge --- are structural consequences of this spectral stratification
-    and require no independent input.
-    This suggests that the natural organisational space for unification in the
-    present framework is spectral and variational rather than primarily
-    group-theoretic: the difficulty of reconciling gravity with the gauge-theoretic
-    Standard Model may reflect a difference of Seeley--DeWitt order rather than
-    the absence of a common symmetry group~$G_{\mathrm{unif}}$.
+    vs.\ vertical variation on the admissible bundle) \emph{and} by spectral order in the
+    Seeley--DeWitt hierarchy, so the difficulty of reconciling gravity with the gauge-theoretic
+    Standard Model may reflect a difference of Seeley--DeWitt order rather than the absence of a
+    common symmetry group~$G_{\mathrm{unif}}$.
     The gauge--gravity synthesis is carried out in Q13.
 
     \textbf{Q13}~\cite{Beau2026q13}: Gauge--gravity spectral synthesis (\sstruct, conditional
