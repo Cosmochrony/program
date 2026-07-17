@@ -2,3 +2,5 @@
 **/.DS_Store
 .idea/
 out/
+media/
+**/__pycache__/

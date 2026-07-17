@@ -1,6 +1,6 @@
 # What Is Cosmochrony Trying to Explain?
 
-This directory contains the production brief and English narration for video 1.2 of the
+This directory contains the editable Manim sources and English narration for video 1.2 of the
 *Start Here: The Cosmochrony Programme* playlist.
 
 ## Production brief
@@ -17,6 +17,27 @@ This directory contains the production brief and English narration for video 1.2
 - **Narration:** English, British male voice `en-GB-RyanNeural`
 - **Intended platforms:** Cosmochrony YouTube channel and Instagram account
 - **Website scope after publication:** programme root and science overview pages
+
+The rendering script uses `uv run --no-project` with the shared global `uv` package cache and pins Python 3.13,
+Manim 0.20.1, Manim Voiceover 0.3.7, Edge TTS 7.2.8, and the compatibility version of `setuptools` required by the
+voice-over plugin.
+It does not create a virtual environment inside this directory or install a persistent tool under `~/.local`.
+The free online Edge TTS service generates the narration automatically from `narration.py` with the British male
+voice `en-GB-RyanNeural`.
+
+Render the final narrated 1080p60 video with:
+
+```bash
+./render.sh
+```
+
+For a faster 480p15 draft render, use:
+
+```bash
+./render.sh draft
+```
+
+The generated MP4 and SRT subtitle file are written to `out/`.
 
 The episode deliberately avoids introducing either $\Omega$ or $\chi$.
 At programme-overview level, the phrase *underlying description* is sufficient and avoids suggesting an identification
