@@ -74,18 +74,20 @@ Could these structures emerge
 from a common deeper description?
 ```
 
-### Scene 3 — Non-injective observation
+### Scene 3 — Handoff from Episode 1.1
 
 **Narration:** `projection`
 
-Animate several fine distinctions converging onto fewer observable states.
-The projection should visibly erase distinctions without destroying the underlying source diagram.
+Present the result of the ENI video as a compact input card, without replaying its many-to-one projection animation.
+Move immediately to the new programme-level question: which consequences are forced, conditional, or open?
 
 **On-screen text:**
 
 ```text
-Non-injective projection
-Several distinctions → one observable state
+Established in Episode 1.1
+Genuine emergence requires non-injectivity
+
+What follows from this input?
 ```
 
 ### Scene 4 — Level one: structural foundations

@@ -12,14 +12,14 @@ NARRATION = {
         "matter arise as different effective descriptions of a common underlying relational reality?"
     ),
     "projection": (
-        "Its starting point is non-injective projection. Observation need not preserve every underlying distinction. "
-        "Several configurations may become one observable state, so an effective description contains less resolving "
-        "power than the level from which it emerges."
+        "The first episode established the foundational input: genuine emergence requires non-injectivity. We now "
+        "take that result as given. The programme's next task is different: determine what further structures are "
+        "forced, which depend on bridge hypotheses, and which physical identifications remain open."
     ),
     "foundations": (
-        "The first level of the programme studies what this loss of distinction forces. Under explicit axioms, "
-        "admissible unresolved fibres acquire non-commuting generators and a finite Heisenberg structure. These are "
-        "mathematical results in stated settings, not yet a complete model of physical reality."
+        "At the first level, explicit axioms for admissible transitions lead to unresolved fibres, non-commuting "
+        "generators, and a finite Heisenberg structure. Those are mathematical results in stated settings. Moving "
+        "from this finite architecture to continuum physics is a separate problem."
     ),
     "spectra": (
         "The second level asks which relational structures remain admissible and distinguishable. Graph spectra, "
@@ -36,7 +36,7 @@ NARRATION = {
         "yet claim experimental validation of the full framework."
     ),
     "closing": (
-        "Its guiding question is therefore precise: once observable reality is produced through non-injective "
-        "projection, which familiar structures of physics become unavoidable, and which still require new input?"
+        "Its guiding question is therefore precise: once observable descriptions are non-injective, which familiar "
+        "structures of physics become unavoidable, and which still require new input?"
     ),
 }
