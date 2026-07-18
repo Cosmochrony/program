@@ -938,26 +938,33 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q13}~\cite{Beau2026q13}: Gauge--gravity spectral synthesis (\sstruct, conditional
     on Q12 and the Gravity paper; SU(3) sector unconditional at the pointwise level
     ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35})).
-    Q13 completes the trilogy (Gravity, Q12, Q13) by solving the \emph{joint} variational
-    problem $\delta_{g,\mathcal{A}} S_\Pi = 0$ and deriving the coupled Einstein--Yang--Mills
-    system.
-    The metric variation of the $a_4$ coefficient yields the Yang--Mills stress tensor as the
-    source term for gravity: $G_{\mu\nu} = 8\pi G_N T^{YM}_{\mu\nu} + \mathcal{O}(a_6)$
-    (\sstruct; the coefficient identification $8\pi G_N = c_{\mathrm{YM}}/c_{\mathrm{EH}}$ is
-    pending the Q13 re-audit).
-    The $a_6$ Seeley--DeWitt coefficient is computed and produces the leading gauge--gravity
-    cross-coupling $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$, suppressed by
-    $\ell_{\mathrm{sp}}^2$ (\sstruct).
-    The Eddington--Born--Infeld completion of the joint functional is constructed from the
-    same $c_{\mathrm{BI}}$ saturation bound, recovering both sector-specific BI completions as limits
-    (\sstruct, with residual ambiguity in the tensor $\Xi_{\mu\nu}$).
-    The difference in ultraviolet divergence degree between the two sectors is structural
-    ($a_2 \to$ gravity at quadratic UV, $a_4 \to$ gauge at logarithmic UV).
-    The numerical hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is, however, \emph{not} a tuning-free
-    output: $g_{\mathrm{YM}}$ and $G_N$ are renormalized matching data, so the ratio is fixed by
-    their finite matching values, and the Q13 estimate
-    $G_N g_{\mathrm{YM}}^2 \sim (\ell_{\mathrm{sp}}^2/\dim V)\,[\log(\Lambda/\mu)]^{-1}$ is
-    pending re-audit.
+    Q13 joins the metric and connection variations of a single renormalized local action and
+    obtains a \emph{conditional} Einstein--Yang--Mills system.
+    The metric variation of the matched gauge kinetic term supplies the Yang--Mills
+    energy--momentum tensor through
+    $(1/\sqrt{g})\,\delta\!\int\!\sqrt{g}\,\mathrm{tr}_\rho(F^2)/\delta g^{\mu\nu}
+    = 2\tau_{\mu\nu}$ (\sproved), while the fixed-metric connection variation supplies
+    $D_\mu F^{a\mu\nu} = 0$; jointly,
+    $G_{\mu\nu} + \Lambda_{\mathrm{eff}} g_{\mu\nu} = 8\pi G_N T^{\mathrm{YM}}_{\mu\nu}$.
+    The normalisation is matching, not prediction: since
+    $\mathrm{tr}_\rho(F^2) = I_\rho F^a F^a$, canonical matching fixes
+    $c_{\mathrm{EH}} = 1/(16\pi G_N)$ and $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$, so that
+    $8\pi G_N = 1/(2c_{\mathrm{EH}})$ --- and \emph{not} $c_{\mathrm{YM}}/c_{\mathrm{EH}}$,
+    which would mix the gauge-action prefactor with the definition of the stress tensor.
+    $G_N$, $g_{\mathrm{YM}}$ and the cosmological coefficient $\Lambda_{\mathrm{ren}}$ (the $a_0$
+    term does contribute to the metric equation) are independent renormalized matching data, so
+    the ratio $G_N g_{\mathrm{YM}}^2$ is not an output of the construction.
+    The $a_6$ sector is given as a representative spanning list of the invariants that can occur,
+    modulo integrations by parts and Bianchi identities: in four dimensions $a_6$ produces no
+    ultraviolet divergence, its renormalized dimension-six coefficients are themselves matching
+    data, the pure-gauge invariant at that order is $\mathrm{tr}_\rho(F^3)$, and no unique
+    cross-term is determined (\sstruct).
+    No non-linear completion of the joint functional is asserted.
+    The derivation is Euclidean; identification with the Lorentzian Einstein--Yang--Mills
+    equations requires a continuation that is not performed.
+    Within the proper-time scheme, the difference in ultraviolet divergence degree between the two
+    sectors is structural ($a_2 \to$ gravity at quadratic UV, $a_4 \to$ gauge at logarithmic UV);
+    this contrast is scheme-dependent and does not hold for the zeta-regularized determinant.
     The central conceptual contribution is the identification of the spectral stratification
     principle: gravity and gauge dynamics are not unified by enlarging the symmetry group,
     but are \emph{stratified by Seeley--DeWitt order} within the single operator
@@ -983,7 +990,7 @@ A Structural Roadmap and Paper Inventory}
     GGS-Note organises the two constituents into the spectral stratification chain
     $a_2 \to G_{\mu\nu}$ (horizontal $\delta_g$),
     $a_4 \to D_\mu F^{a\mu\nu} = 0$ (vertical $\delta_A$),
-    $a_6 \to R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$ (mixed, structural),
+    $a_6 \to$ mixed invariants (inventory only),
     all from the single functional
     $S_\Pi[g,A] = \tfrac{1}{2}\log\det'\mathcal{A}_{g,\mathcal{A}}$.
     Q12 is shared with the gauge-structure sub-programme (Note~3), where it provides the
@@ -992,10 +999,9 @@ A Structural Roadmap and Paper Inventory}
     decoupling does \emph{not} hold, the metric variation of $F^2$ being the $a_4$
     back-reaction $T^{\mathrm{YM}}_{\mu\nu}$), and on the difference in UV divergence degree
     between the sectors ($a_2$ quadratic vs.\ $a_4$ logarithmic).
-    Q13 supplies the coupled Einstein--Yang--Mills system, the $a_6$ cross-coupling, and the
-    Eddington--Born--Infeld joint completion (conditional on [H-ext]); its hierarchy claim
-    $G_N g_{\mathrm{YM}}^2 \ll 1$ is pending re-audit and is not presented here as established,
-    since $g_{\mathrm{YM}}$ and $G_N$ are renormalized matching data.
+    Q13 supplies the conditional coupled Einstein--Yang--Mills system and the $a_6$ invariant
+    inventory. It asserts no numerical hierarchy and no non-linear completion: $g_{\mathrm{YM}}$,
+    $G_N$ and $\Lambda_{\mathrm{ren}}$ are independent renormalized matching data.
     The note isolates the upstream inputs consumed (Note~4 for $S_\Pi[g]$ and the $a_2$
     sector; Note~3 for $G_\Pi$ and the principal bundle; Note~2 for the effective Lorentzian
     base manifold; BornInfeld for the saturation bound $c_{\mathrm{BI}}$ and the conditionality
@@ -2349,8 +2355,9 @@ A Structural Roadmap and Paper Inventory}
       Joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ yields coupled Einstein--Yang--Mills system;
       $a_6$ cross-coupling $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$ (suppressed by
       $\ell_{\mathrm{sp}}^2$); Eddington--Born--Infeld joint completion;
-      hierarchy ratio $G_N g_{\mathrm{YM}}^2$ pending re-audit ($g_{\mathrm{YM}}$, $G_N$ are
-      matching data) &
+      $8\pi G_N = 1/(2c_{\mathrm{EH}})$ by canonical matching with
+      $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$; couplings are matching data, no hierarchy claimed;
+      Euclidean &
       \sstruct \\[3pt]
       Q14 & Fermionic matter \& chirality & \cite{Beau2026q14} &
       Admissible spinor bundle $S_\Pi$ reproduces the $\SU(2)_L \times U(1)_Y$ gauge-sector
@@ -2720,14 +2727,16 @@ A Structural Roadmap and Paper Inventory}
     isolates the Yang--Mills equation, but the two sectors are \emph{not} independent under a
     joint variation, the metric variation of $F^2$ being the Yang--Mills back-reaction
     $T^{\mathrm{YM}}_{\mu\nu}$.
-    Q13~\cite{Beau2026q13} aims to complete this synthesis (joint variational problem
-    $\delta_{g,\mathcal{A}} S_\Pi = 0$, coupled Einstein--Yang--Mills system, and the
-    Eddington--Born--Infeld completion); its hierarchy ratio $G_N g_{\mathrm{YM}}^2$ is pending
-    re-audit and is not presented here as an established prediction, since $g_{\mathrm{YM}}$ and
-    $G_N$ are renormalized matching data.
-    Residual open points: EBI tensor $\Xi_{\mu\nu}$ ambiguity (subleading),
-    numerical $a_6$ coefficients, Lorentzian extension of the joint EBI functional,
-    and extension to include projected matter currents $J^{a\nu}$.
+    Q13~\cite{Beau2026q13} carries out the joint variation of a single matched local action and
+    obtains the conditional coupled Einstein--Yang--Mills system, with
+    $8\pi G_N = 1/(2c_{\mathrm{EH}})$ fixed by canonical matching. No numerical hierarchy ratio
+    and no non-linear completion are asserted: $g_{\mathrm{YM}}$, $G_N$ and
+    $\Lambda_{\mathrm{ren}}$ are independent renormalized matching data.
+    Residual open points: whether a well-defined non-linear completion of the joint functional
+    exists at all, the quantitative $a_6$ coefficients (after reduction of the spanning list to a
+    minimal independent set), whether admissibility constrains any combination of the matching
+    data, the Lorentzian continuation of the gauge sector, and the extension to projected matter
+    currents $J^{a\nu}$.
 
   \paragraph{Yang--Mills uniqueness for SU(3) (Q12, O31).}
     Q12 derives the Yang--Mills equations for any compact $G_\Pi$ from the $a_4$
@@ -2806,9 +2815,9 @@ A Structural Roadmap and Paper Inventory}
   matching data.
   Q13~\cite{Beau2026q13} aims to complete the gauge--gravity synthesis (joint variational
   problem $\delta_{g,\mathcal{A}} S_\Pi = 0$, coupled Einstein--Yang--Mills system). What is
-  structural is the difference in UV divergence degree between the sectors ($a_2$ quadratic
-  vs.\ $a_4$ logarithmic); the numerical hierarchy $G_N g_{\mathrm{YM}}^2 \ll 1$ is not a
-  tuning-free prediction and is pending re-audit of Q13.
+  structural, within the proper-time scheme, is the difference in UV divergence degree between the
+  sectors ($a_2$ quadratic vs.\ $a_4$ logarithmic); the numerical hierarchy
+  $G_N g_{\mathrm{YM}}^2$ is not a prediction, both couplings being independent matching data.
   Q14~\cite{Beau2026q14} extends this to the fermionic sector: the admissible Weil module
   induces a spinor bundle $S_\Pi$ reproducing the $\SU(2)_L \times U(1)_Y$ gauge-sector
   data (the independent fermionic weak doublet is a distinct object, excluded at the
@@ -2828,8 +2837,8 @@ A Structural Roadmap and Paper Inventory}
   emergent interactions}, in which the type of a fundamental interaction is determined by the
   Seeley--DeWitt order at which the admissible operator responds. This reading is an interpretive
   synthesis, not a theorem: its force rests on the proved and structural results catalogued above,
-  and claims still pending --- notably the Q13 gauge--gravity hierarchy and the
-  $8\pi G_N = c_{\mathrm{YM}}/c_{\mathrm{EH}}$ normalisation --- are marked as such.
+  and specifically on the qualitative separation of spectral orders, not on any quantitative claim
+  about the couplings, which are renormalized matching data throughout.
   Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
   Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
   each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
