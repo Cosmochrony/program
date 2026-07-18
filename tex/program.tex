@@ -1004,10 +1004,14 @@ A Structural Roadmap and Paper Inventory}
     $G_N$ and $\Lambda_{\mathrm{ren}}$ are independent renormalized matching data.
     The note isolates the upstream inputs consumed (Note~4 for $S_\Pi[g]$ and the $a_2$
     sector; Note~3 for $G_\Pi$ and the principal bundle; Note~2 for the effective Lorentzian
-    base manifold; BornInfeld for the saturation bound $c_{\mathrm{BI}}$ and the conditionality
-    [H-ext]) and records the three open deliverables: $a_6$ phenomenological normalisation,
-    analytical derivation of [H-ext] from A1--A4, and the coupled equations with fermionic
-    matter currents from Q14 (Note~6).
+    base manifold) and records the open deliverables: the quantitative $a_6$ coefficients,
+    whether admissibility constrains any combination of the matching data, a possible non-linear
+    completion of the joint functional, the Lorentzian continuation of the gauge sector, and the
+    coupled equations with fermionic matter currents from Q14 (Note~6).
+    GGS-Note itself still presents the earlier chain (full horizontal--vertical decoupling,
+    a unique $a_6$ cross-term, an Eddington--Born--Infeld completion and a tuning-free hierarchy)
+    and therefore requires a corrective revision to align it with Q12 and Q13; that revision is
+    outstanding at the time of writing.
     Per O31 Prop.~4.23, $[H\text{-color}]_{\mathrm{pointwise}}$ is proved on the standard
     graph at finite $q$, making $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ an
     unconditional input to the stratification chain; the $a_4$ Yang--Mills derivation of Q12
@@ -1878,10 +1882,9 @@ A Structural Roadmap and Paper Inventory}
 
           \node[S] (Q13) at (3*\dx,-12*\dy) {Q13};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q13.east)
-            {EYM + hierarchy};
+            {EYM (conditional)};
           \draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
           \draw[arr] (Grav) to[out=-90,in=150] (Q13);
-          \draw[arr] (BI)   to[out=-90,in=180] (Q13);
 
 % Gauge-gravity stratification sub-programme synthesis (presentation note 8):
 % aggregates Q12 and Q13.
@@ -2352,9 +2355,10 @@ A Structural Roadmap and Paper Inventory}
       (\sproved{} for the $a_4$ derivation; conditional on Q6a for $G_\Pi$) &
       \sstruct \\[3pt]
       Q13 & Gauge--gravity spectral synthesis & \cite{Beau2026q13} &
-      Joint $\delta_{g,\mathcal{A}} S_\Pi = 0$ yields coupled Einstein--Yang--Mills system;
-      $a_6$ cross-coupling $R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}$ (suppressed by
-      $\ell_{\mathrm{sp}}^2$); Eddington--Born--Infeld joint completion;
+      Joint $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0$ yields a conditional
+      Einstein--Yang--Mills system; metric variation of the gauge kinetic term $= 2\tau_{\mu\nu}$;
+      $a_6$ given as a spanning list modulo IBP and Bianchi (no unique cross-term, no UV
+      divergence in $d=4$); no non-linear completion asserted;
       $8\pi G_N = 1/(2c_{\mathrm{EH}})$ by canonical matching with
       $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$; couplings are matching data, no hierarchy claimed;
       Euclidean &
@@ -2813,8 +2817,9 @@ A Structural Roadmap and Paper Inventory}
   at fixed metric yields $D_\mu F^{a\mu\nu} = 0$; the induced logarithmic running is
   non-universal (Dynkin index $I_\rho$), while $g_{\mathrm{YM}}$ and $G_N$ remain renormalized
   matching data.
-  Q13~\cite{Beau2026q13} aims to complete the gauge--gravity synthesis (joint variational
-  problem $\delta_{g,\mathcal{A}} S_\Pi = 0$, coupled Einstein--Yang--Mills system). What is
+  Q13~\cite{Beau2026q13} carries out the gauge--gravity synthesis, obtaining the conditional
+  coupled Einstein--Yang--Mills system from the joint variation of a single matched local action,
+  with $8\pi G_N = 1/(2c_{\mathrm{EH}})$ fixed by canonical matching. What is
   structural, within the proper-time scheme, is the difference in UV divergence degree between the
   sectors ($a_2$ quadratic vs.\ $a_4$ logarithmic); the numerical hierarchy
   $G_N g_{\mathrm{YM}}^2$ is not a prediction, both couplings being independent matching data.
