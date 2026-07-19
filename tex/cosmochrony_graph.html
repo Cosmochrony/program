@@ -635,7 +635,7 @@
       url: ZEN + "19616329",
       tags: ["emer", "QM", "BI", "time"],
       title: "Foundation (Admissible Non-Injective Transitions)",
-      desc: "4 axioms A1–A4. Derives Heis₃(ℤ/qℤ) and Weil representation Vρ as theorems (Thm 5.6). Replaces substrate χ and relaxation by pure axiomatic construction."
+      desc: "4 axioms A1–A4. Derives Heis₃(ℤ/qℤ) and Weil representation Vρ as theorems (Thm 5.6). Replaces substrate χ and relaxation by pure axiomatic construction. v1.16: continuum-limit passages conditional on [H-L] (Q5a 3.0); Q5 open."
     },
     {
       id: "Heis", lbl: "HeisStr", s: "proved", b: "I", key: "Beau2026HeisenbergStructure",
@@ -985,10 +985,11 @@
       id: "Q5a", lbl: "Q5a", s: "structural", b: "III", key: "Beau2026q5a",
       url: BASE + "emergent-geometry/q5/a",
       tags: ["spt", "QM"],
-      title: "Q5a — Large-q Operator Limit (v2.0)",
-      desc: "Mosco convergence E_q → L_Π = −A∂²_x on L²(ℝ). " +
-        "v2.0: [H1] not needed in full generality (holds on admissible low-frequency sector). " +
-        "[H-E1] and [C] proved by Q5a-O2. [H2] proved by H2 paper. All hypotheses verified on admissible sector."
+      title: "Q5a — Canonical Fourier Filtration (v3.0)",
+      desc: "v3.0: exact identification — the canonical filtration is the toric Fourier window " +
+        "span{e_b : |b| ≤ n}. Zero-form theorem (published form → 0 at rate q⁻²). " +
+        "Normalisation no-go: no common scalar normalisation yields a non-trivial toric differential operator. " +
+        "Former Mosco derivation of L_Π = −A∂²_x withdrawn; spatial limit now hypothesis [H-L]; Q5 open."
     },
     {
       id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III",
@@ -1005,7 +1006,7 @@
       url: ZEN + "19686700",
       tags: ["spt", "time"],
       title: "Q5b — 4D Lorentzian Geometry",
-      desc: "BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime (conditional on [H-lift]). Temporal direction = BFS depth."
+      desc: "BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime. v2.0: metric results conditional on the unestablished spatial limit hypothesis [H-L] (Q5a 3.0); Carnot geometry structural; [H-lift] proved by Q9."
     },
     {
       id: "Q6a", lbl: "Q6a", s: "structural", b: "III", key: "Beau2026q6a",
@@ -1044,7 +1045,8 @@
       tags: ["spt"],
       title: "Q9 — [H-lift] Proved",
       desc: "Modulation generator X suppressed at rate O(q⁻¹): position sector subcritical. " +
-        "Mosco limit selects kinetic sector only → [H-lift] is a theorem under Q5a. " +
+        "v1.1: the withdrawn Q5a framework is consumed as the frozen hypothesis [H-F]; " +
+        "the result is the implication [H-F] ⟹ [H-lift]. " +
         "Corollary: A_H>0 by coercivity, independently of bridge (Case 3 excluded)."
     },
     {
@@ -1090,7 +1092,7 @@
       url: ZEN + "20098387",
       tags: ["spt", "emer"],
       title: "Q11 — Temporal Casimir Rigidity: Identification of A_τ = 2",
-      desc: "Closes open problem Q5b-O3. " +
+      desc: "Closes open problem Q5b-O3 (v1.1: metric reading conditional on [H-L]). " +
         "Cascade internalization lemma: τ is the BFS depth index (Q5b Remark 3.3); " +
         "∂_τ is the Carnot–Carathéodory limit of the cascade increment T (Q5b Thm 3.2, Pansu). " +
         "[U] (proved in U1) forces T to be asymptotically SU(2)-equivariant. " +
