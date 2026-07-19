@@ -170,7 +170,8 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Level 3 --- Physical observables.}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
     waves, and cosmological observables are derived as consequences of Levels~1--2.
-    No additional physical postulates are introduced beyond the continuum-limit hypotheses of Q5a--Q5b.
+    No additional physical postulates are introduced beyond the continuum-limit hypothesis
+    [H-L] of Q5a--Q5b (unestablished; Q5a version 3.0, Q5b version 2.0).
     Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2},
     Q3~\cite{Beau2026q3}, Q5a--Q7), the gravity track
     (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
@@ -291,7 +292,8 @@ A Structural Roadmap and Paper Inventory}
     $\Pi$-resolution), recovering the Bell-paper's conclusion as a structural consequence of A2.
 
     \textit{Status:} \sproved{} for the algebraic identification of the fibre;
-    \sstruct{} for the continuum limit (deferred to Q5a--Q5b).
+    \sopen{} for the continuum limit (Q5a version 3.0 withdraws the Mosco derivation; the
+    spatial limit is the unestablished hypothesis [H-L] of Q5b version 2.0).
     \textit{Role:} Axiomatic spine.
     Cited by all Q-series papers, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
     , noscale, and recent companion papers.
@@ -814,17 +816,30 @@ A Structural Roadmap and Paper Inventory}
     It maps these twelve papers into the chain $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} = 2\eta^{\mu\nu}$,
     deriving the effective four-dimensional Lorentzian metric from the admissibility filter acting on the
     Weil representation, with all four metric coefficients fixed by the $\mathfrak{su}(2)$-Casimir on the
-    spin-$1$ module $\mathrm{Sym}^2(V_\rho)$. Their individual contributions follow.
+    spin-$1$ module $\mathrm{Sym}^2(V_\rho)$.
+    The chain is conditional at its first link: Q5a version 3.0 withdraws the Mosco derivation
+    of the spatial limit operator, which is now the explicit, unestablished hypothesis [H-L]
+    (Q5b version 2.0); the geometric convergence results and algebraic rigidities are
+    independent of [H-L]. Their individual contributions follow.
 
-    \textbf{Q5a}~\cite{Beau2026q5a}: Under Mosco hypotheses, the admissibility forms~$\mathcal{E}_q$
-    on $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ converge to $L_\Pi = -A\partial_x^2$ on $L^2(\mathbb{R})$
-    (\sstruct, conditional).
+    \textbf{Q5a}~\cite{Beau2026q5a}: Version 3.0 (\emph{Canonical Fourier Filtration and the
+    Obstruction to a Spatial Continuum Limit}) identifies the canonical filtration exactly ---
+    the stage is precisely the toric Fourier window $\mathrm{span}\{e^{2\pi i b x/q}: |b| \le n\}$
+    --- proves that the published admissibility form converges to the zero form on it (rate
+    $q^{-2}$), and proves a normalisation no-go: no common scalar normalisation yields a
+    non-trivial toric differential operator; the only non-trivial rescaled limit is a
+    conditional Dirichlet form in the rescaled \emph{frequency} variable.
+    The former Mosco derivation of $L_\Pi = -A\partial_x^2$ (versions up to 2.1) is withdrawn;
+    the spatial limit operator is now the hypothesis [H-L] and Q5 is open
+    (\sproved{} for the negative results; \sopen{} for the spatial continuum).
 
     \textbf{Q5b}~\cite{Beau2026q5b}: The BFS shell stratification of $\Heis_3(\mathbb{R})$
     produces a four-dimensional Lorentzian spacetime, with the temporal direction identified
     with the BFS depth.
-    Hypothesis~[H-lift] (Q5b-O1), formerly conditional, is proved by Q9~\cite{Beau2026q9}
-    (\sstruct; unconditional with respect to~[H-lift] via Q9).
+    Hypothesis~[H-lift] (Q5b-O1), formerly conditional, is proved by Q9~\cite{Beau2026q9}.
+    Version 2.0 formalises the spatial limit input as the explicit, unestablished
+    hypothesis [H-L]; the Carnot/$D_{\mathrm{hom}}=4$ results are independent of it
+    (\sstruct{} for the geometry; conditional on [H-L] for the metric reading).
 
     \textbf{Q6a}~\cite{Beau2026q6a}: Gauge charges are the invariants of the projection-fibre
     equivalence classes.
@@ -846,7 +861,7 @@ A Structural Roadmap and Paper Inventory}
     Closes the geometric chain
     $\Pi_q \xrightarrow{\text{Q5a}} \mathcal{L}_\Pi \xrightarrow{\text{Q5b}} g^{\mu\nu}
     \xrightarrow{\text{Gravity}} G_{\mu\nu}$
-    (\sstruct, conditional on Q5a).
+    (\sstruct, conditional on [H-L]).
 
     \textbf{Q7}~\cite{Beau2026q7}: Bridge candidate between the admissible dimension
     $\dim H_{\mathrm{eff}} = 3$ (O23--O29) and the three spatial dimensions of Q5b.
@@ -865,11 +880,11 @@ A Structural Roadmap and Paper Inventory}
     bridge existence at finite~$q$: \sopen).
 
     \textbf{Q8--Q11, U1, W1, H2 (Geometric emergence cluster).}
-    Q8~\cite{BeauQ8} establishes $A_Z = C_{\mathfrak{su}(2)} = 2$ unconditionally under Q5a
-    via Casimir rigidity (\sstruct).
+    Q8~\cite{BeauQ8} establishes $A_Z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity,
+    within the frozen Q5a framework [H-F] (\sstruct).
     Q9~\cite{Beau2026q9} proves [H-lift] as a theorem: the modulation generator is suppressed at
     rate $O(q^{-1/2})$, and $A_H > 0$ follows by coercivity independently of the bridge (\sproved,
-    under Q5a).
+    as the implication [H-F] $\Rightarrow$ [H-lift]; version 1.1).
     Q10~\cite{Beau2026q10} proves $A_H \to 2$ under spectral universality~[U]:
     character-independence forces $\mathfrak{su}(2)$-isotropy of the effective form,
     and the unique such form is the Casimir with value~2 (\sstruct, conditional on [U]).
@@ -878,14 +893,16 @@ A Structural Roadmap and Paper Inventory}
     W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
     observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved{}).
-    After W1, the open Q5a hypotheses reduce to three: [H1], [H-E1], and [C].
+    After W1, the open hypotheses of the former Q5a framework reduce to three: [H1], [H-E1],
+    and [C].
     Q5a-O2~\cite{Beau2026q5ao2} subsequently proves that [H1] is not needed in full generality on the admissible sector,
     and closes [H-E1] and [C] via spectral atomicity.
     H2~\cite{Beau2026h2} proves the last open hypothesis, [H2] (strong convergence of the rescaled
     Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$), via a quantitative
     Poisson aliasing lemma and a discrete Sobolev identity (\sproved{}).
-    All hypotheses of the Q5a large-$q$ convergence theorem are verified unconditionally
-    on the admissible sector.
+    All hypotheses of the former Q5a convergence framework are thus verified on the admissible
+    sector; the framework itself is withdrawn in Q5a version 3.0, and the chain's residual
+    conditionality is the spatial limit hypothesis [H-L].
     \textbf{Q11}~\cite{Beau2026q11}: Temporal Casimir rigidity closes Q5b open problem~O3
     (identification of $A_\tau$ from admissibility data) (\sstruct).
     The cascade increment operator internalises no new irreducible representation
@@ -894,7 +911,8 @@ A Structural Roadmap and Paper Inventory}
     The effective Lorentzian co-metric is thereby fully identified:
     $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$ (Minkowski).
     The derivation chain Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$
-    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 closed is now complete.
+    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 closed is complete \emph{conditionally on
+    [H-L]} (Q5a version 3.0; Q5b version 2.0).
 
     \textbf{Q12}~\cite{Beau2026q12}: Yang--Mills dynamics from the vertical variation of
     the projective spectral entropy (\sstruct, conditional on Q6a for the gauge group;
@@ -2100,8 +2118,8 @@ A Structural Roadmap and Paper Inventory}
       \sproved \\[3pt]
       Found & Foundation & \cite{Beau2026m} &
       Axioms A1--A4; derives $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $V_\rho$ as theorems (Thm~5.6);
-      v1.10: co-metric $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ noted; relation to HJ, symplectic,
-      WKB, FRG formalisms &
+      v1.16: continuum-limit passages conditioned on [H-L] (Q5a 3.0 withdrawal); co-metric
+      completion conditional on [H-L]; relation to HJ, symplectic, WKB, FRG formalisms &
       \sproved \\[3pt]
       HeisStr & Heisenberg structure & \cite{Beau2026HeisenbergStructure} &
       Detailed proof of Found. Thm~5.6; uncertainty principle from A3 alone &
@@ -2292,23 +2310,29 @@ A Structural Roadmap and Paper Inventory}
       $j \in \{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}$; universal correlator and Born rule
       derived; closes Q2 open step &
       \sproved \\[3pt]
-      Q5a & Large-$q$ operator limit & \cite{Beau2026q5a} &
-      Mosco convergence $\mathcal{E}_q \to L_\Pi = -A\partial_x^2$; conditional on [H2].
-      v2.0: [H1] established on admissible sector (not needed in full generality);
-      [H-$\mathcal{E}$1] and [C] proved by Q5a-O2~\cite{Beau2026q5ao2}; [H2] proved by H2~paper:
-      all hypotheses verified on the admissible sector &
-      \sstruct \\[3pt]
+      Q5a & Canonical Fourier filtration & \cite{Beau2026q5a} &
+      v3.0: canonical filtration identified exactly (toric Fourier window
+      $\mathrm{span}\{e^{2\pi i b x/q}: |b|\le n\}$); published form converges to the zero form
+      (rate $q^{-2}$); normalisation no-go (no common scalar normalisation yields a
+      non-trivial toric differential operator); conditional dual-window Dirichlet limit in the
+      rescaled frequency variable.
+      Former Mosco derivation of $L_\Pi=-A\partial_x^2$ (v$\le$2.1) withdrawn; spatial limit
+      now hypothesis [H-L]; Q5 open &
+      \sproved{} (negative); \sopen{} (continuum) \\[3pt]
       Q5a-O2 & Spectral atomicity \& Mosco closure & \cite{Beau2026q5ao2} &
       Admissible sector spectrally atomic: $\mathrm{ran}(\Pi_q^{(c)}) =
       \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$, $\xi_c/q \to \omega_c \neq 0$.
       Proves [H-$\mathcal{E}$1'] (scaled coercivity, $\beta=1$ optimal) and [C]
       (Mosco compactness via Bolzano--Weierstrass in $\mathbb{C}^2$, no Nash inequality needed).
-      Numerical confirmation $K_q=1$ at machine precision for $q \in \{29,61,101,151\}$ &
+      Numerical confirmation $K_q=1$ at machine precision for $q \in \{29,61,101,151\}$;
+      closures apply to the withdrawn Q5a framework [H-F] &
       \sproved \\[3pt]
       Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
       BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime;
-      $g^{\mu\nu}=2\,\eta^{\mu\nu}$ fully determined (Q9, Q10, Q11 close all open problems) &
-      \sproved \\[3pt]
+      $g^{\mu\nu}=2\,\eta^{\mu\nu}$ determined (Q9, Q10, Q11).
+      v2.0: spatial limit input formalised as unestablished hypothesis [H-L]; metric results
+      conditional on [H-L]; Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
+      \sstruct{} (geometry); conditional on [H-L] (metric) \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
       $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ derived (O31~\cite{Beau2026a35},
@@ -2318,7 +2342,7 @@ A Structural Roadmap and Paper Inventory}
       $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ from $\Pi_q$;
       Schwarzschild from flux conservation; Einstein equations as consistency conditions;
       closes chain $\Pi_q\to\mathcal{L}_\Pi\to g^{\mu\nu}\to G_{\mu\nu}$;
-      [H-lift] closed by Q9 &
+      [H-lift] closed by Q9; conditional on [H-L] &
       \sstruct \\[3pt]
       Q7 & Dimensional bridge & \cite{Beau2026q7} &
       $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$; $[F_c, L_{\mathrm{Weil}}]=0$;
@@ -2332,7 +2356,9 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       Q9 & [H-lift] proved & \cite{Beau2026q9} &
       Kinetic-sector identification: modulation generator suppressed at rate $O(q^{-1/2})$;
-      [H-lift] is a theorem under Q5a; $A_H > 0$ proved by coercivity, independently of bridge &
+      $A_H > 0$ proved by coercivity, independently of bridge.
+      v1.1: the withdrawn Q5a framework is consumed as the frozen hypothesis [H-F]; the
+      result is the implication [H-F] $\Rightarrow$ [H-lift] &
       \sproved \\[3pt]
       Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
       $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
@@ -2346,18 +2372,20 @@ A Structural Roadmap and Paper Inventory}
       W1 & [H-w] proved & \cite{Beau2026w1} &
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
       ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$;
-      after W1 + Q5a-O2~\cite{Beau2026q5ao2}, open Q5a hypotheses reduced to [H2] only &
+      after W1 + Q5a-O2~\cite{Beau2026q5ao2}, open hypotheses of the former Q5a framework
+      reduced to [H2] only &
       \sproved \\[3pt]
       H2 & [H2] proved & \cite{Beau2026h2} &
       Strong convergence $\hat{X}_q \to x$, $\hat{P}_q \to -i\partial_x$ on
       $\Heis_3(\mathbb{Z}/q\mathbb{Z})$: quantitative Poisson aliasing lemma (rate $O(q^{-1})$),
       discrete Sobolev identity, quasi-isometry of sinc embedding;
-      closes last open hypothesis of Q5a Theorem~7.1 &
+      closes last open hypothesis of the former Q5a framework (Theorem~7.1 of v$\le$2.1) &
       \sproved \\[3pt]
       Q11 & Temporal Casimir rigidity & \cite{Beau2026q11} &
       Closes Q5b open problem~O3: Schur rigidity forces $A_\tau = C_{\mathfrak{su}(2)} = 2$;
       effective Lorentzian co-metric fully determined:
-      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$ &
+      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$.
+      v1.1: algebraic content unchanged; metric reading conditional on [H-L] &
       \sstruct \\[3pt]
       Q12 & Yang--Mills from $a_4$ & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
