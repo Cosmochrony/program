@@ -531,34 +531,43 @@ A Structural Roadmap and Paper Inventory}
     equivariance, quadratic compatibility, and naturality factors through $\mathfrak{su}(2)$ (\sproved).
 
     \textbf{O28}~\cite{Beau2026a32}: Two measurements from the Q5a-O5 checkpoints.
-    Part~A: out of sample (now to $q = 601$) the linear law $n_1 \sim \hat\alpha\,q$ calibrated on
-    $q \le 211$ fails, overpredicting $n_1$ by up to $+88\%$, and $n_1(q)/q$ decreases monotonically to
-    0.032, establishing $n_1(q)/q \to 0$; only the linear scaling hypothesis is excluded, the asymptotic
-    law of $n_1$ being otherwise open (reframed around the critical coverage $x_1(q) = |B_{n_1}|/q^2$ in
-    the CC-Note~\cite{Beau2026ccnote});
+    Part~A: out of sample (to $q = 601$) the calibrated linear extrapolation
+    $n_1 \sim \hat\alpha\,q$ ($q \le 211$) fails, overpredicting $n_1$ by up to $+88\%$; the
+    finite measurements reject only that extrapolation, and the exact law is the interval theorem
+    of the CC-Note~\cite{Beau2026ccnote}, of which the measured depths are the
+    transitional-regime data;
     the raw $\delta_{\mathrm{pair}}$ descends into $[7.4, 10.6]$ as $q$ grows (O25 extension),
     the O14 correction being a small-$q$ device that overcorrects at large $q$.
     Part~B: formal effective-dimension computation of O26 Criterion~5.4 in
     $\mathrm{End}(H_{\mathrm{eff}})$, $H_{\mathrm{eff}} = \mathbb{C}^3$
     ($\mathrm{HEFF\_DIM} = 3$, consistent with $\Sigma_c(n_3) = 3$ from O23).
-    The covariance $\mathcal{C}_c$ has rank exactly~$3$ for every conjugate pair and every
-    $q \in \{61, 101, 151\}$ (100\% of pairs), with invariant eigenvalue structure
-    $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$.
-    The exact degeneracy $\lambda_2 = \lambda_3$ is a structural consequence of the
-    Born--Infeld parity involution $c \leftrightarrow q-c$ (O18), which correlates conjugate
-    projections and constrains $\mathcal{C}_c$ to a symmetric subspace.
+    The covariance $\mathcal{C}_c$ has $1\%$ threshold rank $r_{\mathrm{eff}}^{1\%} = 3$ for every
+    conjugate pair and every $q \in \{61, 101, 151\}$ (100\% of pairs), with invariant resolved
+    spectrum $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$.
+    The exact degeneracy $\lambda_2 = \lambda_3$ is read, through O29, as the axial structure of
+    the adjoint carrier (interpretation), correlated with the Born--Infeld parity involution
+    $c \leftrightarrow q-c$ (O18).
     The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
     analysis of $V_\rho \subset H_{\mathrm{eff}}$ is carried out in O29.
 
-    \textbf{CC-Note}~\cite{Beau2026ccnote}: Reframes the saturation-depth open direction of O25--O28.
-    At the window edge the cumulative Weil-fingerprint rank is far from full, so $n_1$ is a stop of
-    marginal novelty, not a basis-filling time (\sstruct).
-    With $|B_n| \sim C_{\mathrm{Heis}} n^4$ ($D=4$) and the diffusive gap $\lambda_2 \approx 4\pi^2/q^2$,
-    the exact reduction $n_1(q) = (x_1(q)/C_{\mathrm{Heis}})^{1/4}\sqrt{q}$ collapses the whole asymptotic
-    content of $n_1$ onto the critical coverage $x_1(q) = |B_{n_1}|/q^2$.
-    Empirically $x_1$ falls $0.61 \to 0.15$ over $q = 101 \to 601$, excluding the constant-coverage
-    (clean $\sqrt{q}$) scenario; the governing front is the tension $\Phi'(x_1) = \varepsilon_{\mathrm{sat}}\,q$,
-    and the open deliverable is a structural law for $x_1(q)$ (\sopen).
+    \textbf{CC-Note}~\cite{Beau2026ccnote}: Exact resolution of the saturation-depth asymptotics
+    of O25--O28.
+    Every implemented Weil--BFS fingerprint is a non-zero scalar multiple of a single Fourier
+    character, so the cumulative rank is the sumset cardinality $r_c(n) = |T'_c + C\,I_{n+1}|$,
+    with universal shellwise ceiling $\Delta r_c(n) \le 2|T'_c| \le 18$ and a complete
+    classification of the block resonances that lower it (\sproved).
+    Exact sphere counts of the infinite Heisenberg group give the strict crossing
+    $s_{22} = 16{,}934 < 18{,}000 < s_{23} = 19{,}412$: deterministically $n_1(q) \le 22$ and
+    $5/q^2 \le x_1(q) \le 99{,}689/q^2$ for every prime $q \ge 311$ (\sproved), and under uniform
+    generic block sampling $n_1(q) \to 22$ and $q^2 x_1(q) \to |B_{22}| = 99{,}689$ in probability
+    (\sproved).
+    The measured O28 depths are the transitional resonance regime of this law (effective exponent
+    $\approx -0.76$ en route to the exact $-2$); the coverage-collapse ansatz is degenerate near
+    the threshold front, and the implemented auto-calibrated window closes deterministically for
+    $q > 937{,}024$.
+    In the Q5a dual-window limit the potential coefficient vanishes,
+    $\lambda = \lim x_1/C_{\mathrm{Heis}} = 0$: no oscillator route toward a spatial limit opens
+    from this observable.
 
     \textbf{O29}~\cite{Beau2026a33}: Carrier identification via the Veronese collapse
     (\sstruct, numerically confirmed).
@@ -2237,10 +2246,16 @@ A Structural Roadmap and Paper Inventory}
       $\mathfrak{su}(2)$ &
       \sproved \\[3pt]
       O28 & Window calibration \& $r_{\mathrm{eff}}$ & \cite{Beau2026a32} &
-      $n_1(q)/q$ decreasing (Scenario~S2); $\delta_{\mathrm{corr}} \in [7.4,10.6]$ confirmed;
-      $r_{\mathrm{eff}}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, eigenstructure
+      Calibrated linear extrapolation of $n_1$ fails out of sample (to $q=601$, up to $+88\%$);
+      $\delta_{\mathrm{corr}} \in [7.4,10.6]$ confirmed; $1\%$ threshold rank
+      $r_{\mathrm{eff}}^{1\%}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, resolved spectrum
       $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
       \sstruct \\[3pt]
+      CC-Note & Inverse-square coverage \& constant depth & \cite{Beau2026ccnote} &
+      Fingerprints are Fourier characters, so $r_c(n)=|T'_c+C\,I_{n+1}|$ with shellwise ceiling
+      $18$; deterministically $n_1(q)\le22$ and $x_1(q)\asymp q^{-2}$ for $q\ge311$; under generic
+      sampling $n_1(q)\to22$ and $q^2x_1(q)\to99{,}689$; O28's depths are the transitional regime &
+      \sproved \\[3pt]
       O29 & Veronese collapse \& carrier ID & \cite{Beau2026a33} &
       BI parity (anti-linear) makes $d_\rho^2=4$ inaccessible; $r_{\mathrm{eff}}=3$ is the hard $6\to3$ Veronese
       collapse ($\mathfrak{so}(3)$ constraint forms, irreducible action), identifying the adjoint spin-$1$ carrier
@@ -2645,11 +2660,6 @@ A Structural Roadmap and Paper Inventory}
       A measurement protocol using non-conjugate block data (e.g.\ the $c$-block at
       two independent primes) would probe the full rank $d_\rho^2 = 4$ and provide
       a direct test of O26 Criterion~5.4 in its original formulation.
-
-    \paragraph{Analytical control of $n_1(q)/q$.}
-      The BFS window ratio $n_1(q)/q$ decreases monotonically through $q = 211$
-      (O28, Scenario~S2); the asymptotic constant $\hat\alpha$ is bounded below by $0.062$ (updated from O28
-      with $q=211$ data) but not yet stabilised.
 
     \paragraph{Notation consolidation: $c_{\mathrm{BI}} \to c_{\mathrm{BI}}$.}
       A coordinated rename of the BI saturation constant across all papers is planned and deferred
