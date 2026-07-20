@@ -859,7 +859,7 @@
       url: BASE + "spectral/program/o25",
       tags: ["mass"],
       title: "O25 — Numerical Campaign",
-      desc: "Complete for q∈{29,61,101,151,211}. δ̄_pair∈{8.89,9.98,9.55,9.13,8.78}, inter-pair σ_q: 0.54→0.11. Corrected values δ_corr∈[7.7,9.0]⊂[7.4,10.6]. Open: analytical control of n₁(q)/q."
+      desc: "Complete for q∈{29,61,101,151,211}. δ̄_pair∈{8.89,9.98,9.55,9.13,8.78}, inter-pair σ_q: 0.54→0.11. Corrected values δ_corr∈[7.7,9.0]⊂[7.4,10.6]. The n₁(q)/q direction identified here is resolved by the CC-Note (constant depth 22, inverse-square coverage)."
     },
     {
       id: "O26", lbl: "O26", s: "structural", b: "II", key: "Beau2026a30",
@@ -880,14 +880,14 @@
       url: BASE + "spectral/program/o28",
       tags: ["mass", "QM"],
       title: "O28 — Window Calibration & r_eff",
-      desc: "Part A: out of sample to q=601 the linear law fails (overpredicts up to +88%) and n₁(q)/q→0 (only the linear hypothesis excluded; reframed via x₁(q) in CC-Note). Part B: r_eff=3 in End(H_eff), eigenstructure [1:½:½] invariant across all pairs and q∈{61,101,151}. Gap from d_ρ²=4 reflects H_eff≠V_ρ; analysis completed in O29."
+      desc: "Part A: out of sample to q=601 the calibrated linear extrapolation fails (overpredicts up to +88%); the exact law is the CC-Note interval theorem, of which the measured depths are the transitional-regime data. Part B: 1% threshold rank r_eff=3 in End(H_eff), resolved spectrum [1:½:½] invariant across all pairs and q∈{61,101,151}. Gap from d_ρ²=4 reflects H_eff≠V_ρ; analysis completed in O29."
     },
     {
-      id: "CCNote", lbl: "CC-Note", s: "open", b: "II", key: "Beau2026ccnote",
+      id: "CCNote", lbl: "CC-Note", s: "proved", b: "II", key: "Beau2026ccnote",
       url: BASE + "spectral/program/critical-coverage",
       tags: ["mass", "QM"],
-      title: "CC-Note — Critical Coverage & the Saturation Depth Problem",
-      desc: "Reframes the O25–O28 saturation-depth open direction. n₁ is a marginal-novelty stop (rank far from full at n₁). With |B_n|~C_Heis·n⁴ (D=4) and λ₂≈4π²/q², the exact reduction n₁=(x₁/C_Heis)^{1/4}√q collapses the asymptotics onto the critical coverage x₁(q)=|B_{n₁}|/q². x₁ falls 0.61→0.15 (q=101→601), excluding the constant-coverage (clean √q) scenario; front: Φ'(x₁)=ε_sat·q. Open: a structural law for x₁(q)."
+      title: "CC-Note — Inverse-Square Critical Coverage & Constant Saturation Depth",
+      desc: "Exact resolution of the O25–O28 saturation-depth asymptotics. Every Weil–BFS fingerprint is a Fourier character, so the rank is the sumset cardinality r_c(n)=|T'_c+C·I_{n+1}| with universal shellwise ceiling 18 and a complete resonance classification. Exact spheres give the strict crossing s₂₂=16,934<18,000<s₂₃=19,412: deterministically n₁(q)≤22 and x₁(q)≍q⁻² for q≥311; under generic sampling n₁→22 and q²x₁→|B₂₂|=99,689 in probability. O28's measured depths are the transitional resonance regime; in the Q5a dual-window limit λ=lim x₁/C_Heis=0 (no oscillator potential)."
     },
     {
       id: "O29", lbl: "O29", s: "structural", b: "II", key: "Beau2026a33",
@@ -1394,6 +1394,7 @@
     { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32", sp: 1 }, { f: "O31", t: "Q6a" },
     { f: "O12", t: "O33", sp: 1 }, { f: "PTO", t: "O33" },
     { f: "O25", t: "CCNote", sp: 1 }, { f: "O28", t: "CCNote", sp: 1 },
+    { f: "CCNote", t: "O28" }, { f: "CCNote", t: "Q5a" },
     { f: "SpA", t: "SpANote", syn: 1 }, { f: "SpCap", t: "SpANote", syn: 1 }, { f: "SpG", t: "SpANote", syn: 1 }, { f: "ThGn", t: "SpANote", syn: 1 }, { f: "SpR", t: "SpANote", syn: 1 },
     { f: "O1", t: "SpANote", syn: 1 }, { f: "O3", t: "SpANote", syn: 1 }, { f: "O4", t: "SpANote", syn: 1 }, { f: "O5", t: "SpANote", syn: 1 }, { f: "O6", t: "SpANote", syn: 1 }, { f: "O7", t: "SpANote", syn: 1 }, { f: "O8", t: "SpANote", syn: 1 },
     { f: "O9", t: "SpANote", syn: 1 }, { f: "O10", t: "SpANote", syn: 1 }, { f: "O11", t: "SpANote", syn: 1 }, { f: "O12", t: "SpANote", syn: 1 }, { f: "O13", t: "SpANote", syn: 1 }, { f: "O14", t: "SpANote", syn: 1 }, { f: "O15", t: "SpANote", syn: 1 },
@@ -1486,6 +1487,7 @@
     O31: { x: 8 * X, y: 9 * Y },
     O32: { x: 8 * X, y: 10 * Y },
     O33: { x: 8 * X, y: 11 * Y },
+    CCNote: { x: 9 * X, y: 6 * Y },
     SpANote:  { x: 2 * X, y: 13 * Y },
     PTO:        { x: 6 * X, y: 7 * Y },
     FibreErase: { x: 7 * X, y: 7 * Y },
