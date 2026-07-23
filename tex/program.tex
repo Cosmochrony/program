@@ -45,10 +45,12 @@
 \definecolor{cstruct}{RGB}{40,100,200}
 \definecolor{cheur}{RGB}{200,130,0}
 \definecolor{copen}{RGB}{190,50,40}
+\definecolor{csynth}{RGB}{95,95,105}
 \newcommand{\sproved}{\textcolor{cproved}{\textbf{proved}}}
 \newcommand{\sstruct}{\textcolor{cstruct}{\textbf{structural}}}
 \newcommand{\sheur}{\textcolor{cheur}{\textbf{heuristic}}}
 \newcommand{\sopen}{\textcolor{copen}{\textbf{open}}}
+\newcommand{\ssynth}{\textcolor{csynth}{\textbf{synthesis}}}
 
 \title{The Cosmochrony Research Programme:\\[4pt]
 A Structural Roadmap and Paper Inventory}
@@ -68,7 +70,7 @@ A Structural Roadmap and Paper Inventory}
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between
     observable states.
-    The corpus comprises 110 papers across three theory branches.
+    The corpus comprises 112 papers across three theory branches.
     Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
     Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems,
     without any background substrate or relaxation mechanism.
@@ -132,7 +134,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 110 papers with complex mutual dependencies.
+  The corpus comprises 112 papers with complex mutual dependencies.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
   transparent from individual paper titles.
@@ -145,6 +147,10 @@ A Structural Roadmap and Paper Inventory}
     formalised);
     \sheur{} (physically motivated and numerically supported but not yet rigorously derived);
     \sopen{} (explicitly conjectured or known to be unsettled).
+    A fifth entry, \ssynth{}, is reserved in the inventory table for the sub-programme presentation
+    and synthesis notes: these papers consolidate and organise results established in their
+    constituent papers and carry no new result of their own, so their epistemic content is that of
+    the papers they map.
     These classifications follow the original papers; this roadmap introduces no new claims.
 
   \section{Conceptual Architecture}
@@ -2158,13 +2164,17 @@ A Structural Roadmap and Paper Inventory}
     \end{figure}
     \label{sec:inventory}
 
-    Table~\ref{tab:inventory} lists all papers in the programme.
+    Table~\ref{tab:inventory} lists all 112 papers of the programme, the present registry excepted.
     The \textbf{Key} column gives the citation key used in
     \texttt{cosmochrony-bibliography}.
+    The final block gathers the sub-programme presentation and synthesis notes, marked
+    \ssynth{}: they organise results established elsewhere and are not themselves sources of new
+    results.
 
     \setlength\LTleft{0pt}
     \setlength\LTright{0pt}
     \begin{longtable}{@{}p{1.70cm}p{2.9cm}p{1.3cm}p{6.25cm}>{\raggedright\arraybackslash}p{2.0cm}@{}}
+      \caption{Complete inventory of the 112 programme papers, excluding the present registry.}
       \label{tab:inventory}\\
       \toprule
       \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
@@ -2527,6 +2537,14 @@ A Structural Roadmap and Paper Inventory}
       first test is existence of oriented signal $\langle\Delta A_c\rangle_{\partial^+ S_m} \neq 0$;
       anti-bias control via symmetrised-frontier cancellation &
       \sstruct \\[3pt]
+      CHO & Chiral orientation of the directed frontier & \cite{Beau2026cho} &
+      Resolves the chiral weight $\sigma_L$ deferred by Q11OF: the route $\sigma_L = f(T(e))$ is closed
+      by a parity argument (edge inversion and residual reflection both send $T(e)\mapsto-T(e)$,
+      whereas the admissible weight is arrow-even and $\varphi$-odd, proved);
+      $\sigma_L$ is instead the Weyl representation type $\mathbf{2}$ vs $\bar{\mathbf{2}}$, the unique
+      label separated by conjugation; edge phase is the linear cyclotomic character
+      $\zeta_q^{\Delta A_c}$, with no Gauss or Maslov factor &
+      \sstruct \\[3pt]
       A4-Note & BI saturation margin of the chiral modulus & \cite{Beau2026bim} &
       Discharges PRS open deliverable~1: defines Lorentzian
       $\mathcal{B}_{\mathrm{sat}}(s)$ along $J_\Pi$-odd modulus;
@@ -2622,6 +2640,17 @@ A Structural Roadmap and Paper Inventory}
       concrete form: $R=3/2$ a forced Cayley invariant on the order-five locus ($\{\tfrac16,\tfrac14\}$) vs $R=\tfrac53$,
       $\varepsilon=\tfrac18$ on neutral order-four, residue = the order-five selection (proved/open) &
       \sproved\ /\ \sopen \\[3pt]
+      SRN & Spin as a transformation class of rotating wave modes & \cite{Beau2026srn} &
+      Conceptual and structural audit of the rotating-wave reading of spin, companion to the
+      fermionic-matter sub-programme: spin is fixed by how components transform under rotations of
+      physical space, not by rotation alone (scalar counterexample); central grading on tensor powers
+      of the admissible module, with the central element acting as $(-1)^n$ on
+      $V_\rho^{\otimes n}$ (proved); Veronese-null vs compact-real-form lemma excludes the O28
+      outer-product real-form selector (proved); spinorial-soldering indeterminacy: the derived data
+      fix the complex carrier and its univalence but neither the spatial realisation, the rotation
+      action $\rho_{\mathrm{sp}}$, nor its normalisation;
+      corrects Q7 ($e_0$ is the weight $m=0$ of the $j=1$ module, not a $j=0$ state) &
+      \sproved\ /\ \sopen \\[3pt]
       \midrule
       Spec2 & Relational spacetime & \cite{Beau2026a} &
       Operational metric from graph Laplacians; spacetime from spectral correlations &
@@ -2678,6 +2707,23 @@ A Structural Roadmap and Paper Inventory}
       Bell & Bell non-locality & \cite{Beau2026b} &
       Bell violations from non-injectivity alone &
       \sproved \\[3pt]
+      ENT-E1 & Weil fingerprint orthogonality & \cite{Beau2026ent1} &
+      The $k{=}3$ Weil fingerprint of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ factors as a global phase times a
+      single discrete Fourier mode, so the admission residual $w_j=1$ is an exact algebraic identity and
+      not a numerical accident; for matched single-character blocks the closure hypothesis of ENT-Note
+      becomes a theorem and the flat Schmidt spectrum
+      $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is derived analytically
+      (literal Schmidt pairing for independently sampled canonical O25 blocks: open) &
+      \sproved\ /\ \sopen \\[3pt]
+      ENT-E2 & Two entanglement entropies of the conjugate pair & \cite{Beau2026ent2} &
+      Separates the admissible pair entropy $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$ on the rank-3
+      admissible projection (unconditional for general canonical blocks via O21 atomicity, mean-zero
+      lemma and the Q3 singlet) from the full residual-rank entropy
+      $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ on the full Gram--Schmidt basis
+      (unconditional for matched blocks by ENT-E1, conditional on
+      $[\mathrm{H}_{\mathrm{res}}]$ for general blocks); excludes the metaplectic dilation as a bridge
+      for $[\mathrm{H}_{\mathrm{res}}]$ &
+      \sproved\ /\ \sstruct \\[3pt]
       SchLamb & Fine-structure constant & \cite{Beau2026f} &
       $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
       \sstruct \\[3pt]
@@ -2689,6 +2735,14 @@ A Structural Roadmap and Paper Inventory}
       Supra & Super\-conductivity & \cite{Beau2026g} &
       Projective phase locking as origin of superconducting coherence &
       \sstruct \\[3pt]
+      QFI & Quantum Fisher information as spectral witness & \cite{Beau2026qfi} &
+      Condensed-matter companion to Supra: the scale-free growth of the quantum Fisher information
+      density in $\mathrm{Ce}_3\mathrm{Pd}_{20}\mathrm{Si}_6$ reduces to projective spectral data of
+      the full nilpotent $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ substrate (edge spectral dimension
+      $d_s \approx 4$, $f_Q(T) \sim T^{-1}$), only marginal for the single $w=2$ sector, with the
+      thermal closure $\Delta_\Pi(T) = \tfrac{d_s}{2}T$ from the heat-kernel response
+      (regime structural; observed exponent heuristic; asymptotic value open) &
+      \sstruct\ /\ \sheur \\[3pt]
       TrajBr & Trajectory branching / de Sitter limit & \cite{Beau2026tb} &
       Exponential growth relocated from endpoint volumes (polynomial, Bass--Guivarc'h) to projectively
       distinguishable histories; canonical O12-compatible channel is $b$-only with exact Pell count,
@@ -2709,6 +2763,69 @@ A Structural Roadmap and Paper Inventory}
       selection); strict ensemble-power suppression by total variance, and the parameter-free ceiling
       $(N-1)/N$ --- identically the Bessel envelope of the low-$\ell$ note &
       \sstruct \\[3pt]
+      \midrule
+      SpAdm\-Note & The spectral admissibility sub-programme (Note~1) & \cite{Beau2026a1note} &
+      Maps the five precursor papers and O1--O33 into a single account of the spectral admissibility
+      sub-programme, recording the status of every result as proved, structural, numerical, or open.
+      Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
+      Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2) into the chain
+      $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} = 2\eta^{\mu\nu}$, from the admissibility filter to the
+      effective metric. Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      GS\-Note & The gauge structure sub-programme (Note~3) & \cite{Beau2026gsnote} &
+      Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12, in their gauge-group
+      identification aspect, into the $\mathrm{U}(1)$ phase-fibre, $\SU(2)$ quaternionic and $\SU(3)$
+      colour-triplet sectors of $G_\Pi$. Gauge group identification only; Yang--Mills dynamics belongs to
+      Note~8. Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      SG\-Note & The spectral gravity sub-programme (Note~4) & \cite{Beau2026sgnote} &
+      Organises Gravity, Thermo, Lorentz and BornInfeld into the conditions under which
+      $g^{\mu\nu} = 2\eta^{\mu\nu}$ supports an Einstein sector: $a_2$ infrared response of the
+      projective spectral entropy, its variational restatement, the four-derivative Lorentzian
+      truncation, and the determinantal BI completion. Consolidation of the constituent papers;
+      no new result &
+      \ssynth \\[3pt]
+      NIF\-Note & The non-injective foundations sub-programme (Note~5) & \cite{Beau2026ninote} &
+      Maps ENI, Foundation, HeisStr and noscale into the axiomatic chain
+      A1--A4 $\Rightarrow$ $\Pi$ non-injective $\Rightarrow$ $[X,\sigma(X)] = Z \neq 0$ $\Rightarrow$
+      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ $\Rightarrow$ $V_\rho$, recording the white paper's
+      $\chi$/relaxation vocabulary as superseded by the axiomatic formulation.
+      Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      FM\-Note & The fermionic matter sub-programme (Note~6) & \cite{Beau2026fmnote} &
+      Organises Theorems~A--C of Q14 into the chain from $\Pi$ to the spinorial face of the admissible
+      Weil module: $\Sym^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and
+      $\wedge^2(\mathcal{S}_\Pi) = L_Y$ reproducing $\SU(2)_L \times \mathrm{U}(1)_Y$, $V{-}A$ chirality
+      and hypercharge rigidity, and the three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$.
+      Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      QS\-Note & The quantum structure sub-programme (Note~7) & \cite{Beau2026qsnote} &
+      Maps Q1, Q2, Q3 and Bell into a six-step chain from BI indiscernibility to the universal spin-$j$
+      correlator, isolating the upstream inputs consumed and the two open deliverables (Born rule beyond
+      $\SU(2)$; numerical validation of the coherence witness across the prime range).
+      Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      GGS\-Note & The gauge--gravity stratification sub-programme (Note~8) & \cite{Beau2026ggsnote} &
+      Organises Q12 and Q13 around the spectral stratification principle
+      ($a_2 \to$ gravity, $a_4 \to$ gauge), with fixed-metric isolation of the gauge sector, $a_6$ as a
+      representative spanning list, and neither a non-linear completion nor a numerical coupling
+      hierarchy claimed. Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      ENT\-Note & The entanglement sub-programme presentation note & \cite{Beau2026entnote} &
+      Locates entanglement inside the spectral admissibility cascade: reduced entropy of a closed
+      conjugate Weil pair as $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$, with structural
+      monotonicity along the cascade; v1.1 integrates the ENT-E1 and ENT-E2 results and records the
+      residual epistemic stratification. Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
+      LC\-Synthesis & The Lorentz-capacity sub-programme synthesis & \cite{Beau2026lcsyn} &
+      Gathers LorCap, TempProj, LCII, LCIIo1, LCo1 and LCo3 into the single chain
+      BI budget $\to F^\tau = 1/\gamma \to g^{\mu\nu} = 2\eta^{\mu\nu} \to \Lambda(\beta) \to
+      R(x)^2 = 1-\epsilon(x) \to$ finite-$q$ domain, distinguishing the BI capacity sphere from the
+      Lorentz group as isometry group of the effective metric.
+      Consolidation of the constituent papers; no new result &
+      \ssynth \\[3pt]
     \end{longtable}
 
   \section{Open Problems}

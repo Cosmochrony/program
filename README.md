@@ -13,7 +13,7 @@ consult first to understand how the pieces fit together.
 The Cosmochrony programme develops a pre-geometric framework in which physical structure —
 spacetime, quantum mechanics, gauge symmetry, and Standard Model observables — arises from a
 single primitive: the local structure of admissible non-injective transitions between observable
-states. The corpus comprises **109 papers** across three theory branches:
+states. The corpus comprises **112 papers** across three theory branches:
 
 - **Branch I — Foundation track**: four axioms suffice to derive the Heisenberg group
   $\mathrm{Heis}_3(\mathbb{Z}/q)$ and its Weil representation as theorems, with no background
