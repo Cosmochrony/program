@@ -523,6 +523,7 @@
 <body>
 <header>
   <h1>Cosmochrony &mdash; Paper Graph</h1>
+  <span class="ctrl-label">112 papers</span>
 
   <div class="legend">
     <div class="li" id="li-proved" style="color:var(--proved)" onclick="filterStatus('proved')">
@@ -650,6 +651,13 @@
       tags: ["BI"],
       title: "No External Scale",
       desc: "Rigidity: any deformation introducing a dimensional parameter independent of c_χ breaks spectral scaling, non-injectivity, or bounded admissibility closure."
+    },
+    {
+      id: "NIFNote", lbl: "NIF-Note", s: "structural", b: "I", key: "Beau2026ninote",
+      url: BASE + "non-injective",
+      tags: ["emer", "QM", "BI"],
+      title: "Non-Injective Foundations Sub-Programme (Presentation Note 5)",
+      desc: "Synthesis of ENI, Foundation, Heisenberg Structure, and No External Scale. Maps A1–A4 through non-injectivity and the Heisenberg commutator to the unique admissible Weil fibre; consolidates results established in its constituents and adds no new theorem."
     },
     {
       id: "BI", lbl: "BornInfeld", s: "structural", b: "II", key: "Beau2026c",
@@ -999,7 +1007,7 @@
         "Former Mosco derivation of L_Π = −A∂²_x withdrawn; spatial limit now hypothesis [H-L]; Q5 open."
     },
     {
-      id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III",
+      id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III", key: "Beau2026q5ao2",
       url: BASE + "emergent-geometry/q5/a/o2",
       tags: ["spt", "spec"],
       title: "Q5a-O2 — Spectral Atomicity & Mosco Closure",
@@ -1187,6 +1195,104 @@
         "dictionary-bound."
     },
     {
+      id: "PRS", lbl: "PRS", s: "structural", b: "III", key: "Beau2026prs",
+      url: BASE + "fermionic-matter/projective-residue-schur",
+      tags: ["SM", "mass", "grav"],
+      title: "Projective Residue as a Schur Complement",
+      desc: "Expresses E_Π=−Π_S D(1−P)DΠ_S* = −M†M as the Schur complement of eliminated spinorial directions and localises the generation split u in the transported chiral equivariance defect. A1–A3 force u=0; non-zero u requires A4 and the Lorentzian Schur-transverse branch."
+    },
+    {
+      id: "AAR", lbl: "AAR", s: "structural", b: "III", key: "Beau2026aar",
+      url: BASE + "fermionic-matter/angular-amplitude-reduction",
+      tags: ["SM", "mass"],
+      title: "Reduction of the Angular Amplitude Observable",
+      desc: "Identifies the J_Π-odd J₃ cascade component with accumulated oriented symplectic area. Symmetric BFS shells give Θ_raw=0; the directed-frontier audit fixes the onset coefficient 1/3 and θ_max=2π/(3q), while the dictionary value ε=1/10 remains unforced."
+    },
+    {
+      id: "Q11OF", lbl: "Q11OF", s: "structural", b: "III", key: "Beau2026q11of",
+      url: BASE + "fermionic-matter/q11-oriented-frontier",
+      tags: ["SM", "mass", "time"],
+      title: "Oriented Frontier Observable",
+      desc: "Replaces the identically vanishing symmetric-shell observable by a directed outgoing-frontier transfer whose central increment is the Heisenberg cocycle a(g)s_b. Supplies the bias-controlled existence test for the J₃-odd cascade signal; it introduces no amplitude normalisation."
+    },
+    {
+      id: "A4Note", lbl: "A4-Note", s: "structural", b: "III", key: "Beau2026bim",
+      url: BASE + "fermionic-matter/a4-note",
+      tags: ["SM", "mass", "BI", "grav"],
+      title: "Born–Infeld Saturation Margin of the Chiral Modulus",
+      desc: "Defines the Lorentzian BI saturation functional along the J_Π-odd generation modulus. Antisymmetry forces a chiral two-form; the electric Lorentzian genus selects u≠0. The radial contact has closed form s*=β/|E_P|, but |u| remains open."
+    },
+    {
+      id: "EBJ", lbl: "EBJ", s: "structural", b: "III", key: "Beau2026ebj",
+      url: BASE + "fermionic-matter/eliminated-block-jet",
+      tags: ["SM", "mass", "grav"],
+      title: "Constrained Jet of the Lorentzian Eliminated Block",
+      desc: "Constrains 1−P(s)=Q₀+sQ₁+s²Q₂+O(s³): Q₁ is an off-diagonal Grassmann tangent and parity grades the induced residue. Identifies the chiral generator with the transported defect rate and reduces the value question to the normalisation of ∂_sΔ_χ(P)|₀."
+    },
+    {
+      id: "PYL", lbl: "PYL", s: "structural", b: "III", key: "Beau2026pyl",
+      url: BASE + "fermionic-matter/projected-yukawa-line",
+      tags: ["SM", "mass"],
+      title: "Projected Yukawa Line and Generation-Level Assignment",
+      desc: "Identifies L_Y=∧²(S_Π) as the functorial determinant-line carrier of the abelian Yukawa weight. The residue levels diag(1,½+u,½−u) order the three generations, but the Yukawa operator, its norm, the sign of u, and mixing remain open."
+    },
+    {
+      id: "PYO", lbl: "PYO", s: "structural", b: "III", key: "Beau2026pyo",
+      url: BASE + "fermionic-matter/projected-yukawa-operator",
+      tags: ["SM", "mass"],
+      title: "Projected Yukawa Operator and Chiral Polar Factor",
+      desc: "The residue fixes H_Π=Y_Π†Y_Π and its three squared levels, not Y_Π. Polar decomposition leaves a rephasing class [U_Π] with mixing angles and a CP phase; the derived real cascade gives [U_Π]=[I], hence no mixing at this stratum."
+    },
+    {
+      id: "KUD", lbl: "KUD", s: "structural", b: "III", key: "Beau2026kud",
+      url: BASE + "fermionic-matter/koide-unit-dispersion",
+      tags: ["SM", "mass"],
+      title: "Charged-Lepton Koide Relation as a Unit-Dispersion Constraint",
+      desc: "Rewrites Koide exactly as CV(√m)=1 and separates this dispersion target from hierarchy placement. The derived cascade ladder under-disperses, CV≤1/√2, so it cannot by itself reach Koide; no mass formula is claimed."
+    },
+    {
+      id: "TPC", lbl: "TPC", s: "structural", b: "III", key: "Beau2026tpc",
+      url: BASE + "fermionic-matter/ternary-phase-carrier",
+      tags: ["SM", "mass"],
+      title: "Ternary Phase Carrier",
+      desc: "Speculative bridge reading one three-phase carrier as a confined colour triplet and as the square-root mass profile. It organises the conditions for Koide dispersion and hierarchy placement but does not derive the required colour-to-generation breaking."
+    },
+    {
+      id: "NPI", lbl: "NPI", s: "structural", b: "III", key: "Beau2026npi",
+      url: BASE + "neutrinos",
+      tags: ["SM", "mass", "QM"],
+      title: "Neutrino Mixing and Projective Particle Identity",
+      desc: "Interprets flavour–propagation misalignment as generic unless an identity-stabilising projection channel aligns the bases. Large PMNS mixing is the unfixed default and CKM near-diagonality the explanandum; no mixing angle or mass is derived."
+    },
+    {
+      id: "NSR", lbl: "NSR", s: "proved", b: "III", key: "Beau2026nsr",
+      url: BASE + "fermionic-matter/no-sequential-reentry",
+      tags: ["SM", "QM", "emer"],
+      title: "Operator Doublets, Erased History Fibres, and No Sequential Re-entry",
+      desc: "Finite no-go results exclude a fermionic weak-doublet lift from the Weil commutant and from erased trajectory fibres. The theorem πv=0 ⇒ Qπv=0 forbids reconstruction of erased multiplicity by a later observable-only map; a parallel oriented substrate channel would be an extension, not a derivation."
+    },
+    {
+      id: "AOG", lbl: "AOG", s: "structural", b: "III", key: "Beau2026aog",
+      url: BASE + "fermionic-matter/arithmetic-orthogonality-adegate",
+      tags: ["SM", "mass", "QM"],
+      title: "Spin-Stratum Type-Rigidity and the ADE Gate",
+      desc: "Separates BI parity on Q(ζ_q) from the √5 Galois action selecting the ADE order-five locus. The gate is a no-go in the present carrier-preserving construction; the same rigidity closes the residual chiral-lift obstruction. R=3/2 is forced only after order-five selection."
+    },
+    {
+      id: "SRN", lbl: "SRN", s: "structural", b: "III", key: "Beau2026srn",
+      url: BASE + "fermionic-matter/spin-rotation-note",
+      tags: ["SM", "QM", "spt"],
+      title: "Spin as a Transformation Class of Rotating Wave Modes",
+      desc: "Clarifies that spin is fixed by the transformation law under spatial rotations, not by rotation alone. The admissible carrier fixes complex univalence but not the spatial real form, rotation action, or normalisation; it also corrects the Q7 weight-state interpretation."
+    },
+    {
+      id: "FMNote", lbl: "FM-Note", s: "structural", b: "III", key: "Beau2026fmnote",
+      url: BASE + "fermionic-matter",
+      tags: ["SM", "mass", "QM", "grav"],
+      title: "Fermionic Matter Sub-Programme (Presentation Note 6)",
+      desc: "Synthesis of Q14 and its companion notes: the admissible Weil module supplies the spinorial carrier, electroweak bundle data, chirality, hypercharge constraints, and the three-generation factor. Consolidates constituent results; masses, absolute Yukawa scale, and mixing remain open."
+    },
+    {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
       tags: ["spt"],
       title: "Spectral2 — Relational Spacetime",
@@ -1212,6 +1318,13 @@
       tags: ["grav", "spt"],
       title: "Lorentz — No Quartic Graviton Dispersion",
       desc: "A negative result about a posited kernel. The local four-derivative TT kernel O_TT = □(c_EH + β□) is posited, not derived: a Lorentzian counterpart of S_Π needs a closed-time-path in-in construction, which is open. For c_EH ≠ 0 the kernel is the direct sum ker□ ⊕ ker(c_EH+β□); the massless branch obeys ω² = |k|² exactly, with no correction at any order. Hence A_4 = 0, no A_4 ↔ ℓ_χ mapping, and no interferometric bound on ℓ_χ. The helicity-2 ghost pole sits at a matching-datum mass; the spin-2 multiplet and the R² scalar are not settled."
+    },
+    {
+      id: "SGNote", lbl: "SG-Note", s: "structural", b: "III", key: "Beau2026sgnote",
+      url: BASE + "spectral-gravity",
+      tags: ["grav", "spt", "BI"],
+      title: "Spectral Gravity Sub-Programme (Presentation Note 4)",
+      desc: "Synthesis of Gravity, Thermodynamics, Lorentz, and Born–Infeld: the conditions under which the effective metric supports an Einstein sector, its variational restatement, the Lorentzian truncation, and the determinantal completion. Consolidates constituent results and adds no new theorem."
     },
     {
       id: "LorCap", lbl: "LorCap", s: "structural", b: "III", key: "Beau2026n",
@@ -1298,6 +1411,27 @@
       desc: "Flat rotation curves and Hubble tension from a common effective mechanism. No dark matter or modified gravity."
     },
     {
+      id: "TrajBr", lbl: "TrajBr", s: "proved", b: "III", key: "Beau2026tb",
+      url: BASE + "cosmology/trajectory-branching",
+      tags: ["emer", "time", "grav"],
+      title: "Projective Trajectory Branching and the de Sitter Limit",
+      desc: "Relocates exponential growth from polynomial endpoint volumes to distinguishable histories. The canonical b-only channel has an exact Pell rate; full-history compression has rate log 2 and exact class count 2^(n+2)−4n−1. The cosmological equation-of-state reading remains conditional."
+    },
+    {
+      id: "ProjCE", lbl: "ProjCE", s: "structural", b: "III", key: "Beau2026pce",
+      url: BASE + "non-injective/projection-conditional-expectation",
+      tags: ["emer", "QM"],
+      title: "Projection as Conditional Expectation and the Capacity Ceiling",
+      desc: "Under graded hypotheses, identifies the amplitude-level non-injective projection with conditional expectation onto the distinguishable-record algebra. Total variance gives strict ensemble-power suppression and the parameter-free ceiling (N−1)/N."
+    },
+    {
+      id: "LowLCap", lbl: "LowLCap", s: "structural", b: "III", key: "Beau2026dhc",
+      url: BASE + "cosmology/low-l-capacity",
+      tags: ["grav", "time", "emer"],
+      title: "Low-Multipole Suppression from Distinguishable-History Capacity",
+      desc: "Uses the first Pell history counts and the conditional-expectation capacity ceiling to replace the phenomenological low-ℓ envelope by a parameter-free small-N mechanism. The no-fit TT diagnostic improves; TE/EE transfer and the physical angular dictionary remain open."
+    },
+    {
       id: "Supra", lbl: "Supra", s: "structural", b: "III", key: "Beau2026g",
       url: BASE + "superconductivity",
       tags: [],
@@ -1378,6 +1512,8 @@
       f: "Found",
       t: "nos"
     },
+    { f: "ENI", t: "NIFNote", syn: 1 }, { f: "Found", t: "NIFNote", syn: 1 },
+    { f: "Heis", t: "NIFNote", syn: 1 }, { f: "nos", t: "NIFNote", syn: 1 },
     { f: "WP", t: "BI" }, { f: "BI", t: "SpA" }, { f: "SpA", t: "SpCap" }, { f: "SpCap", t: "SpG" }, {
       f: "SpG",
       t: "ThGn"
@@ -1428,15 +1564,45 @@
     { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
     { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" },
-    { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" }, { f: "Q14", t: "CHO" },
+    { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
+    { f: "Q14", t: "PRS", sp: 1 }, { f: "Q14", t: "AAR" }, { f: "PRS", t: "AAR" },
+    { f: "Q11", t: "Q11OF" }, { f: "Q14", t: "Q11OF" }, { f: "AAR", t: "Q11OF" },
+    { f: "Q11OF", t: "CHO", sp: 1 }, { f: "Q14", t: "CHO" },
+    { f: "PRS", t: "A4Note", sp: 1 }, { f: "BI", t: "A4Note" }, { f: "Grav", t: "A4Note" },
+    { f: "PRS", t: "EBJ" }, { f: "A4Note", t: "EBJ", sp: 1 },
+    { f: "Q14", t: "PYL", sp: 1 }, { f: "PRS", t: "PYL" },
+    { f: "PYL", t: "PYO", sp: 1 }, { f: "PRS", t: "PYO" },
+    { f: "PYO", t: "KUD", sp: 1 }, { f: "ENI", t: "KUD" },
+    { f: "KUD", t: "TPC" }, { f: "O31", t: "TPC" }, { f: "ENI", t: "TPC" },
+    { f: "PYO", t: "NPI", sp: 1 }, { f: "Q14", t: "NPI" },
+    { f: "O33", t: "NSR" }, { f: "EBJ", t: "NSR" }, { f: "Q14", t: "NSR" },
+    { f: "CHO", t: "AOG", sp: 1 }, { f: "AAR", t: "AOG" }, { f: "ThGn", t: "AOG" },
+    { f: "O29", t: "SRN" }, { f: "Q7", t: "SRN" }, { f: "SRN", t: "Q14" },
+    { f: "SpANote", t: "FMNote", syn: 1 }, { f: "NIFNote", t: "FMNote", syn: 1 },
+    { f: "EGNote", t: "FMNote", syn: 1 }, { f: "GSNote", t: "FMNote", syn: 1 },
+    { f: "Q13", t: "FMNote", syn: 1 }, { f: "Q14", t: "FMNote", syn: 1 },
+    { f: "PRS", t: "FMNote", syn: 1 }, { f: "AAR", t: "FMNote", syn: 1 },
+    { f: "Q11OF", t: "FMNote", syn: 1 }, { f: "CHO", t: "FMNote", syn: 1 },
+    { f: "A4Note", t: "FMNote", syn: 1 }, { f: "EBJ", t: "FMNote", syn: 1 },
+    { f: "PYL", t: "FMNote", syn: 1 }, { f: "PYO", t: "FMNote", syn: 1 },
+    { f: "KUD", t: "FMNote", syn: 1 }, { f: "TPC", t: "FMNote", syn: 1 },
+    { f: "NPI", t: "FMNote", syn: 1 }, { f: "NSR", t: "FMNote", syn: 1 },
+    { f: "AOG", t: "FMNote", syn: 1 }, { f: "SRN", t: "FMNote", syn: 1 },
     { f: "WP", t: "Sp2" }, { f: "Sp2", t: "Grav", sp: 1 }, { f: "Grav", t: "Thm" }, { f: "Thm", t: "Lor" },
+    { f: "BI", t: "SGNote", syn: 1 }, { f: "Grav", t: "SGNote", syn: 1 },
+    { f: "Thm", t: "SGNote", syn: 1 }, { f: "Lor", t: "SGNote", syn: 1 },
     { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" }, { f: "PTO", t: "LorCap" },
     { f: "LorCap", t: "TempProj", sp: 1 }, { f: "TempProj", t: "LCII", sp: 1 }, { f: "Grav", t: "LCII" },
     { f: "LCII", t: "LCIIo1", sp: 1 }, { f: "W1", t: "LCIIo1" }, { f: "Q6b", t: "LCIIo1" }, { f: "Q11", t: "LCIIo1" },
     { f: "TempProj", t: "LCo1" }, { f: "PTO", t: "LCo1" }, { f: "LCII", t: "LCo3" }, { f: "BI", t: "LCo3" },
     { f: "LorCap", t: "LCsyn" }, { f: "TempProj", t: "LCsyn" }, { f: "LCII", t: "LCsyn" }, { f: "LCIIo1", t: "LCsyn" }, { f: "LCo1", t: "LCsyn" }, { f: "LCo3", t: "LCsyn", sp: 1 },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
-    { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" }, { f: "Found", t: "Supra" },
+    { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" },
+    { f: "ENI", t: "TrajBr" }, { f: "O12", t: "TrajBr" },
+    { f: "ENI", t: "ProjCE", sp: 1 }, { f: "TrajBr", t: "LowLCap" },
+    { f: "ProjCE", t: "LowLCap", sp: 1 }, { f: "LowLCap", t: "Cosm" },
+    { f: "TrajBr", t: "Cosm" }, { f: "TrajBr", t: "NSR" },
+    { f: "Found", t: "Supra" },
     { f: "Supra", t: "QFI" }, { f: "Thm", t: "QFI" },
     { f: "Q1", t: "QSNote", syn: 1 }, { f: "Q2", t: "QSNote", syn: 1 }, { f: "Q3", t: "QSNote", syn: 1 }, { f: "Bell", t: "QSNote", syn: 1 },
     { f: "Q12", t: "GGSNote", syn: 1 }, { f: "Q13", t: "GGSNote", syn: 1 },
@@ -1457,6 +1623,7 @@
     Found: { x: 2 * X, y: 0 },
     Heis: { x: 3 * X, y: 0 },
     nos: { x: 4 * X, y: 0 },
+    NIFNote: { x: 5 * X, y: 0 },
     BI: { x: 0, y: Y },
     SpA: { x: X, y: Y },
     SpCap: { x: 2 * X, y: Y },
@@ -1528,16 +1695,34 @@
     Q12: { x: 9 * X, y: 13 * Y },
     Q13: { x: 9 * X, y: 14 * Y },
     Q14: { x: 9 * X, y: 15 * Y },
-    CHO: { x: 9 * X, y: 16 * Y },
+    PRS: { x: 9 * X, y: 16 * Y },
+    AAR: { x: 10 * X, y: 16 * Y },
+    Q11OF: { x: 11 * X, y: 16 * Y },
+    CHO: { x: 12 * X, y: 16 * Y },
+    AOG: { x: 13 * X, y: 16 * Y },
+    A4Note: { x: 9 * X, y: 17 * Y },
+    EBJ: { x: 10 * X, y: 17 * Y },
+    PYL: { x: 11 * X, y: 17 * Y },
+    PYO: { x: 12 * X, y: 17 * Y },
+    KUD: { x: 13 * X, y: 17 * Y },
+    TPC: { x: 14 * X, y: 17 * Y },
+    SRN: { x: 9 * X, y: 18 * Y },
+    NSR: { x: 10 * X, y: 18 * Y },
+    NPI: { x: 12 * X, y: 18 * Y },
+    FMNote: { x: 15 * X, y: 18 * Y },
     Sp2: { x: -X, y: 4 * Y },
     Grav: { x: -X, y: 5 * Y },
     Thm: { x: -X, y: 6 * Y },
     Lor: { x: -X, y: 7 * Y },
+    SGNote: { x: -2 * X, y: 6 * Y },
     TopI: { x: 0, y: 8 * Y },
     SMcm: { x: X, y: 8 * Y },
     Bell: { x: 2 * X, y: 8 * Y },
     Schw: { x: 3 * X, y: 8 * Y },
     Cosm: { x: 4 * X, y: 8 * Y },
+    TrajBr: { x: 4 * X, y: 9 * Y },
+    ProjCE: { x: 4 * X, y: 10 * Y },
+    LowLCap: { x: 4 * X, y: 11 * Y },
     Supra: { x: 5 * X, y: 8 * Y },
     QFI: { x: 5 * X, y: 9 * Y },
     ENTNote: { x: 2 * X, y: 9 * Y },
@@ -1646,10 +1831,12 @@
       }
     }
 
-    bgRect(-X, 0, 5 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
+    bgRect(-X, 0, 6 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
     bgRect(-X, Y, 9 * X + NW, 9 * Y + NH, "var(--branch2)", "Branch II: O-series")
     bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 10 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
+    bgRect(9 * X - 6, 15 * Y - 6, 6 * X + NW + 12, 3 * Y + NH + 12,
+      "var(--branch3)", "Branch III: Fermionic matter")
 
     /* edges */
     const eG = document.createElementNS(ns, "g")

@@ -28,8 +28,9 @@ states. The corpus comprises **112 papers** across three theory branches:
 ## Role in the Repository
 
 - **Paper inventory**: the authoritative list of all papers and their status.
-- **Dependency graph**: maintained here and exported as an interactive HTML visualisation, which
-  is copied to the website for publication at https://cosmochrony.org.
+- **Dependency graph**: covers all 112 inventory entries, is maintained here, and is exported as
+  an interactive HTML visualisation copied to the website for publication at
+  https://cosmochrony.org.
 - **Coherence**: updated whenever a new result is obtained or a new paper is created, so the
   programme stays traceable.
 - **Video workflow**: [`VIDEO-WORKFLOW.md`](VIDEO-WORKFLOW.md) is the source of truth for scientific
