@@ -18,9 +18,10 @@ states. The corpus comprises **109 papers** across three theory branches:
 - **Branch I — Foundation track**: four axioms suffice to derive the Heisenberg group
   $\mathrm{Heis}_3(\mathbb{Z}/q)$ and its Weil representation as theorems, with no background
   substrate or relaxation mechanism.
-- **Branch II — O-series** (spectral admissibility): derives and numerically validates the
-  transfer chain $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$ connecting
-  the Born–Infeld saturation constant to the charged-lepton mass hierarchy.
+- **Branch II — O-series** (spectral admissibility): derives the canonical pair-capacity
+  observable and its fibre/representation structure. The proposed
+  $\delta_{\mathrm{pair}}\to\beta^*$ continuation is now recorded as a refuted native
+  Heisenberg transfer and retained only as a cross-substrate phenomenological prescription.
 - **Branch III — Q-series and companion papers**: derives quantum mechanics, spacetime geometry,
   gauge structure, and further observables from the Branch I axioms and Branch II spectral data.
 

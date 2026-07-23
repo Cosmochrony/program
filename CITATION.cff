@@ -7,7 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/program"
 url: "https://cosmochrony.org/science/cosmochrony_graph"
-version: "1.91"
+version: "1.97"
 doi: "10.5281/zenodo.19759956"
 license: "CC-BY-4.0"
 preferred-citation:
