@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 1.99}
+\date{2026\\[2pt]\small Version 2.0}
 
 \begin{document}
 
@@ -1531,20 +1531,24 @@ A Structural Roadmap and Paper Inventory}
     The paper establishes a unified capacity arbitration picture: special-relativistic time
     dilation ($1/\gamma$) and gravitational time dilation ($R(x)$) are two independent
     manifestations of the same BI capacity trade-off, separated in the product $R(x)/\gamma$
-    (\sstruct; open problem LC-O2-O1 closed by~\cite{Beau2026lco2o1}).
+    (\sstruct; open problem LC-O2-O1 remains open, see~\cite{Beau2026lco2o1}).
 
-    \textbf{LCIIo1}~\cite{Beau2026lco2o1}: Closes the capacity--metric bridge of LCII spectrally,
-    without importing the Einstein equation.
-    Defining the local occupancy as a quadratic norm on the rank-three sector
-    $\Sym^{2}(V_{\rho})$, the $\SU(2)$-equivariance of the admissibility weight (Schur's lemma)
-    forces the local temporal coefficient of $L_{\mathrm{eff}}$ to satisfy
-    $A_{\tau}(x) = 2\bigl(1-\epsilon(x)\bigr)$.
-    The principal-symbol identification~\cite{Beau2026q6b,Beau2026q11}, applied locally with the
-    flat-space normalisation $A_{\tau}^{\infty}=2$, $g^{\tau\tau,\infty}=-\tfrac{1}{2}$, yields
-    $g^{\tau\tau}(x) = -A_{\tau}(x)/4$, hence
-    $R(x)^{2} = 1-\epsilon(x) = -2g^{\tau\tau}(x)$.
-    The open bridge of Remark~3.2 of~\cite{Beau2026lco2} becomes a theorem; the chain
-    $\epsilon(x) \mapsto A_{\tau}(x) \mapsto g^{\tau\tau}(x)$ is closed spectrally (\sproved).
+    \textbf{LCIIo1}~\cite{Beau2026lco2o1} (version~2.0): Establishes a \emph{no-go} for the scalar
+    free-fraction reduction of the capacity--metric bridge of LCII.
+    Version~1.0 claimed to close that bridge via
+    $A_{\tau}(x) = A_{\tau}^{\infty}\bigl(1-\epsilon(x)\bigr)$ together with
+    $g^{\tau\tau}(x) = -A_{\tau}(x)/4$; that claim is withdrawn.
+    With the Q11 identification $g^{\tau\tau} = -A_{\tau}$ (flat-space value $-2$) and a diagonal
+    temporal block, the free-fraction law gives
+    $g_{\tau\tau}(x)/g_{\tau\tau}^{\infty} = 1/(1-\epsilon(x))$, which agrees with
+    $R(x)^{2} = 1-\epsilon(x)$ only at $\epsilon(x) = 0$.
+    The paper also shows that the partial-trace form of the local coefficient is a fresh postulate
+    rather than a consequence of~\cite{Beau2026w1}, and that it is mistyped (a norm-valued
+    occupancy is not a trace fraction).
+    What survives is the co-metric statement $g^{\tau\tau}/g^{\tau\tau}_{\infty} = 1-\epsilon$,
+    which does not govern proper-time dilation.
+    The result is narrow: a reciprocal scalar law would close the bridge algebraically.
+    \textbf{LC-O2-O1 is reopened} (\sproved, as a negative result).
 
     \textbf{LCo1}~\cite{Beau2026lco1}: Closes LC-O1, the reconstruction of effective Lorentz
     transformations between inertial observers from projective temporal ordering data.
@@ -1559,8 +1563,11 @@ A Structural Roadmap and Paper Inventory}
     the quadratic identity $B_{n}^{2} + (F_{n}^{\tau})^{2} = 1$ receives no correction,
     while the Carnot identification holds for $n \leq R$ and asymptotically as $m/q \to 0$
     (\sproved).
-    With LC-O1, LC-O2-O1, and LC-O3 now closed, the Lorentz-capacity sub-programme is
-    complete.
+    With LC-O1 and LC-O3 closed, the Lorentz-capacity sub-programme is complete for
+    \emph{inertial} kinematics.
+    Its non-homogeneous extension is not: LC-O2-O1 is reopened, and the identification of the
+    local capacity radius with the metric lapse remains the declared postulate of
+    Remark~3.2 of~\cite{Beau2026lco2}.
 
   \subsection{Standard Model Companion Papers}
 
@@ -2691,10 +2698,11 @@ A Structural Roadmap and Paper Inventory}
       unified capacity arbitration: $1/\gamma$ (kinematic) and $R(x)$ (gravitational)
       as two facets of the same BI trade-off &
       \sstruct \\[3pt]
-      LCIIo1 & Local spectral closure of the capacity--metric bridge & \cite{Beau2026lco2o1} &
-      $R(x)^2 = 1-\epsilon(x) = -2g^{\tau\tau}(x)$ derived from local admissibility data alone;
-      $\SU(2)$-Schur reduction $A_\tau(x) = 2(1-\epsilon(x))$ combined with the principal-symbol
-      identification $g^{\tau\tau}(x) = -A_\tau(x)/4$; no Einstein equation required &
+      LCIIo1 & No-go for the scalar free-fraction closure of the capacity--metric bridge &
+      \cite{Beau2026lco2o1} &
+      The free-fraction law $A_\tau = A_\tau^\infty(1-\epsilon)$ with $g^{\tau\tau} = -A_\tau$
+      gives $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$, matching $1-\epsilon$ only at
+      $\epsilon = 0$; LC-O2-O1 reopened &
       \sproved \\[3pt]
       LCo1 & Lorentz transformations from projective temporal ordering & \cite{Beau2026lco1} &
       Effective Lorentz transformations between inertial observers are uniquely fixed by the
@@ -2996,12 +3004,14 @@ A Structural Roadmap and Paper Inventory}
     triplet co-admissibility structure, without inputting the group as data.
 
   \paragraph{Lorentz Capacity Sub-Programme.}
-    The Lorentz-capacity sub-programme is now closed.
+    The Lorentz-capacity sub-programme is closed for inertial kinematics, and open in its
+    non-homogeneous extension.
     TempProj closes the $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction of LorCap;
-    LCIIo1~\cite{Beau2026lco2o1} closes the spectral derivation of $R(x)$ (formerly LC-O2-O1,
-    see Remark~3.2 of~\cite{Beau2026lco2}): $A_\tau(x) = 2(1-\epsilon(x))$ via $\SU(2)$-Schur
-    reduction on $\Sym^2(V_\rho)$ combined with $g^{\tau\tau}(x) = -A_\tau(x)/4$ yields
-    $R(x)^{2}=1-\epsilon(x)=-2g^{\tau\tau}(x)$ without importing the Einstein equation.
+    LCIIo1~\cite{Beau2026lco2o1} (version~2.0) \emph{reopens} LC-O2-O1, establishing that the
+    scalar free-fraction law $A_\tau(x) = A_\tau^\infty(1-\epsilon(x))$ does not derive
+    $R(x)$ from $\epsilon(x)$: with $g^{\tau\tau} = -A_\tau$ it yields
+    $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$, agreeing with the capacity definition
+    only in the homogeneous vacuum.
     LCo1~\cite{Beau2026lco1} closes LC-O1: the effective Lorentz transformations between
     inertial observers are uniquely fixed by the projective temporal capacity load $\beta$,
     yielding length contraction $\ell = \ell_0/\gamma$ as a corollary.
