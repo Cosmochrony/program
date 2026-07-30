@@ -24,6 +24,11 @@
       --accent: #bc8cff;
       --edge-base: #2a3040;
       --edge-spine: #3a4560;
+      --edge-proved: #3fb950;
+      --edge-conditional: #e3b341;
+      --edge-postulated: #f0883e;
+      --edge-interpretive: #bc8cff;
+      --edge-withdrawn: #f85149;
       --node-text: #e6edf3;
       --chip-bg: #21262d;
       --chip-text: #c9d1d9;
@@ -65,6 +70,11 @@
         --accent: #8250df;
         --edge-base: #c8d0da;
         --edge-spine: #9eaab8;
+        --edge-proved: #1a7f37;
+        --edge-conditional: #9a6700;
+        --edge-postulated: #bc4c00;
+        --edge-interpretive: #8250df;
+        --edge-withdrawn: #cf222e;
         --node-text: #1f2328;
         --chip-bg: #eaeef2;
         --chip-text: #1f2328;
@@ -299,6 +309,51 @@
       margin-bottom: 14px;
     }
 
+    .edge-legend {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 9px 0;
+      margin-bottom: 12px;
+    }
+
+    .edge-legend-title {
+      color: var(--text-faint);
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 5px;
+    }
+
+    .edge-legend-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-dim);
+      font-size: 9px;
+      line-height: 1.5;
+    }
+
+    .edge-swatch {
+      width: 24px;
+      height: 0;
+      border-top: 2px solid var(--edge-base);
+      flex-shrink: 0;
+    }
+
+    .edge-swatch.proved { border-color: var(--edge-proved); }
+    .edge-swatch.conditional { border-color: var(--edge-conditional); border-top-style: dashed; }
+    .edge-swatch.postulated { border-color: var(--edge-postulated); border-top-style: dotted; }
+    .edge-swatch.interpretive { border-color: var(--edge-interpretive); border-top-style: dashed; }
+    .edge-swatch.withdrawn { border-color: var(--edge-withdrawn); border-top-style: dashed; }
+    .edge-swatch.synthesis { opacity: .35; border-top-style: dotted; }
+
+    .edge-legend-note {
+      color: var(--text-faint);
+      font-size: 9px;
+      line-height: 1.45;
+      margin-top: 6px;
+    }
+
     .bl {
       font-size: 10px;
       font-weight: 600;
@@ -447,6 +502,31 @@
       stroke-width: 1.6;
     }
 
+    .edge.et-proved {
+      stroke: var(--edge-proved);
+    }
+
+    .edge.et-conditional {
+      stroke: var(--edge-conditional);
+      stroke-dasharray: 6 3;
+    }
+
+    .edge.et-postulated {
+      stroke: var(--edge-postulated);
+      stroke-dasharray: 2 3;
+    }
+
+    .edge.et-interpretive {
+      stroke: var(--edge-interpretive);
+      stroke-dasharray: 9 4;
+    }
+
+    .edge.et-withdrawn {
+      stroke: var(--edge-withdrawn);
+      stroke-dasharray: 10 4 2 4;
+      opacity: .65;
+    }
+
     .edge.hi {
       stroke: var(--accent) !important;
       stroke-width: 2.2 !important;
@@ -461,6 +541,15 @@
       stroke-width: .5;
       opacity: .28;
       stroke-dasharray: 3 3;
+    }
+
+    .edge-chip-status {
+      display: block;
+      font-size: 8px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--text-faint);
     }
 
     /* ── Smooth SVG pan/zoom transition ── */
@@ -523,7 +612,7 @@
 <body>
 <header>
   <h1>Cosmochrony &mdash; Paper Graph</h1>
-  <span class="ctrl-label">112 papers</span>
+  <span class="ctrl-label" id="graph-count">113 papers</span>
 
   <div class="legend">
     <div class="li" id="li-proved" style="color:var(--proved)" onclick="filterStatus('proved')">
@@ -578,6 +667,20 @@
       class="bl" style="background:var(--branch2-bg);color:var(--branch2)">■ II: O-series</span> <span class="bl"
       style="background:var(--branch3-bg);color:var(--branch3)">■ III: Q + Apps</span>
     </div>
+    <div class="edge-legend">
+      <div class="edge-legend-title">Edge status</div>
+      <div class="edge-legend-row"><span class="edge-swatch proved"></span>proved</div>
+      <div class="edge-legend-row"><span class="edge-swatch conditional"></span>conditional</div>
+      <div class="edge-legend-row"><span class="edge-swatch postulated"></span>postulated</div>
+      <div class="edge-legend-row"><span class="edge-swatch interpretive"></span>interpretive</div>
+      <div class="edge-legend-row"><span class="edge-swatch withdrawn"></span>withdrawn</div>
+      <div class="edge-legend-row"><span class="edge-swatch"></span>dependency (not yet typed as a claim)</div>
+      <div class="edge-legend-row"><span class="edge-swatch synthesis"></span>synthesis</div>
+      <div class="edge-legend-note">
+        A proved node does not make its outgoing edges proved. Untyped substantive links default to
+        dependency and carry no derivational status.
+      </div>
+    </div>
     <div id="def-msg" class="def-msg">
       Click a node to inspect it.<br> Use topic buttons or the search box to highlight thematic clusters.<br> Any
       selection auto-zooms to the highlighted papers.
@@ -608,6 +711,16 @@
     heuristic: { fill: "var(--heur-bg)", stroke: "var(--heur)" },
     open: { fill: "var(--open-bg)", stroke: "var(--open)" }
   }
+  const EDGE_TYPES = {
+    proved: { label: "proved", color: "var(--edge-proved)" },
+    conditional: { label: "conditional", color: "var(--edge-conditional)" },
+    postulated: { label: "postulated", color: "var(--edge-postulated)" },
+    interpretive: { label: "interpretive", color: "var(--edge-interpretive)" },
+    withdrawn: { label: "withdrawn", color: "var(--edge-withdrawn)" },
+    dependency: { label: "dependency", color: "var(--text-faint)" },
+    synthesis: { label: "synthesis", color: "var(--text-faint)" }
+  }
+  const edgeStatus = e => e.syn ? "synthesis" : (e.st || "dependency")
   const BRCOL = { I: "var(--branch1)", II: "var(--branch2)", III: "var(--branch3)" }
   const BRBG = { I: "var(--branch1-bg)", II: "var(--branch2-bg)", III: "var(--branch3-bg)" }
 
@@ -632,18 +745,25 @@
         "Section 5: colour confinement is structural necessity of Π_colour non-injectivity. Cited by O32."
     },
     {
-      id: "Found", lbl: "Found", s: "proved", b: "I", key: "Beau2026m",
+      id: "Found", lbl: "Found", s: "structural", b: "I", key: "Beau2026m",
       url: ZEN + "19616329",
       tags: ["emer", "QM", "BI", "time"],
       title: "Foundation (Admissible Non-Injective Transitions)",
-      desc: "4 axioms A1–A4. Derives Heis₃(ℤ/qℤ) and Weil representation Vρ as theorems (Thm 5.6). Replaces substrate χ and relaxation by pure axiomatic construction. v1.16: continuum-limit passages conditional on [H-L] (Q5a 3.0); Q5 open."
+      desc: "Four-axiom admissibility architecture. The published Heisenberg/Weil selection theorem is not established: the S₃ countermodel shows that the extracted inputs do not force centrality. Carrier selection is postulated; continuum passages remain conditional on [H-L]."
     },
     {
-      id: "Heis", lbl: "HeisStr", s: "proved", b: "I", key: "Beau2026HeisenbergStructure",
+      id: "Heis", lbl: "HeisStr", s: "structural", b: "I", key: "Beau2026HeisenbergStructure",
       url: ZEN + "19635395",
       tags: ["QM", "emer"],
       title: "Heisenberg Structure",
-      desc: "Detailed proof of Foundation Thm 5.6. Admissible non-factorisability (Axiom A3) forces Heis₃ structure. Uncertainty principle as structural corollary."
+      desc: "Published proof attempt for Foundation Thm 5.6. The non-factorisability setup survives, but centrality and prime-order steps fail. The Stone–von Neumann endpoint is valid only after a finite Heisenberg carrier and non-trivial central character are supplied."
+    },
+    {
+      id: "HCO", lbl: "HCO", s: "proved", b: "I", key: "Beau2026hco",
+      url: ZEN + "21710123",
+      tags: ["QM", "emer"],
+      title: "Finite Countermodel to Heisenberg Carrier Selection",
+      desc: "Explicit S₃ countermodel: a faithful irreducible unitary carrier with a minimal involutively conjugate generating pair and non-trivial commutator, but the commutator is non-central. Corrects the Schur step and downgrades only the carrier-selection edge."
     },
     {
       id: "nos", lbl: "noscale", s: "proved", b: "I", key: "Beau2026j",
@@ -657,7 +777,7 @@
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
       title: "Non-Injective Foundations Sub-Programme (Presentation Note 5)",
-      desc: "Synthesis of ENI, Foundation, Heisenberg Structure, and No External Scale. Maps A1–A4 through non-injectivity and the Heisenberg commutator to the unique admissible Weil fibre; consolidates results established in its constituents and adds no new theorem."
+      desc: "Audited synthesis of ENI, Foundation, Heisenberg Structure, the S₃ countermodel, and No External Scale. The Heisenberg/Weil carrier is a supplied realisation; carrier selection remains open. Adds no new theorem."
     },
     {
       id: "BI", lbl: "BornInfeld", s: "structural", b: "II", key: "Beau2026c",
@@ -1508,12 +1628,16 @@
   ]
 
   const edges = [
-    { f: "WP", t: "ENI", sp: 1 }, { f: "ENI", t: "Found", sp: 1 }, { f: "Found", t: "Heis", sp: 1 }, {
+    { f: "WP", t: "ENI", sp: 1 }, { f: "ENI", t: "Found", sp: 1 },
+    { f: "Found", t: "Heis", sp: 1, st: "postulated", claim: "A1–A3 select the Heisenberg/Weil carrier" },
+    { f: "Found", t: "HCO", st: "proved", claim: "countermodel audit of the carrier-selection theorem" },
+    { f: "Heis", t: "HCO", st: "proved", claim: "countermodel audit of the detailed selection proof" }, {
       f: "Found",
       t: "nos"
     },
     { f: "ENI", t: "NIFNote", syn: 1 }, { f: "Found", t: "NIFNote", syn: 1 },
-    { f: "Heis", t: "NIFNote", syn: 1 }, { f: "nos", t: "NIFNote", syn: 1 },
+    { f: "Heis", t: "NIFNote", syn: 1 }, { f: "HCO", t: "NIFNote", syn: 1 },
+    { f: "nos", t: "NIFNote", syn: 1 },
     { f: "WP", t: "BI" }, { f: "BI", t: "SpA" }, { f: "SpA", t: "SpCap" }, { f: "SpCap", t: "SpG" }, {
       f: "SpG",
       t: "ThGn"
@@ -1553,7 +1677,9 @@
     { f: "Q1", t: "Q2" }, { f: "Q2", t: "Q3" }, { f: "Q2", t: "Q5a" }, { f: "Q5a", t: "Q5aO2" }, { f: "Q5aO2", t: "Q5b", sp: 1 }, {
       f: "Q5a",
       t: "Q5b",
-      sp: 1
+      sp: 1,
+      st: "conditional",
+      claim: "continuum operator and metric extraction consume the unestablished [H-L]"
     }, { f: "Q5b", t: "Q6a" }, { f: "Q6a", t: "Q6b" },
     { f: "Q5b", t: "Q7" }, { f: "O23", t: "Q7" }, { f: "O28", t: "Q7" }, { f: "O29", t: "Q7" },
     { f: "Q7", t: "Q8" }, { f: "Q7", t: "Q9" }, { f: "Q5a", t: "Q9" },
@@ -1599,8 +1725,10 @@
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" },
     { f: "ENI", t: "TrajBr" }, { f: "O12", t: "TrajBr" },
-    { f: "ENI", t: "ProjCE", sp: 1 }, { f: "TrajBr", t: "LowLCap" },
-    { f: "ProjCE", t: "LowLCap", sp: 1 }, { f: "LowLCap", t: "Cosm" },
+    { f: "ENI", t: "ProjCE", sp: 1 },
+    { f: "TrajBr", t: "LowLCap", st: "postulated", claim: "history count is mapped to angular modes by a consumer dictionary" },
+    { f: "ProjCE", t: "LowLCap", sp: 1, st: "conditional", claim: "capacity ceiling imported under graded hypotheses; saturation remains separate" },
+    { f: "LowLCap", t: "Cosm", st: "interpretive", claim: "saturation benchmark read as a cosmological low-ell mechanism" },
     { f: "TrajBr", t: "Cosm" }, { f: "TrajBr", t: "NSR" },
     { f: "Found", t: "Supra" },
     { f: "Supra", t: "QFI" }, { f: "Thm", t: "QFI" },
@@ -1622,8 +1750,9 @@
     ENI: { x: X, y: 0 },
     Found: { x: 2 * X, y: 0 },
     Heis: { x: 3 * X, y: 0 },
-    nos: { x: 4 * X, y: 0 },
-    NIFNote: { x: 5 * X, y: 0 },
+    HCO: { x: 4 * X, y: 0 },
+    nos: { x: 5 * X, y: 0 },
+    NIFNote: { x: 6 * X, y: 0 },
     BI: { x: 0, y: Y },
     SpA: { x: X, y: Y },
     SpCap: { x: 2 * X, y: Y },
@@ -1742,6 +1871,7 @@
     depMap[e.t].push(e.f)
     rdepMap[e.f].push(e.t)
   })
+  document.getElementById("graph-count").textContent = `${papers.length} papers · ${edges.length} edges`
 
   /* ════════════════════════════════════════
      STATE
@@ -1831,7 +1961,7 @@
       }
     }
 
-    bgRect(-X, 0, 6 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
+    bgRect(-X, 0, 7 * X + NW, Y + NH, "var(--branch1)", "Branch I: Foundations")
     bgRect(-X, Y, 9 * X + NW, 9 * Y + NH, "var(--branch2)", "Branch II: O-series")
     bgRect(10 * X - 6, 3 * Y - 6, NW + 12 + 2 * X, 10 * Y + NH + 12, "var(--branch3)", "Branch III: Q")
     bgRect(-X - 6, 4 * Y - 6, NW + 12, 4 * Y + NH + 12, "var(--branch3)", "")
@@ -1849,10 +1979,21 @@
       const el = document.createElementNS(ns, "path")
       const dx = x2 - x1, dy = y2 - y1
       el.setAttribute("d", `M${x1} ${y1} C${x1 + dx * .25} ${y1 + dy * .1},${x2 - dx * .25} ${y2 - dy * .1},${x2} ${y2}`)
-      el.setAttribute("class", e.sp ? "edge spine" : (e.syn ? "edge syn" : "edge"))
+      const est = edgeStatus(e)
+      const classes = ["edge", `et-${est}`]
+      if (e.sp) classes.push("spine")
+      if (e.syn) classes.push("syn")
+      el.setAttribute("class", classes.join(" "))
       el.setAttribute("marker-end", e.sp ? "url(#arr-sp)" : "url(#arr)")
       el.setAttribute("data-f", e.f)
       el.setAttribute("data-t", e.t)
+      el.setAttribute("data-status", est)
+      const title = document.createElementNS(ns, "title")
+      const fp = papers.find(p => p.id === e.f)
+      const tp = papers.find(p => p.id === e.t)
+      title.textContent = `${fp ? fp.lbl : e.f} → ${tp ? tp.lbl : e.t}: ${EDGE_TYPES[est].label}` +
+        (e.claim ? ` — ${e.claim}` : "")
+      el.appendChild(title)
       eG.appendChild(el)
     })
 
@@ -1967,13 +2108,19 @@
       const t = TOPICS.find(x => x.id === tid)
       return t ? `<span class="ptag" style="color:${t.color};border-color:${t.color}60;background:color-mix(in srgb,${t.color} 10%,transparent)">${t.label}</span>` : ""
     }).join("")
-    const depsHtml = depMap[id].map(d => {
-      const dp = papers.find(x => x.id === d)
-      return dp ? `<span class="chip" onclick="selectNode('${d}')">${dp.lbl}</span>` : ""
+    const depsHtml = edges.filter(e => e.t === id).map(e => {
+      const dp = papers.find(x => x.id === e.f)
+      const est = edgeStatus(e)
+      return dp ? `<span class="chip" title="${e.claim || EDGE_TYPES[est].label}" ` +
+        `onclick="selectNode('${e.f}')">${dp.lbl}<span class="edge-chip-status" ` +
+        `style="color:${EDGE_TYPES[est].color}">${EDGE_TYPES[est].label}</span></span>` : ""
     }).join("")
-    const rdepsHtml = rdepMap[id].map(d => {
-      const dp = papers.find(x => x.id === d)
-      return dp ? `<span class="chip" onclick="selectNode('${d}')">${dp.lbl}</span>` : ""
+    const rdepsHtml = edges.filter(e => e.f === id).map(e => {
+      const dp = papers.find(x => x.id === e.t)
+      const est = edgeStatus(e)
+      return dp ? `<span class="chip" title="${e.claim || EDGE_TYPES[est].label}" ` +
+        `onclick="selectNode('${e.t}')">${dp.lbl}<span class="edge-chip-status" ` +
+        `style="color:${EDGE_TYPES[est].color}">${EDGE_TYPES[est].label}</span></span>` : ""
     }).join("")
 
     document.getElementById("def-msg").style.display = "none"

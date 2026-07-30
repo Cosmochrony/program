@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.1 records the corrective LowLCapacity 1.5.0 result. The active Planck-calibrated, real-m = 0-corrected TT saturation benchmark is 27.26 -> 17.70, replacing the historical 27.39 -> 17.29 comparison reported by LowLCapacity 1.4.0. The registry now states explicitly that the capacity ceiling is conditional, saturation is a separate open hypothesis, and the comparison is a benchmark rather than a derived prediction.",
+  "notes": "Version 2.2 records the finite S3 countermodel to the published Heisenberg carrier-selection argument. A faithful irreducible unitary carrier with a minimal involutively conjugate generating pair and a non-trivial commutator need not have a central commutator. The registry therefore reclassifies Found and HeisStr and treats the Heisenberg/Weil carrier as a supplied realisation. Results proved internally on that carrier retain their mathematical status. The interactive graph also introduces explicit edge types and renders synthesis links separately from derivational claims.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }

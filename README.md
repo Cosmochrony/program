@@ -8,20 +8,21 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
-Version 2.1 records the corrective LowLCapacity 1.5.0 result: the active Planck-calibrated,
-real-`m=0`-corrected TT saturation benchmark is `27.26 -> 17.70`, replacing the historical
-`27.39 -> 17.29` comparison. The capacity ceiling remains conditional and saturation is open.
+Version 2.2 records the finite \(S_3\) countermodel to the published Heisenberg carrier-selection
+argument. The algebraic properties extracted from A1--A3 do not force a central commutator,
+class-two nilpotence, a finite Heisenberg group, or a Weil carrier. Found and HeisStr are therefore
+reclassified, while results internal to a supplied Heisenberg/Weil carrier retain their status.
 
 ## What This Paper Is
 
 The Cosmochrony programme develops a pre-geometric framework in which physical structure —
 spacetime, quantum mechanics, gauge symmetry, and Standard Model observables — arises from a
 single primitive: the local structure of admissible non-injective transitions between observable
-states. The corpus comprises **112 papers** across three theory branches:
+states. The corpus comprises **113 papers** across three theory branches:
 
-- **Branch I — Foundation track**: four axioms suffice to derive the Heisenberg group
-  $\mathrm{Heis}_3(\mathbb{Z}/q)$ and its Weil representation as theorems, with no background
-  substrate or relaxation mechanism.
+- **Branch I — Foundation track**: four axioms organise the admissibility framework. Their published
+  carrier-selection argument is refuted by a finite \(S_3\) countermodel; the Heisenberg/Weil carrier
+  remains a supplied realisation.
 - **Branch II — O-series** (spectral admissibility): derives the canonical pair-capacity
   observable and its fibre/representation structure. The proposed
   $\delta_{\mathrm{pair}}\to\beta^*$ continuation is now recorded as a refuted native
@@ -32,7 +33,7 @@ states. The corpus comprises **112 papers** across three theory branches:
 ## Role in the Repository
 
 - **Paper inventory**: the authoritative list of all papers and their status.
-- **Dependency graph**: covers all 112 inventory entries, is maintained here, and is exported as
+- **Dependency graph**: covers all 113 inventory entries, is maintained here, and is exported as
   an interactive HTML visualisation copied to the website for publication at
   https://cosmochrony.org.
 - **Coherence**: updated whenever a new result is obtained or a new paper is created, so the
