@@ -8,6 +8,10 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.1 records the corrective LowLCapacity 1.5.0 result: the active Planck-calibrated,
+real-`m=0`-corrected TT saturation benchmark is `27.26 -> 17.70`, replacing the historical
+`27.39 -> 17.29` comparison. The capacity ceiling remains conditional and saturation is open.
+
 ## What This Paper Is
 
 The Cosmochrony programme develops a pre-geometric framework in which physical structure —
