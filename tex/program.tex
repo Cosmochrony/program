@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.1}
+\date{2026\\[2pt]\small Version 2.2}
 
 \begin{document}
 
@@ -70,10 +70,12 @@ A Structural Roadmap and Paper Inventory}
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between
     observable states.
-    The corpus comprises 112 papers across three theory branches.
-    Branch~I (Foundation track) builds the axiomatic base: four axioms suffice to derive the
-    Heisenberg group $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and its Weil representation as theorems,
-    without any background substrate or relaxation mechanism.
+    The corpus comprises 113 papers across three theory branches.
+    Branch~I (Foundation track) develops four admissibility axioms and their consequences.
+    A finite \(S_3\) countermodel now proves that the algebraic properties extracted from those
+    axioms in the published carrier-selection argument do not force a central commutator,
+    a finite Heisenberg group, or a Weil representation.
+    The Heisenberg/Weil carrier is therefore a supplied realisation, not an axiomatic theorem.
     Branch~II (O-series) develops the spectral admissibility sub-programme, derives the
     conjugate-pair fibre structure and measures its capacity exponent $\delta_{\mathrm{pair}}$.
     The native Heisenberg span-growth law proves that the proposed conversion
@@ -83,8 +85,8 @@ A Structural Roadmap and Paper Inventory}
     The same branch identifies the Standard Model gauge group
     $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$ (unconditional at the pointwise
     level on the standard graph).
-    Branch~III (Q-series and companion papers) derives quantum mechanics, spacetime geometry, and
-    gauge dynamics from the Branch~I axioms and Branch~II spectral data: the universal singlet
+    Branch~III (Q-series and companion papers) develops quantum mechanics, spacetime geometry, and
+    gauge dynamics from the Branch~I axioms and supplied Branch~II spectral data: the universal singlet
     correlator and Born rule (paper Q3), the effective Lorentzian co-metric
     $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$ under the continuum-limit
     hypotheses (the geometric-emergence papers, with $A_\tau = 2$ from paper Q11), and the
@@ -128,14 +130,16 @@ A Structural Roadmap and Paper Inventory}
   The Span-Growth Note~\cite{Beau2026sgn} proves, however, that the O4--O6 growth-equation closure,
   square-root frontier, pair observable, and exponent coordinates do not supply a native
   Heisenberg derivation of the downstream conversion $\delta_{\mathrm{pair}} \to \beta^*$.
-  On the other side, the Foundation paper~\cite{Beau2026m} has refounded the entire framework from
-  four axioms~(A1--A4), dispensing with any explicit substrate $\chi$ and relaxation mechanism:
-  these emerge as consequences of the axiomatic structure rather than being postulated.
+  On the other side, the Foundation paper~\cite{Beau2026m} proposes a reformulation from
+  four axioms~(A1--A4), dispensing with an explicit substrate $\chi$ and relaxation mechanism.
+  Its carrier-selection step is not derived: the finite countermodel of
+  HeisenbergCarrierObstruction~\cite{Beau2026hco} satisfies the algebraic properties available before
+  centrality while its commutator is non-central.
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 112 papers with complex mutual dependencies.
-  The interactive dependency graph covers all 112 entries of the inventory and distinguishes
+  The corpus comprises 113 papers with complex mutual dependencies.
+  The interactive dependency graph covers all 113 entries of the inventory and distinguishes
   ordinary dependencies from sub-programme synthesis links.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
@@ -153,7 +157,9 @@ A Structural Roadmap and Paper Inventory}
     and synthesis notes: these papers consolidate and organise results established in their
     constituent papers and carry no new result of their own, so their epistemic content is that of
     the papers they map.
-    These classifications follow the original papers; this roadmap introduces no new claims.
+    These classifications record the current audited status.
+    They may therefore correct an original paper's self-classification when a published countermodel or
+    obstruction establishes that a claimed implication does not follow.
 
   \section{Conceptual Architecture}
   \label{sec:architecture}
@@ -166,16 +172,18 @@ A Structural Roadmap and Paper Inventory}
     The four axioms are: local projective admissibility~(A1), structural non-injectivity~(A2),
     admissibility as non-premature selection~(A3), and projection locking~(A4).
     From~A1--A2 alone, irreversibility and the arrow of time follow.
-    From~A3, the Heisenberg non-commutativity and the Weil representation emerge.
+    Under the published formalisation, A3 supplies irreducibility and a non-trivial commutator.
+    It does not force centrality, class-two nilpotence, or the Weil representation.
     From~A4, the discreteness of quantum transitions follows.
     Papers at this level: ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
-    HeisenbergStructure, noscale~\cite{Beau2026j}.
+    HeisenbergStructure, HeisenbergCarrierObstruction~\cite{Beau2026hco}, noscale~\cite{Beau2026j}.
 
   \paragraph{Level 2 --- Spectral fibre structure.}
-    The admissible fibre is proved to carry the Weil representation $V_\rho$ of
-    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for a prime~$q$ (Foundation Theorem~5.6;
-    detailed proof in HeisenbergStructure~\cite{Beau2026HeisenbergStructure}).
-    The O-series computes the spectral properties of this fibre, including the capacity exponent
+    The O-series supplies the Weil representation $V_\rho$ of
+    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for a prime~$q$ as its mathematical carrier.
+    Foundation and HeisenbergStructure claimed to derive this carrier, but the selection proof is refuted by
+    HeisenbergCarrierObstruction~\cite{Beau2026hco}.
+    The O-series computes the spectral properties of the supplied fibre, including the capacity exponent
     $\delta_{\mathrm{pair}}$.
     Its proposed conversion to the cascade exponent $\beta^*$ is not native to the Heisenberg
     substrate: the measured numerical agreement remains a conditional, cross-substrate
@@ -282,14 +290,14 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Foundation: Admissible Non-Injective Transitions as the Primitive}
     \label{sec:foundation}
 
-    The Foundation paper~\cite{Beau2026m} (v1.13) establishes the minimal axiomatic basis of the programme.
-    From the four axioms~A1--A4 alone it derives:
+    The Foundation paper~\cite{Beau2026m} (v1.16) states the axiomatic basis of the programme.
+    From the four axioms~A1--A4 it claims:
     (i) irreversibility and the arrow of time (A1+A2);
     (ii) the proto-state as a physically real unresolved configuration retaining phase coherence~(A3);
     (iii) a non-trivial commutator between conjugate generators, forced by~A3 and the minimality of~A1;
     (iv) the identification of the admissible fibre symmetry group as $\Heis_3(\mathbb{Z}/q\mathbb{Z})$
     for a prime~$q$, together with BI parity (A1--A3);
-    (v) the identification $F_n \cong V_\rho$ (Weil representation) as a theorem (Theorem~5.6);
+    (v) the identification $F_n \cong V_\rho$ (Weil representation) as Theorem~5.6;
     (vi) the discrete character of quantum transitions from~A4;
     (vii) projective incompleteness (Corollary to Theorem~5.4): every admissible projection
     $\Pi_n$ has a non-trivial kernel, so no observable description is ever complete —
@@ -309,7 +317,13 @@ A Structural Roadmap and Paper Inventory}
     factorisability does not apply at the proto-state level (the joint object is below
     $\Pi$-resolution), recovering the Bell-paper's conclusion as a structural consequence of A2.
 
-    \textit{Status:} \sproved{} for the algebraic identification of the fibre;
+    Items (iv)--(v) are not established.
+    The finite \(S_3\) countermodel~\cite{Beau2026hco} has a faithful irreducible unitary carrier, a minimal
+    generating pair exchanged by an involution, and a non-trivial commutator, but the commutator is not central.
+    It also shows that the prime-order step reverses Schur's lemma.
+
+    \textit{Status:} \sstruct{} for the axiomatic architecture and the consequences that do not consume
+    carrier selection; the Heisenberg/Weil identification is a postulated realisation;
     \sopen{} for the continuum limit (Q5a version 3.0 withdraws the Mosco derivation; the
     spatial limit is the unestablished hypothesis [H-L] of Q5b version 2.0).
     \textit{Role:} Axiomatic spine.
@@ -319,15 +333,30 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Non-Factorisability and the Emergence of Heisenberg Structure}
 
     HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
-    provides the detailed proof of Foundation Theorem~5.6, omitted from the
+    provides the published proof of Foundation Theorem~5.6, omitted from the
     Foundation paper for concision.
     The central structural lemma --- \emph{admissible non-factorisability} --- is a direct
-    formalisation of Axiom~A3 and requires no input beyond~A1--A3, BI parity, and classical
-    group-classification results.
-    As a corollary, the Heisenberg uncertainty principle is derived as a structural property
-    of the non-resolved proto-state, not as an independent postulate (\sproved).
+    formalisation of Axiom~A3.
+    Its next step, ``minimality implies central commutator'', is false: a two-generator group need not be
+    nilpotent of class two.
+    The later prime-order argument is also invalid because an irreducible complex carrier contains one
+    character of a central subgroup, not one non-zero eigenspace for every available character.
 
-    \textit{Role:} Detailed proof of the algebraic core; cited by Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2}.
+    \textit{Status:} \sstruct{} for the non-factorisability setup; \sopen{} for Heisenberg selection.
+    \textit{Role:} Documents the attempted carrier-selection proof and its conditional final
+    Stone--von Neumann step.
+
+  \subsection{Finite Countermodel to Heisenberg Carrier Selection}
+
+    HeisenbergCarrierObstruction~\cite{Beau2026hco} gives the six-element countermodel
+    \(G=S_3\), \(X=(12)\), \(Y=(23)\), with \(\sigma\) given by conjugation by \((13)\).
+    The standard action on the two-dimensional zero-sum subspace of \(\mathbb{C}^3\) is faithful,
+    unitary, and irreducible; \(\sigma\) exchanges the minimal generating pair; and
+    \([X,Y]\) is non-trivial but non-central because \(Z(S_3)=\{1\}\).
+    The note independently corrects the Schur-lemma step and separates the failed selection edge from
+    downstream mathematics internal to a supplied Heisenberg/Weil carrier (\sproved).
+
+    \textit{Role:} Published evidentiary basis for the Found/Heis status correction.
 
   \subsection{No External Dimensional Scale at the Level of Admissibility}
 
@@ -343,7 +372,8 @@ A Structural Roadmap and Paper Inventory}
     \label{sec:nifnote}
 
     The papers ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
-    HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, and noscale~\cite{Beau2026j}
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
+    HeisenbergCarrierObstruction~\cite{Beau2026hco}, and noscale~\cite{Beau2026j}
     form the \emph{non-injective foundations sub-programme}, whose synthesis paper is the
     presentation note \textbf{NIF-Note}~\cite{Beau2026ninote} (Presentation Note~5).
     NIF-Note maps these four constituents into the single axiomatic chain
@@ -352,17 +382,18 @@ A Structural Roadmap and Paper Inventory}
       \;\Longrightarrow\;
       \Pi \text{ non-injective},\; S_\Pi > 0
       \;\Longrightarrow\;
-      [X,\sigma(X)] = Z \neq 0
-      \;\Longrightarrow\;
+      [X,\sigma(X)] \neq 1
+      \;\not\Longrightarrow\;
       \Heis_3(\mathbb{Z}/q\mathbb{Z})
-      \;\Longrightarrow\;
+      \;\xrightarrow{\text{postulated carrier}}\;
       V_\rho,
     \]
     and records the formal liquidation of the white paper's preliminary $\chi$/relaxation/iterated-projection
     vocabulary: the substrate is static, the admissibility constraint replaces relaxation
     throughout the corpus, and observable evolution is an induced ordering of admissible
     projections rather than a dynamics of~$\chi$.
-    NIF-Note identifies two open structural deliverables for the sub-programme:
+    Carrier selection is now the first open structural deliverable.
+    NIF-Note also identifies:
     extension of the Born rule beyond the $\SU(2)$ sector~(Q3) and the Level~2 scale determination
     of noscale (every emergent scale as a functional of~$c_{\mathrm{BI}}$ alone).
 
@@ -1733,11 +1764,20 @@ A Structural Roadmap and Paper Inventory}
   \label{sec:graph}
 
   Figure~\ref{fig:dag} presents the logical dependency DAG.
+  Node status and edge status are deliberately independent.
+  The interactive graph types audited claim-bearing edges as \emph{proved}, \emph{conditional},
+  \emph{postulated}, \emph{interpretive}, or \emph{withdrawn}, and renders synthesis links separately.
+  Every substantive edge not yet audited defaults to \emph{dependency}: it records use or citation and
+  carries no derivational status.
+  Thus a proved source node and a proved target node never make their connecting edge proved by default.
   Three entry paths emerge for external readers.
 
   \paragraph{Foundational path.}
-    $\text{ENI} \to \text{Foundation} \to \text{HeisenbergStructure} \to \text{noscale}$.
-    Requires least prior knowledge; establishes the axiomatic core.
+    \[
+      \mathrm{ENI} \to \mathrm{Found} \to \mathrm{HeisStr}
+      \to \mathrm{HCO} \to \mathrm{noscale}.
+    \]
+    Requires least prior knowledge; separates the axiomatic core from the open carrier-selection edge.
 
   \paragraph{Spectral path.}
     $\text{BornInfeld} \to \text{SpAdm} \to \text{SpRel} \to \text{O1} \to \cdots \to \text{O24} \to \text{O25} \to
@@ -1772,13 +1812,15 @@ A Structural Roadmap and Paper Inventory}
 
           \node[P] (WP)     at (0,0)          {WP};
           \node[P] (ENI)    at (\dx,0)        {ENI};
-          \node[P] (Found)  at (2*\dx,0)      {Found};
-          \node[P] (Heis)   at (3*\dx,0)      {HeisStr};
-          \node[P] (nos)    at (4*\dx,0)      {noscale};
+          \node[S] (Found)  at (2*\dx,0)      {Found};
+          \node[S] (Heis)   at (3*\dx,0)      {HeisStr};
+          \node[P] (HCO)    at (4*\dx,0)      {HCO};
+          \node[P] (nos)    at (5*\dx,0)      {noscale};
 
           \draw[spine] (WP)--(ENI);
           \draw[spine] (ENI)--(Found);
-          \draw[spine] (Found)--(Heis);
+          \draw[arr,dashed] (Found)--(Heis);
+          \draw[arr]   (Heis)--(HCO);
           \draw[arr]   (Found)--(nos);
 
           \node[P]  (BI)    at (0,-\dy)       {BornInfeld};
@@ -1893,9 +1935,9 @@ A Structural Roadmap and Paper Inventory}
           \draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
 % Non-injective foundations sub-programme synthesis (presentation note 5):
-% aggregates the four constituents of Branch I (ENI, Foundation, HeisStr, noscale).
+% aggregates the five constituents of Branch I (ENI, Foundation, HeisStr, HCO, noscale).
           \node[S] (NIFNote) at (2*\dx,\dy) {NIF-Note};
-          \foreach \n in {ENI,Found,Heis,nos}
+          \foreach \n in {ENI,Found,Heis,HCO,nos}
           \draw[synth] (\n) to[out=90,in=-90] (NIFNote);
 
           \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
@@ -2075,7 +2117,7 @@ A Structural Roadmap and Paper Inventory}
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
         The faint converging edges gather the constituent papers of each thematic sub-programme into
-        its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
+        its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, HCO, noscale) into
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
@@ -2182,7 +2224,7 @@ A Structural Roadmap and Paper Inventory}
     \end{figure}
     \label{sec:inventory}
 
-    Table~\ref{tab:inventory} lists all 112 papers of the programme, the present registry excepted.
+    Table~\ref{tab:inventory} lists all 113 papers of the programme, the present registry excepted.
     The \textbf{Key} column gives the citation key used in
     \texttt{cosmochrony-bibliography}.
     The final block gathers the sub-programme presentation and synthesis notes, marked
@@ -2192,7 +2234,7 @@ A Structural Roadmap and Paper Inventory}
     \setlength\LTleft{0pt}
     \setlength\LTright{0pt}
     \begin{longtable}{@{}p{1.70cm}p{2.9cm}p{1.3cm}p{6.25cm}>{\raggedright\arraybackslash}p{2.0cm}@{}}
-      \caption{Complete inventory of the 112 programme papers, excluding the present registry.}
+      \caption{Complete inventory of the 113 programme papers, excluding the present registry.}
       \label{tab:inventory}\\
       \toprule
       \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
@@ -2213,12 +2255,17 @@ A Structural Roadmap and Paper Inventory}
       No-go: genuine emergence $\Leftrightarrow$ $\Pi$ non-injective; projection entropy $S_\Pi$ &
       \sproved \\[3pt]
       Found & Foundation & \cite{Beau2026m} &
-      Axioms A1--A4; derives $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ and $V_\rho$ as theorems (Thm~5.6);
+      Axioms A1--A4; the published Heisenberg/Weil selection theorem is not established;
       v1.16: continuum-limit passages conditioned on [H-L] (Q5a 3.0 withdrawal); co-metric
       completion conditional on [H-L]; relation to HJ, symplectic, WKB, FRG formalisms &
-      \sproved \\[3pt]
+      \sstruct \\[3pt]
       HeisStr & Heisenberg structure & \cite{Beau2026HeisenbergStructure} &
-      Detailed proof of Found. Thm~5.6; uncertainty principle from A3 alone &
+      Published proof attempt for Found. Thm~5.6; centrality and prime-order steps fail;
+      conditional Stone--von Neumann endpoint remains valid when the carrier data are supplied &
+      \sstruct\ /\ \sopen \\[3pt]
+      HCO & Heisenberg carrier obstruction & \cite{Beau2026hco} &
+      Explicit \(S_3\) countermodel to the carrier-selection implication; direct correction of the
+      central-subgroup/Schur step; downstream Heisenberg/Weil mathematics preserved conditionally &
       \sproved \\[3pt]
       noscale & No external scale & \cite{Beau2026j} &
       No independent dimensional parameter beyond $c_{\mathrm{BI}}$ &
@@ -2808,9 +2855,10 @@ A Structural Roadmap and Paper Inventory}
       no new result &
       \ssynth \\[3pt]
       NIF\-Note & The non-injective foundations sub-programme (Note~5) & \cite{Beau2026ninote} &
-      Maps ENI, Foundation, HeisStr and noscale into the axiomatic chain
-      A1--A4 $\Rightarrow$ $\Pi$ non-injective $\Rightarrow$ $[X,\sigma(X)] = Z \neq 0$ $\Rightarrow$
-      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ $\Rightarrow$ $V_\rho$, recording the white paper's
+      Maps ENI, Foundation, HeisStr, HCO and noscale into the audited axiomatic chain:
+      A1--A4 $\Rightarrow$ $\Pi$ non-injective, while the non-trivial commutator does not force
+      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$; the Heisenberg/Weil carrier is a supplied realisation.
+      Records the white paper's
       $\chi$/relaxation vocabulary as superseded by the axiomatic formulation.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
@@ -3037,9 +3085,11 @@ A Structural Roadmap and Paper Inventory}
 
   The Cosmochrony programme has established a coherent, multi-level derivation of physical structure
   from a single primitive.
-  Branch~I (Foundation, ENI, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
-  ) is formally closed: the Weil representation of
-  $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ is a theorem.
+  Branch~I (Foundation, ENI, HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
+  and HeisenbergCarrierObstruction~\cite{Beau2026hco}) is not formally closed.
+  The \(S_3\) countermodel proves that the published inputs do not force centrality or a
+  Heisenberg/Weil carrier.
+  The carrier remains a supplied realisation for the downstream mathematical programme.
   The binary-polyhedral maximality conjecture (SpectralCapacity~\cite{Beau2026a2}) is proved:
   $2I$ uniquely maximises $\mathcal{C}_\alpha(G,S)$ for all $\alpha > 0$ among finite $\SU(2)$ subgroups
   with neutral generating sets, closing the precursor programme for the O-series.
