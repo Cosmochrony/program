@@ -4,3 +4,17 @@
 out/
 media/
 **/__pycache__/
+
+# Common build-artefact baseline
+.venv/
+pdfs/
+*.py[cod]
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
