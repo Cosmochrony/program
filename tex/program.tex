@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.0}
+\date{2026\\[2pt]\small Version 2.1}
 
 \begin{document}
 
@@ -1702,15 +1702,19 @@ A Structural Roadmap and Paper Inventory}
     depth one (transfer matrix).
 
     \textbf{LowLCapacity}~\cite{Beau2026dhc}: Low-multipole suppression from distinguishable-history capacity
-    (mechanism and no-fit grid: \sstruct/numerical; entropy-to-power step: conditional theorem chain in
-    ProjCE~\cite{Beau2026pce}; TE/EE transfer: \sopen).
+    (capacity ceiling: conditional theorem chain in ProjCE~\cite{Beau2026pce}; saturation:
+    \sopen; no-fit grid: numerical benchmark; TE/EE transfer: \sopen).
     Replaces the white-paper phenomenological low-$\ell$ envelope (two free parameters, illustrative
     comparison) by a small-$N$ mechanism: the largest angular modes probe the first admissibility ranks, which
     contain only $3$, $7$, $17$ distinguishable histories (canonical Pell count~\cite{Beau2026tb}).
-    A quadrupole-anchored, parameter-free $2\times2$ grid of envelopes and angular dictionaries improves the
-    Planck TT low-$\ell$ diagnostic $\chi^2$ from $27.4$ to $17.3$ in the theoretically preferred cell
-    (derived Bessel envelope with the H-dictionary), with TE neutral and EE mildly disfavoured; the envelope
-    is a staircase in $\ell$ (integer ranks), a discrete signature.
+    Under a separate saturation hypothesis, a quadrupole-anchored, parameter-free $2\times2$ grid of envelopes
+    and angular dictionaries defines a saturation benchmark, not a derived prediction.
+    Version 1.5.0 applies the Planck PR3 map calibration and the real-$m=0$ full-sky multiplet correction to the
+    TT Bessel cells.
+    The leading TT diagnostic changes from the historical $27.39\to17.29$ reported in version 1.4.0 to the
+    active $27.26\to17.70$.
+    TE is neutral and EE mildly disfavoured under the uncorrected minimal-transfer convention; the envelope is
+    a staircase in $\ell$ (integer ranks), a discrete signature.
     The $S^3$ $8/3$ stiffness witness is re-audited (geometric, not LPS-bound) and carries the separate
     modulation observable $\sqrt{8/3}\simeq1.633$.
 
@@ -2768,11 +2772,11 @@ A Structural Roadmap and Paper Inventory}
       candidate by a conditional no-go (early low-rank window only, under dictionary and minimal mappings) &
       \sproved \\[3pt]
       LowLCap & Low-$\ell$ from history capacity & \cite{Beau2026dhc} &
-      Parameter-free small-$N$ replacement of the phenomenological low-$\ell$ envelope: no-fit
-      $2\times2$ grid improves Planck TT diagnostic $\chi^2$ $27.4\to17.3$ (preferred cell), TE neutral,
-      EE mildly disfavoured (open transfer); staircase envelope; $8/3$ witness re-audited with observable
-      $\sqrt{8/3}$ &
-      \sstruct \\[3pt]
+      Conditional small-$N$ capacity ceiling evaluated under a separate saturation hypothesis:
+      Planck-calibrated, real-$m=0$-corrected TT benchmark changes $\chi^2$ $27.26\to17.70$ in the
+      leading Bessel+$n_{\mathrm H}$ cell; TE/EE transfer and saturation remain open; staircase envelope;
+      $8/3$ witness re-audited with observable $\sqrt{8/3}$ &
+      \sstruct\ /\ \sopen \\[3pt]
       ProjCE & Projection kernel / capacity ceiling & \cite{Beau2026pce} &
       Amplitude-level projection derived as conditional expectation onto the distinguishable-record
       algebra (two classical characterisations, graded hypotheses, operator invariant under degraded
