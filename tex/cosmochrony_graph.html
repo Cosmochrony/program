@@ -773,6 +773,13 @@
       desc: "Rigidity: any deformation introducing a dimensional parameter independent of c_χ breaks spectral scaling, non-injectivity, or bounded admissibility closure."
     },
     {
+      id: "EComp", lbl: "EffComp", s: "proved", b: "I", key: "Beau2026esub",
+      url: ZEN + "21729274",
+      tags: ["QM", "emer"],
+      title: "Effective Composition Prerequisites (K4)",
+      desc: "Proposed finite prerequisite contract K4: admissibility → composable effective subsystems. Independence blocks are exactly the bicliques of the projected support relation; on a block the full simplex lifts every product preparation; strictly positive cylindrical conditionings are product-closed iff rank W = 1 (countermodel N₃: rectangular support, correlated preparations). Contract proposed, not derived from A1–A4; states-and-effects layer open. Q3 and EntNote are typed as consumers of a supplied composition structure."
+    },
+    {
       id: "NIFNote", lbl: "NIF-Note", s: "structural", b: "I", key: "Beau2026ninote",
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
@@ -1638,6 +1645,10 @@
     { f: "ENI", t: "NIFNote", syn: 1 }, { f: "Found", t: "NIFNote", syn: 1 },
     { f: "Heis", t: "NIFNote", syn: 1 }, { f: "HCO", t: "NIFNote", syn: 1 },
     { f: "nos", t: "NIFNote", syn: 1 },
+    { f: "Found", t: "EComp", st: "postulated", claim: "the K4 contract abstracts Foundation's composition problem; not derived from A1–A4" },
+    { f: "ENI", t: "EComp" },
+    { f: "EComp", t: "Q3", st: "interpretive", claim: "typing, not derivation: Q3's bipartite singlet consumes a supplied composition" },
+    { f: "EComp", t: "ENTNote", st: "interpretive", claim: "typing, not derivation: the conjugate-pair closure consumes a supplied composition" },
     { f: "WP", t: "BI" }, { f: "BI", t: "SpA" }, { f: "SpA", t: "SpCap" }, { f: "SpCap", t: "SpG" }, {
       f: "SpG",
       t: "ThGn"
