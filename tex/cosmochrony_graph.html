@@ -780,6 +780,13 @@
       desc: "Proposed finite prerequisite contract K4: admissibility → composable effective subsystems. Independence blocks are exactly the bicliques of the projected support relation; on a block the full simplex lifts every product preparation; strictly positive cylindrical conditionings are product-closed iff rank W = 1 (countermodel N₃: rectangular support, correlated preparations). Contract proposed, not derived from A1–A4; states-and-effects layer open. Q3 and EntNote are typed as consumers of a supplied composition structure."
     },
     {
+      id: "STEFT", lbl: "STEFT", s: "proved", b: "I", key: "Beau2026steft",
+      url: ZEN + "21749146",
+      tags: ["QM", "emer"],
+      title: "Finite Criteria for Simplicial States and Local Tomography",
+      desc: "Resolves K4's finite, mono-system, and bipartite-composition states-and-effects content, importing EComp's rank-one criterion unchanged. The raw cylindrical-conditioning family is not convex (unconditional, m ≥ 2); an explicit classical-randomisation postulate P1 closes it onto the full simplex, rank-independently. Affine effects on Δ(S) correspond to a cube of vectors (representation, not physical availability); a coarse-graining axiom yields the Boolean effect algebra for free, a dual randomisation axiom AX-RND the full cube. P1 and AX-RND are logically independent; a common classical-control resource unifies them only under an explicit independence clause (CC-IND). Given physical existence of a composed bipartite effect (AX-COMP), the pointwise product is forced, not postulated; local composition reaches only rectangle effects (CHSH-type witness excludes the diagonal). Local tomography holds exactly when local families linearly span their ambient spaces, equivalently separate states and contain the unit effect. No Born rule or quantum state geometry derived; general preparation layer and tensor product remain open."
+    },
+    {
       id: "NIFNote", lbl: "NIF-Note", s: "structural", b: "I", key: "Beau2026ninote",
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
@@ -1649,6 +1656,7 @@
     { f: "ENI", t: "EComp" },
     { f: "EComp", t: "Q3", st: "interpretive", claim: "typing, not derivation: Q3's bipartite singlet consumes a supplied composition" },
     { f: "EComp", t: "ENTNote", st: "interpretive", claim: "typing, not derivation: the conjugate-pair closure consumes a supplied composition" },
+    { f: "EComp", t: "STEFT", st: "proved", claim: "imports EComp's Theorem 4.4 (rank-one product-closure) as an already-proved hypothesis on the primitive family, not reopened" },
     { f: "WP", t: "BI" }, { f: "BI", t: "SpA" }, { f: "SpA", t: "SpCap" }, { f: "SpCap", t: "SpG" }, {
       f: "SpG",
       t: "ThGn"
@@ -1765,6 +1773,7 @@
     nos: { x: 5 * X, y: 0 },
     EComp: { x: 6 * X, y: 0 },
     NIFNote: { x: 7 * X, y: 0 },
+    STEFT: { x: 8 * X, y: 0 },
     BI: { x: 0, y: Y },
     SpA: { x: X, y: Y },
     SpCap: { x: 2 * X, y: Y },

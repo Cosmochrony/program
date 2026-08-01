@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.4}
+\date{2026\\[2pt]\small Version 2.5}
 
 \begin{document}
 
@@ -70,7 +70,7 @@ A Structural Roadmap and Paper Inventory}
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between
     observable states.
-    The corpus comprises 114 papers across three theory branches.
+    The corpus comprises 115 papers across three theory branches.
     Branch~I (Foundation track) develops four admissibility axioms and their consequences.
     A finite \(S_3\) countermodel now proves that the algebraic properties extracted from those
     axioms in the published carrier-selection argument do not force a central commutator,
@@ -138,8 +138,8 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 114 papers with complex mutual dependencies.
-  The interactive dependency graph covers all 114 entries of the inventory and distinguishes
+  The corpus comprises 115 papers with complex mutual dependencies.
+  The interactive dependency graph covers all 115 entries of the inventory and distinguishes
   ordinary dependencies from sub-programme synthesis links.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
@@ -399,6 +399,39 @@ A Structural Roadmap and Paper Inventory}
 
     \textit{Role:} Opens the effective-composition track of Branch~I; K4 joins carrier selection among
     the open structural deliverables.
+
+  \subsection{Finite Criteria for Simplicial States and Local Tomography}
+    \label{sec:steft}
+
+    STEFT~\cite{Beau2026steft} resolves K4's finite, mono-system, and bipartite-composition
+    states-and-effects content, importing EffComp's Theorem~4.4 (rank-one product-closure) unchanged, as an
+    already-proved hypothesis (\sproved).
+    The raw cylindrical-conditioning family is never itself convex: it is finite while its own convex hull
+    is a continuum, unconditionally, for any local outcome set of size at least two (\sproved).
+    An explicit classical-randomisation postulate closes it onto the full probability simplex, locally and
+    jointly, independently of the fibre-weight matrix's rank (\sproved).
+    Affine effects on a simplex correspond bijectively to a cube of vectors, a bookkeeping fact special to
+    simplices and not itself a claim about physical availability (\sproved); a weak coarse-graining axiom
+    already yields the full Boolean effect algebra and the unit effect for free, while the full continuum of
+    effects requires a further, dual randomisation postulate (\sproved).
+    The two randomisation postulates are logically independent, and a common classical control resource
+    reproduces both only under an explicit independence clause between its two interfaces, confirmed by an
+    exact numeric witness (\sproved).
+    Given physical existence of a composed bipartite effect, the pointwise product of two local effects is
+    forced, not postulated (\sproved); local composition reaches only rectangle effects, strictly fewer
+    than all joint sharp effects, and a CHSH-shaped separating witness shows this survives full local
+    randomisation (\sproved).
+    Local tomography holds exactly when each side's effect family linearly spans its ambient space,
+    equivalently when it separates its local states and its linear span contains the unit effect (\sproved).
+    All five governing axioms (classical randomisation of preparations and of effects, a common control
+    resource, coarse-graining, and physical composition) are explicit imports, not derived from
+    admissibility or from the simplicial geometry alone; no Born rule or quantum state geometry is derived,
+    and the general preparation layer of K4, together with the tensor product as a supplied structure,
+    remain exactly as open as EffComp left them (\sopen).
+
+    \textit{Role:} Continues the effective-composition track of Branch~I opened by EffComp; resolves K4's
+    finite states-and-effects layer while leaving its general preparation layer, the tensor product, and any
+    phase/modulus law open for a future front outside the classical/simplicial regime.
 
   \subsection{Branch~I Synthesis: NIF-Note}
     \label{sec:nifnote}
@@ -2256,7 +2289,7 @@ A Structural Roadmap and Paper Inventory}
     \end{figure}
     \label{sec:inventory}
 
-    Table~\ref{tab:inventory} lists all 114 papers of the programme, the present registry excepted.
+    Table~\ref{tab:inventory} lists all 115 papers of the programme, the present registry excepted.
     The \textbf{Key} column gives the citation key used in
     \texttt{cosmochrony-bibliography}.
     The final block gathers the sub-programme presentation and synthesis notes, marked
@@ -2266,7 +2299,7 @@ A Structural Roadmap and Paper Inventory}
     \setlength\LTleft{0pt}
     \setlength\LTright{0pt}
     \begin{longtable}{@{}p{1.70cm}p{2.9cm}p{1.3cm}p{6.25cm}>{\raggedright\arraybackslash}p{2.0cm}@{}}
-      \caption{Complete inventory of the 114 programme papers, excluding the present registry.}
+      \caption{Complete inventory of the 115 programme papers, excluding the present registry.}
       \label{tab:inventory}\\
       \toprule
       \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
@@ -2306,6 +2339,13 @@ A Structural Roadmap and Paper Inventory}
       Independence blocks $=$ bicliques of the projected support; full simplex lifts all products;
       cylindrical-conditioning closure iff $\operatorname{rank} W = 1$; support rectangularity does not imply
       preparation independence; contract proposed, not derived from A1--A4 &
+      \sproved \\[3pt]
+      STEFT & Simplicial states \& local tomography (K4 cont'd) & \cite{Beau2026steft} &
+      Primitive family never convex ($m\geq2$, unconditional); classical randomisation $P1$ closes it
+      rank-independently; affine effects $=$ cube (representation, not availability); coarse-graining gives
+      the Boolean skeleton, $\mathrm{AX\text{-}RND}$ the full cube; $P1$/$\mathrm{AX\text{-}RND}$ independent, unified
+      only under an explicit control-independence clause; pointwise product forced given composed-effect
+      existence; local tomography iff local families span their ambient spaces &
       \sproved \\[3pt]
       \midrule
       Born\-Infeld & Bounded relational capacity & \cite{Beau2026c} &
