@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.4 is a documentary-consistency fix: Q1's 2026-08-01 v1.1.2 correction (a new OBS-002 remark) shifted its shared theorem counter, so the QS-Note structural-chain description (Q1 Thm 2.14/Cor 2.16/Thm 2.18 -> 2.15/2.17/2.19) is corrected, and the carrier-supplied qualifier is added to match Q1's own corrected framing (admissibility preserves the supplied Weil carrier's phase coherence; the carrier's complex scalar structure is not derived from A1-A4). No new node, no new edge, no new result.",
+  "notes": "Version 2.5 registers a new paper: STEFT (Finite Criteria for Simplicial States and Local Tomography, Beau2026steft), a companion to EffComp that resolves K4's finite, mono-system, and bipartite-composition states-and-effects content. New inventory row and Branch I subsection; new graph node STEFT with a proved dependency edge from EComp (imports its Theorem 4.4 unchanged); paper count 114 -> 115.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
