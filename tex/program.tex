@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.5}
+\date{2026\\[2pt]\small Version 2.6}
 
 \begin{document}
 
@@ -70,7 +70,7 @@ A Structural Roadmap and Paper Inventory}
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between
     observable states.
-    The corpus comprises 115 papers across three theory branches.
+    The corpus comprises 116 papers across three theory branches.
     Branch~I (Foundation track) develops four admissibility axioms and their consequences.
     A finite \(S_3\) countermodel now proves that the algebraic properties extracted from those
     axioms in the published carrier-selection argument do not force a central commutator,
@@ -138,8 +138,8 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 115 papers with complex mutual dependencies.
-  The interactive dependency graph covers all 115 entries of the inventory and distinguishes
+  The corpus comprises 116 papers with complex mutual dependencies.
+  The interactive dependency graph covers all 116 entries of the inventory and distinguishes
   ordinary dependencies from sub-programme synthesis links.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
   and the distinction between a theorem, a structural argument, and an open conjecture is not always
@@ -432,6 +432,37 @@ A Structural Roadmap and Paper Inventory}
     \textit{Role:} Continues the effective-composition track of Branch~I opened by EffComp; resolves K4's
     finite states-and-effects layer while leaving its general preparation layer, the tensor product, and any
     phase/modulus law open for a future front outside the classical/simplicial regime.
+
+  \subsection{Refinement Consistency Obstructs Nonlinear Power Lifts of Finite History Measures}
+    \label{sec:hmpl}
+
+    HMPL~\cite{Beau2026hmpl} takes up the phase/modulus law that STEFT leaves open, without deriving it: for
+    any finite branching system, the power-lift family $\mu^\alpha$ of its induced valuation is
+    Kolmogorov-consistent, at a branching state reached with positive $\mu$-valuation, if and only if
+    $\alpha=1$ (\sproved), by an elementary, self-contained comparison of $x^\alpha$ against $x$ on $[0,1]$
+    independent of the corpus or of any Cosmochrony-specific structure.
+    A row-renormalised (``escort'') lift restores Kolmogorov consistency trivially for every $\alpha$, but
+    generally departs from the pointwise lift once path-dependent normalisation factors accumulate along the
+    history (\sproved); this situates the result relative to the pre-existing escort-distribution/R\'enyi
+    literature of nonextensive statistical mechanics, not in isolation.
+    Specialised, conditional on an explicitly named, non-derived maximal-entropy/Parry postulate
+    (\textup{H2}), to the non-backtracking Heisenberg $b$-shadow automaton supplied by
+    TrajectoryBranching~\cite{Beau2026tb}: the square-root failure is re-derived independently in exact
+    $\mathbb{Q}(\sqrt2)$ arithmetic (\sproved); the automaton's endpoint and $b$-shadow quotients are exactly
+    incomparable, with explicit witnesses (\sproved); relabelling $X\leftrightarrow X^{-1}$ transports the
+    Heisenberg endpoint by an exact group automorphism, forcing every uniform-probe phase sum weighted by a
+    real shadow-only valuation, over histories sharing a final $b_n$, to be exactly real (\sproved); and a
+    bounded exact search over all $13120$ non-backtracking words of length up to $8$ finds no destructive
+    cancellation among the $64$ qualifying classes, $62$ of which carry genuine nontrivial relative phase
+    (\sproved, calibrated negative on this range).
+    No Born rule, complex-carrier selection, or coherent-sum construction is established; \textup{H2}'s
+    dependency is confined to the concrete Parry kernel and the search's specific counts, not to the
+    quotient-incomparability or covariance results, which hold for any shadow-only valuation on the same
+    automaton.
+
+    \textit{Role:} Bridges Branch~I's effective-composition track (STEFT's open phase/modulus question) and
+    Branch~III's trajectory-branching automaton; identifies the exact obstruction any future amplitude-modulus
+    construction on that automaton must confront or explicitly bypass, without constructing one itself.
 
   \subsection{Branch~I Synthesis: NIF-Note}
     \label{sec:nifnote}
@@ -2289,7 +2320,7 @@ A Structural Roadmap and Paper Inventory}
     \end{figure}
     \label{sec:inventory}
 
-    Table~\ref{tab:inventory} lists all 115 papers of the programme, the present registry excepted.
+    Table~\ref{tab:inventory} lists all 116 papers of the programme, the present registry excepted.
     The \textbf{Key} column gives the citation key used in
     \texttt{cosmochrony-bibliography}.
     The final block gathers the sub-programme presentation and synthesis notes, marked
@@ -2299,7 +2330,7 @@ A Structural Roadmap and Paper Inventory}
     \setlength\LTleft{0pt}
     \setlength\LTright{0pt}
     \begin{longtable}{@{}p{1.70cm}p{2.9cm}p{1.3cm}p{6.25cm}>{\raggedright\arraybackslash}p{2.0cm}@{}}
-      \caption{Complete inventory of the 115 programme papers, excluding the present registry.}
+      \caption{Complete inventory of the 116 programme papers, excluding the present registry.}
       \label{tab:inventory}\\
       \toprule
       \textbf{Label} & \textbf{Short title} & \textbf{Key} & \textbf{Main contribution} & \textbf{Status}\\
@@ -2346,6 +2377,13 @@ A Structural Roadmap and Paper Inventory}
       the Boolean skeleton, $\mathrm{AX\text{-}RND}$ the full cube; $P1$/$\mathrm{AX\text{-}RND}$ independent, unified
       only under an explicit control-independence clause; pointwise product forced given composed-effect
       existence; local tomography iff local families span their ambient spaces &
+      \sproved \\[3pt]
+      HMPL & Power-lift refinement obstruction (STEFT cont'd) & \cite{Beau2026hmpl} &
+      $\mu^\alpha$ Kolmogorov-consistent iff $\alpha=1$ (general, self-contained); escort renormalisation
+      restores it trivially but departs from the pointwise lift; exact $\mathbb{Q}(\sqrt2)$ instantiation
+      under postulate H2 on the TrajectoryBranching automaton; endpoint/shadow quotients incomparable;
+      $X\leftrightarrow X^{-1}$ transports the endpoint by an exact automorphism, forcing real co-$b_n$
+      phase sums; bounded exact search finds no cancellation among $62$ nontrivial-phase classes of $64$ &
       \sproved \\[3pt]
       \midrule
       Born\-Infeld & Bounded relational capacity & \cite{Beau2026c} &

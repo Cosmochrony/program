@@ -787,6 +787,13 @@
       desc: "Resolves K4's finite, mono-system, and bipartite-composition states-and-effects content, importing EComp's rank-one criterion unchanged. The raw cylindrical-conditioning family is not convex (unconditional, m ≥ 2); an explicit classical-randomisation postulate P1 closes it onto the full simplex, rank-independently. Affine effects on Δ(S) correspond to a cube of vectors (representation, not physical availability); a coarse-graining axiom yields the Boolean effect algebra for free, a dual randomisation axiom AX-RND the full cube. P1 and AX-RND are logically independent; a common classical-control resource unifies them only under an explicit independence clause (CC-IND). Given physical existence of a composed bipartite effect (AX-COMP), the pointwise product is forced, not postulated; local composition reaches only rectangle effects (CHSH-type witness excludes the diagonal). Local tomography holds exactly when local families linearly span their ambient spaces, equivalently separate states and contain the unit effect. No Born rule or quantum state geometry derived; general preparation layer and tensor product remain open."
     },
     {
+      id: "HMPL", lbl: "HMPL", s: "proved", b: "I", key: "Beau2026hmpl",
+      url: BASE + "history-measure-power-lift-obstruction",
+      tags: ["QM", "emer"],
+      title: "Refinement Consistency Obstructs Nonlinear Power Lifts of Finite History Measures",
+      desc: "Takes up STEFT's open phase/modulus question without deriving it. For any finite branching system, the power-lift family μ^α of its induced valuation is Kolmogorov-consistent, at a branching state reached with positive μ-valuation, iff α = 1 — a self-contained, elementary comparison of x^α against x on [0,1], independent of the corpus. A row-renormalised escort lift restores consistency trivially for every α but generally departs from the pointwise lift once path-dependent normalisation accumulates, situating the result relative to the escort-distribution/Rényi literature. Specialised, conditional on a named, non-derived maximal-entropy/Parry postulate H2, to the TrajectoryBranching automaton: exact Q(√2) instantiation; endpoint/shadow quotients exactly incomparable (explicit witnesses); X↔X⁻¹ relabelling transports the Heisenberg endpoint by an exact group automorphism, forcing every uniform-probe phase sum weighted by a real shadow-only valuation, over co-b_n histories, to be exactly real; bounded exact search over all 13120 words of length ≤8 finds no destructive cancellation among 62 nontrivial-phase classes of 64. No Born rule, complex carrier, or coherent sum established."
+    },
+    {
       id: "NIFNote", lbl: "NIF-Note", s: "structural", b: "I", key: "Beau2026ninote",
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
@@ -1657,6 +1664,7 @@
     { f: "EComp", t: "Q3", st: "interpretive", claim: "typing, not derivation: Q3's bipartite singlet consumes a supplied composition" },
     { f: "EComp", t: "ENTNote", st: "interpretive", claim: "typing, not derivation: the conjugate-pair closure consumes a supplied composition" },
     { f: "EComp", t: "STEFT", st: "proved", claim: "imports EComp's Theorem 4.4 (rank-one product-closure) as an already-proved hypothesis on the primitive family, not reopened" },
+    { f: "STEFT", t: "HMPL", st: "interpretive", claim: "takes up the phase/modulus question STEFT's own conclusion names as the natural next step, outside its contract; not a proof import" },
     { f: "WP", t: "BI" }, { f: "BI", t: "SpA" }, { f: "SpA", t: "SpCap" }, { f: "SpCap", t: "SpG" }, {
       f: "SpG",
       t: "ThGn"
@@ -1749,6 +1757,7 @@
     { f: "ProjCE", t: "LowLCap", sp: 1, st: "conditional", claim: "capacity ceiling imported under graded hypotheses; saturation remains separate" },
     { f: "LowLCap", t: "Cosm", st: "interpretive", claim: "saturation benchmark read as a cosmological low-ell mechanism" },
     { f: "TrajBr", t: "Cosm" }, { f: "TrajBr", t: "NSR" },
+    { f: "TrajBr", t: "HMPL", st: "proved", claim: "supplies the non-backtracking Heisenberg b-shadow automaton (M, Pell recurrence, Perron data) as an already-proved structural input, recalled without re-proof" },
     { f: "Found", t: "Supra" },
     { f: "Supra", t: "QFI" }, { f: "Thm", t: "QFI" },
     { f: "Q1", t: "QSNote", syn: 1 }, { f: "Q2", t: "QSNote", syn: 1 }, { f: "Q3", t: "QSNote", syn: 1 }, { f: "Bell", t: "QSNote", syn: 1 },
@@ -1774,6 +1783,7 @@
     EComp: { x: 6 * X, y: 0 },
     NIFNote: { x: 7 * X, y: 0 },
     STEFT: { x: 8 * X, y: 0 },
+    HMPL: { x: 9 * X, y: 0 },
     BI: { x: 0, y: Y },
     SpA: { x: X, y: Y },
     SpCap: { x: 2 * X, y: Y },
