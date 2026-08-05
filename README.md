@@ -13,12 +13,18 @@ argument. The algebraic properties extracted from A1--A3 do not force a central 
 class-two nilpotence, a finite Heisenberg group, or a Weil carrier. Found and HeisStr are therefore
 reclassified, while results internal to a supplied Heisenberg/Weil carrier retain their status.
 
+Version 2.7 updates the SRN inventory row for spin-rotation-note v1.4: an independent downstream
+representation audit shows the Dirac-conjugated fermionic bilinear carries exact Higgs-typed
+electroweak quantum numbers in every tree-level Yukawa sector, permitting but not deriving a
+composite Higgs condensate; the pre-existing soldering audit is untouched. No new paper, node, or
+edge is registered; the corpus count remains 116.
+
 ## What This Paper Is
 
 The Cosmochrony programme develops a pre-geometric framework in which physical structure —
 spacetime, quantum mechanics, gauge symmetry, and Standard Model observables — arises from a
 single primitive: the local structure of admissible non-injective transitions between observable
-states. The corpus comprises **114 papers** across three theory branches:
+states. The corpus comprises **116 papers** across three theory branches:
 
 - **Branch I — Foundation track**: four axioms organise the admissibility framework. Their published
   carrier-selection argument is refuted by a finite \(S_3\) countermodel; the Heisenberg/Weil carrier
@@ -33,7 +39,7 @@ states. The corpus comprises **114 papers** across three theory branches:
 ## Role in the Repository
 
 - **Paper inventory**: the authoritative list of all papers and their status.
-- **Dependency graph**: covers all 114 inventory entries, is maintained here, and is exported as
+- **Dependency graph**: covers all 116 inventory entries, is maintained here, and is exported as
   an interactive HTML visualisation copied to the website for publication at
   https://cosmochrony.org.
 - **Coherence**: updated whenever a new result is obtained or a new paper is created, so the
