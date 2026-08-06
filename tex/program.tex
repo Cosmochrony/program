@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.7}
+\date{2026\\[2pt]\small Version 2.8}
 
 \begin{document}
 
@@ -608,32 +608,49 @@ A Structural Roadmap and Paper Inventory}
     \textbf{O11}~\cite{Beau2026a15}: Bidimensional Fourier-character proxy overcomes the
     TensorSketch obstruction (\sstruct).
 
-    \textbf{O12}~\cite{Beau2026a16}: Exact Weil-block fingerprints resolve the final obstruction.
-    Establishes $\hat\delta_{\mathrm{exact}} \approx 4.3$--$4.8$ for $q \in \{29, 61, 101, 151, 211\}$ (\sproved).
+    \textbf{O12}~\cite{Beau2026a16}: Exact Weil-block fingerprints.
+    The incremental block capacity $\Sigma_n^{(c)}$ depends on the block only through a
+    projective pair $(\alpha,\beta)$, exactly independent of the central coordinate $\gamma$.
+    Finite-$q$ fitted slopes ($q\in\{29,53,61\}$) are crossover statistics of the block
+    saturation-depth distribution; the intrinsic unfolded exponent is derived exactly,
+    $\delta_{\mathrm{exact}} = 3$ as $q\to\infty$, $n=o(\sqrt q)$ (\sproved).
 
-    \textbf{O13}~\cite{Beau2026a17}: $\hat\delta_{\mathrm{exact}}(q)$ decreases monotonically from 4.80
-    to 3.59; the finite-size hypothesis is definitively refuted (\sproved).
+    \textbf{O13}~\cite{Beau2026a17}: Extended prime range $q \in \{101, 151, 211\}$.
+    The finite-$q$ exponent sequence ($4.42,4.80,4.51,4.27,3.59$ at $q\in\{29,61,101,151,211\}$)
+    does not drift toward the phenomenological target at larger primes, consistent with O12's
+    exact value $\delta_{\mathrm{exact}}=3$; measurement quality improves systematically with
+    $q$ (\sproved).
 
     \textbf{O14}~\cite{Beau2026a18}: Diagnoses the observable-class mismatch in the proposed
     $\delta \mapsto \beta^*$ relation.  Fixed-$q$ normalisation changes intercepts, not
     intra-$q$ slopes; the inter-$q$ estimator layer remains open (\sstruct).
 
     \textbf{O15}~\cite{Beau2026a19}: Heisenberg transfer no-go.
-    The exact native identity is $\Delta r_n=|S_n|\Sigma_n$; no reweighting of block data
-    supplies the missing LPS growth carrier.  The former reciprocal outputs are retained only
-    as phenomenological diagnostics (\sproved{} for the stated aggregation and native-identity
-    results).
+    The native Heisenberg identity is $\Delta r_n=|S_n|\Sigma_n$; the O6/O7 growth-law scalar
+    observable is not equivalent to the exact Weil-block mean $\bar\Sigma_n$, so
+    $\beta^*=1/(\delta+\tfrac12)$ does not transfer to the exact-block setting.
+    A checkable aggregation bound, $\alpha_{\mathrm{dyn}}\leq\hat\delta_{\mathrm{exact}}$
+    conditional on a non-negative OLS slope of $\log(1+V_n)$, holds at two of five tested
+    primes ($q=151,211$), open at the other three (\sproved{} for the non-equivalence theorem;
+    conditional for the aggregation bound).
 
-  \subsection{O16--O24: Pair Observable and Closure of the Fibre-Level Structure}
+  \subsection{O16--O24: Pair Observable and the Fibre-Level Structure Programme}
 
-    \textbf{O16}~\cite{Beau2026a20}: Identifies the misidentification of the observable.
-    The physically relevant quantity is $\sigma_{\mathrm{pair}}(n) = \sigma_c(n)\cdot\sigma_{q-c}(n)$
-    on conjugate pairs $\{c, q-c\}$.
-    The exponent doubling $\delta_{\mathrm{pair}} = 2\delta_c \approx 7.44$ resolves the gap (\sstruct).
+    \textbf{O16}~\cite{Beau2026a20}: Fibre admissibility hypotheses.
+    Conjugate blocks $\{c,q-c\}$ constitute the fibres of~$\Pi$ only under two independent,
+    open premises: that $\Pi$ carries a parity involution, and that this involution is
+    realised in the Weil representation as $c\mapsto q-c$.
+    If a per-block observable's conjugate-pair ratio is $n$-independent, the pair-level
+    exponent doubles, $\delta_{\mathrm{pair}} = 2\delta_c$; on the real O12/O13 pipeline this
+    holds trivially, since the exact conjugate-block identity forces the ratio to~$1$
+    (\sstruct{} for the fibre hypotheses; algebraic identity for the doubling).
 
-    \textbf{O17}~\cite{Beau2026a21}: Structural derivation.
-    $\rho_{q-c} = \bar\rho_c$ is forced by fibre-level admissibility;
-    the pair structure is derived, not postulated (\sproved).
+    \textbf{O17}~\cite{Beau2026a21}: Exact block-independence, scalar toy model.
+    The raw Gram-Schmidt redundancy count is exactly independent of the character and both
+    initial-condition parameters, for any two blocks whatsoever, not only conjugate ones ---
+    too broad a fact to license a same-fibre criterion for conjugate pairs specifically.
+    Scoped to this paper's own toy model; not shown to extend to the real O12/O13 pipeline
+    (\sproved{} for the block-independence result within the model).
 
     \textbf{O18}~\cite{Beau2026a22}: Foundational derivation of the parity involution $c \leftrightarrow q-c$.
     BI parity is the only global symmetry of $S_{\mathrm{BI}}[\chi]$, ensuring each fibre of~$\Pi$ is
@@ -2438,25 +2455,32 @@ A Structural Roadmap and Paper Inventory}
       Bidimensional proxy overcomes TensorSketch obstruction &
       \sstruct \\[3pt]
       O12 & Exact Weil blocks & \cite{Beau2026a16} &
-      $\hat\delta_{\mathrm{exact}} \approx 4.3$--$4.8$ for $q \leq 211$; final obstruction resolved &
+      $\delta_{\mathrm{exact}}=3$ exactly (unfolded, $q\to\infty$); finite-$q$ fitted slopes are
+      crossover statistics, independent of the central coordinate $\gamma$ &
       \sproved \\[3pt]
       O13 & Extended prime range & \cite{Beau2026a17} &
-      $\hat\delta(q): 4.80 \to 3.59$; finite-size hypothesis refuted &
+      Exponent sequence at $q\in\{29,61,101,151,211\}$ does not drift toward the
+      phenomenological target; consistent with $\delta_{\mathrm{exact}}=3$ &
       \sproved \\[3pt]
       O14 & Observable-class correction & \cite{Beau2026a18} &
       Conditional block-normalisation correction; SGN recovers the shell factor additively but
       leaves the inter-$q$ estimator layer open &
       \sstruct \\[3pt]
       O15 & Block-level no-go & \cite{Beau2026a19} &
-      No reweighting of individual blocks reaches $\delta \in [7.4, 10.6]$ (Cor.~4.8) &
+      $\beta^*=1/(\delta+\tfrac12)$ does not transfer to the exact-block setting; aggregation
+      bound $\alpha_{\mathrm{dyn}}\leq\hat\delta_{\mathrm{exact}}$ holds conditionally, verified
+      at $q=151,211$ &
       \sproved \\[3pt]
       \midrule
       O16 & Pair observable & \cite{Beau2026a20} &
-      $\sigma_{\mathrm{pair}} = \sigma_c \sigma_{q-c}$;
-      exponent doubling $\delta_{\mathrm{pair}} \approx 7.44$ &
+      Conjugate pairs $\{c,q-c\}$ are fibres of $\Pi$ under two independent open hypotheses;
+      exponent doubling $\delta_{\mathrm{pair}}=2\delta_c$ holds conditionally, trivially on
+      the real pipeline &
       \sstruct \\[3pt]
-      O17 & Structural derivation of pair & \cite{Beau2026a21} &
-      $\rho_{q-c} = \bar\rho_c$ forced by fibre admissibility: pair is derived, not postulated &
+      O17 & Block-independence, toy model & \cite{Beau2026a21} &
+      Raw Gram-Schmidt redundancy is exactly independent of block parameters for any two
+      blocks, not only conjugate ones; scoped to a scalar toy model, not shown for the real
+      pipeline &
       \sproved \\[3pt]
       O18 & BI parity involution & \cite{Beau2026a22} &
       Minimal fibre condition $\{\chi,-\chi\}$; BI parity is the unique global symmetry of $S_{\mathrm{BI}}$ &
