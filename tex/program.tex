@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.8}
+\date{2026\\[2pt]\small Version 2.9}
 
 \begin{document}
 
@@ -125,8 +125,9 @@ A Structural Roadmap and Paper Inventory}
   Over the course of 2026, the programme has evolved in two parallel directions.
   On one side, the spectral admissibility sub-programme (O-series) has progressively built the
   computational machinery for extracting observables from the spectral structure of the fibre.
-  O24~\cite{Beau2026a28} closes the conjugate-pair construction with respect to the fibre structure
-  of $\Pi$.
+  O24~\cite{Beau2026a28} develops the conjugate-pair construction conditionally on a stated
+  fibre structure for $\Pi$; the identification of that fibre structure from first principles
+  remains open.
   The Span-Growth Note~\cite{Beau2026sgn} proves, however, that the O4--O6 growth-equation closure,
   square-root frontier, pair observable, and exponent coordinates do not supply a native
   Heisenberg derivation of the downstream conversion $\delta_{\mathrm{pair}} \to \beta^*$.
@@ -652,24 +653,39 @@ A Structural Roadmap and Paper Inventory}
     Scoped to this paper's own toy model; not shown to extend to the real O12/O13 pipeline
     (\sproved{} for the block-independence result within the model).
 
-    \textbf{O18}~\cite{Beau2026a22}: Foundational derivation of the parity involution $c \leftrightarrow q-c$.
-    BI parity is the only global symmetry of $S_{\mathrm{BI}}[\chi]$, ensuring each fibre of~$\Pi$ is
-    exactly $\{\chi, -\chi\}$ (minimal fibre condition, \sproved, Theorem~4.1).
+    \textbf{O18}~\cite{Beau2026a22}: Born--Infeld parity and an open fibre bridge.
+    The evenness $S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi]$ is elementary, but it does not
+    imply $\Pi(\chi)=\Pi(-\chi)$.  The paper's perturbative indiscernibility proof compares
+    opposite perturbations rather than the same perturbation, and no map deriving
+    $\chi\mapsto-\chi$ as $c\mapsto q-c$ is supplied
+    (\sproved{} for action parity; fibre and Weil identifications: \sopen).
 
-    \textbf{O19}~\cite{Beau2026a23}: The residual amplitude factor $r(c,q) \in \{1,2,3,4\}$ does not
-    affect $\delta_{\mathrm{pair}}$; the observable is pipeline-independent (\sproved).
+    \textbf{O19}~\cite{Beau2026a23}: Proposed canonical normalisation.
+    Generic Gram--Schmidt phase invariance and the rank identity are valid, but the factor
+    $r(c,q)\in\{1,2,3,4\}$ is not sourced for the real O12/O13 pipeline, the proposed
+    normalisation is defined through an unspecified reference span, Tests P2/P3 are open, and
+    the pipeline-independence proof is incomplete (generic linear algebra: \sproved;
+    canonical observable: \sopen).
 
-    \textbf{O20}~\cite{Beau2026a24}: Dynamical selection criterion for admissible modes via
-    projective persistence (\sstruct).
+    \textbf{O20}~\cite{Beau2026a24}: Conditional threshold-crossing template.
+    Given a constant threshold and an exact decreasing power law, crossing within a fixed
+    cascade window is algebraically equivalent to an exponent interval.  The map from rank
+    increments to a fibre amplitude, the inherited Born--Infeld envelope, and the threshold
+    itself are open; the numerical interval $[7.4,10.6]$ is not derived (\sstruct).
 
-    \textbf{O21}~\cite{Beau2026a25}: Defines the observable saturation rank $n_3^{\mathrm{obs}}$ via
-    $\Sigma_c(n_3) = 3$ and formulates the conditional conversion
-    $\delta_{\mathrm{pair}} \to \beta^*$ using the O4--O7 inputs.
-    SGN proves that this conversion has no native Heisenberg carrier (\sstruct{} as a
-    cross-substrate prescription; native derivation: refuted for the corpus-defined objects).
+    \textbf{O21}~\cite{Beau2026a25}: Local threshold-crossing diagnostic and open transfer.
+    The two-point formula for $n_3^{\mathrm{obs}}$ is a valid extrapolated crossing rank under
+    an exact power law and a fixed normalisation.  It is not invariant under
+    $\sigma\mapsto\lambda\sigma$: it scales as $\lambda^{1/\delta}$, so it does not eliminate
+    amplitude or pipeline dependence.  The threshold $9/q^2$, shell-alignment condition, and
+    cross-substrate carrier remain external inputs; SGN excludes a native Heisenberg transfer
+    for the corpus-defined objects (local algebra: \sproved; intrinsic rank and transfer:
+    \sopen).
 
-    \textbf{O22}~\cite{Beau2026a26}: BI projection locking forces $n_3^{\mathrm{obs}}$ onto a BFS
-    shell (Theorem~3.2, \sproved).
+    \textbf{O22}~\cite{Beau2026a26}: BI projection locking forces the O21-defined
+    $n_3^{\mathrm{obs}}$ onto a BFS shell within O22's stated model (Theorem~3.2).
+    This does not make the input rank invariant under amplitude rescaling and therefore does not
+    close O21's intrinsic-definition problem (\sproved{} within the stated model).
 
     \textbf{O23}~\cite{Beau2026a27}: The threshold $\Sigma_c(n_3) = 3$ follows from the quaternionic
     maximality of the admissible neutral generating set (\sproved).
@@ -725,8 +741,8 @@ A Structural Roadmap and Paper Inventory}
     conjugate pair and every $q \in \{61, 101, 151\}$ (100\% of pairs), with invariant resolved
     spectrum $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$.
     The exact degeneracy $\lambda_2 = \lambda_3$ is read, through O29, as the axial structure of
-    the adjoint carrier (interpretation), correlated with the Born--Infeld parity involution
-    $c \leftrightarrow q-c$ (O18).
+    the adjoint carrier (interpretation), correlated with O18's proposed, unproved Born--Infeld
+    parity involution $c \leftrightarrow q-c$.
     The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
     analysis of $V_\rho \subset H_{\mathrm{eff}}$ is carried out in O29.
 
@@ -780,7 +796,8 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{O29}~\cite{Beau2026a33}: Carrier identification via the Veronese collapse
     (\sstruct, numerically confirmed).
-    The Born--Infeld parity constraint $\pi_{q-c}(v) = \overline{\pi_c(v)}$ (O18) is anti-linear, so every outer
+    Under the proposed Born--Infeld/Weil parity identification of O18,
+    $\pi_{q-c}(v) = \overline{\pi_c(v)}$ is anti-linear, so every outer
     product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ is complex symmetric; the conjugate-pair target
     $d_\rho^2 = 4$ is inaccessible by construction and is restored only by the locking-broken control.
     On the O25/Q5a checkpoints the admissible trajectory spans all three complex dimensions of
@@ -980,12 +997,10 @@ A Structural Roadmap and Paper Inventory}
     The Q-series derives quantum-mechanical and geometric structure from the Foundation axioms,
     taking as input the fibre identification $F_n \cong V_\rho$ and selected O-series results.
 
-    \textbf{Q1}~\cite{Beau2026q1}: Phase coherence is a structural consequence of projective admissibility (not a
-    postulate).
-    Theorem~2.7 proves that any admissible transition preserves the BI indiscernibility of conjugate
-    Weil blocks $\rho_c$ and $\rho_{q-c}$, maintaining the metaplectic phase coherence of the fibre.
-    The singlet correlator $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$ and the Tsirelson bound
-    are derived from admissibility, O18, and O23 (\sproved; numerically validated for $q=29$).
+    \textbf{Q1}~\cite{Beau2026q1}: Proposed phase-coherence route from projective admissibility.
+    Its identification of conjugate Weil blocks with a BI-indiscernible fibre imports O18's open
+    parity-to-fibre and substrate-to-character bridges; the resulting singlet and Tsirelson chain
+    is therefore not unconditional (\sstruct{} under open upstream premises).
 
     \textbf{Q2}~\cite{Beau2026q2}: Extends the programme to spin-$\tfrac{3}{2}$.
     On the binary icosahedral group~$2I$, the spin-$\tfrac{1}{2}$ and spin-$\tfrac{3}{2}$ sectors
@@ -1023,8 +1038,9 @@ A Structural Roadmap and Paper Inventory}
     factorizability in any non-injective effective description (published in
     \emph{Quantum Reports}).
     The note isolates the upstream inputs consumed (Notes~1 and~5 for the Weil fibre and the
-    admissibility thread; O18, O22, O23, BornInfeld for the parity/isotropy/indiscernibility
-    inputs; ENI for the Bell argument), records the proved/numerical/open status of every
+    admissibility thread; O18, O22, O23, BornInfeld for the proposed
+    parity/isotropy/indiscernibility inputs; ENI for the Bell argument), records the
+    proved/numerical/open status of every
     result, and states the two open deliverables: Born rule for general observables beyond
     $\SU(2)$, and numerical validation of the rank-$W_n^{(c)}=0$ coherence witness across
     $q \in \{29, 61, 101, 151, 211, 307, 401\}$.
@@ -1899,7 +1915,8 @@ A Structural Roadmap and Paper Inventory}
     capacity-to-rate continuation.
 
   \paragraph{Physical path.}
-    Foundation $+ $ O18 $+$ O22 $+$ O23 $\to$ Q1 $\to$ Q2 $\to$ Q3; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
+    Foundation $\to$ Q1 $\to$ Q2 $\to$ Q3, with O18 $+$ O22 $+$ O23 supplying a
+    proposed auxiliary fibre chain whose O18 bridge is open; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
     O23 $+$ O28 $+$ O29 $+$ Q5b $\to$ Q7 (dimensional bridge);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz;
     Q5b $+$ Q11 $+$ PTO $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII $\to$ LCIIo1; LCo1, LCo3.
@@ -1976,11 +1993,11 @@ A Structural Roadmap and Paper Inventory}
 
           \node[S] (O16)  at (0,-5*\dy)       {O16};
           \node[P] (O17)  at (\dx,-5*\dy)     {O17};
-          \node[P] (O18)  at (2*\dx,-5*\dy)   {O18};
-          \node[P] (O19)  at (3*\dx,-5*\dy)   {O19};
-          \node[P] (O22)  at (4*\dx,-5*\dy)   {O22};
+          \node[Oc] (O18)  at (2*\dx,-5*\dy)   {O18};
+          \node[Oc] (O19)  at (3*\dx,-5*\dy)   {O19};
+          \node[Oc] (O22)  at (4*\dx,-5*\dy)   {O22};
           \node[P] (O23)  at (5*\dx,-5*\dy)   {O23};
-          \node[P] (O24)  at (6*\dx,-5*\dy)   {O24};
+          \node[Oc] (O24)  at (6*\dx,-5*\dy)   {O24};
 
           \draw[spine] (O15) to[out=-90,in=90] (O16);
           \draw[arr]   (O16)--(O17);
@@ -2053,7 +2070,7 @@ A Structural Roadmap and Paper Inventory}
           \foreach \n in {ENI,Found,Heis,HCO,nos}
           \draw[synth] (\n) to[out=90,in=-90] (NIFNote);
 
-          \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
+          \node[Oc] (Q1)   at (8*\dx,-4*\dy)   {Q1};
           \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
           \node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q3.east)
@@ -2482,29 +2499,34 @@ A Structural Roadmap and Paper Inventory}
       blocks, not only conjugate ones; scoped to a scalar toy model, not shown for the real
       pipeline &
       \sproved \\[3pt]
-      O18 & BI parity involution & \cite{Beau2026a22} &
-      Minimal fibre condition $\{\chi,-\chi\}$; BI parity is the unique global symmetry of $S_{\mathrm{BI}}$ &
-      \sproved \\[3pt]
-      O19 & Canonical normalisation & \cite{Beau2026a23} &
-      $r(c,q)$ does not affect $\delta_{\mathrm{pair}}$; observable pipeline-independent &
-      \sproved \\[3pt]
-      O20 & Persistence criterion & \cite{Beau2026a24} &
-      Dynamical selection of admissible modes via projective persistence &
+      O18 & BI action parity & \cite{Beau2026a22} &
+      $S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi]$; neither $\Pi(\chi)=\Pi(-\chi)$ nor
+      the character pairing $c\leftrightarrow q-c$ follows &
+      \sproved\ /\ \sopen \\[3pt]
+      O19 & Proposed canonical normalisation & \cite{Beau2026a23} &
+      Generic Gram--Schmidt identities survive; the residual factor, completed tests, and
+      pipeline-independent observable are not established for the real pipeline &
+      \sproved\ /\ \sopen \\[3pt]
+      O20 & Conditional persistence template & \cite{Beau2026a24} &
+      Threshold-crossing algebra under explicit hypotheses; no intrinsic threshold or selected
+      exponent window &
       \sstruct \\[3pt]
-      O21 & Shell saturation & \cite{Beau2026a25} &
-      Observable rank $n_3^{\mathrm{obs}}$ via $\Sigma_c(n_3)=3$;
-      conditional cross-substrate prescription $\delta_{\mathrm{pair}} \to \beta^*$ &
-      \sstruct \\[3pt]
+      O21 & Local crossing diagnostic & \cite{Beau2026a25} &
+      Two-point crossing formula under a fixed normalisation; it scales under amplitude
+      rescaling, while shell alignment and the capacity-to-rate carrier remain open &
+      \sproved\ /\ \sopen \\[3pt]
       O22 & Projection locking & \cite{Beau2026a26} &
-      BI projection locking forces $n_3^{\mathrm{obs}}$ onto a BFS shell (Thm~3.2) &
-      \sproved \\[3pt]
+      BI projection locking forces the O21-defined $n_3^{\mathrm{obs}}$ onto a BFS shell
+      within the stated model; this does not make that rank amplitude-invariant &
+      \sproved\ /\ \sopen \\[3pt]
       O23 & Quaternionic minimality & \cite{Beau2026a27} &
       $\Sigma_c(n_3)=3$ from quaternionic maximality of neutral generators &
       \sproved \\[3pt]
       O24 & Observable rank rigidity & \cite{Beau2026a28} &
-      Verticality Lemma closes $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ w.r.t.\ the fibre
-      structure of $\Pi$; no native derivation of $\delta_{\mathrm{pair}} \to \beta^*$ &
-      \sproved \\[3pt]
+      Verticality Lemma develops $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ under the stated
+      fibre hypotheses; no first-principles fibre identification and no native derivation of
+      $\delta_{\mathrm{pair}} \to \beta^*$ &
+      \sproved\ /\ \sopen \\[3pt]
       \midrule
       O25 & Numerical campaign (extended to $q=601$) & \cite{Beau2026a29} &
       Raw $\delta_{\mathrm{global}} \to 7.61$ at $q=601$ under the frozen $\log(n+1)$ estimator;
@@ -3318,7 +3340,8 @@ A Structural Roadmap and Paper Inventory}
 
   For an external reader, three entry sequences are suggested.
   For the quantum structure thread:
-  ENI $\to$ Foundation $\to$ O18 $\to$ O22 $\to$ O23 $\to$ Q1.
+  ENI $\to$ Foundation $\to$ Q1, with the proposed O18 $\to$ O22 $\to$ O23 fibre chain
+  treated as an open auxiliary route rather than a proved foundation.
   For the spectral mass-hierarchy question:
   ENI $\to$ Foundation $\to$ O16 $\to$ O24 $\to$ SGN, ending with the native-transfer no-go
   and leaving the numerical mass comparison phenomenological.
