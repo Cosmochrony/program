@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.10}
+\date{2026\\[2pt]\small Version 2.11}
 
 \begin{document}
 
@@ -70,7 +70,7 @@ A Structural Roadmap and Paper Inventory}
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between
     observable states.
-    The corpus comprises 116 papers across three theory branches.
+    The corpus comprises 117 papers across three theory branches.
     Branch~I (Foundation track) develops four admissibility axioms and their consequences.
     A finite \(S_3\) countermodel now proves that the algebraic properties extracted from those
     axioms in the published carrier-selection argument do not force a central commutator,
@@ -140,7 +140,7 @@ A Structural Roadmap and Paper Inventory}
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 116 papers with complex mutual dependencies.
+  The corpus comprises 117 papers with complex mutual dependencies.
   The interactive dependency graph covers all 116 entries of the inventory and distinguishes
   ordinary dependencies from sub-programme synthesis links.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
@@ -315,9 +315,9 @@ A Structural Roadmap and Paper Inventory}
     \emph{infra-projectable cells} (unsplit configurations below the resolution of $\Pi$), the
     derivation of entanglement entropy is integrated into the foundation text by importing the
     admissible pair entropy of \emph{Q3}~\cite{Beau2026q3} and \emph{ENT-E2}~\cite{Beau2026ent2},
-    and the Bell non-applicability argument is strengthened: in the projective framework Bell
-    factorisability does not apply at the proto-state level (the joint object is below
-    $\Pi$-resolution), recovering the Bell-paper's conclusion as a structural consequence of A2.
+    while the proposed Bell non-applicability implication is not available: a non-injective
+    projection can possess deterministic local response functions, so A2 alone does not obstruct
+    Bell factorisation.
 
     Items (iv)--(v) are not established.
     The finite \(S_3\) countermodel~\cite{Beau2026hco} has a faithful irreducible unitary carrier, a minimal
@@ -1029,9 +1029,11 @@ A Structural Roadmap and Paper Inventory}
     conditional on an explicit, undemonstrated diagonal-invariance hypothesis. No chain from
     Born--Infeld indiscernibility to phase coherence, a singlet correlator, a Tsirelson bound, the
     Born rule, or an $\SU(2)$ fixed point is currently established by these three papers.
-    Bell~\cite{Beau2026b} contributes the structural non-applicability of Bell-type
-    factorizability in any non-injective effective description (published in
-    \emph{Quantum Reports}), independently of Q1--Q3.
+    Bell~\cite{Beau2026b} is published in \emph{Quantum Reports}, but its claimed implication
+    from non-injectivity to failure of Bell factorisation is disproved by a finite Bell-local
+    countermodel. Its PR-box construction also has empty support. The general no-go theorem and
+    the correct obstruction are proved in~\cite{Beau2026BellNoGo}. The Bell bridge is open:
+    the programme does not derive an obstruction to a setting-independent global coupling.
     The note records the proved/structural/open status of every constituent result and states
     the open deliverables: the Born rule, phase coherence beyond Q1's narrow rigidity statement,
     and a derivation (rather than a supplied hypothesis) of Q3's diagonal-invariance premise.
@@ -1746,8 +1748,15 @@ A Structural Roadmap and Paper Inventory}
     \textbf{SMchargemass}~\cite{Beau2026e}: Mass and electric charge as BI-saturated responses
     (\sstruct; baryon-to-photon ratio~$\eta$: \sopen).
 
-    \textbf{Bell}~\cite{Beau2026b}: Bell-inequality violations from non-injectivity alone, without
-    nonlocality or additional hidden variables (\sproved).
+    \textbf{Bell}~\cite{Beau2026b}: The claimed derivation of Bell-inequality violations from
+    non-injectivity alone is refuted by a finite Bell-local countermodel; the required
+    cross-context global-coupling obstruction is not derived (\sopen).
+
+    \textbf{BellNoGo}~\cite{Beau2026BellNoGo}: Proves that non-injectivity alone has no
+    Bell-discriminating power (redundant-extension and universal pushforward theorems), exhibits
+    the explicit Bell-local countermodel, disproves output entropy as a non-injectivity measure,
+    and identifies the correct obstruction as the absence of a setting-independent global
+    coupling across measurement contexts (Fine's theorem) (\sproved).
 
     The Bell paper opens the \emph{entanglement sub-programme}, whose presentation paper is
     \textbf{ENT-Note}~\cite{Beau2026entnote} (v1.1).
@@ -2131,7 +2140,7 @@ A Structural Roadmap and Paper Inventory}
 
           \node[P] (TopI) at (0,-8*\dy)        {TopInv};
           \node[S] (SMcm) at (\dx,-8*\dy)      {SMcm};
-          \node[P] (Bell) at (2*\dx,-8*\dy)    {Bell};
+          \node[Oc] (Bell) at (2*\dx,-8*\dy)   {Bell};
           \node[S] (Schw) at (3*\dx,-8*\dy)    {SchLamb};
           \node[S] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
           \node[S] (Supra)at (5*\dx,-8*\dy)    {Supra};
@@ -2345,7 +2354,7 @@ A Structural Roadmap and Paper Inventory}
     \end{figure}
     \label{sec:inventory}
 
-    Table~\ref{tab:inventory} lists all 116 papers of the programme, the present registry excepted.
+    Table~\ref{tab:inventory} lists all 117 papers of the programme, the present registry excepted.
     The \textbf{Key} column gives the citation key used in
     \texttt{cosmochrony-bibliography}.
     The final block gathers the sub-programme presentation and synthesis notes, marked
@@ -2932,8 +2941,12 @@ A Structural Roadmap and Paper Inventory}
       SMcm & Charge, mass, inertia & \cite{Beau2026e} &
       Mass and charge as BI-saturated responses &
       \sstruct \\[3pt]
-      Bell & Bell non-locality & \cite{Beau2026b} &
-      Bell violations from non-injectivity alone &
+      Bell & Bell factorisation bridge & \cite{Beau2026b} &
+      Non-injectivity alone refuted as sufficient; global-coupling obstruction not derived &
+      \sopen \\[3pt]
+      BellNoGo & Redundant-extension no-go theorem & \cite{Beau2026BellNoGo} &
+      Non-injectivity has no Bell-discriminating power; correct obstruction is cross-context
+      global-coupling absence (Fine's theorem) &
       \sproved \\[3pt]
       ENT-E1 & Weil fingerprint orthogonality & \cite{Beau2026ent1} &
       The $k{=}3$ Weil fingerprint of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ factors as a global phase times a

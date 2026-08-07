@@ -1531,11 +1531,18 @@
       desc: "Mass and electric charge as BI-saturated responses of the relational gradient. Baryon-to-photon ratio η: open."
     },
     {
-      id: "Bell", lbl: "Bell", s: "proved", b: "III", key: "Beau2026b",
+      id: "Bell", lbl: "Bell", s: "open", b: "III", key: "Beau2026b",
       url: BASE + "bell",
       tags: ["QM", "emer"],
-      title: "Bell — Non-Injective Factorisation",
-      desc: "Bell violations from non-injectivity alone, without nonlocality or hidden variables."
+      title: "Bell — Open Factorisation Bridge",
+      desc: "The claimed implication from non-injectivity to failure of Bell factorisation is refuted by a finite Bell-local countermodel; the required cross-context global-coupling obstruction is open."
+    },
+    {
+      id: "BellNoGo", lbl: "BellNoGo", s: "proved", b: "III", key: "Beau2026BellNoGo",
+      url: ZEN + "21837950",
+      tags: ["QM", "emer"],
+      title: "BellNoGo — Non-Injectivity Has No Bell-Discriminating Power",
+      desc: "Redundant-extension and universal-pushforward theorems show non-injectivity alone cannot bound CHSH; explicit Bell-local countermodel with fibres of size eight; output entropy disproved as a non-injectivity measure; correct obstruction identified as the absence of a setting-independent global coupling across measurement contexts (Fine's theorem)."
     },
     {
       id: "Schw", lbl: "SchLamb", s: "structural", b: "III", key: "Beau2026f",
@@ -1598,7 +1605,7 @@
       desc:
         "Entry point of the quantum structure sub-programme, stating the current, narrow scope of its three constituents: Q1 proves an unconditional Fourier-support rigidity theorem unrelated to phase coherence or the Born rule; Q2 proves an exact finite-group eigenvalue degeneracy on 2I; Q3 proves a theorem conditional on an explicit, undemonstrated diagonal-2I-invariance hypothesis. " +
         "No chain from Born–Infeld indiscernibility to phase coherence, a singlet correlator, a Tsirelson bound, the Born rule, or an SU(2) fixed point is currently established by these three papers. " +
-        "Bell factorizability structurally non-applicable in non-injective frameworks (Bell paper, published in Quantum Reports), independently of Q1–Q3. " +
+        "The published Bell paper's central implication from non-injectivity is refuted by a finite Bell-local countermodel, and its PR-box construction has empty support. " +
         "Open: the Born rule; phase coherence beyond Q1's narrow rigidity statement; a derivation (rather than a supplied hypothesis) of Q3's diagonal-invariance premise."
     },
     {
@@ -1750,6 +1757,7 @@
     { f: "TempProj", t: "LCo1" }, { f: "PTO", t: "LCo1" }, { f: "LCII", t: "LCo3" }, { f: "BI", t: "LCo3" },
     { f: "LorCap", t: "LCsyn" }, { f: "TempProj", t: "LCsyn" }, { f: "LCII", t: "LCsyn" }, { f: "LCIIo1", t: "LCsyn" }, { f: "LCo1", t: "LCsyn" }, { f: "LCo3", t: "LCsyn", sp: 1 },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
+    { f: "BellNoGo", t: "Bell", st: "proved", claim: "refutes the central implication from non-injectivity to Bell factorisation failure; PR-box construction has empty support" },
     { f: "Found", t: "Schw" }, { f: "BI", t: "Cosm" },
     { f: "ENI", t: "TrajBr" }, { f: "O12", t: "TrajBr" },
     { f: "ENI", t: "ProjCE", sp: 1 },
