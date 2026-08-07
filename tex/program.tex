@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.9}
+\date{2026\\[2pt]\small Version 2.10}
 
 \begin{document}
 
@@ -85,9 +85,10 @@ A Structural Roadmap and Paper Inventory}
     The same branch identifies the Standard Model gauge group
     $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$ (unconditional at the pointwise
     level on the standard graph).
-    Branch~III (Q-series and companion papers) develops quantum mechanics, spacetime geometry, and
-    gauge dynamics from the Branch~I axioms and supplied Branch~II spectral data: the universal singlet
-    correlator and Born rule (paper Q3), the effective Lorentzian co-metric
+    Branch~III (Q-series and companion papers) develops spacetime geometry and gauge dynamics
+    from the Branch~I axioms and supplied Branch~II spectral data, and states a universal singlet
+    correlator conditional on an explicit, undemonstrated invariance hypothesis (paper Q3; the
+    Born rule remains open), the effective Lorentzian co-metric
     $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$ under the continuum-limit
     hypotheses (the geometric-emergence papers, with $A_\tau = 2$ from paper Q11), and the
     spectral derivation of the Einstein ($a_2$) and local Yang--Mills ($a_4$) sectors from a
@@ -491,8 +492,8 @@ A Structural Roadmap and Paper Inventory}
     projections rather than a dynamics of~$\chi$.
     Carrier selection is now the first open structural deliverable.
     NIF-Note also identifies:
-    extension of the Born rule beyond the $\SU(2)$ sector~(Q3) and the Level~2 scale determination
-    of noscale (every emergent scale as a functional of~$c_{\mathrm{BI}}$ alone).
+    the Born rule, open at every sector and not derived by Q1--Q3, and the Level~2 scale
+    determination of noscale (every emergent scale as a functional of~$c_{\mathrm{BI}}$ alone).
 
     \textit{Role:} Synthesis of Branch~I. Provides the explicit input/output table of the
     axiomatic foundations and is the canonical entry point for downstream sub-programmes
@@ -997,53 +998,43 @@ A Structural Roadmap and Paper Inventory}
     The Q-series derives quantum-mechanical and geometric structure from the Foundation axioms,
     taking as input the fibre identification $F_n \cong V_\rho$ and selected O-series results.
 
-    \textbf{Q1}~\cite{Beau2026q1}: Proposed phase-coherence route from projective admissibility.
-    Its identification of conjugate Weil blocks with a BI-indiscernible fibre imports O18's open
-    parity-to-fibre and substrate-to-character bridges; the resulting singlet and Tsirelson chain
-    is therefore not unconditional (\sstruct{} under open upstream premises).
+    \textbf{Q1}~\cite{Beau2026q1}: Proves an exact, unconditional Fourier-support rigidity
+    theorem in the finite Weil representation of the Heisenberg group (\sproved), and a
+    precisely scoped no-go corollary for support-, rank-, and Gram-based diagnostics. Does not
+    derive phase coherence, a singlet correlator, a Tsirelson bound, or the Born rule (\sopen).
 
-    \textbf{Q2}~\cite{Beau2026q2}: Extends the programme to spin-$\tfrac{3}{2}$.
-    On the binary icosahedral group~$2I$, the spin-$\tfrac{1}{2}$ and spin-$\tfrac{3}{2}$ sectors
-    share the Laplacian eigenvalue $\lambda_{1/2} = \lambda_{3/2} = 18$ (co-admissibility).
-    The Born rule, singlet correlator, and Tsirelson bound are derived for spin-$\tfrac{3}{2}$
-    without new postulates.
-    $\SU(2)$ is established as the stable fixed point of the admissibility flow (\sproved{} for
-    spin-$\tfrac{3}{2}$; general-$j$ extension proved in Q3~\cite{Beau2026q3}).
+    \textbf{Q2}~\cite{Beau2026q2}: Proves an exact finite-group fact (\sproved): on the binary
+    icosahedral group~$2I$, the spin-$\tfrac{1}{2}$ and spin-$\tfrac{3}{2}$ sectors share the
+    Laplacian eigenvalue $\lambda_{1/2} = \lambda_{3/2} = 18$. Does not derive phase coherence,
+    a Casimir/isotropy normalisation, the Born rule, a Tsirelson-type bound, or an $\SU(2)$
+    fixed-point/sector-selection argument (\sopen).
 
-    \textbf{Q3}~\cite{Beau2026q3}: Completes the $\SU(2)$ quantum sector for all admissible~$j$.
-    BI indiscernibility forces the bipartite proto-state to be invariant under the diagonal
-    $2I$-action on $V_{\chi_{2j+1}}\otimes V_{\chi_{2j+1}}$; Schur's lemma applied to the
-    Clebsch--Gordan decomposition $\chi_{2j+1}\otimes\chi_{2j+1} = \bigoplus_{J=0}^{2j}\chi_{2J+1}$
-    uniquely identifies the proto-state as the singlet $|\Omega_j\rangle$.
-    The universal correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ and the Born
-    rule are derived for all five admissible sectors
-    $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ of~$2I$ (\sproved).
-    Closes the open step of~Q2 (identification of the isotropic fibre state with the
-    proto-state for spin-$\tfrac{3}{2}$, and general-$j$ extension).
+    \textbf{Q3}~\cite{Beau2026q3}: Proves a theorem conditional on an explicit, undemonstrated
+    hypothesis (\sstruct): given a supplied bipartite carrier $V_{\chi_{2j+1}}\otimes
+    V_{\chi_{2j+1}}$ and the hypothesis that the joint state is invariant under the diagonal
+    $2I$-action --- \emph{not} derived from admissibility or from Born--Infeld indiscernibility
+    --- Schur's lemma applied to $\mathrm{Hom}_{2I}(V_{\chi_{2j+1}}^*, V_{\chi_{2j+1}})$
+    uniquely identifies the state as the singlet $|\Omega_j\rangle$, with an explicit Casimir
+    correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$, for all five admissible
+    sectors $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ of~$2I$. Does not derive the
+    invariance hypothesis itself, phase coherence, the Born rule, or a CHSH/Tsirelson-type bound
+    (\sopen).
 
     The papers Q1, Q2, Q3, and the Bell paper~\cite{Beau2026b} form the \emph{quantum structure
   sub-programme}, whose synthesis paper is the presentation note
     \textbf{QS-Note}~\cite{Beau2026qsnote} (Presentation Note~7).
-    QS-Note organises these four constituents into the six-step structural chain
-    \emph{BI indiscernibility} $\Rightarrow$ \emph{phase coherence} (Q1 Thm~2.7)
-    $\Rightarrow$ \emph{singlet correlator $E(\hat{a},\hat{b}) = -\hat{a}\cdot\hat{b}$}
-    (Q1 Thm~2.15, conditional on the supplied Weil carrier, from four structural inputs)
-    $\Rightarrow$ \emph{Tsirelson bound $|S_{\mathrm{CHSH}}| \leq 2\sqrt{2}$} (Q1 Cor~2.17)
-    $\Rightarrow$ \emph{Born rule} (Q1 Thm~2.19, no Gleason theorem)
-    $\Rightarrow$ \emph{$\SU(2)$ as stable fixed point of the admissibility flow}
-    (Q2 Thm~8.6)
-    $\Rightarrow$ \emph{universal spin-$j$ correlator} (Q3 Thm~5.2 for all five admissible
-  sectors of~$2I$).
+    QS-Note states plainly the current, narrow scope of each constituent: Q1 proves an
+    unconditional Fourier-support rigidity theorem unrelated to phase coherence or the Born rule;
+    Q2 proves an exact finite-group eigenvalue degeneracy on~$2I$; Q3 proves a theorem
+    conditional on an explicit, undemonstrated diagonal-invariance hypothesis. No chain from
+    Born--Infeld indiscernibility to phase coherence, a singlet correlator, a Tsirelson bound, the
+    Born rule, or an $\SU(2)$ fixed point is currently established by these three papers.
     Bell~\cite{Beau2026b} contributes the structural non-applicability of Bell-type
     factorizability in any non-injective effective description (published in
-    \emph{Quantum Reports}).
-    The note isolates the upstream inputs consumed (Notes~1 and~5 for the Weil fibre and the
-    admissibility thread; O18, O22, O23, BornInfeld for the proposed
-    parity/isotropy/indiscernibility inputs; ENI for the Bell argument), records the
-    proved/numerical/open status of every
-    result, and states the two open deliverables: Born rule for general observables beyond
-    $\SU(2)$, and numerical validation of the rank-$W_n^{(c)}=0$ coherence witness across
-    $q \in \{29, 61, 101, 151, 211, 307, 401\}$.
+    \emph{Quantum Reports}), independently of Q1--Q3.
+    The note records the proved/structural/open status of every constituent result and states
+    the open deliverables: the Born rule, phase coherence beyond Q1's narrow rigidity statement,
+    and a derivation (rather than a supplied hypothesis) of Q3's diagonal-invariance premise.
 
     The papers Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, and H2 form the \emph{emergent geometry
   sub-programme}, whose synthesis paper is the presentation note \textbf{EG-Note}~\cite{Beau2026egnote}.
@@ -1794,9 +1785,9 @@ A Structural Roadmap and Paper Inventory}
     lemma removes the constant mode, leaving the two-dimensional Born--Infeld parity pair
     $\{e_{\xi_c}, e_{q-\xi_c}\}$ identified with the spin-$\tfrac12$ representation; the singlet
     identification of \emph{Q3}~\cite{Beau2026q3} then gives
-    $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$ for general canonical blocks. This is the entropy of
-    the state behind the singlet correlator and the unconditional Tsirelson
-    bound~\cite{Beau2026q1}. The \emph{full residual-rank entropy}
+    $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$ for general canonical blocks, conditional on Q3's
+    explicit, undemonstrated diagonal-invariance hypothesis (\sstruct). Q1 does not establish a
+    singlet correlator or a Tsirelson bound. The \emph{full residual-rank entropy}
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ lives on the full Gram--Schmidt basis (rank
     $q$ at saturation, not rank~3) and is a pipeline-level contraction observable, unconditional
     for matched blocks (ENT-E1) and otherwise conditional on the residual admissibility
@@ -2616,18 +2607,20 @@ A Structural Roadmap and Paper Inventory}
       numerical evidence for $q\in\{61,151,211\}$; explicitly not a $c$-theorem &
       \sstruct \\[3pt]
       \midrule
-      Q1 & Phase coherence & \cite{Beau2026q1} &
-      Phase coherence from admissibility (Thm~2.7);
-      singlet correlator and Tsirelson bound derived &
+      Q1 & Fourier-support rigidity & \cite{Beau2026q1} &
+      Exact, unconditional conjugate-sector subspace identity and its rank/support no-go
+      corollary; no phase coherence, singlet correlator, Tsirelson bound, or Born rule &
       \sproved \\[3pt]
-      Q2 & Beyond spin-$\tfrac{1}{2}$ & \cite{Beau2026q2} &
-      Spin-$\tfrac{3}{2}$ quantum structure; $\SU(2)$ as admissibility fixed point &
+      Q2 & $2I$ eigenvalue degeneracy & \cite{Beau2026q2} &
+      Exact finite-group fact: spin-$\tfrac{1}{2}$/spin-$\tfrac{3}{2}$ share
+      $\lambda=18$ on $2I$; no phase coherence, Born rule, Tsirelson bound, or fixed point &
       \sproved \\[3pt]
-      Q3 & Universal spin-$j$ singlet & \cite{Beau2026q3} &
-      Schur + BI indiscernibility identify proto-state as singlet $|\Omega_j\rangle$ for all
-      $j \in \{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}$; universal correlator and Born rule
-      derived; closes Q2 open step &
-      \sproved \\[3pt]
+      Q3 & Conditional universal singlet & \cite{Beau2026q3} &
+      Given an explicit, undemonstrated diagonal-$2I$-invariance hypothesis (H-inv), Schur's
+      lemma identifies the proto-state as the singlet $|\Omega_j\rangle$ for all
+      $j \in \{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}$, with an explicit Casimir
+      correlator; H-inv itself, phase coherence, and the Born rule are not derived &
+      \sstruct \\[3pt]
       Q5a & Canonical Fourier filtration & \cite{Beau2026q5a} &
       v3.0: canonical filtration identified exactly (toric Fourier window
       $\mathrm{span}\{e^{2\pi i b x/q}: |b|\le n\}$); published form converges to the zero form
@@ -3038,9 +3031,10 @@ A Structural Roadmap and Paper Inventory}
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       QS\-Note & The quantum structure sub-programme (Note~7) & \cite{Beau2026qsnote} &
-      Maps Q1, Q2, Q3 and Bell into a six-step chain from BI indiscernibility to the universal spin-$j$
-      correlator, isolating the upstream inputs consumed and the two open deliverables (Born rule beyond
-      $\SU(2)$; numerical validation of the coherence witness across the prime range).
+      States the current, narrow scope of Q1 (unconditional rigidity theorem), Q2 (exact
+      eigenvalue degeneracy), and Q3 (conditional singlet theorem) and records that no chain
+      from Bell--Infeld indiscernibility to phase coherence, a Tsirelson bound, or the Born rule
+      is currently established.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       GGS\-Note & The gauge--gravity stratification sub-programme (Note~8) & \cite{Beau2026ggsnote} &
@@ -3284,10 +3278,11 @@ A Structural Roadmap and Paper Inventory}
   Proposition~4.23 of O31~\cite{Beau2026a35}.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
-  The $\SU(2)$ quantum sector is now complete: Q3 closes the general-$j$ open step of Q2 by
-  identifying the proto-state as the singlet for all five admissible sectors of $2I$ via
-  Schur's lemma, and derives the universal correlator $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$
-  and Born rule for $j \in \{\tfrac{1}{2}, 1, \tfrac{3}{2}, 2, \tfrac{5}{2}\}$ (\sproved).
+  The $\SU(2)$ quantum sector is not established: Q3 proves, conditional on an explicit,
+  undemonstrated diagonal-$2I$-invariance hypothesis, that the proto-state is the singlet for all
+  five admissible sectors of $2I$ via Schur's lemma, with the universal correlator
+  $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ (\sstruct); the invariance hypothesis
+  itself, phase coherence, and the Born rule remain open (\sopen).
   The geometric emergence sub-programme has advanced substantially: Q9 proves [H-lift] and
   $A_H > 0$ (unconditionally under Q5a); Q10 proves $A_H \to 2$ under spectral universality~[U];
   U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability;
