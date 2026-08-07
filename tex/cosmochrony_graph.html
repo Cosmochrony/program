@@ -1120,22 +1120,22 @@
       id: "Q1", lbl: "Q1", s: "proved", b: "III", key: "Beau2026q1",
       url: ZEN + "19561060",
       tags: ["QM", "emer"],
-      title: "Q1 — Phase Coherence",
-      desc: "Thm 2.7: admissible transitions preserve BI indiscernibility of conjugate Weil blocks (the carrier's phase coherence, not the carrier itself). Conditional on that supplied Weil carrier, derives singlet correlator E(â,b̂)=−â·b̂ and Tsirelson bound."
+      title: "Q1 — Fourier-Support Rigidity",
+      desc: "Exact, unconditional: conjugate Weil-sector fingerprint vectors span identical subspaces on every complete BFS shell, with a precise no-go corollary for support/rank/Gram-based diagnostics. Does not derive phase coherence, a singlet correlator, a Tsirelson bound, or the Born rule."
     },
     {
       id: "Q2", lbl: "Q2", s: "proved", b: "III", key: "Beau2026q2",
       url: ZEN + "19616444",
       tags: ["QM", "SM"],
-      title: "Q2 — Quantum beyond Spin-½",
-      desc: "Spin-3/2 structure on 2I; SU(2) as stable admissibility fixed point. Born rule and Tsirelson bound derived without new postulates. General-j extension proved in Q3."
+      title: "Q2 — 2I Eigenvalue Degeneracy",
+      desc: "Exact finite-group fact: the spin-1/2 and spin-3/2 representations of 2I induce the same Cayley-graph Laplacian eigenvalue (18). Does not derive phase coherence, a Casimir/isotropy normalisation, the Born rule, a Tsirelson-type bound, or an SU(2) fixed-point/sector-selection argument."
     },
     {
-      id: "Q3", lbl: "Q3", s: "proved", b: "III", key: "Beau2026q3",
+      id: "Q3", lbl: "Q3", s: "structural", b: "III", key: "Beau2026q3",
       url: ZEN + "19979535",
       tags: ["QM"],
-      title: "Q3 — Universal Spin-j Singlet",
-      desc: "Closes the Q2 open step. BI indiscernibility forces proto-state invariance under diagonal 2I-action; Schur's lemma on CG decomposition χ_{2j+1}⊗χ_{2j+1}=⊕χ_{2J+1} uniquely identifies proto-state as singlet |Ω_j⟩. Universal correlator E(â,b̂)=−j(j+1)/3·(â·b̂) and Born rule derived for all j∈{½,1,3/2,2,5/2}."
+      title: "Q3 — Conditional Universal Singlet",
+      desc: "Conditional theorem: given an explicit, undemonstrated hypothesis that the joint state is invariant under the diagonal 2I-action (not derived from admissibility or BI indiscernibility), Schur's lemma on Hom_2I(V_j*,V_j) uniquely identifies the state as the singlet |Ω_j⟩, with Casimir correlator E(â,b̂)=−j(j+1)/3·(â·b̂), for all j∈{½,1,3/2,2,5/2}. Does not derive the invariance hypothesis, phase coherence, or the Born rule."
     },
     {
       id: "Q5a", lbl: "Q5a", s: "structural", b: "III", key: "Beau2026q5a",
@@ -1596,10 +1596,10 @@
       tags: ["QM"],
       title: "Quantum Structure Sub-Programme (Presentation Note 7)",
       desc:
-        "Synthesis and entry point of the quantum structure sub-programme: given the complex SU(2) Weil amplitude carrier V_ρ supplied by O18/O23, derives the structures of quantum mechanics built upon it from the admissibility axioms A1–A4 on the binary icosahedral group 2I, without importing any further quantum postulate; the carrier's own complex scalar structure is not derived from A1–A4. " +
-        "Six-step chain: phase coherence from BI indiscernibility (Q1 Thm 2.7); conditional on the supplied Weil carrier, singlet correlator E(â,b̂) = −â·b̂ from four structural inputs (Q1 Thm 2.15); Tsirelson bound |S_CHSH| ≤ 2√2 as corollary (Q1 Cor 2.17); Born rule from structural uniqueness (Q1 Thm 2.19, no Gleason); SU(2) as the unique stable fixed point of the admissibility flow (Q2 Thm 8.6); universal spin-j correlator E = −j(j+1)/3·(â·b̂) for the five admissible sectors of 2I (Q3 Thm 5.2). " +
-        "Bell factorizability structurally non-applicable in non-injective frameworks (Bell paper, published in Quantum Reports). " +
-        "Open: Born rule for general observables beyond SU(2); numerical validation across q ∈ {61, 101, 151, 211, 307, 401}."
+        "Entry point of the quantum structure sub-programme, stating the current, narrow scope of its three constituents: Q1 proves an unconditional Fourier-support rigidity theorem unrelated to phase coherence or the Born rule; Q2 proves an exact finite-group eigenvalue degeneracy on 2I; Q3 proves a theorem conditional on an explicit, undemonstrated diagonal-2I-invariance hypothesis. " +
+        "No chain from Born–Infeld indiscernibility to phase coherence, a singlet correlator, a Tsirelson bound, the Born rule, or an SU(2) fixed point is currently established by these three papers. " +
+        "Bell factorizability structurally non-applicable in non-injective frameworks (Bell paper, published in Quantum Reports), independently of Q1–Q3. " +
+        "Open: the Born rule; phase coherence beyond Q1's narrow rigidity statement; a derivation (rather than a supplied hypothesis) of Q3's diagonal-invariance premise."
     },
     {
       id: "GGSNote", lbl: "GGS-Note", s: "structural", b: "III", key: "Beau2026ggsnote",
@@ -1642,7 +1642,7 @@
       title: "Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair",
       desc:
         "Separates two genuinely distinct entanglement entropies of the conjugate Weil pair, attached to projections of different rank. " +
-        "Admissible pair entropy (rank-3 admissible projection Π_q → spin-1/2 parity pair after the mean-zero lemma → singlet from Q3): S_ent_adm = log 2, unconditional for general canonical blocks; this is the entropy behind the singlet correlator and the Tsirelson bound (Q1). " +
+        "Admissible pair entropy (rank-3 admissible projection Π_q → spin-1/2 parity pair after the mean-zero lemma → singlet from Q3): S_ent_adm = log 2 for general canonical blocks, conditional on Q3's explicit, undemonstrated diagonal-invariance hypothesis. Q1 does not establish a singlet correlator or a Tsirelson bound. " +
         "Full residual-rank entropy (full Gram–Schmidt basis, rank q at saturation): S_ent(n) = log r_pair(n), proved for matched blocks by E1; for general canonical blocks conditional on the residual admissibility indiscernibility hypothesis [H_res]. " +
         "The metaplectic dilation of O30 is excluded as a bridge for [H_res] (acts between blocks, not within the residual support of a single block)."
     }
