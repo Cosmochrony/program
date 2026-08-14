@@ -952,14 +952,14 @@
       url: BASE + "spectral/program/o17",
       tags: ["mass", "QM"],
       title: "O17 — Structural Derivation of Pair",
-      desc: "ρ_{q−c} = ρ̄_c is forced by fibre admissibility; pair structure is derived, not postulated."
+      desc: "ρ_{q−c} = ρ̄_c and exact block-independence of the GS count, within O17's scalar toy model. The pair fibre reading remains a structurally motivated hypothesis."
     },
     {
-      id: "O18", lbl: "O18", s: "proved", b: "II", key: "Beau2026a22",
+      id: "O18", lbl: "O18", s: "structural", b: "II", key: "Beau2026a22",
       url: BASE + "spectral/program/o18",
       tags: ["mass", "BI", "QM"],
-      title: "O18 — BI Parity Involution",
-      desc: "Thm 4.1: BI parity is the only global symmetry of S_BI[χ]. Minimal fibre condition: fibre = {χ, −χ}. Cited by Q1, Q2."
+      title: "O18 — Equivariant BI Parity",
+      desc: "BI action parity and probe-equivariant parity symmetry (proved); fixed-probe indiscernibility refuted by an even countermodel. The fibre identification is a typed open classification problem (Problem 2.8); the Weil bridge c ↔ q−c is open."
     },
     {
       id: "O19", lbl: "O19", s: "proved", b: "II", key: "Beau2026a23",
@@ -990,18 +990,18 @@
       desc: "Thm 3.2: BI projection locking forces n₃^obs onto a BFS shell."
     },
     {
-      id: "O23", lbl: "O23", s: "proved", b: "II", key: "Beau2026a27",
+      id: "O23", lbl: "O23", s: "structural", b: "II", key: "Beau2026a27",
       url: BASE + "spectral/program/o23",
       tags: ["mass", "QM"],
-      title: "O23 — Quaternionic Minimality",
-      desc: "Σ_c(n₃) = 3 from quaternionic maximality of the admissible neutral generating set."
+      title: "O23 — Conditional Adjoint Dimension",
+      desc: "For a supplied irreducible C² carrier, the traceless neutral sector is su(2) ≅ Im H, dimension 3 (Thm 3.1); Q8's two-axis neutral generating set rules out generator-axis counting. Carrier selection and the Σ_c identification are open: Σ_c(n₃) = 3 is a supplied selection rule."
     },
     {
       id: "O24", lbl: "O24", s: "proved", b: "II", key: "Beau2026a28",
       url: BASE + "spectral/program/o24",
       tags: ["mass"],
       title: "O24 — Observable Rank Rigidity",
-      desc: "Verticality Lemma closes the fibre-structure conditionality for observable rank. It does not derive the Heisenberg capacity-to-rate continuation."
+      desc: "Verticality Lemma develops the c_BI → δ_pair segment under the stated fibre hypotheses (fibre identification open). It does not derive the Heisenberg capacity-to-rate continuation."
     },
     {
       id: "O25", lbl: "O25", s: "structural", b: "II", key: "Beau2026a29",
@@ -1151,11 +1151,11 @@
       id: "Q5aO2", lbl: "Q5a-O2", s: "proved", b: "III", key: "Beau2026q5ao2",
       url: BASE + "emergent-geometry/q5/a/o2",
       tags: ["spt", "spec"],
-      title: "Q5a-O2 — Spectral Atomicity & Mosco Closure",
-      desc: "Admissible sector spectrally atomic: ran(Π_q^(c)) = span{e_0, e_{ξ_c}, e_{q−ξ_c}}, ξ_c/q → ω_c ≠ 0. " +
-        "Proves [H-E1′] (scaled coercivity Eq(f,f) ≥ c·q⁻¹·‖f‖², optimal exponent β=1) via spectral gap. " +
-        "Proves [C] (Mosco compactness) by Bolzano–Weierstrass in ℂ², no Nash inequalities. " +
-        "Numerical confirmation K_q=1 at machine precision for q ∈ {29,61,101,151}."
+      title: "Q5a-O2 — Pipeline Fourier Structure & Truncation Status",
+      desc: "Pre-saturation fingerprints and selected Gram–Schmidt vectors are pure Fourier modes; realised frequencies are o(q). " +
+        "The three-coordinate reduction is a truncation (HEFF_DIM = 3 fixed in advance): no rank is measurable from it. " +
+        "The admissibility form is O(q⁻²) on normalised modes, ruling out the q⁻¹ coercivity scale; " +
+        "[H-E1] and [C] are not closed by a finite-rank route (zero-form Mosco limit on the canonical filtration, Q5a v3.0)."
     },
     {
       id: "Q5b", lbl: "Q5b", s: "structural", b: "III", key: "Beau2026q5b",
@@ -1230,7 +1230,7 @@
       desc: "a_q(s) → A > 0 uniformly in s. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
         "(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. " +
         "Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. " +
-        "After W1 + Q5a-O2, open Q5a hypotheses reduced to [H2] only — proved by H2 paper."
+        "After W1, open former-Q5a hypotheses: [H1], [H-E1], [C] (not closed by Q5a-O2's finite-rank route), and [H2] — the last proved by the H2 paper."
     },
     {
       id: "H2", lbl: "H2", s: "proved", b: "III", key: "Beau2026h2",
@@ -1263,7 +1263,7 @@
       desc:
         "Synthesis and entry point of the emergent geometry sub-programme: how the admissible Weil–Heisenberg fibre gives rise to an effective four-dimensional Lorentzian geometry. " +
         "Maps the twelve constituent papers (Q5a, Q5a-O2, Q5b, Q6b, Q7–Q11, U1, W1, H2) into the chain Π_q → L_eff → g^{μν} = 2η^{μν}, with all four metric coefficients fixed by the su(2)-Casimir on Sym²(V_ρ). " +
-        "Open: finite-q equivariant bridge; [H1] on the full L² space."
+        "Open: finite-q equivariant bridge; [H1], [H-E1], [C] of the former framework."
     },
     {
       id: "GSNote", lbl: "GS-Note", s: "structural", b: "III", key: "Beau2026gsnote",
@@ -1649,7 +1649,7 @@
       title: "Entanglement E2 — Two Entanglement Entropies of the Conjugate Weil Pair",
       desc:
         "Separates two genuinely distinct entanglement entropies of the conjugate Weil pair, attached to projections of different rank. " +
-        "Admissible pair entropy (rank-3 admissible projection Π_q → spin-1/2 parity pair after the unconditional mean-zero lemma → singlet from Q3): S_ent_adm = log 2 for general canonical blocks, conditional on two explicit, undemonstrated hypotheses — (H-rank), O23's own condition on its rank-3 result (absence of additional effective symmetries beyond Born–Infeld parity, within O18's scope), needed for spectral atomicity itself, and (H-inv), Q3's diagonal-invariance hypothesis. Q1 does not establish a singlet correlator or a Tsirelson bound. " +
+        "Admissible pair entropy (hypothesised atomic Fourier triple carrier → spin-1/2 parity pair by sector definition → singlet from Q3): S_ent_adm = log 2 for general canonical blocks, conditional on two explicit, undemonstrated hypotheses — (H-carrier), the atomic-carrier hypothesis stated by E2 itself (its rank-three input is O23's supplied selection rule; no mean-zero theorem removes the zero mode), and (H-inv), Q3's diagonal-invariance hypothesis. Q1 does not establish a singlet correlator or a Tsirelson bound. " +
         "Full residual-rank entropy (full Gram–Schmidt basis, rank q at saturation): S_ent(n) = log r_pair(n), proved for matched blocks by E1; for general canonical blocks conditional on the residual admissibility indiscernibility hypothesis [H_res] and on extending O17's equal-residual-dimension result beyond its own toy model to the real pipeline. " +
         "The metaplectic dilation of O31 is excluded as a bridge for [H_res] (acts between blocks, not within the residual support of a single block)."
     }

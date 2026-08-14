@@ -688,8 +688,15 @@ A Structural Roadmap and Paper Inventory}
     This does not make the input rank invariant under amplitude rescaling and therefore does not
     close O21's intrinsic-definition problem (\sproved{} within the stated model).
 
-    \textbf{O23}~\cite{Beau2026a27}: The threshold $\Sigma_c(n_3) = 3$ follows from the quaternionic
-    maximality of the admissible neutral generating set (\sproved).
+    \textbf{O23}~\cite{Beau2026a27}: Conditional adjoint-dimension theorem.
+    For a supplied irreducible two-dimensional unitary carrier $V_\rho\cong\mathbb{C}^2$, the
+    traceless neutral sector is $\mathfrak{su}(2)\cong\mathrm{Im}\,\mathbb{H}$, of real dimension
+    exactly three; in $Q_8$ the neutral generating set $\{\pm i,\pm j\}$ spans only two axes, so
+    generator-axis counting cannot produce the three.
+    The carrier selection and the identification of $\Sigma_c$ with the module dimension are open
+    bridges; the threshold $\Sigma_c(n_3)=3$ is a supplied selection rule, definitional at the
+    level of O21 (\sproved{} for the adjoint dimension of the supplied carrier; threshold and
+    bridges: \sopen).
 
     \textbf{O24}~\cite{Beau2026a28}: Capstone of the fibre-level construction.
     The Verticality Lemma (``$\ker\Pi$ is free, $\mathrm{Im}\,\Pi$ is constrained'') closes the
@@ -737,7 +744,9 @@ A Structural Roadmap and Paper Inventory}
     the O14 correction being a small-$q$ device that overcorrects at large $q$.
     Part~B: formal effective-dimension computation of O26 Criterion~5.4 in
     $\mathrm{End}(H_{\mathrm{eff}})$, $H_{\mathrm{eff}} = \mathbb{C}^3$
-    ($\mathrm{HEFF\_DIM} = 3$, consistent with $\Sigma_c(n_3) = 3$ from O23).
+    ($\mathrm{HEFF\_DIM} = 3$, implementing the supplied selection rule $\Sigma_c(n_3) = 3$; the
+    retained dimension is fixed in advance, so these ranks characterise the truncated carrier,
+    not a measured admissible rank).
     The covariance $\mathcal{C}_c$ has $1\%$ threshold rank $r_{\mathrm{eff}}^{1\%} = 3$ for every
     conjugate pair and every $q \in \{61, 101, 151\}$ (100\% of pairs), with invariant resolved
     spectrum $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$.
@@ -1120,16 +1129,20 @@ A Structural Roadmap and Paper Inventory}
     W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
     observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved{}).
-    After W1, the open hypotheses of the former Q5a framework reduce to three: [H1], [H-E1],
-    and [C].
-    Q5a-O2~\cite{Beau2026q5ao2} subsequently proves that [H1] is not needed in full generality on the admissible sector,
-    and closes [H-E1] and [C] via spectral atomicity.
-    H2~\cite{Beau2026h2} proves the last open hypothesis, [H2] (strong convergence of the rescaled
+    After W1, the open hypotheses of the former Q5a framework are [H1], [H-E1], [C], and [H2].
+    Q5a-O2~\cite{Beau2026q5ao2} establishes the pure-Fourier-mode structure of the
+    pre-saturation pipeline, the truncation status of its three-coordinate reduction (no rank
+    is measurable from it), and an $O(q^{-2})$ upper bound on the admissibility form that rules
+    out the $q^{-1}$ coercivity scale; [H-E1] and [C] are therefore not closed by a finite-rank
+    route, and their disposition is the one fixed by Q5a version 3.0: the canonical filtration
+    is a growing Fourier window of dimension $\min(2n+1,q)$ on which the published form has
+    zero-form Mosco limit.
+    H2~\cite{Beau2026h2} proves [H2] (strong convergence of the rescaled
     Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$), via a quantitative
     Poisson aliasing lemma and a discrete Sobolev identity (\sproved{}).
-    All hypotheses of the former Q5a convergence framework are thus verified on the admissible
-    sector; the framework itself is withdrawn in Q5a version 3.0, and the chain's residual
-    conditionality is the spatial limit hypothesis [H-L].
+    The framework itself is withdrawn in Q5a version 3.0, and the chain's residual
+    conditionality includes the spatial limit hypothesis [H-L] together with the open
+    former hypotheses [H1], [H-E1], and [C] in any non-zero-form reading.
     \textbf{Q11}~\cite{Beau2026q11}: Temporal Casimir rigidity closes Q5b open problem~O3
     (identification of $A_\tau$ from admissibility data) (\sstruct).
     The cascade increment operator internalises no new irreducible representation
@@ -1291,7 +1304,8 @@ A Structural Roadmap and Paper Inventory}
     structure; the $\gamma_5$-weighted $a_4$ Seeley--DeWitt coefficient then imposes
     anomaly-cancellation trace constraints on the hypercharge weights, making hypercharge
     a spectral coherence datum rather than a free parameter (\sstruct).
-    (iii)~The saturation invariant $\sigma_c(n_3) = 3$ admits a spinorial multiplicity reading,
+    (iii)~The supplied saturation rule $\sigma_c(n_3) = 3$ (a selection rule, not a derived
+    constant) admits a spinorial multiplicity reading,
     distinct from its geometric reading as three spatial directions, yielding a gauge-singlet
     three-generation factor
     $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\SU(2)} \oplus Y)$ (\sstruct).
@@ -1300,7 +1314,7 @@ A Structural Roadmap and Paper Inventory}
     ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35}).
     Beyond these three theorems, Q14~\S6 establishes a qualitative mechanism for the
     inter-generation splitting (a diagnostic model, not a fourth theorem).
-    Identifying the rank-three admissible sector with $\mathrm{Sym}^2(V)$ in the $\mathrm{End}$
+    Identifying the supplied rank-three admissible sector with $\mathrm{Sym}^2(V)$ in the $\mathrm{End}$
     reading of O29~\cite{Beau2026a33} and O30~\cite{Beau2026a34}, a static $J_\Pi$-real,
     weight-preserving restriction of $E_\Pi^2$ has a degenerate outer pair (static obstruction),
     while the oriented cascade generator $\partial_\tau$ of Q11~\cite{Beau2026q11} carries a
@@ -1730,7 +1744,7 @@ A Structural Roadmap and Paper Inventory}
     It identifies the admissible internal symmetry group
     $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ as a forced output of the admissibility
     structure of $\Pi$, organising the $\mathrm{U}(1)$ phase-fibre sector (Hopf fibration),
-    the $\SU(2)$ quaternionic sector (O27 rigidity), and the $\SU(3)$ colour-triplet sector
+    the $\SU(2)$ quaternionic sector (O27 rigidity, conditional on the supplied spinor carrier), and the $\SU(3)$ colour-triplet sector
     (O31--O32 co-admissibility). The note covers gauge group identification only; the
     derivation of Yang--Mills dynamics belongs to the gauge--gravity spectral stratification
     sub-programme.
@@ -1788,16 +1802,18 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{ENT-E2}~\cite{Beau2026ent2}: separates two genuinely distinct entanglement entropies
     that ENT-Note and ENT-E1 establish on two different projections of the conjugate Weil pair.
-    The \emph{admissible pair entropy} lives on the rank-3 admissible projection $\Pi_q$: the
-    mean-zero lemma of \emph{Q5a-O2}~\cite{Beau2026q5ao2} unconditionally removes the constant
-    mode, but spectral atomicity's general analytical proof --- fixing
-    $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$ and hence the
-    two-dimensional Born--Infeld parity pair $\{e_{\xi_c}, e_{q-\xi_c}\}$ identified with the
-    spin-$\tfrac12$ representation --- rests on \emph{O23}'s~\cite{Beau2026a27} own stated
-    hypothesis (H-rank): the absence of additional effective symmetries beyond Born--Infeld
-    parity, within the scope of \emph{O18}~\cite{Beau2026a22}; the singlet identification of
+    The \emph{admissible pair entropy} lives on a hypothesised carrier: the explicit hypothesis
+    (H-carrier), stated by E2 itself and derived nowhere, fixes the admissible sector of each
+    factor as the atomic Fourier triple
+    $\mathrm{ran}(\Pi_q^{(c)}) = \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$, whose parity-pair
+    component $\{e_{\xi_c}, e_{q-\xi_c}\}$ is identified with the spin-$\tfrac12$ representation.
+    The hypothesis is motivated by the pure-mode structure of the pre-saturation pipeline
+    (\emph{Q5a-O2}~\cite{Beau2026q5ao2}); its rank-three input is the supplied selection rule of
+    \emph{O23}~\cite{Beau2026a27}, within the open fibre-identification problem of
+    \emph{O18}~\cite{Beau2026a22}; no mean-zero theorem removes the zero mode (the passage to
+    the pair sector is part of the sector definition); the singlet identification of
     \emph{Q3}~\cite{Beau2026q3} then gives $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$ for general
-    canonical blocks, conditional on both (H-rank) and Q3's explicit, undemonstrated
+    canonical blocks, conditional on both (H-carrier) and Q3's explicit, undemonstrated
     diagonal-invariance hypothesis (H-inv) (\sstruct). Q1 does not establish a singlet correlator
     or a Tsirelson bound. The \emph{full residual-rank entropy}
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ lives on the full Gram--Schmidt basis (rank
@@ -2329,7 +2345,7 @@ A Structural Roadmap and Paper Inventory}
 
           % ── Status annotations ───────────────────────────────
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
-            {spectral atomicity};
+            {pure modes; truncation status};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
             {coercivity $\Rightarrow A_H\!>\!0$};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
@@ -2341,8 +2357,10 @@ A Structural Roadmap and Paper Inventory}
       }
       \caption{Geometric emergence sub-programme: logical chain from Q5a to the effective
       Lorentzian co-metric.
-      \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{}): spectral atomicity of $\mathrm{ran}(\Pi_q)$;
-      proves [H-$\mathcal{E}$1] and [C]; closes all Q5a hypotheses except [H2].
+      \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{} for its stated results): pure Fourier
+      modes of the pre-saturation pipeline; truncation status of the three-coordinate reduction;
+      rules out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C] are not closed by a
+      finite-rank route (zero-form limit on the canonical filtration, Q5a version 3.0).
       \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
         independently of the bridge.
         \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
@@ -2524,9 +2542,12 @@ A Structural Roadmap and Paper Inventory}
       BI projection locking forces the O21-defined $n_3^{\mathrm{obs}}$ onto a BFS shell
       within the stated model; this does not make that rank amplitude-invariant &
       \sproved\ /\ \sopen \\[3pt]
-      O23 & Quaternionic minimality & \cite{Beau2026a27} &
-      $\Sigma_c(n_3)=3$ from quaternionic maximality of neutral generators &
-      \sproved \\[3pt]
+      O23 & Conditional adjoint dimension & \cite{Beau2026a27} &
+      For a supplied irreducible $\mathbb{C}^2$ carrier, the traceless neutral sector is
+      $\mathfrak{su}(2)\cong\mathrm{Im}\,\mathbb{H}$, dimension three; $Q_8$'s two-axis neutral
+      generating set rules out generator-axis counting; carrier selection and the
+      $\Sigma_c$-identification are open, so $\Sigma_c(n_3)=3$ is a supplied selection rule &
+      \sproved\ /\ \sopen \\[3pt]
       O24 & Observable rank rigidity & \cite{Beau2026a28} &
       Verticality Lemma develops $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ under the stated
       fibre hypotheses; no first-principles fibre identification and no native derivation of
@@ -2644,14 +2665,13 @@ A Structural Roadmap and Paper Inventory}
       Former Mosco derivation of $L_\Pi=-A\partial_x^2$ (v$\le$2.1) withdrawn; spatial limit
       now hypothesis [H-L]; Q5 open &
       \sproved{} (negative); \sopen{} (continuum) \\[3pt]
-      Q5a-O2 & Spectral atomicity \& Mosco closure & \cite{Beau2026q5ao2} &
-      Admissible sector spectrally atomic: $\mathrm{ran}(\Pi_q^{(c)}) =
-      \mathrm{span}\{e_0, e_{\xi_c}, e_{q-\xi_c}\}$, $\xi_c/q \to \omega_c \neq 0$.
-      Proves [H-$\mathcal{E}$1'] (scaled coercivity, $\beta=1$ optimal) and [C]
-      (Mosco compactness via Bolzano--Weierstrass in $\mathbb{C}^2$, no Nash inequality needed).
-      Numerical confirmation $K_q=1$ at machine precision for $q \in \{29,61,101,151\}$;
-      closures apply to the withdrawn Q5a framework [H-F] &
-      \sproved \\[3pt]
+      Q5a-O2 & Pipeline Fourier structure \& truncation status & \cite{Beau2026q5ao2} &
+      Pre-saturation fingerprints and selected GS vectors are pure Fourier modes; realised
+      frequencies are $o(q)$; the three-coordinate reduction is a truncation from which no rank
+      is measurable ($\mathrm{HEFF\_DIM}=3$ fixed in advance); the form is $O(q^{-2})$ on
+      normalised modes, ruling out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C]
+      are not closed by a finite-rank route (zero-form limit on the canonical filtration) &
+      \sproved\ /\ \sopen \\[3pt]
       Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
       BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime;
       $g^{\mu\nu}=2\,\eta^{\mu\nu}$ determined (Q9, Q10, Q11).
@@ -2697,8 +2717,8 @@ A Structural Roadmap and Paper Inventory}
       W1 & [H-w] proved & \cite{Beau2026w1} &
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
       ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$;
-      after W1 + Q5a-O2~\cite{Beau2026q5ao2}, open hypotheses of the former Q5a framework
-      reduced to [H2] only &
+      after W1, the open hypotheses of the former Q5a framework remain [H1], [H-$\mathcal{E}$1],
+      [C] (not closed by Q5a-O2's finite-rank route~\cite{Beau2026q5ao2}), and [H2] &
       \sproved \\[3pt]
       H2 & [H2] proved & \cite{Beau2026h2} &
       Strong convergence $\hat{X}_q \to x$, $\hat{P}_q \to -i\partial_x$ on
@@ -2734,7 +2754,7 @@ A Structural Roadmap and Paper Inventory}
       data (no independent fermionic weak doublet: NSR-Note);
       projected Dirac endomorphism $E_\Pi$ enforces $V{-}A$ chirality via the spinorial BI parity lift (proved);
       $\gamma_5$-weighted $a_4$ fixes hypercharge by anomaly cancellation;
-      $\sigma_c(n_3) = 3$ yields three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$;
+      the supplied saturation rule $\sigma_c(n_3) = 3$ yields the three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$;
       quark colour sector unconditional at pointwise level ($\Hcolor_{\mathrm{pointwise}}$ proved) &
       \sstruct \\[3pt]
       PRS & Schur form of $E_\Pi$ + localisation of $u$ & \cite{Beau2026prs} &
@@ -2962,9 +2982,9 @@ A Structural Roadmap and Paper Inventory}
       (literal Schmidt pairing for independently sampled canonical O25 blocks: open) &
       \sproved\ /\ \sopen \\[3pt]
       ENT-E2 & Two entanglement entropies of the conjugate pair & \cite{Beau2026ent2} &
-      Separates the admissible pair entropy $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$ on the rank-3
-      admissible projection (mean-zero lemma unconditional via Q5a-O2; atomicity and the singlet
-      identification conditional on (H-rank), O23's own stated hypothesis, and Q3's (H-inv), for
+      Separates the admissible pair entropy $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$ on a
+      hypothesised atomic carrier (the explicit hypothesis (H-carrier), stated by E2 itself and
+      derived nowhere; the singlet identification further conditional on Q3's (H-inv), for
       general canonical blocks) from the full residual-rank entropy
       $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ on the full Gram--Schmidt basis
       (unconditional for matched blocks by ENT-E1, conditional on
@@ -3023,7 +3043,7 @@ A Structural Roadmap and Paper Inventory}
       \ssynth \\[3pt]
       GS\-Note & The gauge structure sub-programme (Note~3) & \cite{Beau2026gsnote} &
       Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12, in their gauge-group
-      identification aspect, into the $\mathrm{U}(1)$ phase-fibre, $\SU(2)$ quaternionic and $\SU(3)$
+      identification aspect, into the $\mathrm{U}(1)$ phase-fibre, $\SU(2)$ quaternionic (conditional on the supplied spinor carrier) and $\SU(3)$
       colour-triplet sectors of $G_\Pi$. Gauge group identification only; Yang--Mills dynamics belongs to
       Note~8. Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
@@ -3128,11 +3148,11 @@ A Structural Roadmap and Paper Inventory}
 
   \paragraph{$V-A$ chiral structure and fermionic matter (Q14).}
     Q14~\cite{Beau2026q14} addresses the formal derivation of the $V{-}A$ coupling:
-    the projected Dirac endomorphism $E_\Pi$, via the spinorial lift of BI parity (now proved),
+    the projected Dirac endomorphism $E_\Pi$, via the spinorial lift of BI parity (proved),
     is left-admissible and enforces chiral selection.
     Hypercharge is not a free parameter but is fixed by anomaly-cancellation constraints
     on the $\gamma_5$-weighted $a_4$ Seeley--DeWitt coefficient.
-    The three-generation multiplicity follows from $\sigma_c(n_3) = 3$.
+    The three-generation multiplicity follows from the supplied saturation rule $\sigma_c(n_3) = 3$.
     A qualitative mechanism for the inter-generation splitting is now identified (Q14~\S6:
     static obstruction, oriented $J_\Pi$-odd lift, non-zero cascade $J_3$ projection).
     Residual open points: the amplitude of the splitting (the cascade normalisation
@@ -3325,9 +3345,9 @@ A Structural Roadmap and Paper Inventory}
   induces a spinor bundle $S_\Pi$ reproducing the $\SU(2)_L \times U(1)_Y$ gauge-sector
   data (the independent fermionic weak doublet is a distinct object, excluded at the
   operator and history strata~\cite{Beau2026nsr}); the projected Dirac
-  endomorphism $E_\Pi$ enforces $V{-}A$ chirality via the spinorial lift of BI parity (now proved);
+  endomorphism $E_\Pi$ enforces $V{-}A$ chirality via the spinorial lift of BI parity (proved);
   hypercharge is fixed by anomaly-cancellation constraints on the $\gamma_5$-weighted $a_4$
-  coefficient; and the saturation invariant $\sigma_c(n_3) = 3$ yields a gauge-singlet
+  coefficient; and the supplied saturation rule $\sigma_c(n_3) = 3$ yields a gauge-singlet
   three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$.
   A qualitative mechanism for the inter-generation splitting is identified in Q14~\S6 (a static
   $J_\Pi$-protected degeneracy lifted by the oriented cascade generator), with its amplitude
@@ -3342,15 +3362,14 @@ A Structural Roadmap and Paper Inventory}
   synthesis, not a theorem: its force rests on the proved and structural results catalogued above,
   and specifically on the qualitative separation of spectral orders, not on any quantitative claim
   about the couplings, which are renormalized matching data throughout.
-  Q5a v2.0 establishes that [H1] is not needed in full generality on the admissible sector.
-  Q5a-O2~\cite{Beau2026q5ao2} proves spectral atomicity of the admissible sector and closes [H-$\mathcal{E}$1] and [C]:
-  each conjugate pair contributes exactly three pure Fourier modes, coercivity at the optimal
-  diffusive scale follows from the non-zero limiting frequency, and Mosco compactness reduces to
-  Bolzano--Weierstrass in $\mathbb{C}^2$.
-  The H2 paper proves the last open hypothesis [H2] (strong convergence of the rescaled Weil
+  Q5a-O2~\cite{Beau2026q5ao2} establishes the pure-Fourier-mode structure of the pre-saturation
+  pipeline, the truncation status of its three-coordinate reduction (no rank measurable from
+  it), and the $O(q^{-2})$ upper bound ruling out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1]
+  and [C] are not closed by a finite-rank route, their disposition being the zero-form Mosco
+  limit on the canonical Fourier-window filtration of Q5a version 3.0.
+  The H2 paper proves [H2] (strong convergence of the rescaled Weil
   generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$) via a quantitative Poisson
-  aliasing lemma and a discrete Sobolev identity; all hypotheses of Q5a Theorem~7.1 are
-  verified on the admissible sector, and the large-$q$ convergence theorem holds unconditionally.
+  aliasing lemma and a discrete Sobolev identity.
 
   For an external reader, three entry sequences are suggested.
   For the quantum structure thread:
