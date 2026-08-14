@@ -654,12 +654,18 @@ A Structural Roadmap and Paper Inventory}
     Scoped to this paper's own toy model; not shown to extend to the real O12/O13 pipeline
     (\sproved{} for the block-independence result within the model).
 
-    \textbf{O18}~\cite{Beau2026a22}: Born--Infeld parity and an open fibre bridge.
-    The evenness $S_{\mathrm{BI}}[-\chi]=S_{\mathrm{BI}}[\chi]$ is elementary, but it does not
-    imply $\Pi(\chi)=\Pi(-\chi)$.  The paper's perturbative indiscernibility proof compares
-    opposite perturbations rather than the same perturbation, and no map deriving
-    $\chi\mapsto-\chi$ as $c\mapsto q-c$ is supplied
-    (\sproved{} for action parity; fibre and Weil identifications: \sopen).
+    \textbf{O18}~\cite{Beau2026a22}: Born--Infeld parity covariance and the open fibre
+    problem.
+    The action is even, and parity acts on the response family with the character
+    $(-1)^{k}$ of the derivative order: even-order responses are preserved under the
+    transported-probe comparison, odd-order responses reverse sign (Prop.~2.6).
+    An even countermodel refutes fixed-probe indiscernibility of $\chi$ and $-\chi$
+    (Prop.~2.4), so evenness does not imply $\Pi(\chi)=\Pi(-\chi)$; the fibre
+    identification is a typed open classification problem (Problem~2.8), with (H-rank)
+    one clause of it, and the Weil identification $\chi\mapsto-\chi$ as $c\mapsto q-c$
+    is an open bridge
+    (\sproved{} for action parity and response covariance; fibre and Weil
+    identifications: \sopen).
 
     \textbf{O19}~\cite{Beau2026a23}: Proposed canonical normalisation.
     Generic Gram--Schmidt phase invariance and the rank identity are valid, but the factor
@@ -814,7 +820,10 @@ A Structural Roadmap and Paper Inventory}
     $H_{\mathrm{eff}}$, and $r_{\mathrm{eff}} = 3$ is the hard $6 \to 3$ collapse of the Veronese (squaring)
     image: the three constraint forms span $\mathfrak{so}(3)$ and the action on $H_{\mathrm{eff}} = \mathbb{C}^3$
     is irreducible (one-dimensional Schur commutant).
-    Thus $r_{\mathrm{eff}} = 3$ identifies the irreducible adjoint carrier
+    Thus, within the supplied three-coordinate carrier ($H_{\mathrm{eff}} = \mathbb{C}^3$
+    is the $\mathrm{HEFF\_DIM}=3$ truncation, whose ambient rank is not measurable from
+    these coordinates), $r_{\mathrm{eff}} = 3$ characterises the truncated data as the
+    irreducible adjoint module
     $H_{\mathrm{eff}} \simeq \mathfrak{su}(2) \cong \mathrm{Sym}^2(V_\rho)$, the spin-$1$ (vector)
     representation, consistent with Q7~\cite{Beau2026q7}.
     Numerically: $r_{\mathrm{eff}} = 3$ universally for $q = 61$ (30/30 pairs) and
@@ -1099,8 +1108,10 @@ A Structural Roadmap and Paper Inventory}
     \xrightarrow{\text{Gravity}} G_{\mu\nu}$
     (\sstruct, conditional on [H-L]).
 
-    \textbf{Q7}~\cite{Beau2026q7}: Bridge candidate between the admissible dimension
-    $\dim H_{\mathrm{eff}} = 3$ (O23--O29) and the three spatial dimensions of Q5b.
+    \textbf{Q7}~\cite{Beau2026q7}: Bridge candidate between the supplied admissible
+    dimension $\dim H_{\mathrm{eff}} = 3$ (the O23 selection rule, implemented as
+    $\mathrm{HEFF\_DIM}=3$ in the O25--O29 pipeline) and the three spatial dimensions of
+    Q5b.
     Proves $[\mathrm{su}(2)] \not\cong \mathrm{heis}_3$ (the bridge cannot be a Lie algebra
     isomorphism) and identifies $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$ as the spin-1
     representation of $\mathrm{su}(2)$ (O29).
@@ -2666,10 +2677,12 @@ A Structural Roadmap and Paper Inventory}
       now hypothesis [H-L]; Q5 open &
       \sproved{} (negative); \sopen{} (continuum) \\[3pt]
       Q5a-O2 & Pipeline Fourier structure \& truncation status & \cite{Beau2026q5ao2} &
-      Pre-saturation fingerprints and selected GS vectors are pure Fourier modes; realised
-      frequencies are $o(q)$; the three-coordinate reduction is a truncation from which no rank
-      is measurable ($\mathrm{HEFF\_DIM}=3$ fixed in advance); the form is $O(q^{-2})$ on
-      normalised modes, ruling out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C]
+      Pre-saturation fingerprints and selected GS vectors are pure Fourier modes;
+      displacements are $o(q)$, frequencies $o(q)$ for fixed blocks but macroscopic per-$q$
+      under the implemented sampling (no $q$-independent limit); the three-coordinate
+      reduction is a truncation from which no rank is measurable ($\mathrm{HEFF\_DIM}=3$
+      fixed in advance); the form is $O(q^{-2})$ on the whole unit sphere (normalisation
+      fact), ruling out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C]
       are not closed by a finite-rank route (zero-form limit on the canonical filtration) &
       \sproved\ /\ \sopen \\[3pt]
       Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
