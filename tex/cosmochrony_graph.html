@@ -1018,18 +1018,18 @@
       desc: "Dictionary: Weil blocks ↔ rank-1 matrices in M₂(ℂ). Connects Heis₃ fibre to 2I ⊂ SU(2); no rate equation follows."
     },
     {
-      id: "O27", lbl: "O27", s: "proved", b: "II", key: "Beau2026a31",
+      id: "O27", lbl: "O27", s: "structural", b: "II", key: "Beau2026a31",
       url: BASE + "spectral/program/o27",
       tags: ["mass", "QM"],
-      title: "O27 — Quaternionic Rigidity",
-      desc: "Every admissible Φ_{q,ρ} satisfying three structural constraints factors through su(2), giving δ_pair a representation carrier but not a derived β*."
+      title: "O27 — Admissible Morphisms and the Open Vector Lift",
+      desc: "Linear factorisation through the admissible quotient is separated from equivariance. Under the supplied O23 carrier and an explicit identification, the canonical action su(2)→End(V_ρ) has an equivariant intertwiner unique only up to a scalar. No non-zero su(2)-equivariant map 3_ad→2_fund exists; the vector lift required by O26 Hypothesis 4.4 remains open."
     },
     {
       id: "O28", lbl: "O28", s: "structural", b: "II", key: "Beau2026a32",
       url: BASE + "spectral/program/o28",
       tags: ["mass", "QM"],
       title: "O28 — Window Calibration & r_eff",
-      desc: "Part A: out of sample to q=601 the calibrated linear extrapolation fails (overpredicts up to +88%); the exact law is the CC-Note interval theorem, of which the measured depths are the transitional-regime data. Part B: 1% threshold rank r_eff=3 in End(H_eff), resolved spectrum [1:½:½] invariant across all pairs and q∈{61,101,151}. Gap from d_ρ²=4 reflects H_eff≠V_ρ; analysis completed in O29."
+      desc: "Part A: out of sample to q=601 the calibrated linear extrapolation fails (overpredicts up to +88%); the exact law is the CC-Note interval theorem, of which the measured depths are transitional-regime data. Part B: a 1% threshold gives numerical rank r_eff=3 in End(H_eff), with the reported spectrum across the tested pairs. O29 analyses the measured trajectory span but does not identify a fundamental doublet; O30 is a distinct conditional 3×3 model."
     },
     {
       id: "CCNote", lbl: "CC-Note", s: "proved", b: "II", key: "Beau2026ccnote",
@@ -1049,15 +1049,15 @@
       id: "O29", lbl: "O29", s: "structural", b: "II", key: "Beau2026a33",
       url: BASE + "spectral/program/o29",
       tags: ["mass", "QM"],
-      title: "O29 — Carrier Identification via the Veronese Collapse",
-      desc: "Anti-linear BI parity makes the conjugate-pair target d_ρ²=4 inaccessible; r_eff=3 is the invariant of the irreducible adjoint (spin-1) carrier H_eff≃Sym²(V_ρ) — a hard 6→3 Veronese collapse whose 3 constraint forms span so(3) (Schur commutant=1, irreducible). The spin-½ space V_ρ (d_ρ=2) is the Veronese square-root coordinate, recovered up to sign, not the rank measured by Test 4. Confirmed for q∈{61,101,151,211}."
+      title: "O29 — Veronese Collapse and the Measured Trajectory Span",
+      desc: "The data exhibit a hard 6→3 collapse in the measured span W_adm⊂H_eff≃ℂ³; the constraint forms generate so(3) and act irreducibly there. The leading two PCA directions define an auxiliary truncation U_c^(2), not the fundamental doublet V_ρ. The measurements do not determine d_ρ=2, d_ρ²=4 or a Veronese square root."
     },
     {
-      id: "O30", lbl: "O30", s: "proved", b: "II", key: "Beau2026a34",
+      id: "O30", lbl: "O30", s: "structural", b: "II", key: "Beau2026a34",
       url: ZEN + "20014707",
       tags: ["mass", "QM"],
-      title: "O30 — Eigenvalue Ratio λ₁/λ₂ = 2 (Analytical Derivation)",
-      desc: "First analytical derivation of the invariant [1:½:½] covariance spectrum. BI parity anti-linearity ρ_{q-c}=ρ̄_c forces equatorial constraint |α_j|=|β_j| on admissible fibre. Central component √2·α_j·β_j is phase-independent (phases cancel exactly). Under single-harmonic phase decorrelation ⟨e^{2iφ_j}⟩=0, covariance diagonalises: C_c=⟨r⁴⟩·diag(¼,½,¼), ratio [1:½:½] exactly. Factor 2 is purely structural: squared symmetric-tensor normalisation of Carnot-degree-2 generator Z=[X,Y]. Correction O(q^{-1/2}) from U1. Closes O28–O29 §7.4."
+      title: "O30 — Conditional 3×3 Model on Sym²(V_ρ)",
+      desc: "A model distinct from O28's measured covariance. Hypotheses (H0)–(H3) place the data on a fixed symmetric square and give β_j=ε_j·conj(α_j), ε_j=±1. The exact diagonal spectrum requires both weighted cancellations ⟨εr⁴e^{2iφ}⟩=0 and ⟨r⁴e^{4iφ}⟩=0. The factor two in the diagonal entries is the symmetric-tensor normalisation; O30 does not derive the O28 spectrum."
     },
     {
       id: "O31", lbl: "O31", s: "open", b: "II", key: "Beau2026a35",
@@ -1067,19 +1067,11 @@
       desc: "Version 2.0 withdraws the proposed individual-profile co-admissibility, q≡1 (mod 3) arithmetic criterion, metaplectic step, Δ(27) proposition, rank-eight test, SU(3) uniqueness and every gauge-group derivation. Counterexamples: SO(3)⊂SU(3) refutes uniqueness; the diagonal torus T² satisfies the stated constraints reducibly; {1,2,q−3} is admissible for every prime q≥7. Remaining scalar, arithmetic and discrete-group material is under re-audit. O31 supplies no positive gauge-group result."
     },
     {
-      id: "O32", lbl: "O32", s: "structural", b: "II", key: "Beau2026a36",
+      id: "O32", lbl: "O32", s: "open", b: "II", key: "Beau2026a36",
       url: ZEN + "20259893",
       tags: ["SM", "emer"],
-      title: "O32 — Colour Triplet Co-admissibility: Numerical Test of [H-color]",
-      desc:
-        "[H-color] numerically confirmed for q∈{151,211}; H_color_eff proved analytically in expectation (Prop. avg-hcolor, E[σ_c]=E[σ_ωc]+O(q⁻¹)). Pointwise proof open. " +
-        "q=61 (M=50): normalised inter-triplet variance ratio R=1.69 ≤ 3 — passes. " +
-        "q=151 (M=50): R_var=7.1×10⁻⁴, factor 5 below q=61; δ_tri≈3δ_c at sub-percent level; " +
-        "all C_color rank 1 (profiles co-linear). " +
-        "Power-law R_var ∝ q^{−1.75} consistent with asymptotic co-admissibility. " +
-        "q=211: R_var=1.60×10⁻³, 4/4 triplets, R=1.0. " +
-        "q=307: R_var=1.17×10⁻³, 4/4 triplets, R=0.7, δ_tri=12.355≈3δ_c (1.5% deviation). " +
-        "Four-prime dataset q∈{61,151,211,307} complete (ctrl_ref=1.657×10⁻³, criterion R≤3)."
+      title: "O32 — Colour-Triplet Numerical Measurements, Interpretation Open",
+      desc: "Retains the finite-q numerical outputs for q∈{61,151,211,307}: the declared ratios, decay fits and rank-one covariance measurements. O31 version 2.0 withdraws their former pointwise co-admissibility and SU(3) interpretation. Threshold passage, factor-of-three fits and rank one do not identify a colour representation or gauge group."
     },
     {
       id: "O33", lbl: "O33", s: "proved", b: "II", key: "Beau2026a37",
@@ -1691,8 +1683,7 @@
     { f: "ENI", t: "FibreErase", sp: 1 }, { f: "Found", t: "FibreErase" }, { f: "O24", t: "FibreErase" }, { f: "O32", t: "FibreErase" },
     { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
-    { f: "O29", t: "O30", sp: 1 },
-    { f: "O30", t: "O31", sp: 1 }, { f: "O31", t: "O32" },
+    { f: "O31", t: "O32" },
     { f: "O12", t: "O33", sp: 1 }, { f: "PTO", t: "O33" },
     { f: "O25", t: "CCNote", sp: 1 }, { f: "O28", t: "CCNote", sp: 1 },
     { f: "CCNote", t: "O28" }, { f: "CCNote", t: "Q5a" },
