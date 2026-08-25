@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.14}
+\date{2026\\[2pt]\small Version 2.15}
 
 \begin{document}
 
@@ -82,9 +82,8 @@ A Structural Roadmap and Paper Inventory}
     $\delta_{\mathrm{pair}} \to \beta^*$ has no derived carrier on the measurement substrate;
     its numerical agreement with the charged-lepton hierarchy remains a phenomenological
     coincidence check rather than a structural derivation.
-    The same branch identifies the Standard Model gauge group
-    $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$ (unconditional at the pointwise
-    level on the standard graph).
+    The same branch's former identification of the Standard Model gauge group has been
+    withdrawn in O31 version~2.0; the colour factor and the complete gauge group are open.
     Branch~III (Q-series and companion papers) develops spacetime geometry and gauge dynamics
     from the Branch~I axioms and supplied Branch~II spectral data, and states a universal singlet
     correlator conditional on an explicit, undemonstrated invariance hypothesis (paper Q3; the
@@ -877,65 +876,21 @@ A Structural Roadmap and Paper Inventory}
     The correction to the equatorial condition is $O(q^{-1/2})$ from U1~\cite{Beau2026u1}.
     This closes the open direction of O28--O29 \S7.4.
 
-    \textbf{O31}~\cite{Beau2026a35}: Structural framework for the SU(3) identification (\sstruct).
-    Shows the O23 Hurwitz argument cannot directly produce $d_\rho = 3$ (proved).
-    Defines the \emph{colour triplet} $\{c_1,c_2,c_3\} \subset (\mathbb{Z}/q\mathbb{Z})^*$
-    with $c_1+c_2+c_3 \equiv 0 \pmod{q}$; such triplets exist iff $q \equiv 1 \pmod{3}$ (proved).
-    The metaplectic automorphism $\phi_\omega(a,b,z) = (\omega a, \omega^{-1}b, z)$
-    forces $\sigma_c(n) = \sigma_{\omega c}(n)$ for all shells on the colour-adapted Cayley
-    graph $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$ (proved, Theorem~4.4).
-    The symmetry group of the co-admissible triplet is exactly $\SU(3)$, with
-    $\mathrm{U}(3)$, $\mathrm{SO}(3)$, $\mathrm{U}(2)$, $G_2$ excluded (proved).
-    The Standard Model gauge group $G_{\mathrm{SM}} = \SU(3)\times\SU(2)\times\mathrm{U}(1)$
-    follows as a composite of three admissibility fixed points. In v1.5 the identification is
-    made \emph{unconditional} for the standard graph: each Born--Infeld fingerprint vector is a
-    single additive character of frequency $B = c_1 b_1 + c_2 b_2 + c_3 b_3$
-    (Lemma~single-frequency, proved), so the capacity observable $\sigma_c(n)$ counts distinct
-    frequencies and the orbit dilation $B \mapsto \omega B$ preserves it exactly
-    (Proposition~hcolor-frequency, proved). This establishes [H-color] pointwise on the standard
-    graph at finite~$q$, so $\SU(3)$ and~$G_{\mathrm{SM}}$ hold unconditionally for the standard
-    graph.
-    U1 universality implies $|\sigma_c - \sigma_{\omega c}| = O(q^{-1/2})$ for any generating
-    set, so the identification is generating-set-independent in the large-$q$ limit.
-    The generating-set independence operates at two levels (\emph{two-tier result}):
-    (i)~exactly, for the colour-adapted graph $\mathrm{Cay}(G_q, \mathcal{S}_q^{(3)})$
-    (metaplectic argument, Theorem~4.4);
-    (ii)~up to $O(q^{-1/2})$, for \emph{any} generating set including $\mathcal{S}_q$
-    (U1 universality, Proposition~4.7).
-    Proposition~4.6 shows that $\mathcal{S}_q^{(3)}$ is the \emph{canonical} colour-sector
-    generating set: the minimal extension of $\mathcal{S}_q$ closed under $\phi_\omega$,
-    in exact analogy with $\mathcal{S}_q$ being canonical for the pair sector under $\phi_{-1}$.
-    Additionally, Theorem~5.3 (\emph{generator-twist isospectrality}) proves that the
-    Weil-sector Markov operator is isospectral under the generator twist
-    $\mathcal{S}_q \mapsto \phi_\omega(\mathcal{S}_q)$:
-    $\operatorname{spec}(\rho_c(P_{\mathcal{S}_q})) = \operatorname{spec}(\rho_c(P_{\phi_\omega(\mathcal{S}_q)}))$
-    for all $c \in (\mathbb{Z}/q\mathbb{Z})^*$, confirmed to machine precision
-    ($|\Delta\lambda| < 10^{-12}$) for all $q \equiv 1\pmod{3}$, $q \leq 157$.
-    However, this isospectrality does \emph{not} extend across distinct central characters:
-    $\operatorname{spec}(\rho_c(P_{\mathcal{S}_q})) \neq
-    \operatorname{spec}(\rho_{\omega c}(P_{\mathcal{S}_q}))$ in general
-    ($\max|\Delta\lambda| \approx 0.3$--$0.4$), establishing that [H-color] on the standard graph
-    cannot be proved through global Markov-spectrum equality; the BFS capacity is a strictly
-    finer observable.
-    The correct algebraic mechanism is identified by two new results.
-    \emph{Intra-coset Vandermonde symmetry} (Lemma, proved):
-    the irreducibility of the Weil representation (Schur's lemma) forces the Heisenberg centre
-    to act as a scalar in each $\rho_{c_i}$, so every horizontal coset $(a,b)$ contributes
-    exactly one independent direction to each colour summand $V_{c_i}$;
-    the Vandermonde invertibility of the triplet phase matrix $(\lambda_j^k)_{j,k}$, with
-    $\lambda_j = e^{2\pi i c_j/q}$, then guarantees this, independently of any spectral property
-    of $\rho_c(P_{\mathcal{S}_q})$.
-    \emph{Colour sector rank equality} (Proposition, proved unconditionally):
-    $r_c(n) = r_{\omega c}(n) = r_{\omega^2 c}(n)$ for all BFS depths~$n$ and any seed,
-    unconditionally on the standard graph.
-    This proves [H-color] at the level of BFS sector ranks without reference to the global Markov
-    spectrum; v1.5 strengthens this to the full O12/O32 capacity functional $\sigma_c(n)$ via the
-    single-frequency BI fingerprint mechanism above. The O32 numerical campaign provides
-    independent confirmation across the four-prime dataset.
-    Section~6 provides the conceptual unification: $\mathrm{U}(1)$, $\SU(2)$, $\SU(3)$ arise
-    from BI-admissible fibre orbits of size~$1$, $2$, $3$ respectively (phase non-injectivity,
-    minimal correlated non-injectivity, relational correlated non-injectivity), with
-    non-factorisability (Foundation~M, Axiom~A3) as the uniform structural origin.
+    \textbf{O31}~\cite{Beau2026a35}: Withdrawal notice for unsupported colour-triplet
+    co-admissibility and gauge-group claims (\sopen).
+    Version~2.0 withdraws eight result families: uniqueness of $\SU(3)$; irreducibility of the
+    proposed fibre-preserving group; equality of the three individual capacity profiles; the
+    arithmetic criterion $q\equiv1\pmod3$ for triplet existence; the metaplectic step that changes
+    central character while using a centre-fixing automorphism; the $\Delta(27)$ spectral
+    proposition; the mistyped rank-eight test in $\operatorname{End}(\mathbb C^3)$; and every
+    derivation of a gauge factor or of the complete Standard Model gauge group.
+    The notice gives three explicit counterexamples: the proper irreducible subgroup
+    $\mathrm{SO}(3)\subset\SU(3)$ refutes uniqueness; the diagonal torus $T^2\subset\SU(3)$
+    satisfies the stated constraints while acting reducibly; and
+    $\{1,2,q-3\}$ is an admissible triplet for every prime $q\ge7$, refuting the arithmetic
+    criterion. The remaining scalar, arithmetic and discrete-group material is under re-audit.
+    O31 supplies no positive conclusion about $\SU(3)$, a gauge factor, or the Standard Model
+    gauge group.
     \textbf{O32}~\cite{Beau2026a36}: tests [H-color] numerically on
     $q\in\{61,151,211,307\}$ (test, $q\equiv 1\pmod{3}$) and $q\in\{29,101\}$ (controls).
     Noise floor $\mathtt{ctrl\_ref} = 1.657\times10^{-3}$.
@@ -946,14 +901,11 @@ A Structural Roadmap and Paper Inventory}
     Additionally proves analytically (Proposition~avg-hcolor) that
     $\mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1})$,
     establishing $\Hcolor_{\mathrm{eff}}$ (capacity-exponent equality) in the $q\to\infty$
-    limit. In v1.5, the companion result of O31 (single-frequency BI fingerprint) makes pointwise
-    [H-color] \emph{exact} on the standard graph at finite~$q$: the residual $R_{\mathrm{var}}$
-    is reinterpreted as the finite-sample footprint of independent auxiliary draws, with expected
-    $R_{\mathrm{var}} \propto q^{-1}$ scaling consistent with the observed factor~5 decrease
-    from $q=61$ to $q=151$.
-    Status: \sstruct{} ([H-color] numerically confirmed for all
-  $q\in\{61,151,211,307\}$; $\Hcolor_{\mathrm{eff}}$ analytically established; pointwise
-  [H-color] proved analytically via O31 v1.5).
+    limit. O31 version~2.0 withdraws the claimed pointwise proof and places the associated
+    scalar material under re-audit. The O32 numerical values remain reported measurements, but they
+    do not establish individual-profile co-admissibility or identify a gauge group.
+    Status: \textbf{numerical} for the reported measurements; their former O31-based structural interpretation
+    is withdrawn and under re-audit.
 
     \textbf{O33}~\cite{Beau2026a37}: arithmetic Mackey--Hecke structure of the O12
     three-character filtration (exact core).
@@ -1108,9 +1060,8 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q6a}~\cite{Beau2026q6a}: Gauge charges are the invariants of the projection-fibre
     equivalence classes.
     $\mathrm{U}(1)$ and $\SU(2)$ are identified as fixed points of the admissibility flow.
-    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ is derived as a composite (\sstruct; $\SU(3)$:
-    unconditional for the standard graph via the v1.5 single-frequency BI fingerprint mechanism,
-    see O31~\cite{Beau2026a35}).
+    Its former derivation of $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ used O31 and is
+    unsupported after the O31 withdrawal; the colour factor and complete group are open.
 
     \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
     $\Pi_q$; inherits Q5a hypotheses only ([H-lift] closed by Q9).
@@ -1185,10 +1136,8 @@ A Structural Roadmap and Paper Inventory}
     [H-L]} (Q5a version 3.0; Q5b version 2.0).
 
     \textbf{Q12}~\cite{Beau2026q12}: Yang--Mills dynamics from the vertical variation of
-    the projective spectral entropy (\sstruct, conditional on Q6a for the gauge group;
-    $\SU(3)$ sector unconditional at the pointwise level:
-    $[H\text{-color}]_{\mathrm{pointwise}}$ proved analytically
-    in~\cite{Beau2026a35}).
+    the projective spectral entropy (\sstruct, conditional on a supplied compact gauge group;
+    O31 no longer identifies its $\SU(3)$ factor).
     The Gravity paper~\cite{Beau2026h} derived the Einstein tensor as the infrared-dominant
     horizontal response of $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ (the $a_2$ coefficient).
     Q12 carries out the complementary vertical variation: the operator $A_g$ is extended to
@@ -1227,8 +1176,8 @@ A Structural Roadmap and Paper Inventory}
     The gauge--gravity synthesis is carried out in Q13.
 
     \textbf{Q13}~\cite{Beau2026q13}: Gauge--gravity spectral synthesis (\sstruct, conditional
-    on Q12 and the Gravity paper; SU(3) sector unconditional at the pointwise level
-    ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35})).
+    on Q12, the Gravity paper and a supplied compact gauge group; O31 no longer identifies
+    an $\SU(3)$ factor).
     Q13 joins the metric and connection variations of a single renormalized local action and
     obtains a \emph{conditional} Einstein--Yang--Mills system.
     The metric variation of the matched gauge kinetic term supplies the Yang--Mills
@@ -1307,14 +1256,14 @@ A Structural Roadmap and Paper Inventory}
     representative spanning list of dimension-six invariants modulo integrations by parts and
     Bianchi identities, and asserts neither a non-linear completion nor a numerical coupling
     hierarchy; its proper-time scheme dependence and Euclidean-signature limitation are explicit.
-    Per O31 Prop.~4.23, $[H\text{-color}]_{\mathrm{pointwise}}$ is proved on the standard
-    graph at finite $q$, making $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ an
-    unconditional input to the stratification chain; the $a_4$ Yang--Mills derivation of Q12
-    therefore holds unconditionally for the full Standard Model gauge group.
+    O31 version~2.0 withdraws the claimed pointwise result and every derivation of
+    $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$. The $a_4$ calculation of Q12 remains
+    a conditional Yang--Mills result for a supplied compact gauge group; it does not identify the
+    Standard Model group.
 
     \textbf{Q14}~\cite{Beau2026q14}: Fermionic matter and chirality (\sstruct, conditional
-    on Q13, the Gravity paper, and the BI paper; colour sector unconditional at the pointwise
-    level ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35})).
+    on Q13, the Gravity paper, the BI paper and a supplied gauge representation; O31 no
+    longer makes the colour sector unconditional).
     Q14 extends the gauge--gravity synthesis to the fermionic sector.
     Fermions are not postulated as external fields: they arise as the spinorial face of the
     Weil module $V_\rho$ already forced by non-injective admissibility, once its metaplectic
@@ -1339,9 +1288,9 @@ A Structural Roadmap and Paper Inventory}
     distinct from its geometric reading as three spatial directions, yielding a gauge-singlet
     three-generation factor
     $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\SU(2)} \oplus Y)$ (\sstruct).
-    The colour-coupled quark sector follows by tensoring with $V_{\mathrm{color}}$,
-    unconditional at the pointwise level
-    ($[H\text{-color}]_{\mathrm{pointwise}}$ proved in~\cite{Beau2026a35}).
+    The colour-coupled quark sector is conditional on a supplied colour representation.
+    O31 version~2.0 withdraws the claimed pointwise co-admissibility and does not derive that
+    representation~\cite{Beau2026a35}.
     Beyond these three theorems, Q14~\S6 establishes a qualitative mechanism for the
     inter-generation splitting (a diagnostic model, not a fourth theorem).
     Identifying the supplied rank-three admissible sector with $\mathrm{Sym}^2(V)$ in the $\mathrm{End}$
@@ -1771,11 +1720,10 @@ A Structural Roadmap and Paper Inventory}
     The papers Foundation, TopologicalInvariants, SMchargemass, O23, O27--O32, Q6a, Q7, and Q12
     form (in their gauge-group identification aspect) the \emph{gauge structure sub-programme},
     whose synthesis paper is the presentation note \textbf{GS-Note}~\cite{Beau2026gsnote}.
-    It identifies the admissible internal symmetry group
-    $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ as a forced output of the admissibility
-    structure of $\Pi$, organising the $\mathrm{U}(1)$ phase-fibre sector (Hopf fibration),
-    the $\SU(2)$ quaternionic sector (O27 rigidity, conditional on the supplied spinor carrier), and the $\SU(3)$ colour-triplet sector
-    (O31--O32 co-admissibility). The note covers gauge group identification only; the
+    Its former identification of
+    $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ used the withdrawn O31 results.
+    The colour factor and complete group are therefore open; O32 measurements do not repair the
+    missing group-identification bridge. The note covers gauge group identification only; the
     derivation of Yang--Mills dynamics belongs to the gauge--gravity spectral stratification
     sub-programme.
 
@@ -2067,8 +2015,8 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (O30.east)
             {$\lambda_1/\lambda_2=2$};
           \node[S] (O31)  at (7*\dx,-9*\dy)   {O31};
-          \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O31.east)
-            {SU(3) [H-color]};
+          \node[font=\tiny\sffamily,text=copen,right=2pt] at (O31.east)
+            {withdrawn claims};
           \node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
             {$q{=}61,151,211,307$ all pass};
@@ -2176,7 +2124,7 @@ A Structural Roadmap and Paper Inventory}
           \end{tabular}};
           \draw[spine] (Q5a)--(Q5b);
           \draw[arr]   (Q5b)--(Q6a);
-          \draw[arr]   (O31) to[out=0,in=-150] (Q6a);
+          % O31 no longer supplies the former SU(3) derivation edge to Q6a.
           \draw[arr]   (Q6a)--(Q6b);
 
           \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
@@ -2628,15 +2576,12 @@ A Structural Roadmap and Paper Inventory}
       ratio $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ derived analytically;
       factor of~$2$ is purely structural (Carnot degree-$2$ of $Z=[X,Y]$) &
       \sproved \\[3pt]
-      O31 & SU(3) from colour triplets & \cite{Beau2026a35} &
-      Hurwitz obstruction ($d_\rho=3$ cannot arise from single-fibre argument, proved);
-      colour triplets exist iff $q\equiv 1\pmod{3}$ (proved);
-      metaplectic intertwining proves $\sigma_c=\sigma_{\omega c}$ on $\mathcal{S}_q^{(3)}$
-      (proved, Thm~4.4); single-frequency fingerprint structure (Lem.~4.22)
-      proves $[H\text{-color}]_{\mathrm{pointwise}}$ exactly on the standard graph
-      (Prop.~4.23); $\SU(3)$ is the unique triplet symmetry group (proved);
-      $G_{\mathrm{SM}}$ derived unconditionally for $\mathcal{S}_q^{(3)}$ and $\mathcal{S}_q$ &
-      \sstruct \\[3pt]
+      O31 & Withdrawal notice for colour-triplet and gauge-group claims & \cite{Beau2026a35} &
+      Withdraws the proposed individual-profile co-admissibility, arithmetic criterion,
+      metaplectic step, $\Delta(27)$ proposition, rank-eight test, $\SU(3)$ uniqueness and
+      every gauge-group derivation; gives explicit $\mathrm{SO}(3)$, $T^2$ and
+      $\{1,2,q-3\}$ counterexamples; remaining material under re-audit &
+      \sopen \\[3pt]
       O32 & [H-color] numerical test & \cite{Beau2026a36} &
       [H-color] passes for all $q\in\{61,151,211,307\}$
       ($R\leq 3$, ctrl\_ref $=1.657\times10^{-3}$;
@@ -2644,8 +2589,8 @@ A Structural Roadmap and Paper Inventory}
       $C_{\mathrm{color}}$ rank~1 in all cases;
       $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
       $[H\text{-color}]_{\mathrm{avg}}$ proved to $O(q^{-1})$;
-      $[H\text{-color}]_{\mathrm{pointwise}}$ proved analytically in O31 (Prop.~4.23) &
-      \sstruct \\[3pt]
+      pointwise interpretation and gauge-group reading withdrawn by O31 version~2.0 &
+      \textbf{numerical} / \sopen \\[3pt]
       O33 & Arithmetic Weil doublets and mixing & \cite{Beau2026a37} &
       Closed sumset formula and spacing theorem proved;
       stabiliser reduced exactly to $A_K$, with an orbit-divisibility sieve, uniform
@@ -2712,9 +2657,9 @@ A Structural Roadmap and Paper Inventory}
       \sstruct{} (geometry); conditional on [H-L] (metric) \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
-      $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ derived (O31~\cite{Beau2026a35},
-      proved for $\mathcal{S}_q$ via $[H\text{-color}]_{\mathrm{pointwise}}$) &
-      \sstruct \\[3pt]
+      former full-group derivation relied on withdrawn O31 claims; colour factor and complete
+      gauge group open &
+      \sopen \\[3pt]
       Q6b & Effective spacetime & \cite{Beau2026q6b} &
       $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ from $\Pi_q$;
       Schwarzschild from flux conservation; Einstein equations as consistency conditions;
@@ -3074,9 +3019,9 @@ A Structural Roadmap and Paper Inventory}
       effective metric. Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       GS\-Note & The gauge structure sub-programme (Note~3) & \cite{Beau2026gsnote} &
-      Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12, in their gauge-group
-      identification aspect, into the $\mathrm{U}(1)$ phase-fibre, $\SU(2)$ quaternionic (conditional on the supplied spinor carrier) and $\SU(3)$
-      colour-triplet sectors of $G_\Pi$. Gauge group identification only; Yang--Mills dynamics belongs to
+      Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12. Its former full-group
+      identification used withdrawn O31 claims; the colour factor and complete group are open.
+      Gauge group identification only; Yang--Mills dynamics belongs to
       Note~8. Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       SG\-Note & The spectral gravity sub-programme (Note~4) & \cite{Beau2026sgnote} &
@@ -3162,18 +3107,12 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{$\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model (TopologicalInvariants, Remark 4.2).}
     General proof of this topological property is open.
 
-  \paragraph{Full SM gauge group: [H-color] and O32 (Q6a, O31).}
-    O31~\cite{Beau2026a35} derives $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ as a composite of
-    admissibility fixed points unconditionally for the colour-adapted Cayley graph and,
-    with $[\mathrm{H\text{-}color}]$ proved analytically (Proposition~4.23 of O31),
-    unconditionally for the standard graph as well.
-    O32~\cite{Beau2026a36} confirms [H-color] numerically for all four test primes
-    $q\in\{61,151,211,307\}$: all pass $R\leq 3$ (noise floor
-    $\mathtt{ctrl\_ref}=1.657\times10^{-3}$, controls $q\in\{29,101\}$;
-    $R=2.1,\,0.4,\,1.0,\,0.7$ respectively).
-    What remains open: analytical derivation of [H-color] from Foundation axioms;
-    transfer chain $\delta_{\mathrm{tri}} \to \alpha_s$ (strong coupling constant);
-    identification of quarks as stable projected configurations carrying colour quantum numbers.
+  \paragraph{Full Standard Model gauge group (Q6a, O31--O32).}
+    O31 version~2.0 withdraws every derivation of $\SU(3)$ and of
+    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$. O32 reports finite-sample numerical observations,
+    but these do not identify a group or restore the withdrawn individual-profile claim.
+    The colour factor, the complete gauge group, the interpretation of the O32 measurements, a
+    transfer chain to $\alpha_s$, and the identification of quarks remain open.
 
   \paragraph{Baryon-to-photon ratio (SMchargemass).}
     Quantitative derivation of $\eta \sim 10^{-10}$ is open.
@@ -3281,12 +3220,10 @@ A Structural Roadmap and Paper Inventory}
     data, the Lorentzian continuation of the gauge sector, and the extension to projected matter
     currents $J^{a\nu}$.
 
-  \paragraph{Yang--Mills uniqueness for SU(3) (Q12, O31).}
-    Q12 derives the Yang--Mills equations for any compact $G_\Pi$ from the $a_4$
-    heat-kernel coefficient; the SU(3) sector is inherited from O31/Q6a.
-    What remains open is the internal SU(3) uniqueness problem (O31 §9.2):
-    showing that the SU(3) gauge dynamics emerge \emph{uniquely} from the colour
-    triplet co-admissibility structure, without inputting the group as data.
+  \paragraph{Gauge-group identification upstream of Yang--Mills dynamics (Q12, O31).}
+    Q12 derives the Yang--Mills equations for a supplied compact $G_\Pi$ from the $a_4$
+    heat-kernel coefficient. O31 version~2.0 withdraws the proposed $\SU(3)$ identification, so
+    the colour factor and the complete gauge group remain inputs rather than derived results.
 
   \paragraph{Lorentz Capacity Sub-Programme.}
     The Lorentz-capacity sub-programme is closed for inertial kinematics, and open in its
@@ -3342,11 +3279,10 @@ A Structural Roadmap and Paper Inventory}
   now analytically derived~(O30): the Born--Infeld parity anti-linearity forces an equatorial
   constraint on the admissible fibre, and the factor of~$2$ is purely structural---the squared
   symmetric-tensor normalisation of the Carnot-degree-$2$ central generator $Z=[X,Y]$.
-  O31 develops the structural framework for SU(3): the metaplectic intertwining of
-  $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ forces triplet co-admissibility unconditionally for the
-  colour-adapted Cayley graph, and SU(3) is thereby identified as the symmetry group of the
-  co-admissible colour triplet, proved for the standard graph by
-  Proposition~4.23 of O31~\cite{Beau2026a35}.
+  O31 version~2.0 is a withdrawal notice: the proposed colour-triplet co-admissibility,
+  arithmetic and group-identification results do not survive audit. The colour factor and complete
+  Standard Model gauge group are open, and O32 numerical measurements supply no replacement group
+  derivation~\cite{Beau2026a35}.
   Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
   at the structural level, with several results conditional on explicitly stated hypotheses.
   The $\SU(2)$ quantum sector is not established: Q3 proves, conditional on an explicit,
