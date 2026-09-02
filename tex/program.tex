@@ -59,7 +59,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.15}
+\date{2026\\[2pt]\small Version 2.16}
 
 \begin{document}
 
@@ -70,7 +70,7 @@ A Structural Roadmap and Paper Inventory}
     spacetime, quantum mechanics, gauge symmetry, and Standard Model observables --- arises from
     a single primitive: the local structure of admissible non-injective transitions between
     observable states.
-    The corpus comprises 117 papers across three theory branches.
+    The corpus comprises 116 papers across three theory branches.
     Branch~I (Foundation track) develops four admissibility axioms and their consequences.
     A finite \(S_3\) countermodel now proves that the algebraic properties extracted from those
     axioms in the published carrier-selection argument do not force a central commutator,
@@ -133,13 +133,13 @@ A Structural Roadmap and Paper Inventory}
   Heisenberg derivation of the downstream conversion $\delta_{\mathrm{pair}} \to \beta^*$.
   On the other side, the Foundation paper~\cite{Beau2026m} proposes a reformulation from
   four axioms~(A1--A4), dispensing with an explicit substrate $\chi$ and relaxation mechanism.
-  Its carrier-selection step is not derived: the finite countermodel of
-  HeisenbergCarrierObstruction~\cite{Beau2026hco} satisfies the algebraic properties available before
-  centrality while its commutator is non-central.
+  Its carrier-selection step is not derived: version~2.1 of
+  HeisenbergStructure~\cite{Beau2026HeisenbergStructure} incorporates a finite countermodel that
+  satisfies the algebraic properties available before centrality while its commutator is non-central.
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
   on top of the Foundation axioms and O-series spectral data.
 
-  The corpus comprises 117 papers with complex mutual dependencies.
+  The corpus comprises 116 papers with complex mutual dependencies.
   The interactive dependency graph covers all 116 entries of the inventory and distinguishes
   ordinary dependencies from sub-programme synthesis links.
   A reader entering the programme faces two difficulties: it is not obvious where to start,
@@ -177,13 +177,14 @@ A Structural Roadmap and Paper Inventory}
     It does not force centrality, class-two nilpotence, or the Weil representation.
     From~A4, the discreteness of quantum transitions follows.
     Papers at this level: ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
-    HeisenbergStructure, HeisenbergCarrierObstruction~\cite{Beau2026hco}, noscale~\cite{Beau2026j}.
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, noscale~\cite{Beau2026j}.
 
   \paragraph{Level 2 --- Spectral fibre structure.}
-    The O-series supplies the Weil representation $V_\rho$ of
-    $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ for a prime~$q$ as its mathematical carrier.
-    Foundation and HeisenbergStructure claimed to derive this carrier, but the selection proof is refuted by
-    HeisenbergCarrierObstruction~\cite{Beau2026hco}.
+    The O-series supplies the Heisenberg group, its irreducible Schr\"odinger representation
+    $\pi_c$ on $\mathcal{H}_c=L^2(\mathbb{Z}/q\mathbb{Z})$, and the distinct associated Weil
+    action of the symplectic automorphism group as its mathematical carrier data.
+    Foundation and the earlier HeisenbergStructure versions claimed to derive this carrier, but
+    HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure} refutes that selection proof.
     The O-series computes the spectral properties of the supplied fibre, including the capacity exponent
     $\delta_{\mathrm{pair}}$.
     Its proposed conversion to the cascade exponent $\beta^*$ is not native to the Heisenberg
@@ -198,7 +199,7 @@ A Structural Roadmap and Paper Inventory}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
     waves, and cosmological observables are derived as consequences of Levels~1--2.
     No additional physical postulates are introduced beyond the continuum-limit hypothesis
-    [H-L] of Q5a--Q5b (unestablished; Q5a version 3.0, Q5b version 2.0).
+    [H-L] of Q5a--Q5b (unestablished; Q5a version 3.2, Q5b version 2.1).
     Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2},
     Q3~\cite{Beau2026q3}, Q5a--Q7), the gravity track
     (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
@@ -319,23 +320,24 @@ A Structural Roadmap and Paper Inventory}
     Bell factorisation.
 
     Items (iv)--(v) are not established.
-    The finite \(S_3\) countermodel~\cite{Beau2026hco} has a faithful irreducible unitary carrier, a minimal
+    The finite \(S_3\) countermodel in HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}
+    has a faithful irreducible unitary carrier, a minimal
     generating pair exchanged by an involution, and a non-trivial commutator, but the commutator is not central.
     It also shows that the prime-order step reverses Schur's lemma.
 
     \textit{Status:} \sstruct{} for the axiomatic architecture and the consequences that do not consume
     carrier selection; the Heisenberg/Weil identification is a postulated realisation;
-    \sopen{} for the continuum limit (Q5a version 3.0 withdraws the Mosco derivation; the
-    spatial limit is the unestablished hypothesis [H-L] of Q5b version 2.0).
+    \sopen{} for the continuum limit (Q5a version 3.2 withdraws the Mosco derivation; the
+    spatial limit is the unestablished hypothesis [H-L] of Q5b version 2.1).
     \textit{Role:} Axiomatic spine.
     Cited by all Q-series papers, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
     , noscale, and recent companion papers.
 
-  \subsection{Non-Factorisability and the Emergence of Heisenberg Structure}
+  \subsection{A Finite Obstruction to Heisenberg Carrier Selection from Admissibility Constraints}
 
-    HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
-    provides the published proof of Foundation Theorem~5.6, omitted from the
-    Foundation paper for concision.
+    Earlier versions of HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
+    provided the published proof attempt for Foundation Theorem~5.6, omitted from the
+    Foundation paper for concision. Version~2.1 replaces that claim by an obstruction theorem.
     The central structural lemma --- \emph{admissible non-factorisability} --- is a direct
     formalisation of Axiom~A3.
     Its next step, ``minimality implies central commutator'', is false: a two-generator group need not be
@@ -347,9 +349,7 @@ A Structural Roadmap and Paper Inventory}
     \textit{Role:} Documents the attempted carrier-selection proof and its conditional final
     Stone--von Neumann step.
 
-  \subsection{Finite Countermodel to Heisenberg Carrier Selection}
-
-    HeisenbergCarrierObstruction~\cite{Beau2026hco} gives the six-element countermodel
+    Version~2.1 of HeisenbergStructure gives the six-element countermodel
     \(G=S_3\), \(X=(12)\), \(Y=(23)\), with \(\sigma\) given by conjugation by \((13)\).
     The standard action on the two-dimensional zero-sum subspace of \(\mathbb{C}^3\) is faithful,
     unitary, and irreducible; \(\sigma\) exchanges the minimal generating pair; and
@@ -469,10 +469,10 @@ A Structural Roadmap and Paper Inventory}
     \label{sec:nifnote}
 
     The papers ENI~\cite{Beau2026l}, Foundation~\cite{Beau2026m},
-    HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
-    HeisenbergCarrierObstruction~\cite{Beau2026hco}, and noscale~\cite{Beau2026j}
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure}, and noscale~\cite{Beau2026j}
     form the \emph{non-injective foundations sub-programme}, whose synthesis paper is the
-    presentation note \textbf{NIF-Note}~\cite{Beau2026ninote} (Presentation Note~5).
+    presentation note \textbf{NIF-Note}~\cite{Beau2026ninote} (Presentation Note~5,
+    working-paper version~1.5).
     NIF-Note maps these four constituents into the single axiomatic chain
     \[
       \text{A1--A4}
@@ -513,8 +513,9 @@ A Structural Roadmap and Paper Inventory}
     \;\longrightarrow\; m_e : m_\mu : m_\tau .
     \label{eq:chain}
   \end{equation}
-  The first segment is established with respect to the fibre structure of $\Pi$
-  (O24~\cite{Beau2026a28}).
+  The finite capacity segment is studied within the supplied Weil model, but Weil conjugation is
+  not a derived Born--Infeld fibre identification (O18~\cite{Beau2026a22}); O24 does not remove
+  that open bridge.
   The dashed segment is not a native theorem: SGN~\cite{Beau2026sgn} proves that both corpus-defined
   Heisenberg realisations of the O4 closure fail, the native frontier is $N^{3/4}$ rather than
   $p^{1/2}$, the block capacity rather than the pair product carries the exact span increment, and
@@ -522,11 +523,11 @@ A Structural Roadmap and Paper Inventory}
   O25~\cite{Beau2026a29} establishes the numerical agreement, not the dashed implication.
 
   The presentation note \textbf{SpAdm-Note}~\cite{Beau2026a1note} is the synthesis paper of this
-  sub-programme: it maps the constituent papers below --- the five precursor papers and the O-series
-  O1--O33 --- into a single account of the proposed chain~\eqref{eq:chain}, recording the status of
-  every result as proved, structural, numerical, or open, and stating the two remaining open
-  deliverables (the pointwise proof of hypothesis $[\mathrm{H\text{-}color}]$ and the extension of
-  the numerical campaign to $q = 401$). Their individual contributions follow.
+  sub-programme. Version~1.4 maps the five precursor papers and O1--O33 while separating proved
+  mathematics, numerical measurements, conditional models, open bridges, and withdrawn claims.
+  It records the failure of the native Heisenberg capacity-to-rate bridge, the conditional scope of
+  O27 and O30, O29's numerical-only carrier diagnostics, the O31 withdrawal, O32's numerical-only
+  status, and O33's exact finite architecture. Their individual contributions follow.
 
   \subsection{Precursor Papers: SU(2) Admissibility Sub-Programme}
 
@@ -568,7 +569,7 @@ A Structural Roadmap and Paper Inventory}
     The SpectralRelaxation paper~\cite{Beau2026a5} establishes $\Lambda_{\mathrm{proj}} \asymp \lambda_2$
     for LPS expander families (\sproved), providing the entry point for the O-series dynamics.
 
-  \subsection{O1--O8: LPS Phase --- Cascade Exponent $\beta$}
+\subsection{O1--O8: LPS Phase --- Cascade Exponent \texorpdfstring{$\beta$}{beta}}
 
     \textbf{O1}~\cite{Beau2026a6}: LPS saturation is a fixed-valence artefact; growing valence restores
     the pre-saturation window (\sproved).
@@ -730,12 +731,12 @@ A Structural Roadmap and Paper Inventory}
     Heisenberg realisation of its O4--O6 closure, frontier, pair-carrier, and exponent-coordinate
     inputs.
 
-  \subsection{O25--O30, PTO, and Fibre Erasure: Numerical Validation, Sector Identification, Eigenvalue Ratio, and Information-Theoretic Axes}
+  \subsection{O25--O30, PTO, and Fibre Erasure: Numerical Validation, Carrier Diagnostics, a Conditional Covariance Model, and Information-Theoretic Axes}
 
     \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign, extended to large primes.
-    Computes $\delta_{\mathrm{pair}}$ across the $(q-1)/2$ conjugate pairs ($M=50$ at
-    $q \in \{29, 61, 101, 151, 211\}$; extended by a capped-BFS construction --- reproducing the
-    observable exactly --- to $q \in \{307, 401, 601\}$ with reduced sampling $M = 16, 8$).
+    Computes $\delta_{\mathrm{pair}}$ exhaustively across all conjugate pairs through $q=211$;
+    the capped-BFS extension --- reproducing the observable exactly --- uses 24 representative
+    pairs at $q=307$ and 12 at each of $q=401,601$.
     The inter-pair concentration establishes a stable fixed-$q$ pair statistic; it does not
     prove independence from~$q$.
     Central result of the extension: the \emph{raw} exponent $\delta_{\mathrm{global}}(q)$ descends
@@ -753,10 +754,11 @@ A Structural Roadmap and Paper Inventory}
     $M_2(\mathbb{C})$, connecting the Heisenberg fibre to $2I \subset \SU(2)$ (\sstruct).
     This representation-side result does not supply the missing rate equation.
 
-    \textbf{O27}~\cite{Beau2026a31}: Every admissible morphism $\Phi_{q,\rho}$ satisfying involution
-    equivariance, quadratic compatibility, and naturality factors through $\mathfrak{su}(2)$
-    (\sproved).  The theorem gives $\delta_{\mathrm{pair}}$ a representation carrier, not a
-    derived interpretation of $\beta^*$.
+    \textbf{O27}~\cite{Beau2026a31}: Version~2.0 corrects the factorisation claim: quotient
+    factorisation alone does not imply equivariance. Saturation, the supplied carrier, and parity
+    covariance are explicit inputs. Under the stated equivariance hypotheses, the Schur-level
+    factorisation and multiplicity counts are proved; a canonical equivariant vector lift remains
+    open. The result supplies no derived interpretation of $\beta^*$.
 
     \textbf{O28}~\cite{Beau2026a32}: Two measurements from the Q5a-O5 checkpoints.
     Part~A: out of sample (to $q = 601$) the calibrated linear extrapolation
@@ -771,14 +773,14 @@ A Structural Roadmap and Paper Inventory}
     ($\mathrm{HEFF\_DIM} = 3$, implementing the supplied selection rule $\Sigma_c(n_3) = 3$; the
     retained dimension is fixed in advance, so these ranks characterise the truncated carrier,
     not a measured admissible rank).
-    The covariance $\mathcal{C}_c$ has $1\%$ threshold rank $r_{\mathrm{eff}}^{1\%} = 3$ for every
-    conjugate pair and every $q \in \{61, 101, 151\}$ (100\% of pairs), with invariant resolved
-    spectrum $[\lambda_1 : \lambda_2 : \lambda_3] = [1 : \tfrac{1}{2} : \tfrac{1}{2}]$.
-    The exact degeneracy $\lambda_2 = \lambda_3$ is read, through O29, as the axial structure of
-    the adjoint carrier (interpretation), correlated with O18's proposed, unproved Born--Infeld
-    parity involution $c \leftrightarrow q-c$.
-    The gap from $d_\rho^2 = 4$ reflects $H_{\mathrm{eff}} \neq V_\rho$;
-    analysis of $V_\rho \subset H_{\mathrm{eff}}$ is carried out in O29.
+    O28 reported $1\%$ threshold rank $r_{\mathrm{eff}}^{1\%}=3$ and resolved spectrum
+    $[\lambda_1 : \lambda_2 : \lambda_3]=[1:\tfrac12:\tfrac12]$ across its stated perimeter.
+    O29's extended recomputation does not reproduce pairwise invariance: rank three occurs for
+    $32/50$ pairs at $q=101$ and $103/105$ at $q=211$. It re-audits the finite-data rank and
+    degeneracy without assigning them an exact axial origin.
+    The gap from $d_\rho^2 = 4$ cannot be inverted to identify $V_\rho$: O29 distinguishes the
+    measured span in $H_{\mathrm{eff}}$, an auxiliary PCA truncation, and the separately supplied
+    spin-$\tfrac12$ module.
 
     \textbf{CC-Note}~\cite{Beau2026ccnote}: Exact resolution of the saturation-depth asymptotics
     of O25--O28.
@@ -828,53 +830,49 @@ A Structural Roadmap and Paper Inventory}
     per-checkpoint provenance), a single reproduction script, and the crossing figure: every quoted
     number is reproducible from the published deposit alone.
 
-    \textbf{O29}~\cite{Beau2026a33}: Carrier identification via the Veronese collapse
-    (\sstruct, numerically confirmed).
+    \textbf{O29}~\cite{Beau2026a33}: Veronese collapse in the measured trajectory span
+    (\textbf{numerical}).
     Under the proposed Born--Infeld/Weil parity identification of O18,
     $\pi_{q-c}(v) = \overline{\pi_c(v)}$ is anti-linear, so every outer
-    product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ is complex symmetric; the conjugate-pair target
-    $d_\rho^2 = 4$ is inaccessible by construction and is restored only by the locking-broken control.
+    product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ is complex symmetric.
+    The tested conjugate-pair protocol does not reach rank~$4$.
     On the O25/Q5a checkpoints the admissible trajectory spans all three complex dimensions of
-    $H_{\mathrm{eff}}$, and $r_{\mathrm{eff}} = 3$ is the hard $6 \to 3$ collapse of the Veronese (squaring)
-    image: the three constraint forms span $\mathfrak{so}(3)$ and the action on $H_{\mathrm{eff}} = \mathbb{C}^3$
-    is irreducible (one-dimensional Schur commutant).
-    Thus, within the supplied three-coordinate carrier ($H_{\mathrm{eff}} = \mathbb{C}^3$
-    is the $\mathrm{HEFF\_DIM}=3$ truncation, whose ambient rank is not measurable from
-    these coordinates), $r_{\mathrm{eff}} = 3$ characterises the truncated data as the
-    irreducible adjoint module
-    $H_{\mathrm{eff}} \simeq \mathfrak{su}(2) \cong \mathrm{Sym}^2(V_\rho)$, the spin-$1$ (vector)
-    representation, consistent with Q7~\cite{Beau2026q7}.
+    $H_{\mathrm{eff}}$. At $q\in\{29,61\}$ the symmetric-square evaluation matrix has numerical
+    rank~$3$ at the declared tolerance; fitted constraint commutators have numerical rank~$3$ in a
+    chosen $\mathfrak{so}(3)$ basis and the computed commutant is one-dimensional. These
+    finite-precision diagnostics are compatible with the adjoint module supplied conditionally by
+    O23, but do not derive or identify it.
     Numerically: $r_{\mathrm{eff}} = 3$ universally for $q = 61$ (30/30 pairs) and
     $q = 151$ (75/75 pairs) with zero inter-pair variance;
-    at $q = 211$ (105/105 pairs, $100\%$, multi-sample confirmed), $r_{\mathrm{eff}} = 3$
-    holds universally (the 2 single-sample anomalies confirmed as artefacts);
+    at $q = 211$, the single-sample run gives $r_{\mathrm{eff}}=3$ for $103/105$ pairs;
     at $q = 101$, modal $r_{\mathrm{eff}} = 3$
     is confirmed by a dedicated multi-sample analysis ($M = 5$ resamples per anomalous pair,
     $76.7\%$ of (pair, sample) cells satisfy $r_{\mathrm{eff}} = 3$, with modal $r_{\mathrm{eff}}=3$
-    for all $18$ pairs), confirming $d_\rho=2$ at the modal level.
-    The O26 Criterion~5.4 is thereby reinterpreted as a carrier test: $r_{\mathrm{eff}} = 3$ identifies the
-    spin-$1$ carrier $H_{\mathrm{eff}}$.
-    The spin-$\tfrac{1}{2}$ sector is the Schur target $V_\rho$ of $\bar\Phi : \mathfrak{su}(2) \to V_\rho$,
-    not identified by Test~4; it stays selected by the minimality argument of O26.
+    for all $18$ pairs), without establishing that the remaining dispersion is an artefact.
+    The two-dimensional PCA space $U_c^{(2)}\subset H_{\mathrm{eff}}$ is auxiliary and has no
+    canonical representation status; rank~$4$ in $\operatorname{End}(U_c^{(2)})$ after broken
+    locking identifies neither $V_\rho$ nor $d_\rho=2$. The latter remains an O26 minimality
+    selection, not an O29 data result.
 
-    \textbf{O30}~\cite{Beau2026a34}: Analytical derivation of the eigenvalue ratio
-    $\lambda_1/\lambda_2 = 2$ (\sproved).
-    The Born--Infeld parity anti-linearity $\rho_{q-c} = \bar\rho_c$ forces every admissible
-    trajectory vector $w_j = \pi_c(v_j) \in V_\rho \cong \mathbb{C}^2$ to satisfy
-    $|\alpha_j| = |\beta_j|$ (equatorial constraint), i.e., $w_j$ lives on an
-    equatorial $S^1 \subset S^3$ in $V_\rho$.
+    \textbf{O30}~\cite{Beau2026a34}: Conditional $3\times3$ covariance model on
+    $\operatorname{Sym}^2(V_\rho)$ (\textbf{conditional}).
+    Under the supplied hypotheses (H0)--(H3), including Veronese data, an inter-block
+    identification, weight exchange, and a fixed projected symmetric square, a lift satisfies
+    $\beta_j=\varepsilon_j\bar\alpha_j$ with $\varepsilon_j\in\{\pm1\}$.
     In the equatorial regime, the central component $\sqrt{2}\,\alpha_j\beta_j$ of
     $\operatorname{vec}(M_j)$ is phase-independent (the phases cancel exactly), while the
     diagonal components $\alpha_j^2$ and $\beta_j^2$ oscillate as $e^{\pm 2i\phi_j}$.
-    The covariance then diagonalises under the single-harmonic phase decorrelation condition
-    $\langle e^{2i\phi_j}\rangle = 0$, yielding
+    The covariance diagonalises only under the two weighted conditions
+    $\langle\varepsilon_j r_j^4e^{2i\phi_j}\rangle=0$ and
+    $\langle r_j^4e^{4i\phi_j}\rangle=0$, yielding
     $\mathcal{C}_c = \langle r_j^4\rangle \cdot \mathrm{diag}(1/4, 1/2, 1/4)$
     and spectral ratio $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ exactly.
-    The factor of~$2$ is purely structural: it is the squared symmetric-tensor normalisation
+    The factor of~$2$ is the squared symmetric-tensor normalisation
     coefficient in $e_0 = (v_+\!\otimes v_- + v_-\!\otimes v_+)/\sqrt{2}$, isolated by the
-    equatorial constraint as the sole source of eigenvalue asymmetry.
-    The correction to the equatorial condition is $O(q^{-1/2})$ from U1~\cite{Beau2026u1}.
-    This closes the open direction of O28--O29 \S7.4.
+    equatorial constraint as the sole source of the unequal diagonal entries. The Carnot grading
+    labels the direction that carries the factor; it is not its algebraic cause.
+    O30's $3\times3$ object is distinct from O28's measured $9\times9$ covariance and does not
+    derive its spectrum; the O28 ratio remains empirical.
 
     \textbf{O31}~\cite{Beau2026a35}: Withdrawal notice for unsupported colour-triplet
     co-admissibility and gauge-group claims (\sopen).
@@ -898,11 +896,8 @@ A Structural Roadmap and Paper Inventory}
     $R = 0.4$ ($q=151$), $R = 1.0$ ($q=211$), $R = 0.7$ ($q=307$).
     All four pass $R\leq 3$; $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
     $C_{\mathrm{color}}$ numerical rank~1 in all cases.
-    Additionally proves analytically (Proposition~avg-hcolor) that
-    $\mathbb{E}[\sigma_c(n)] = \mathbb{E}[\sigma_{\omega c}(n)] + O(q^{-1})$,
-    establishing $\Hcolor_{\mathrm{eff}}$ (capacity-exponent equality) in the $q\to\infty$
-    limit. O31 version~2.0 withdraws the claimed pointwise proof and places the associated
-    scalar material under re-audit. The O32 numerical values remain reported measurements, but they
+    O31 version~2.0 places the former scalar and averaged $[H\text{-color}]$ arguments under re-audit;
+    they are not retained here as proved conclusions. The O32 numerical values remain reported measurements, but they
     do not establish individual-profile co-admissibility or identify a gauge group.
     Status: \textbf{numerical} for the reported measurements; their former O31-based structural interpretation
     is withdrawn and under re-audit.
@@ -984,11 +979,14 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Q-Series: Quantum Mechanics and Spacetime Emergence}
 
-    The Q-series derives quantum-mechanical and geometric structure from the Foundation axioms,
-    taking as input the fibre identification $F_n \cong V_\rho$ and selected O-series results.
+    The Q-series develops quantum-mechanical and geometric structure from the Foundation axioms,
+    taking as supplied input the Heisenberg/Schr\"odinger carrier, its distinct associated Weil
+    action, and selected O-series results; additional targets denoted $V_\rho$ are typed separately
+    in the papers that use them.
 
     \textbf{Q1}~\cite{Beau2026q1}: Proves an exact, unconditional Fourier-support rigidity
-    theorem in the finite Weil representation of the Heisenberg group (\sproved), and a
+    theorem for the associated finite Weil action on the supplied Heisenberg/Schr\"odinger
+    carrier (\sproved), and a
     precisely scoped no-go corollary for support-, rank-, and Gram-based diagnostics. Does not
     derive phase coherence, a singlet correlator, a Tsirelson bound, or the Born rule (\sopen).
 
@@ -1033,18 +1031,22 @@ A Structural Roadmap and Paper Inventory}
     deriving the effective four-dimensional Lorentzian metric from the admissibility filter acting on the
     Weil representation, with all four metric coefficients fixed by the $\mathfrak{su}(2)$-Casimir on the
     spin-$1$ module $\mathrm{Sym}^2(V_\rho)$.
-    The chain is conditional at its first link: Q5a version 3.0 withdraws the Mosco derivation
+    The chain is conditional at its first link: Q5a version 3.2 withdraws the Mosco derivation
     of the spatial limit operator, which is now the explicit, unestablished hypothesis [H-L]
-    (Q5b version 2.0); the geometric convergence results and algebraic rigidities are
+    (Q5b version 2.1); the geometric convergence results and algebraic rigidities are
     independent of [H-L]. Their individual contributions follow.
 
-    \textbf{Q5a}~\cite{Beau2026q5a}: Version 3.0 (\emph{Canonical Fourier Filtration and the
-    Obstruction to a Spatial Continuum Limit}) identifies the canonical filtration exactly ---
+    \textbf{Q5a}~\cite{Beau2026q5a}: Version 3.2 (\emph{Canonical Fourier Filtration and the
+    Obstruction to a Spatial Continuum Limit}) works on a supplied finite Heisenberg group and
+    non-trivial central character; it does not select that carrier or its associated Weil action.
+    It identifies the canonical filtration exactly ---
     the stage is precisely the toric Fourier window $\mathrm{span}\{e^{2\pi i b x/q}: |b| \le n\}$
     --- proves that the published admissibility form converges to the zero form on it (rate
     $q^{-2}$), and proves a normalisation no-go: no common scalar normalisation yields a
     non-trivial toric differential operator; the only non-trivial rescaled limit is a
-    conditional Dirichlet form in the rescaled \emph{frequency} variable.
+    conditional Dirichlet form in the rescaled \emph{frequency} variable. The normalisation
+    no-go is proved under [H-depth] and the measured positive finite weight limits; the dual-window
+    limit is conditional on a subsequential critical-coverage limit.
     The former Mosco derivation of $L_\Pi = -A\partial_x^2$ (versions up to 2.1) is withdrawn;
     the spatial limit operator is now the hypothesis [H-L] and Q5 is open
     (\sproved{} for the negative results; \sopen{} for the spatial continuum).
@@ -1052,8 +1054,9 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q5b}~\cite{Beau2026q5b}: The BFS shell stratification of $\Heis_3(\mathbb{R})$
     produces a four-dimensional Lorentzian spacetime, with the temporal direction identified
     with the BFS depth.
-    Hypothesis~[H-lift] (Q5b-O1), formerly conditional, is proved by Q9~\cite{Beau2026q9}.
-    Version 2.0 formalises the spatial limit input as the explicit, unestablished
+    Q9~\cite{Beau2026q9} proves only the conditional implication
+    [H-F] $\Rightarrow$ [H-lift], with the frozen hypothesis [H-F] unestablished.
+    Version 2.1 formalises the spatial limit input as the explicit, unestablished
     hypothesis [H-L]; the Carnot/$D_{\mathrm{hom}}=4$ results are independent of it
     (\sstruct{} for the geometry; conditional on [H-L] for the metric reading).
 
@@ -1064,7 +1067,8 @@ A Structural Roadmap and Paper Inventory}
     unsupported after the O31 withdrawal; the colour factor and complete group are open.
 
     \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
-    $\Pi_q$; inherits Q5a hypotheses only ([H-lift] closed by Q9).
+    $\Pi_q$; its metric reading consumes the unestablished [H-L], while Q9 supplies only the
+    conditional implication [H-F] $\Rightarrow$ [H-lift] under the separate unestablished [H-F].
     Derives the effective metric $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature
     $(-,+,+,+)$ from the principal symbol of $\mathcal{L}_{\mathrm{eff}}$; with Q8, Q10, Q11 the
     co-metric is fully explicit: $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$.
@@ -1083,9 +1087,10 @@ A Structural Roadmap and Paper Inventory}
     $\mathrm{HEFF\_DIM}=3$ in the O25--O29 pipeline) and the three spatial dimensions of
     Q5b.
     Proves $[\mathrm{su}(2)] \not\cong \mathrm{heis}_3$ (the bridge cannot be a Lie algebra
-    isomorphism) and identifies $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$ as the spin-1
-    representation of $\mathrm{su}(2)$ (O29).
-    Establishes structural uniqueness of the bridge via Schur's lemma, and reduces the
+    isomorphism). Its proposed identification
+    $H_{\mathrm{eff}}\cong\mathrm{Sym}^2(V_\rho)$ is not supplied by O29, and the present proof
+    assumes the typed bridge that it aims to derive.
+    The claimed structural uniqueness is therefore under audit; the paper also reduces the
     identification to the isotropy condition $A_H = A_z$ on $\sigma_2(L_{\mathrm{eff}})$.
     Proves analytically $[F_c, L_{\mathrm{Weil}}] = 0$, which forces the cross terms
     $k_X k_Z = k_Y k_Z = 0$ structurally.
@@ -1093,15 +1098,17 @@ A Structural Roadmap and Paper Inventory}
     $A_z = 2$ universally and $|A_H - A_z| \to 0$; four-point OLS fit gives
     $|A_H - A_z| \approx 0.364\,q^{-0.52}$ ($R^2=0.98$), consistent with $O(q^{-1/2})$
     (Q5b Theorem~3.2).
-    (\sstruct; asymptotic isotropy $A_H \to 2 = A_Z$ proved by Q10 and U1, conditionally on~[U];
-    bridge existence at finite~$q$: \sopen).
+    (\sopen; the isotropy calculations survive separately, while the typed symmetric-square bridge
+    and its uniqueness require correction).
 
     \textbf{Q8--Q11, U1, W1, H2 (Geometric emergence cluster).}
     Q8~\cite{BeauQ8} establishes $A_Z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity,
     within the frozen Q5a framework [H-F] (\sstruct).
-    Q9~\cite{Beau2026q9} proves [H-lift] as a theorem: the modulation generator is suppressed at
-    rate $O(q^{-1/2})$, and $A_H > 0$ follows by coercivity independently of the bridge (\sproved,
-    as the implication [H-F] $\Rightarrow$ [H-lift]; version 1.1).
+    Q9~\cite{Beau2026q9} proves the implication [H-F] $\Rightarrow$ [H-lift]: under the frozen,
+    unestablished [H-F] and along recovery sequences, the modulation-sector position-energy form
+    contribution satisfies $\mathcal{E}^X_q(f_q)\leq C/q\to0$; this is not decay of the modulation
+    operator norm. Then $A_H > 0$ follows by coercivity independently of the bridge
+    (\sproved{} as a conditional implication; version 1.1).
     Q10~\cite{Beau2026q10} proves $A_H \to 2$ under spectral universality~[U]:
     character-independence forces $\mathfrak{su}(2)$-isotropy of the effective form,
     and the unique such form is the Casimir with value~2 (\sstruct, conditional on [U]).
@@ -1115,29 +1122,33 @@ A Structural Roadmap and Paper Inventory}
     pre-saturation pipeline, the truncation status of its three-coordinate reduction (no rank
     is measurable from it), and an $O(q^{-2})$ upper bound on the admissibility form that rules
     out the $q^{-1}$ coercivity scale; [H-E1] and [C] are therefore not closed by a finite-rank
-    route, and their disposition is the one fixed by Q5a version 3.0: the canonical filtration
+    route, and their disposition is the one fixed by Q5a version 3.2: the canonical filtration
     is a growing Fourier window of dimension $\min(2n+1,q)$ on which the published form has
     zero-form Mosco limit.
     H2~\cite{Beau2026h2} proves [H2] (strong convergence of the rescaled
     Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$), via a quantitative
     Poisson aliasing lemma and a discrete Sobolev identity (\sproved{}).
-    The framework itself is withdrawn in Q5a version 3.0, and the chain's residual
+    The framework itself is withdrawn in Q5a version 3.2, and the chain's residual
     conditionality includes the spatial limit hypothesis [H-L] together with the open
     former hypotheses [H1], [H-E1], and [C] in any non-zero-form reading.
-    \textbf{Q11}~\cite{Beau2026q11}: Temporal Casimir rigidity closes Q5b open problem~O3
-    (identification of $A_\tau$ from admissibility data) (\sstruct).
+    \textbf{Q11}~\cite{Beau2026q11}: Under the frozen, unestablished [H-F], temporal Casimir
+    rigidity closes Q5b open problem~O3 (identification of $A_\tau$ within the supplied model)
+    (\sstruct).
     The cascade increment operator internalises no new irreducible representation
     (Schur rigidity); asymptotic $\mathfrak{su}(2)$-equivariance forces the temporal
     coefficient $A_\tau = 2$, identical to the spatial Casimir value.
-    The effective Lorentzian co-metric is thereby fully identified:
+    With the additional, independent and unestablished spatial-limit hypothesis [H-L], the
+    resulting coefficients have the effective Lorentzian co-metric reading
     $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$ (Minkowski).
     The derivation chain Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$
     U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 closed is complete \emph{conditionally on
-    [H-L]} (Q5a version 3.0; Q5b version 2.0).
+    [H-F] and [H-L]} (Q5a version 3.2; Q5b version 2.1).
 
-    \textbf{Q12}~\cite{Beau2026q12}: Yang--Mills dynamics from the vertical variation of
-    the projective spectral entropy (\sstruct, conditional on a supplied compact gauge group;
-    O31 no longer identifies its $\SU(3)$ factor).
+    \textbf{Q12}~\cite{Beau2026q12}: Version~1.4 derives Yang--Mills dynamics from the vertical
+    variation of the projective spectral entropy at an arbitrary supplied fixed base metric
+    (\sstruct, conditional on a supplied compact gauge group and admissible connection;
+    O31 no longer identifies its $\SU(3)$ factor). This fixed-base theorem does not depend on Q11;
+    only its interpretation on the Cosmochrony emergent base is conditional on [H-L].
     The Gravity paper~\cite{Beau2026h} derived the Einstein tensor as the infrared-dominant
     horizontal response of $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ (the $a_2$ coefficient).
     Q12 carries out the complementary vertical variation: the operator $A_g$ is extended to
@@ -1175,11 +1186,12 @@ A Structural Roadmap and Paper Inventory}
     common symmetry group~$G_{\mathrm{unif}}$.
     The gauge--gravity synthesis is carried out in Q13.
 
-    \textbf{Q13}~\cite{Beau2026q13}: Gauge--gravity spectral synthesis (\sstruct, conditional
-    on Q12, the Gravity paper and a supplied compact gauge group; O31 no longer identifies
-    an $\SU(3)$ factor).
-    Q13 joins the metric and connection variations of a single renormalized local action and
-    obtains a \emph{conditional} Einstein--Yang--Mills system.
+    \textbf{Q13}~\cite{Beau2026q13}: Version~1.4 gives the gauge--gravity spectral synthesis
+    on supplied geometric and gauge data (\sstruct, conditional on Q12, the Gravity paper,
+    matching coefficients and a supplied compact gauge group; O31 no longer identifies an
+    $\SU(3)$ factor). Its interpretation on the Cosmochrony emergent base is separately
+    conditional on [H-L]. Q13 joins the metric and connection variations of a single renormalized
+    local action and obtains a \emph{conditional} Einstein--Yang--Mills system.
     The metric variation of the matched gauge kinetic term supplies the Yang--Mills
     energy--momentum tensor through
     $(1/\sqrt{g})\,\delta\!\int\!\sqrt{g}\,\mathrm{tr}_\rho(F^2)/\delta g^{\mu\nu}
@@ -1235,8 +1247,8 @@ A Structural Roadmap and Paper Inventory}
     $a_6 \to$ dimension-six invariants (spanning list only),
     all from the single functional
     $S_\Pi[g,A] = \tfrac{1}{2}\log\det'\mathcal{A}_{g,\mathcal{A}}$.
-    Q12 is shared with the gauge-structure sub-programme (Note~3), which supplies the gauge
-    group identification that Q12 takes as input; GGS-Note draws on Q12's $a_4$ vertical
+    Q12 is shared with the gauge-structure sub-programme (Note~3), whose version~2.0 records that
+    the compact gauge group is supplied rather than derived; GGS-Note draws on Q12's $a_4$ vertical
     variation, on the
     fixed-metric isolation of the Yang--Mills sector (Lemma~1; full horizontal--vertical
     decoupling does \emph{not} hold, the metric variation of $F^2$ being the $a_4$
@@ -1251,23 +1263,26 @@ A Structural Roadmap and Paper Inventory}
     whether admissibility constrains any combination of the matching data, a possible non-linear
     completion of the joint functional, the Lorentzian continuation of the gauge sector, and the
     coupled equations with fermionic matter currents from Q14 (Note~6).
-    GGS-Note~1.2 is aligned with Q12 and Q13: it records the fixed-metric isolation of the gauge
+    GGS-Note~2.0 is aligned with Q12 and Q13: on supplied geometric and gauge data it records
+    the fixed-metric isolation of the gauge
     sector rather than a full horizontal--vertical decoupling, presents $a_6$ only as a
     representative spanning list of dimension-six invariants modulo integrations by parts and
     Bianchi identities, and asserts neither a non-linear completion nor a numerical coupling
     hierarchy; its proper-time scheme dependence and Euclidean-signature limitation are explicit.
+    Only the emergent-base reading is conditional on [H-L].
     O31 version~2.0 withdraws the claimed pointwise result and every derivation of
     $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$. The $a_4$ calculation of Q12 remains
     a conditional Yang--Mills result for a supplied compact gauge group; it does not identify the
     Standard Model group.
 
-    \textbf{Q14}~\cite{Beau2026q14}: Fermionic matter and chirality (\sstruct, conditional
-    on Q13, the Gravity paper, the BI paper and a supplied gauge representation; O31 no
-    longer makes the colour sector unconditional).
-    Q14 extends the gauge--gravity synthesis to the fermionic sector.
-    Fermions are not postulated as external fields: they arise as the spinorial face of the
-    Weil module $V_\rho$ already forced by non-injective admissibility, once its metaplectic
-    Lie-algebraic structure is complexified by the Lorentzian metric.
+    \textbf{Q14}~\cite{Beau2026q14}: Version~2.0 treats fermionic matter and chirality
+    (\sstruct, conditional on Q13, the Gravity and BI papers, a supplied finite-Heisenberg
+    carrier and central character, the unestablished Lorentzian-geometry hypothesis [H-L],
+    and supplied gauge data; O31 no longer makes the colour sector unconditional).
+    Q14 extends the gauge--gravity synthesis to the fermionic sector relative to those inputs.
+    On the supplied carrier and conditional geometry, fermions are represented by the spinorial
+    face of the Weil module $V_\rho$ after Lorentzian complexification of its metaplectic lift;
+    neither the carrier nor the spatial limit is selected by the admissibility axioms.
     Three structural results are proved.
     (i)~The admissible Weil module induces, through its metaplectic lift and the complexification
     $\mathfrak{mp}(2,\mathbb{R})_{\mathbb{C}} \simeq \mathfrak{sl}_2(\mathbb{C})$, an admissible
@@ -1293,27 +1308,32 @@ A Structural Roadmap and Paper Inventory}
     representation~\cite{Beau2026a35}.
     Beyond these three theorems, Q14~\S6 establishes a qualitative mechanism for the
     inter-generation splitting (a diagnostic model, not a fourth theorem).
-    Identifying the supplied rank-three admissible sector with $\mathrm{Sym}^2(V)$ in the $\mathrm{End}$
-    reading of O29~\cite{Beau2026a33} and O30~\cite{Beau2026a34}, a static $J_\Pi$-real,
+    If one additionally supplies an identification of the rank-three admissible sector with
+    $\mathrm{Sym}^2(V)$---an identification not derived by O29~\cite{Beau2026a33} or by O30's
+    conditional model~\cite{Beau2026a34}---a static $J_\Pi$-real,
     weight-preserving restriction of $E_\Pi^2$ has a degenerate outer pair (static obstruction),
     while the oriented cascade generator $\partial_\tau$ of Q11~\cite{Beau2026q11} carries a
     non-zero $J_3$ projection that lifts it.
-    The qualitative mechanism is thereby fixed; its amplitude is deferred to the cascade
-    normalisation, and generation mixing requires the complex metaplectic phase.
+    This remains a conditional diagnostic mechanism. Its amplitude is deferred to the cascade
+    normalisation, and generation mixing requires further complex metaplectic input.
 
     Q14 is the principal constituent of the \emph{fermionic matter sub-programme}, whose synthesis
-    paper is the presentation note \textbf{FM-Note}~\cite{Beau2026fmnote} (Presentation Note~6).
-    FM-Note organises Theorems~A--C into the chain
-    $\Pi \Rightarrow F_n \simeq V_\rho \Rightarrow \mathrm{Mp}(2,\mathbb{R}) \Rightarrow
+    paper is the presentation note \textbf{FM-Note}~\cite{Beau2026fmnote} (Presentation Note~6,
+    working-paper version~2.0). FM-Note organises Theorems~A--C into the conditional chain
+    $\text{supplied Heisenberg carrier}+[\mathrm{H\! -\! L}] \Rightarrow F_n \simeq V_\rho
+    \Rightarrow \mathrm{Mp}(2,\mathbb{R}) \Rightarrow
     \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C}) \rightsquigarrow
     \Spin(3,1) \simeq \SL(2,\mathbb{C}) \Rightarrow \mathcal{S}_\Pi$,
     isolates the four upstream layers consumed (Notes~1,~5 for the Weil fibre; Note~2 for the
     Lorentzian closure; Note~3 for the gauge bundle; Q13~\cite{Beau2026q13} for the
-    gauge--gravity synthesis), and records the two open deliverables of the sub-programme:
-    explicit construction of $E_\Pi$ as a spectral
-    operator, and the full Lorentzian-signature matter content
+    gauge--gravity synthesis). Hypercharge rigidity additionally consumes a supplied
+    three-dimensional colour module, and generation multiplicity a supplied rank-three carrier.
+    The independent fermionic weak doublet is not produced at this stratum. The open deliverables
+    include explicit construction of $E_\Pi$ as a spectral operator and the full
+    Lorentzian-signature matter content
     $S^{\mathrm{matter}}_\Pi = (\mathcal{S}_\Pi \oplus (\mathcal{S}_\Pi \otimes V_{\mathrm{color}})) \otimes \mathbb{C}^3_{\mathrm{gen}}$
-    with explicit Yukawa structure.
+    with explicit Yukawa structure; the mass spectrum, Yukawa couplings, and CKM/PMNS mixing
+    matrices remain open.
     The qualitative mechanism of the generation splitting is now fixed (Q14~\S6); its amplitude,
     via the cascade normalisation, is the remaining quantitative step.
     With PRS~\cite{Beau2026prs} the former operator residual of this step --- the Schur transversality on
@@ -1719,7 +1739,8 @@ A Structural Roadmap and Paper Inventory}
 
     The papers Foundation, TopologicalInvariants, SMchargemass, O23, O27--O32, Q6a, Q7, and Q12
     form (in their gauge-group identification aspect) the \emph{gauge structure sub-programme},
-    whose synthesis paper is the presentation note \textbf{GS-Note}~\cite{Beau2026gsnote}.
+    whose synthesis paper is the working paper \textbf{The Gauge Structure Sub-Programme}
+    (GS-Note, Presentation Note~3, version~2.0)~\cite{Beau2026gsnote}.
     Its former identification of
     $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$ used the withdrawn O31 results.
     The colour factor and complete group are therefore open; O32 measurements do not repair the
@@ -1902,8 +1923,7 @@ A Structural Roadmap and Paper Inventory}
 
   \paragraph{Foundational path.}
     \[
-      \mathrm{ENI} \to \mathrm{Found} \to \mathrm{HeisStr}
-      \to \mathrm{HCO} \to \mathrm{noscale}.
+      \mathrm{ENI} \to \mathrm{Found} \to \mathrm{HeisStr} \to \mathrm{noscale}.
     \]
     Requires least prior knowledge; separates the axiomatic core from the open carrier-selection edge.
 
@@ -1916,7 +1936,7 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Physical path.}
     Foundation $\to$ Q1 $\to$ Q2 $\to$ Q3, with O18 $+$ O22 $+$ O23 supplying a
     proposed auxiliary fibre chain whose O18 bridge is open; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
-    O23 $+$ O28 $+$ O29 $+$ Q5b $\to$ Q7 (dimensional bridge);
+    O23 $+$ O28 $+$ O29 $+$ Q5b $\dashrightarrow$ Q7 (proposed dimensional bridge; typed proof open);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz;
     Q5b $+$ Q11 $+$ PTO $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII $\to$ LCIIo1; LCo1, LCo3.
 
@@ -1943,13 +1963,11 @@ A Structural Roadmap and Paper Inventory}
           \node[P] (ENI)    at (\dx,0)        {ENI};
           \node[S] (Found)  at (2*\dx,0)      {Found};
           \node[S] (Heis)   at (3*\dx,0)      {HeisStr};
-          \node[P] (HCO)    at (4*\dx,0)      {HCO};
-          \node[P] (nos)    at (5*\dx,0)      {noscale};
+          \node[P] (nos)    at (4*\dx,0)      {noscale};
 
           \draw[spine] (WP)--(ENI);
           \draw[spine] (ENI)--(Found);
           \draw[arr,dashed] (Found)--(Heis);
-          \draw[arr]   (Heis)--(HCO);
           \draw[arr]   (Found)--(nos);
 
           \node[P]  (BI)    at (0,-\dy)       {BornInfeld};
@@ -2050,9 +2068,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (O27) -- (O28);
           \draw[spine] (O28) -- (O29);
           \draw[arr]   (O27) -- (O29);
-          \draw[spine] (O29) -- (O30);
-          \draw[spine] (O30) -- (O31);
-          \draw[spine] (O31) -- (O32);
+          \draw[arr,dashed] (O29) -- (O30);
           \draw[arr]   (O12) to[out=0,in=90] (O33);
           \draw[arr]   (PTO) to[out=-20,in=180] (O33);
 
@@ -2064,9 +2080,9 @@ A Structural Roadmap and Paper Inventory}
           \draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
 % Non-injective foundations sub-programme synthesis (presentation note 5):
-% aggregates the five constituents of Branch I (ENI, Foundation, HeisStr, HCO, noscale).
+% aggregates the four constituents of Branch I (ENI, Foundation, HeisStr, noscale).
           \node[S] (NIFNote) at (2*\dx,\dy) {NIF-Note};
-          \foreach \n in {ENI,Found,Heis,HCO,nos}
+          \foreach \n in {ENI,Found,Heis,nos}
           \draw[synth] (\n) to[out=90,in=-90] (NIFNote);
 
           \node[Oc] (Q1)   at (8*\dx,-4*\dy)   {Q1};
@@ -2246,7 +2262,7 @@ A Structural Roadmap and Paper Inventory}
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
         The faint converging edges gather the constituent papers of each thematic sub-programme into
-        its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, HCO, noscale) into
+        its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
         Lorentz-capacity papers into \textbf{LC-Synth}, the geometric emergence papers into
         \textbf{EG-Note}, Q1/Q2/Q3 and the Bell paper into the quantum-structure
@@ -2286,7 +2302,7 @@ A Structural Roadmap and Paper Inventory}
           % ── Core chain (centre column) ───────────────────────
           \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$}};
-          \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-lift]}};
+          \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
           \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
           \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
           \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
@@ -2325,7 +2341,7 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q5aO2.east)
             {pure modes; truncation status};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q9.east)
-            {coercivity $\Rightarrow A_H\!>\!0$};
+            {conditional theorem; [H-F] open};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (U1.east)
             {rate $O(q^{-1/2})$};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (W1.east)
@@ -2338,9 +2354,11 @@ A Structural Roadmap and Paper Inventory}
       \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{} for its stated results): pure Fourier
       modes of the pre-saturation pipeline; truncation status of the three-coordinate reduction;
       rules out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C] are not closed by a
-      finite-rank route (zero-form limit on the canonical filtration, Q5a version 3.0).
-      \textbf{Q9}~(\sproved{}): [H-lift] is a theorem under Q5a; coercivity gives $A_H>0$
-        independently of the bridge.
+      finite-rank route (zero-form limit on the canonical filtration, Q5a version 3.2).
+      \textbf{Q9}~(\sproved{} as a conditional implication): under the frozen, unestablished
+        hypothesis [H-F], the modulation-sector position-energy form contribution satisfies
+        $\mathcal{E}^X_q(f_q)\leq C/q$ along recovery sequences; hence
+        [H-F] $\Rightarrow$ [H-lift] and coercivity gives $A_H>0$ under [H-F].
         \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
         normalisation fixed by horizontal sector.
         \textbf{Q10}~(\sstruct{}): universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy
@@ -2349,13 +2367,15 @@ A Structural Roadmap and Paper Inventory}
         Lipschitz bound and BFS--Carnot--Carath\'eodory convergence (Q5b).
         \textbf{W1}~(\sproved{}): [H-w] proved as a structural consequence of fibre-invariance
         ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
-        The effective metric $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ is established
-        under the Q5a hypotheses; [H2] is the sole remaining open hypothesis.}
+        The metric reading of
+        $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ remains conditional on the independent,
+        unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.1;
+        [H-F] is also unestablished.}
       \label{fig:geom}
     \end{figure}
     \label{sec:inventory}
 
-    Table~\ref{tab:inventory} lists all 117 papers of the programme, the present registry excepted.
+    Table~\ref{tab:inventory} lists all 116 papers of the programme, the present registry excepted.
     The \textbf{Key} column gives the citation key used in
     \texttt{cosmochrony-bibliography}.
     The final block gathers the sub-programme presentation and synthesis notes, marked
@@ -2387,17 +2407,14 @@ A Structural Roadmap and Paper Inventory}
       \sproved \\[3pt]
       Found & Foundation & \cite{Beau2026m} &
       Axioms A1--A4; the published Heisenberg/Weil selection theorem is not established;
-      v1.16: continuum-limit passages conditioned on [H-L] (Q5a 3.0 withdrawal); co-metric
+      v1.16: continuum-limit passages conditioned on [H-L] (Q5a 3.2 withdrawal); co-metric
       completion conditional on [H-L]; relation to HJ, symplectic, WKB, FRG formalisms &
       \sstruct \\[3pt]
-      HeisStr & Heisenberg structure & \cite{Beau2026HeisenbergStructure} &
-      Published proof attempt for Found. Thm~5.6; centrality and prime-order steps fail;
-      conditional Stone--von Neumann endpoint remains valid when the carrier data are supplied &
-      \sstruct\ /\ \sopen \\[3pt]
-      HCO & Heisenberg carrier obstruction & \cite{Beau2026hco} &
-      Explicit \(S_3\) countermodel to the carrier-selection implication; direct correction of the
-      central-subgroup/Schur step; downstream Heisenberg/Weil mathematics preserved conditionally &
-      \sproved \\[3pt]
+      HeisStr & Heisenberg carrier obstruction & \cite{Beau2026HeisenbergStructure} &
+      Version 2.1 incorporates the explicit \(S_3\) countermodel to the carrier-selection
+      implication and corrects the central-subgroup/Schur step; the conditional Stone--von Neumann
+      endpoint remains valid when the Heisenberg carrier and central character are supplied &
+      \sproved\ /\ \sopen \\[3pt]
       noscale & No external scale & \cite{Beau2026j} &
       No independent dimensional parameter beyond $c_{\mathrm{BI}}$ &
       \sproved \\[3pt]
@@ -2533,8 +2550,9 @@ A Structural Roadmap and Paper Inventory}
       \sproved\ /\ \sopen \\[3pt]
       \midrule
       O25 & Numerical campaign (extended to $q=601$) & \cite{Beau2026a29} &
-      Raw $\delta_{\mathrm{global}} \to 7.61$ at $q=601$ under the frozen $\log(n+1)$ estimator;
-      fixed-$q$ pair concentration; O14 correction overcorrects at large $q$;
+      Exhaustive pair sampling through $q=211$; representative sampling of 24 pairs at $q=307$
+      and 12 at $q=401,601$; raw $\delta_{\mathrm{global}} \to 7.61$ at $q=601$ under the frozen
+      $\log(n+1)$ estimator; fixed-$q$ pair concentration; O14 correction overcorrects at large $q$;
       $\delta_\infty$ not pinned; reciprocal image $0.108\text{--}0.123$ only as a
       phenomenological comparison &
       \sstruct \\[3pt]
@@ -2543,15 +2561,17 @@ A Structural Roadmap and Paper Inventory}
       connects $\Heis_3$ to $2I \subset \SU(2)$; no rate equation follows &
       \sstruct \\[3pt]
       O27 & Quaternionic rigidity & \cite{Beau2026a31} &
-      Every admissible $\Phi_{q,\rho}$ satisfying three structural constraints factors through
-      $\mathfrak{su}(2)$; representation carrier for $\delta_{\mathrm{pair}}$, not $\beta^*$ &
-      \sproved \\[3pt]
+      Version 2.0: quotient factorisation does not imply equivariance; under explicit saturation,
+      carrier, parity and equivariance inputs, the Schur-level counts are proved; canonical
+      equivariant vector lift and any $\beta^*$ interpretation remain open &
+      \sproved\ /\ \sopen \\[3pt]
       O28 & Window calibration \& $r_{\mathrm{eff}}$ & \cite{Beau2026a32} &
       Calibrated linear extrapolation of $n_1$ fails out of sample (to $q=601$, up to $+88\%$);
       the raw frozen-estimator exponent reaches the historical window while the O14 endpoint
       correction overcorrects at large $q$; $1\%$ threshold rank
-      $r_{\mathrm{eff}}^{1\%}=3$ in $\mathrm{End}(H_{\mathrm{eff}})$, resolved spectrum
-      $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ invariant across all pairs and $q \in \{61,101,151\}$ &
+      O28 reports $r_{\mathrm{eff}}^{1\%}=3$ and resolved spectrum
+      $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ in its stated perimeter; O29's extended recomputation finds
+      rank three modal rather than invariant ($32/50$ pairs at $q=101$, $103/105$ at $q=211$) &
       \sstruct \\[3pt]
       CC-Note & Inverse-square coverage \& constant depth & \cite{Beau2026ccnote} &
       Fingerprints are Fourier characters, so $r_c(n)=|T'_c+C\,I_{n+1}|$ with shellwise ceiling
@@ -2563,19 +2583,18 @@ A Structural Roadmap and Paper Inventory}
       finite-window law; corpus-native [T1], pair-carrier, and exponent-coordinate obstructions
       refute a Heisenberg derivation of $1/(\delta_{\mathrm{pair}}+\tfrac12)$ &
       \sproved \\[3pt]
-      O29 & Veronese collapse \& carrier ID & \cite{Beau2026a33} &
-      BI parity (anti-linear) makes $d_\rho^2=4$ inaccessible; $r_{\mathrm{eff}}=3$ is the hard $6\to3$ Veronese
-      collapse ($\mathfrak{so}(3)$ constraint forms, irreducible action), identifying the adjoint spin-$1$ carrier
-      $H_{\mathrm{eff}}\simeq\mathfrak{su}(2)\cong\mathrm{Sym}^2(V_\rho)$; spin-$\tfrac{1}{2}$ is the Schur target
-      $V_\rho$, not identified by Test~4; confirmed for $q \in \{61,101,151,211\}$ &
-      \sstruct \\[3pt]
-      O30 & Eigenvalue ratio $\lambda_1/\lambda_2$ & \cite{Beau2026a34} &
-      BI parity forces equatorial constraint $|\alpha_j|=|\beta_j|$;
-      phase-independent central component gives
+      O29 & Numerical Veronese and carrier diagnostics & \cite{Beau2026a33} &
+      Finite-checkpoint numerical $6\to3$ collapse; fitted commutators and commutant are compatible
+      with a supplied adjoint carrier but do not identify it; $W_{\mathrm{adm}}$, the auxiliary PCA
+      truncation $U_c^{(2)}$, and $V_\rho$ remain distinct; neither $d_\rho=2$ nor a Veronese root is
+      measured &
+      \textbf{numerical} \\[3pt]
+      O30 & Conditional $3\times3$ model & \cite{Beau2026a34} &
+      Under (H0)--(H3), $\beta_j=\varepsilon_j\bar\alpha_j$; two weighted cancellations give
       $\mathcal{C}_c = \langle r^4\rangle\,\mathrm{diag}(1/4,1/2,1/4)$;
-      ratio $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ derived analytically;
-      factor of~$2$ is purely structural (Carnot degree-$2$ of $Z=[X,Y]$) &
-      \sproved \\[3pt]
+      this object is distinct from O28's measured $9\times9$ covariance and does not derive its
+      spectrum; factor~$2$ comes from symmetric-tensor normalisation &
+      \textbf{cond.} \\[3pt]
       O31 & Withdrawal notice for colour-triplet and gauge-group claims & \cite{Beau2026a35} &
       Withdraws the proposed individual-profile co-admissibility, arithmetic criterion,
       metaplectic step, $\Delta(27)$ proposition, rank-eight test, $\SU(3)$ uniqueness and
@@ -2588,8 +2607,8 @@ A Structural Roadmap and Paper Inventory}
       $R=2.1,\,0.4,\,1.0,\,0.7$ respectively);
       $C_{\mathrm{color}}$ rank~1 in all cases;
       $\delta_{\mathrm{tri}}\approx 3\delta_c$ sub-percent;
-      $[H\text{-color}]_{\mathrm{avg}}$ proved to $O(q^{-1})$;
-      pointwise interpretation and gauge-group reading withdrawn by O31 version~2.0 &
+      former pointwise and averaged interpretations and every gauge-group reading withdrawn
+      or placed under re-audit by O31 version~2.0 &
       \textbf{numerical} / \sopen \\[3pt]
       O33 & Arithmetic Weil doublets and mixing & \cite{Beau2026a37} &
       Closed sumset formula and spacing theorem proved;
@@ -2632,10 +2651,12 @@ A Structural Roadmap and Paper Inventory}
       correlator; H-inv itself, phase coherence, and the Born rule are not derived &
       \sstruct \\[3pt]
       Q5a & Canonical Fourier filtration & \cite{Beau2026q5a} &
-      v3.0: canonical filtration identified exactly (toric Fourier window
+      v3.2 on a supplied finite-Heisenberg carrier and non-trivial central character: canonical
+      filtration identified exactly (toric Fourier window
       $\mathrm{span}\{e^{2\pi i b x/q}: |b|\le n\}$); published form converges to the zero form
-      (rate $q^{-2}$); normalisation no-go (no common scalar normalisation yields a
-      non-trivial toric differential operator); conditional dual-window Dirichlet limit in the
+      (rate $q^{-2}$); under [H-depth] and measured positive finite weight limits, normalisation
+      no-go (no common scalar normalisation yields a non-trivial toric differential operator);
+      conditional dual-window Dirichlet limit in the
       rescaled frequency variable.
       Former Mosco derivation of $L_\Pi=-A\partial_x^2$ (v$\le$2.1) withdrawn; spatial limit
       now hypothesis [H-L]; Q5 open &
@@ -2651,10 +2672,11 @@ A Structural Roadmap and Paper Inventory}
       \sproved\ /\ \sopen \\[3pt]
       Q5b & 4D Lorentzian geometry & \cite{Beau2026q5b} &
       BFS stratification of $\Heis_3(\mathbb{R}) \to$ 4D Lorentzian spacetime;
-      $g^{\mu\nu}=2\,\eta^{\mu\nu}$ determined (Q9, Q10, Q11).
-      v2.0: spatial limit input formalised as unestablished hypothesis [H-L]; metric results
-      conditional on [H-L]; Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
-      \sstruct{} (geometry); conditional on [H-L] (metric) \\[3pt]
+      $g^{\mu\nu}=2\,\eta^{\mu\nu}$ determined under stated inputs (Q9, Q10, Q11).
+      v2.1: spatial limit input formalised as unestablished hypothesis [H-L]; Q9 proves only
+      [H-F] $\Rightarrow$ [H-lift], with [H-F] unestablished; metric results conditional on
+      [H-L]; Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
+      \sstruct{} (geometry); conditional on [H-F] and [H-L] (metric chain) \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
       former full-group derivation relied on withdrawn O31 claims; colour factor and complete
@@ -2663,24 +2685,26 @@ A Structural Roadmap and Paper Inventory}
       Q6b & Effective spacetime & \cite{Beau2026q6b} &
       $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ from $\Pi_q$;
       Schwarzschild from flux conservation; Einstein equations as consistency conditions;
-      closes chain $\Pi_q\to\mathcal{L}_\Pi\to g^{\mu\nu}\to G_{\mu\nu}$;
-      [H-lift] closed by Q9; conditional on [H-L] &
+      closes chain $\Pi_q\to\mathcal{L}_\Pi\to g^{\mu\nu}\to G_{\mu\nu}$ conditionally;
+      Q9 proves [H-F] $\Rightarrow$ [H-lift] under unestablished [H-F]; metric claims
+      conditional on the independent [H-L] &
       \sstruct \\[3pt]
       Q7 & Dimensional bridge & \cite{Beau2026q7} &
-      $H_{\mathrm{eff}} \cong \mathrm{Sym}^2(V_\rho)$; $[F_c, L_{\mathrm{Weil}}]=0$;
-      bridge non-obstruction (Case~3 excluded by Q9); $A_z = C_{\mathfrak{su}(2)} = 2$;
-      uniqueness of $\varphi$ up to scalar &
-      \sstruct \\[3pt]
+      Proves $[\mathfrak{su}(2)]\not\cong\mathfrak{heis}_3$ and
+      $[F_c,L_{\mathrm{Weil}}]=0$; under the supplied identification
+      $H_{\mathrm{eff}}\cong\mathrm{Sym}^2(V_\rho)$, reduces the bridge to isotropy.
+      The typed bridge and its claimed uniqueness remain under audit &
+      \sopen \\[3pt]
       Q8 & Casimir rigidity & \cite{BeauQ8} &
-      $A_Z = C_{\mathfrak{su}(2)} = 2$ unconditionally under Q5a;
-      $\lambda$ fixed by horizontal sector consistency;
-      $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ established &
-      \sstruct \\[3pt]
+      Within the frozen, unestablished Q5a hypothesis [H-F], Casimir rigidity gives
+      $A_Z=C_{\mathfrak{su}(2)}=2$ and fixes $\lambda$ by horizontal-sector consistency;
+      any co-metric reading additionally requires [H-L] &
+      \sstruct\ /\ \sopen \\[3pt]
       Q9 & [H-lift] proved & \cite{Beau2026q9} &
-      Kinetic-sector identification: modulation generator suppressed at rate $O(q^{-1/2})$;
-      $A_H > 0$ proved by coercivity, independently of bridge.
-      v1.1: the withdrawn Q5a framework is consumed as the frozen hypothesis [H-F]; the
-      result is the implication [H-F] $\Rightarrow$ [H-lift] &
+      Under frozen, unestablished [H-F] and along recovery sequences, the modulation-sector
+      position-energy form contribution satisfies $\mathcal{E}^X_q(f_q)\le C/q\to0$; this is
+      not modulation-operator norm decay. Then $A_H>0$ follows by coercivity, independently of
+      the bridge. v1.1 result: [H-F] $\Rightarrow$ [H-lift] &
       \sproved \\[3pt]
       Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
       $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
@@ -2704,36 +2728,38 @@ A Structural Roadmap and Paper Inventory}
       closes last open hypothesis of the former Q5a framework (Theorem~7.1 of v$\le$2.1) &
       \sproved \\[3pt]
       Q11 & Temporal Casimir rigidity & \cite{Beau2026q11} &
-      Closes Q5b open problem~O3: Schur rigidity forces $A_\tau = C_{\mathfrak{su}(2)} = 2$;
-      effective Lorentzian co-metric fully determined:
-      $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$.
-      v1.1: algebraic content unchanged; metric reading conditional on [H-L] &
-      \sstruct \\[3pt]
-      Q12 & Yang--Mills from $a_4$ & \cite{Beau2026q12} &
+      Under frozen, unestablished [H-F], Schur rigidity gives
+      $A_\tau=C_{\mathfrak{su}(2)}=2$ within the supplied algebraic model;
+      the co-metric reading $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}$
+      additionally requires the independent, unestablished [H-L] &
+      \sstruct\ /\ \sopen \\[3pt]
+      Q12 & Yang--Mills from $a_4$ (version 1.4) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
       vertical variation $\delta_\mathcal{A} S_\Pi = 0$ at fixed metric yields
       $D_\mu F^{a\mu\nu} = 0$; induced log running $\propto I_\rho$ (non-universal),
       $g_{\mathrm{YM}}$ and $G_N$ renormalized matching data; sectors differ in UV
       divergence degree (proper-time scheme), no tuning-free hierarchy claimed
-      (\sproved{} for the $a_4$ derivation; conditional on Q6a for $G_\Pi$) &
+      (\sproved{} for the $a_4$ derivation at a supplied fixed metric and supplied compact gauge
+      data; only the emergent-base reading consumes [H-L]) &
       \sstruct \\[3pt]
-      Q13 & Gauge--gravity spectral synthesis & \cite{Beau2026q13} &
-      Joint $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0$ yields a conditional
+      Q13 & Gauge--gravity spectral synthesis (version 1.4) & \cite{Beau2026q13} &
+      On supplied geometric and gauge data, joint $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0$ yields a conditional
       Einstein--Yang--Mills system; metric variation of the gauge kinetic term $= 2\tau_{\mu\nu}$;
       $a_6$ given as a spanning list modulo IBP and Bianchi (no unique cross-term, no UV
       divergence in $d=4$); no non-linear completion asserted;
       $8\pi G_N = 1/(2c_{\mathrm{EH}})$ by canonical matching with
       $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$; couplings are matching data, no hierarchy claimed;
-      Euclidean &
+      Euclidean; only the emergent-base reading consumes [H-L] &
       \sstruct \\[3pt]
-      Q14 & Fermionic matter \& chirality & \cite{Beau2026q14} &
-      Admissible spinor bundle $S_\Pi$ reproduces the $\SU(2)_L \times U(1)_Y$ gauge-sector
+      Q14 & Fermionic matter \& chirality (version 2.0) & \cite{Beau2026q14} &
+      On a supplied Heisenberg carrier and conditional [H-L] geometry, the spinor bundle $S_\Pi$
+      reproduces the $\SU(2)_L \times U(1)_Y$ gauge-sector
       data (no independent fermionic weak doublet: NSR-Note);
       projected Dirac endomorphism $E_\Pi$ enforces $V{-}A$ chirality via the spinorial BI parity lift (proved);
-      $\gamma_5$-weighted $a_4$ fixes hypercharge by anomaly cancellation;
-      the supplied saturation rule $\sigma_c(n_3) = 3$ yields the three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$;
-      quark colour sector unconditional at pointwise level ($\Hcolor_{\mathrm{pointwise}}$ proved) &
-      \sstruct \\[3pt]
+      $\gamma_5$-weighted $a_4$ constrains hypercharge, with rigidity conditional on a supplied
+      colour module; a supplied rank-three carrier yields $\mathbb{C}^3_{\mathrm{gen}}$;
+      colour, masses, Yukawa couplings and CKM/PMNS mixing remain open &
+      \sstruct\ /\ \sopen \\[3pt]
       PRS & Schur form of $E_\Pi$ + localisation of $u$ & \cite{Beau2026prs} &
       $E_\Pi = -\Pi_S\,D\,(1-P)\,D\,\Pi_S^* = -M^\dagger M$ Schur complement of eliminated sector;
       generation split $u$ controlled by $\mathcal{D}^\pm$-transported antiunitary chiral
@@ -3009,16 +3035,16 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       \midrule
       SpAdm\-Note & The spectral admissibility sub-programme (Note~1) & \cite{Beau2026a1note} &
-      Maps the five precursor papers and O1--O33 into a single account of the spectral admissibility
-      sub-programme, recording the status of every result as proved, structural, numerical, or open.
-      Consolidation of the constituent papers; no new result &
+      Version 1.4 maps the five precursor papers and O1--O33 with proved, numerical, conditional,
+      open and withdrawn claims separated; records the failed native capacity-to-rate bridge,
+      O29/O30 scope, the O31 withdrawal, O32 measurements, and O33 exact finite structure &
       \ssynth \\[3pt]
       EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
-      Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2) into the chain
-      $\Pi_q \to L_{\mathrm{eff}} \to g^{\mu\nu} = 2\eta^{\mu\nu}$, from the admissibility filter to the
-      effective metric. Consolidation of the constituent papers; no new result &
+      Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2).
+      Q8/Q9 consume frozen, unestablished [H-F]; every effective co-metric or Lorentzian reading,
+      including $g^{\mu\nu}=2\eta^{\mu\nu}$, additionally requires unestablished [H-L] &
       \ssynth \\[3pt]
-      GS\-Note & The gauge structure sub-programme (Note~3) & \cite{Beau2026gsnote} &
+      GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.0) & \cite{Beau2026gsnote} &
       Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12. Its former full-group
       identification used withdrawn O31 claims; the colour factor and complete group are open.
       Gauge group identification only; Yang--Mills dynamics belongs to
@@ -3031,8 +3057,8 @@ A Structural Roadmap and Paper Inventory}
       truncation, and the determinantal BI completion. Consolidation of the constituent papers;
       no new result &
       \ssynth \\[3pt]
-      NIF\-Note & The non-injective foundations sub-programme (Note~5) & \cite{Beau2026ninote} &
-      Maps ENI, Foundation, HeisStr, HCO and noscale into the audited axiomatic chain:
+      NIF\-Note & The non-injective foundations sub-programme (Note~5, version 1.5) & \cite{Beau2026ninote} &
+      Maps ENI, Foundation, HeisStr version 2.1 and noscale into the audited axiomatic chain:
       A1--A4 $\Rightarrow$ $\Pi$ non-injective, while the non-trivial commutator does not force
       $\Heis_3(\mathbb{Z}/q\mathbb{Z})$; the Heisenberg/Weil carrier is a supplied realisation.
       Records the white paper's
@@ -3040,10 +3066,13 @@ A Structural Roadmap and Paper Inventory}
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       FM\-Note & The fermionic matter sub-programme (Note~6) & \cite{Beau2026fmnote} &
-      Organises Theorems~A--C of Q14 into the chain from $\Pi$ to the spinorial face of the admissible
-      Weil module: $\Sym^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and
+      Version 2.0 organises Theorems~A--C of Q14, conditional on a supplied Heisenberg carrier and
+      [H-L], into the chain to the spinorial face of the Weil module:
+      $\Sym^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and
       $\wedge^2(\mathcal{S}_\Pi) = L_Y$ reproducing $\SU(2)_L \times \mathrm{U}(1)_Y$, $V{-}A$ chirality
-      and hypercharge rigidity, and the three-generation factor $\mathbb{C}^3_{\mathrm{gen}}$.
+      and hypercharge constraints; rigidity additionally uses a supplied colour module and the
+      three-generation factor uses a supplied rank-three carrier. Masses, Yukawa couplings and
+      CKM/PMNS mixing remain open.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       QS\-Note & The quantum structure sub-programme (Note~7) & \cite{Beau2026qsnote} &
@@ -3053,11 +3082,12 @@ A Structural Roadmap and Paper Inventory}
       is currently established.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
-      GGS\-Note & The gauge--gravity stratification sub-programme (Note~8) & \cite{Beau2026ggsnote} &
-      Organises Q12 and Q13 around the spectral stratification principle
+      GGS\-Note & The gauge--gravity stratification sub-programme (Note~8, version 2.0) & \cite{Beau2026ggsnote} &
+      On supplied geometric and gauge data, organises Q12 and Q13 around the spectral stratification principle
       ($a_2 \to$ gravity, $a_4 \to$ gauge), with fixed-metric isolation of the gauge sector, $a_6$ as a
       representative spanning list, and neither a non-linear completion nor a numerical coupling
-      hierarchy claimed. Consolidation of the constituent papers; no new result &
+      hierarchy claimed; only the emergent-base reading is conditional on [H-L]. Consolidation
+      of the constituent papers; no new result &
       \ssynth \\[3pt]
       ENT\-Note & The entanglement sub-programme presentation note & \cite{Beau2026entnote} &
       Locates entanglement inside the spectral admissibility cascade: reduced entropy of a closed
@@ -3080,9 +3110,9 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Branch II (O-Series)}
 
     \paragraph{O29 at larger primes.}
-      The carrier rank $r_{\mathrm{eff}} = 3$ is confirmed for
-      $q \in \{61, 101, 151, 211\}$
-      ($105/105$ pairs at $q=211$, $100\%$, multi-sample confirmed).
+      The effective rank $r_{\mathrm{eff}} = 3$ is observed for all tested pairs at
+      $q\in\{61,151\}$, modally with seed sensitivity at $q=101$, and for $103/105$ pairs in the
+      single-sample run at $q=211$.
       Extension of the carrier diagnostics --- Veronese collapse, $\mathfrak{so}(3)$ span and
       Schur commutant --- to $q \in \{307, 401\}$ is pending.
 
@@ -3255,8 +3285,8 @@ A Structural Roadmap and Paper Inventory}
 
   The Cosmochrony programme has established a coherent, multi-level derivation of physical structure
   from a single primitive.
-  Branch~I (Foundation, ENI, HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
-  and HeisenbergCarrierObstruction~\cite{Beau2026hco}) is not formally closed.
+  Branch~I (Foundation, ENI, and HeisenbergStructure~\cite{Beau2026HeisenbergStructure})
+  is not formally closed.
   The \(S_3\) countermodel proves that the published inputs do not force centrality or a
   Heisenberg/Weil carrier.
   The carrier remains a supplied realisation for the downstream mathematical programme.
@@ -3271,31 +3301,34 @@ A Structural Roadmap and Paper Inventory}
   pair-growth carrier, and exponent-coordinate identification fail.
   The observed numerical agreement with the mass-fitted window therefore remains a
   phenomenological coincidence check rather than a mass-hierarchy derivation.
-  The carrier identification is complete~(O29): $r_{\mathrm{eff}} = 3$ is the hard $6 \to 3$ Veronese-collapse
-  invariant of the irreducible adjoint (spin-$1$) carrier $H_{\mathrm{eff}} \simeq \mathfrak{su}(2)$, confirmed
-  numerically for $q \in \{61, 101, 151, 211\}$; the spin-$\tfrac{1}{2}$ sector is the Schur target $V_\rho$,
-  selected by minimality and not identified by Test~4.
-  The invariant eigenvalue ratio $\lambda_1/\lambda_2 = 2$ of the per-pair covariance is
-  now analytically derived~(O30): the Born--Infeld parity anti-linearity forces an equatorial
-  constraint on the admissible fibre, and the factor of~$2$ is purely structural---the squared
-  symmetric-tensor normalisation of the Carnot-degree-$2$ central generator $Z=[X,Y]$.
+  O29 reports finite-checkpoint numerical rank, Veronese, commutator, and commutant diagnostics that
+  are compatible with a supplied adjoint carrier but do not identify it. Its auxiliary PCA plane is
+  not the spin-$\tfrac12$ module, and neither $d_\rho=2$ nor a Veronese square root follows from the
+  measurements.
+  O30 studies a distinct conditional $3\times3$ model on $\operatorname{Sym}^2(V_\rho)$: (H0)--(H3)
+  give the equatorial form, and two weighted cancellations give the ratio
+  $[1:\tfrac12:\tfrac12]$ within that model. It does not derive O28's measured $9\times9$ spectrum,
+  which remains empirical.
   O31 version~2.0 is a withdrawal notice: the proposed colour-triplet co-admissibility,
   arithmetic and group-identification results do not survive audit. The colour factor and complete
   Standard Model gauge group are open, and O32 numerical measurements supply no replacement group
   derivation~\cite{Beau2026a35}.
-  Branch~III (Q-series and companions) derives quantum mechanics, spacetime, and SM observables
-  at the structural level, with several results conditional on explicitly stated hypotheses.
+  Branch~III (Q-series and companions) develops conditional mathematical models toward quantum
+  mechanics, spacetime, and Standard Model observables. It contains proved internal results but
+  does not derive those physical structures from the foundational axioms as a closed chain.
   The $\SU(2)$ quantum sector is not established: Q3 proves, conditional on an explicit,
   undemonstrated diagonal-$2I$-invariance hypothesis, that the proto-state is the singlet for all
   five admissible sectors of $2I$ via Schur's lemma, with the universal correlator
   $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ (\sstruct); the invariance hypothesis
   itself, phase coherence, and the Born rule remain open (\sopen).
-  The geometric emergence sub-programme has advanced substantially: Q9 proves [H-lift] and
-  $A_H > 0$ (unconditionally under Q5a); Q10 proves $A_H \to 2$ under spectral universality~[U];
+  The geometric emergence sub-programme has advanced substantially: Q9 proves the conditional
+  implication [H-F] $\Rightarrow$ [H-lift] and $A_H>0$ under the frozen, unestablished
+  hypothesis [H-F]; Q10 proves $A_H \to 2$ under spectral universality~[U];
   U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability;
   W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
-  ($A_\tau = 2$ from Q11~\cite{Beau2026q11}) is thereby established under the Q5a foundational hypotheses and~[U].
+  ($A_\tau = 2$ from Q11~\cite{Beau2026q11}) has this metric interpretation only under the
+  independent, unestablished spatial-limit hypothesis [H-L]; [H-F] remains separately open.
   Q12~\cite{Beau2026q12} completes the spectral derivation of gauge dynamics:
   the gauge component of the Seeley--DeWitt $a_4$ coefficient of the operator
   $A_{g,\mathcal{A}}$ on the admissible vector bundle contains the Yang--Mills density
@@ -3320,9 +3353,10 @@ A Structural Roadmap and Paper Inventory}
   A qualitative mechanism for the inter-generation splitting is identified in Q14~\S6 (a static
   $J_\Pi$-protected degeneracy lifted by the oriented cascade generator), with its amplitude
   deferred to the cascade normalisation.
-  Together, Q12--Q14 establish that the bosonic gauge and gravitational fields and the
-  fermionic matter content of the Standard Model arise from a single structural source:
-  the non-injective projection admissibility constraint on the Weil module.
+  Together, Q12--Q14 organise a conditional common spectral framework for supplied geometric,
+  gauge, colour, and carrier data. They do not derive the complete Standard Model field content
+  from non-injective projection: the colour factor, several carrier selections, [H-L], masses,
+  Yukawa couplings, and mixing data remain open or supplied.
   \emph{Interpretive outlook.} Beyond the individually labelled results above, the programme's
   unifying reading can be stated in one sentence --- it is a \emph{spectrally stratified theory of
   emergent interactions}, in which the type of a fundamental interaction is determined by the
@@ -3334,7 +3368,7 @@ A Structural Roadmap and Paper Inventory}
   pipeline, the truncation status of its three-coordinate reduction (no rank measurable from
   it), and the $O(q^{-2})$ upper bound ruling out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1]
   and [C] are not closed by a finite-rank route, their disposition being the zero-form Mosco
-  limit on the canonical Fourier-window filtration of Q5a version 3.0.
+  limit on the canonical Fourier-window filtration of Q5a version 3.2.
   The H2 paper proves [H2] (strong convergence of the rescaled Weil
   generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$) via a quantitative Poisson
   aliasing lemma and a discrete Sobolev identity.

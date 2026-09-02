@@ -8,6 +8,19 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.16 synchronises the 28--31 August release wave: O25 1.5, O27 2.0,
+O29 2.0, O30 2.0,
+HeisenbergStructure 2.1, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and
+the Gauge Structure, Gauge--Gravity Stratification, and Fermionic Matter presentation notes.
+It consolidates the retired standalone HCO record into HeisenbergStructure 2.1, preserves the
+separation between supplied-data theorems and emergent-base readings, and records the exact
+[H-F] $\Rightarrow$ [H-lift] scope of Q9. O29's finite-precision diagnostics are numerical rather
+than exact carrier-identification theorems, and O30 is a conditional $3\times3$ model distinct from
+O28's measured covariance. It also distinguishes the Heisenberg/Schrödinger representation
+identified by Stone--von Neumann from the separate associated Weil action. The registry and
+website graph remain a single
+116-node artefact.
+
 Version 2.2 records the finite \(S_3\) countermodel to the published Heisenberg carrier-selection
 argument. The algebraic properties extracted from A1--A3 do not force a central commutator,
 class-two nilpotence, a finite Heisenberg group, or a Weil carrier. Found and HeisStr are therefore
@@ -33,8 +46,10 @@ states. The corpus comprises **116 papers** across three theory branches:
   observable and its fibre/representation structure. The proposed
   $\delta_{\mathrm{pair}}\to\beta^*$ continuation is now recorded as a refuted native
   Heisenberg transfer and retained only as a cross-substrate phenomenological prescription.
-- **Branch III — Q-series and companion papers**: derives quantum mechanics, spacetime geometry,
-  gauge structure, and further observables from the Branch I axioms and Branch II spectral data.
+- **Branch III — Q-series and companion papers**: develops conditional mathematical models toward
+  quantum mechanics, spacetime geometry, gauge structure, and further observables. It contains
+  proved internal results, but the physical chains retain supplied carriers and open bridges such
+  as the Born rule, [H-L], and the colour factor.
 
 ## Role in the Repository
 
