@@ -9,7 +9,6 @@ documents the dependency graph between them, and tracks their status. It is the 
 consult first to understand how the pieces fit together.
 
 Version 2.16 synchronises the 28--31 August release wave: O25 1.5, O27 2.0,
-O29 2.0, O30 2.0,
 HeisenbergStructure 2.1, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and
 the Gauge Structure, Gauge--Gravity Stratification, and Fermionic Matter presentation notes.
 It consolidates the retired standalone HCO record into HeisenbergStructure 2.1, preserves the
@@ -19,9 +18,13 @@ than exact carrier-identification theorems, and O30 is a conditional $3\times3$ 
 O28's measured covariance. It also distinguishes the Heisenberg/Schrödinger representation
 identified by Stone--von Neumann from the separate associated Weil action. The registry and
 website graph remain a single
-116-node artefact. It also synchronises the September releases: O26 2.0, O28 2.0, the Spectral
+116-node artefact. It also synchronises the September releases: O29 2.0, O30 2.0, O26 2.0, O28 2.0, the Spectral
 Admissibility presentation note 2.0, PYL 2.0, EBJ 2.0, PRS 2.1, A4-Note 2.1, FM-Note 2.1 and PYO 1.10.1,
-and aligns the bibliography titles of thirteen entries with their deposited records.
+and aligns the bibliography titles of thirteen entries with their deposited records. Version labels of
+Foundation, Q9, NIF-Note, ENT-Note, the white paper and SpectralAdmissibility are aligned with the deposits, the
+Branch III description is restated on the open bridges, and the dependency graph gains numerical and conditional
+statuses and the edges O25 to O26/O27, O28/O29 to O30, O31 to O32 and SGN/CC-Note to the Spectral Admissibility
+note.
 
 Version 2.2 records the finite \(S_3\) countermodel to the published Heisenberg carrier-selection
 argument. The algebraic properties extracted from A1--A3 do not force a central commutator,

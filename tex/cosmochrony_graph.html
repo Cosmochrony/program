@@ -21,6 +21,10 @@
       --heur-bg: #2a1c04;
       --open: #f85149;
       --open-bg: #2e0a0a;
+      --num: #bc8cff;
+      --num-bg: #1f1235;
+      --cond: #f0883e;
+      --cond-bg: #2b1608;
       --accent: #bc8cff;
       --edge-base: #2a3040;
       --edge-spine: #3a4560;
@@ -67,6 +71,10 @@
         --heur: #9a6700;
         --open-bg: #ffebe9;
         --open: #cf222e;
+        --num-bg: #fbefff;
+        --num: #8250df;
+        --cond-bg: #fff1e5;
+        --cond: #bc4c00;
         --accent: #8250df;
         --edge-base: #c8d0da;
         --edge-spine: #9eaab8;
@@ -631,6 +639,14 @@
       <div class="dot" style="background:var(--open-bg);border:1.5px solid var(--open)"></div>
       open
     </div>
+    <div class="li" id="li-numerical" style="color:var(--num)" onclick="filterStatus('numerical')">
+      <div class="dot" style="background:var(--num-bg);border:1.5px solid var(--num)"></div>
+      numerical
+    </div>
+    <div class="li" id="li-conditional" style="color:var(--cond)" onclick="filterStatus('conditional')">
+      <div class="dot" style="background:var(--cond-bg);border:1.5px solid var(--cond)"></div>
+      conditional
+    </div>
   </div>
 
   <div class="ctrl-sep"></div>
@@ -709,7 +725,9 @@
     proved: { fill: "var(--proved-bg)", stroke: "var(--proved)" },
     structural: { fill: "var(--struct-bg)", stroke: "var(--struct)" },
     heuristic: { fill: "var(--heur-bg)", stroke: "var(--heur)" },
-    open: { fill: "var(--open-bg)", stroke: "var(--open)" }
+    open: { fill: "var(--open-bg)", stroke: "var(--open)" },
+    numerical: { fill: "var(--num-bg)", stroke: "var(--num)" },
+    conditional: { fill: "var(--cond-bg)", stroke: "var(--cond)" }
   }
   const EDGE_TYPES = {
     proved: { label: "proved", color: "var(--edge-proved)" },
@@ -791,7 +809,7 @@
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
       title: "Non-Injective Foundations Sub-Programme (Presentation Note 5)",
-      desc: "Version 1.5 audited synthesis of ENI, Foundation, HeisenbergStructure 2.1 (including the S₃ obstruction), and No External Scale. The retired standalone HCO record is consolidated into HeisenbergStructure. After the group and central character are supplied, Stone–von Neumann identifies the Heisenberg–Schrödinger representation; the associated Weil action is distinct further symplectic data. Carrier selection remains open. Adds no new theorem."
+      desc: "Version 1.4 audited synthesis of ENI, Foundation, HeisenbergStructure and No External Scale; the finite S₃ countermodel is cited there from the retired HCO record, since consolidated into HeisenbergStructure 2.1. After the group and central character are supplied, Stone–von Neumann identifies the Heisenberg–Schrödinger representation; the associated Weil action is distinct further symplectic data. Carrier selection remains open. Adds no new theorem."
     },
     {
       id: "BI", lbl: "BornInfeld", s: "structural", b: "II", key: "Beau2026c",
@@ -1061,7 +1079,7 @@
     },
     {
       id: "O32", lbl: "O32", s: "open", b: "II", key: "Beau2026a36",
-      url: ZEN + "20259893",
+      url: ZEN + "20145607",
       tags: ["SM", "emer"],
       title: "O32 — Colour-Triplet Numerical Measurements, Interpretation Open",
       desc: "Retains the finite-q numerical outputs for q∈{61,151,211,307}: the declared ratios, decay fits and rank-one covariance measurements. O31 version 2.0 withdraws their former pointwise co-admissibility and SU(3) interpretation. Threshold passage, factor-of-three fits and rank one do not identify a colour representation or gauge group."
@@ -1071,7 +1089,7 @@
       url: ZEN + "21360722",
       tags: ["mass", "QM"],
       title: "O33 — A Finite Spectral Architecture for Mass-Square Splitting and Mixing",
-      desc: "Exact closed sumset for the O12 three-character Fourier filtration; cyclic-spacing porosity theorem; full stabiliser through A_K; orbit-divisibility sieve, uniform exact C₄ and C₆ families, and (v1.1) an additive rigidity theorem A_K={±1} outside a degenerate boundary regime, plus a third near-saturation C₄ family; the degenerate regime refined (v1.4): infinite Gaussian-box C₄ family, all 75 exceptional sets through q=151 in three mechanisms, no C₈ through q=257; (v1.5) a fourth-moment argument proves exact stabiliser C₄ for every proper Gaussian box, direct or wrapped, and for every free four-point complement orbit, leaving completeness and the Eisenstein top autocorrelation level open; porous depths of a uniform block converge (v1.4) to an explicit point process with count law (3/20,7/24,9/40,5/24,1/8), mean 28/15, and piecewise affine intensity; internal Mackey–Hecke M₂(C) doublets; universal Harper split 1±q⁻¹ᐟ²; boundary mixing reduced (v1.3) to the character sum C_θ(K) by a Galois separation theorem, with its zeros completely classified into antipodal-pair, cube-triple, and double-pair mechanisms on at most four hole pairs; odd Weyl-symbol sector protected by parity closure. Mathematics-first paper; no Dirac-mass or Standard-Model identification."
+      desc: "Exact closed sumset for the O12 three-character Fourier filtration; cyclic-spacing porosity theorem; full stabiliser through A_K; orbit-divisibility sieve, uniform exact C₄ and C₆ families, and (v1.1) an additive rigidity theorem A_K={±1} outside a degenerate boundary regime, plus a third near-saturation C₄ family; the degenerate regime refined (v1.4): infinite Gaussian-box C₄ family, all 75 exceptional sets through q=151 in three mechanisms, no C₈ at q=193, 241, 257; (v1.5) a fourth-moment argument proves exact stabiliser C₄ for every proper Gaussian box, direct or wrapped, and for every free four-point complement orbit, leaving completeness and the Eisenstein top autocorrelation level open; porous depths of a uniform block converge (v1.4) to an explicit point process with count law (3/20,7/24,9/40,5/24,1/8), mean 28/15, and piecewise affine intensity; internal Mackey–Hecke M₂(C) doublets; universal Harper split 1±q⁻¹ᐟ²; boundary mixing reduced (v1.3) to the character sum C_θ(K) by a Galois separation theorem, with its zeros completely classified into antipodal-pair, cube-triple, and double-pair mechanisms on at most four hole pairs; odd Weyl-symbol sector protected by parity closure. Mathematics-first paper; no Dirac-mass or Standard-Model identification."
     },
     {
       id: "SpANote", lbl: "SpAdm-Note", s: "structural", b: "II", key: "Beau2026a1note",
@@ -1081,7 +1099,7 @@
       desc:
         "Synthesis and entry point of the spectral admissibility sub-programme on a supplied Heisenberg–Schrödinger carrier and its distinct associated Weil action. " +
         "Version 2.0 maps the five precursor papers, O1 and O3–O33 and the SGN/CC companions, recording each result as proved, structural, numerical, conditional, or open. The reciprocal β* prescription has no carrier on the measurement substrate (Span-Growth Note), so the numerical agreement is a coincidence check; the SU(2) carrier is supplied conditionally. " +
-        "O25 reports samples through q=601. O31 withdraws [H-color] and every gauge-group interpretation; O32 retains measurements only."
+        "O25 reports samples through q=601. O31 withdraws the pointwise and rank levels of [H-color] and every gauge-group interpretation; O32's averaged and effective levels stand as its own results."
     },
     {
       id: "PTO", lbl: "PTO", s: "structural", b: "II", key: "Beau2026pto",
@@ -1310,23 +1328,14 @@
         "and N_A=θ_max≠0, q-invariant on q∈{61,101,151}. [H-orient] closed in the inherited lift; the residual " +
         "spin-Galois (√5 / ADE-spin) phase orthogonal to ζ_q is discharged by AOG's chiral-lift corollary " +
         "(the Lorentzian lift induces no √5 action), so [H-orient] holds and N_A≠0 unconditionally within the " +
-        "present spin stratum. The promotion to u≠0 is now closed in PRS by Schur transversality (exact " +
-        "metaplectic opening α=ts·r/sinh r≢0, μ≡0, timelike Clifford symbol off the zero-mode locus ⇒ " +
-        "Schur-transverse), with electric genus μ_χ²<0 (A4-note). The explicit Lorentzian eliminated block 1−P(s) " +
-        "is structurally constrained (EBJ, zenodo 20763532): the jet 1−P(s)=Q₀+sQ₁+s²Q₂ has Q₁=[A,Q₀] a purely " +
-        "off-diagonal Grassmann tangent for every smooth family; with a covariant moving embedding, antiunitary parity " +
-        "makes every odd-order generation-mixing coefficient vanish, and an explicit covariant moving-Schur " +
-        "family realises a non-zero first-order split rate u′(0)=11·2^{1/4}/9. The J_Π-odd tangent has " +
-        "LL-block ½∂_sΔ_χ(P)|₀, one block of the tangent rather than a unique generator; the selection of the " +
-        "family, the localisation of the odd tangent, even-order mixing and the normalisation of |u| remain open, " +
-        "|u| staying dictionary-bound."
+        "present spin stratum. CHO itself does not derive u≠0, which requires the Schur transport (PRS)."
     },
     {
       id: "PRS", lbl: "PRS", s: "structural", b: "III", key: "Beau2026prs",
       url: BASE + "fermionic-matter/projective-residue-schur",
       tags: ["SM", "mass", "grav"],
       title: "Projective Residue as a Schur Complement",
-      desc: "Expresses E_Π=−Π_S D(1−P)DΠ_S* = −M†M as the Schur complement of eliminated spinorial directions and localises the generation split u in the transported chiral equivariance defect. A1–A3 force u=0; non-zero u requires A4 and the Lorentzian Schur-transverse branch."
+      desc: "Expresses E_Π=−Π_S D(1−P)DΠ_S* = −M†M as the Schur complement of eliminated spinorial directions and localises the generation split u in the transported chiral equivariance defect. A1–A3 force u=0; non-zero u requires A4; the Lorentzian Schur-transverse branch is selected in 2.1 (exact metaplectic opening, timelike Clifford symbol off the zero-mode locus), so with the electric genus of A4-Note u≠0; open: explicit 1−P(s), |u|, Yukawa sector."
     },
     {
       id: "AAR", lbl: "AAR", s: "structural", b: "III", key: "Beau2026aar",
@@ -1399,7 +1408,7 @@
       desc: "Finite no-go results exclude a fermionic weak-doublet lift from the Weil commutant and from erased trajectory fibres. The theorem πv=0 ⇒ Qπv=0 forbids reconstruction of erased multiplicity by a later observable-only map; a parallel oriented substrate channel would be an extension, not a derivation."
     },
     {
-      id: "AOG", lbl: "AOG", s: "structural", b: "III", key: "Beau2026aog",
+      id: "AOG", lbl: "AOG", s: "proved", b: "III", key: "Beau2026aog",
       url: BASE + "fermionic-matter/arithmetic-orthogonality-adegate",
       tags: ["SM", "mass", "QM"],
       title: "Spin-Stratum Type-Rigidity and the ADE Gate",
@@ -1674,7 +1683,7 @@
     { f: "O23", t: "O24", sp: 1 },
     { f: "O24", t: "O25", sp: 1 }, { f: "O24", t: "O26" }, { f: "O26", t: "O27" }, { f: "O24", t: "PTO" },
     { f: "ENI", t: "FibreErase", sp: 1 }, { f: "Found", t: "FibreErase" }, { f: "O24", t: "FibreErase" }, { f: "O32", t: "FibreErase" },
-    { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
+    { f: "O25", t: "O26" }, { f: "O25", t: "O27" }, { f: "O25", t: "O28", sp: 1 }, { f: "O27", t: "O28" },
     { f: "O28", t: "O29", sp: 1 }, { f: "O27", t: "O29" },
     { f: "O12", t: "O33", sp: 1 }, { f: "PTO", t: "O33" },
     { f: "O25", t: "CCNote", sp: 1 }, { f: "O28", t: "CCNote", sp: 1 },
@@ -1684,7 +1693,7 @@
     { f: "O1", t: "SpANote", syn: 1 }, { f: "O3", t: "SpANote", syn: 1 }, { f: "O4", t: "SpANote", syn: 1 }, { f: "O5", t: "SpANote", syn: 1 }, { f: "O6", t: "SpANote", syn: 1 }, { f: "O7", t: "SpANote", syn: 1 }, { f: "O8", t: "SpANote", syn: 1 },
     { f: "O9", t: "SpANote", syn: 1 }, { f: "O10", t: "SpANote", syn: 1 }, { f: "O11", t: "SpANote", syn: 1 }, { f: "O12", t: "SpANote", syn: 1 }, { f: "O13", t: "SpANote", syn: 1 }, { f: "O14", t: "SpANote", syn: 1 }, { f: "O15", t: "SpANote", syn: 1 },
     { f: "O16", t: "SpANote", syn: 1 }, { f: "O17", t: "SpANote", syn: 1 }, { f: "O18", t: "SpANote", syn: 1 }, { f: "O19", t: "SpANote", syn: 1 }, { f: "O20", t: "SpANote", syn: 1 }, { f: "O21", t: "SpANote", syn: 1 }, { f: "O22", t: "SpANote", syn: 1 }, { f: "O23", t: "SpANote", syn: 1 }, { f: "O24", t: "SpANote", syn: 1 },
-    { f: "O25", t: "SpANote", syn: 1 }, { f: "O26", t: "SpANote", syn: 1 }, { f: "O27", t: "SpANote", syn: 1 }, { f: "O28", t: "SpANote", syn: 1 }, { f: "O29", t: "SpANote", syn: 1 }, { f: "O30", t: "SpANote", syn: 1 }, { f: "O31", t: "SpANote", syn: 1 }, { f: "O32", t: "SpANote", syn: 1 }, { f: "O33", t: "SpANote", syn: 1 },
+    { f: "O25", t: "SpANote", syn: 1 }, { f: "SGN", t: "SpANote", syn: 1 }, { f: "CCNote", t: "SpANote", syn: 1 }, { f: "O28", t: "O30" }, { f: "O29", t: "O30" }, { f: "O31", t: "O32" }, { f: "O26", t: "SpANote", syn: 1 }, { f: "O27", t: "SpANote", syn: 1 }, { f: "O28", t: "SpANote", syn: 1 }, { f: "O29", t: "SpANote", syn: 1 }, { f: "O30", t: "SpANote", syn: 1 }, { f: "O31", t: "SpANote", syn: 1 }, { f: "O32", t: "SpANote", syn: 1 }, { f: "O33", t: "SpANote", syn: 1 },
     { f: "Q5a", t: "EGNote", syn: 1 }, { f: "Q5aO2", t: "EGNote", syn: 1 }, { f: "Q5b", t: "EGNote", syn: 1 }, { f: "Q6b", t: "EGNote", syn: 1 }, { f: "Q7", t: "EGNote", syn: 1 }, { f: "Q8", t: "EGNote", syn: 1 },
     { f: "Q9", t: "EGNote", syn: 1 }, { f: "Q10", t: "EGNote", syn: 1 }, { f: "Q11", t: "EGNote", syn: 1 }, { f: "U1", t: "EGNote", syn: 1 }, { f: "W1", t: "EGNote", syn: 1 }, { f: "H2", t: "EGNote", syn: 1 },
     { f: "Found", t: "GSNote", syn: 1 }, { f: "TopI", t: "GSNote", syn: 1 }, { f: "SMcm", t: "GSNote", syn: 1 },
@@ -1711,7 +1720,7 @@
     { f: "EGNote", t: "Q13", st: "conditional", claim: "only the emergent-base interpretation consumes [H-L]; the supplied-data variational calculation does not" },
     { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "EGNote", t: "Q14", st: "postulated", claim: "spinorial construction consumes the Lorentzian geometry conditional on [H-L]" },
-    { f: "Q14", t: "PRS", sp: 1 }, { f: "Q14", t: "AAR" }, { f: "PRS", t: "AAR" },
+    { f: "Q14", t: "PRS", sp: 1 }, { f: "Q14", t: "AAR" }, { f: "AAR", t: "PRS" },
     { f: "Q11", t: "Q11OF" }, { f: "Q14", t: "Q11OF" }, { f: "AAR", t: "Q11OF" },
     { f: "Q11OF", t: "CHO", sp: 1 }, { f: "Q14", t: "CHO" },
     { f: "PRS", t: "A4Note", sp: 1 }, { f: "BI", t: "A4Note" }, { f: "Grav", t: "A4Note" },
