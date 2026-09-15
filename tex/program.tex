@@ -46,11 +46,15 @@
 \definecolor{cheur}{RGB}{200,130,0}
 \definecolor{copen}{RGB}{190,50,40}
 \definecolor{csynth}{RGB}{95,95,105}
+\definecolor{cnum}{RGB}{110,60,180}
+\definecolor{ccond}{RGB}{200,90,20}
 \newcommand{\sproved}{\textcolor{cproved}{\textbf{proved}}}
 \newcommand{\sstruct}{\textcolor{cstruct}{\textbf{structural}}}
 \newcommand{\sheur}{\textcolor{cheur}{\textbf{heuristic}}}
 \newcommand{\sopen}{\textcolor{copen}{\textbf{open}}}
 \newcommand{\ssynth}{\textcolor{csynth}{\textbf{synthesis}}}
+\newcommand{\snum}{\textcolor{cnum}{\textbf{numerical}}}
+\newcommand{\scond}{\textcolor{ccond}{\textbf{conditional}}}
 
 \title{The Cosmochrony Research Programme:\\[4pt]
 A Structural Roadmap and Paper Inventory}
@@ -59,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.16}
+\date{2026\\[2pt]\small Version 2.17}
 
 \begin{document}
 
@@ -153,12 +157,20 @@ A Structural Roadmap and Paper Inventory}
     \sproved{} (formally proved as a theorem within the stated assumptions);
     \sstruct{} (derived from structural arguments that are internally consistent but not yet fully
     formalised);
+    \snum{} (reported measurements or exact finite computations that establish no theorem beyond the
+    data they report);
+    \scond{} (a theorem-level result whose load-bearing input is a supplied identification or an
+    unestablished hypothesis of the programme, so that the result cannot be read as established until
+    that input is);
     \sheur{} (physically motivated and numerically supported but not yet rigorously derived);
     \sopen{} (explicitly conjectured or known to be unsettled).
-    A fifth entry, \ssynth{}, is reserved in the inventory table for the sub-programme presentation
+    A seventh entry, \ssynth{}, is reserved for the sub-programme presentation
     and synthesis notes: these papers consolidate and organise results established in their
     constituent papers and carry no new result of their own, so their epistemic content is that of
     the papers they map.
+    Each paper carries one primary label, stated first in the inventory table and in the dependency
+    figures and graph, followed where useful by the labels of its secondary components; the primary
+    label is the status of the paper's principal contribution.
     These classifications record the current audited status.
     They may therefore correct an original paper's self-classification when a published countermodel or
     obstruction establishes that a claimed implication does not follow.
@@ -849,7 +861,7 @@ A Structural Roadmap and Paper Inventory}
     number is reproducible from the published deposit alone.
 
     \textbf{O29}~\cite{Beau2026a33}: Veronese collapse in the measured trajectory span
-    (\textbf{numerical}).
+    (\snum).
     The exact Weil-block identity $\rho_{q-c} = \bar\rho_c$ (an O17 theorem recalled in O18) motivates
     but does not prove the projected-coordinate relation $\pi_{q-c}(v) = \overline{\pi_c(v)}$, which the
     stored data satisfy only approximately; under it every outer
@@ -919,7 +931,7 @@ A Structural Roadmap and Paper Inventory}
     averaged level ($O(q^{-1})$, O32 Proposition~1) and the effective level stand as O32's own results. The O32
     numerical values remain reported measurements; they do not establish individual-profile co-admissibility or
     identify a gauge group.
-    Status: \textbf{numerical} for the reported measurements; their former O31-based structural interpretation
+    Status: \snum for the reported measurements; their former O31-based structural interpretation
     is withdrawn and under re-audit.
 
     \textbf{O33}~\cite{Beau2026a37}: arithmetic Mackey--Hecke structure of the O12
@@ -1938,8 +1950,9 @@ A Structural Roadmap and Paper Inventory}
     depth one (transfer matrix).
 
     \textbf{LowLCapacity}~\cite{Beau2026dhc}: Low-multipole suppression from distinguishable-history capacity
-    (capacity ceiling: conditional theorem chain in ProjCE~\cite{Beau2026pce}; saturation:
-    \sopen; no-fit grid: numerical benchmark; TE/EE transfer: \sopen).
+    (\sstruct{} for the re-audited $8/3$ fibre-to-base stiffness; capacity ceiling: conditional theorem chain
+    in ProjCE~\cite{Beau2026pce}; saturation: \sopen; no-fit grid: numerical benchmark; TE/EE transfer:
+    \sopen).
     Replaces the white-paper phenomenological low-$\ell$ envelope (two free parameters, illustrative
     comparison) by a small-$N$ mechanism: the largest angular modes probe the first admissibility ranks, which
     contain only $3$, $7$, $17$ distinguishable histories (canonical Pell count~\cite{Beau2026tb}).
@@ -2007,6 +2020,9 @@ A Structural Roadmap and Paper Inventory}
           S/.style={box, fill=blue!6,   draw=cstruct,  text=black},
           H/.style={box, fill=orange!10,draw=cheur,    text=black},
           Oc/.style={box, fill=red!6,   draw=copen,    text=black},
+          N/.style={box, fill=violet!6,  draw=cnum,     text=black},
+          C/.style={box, fill=orange!8,  draw=ccond,    text=black},
+          Y/.style={box, fill=gray!8,    draw=csynth,   text=black},
           arr/.style={-{Stealth[length=4pt,width=3pt]}, gray!60, line width=0.9pt},
           spine/.style={-{Stealth[length=5pt,width=3.5pt]}, black!55, line width=1.4pt},
           synth/.style={-{Stealth[length=3pt,width=2pt]}, draw=cstruct!45, line width=0.35pt, opacity=0.55},
@@ -2015,10 +2031,10 @@ A Structural Roadmap and Paper Inventory}
           \newcommand{\dx}{2.1cm}
           \newcommand{\dy}{1.35cm}
 
-          \node[P] (WP)     at (0,0)          {WP};
+          \node[S] (WP)     at (0,0)          {WP};
           \node[P] (ENI)    at (\dx,0)        {ENI};
           \node[S] (Found)  at (2*\dx,0)      {Found};
-          \node[S] (Heis)   at (3*\dx,0)      {HeisStr};
+          \node[P] (Heis)   at (3*\dx,0)      {HeisStr};
           \node[P] (nos)    at (4*\dx,0)      {noscale};
 
           \draw[spine] (WP)--(ENI);
@@ -2026,7 +2042,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr,dashed] (Found)--(Heis);
           \draw[arr]   (Found)--(nos);
 
-          \node[P]  (BI)    at (0,-\dy)       {BornInfeld};
+          \node[S]  (BI)    at (0,-\dy)       {BornInfeld};
           \node[P]  (SpA)   at (\dx,-\dy)     {SpAdm};
           \node[P] (SpCap) at (2*\dx,-\dy)   {SpCap};
           \node[P]  (SpG)   at (3*\dx,-\dy)   {SpGram};
@@ -2066,11 +2082,11 @@ A Structural Roadmap and Paper Inventory}
 
           \node[S] (O16)  at (0,-5*\dy)       {O16};
           \node[P] (O17)  at (\dx,-5*\dy)     {O17};
-          \node[Oc] (O18)  at (2*\dx,-5*\dy)   {O18};
-          \node[Oc] (O19)  at (3*\dx,-5*\dy)   {O19};
-          \node[Oc] (O22)  at (4*\dx,-5*\dy)   {O22};
+          \node[P] (O18)  at (2*\dx,-5*\dy)   {O18};
+          \node[P] (O19)  at (3*\dx,-5*\dy)   {O19};
+          \node[P] (O22)  at (4*\dx,-5*\dy)   {O22};
           \node[P] (O23)  at (5*\dx,-5*\dy)   {O23};
-          \node[Oc] (O24)  at (6*\dx,-5*\dy)   {O24};
+          \node[P] (O24)  at (6*\dx,-5*\dy)   {O24};
 
           \draw[spine] (O15) to[out=-90,in=90] (O16);
           \draw[arr]   (O16)--(O17);
@@ -2080,18 +2096,18 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (O22)--(O23);
           \draw[spine] (O23)--(O24);
 
-          \node[S] (O25)  at (4*\dx,-6*\dy)   {O25};
+          \node[N] (O25)  at (4*\dx,-6*\dy)   {O25};
           \node[S] (O26)  at (5*\dx,-6*\dy)   {O26};
-          \node[S] (O27)  at (6*\dx,-6*\dy)   {O27};
-          \node[S] (O28)  at (7*\dx,-6*\dy)   {O28};
-          \node[S] (O29)  at (7*\dx,-7*\dy)   {O29};
-          \node[S] (O30)  at (7*\dx,-8*\dy)   {O30};
+          \node[P] (O27)  at (6*\dx,-6*\dy)   {O27};
+          \node[N] (O28)  at (7*\dx,-6*\dy)   {O28};
+          \node[N] (O29)  at (7*\dx,-7*\dy)   {O29};
+          \node[C] (O30)  at (7*\dx,-8*\dy)   {O30};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O30.east)
             {conditional $3\times3$ model};
-          \node[S] (O31)  at (7*\dx,-9*\dy)   {O31};
+          \node[Oc] (O31)  at (7*\dx,-9*\dy)   {O31};
           \node[font=\tiny\sffamily,text=copen,right=2pt] at (O31.east)
             {withdrawn claims};
-          \node[S] (O32)  at (7*\dx,-10*\dy)  {O32};
+          \node[N] (O32)  at (7*\dx,-10*\dy)  {O32};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (O32.east)
             {$q{=}61,151,211,307$ all pass};
           \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
@@ -2104,7 +2120,7 @@ A Structural Roadmap and Paper Inventory}
           \node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
           \node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
           \node[P] (LCo3)   at (6*\dx,-11*\dy) {LCo3};
-          \node[P] (LCsyn)  at (5*\dx,-12*\dy) {LC-Synth};
+          \node[Y] (LCsyn)  at (5*\dx,-12*\dy) {LC-Synth};
 
           \draw[arr]   (PTO)    -- (LorCap);
           \draw[spine] (LorCap) -- (TempPr);
@@ -2134,34 +2150,34 @@ A Structural Roadmap and Paper Inventory}
 
 % Spectral admissibility sub-programme synthesis (presentation note):
 % aggregates all constituent papers (5 precursors + O-series).
-          \node[S] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
+          \node[Y] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
           \foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
           O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32,O33}
           \draw[synth] (\n) to[out=-90,in=90] (SpANote);
 
 % Non-injective foundations sub-programme synthesis (presentation note 5):
 % aggregates the four constituents of Branch I (ENI, Foundation, HeisStr, noscale).
-          \node[S] (NIFNote) at (2*\dx,\dy) {NIF-Note};
+          \node[Y] (NIFNote) at (2*\dx,\dy) {NIF-Note};
           \foreach \n in {ENI,Found,Heis,nos}
           \draw[synth] (\n) to[out=90,in=-90] (NIFNote);
 
-          \node[Oc] (Q1)   at (8*\dx,-4*\dy)   {Q1};
+          \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
           \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
-          \node[P] (Q3)   at (9*\dx,-5*\dy)   {Q3};
+          \node[S] (Q3)   at (9*\dx,-5*\dy)   {Q3};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (Q3.east)
             {general-$j$ complete};
 
 % Quantum structure sub-programme synthesis (presentation note 7):
 % aggregates Q1, Q2, Q3, and the Bell paper.
-          \node[S] (QSNote) at (10*\dx,-4*\dy) {QS-Note};
+          \node[Y] (QSNote) at (10*\dx,-4*\dy) {QS-Note};
           \draw[synth] (Q1)   to[out=0,in=180]  (QSNote);
           \draw[synth] (Q2)   to[out=0,in=-150] (QSNote);
           \draw[synth] (Q3)   to[out=30,in=-120] (QSNote);
 
-          \node[S] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
+          \node[P] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
           \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
           \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
-          \node[S] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
+          \node[Oc] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
           \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
           \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
           \node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
@@ -2183,7 +2199,7 @@ A Structural Roadmap and Paper Inventory}
 % Emergent geometry sub-programme synthesis (presentation note):
 % aggregates the geometric emergence papers (Q5a, Q5a-O2, Q5b, Q6b, Q7, H2,
 % and the Q8--Q10/U1/W1 block).
-          \node[S] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
+          \node[Y] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
           \foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
           \draw[synth] (\n) to[out=-30,in=120] (EGNote);
 
@@ -2204,9 +2220,9 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (Q6a)--(Q6b);
 
           \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
-          \node[P] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
+          \node[Oc] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
           \node[S] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
-          \node[P] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
+          \node[Oc] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
 
           \draw[arr]   (WP) to[out=-90,in=90] (Sp2);
           \draw[spine] (Sp2)--(Grav);
@@ -2228,7 +2244,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr] (BI)    to[out=-90,in=90] (Cosm);
           \draw[arr] (Found) to[out=-90,in=90] (Supra);
 
-          \node[S] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
+          \node[Y] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
           \draw[arr] (Bell) to[out=-90,in=90] (ENTn);
           \draw[synth] (Bell) to[out=30,in=-170] (QSNote);
 
@@ -2237,7 +2253,7 @@ A Structural Roadmap and Paper Inventory}
             {Weil ortho.};
           \draw[arr] (ENTn) to[out=0,in=180] (ENTe1);
 
-          \node[P] (ENTe2) at (2*\dx,-10*\dy)  {E2};
+          \node[S] (ENTe2) at (2*\dx,-10*\dy)  {E2};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe2.east)
             {two entropies};
           \draw[arr] (ENTn)  to[out=-90,in=90] (ENTe2);
@@ -2257,7 +2273,7 @@ A Structural Roadmap and Paper Inventory}
 
 % Gauge-gravity stratification sub-programme synthesis (presentation note 8):
 % aggregates Q12 and Q13.
-          \node[S] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
+          \node[Y] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
           \draw[synth] (Q12) to[out=0,in=180] (GGSNote);
           \draw[synth] (Q13) to[out=0,in=200] (GGSNote);
 
@@ -2293,7 +2309,7 @@ A Structural Roadmap and Paper Inventory}
             {BI saturation margin};
           \draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
 
-          \node[S] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
+          \node[P] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (AOG.east)
             {ADE gate status};
           \draw[arr,dashed] (Q14) to[out=-45,in=180] (AOG);
@@ -2302,7 +2318,7 @@ A Structural Roadmap and Paper Inventory}
 
 % Fermionic matter sub-programme synthesis (presentation note 6):
 % aggregates Q14, PRS, AAR, Q11OF, A4-Note and AOG-Note.
-          \node[S] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
+          \node[Y] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
           \draw[synth] (Q14)    to[out=0,in=180]   (FMNote);
           \draw[synth] (PRS)    to[out=30,in=-150] (FMNote);
           \draw[synth] (AAR)    to[out=50,in=-160] (FMNote);
@@ -2316,10 +2332,12 @@ A Structural Roadmap and Paper Inventory}
       \caption{Logical dependency DAG of the Cosmochrony programme.
       Colour coding: \textcolor{cproved}{$\blacksquare$}~\sproved{},
         \textcolor{cstruct}{$\blacksquare$}~\sstruct{},
+        \textcolor{cnum}{$\blacksquare$}~\snum{},
+        \textcolor{ccond}{$\blacksquare$}~\scond{},
         \textcolor{cheur}{$\blacksquare$}~\sheur{},
-        \textcolor{copen}{$\blacksquare$}~\sopen{}.
-        Papers whose status is numerical (O29) or conditional (O30) are drawn with the structural style
-        here and carry their own status in the interactive graph, whose conditional-reading and postulated
+        \textcolor{copen}{$\blacksquare$}~\sopen{},
+        \textcolor{csynth}{$\blacksquare$}~\ssynth{}; each node carries the primary label of its inventory row.
+        The interactive graph's conditional-reading and postulated
         edges (EG-Note to Q12, Q13 and Q14) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
@@ -2348,6 +2366,7 @@ A Structural Roadmap and Paper Inventory}
           minimum width=2.0cm, minimum height=0.7cm, align=center},
           P/.style={box, fill=green!8,  draw=cproved,  text=black},
           S/.style={box, fill=blue!6,   draw=cstruct,  text=black},
+          N/.style={box, fill=violet!6,  draw=cnum,     text=black},
           spine/.style={-{Stealth[length=5pt]}, line width=1.2pt},
           arr/.style={-{Stealth[length=4pt]}, thin},
         ]
@@ -2356,10 +2375,10 @@ A Structural Roadmap and Paper Inventory}
           \def\dy{1.4cm}
 
           % ── Inputs (left column) ──────────────────────────────
-          \node[S] (Q5a)   at (0,0)          {Q5a};
+          \node[P] (Q5a)   at (0,0)          {Q5a};
           \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
           \node[S] (Q5b)   at (0,-\dy)       {Q5b};
-          \node[S] (O25)   at (-\dx,-2*\dy)  {O25};
+          \node[N] (O25)   at (-\dx,-2*\dy)  {O25};
 
           % ── Core chain (centre column) ───────────────────────
           \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
@@ -2619,7 +2638,7 @@ A Structural Roadmap and Paper Inventory}
       $\log(n+1)$ estimator; fixed-$q$ pair concentration; O14 correction overcorrects at large $q$;
       $\delta_\infty$ not pinned; reciprocal image $0.108\text{--}0.123$ only as a
       phenomenological comparison &
-      \sstruct \\[3pt]
+      \snum \\[3pt]
       O26 & Quadratic completion & \cite{Beau2026a30} &
       Dictionary: Weil blocks $\leftrightarrow$ rank-1 matrices in $M_2(\mathbb{C})$;
       connects $\Heis_3$ to $2I \subset \SU(2)$; pair-sector fibre structure taken as a motivated
@@ -2640,7 +2659,7 @@ A Structural Roadmap and Paper Inventory}
       $1\%$ threshold rank $r_{\mathrm{eff}}^{1\%}=3$ and the resolved spectrum
       $[1:\tfrac{1}{2}:\tfrac{1}{2}]$ in its stated perimeter; O29's extended recomputation finds
       rank three modal rather than invariant ($32/50$ pairs at $q=101$, $103/105$ at $q=211$) &
-      \sstruct \\[3pt]
+      \snum \\[3pt]
       CC-Note & Inverse-square coverage \& constant depth & \cite{Beau2026ccnote} &
       Fingerprints are Fourier characters, so $r_c(n)=|T'_c+C\,I_{n+1}|$ with shellwise ceiling
       $18$; deterministically $n_1(q)\le22$ and $x_1(q)\asymp q^{-2}$ for $q\ge311$; under generic
@@ -2657,13 +2676,13 @@ A Structural Roadmap and Paper Inventory}
       with a supplied adjoint carrier but do not identify it; $W_{\mathrm{adm}}$, the auxiliary PCA
       truncation $U_c^{(2)}$, and $V_\rho$ remain distinct; neither $d_\rho=2$ nor a Veronese root is
       measured &
-      \textbf{numerical} \\[3pt]
+      \snum \\[3pt]
       O30 & Conditional $3\times3$ model & \cite{Beau2026a34} &
       Under (H0)--(H3), $\beta_j=\varepsilon_j\bar\alpha_j$; two weighted cancellations give
       $\mathcal{C}_c = \langle r^4\rangle\,\mathrm{diag}(1/4,1/2,1/4)$;
       this object is distinct from O28's measured $9\times9$ covariance and does not derive its
       spectrum; factor~$2$ comes from symmetric-tensor normalisation &
-      \textbf{cond.} \\[3pt]
+      \scond \\[3pt]
       O31 & Withdrawal notice for colour-triplet and gauge-group claims & \cite{Beau2026a35} &
       Withdraws the proposed individual-profile co-admissibility, arithmetic criterion,
       metaplectic step, $\Delta(27)$ proposition, rank-eight test, $\SU(3)$ uniqueness, irreducibility of
@@ -2680,7 +2699,7 @@ A Structural Roadmap and Paper Inventory}
       elsewhere); the rank and pointwise levels of $[\mathrm{H\text{-}color}]$ rested on the superseded O31
       and are open, the averaged ($O(q^{-1})$, O32 Proposition~1) and effective levels stand; every
       gauge-group reading is withdrawn with O31 &
-      \textbf{numerical} / \sopen \\[3pt]
+      \snum\ /\ \sopen \\[3pt]
       O33 & Arithmetic Weil doublets and mixing & \cite{Beau2026a37} &
       Closed sumset formula and spacing theorem proved;
       stabiliser reduced exactly to $A_K$, with an orbit-divisibility sieve, uniform
@@ -2908,7 +2927,7 @@ A Structural Roadmap and Paper Inventory}
       $[\Pi_{J_\Pi\text{-odd}}\dot Q(0)]_{LL} = \tfrac12\partial_s\Delta_\chi(P)|_0$ determine one block of the
       odd tangent, not a unique generator; selection of the family, localisation of the odd tangent, normalisation
       of $\partial_s\Delta_\chi(P)|_0$, and generation mixing at even orders open, $|u|$ dictionary-bound &
-      \sstruct \\[3pt]
+      \sproved\ /\ \sopen \\[3pt]
       PYL & Projected Yukawa line + generation-level assignment & \cite{Beau2026pyl} &
       Opens the mass-sector frontier, closing its first stage: the determinant line
       $L_Y = \wedge^2(\mathcal{S}_\Pi)$ is the unique functorial line of the rank-two carrier, invisible to the
