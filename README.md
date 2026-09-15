@@ -19,7 +19,9 @@ than exact carrier-identification theorems, and O30 is a conditional $3\times3$ 
 O28's measured covariance. It also distinguishes the Heisenberg/Schrödinger representation
 identified by Stone--von Neumann from the separate associated Weil action. The registry and
 website graph remain a single
-116-node artefact.
+116-node artefact. It also synchronises the September releases: O26 2.0, O28 2.0, the Spectral
+Admissibility presentation note 2.0, PYL 2.0, EBJ 2.0, PRS 2.1, A4-Note 2.1, FM-Note 2.1 and PYO 1.10.1,
+and aligns the bibliography titles of thirteen entries with their deposited records.
 
 Version 2.2 records the finite \(S_3\) countermodel to the published Heisenberg carrier-selection
 argument. The algebraic properties extracted from A1--A3 do not force a central commutator,
