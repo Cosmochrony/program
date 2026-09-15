@@ -8,8 +8,8 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
-Version 2.16 synchronises the 28--31 August release wave: O25 1.5, O27 2.0,
-HeisenbergStructure 2.1, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and
+Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
+O27 2.0, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and
 the Gauge Structure, Gauge--Gravity Stratification, and Fermionic Matter presentation notes.
 It consolidates the retired standalone HCO record into HeisenbergStructure 2.1, preserves the
 separation between supplied-data theorems and emergent-base readings, and records the exact
@@ -24,7 +24,8 @@ and aligns the bibliography titles of thirteen entries with their deposited reco
 Foundation, Q9, NIF-Note, ENT-Note, the white paper and SpectralAdmissibility are aligned with the deposits, the
 Branch III description is restated on the open bridges, and the dependency graph gains numerical and conditional
 statuses and the edges O25 to O26/O27, O28/O29 to O30, O31 to O32 and SGN/CC-Note to the Spectral Admissibility
-note.
+note; it records the Q11OF central Weil lift resolution, the AOG proved status and the O14, O31, O32 and SGN
+row corrections, reverses the AAR/PRS edge, and reduces the CHO node to CHO's own results.
 
 Version 2.2 records the finite \(S_3\) countermodel to the published Heisenberg carrier-selection
 argument. The algebraic properties extracted from A1--A3 do not force a central commutator,
