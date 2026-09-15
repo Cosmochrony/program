@@ -25,7 +25,9 @@ Foundation, Q9, NIF-Note, ENT-Note, the white paper and SpectralAdmissibility ar
 Branch III description is restated on the open bridges, and the dependency graph gains numerical and conditional
 statuses and the edges O25 to O26/O27, O28/O29 to O30, O31 to O32 and SGN/CC-Note to the Spectral Admissibility
 note; it records the Q11OF central Weil lift resolution, the AOG proved status and the O14, O31, O32 and SGN
-row corrections, reverses the AAR/PRS edge, and reduces the CHO node to CHO's own results.
+row corrections, reverses the AAR/PRS edge, removes the unsupported AAR to Q11OF, Gravity to A4-Note, SRN to Q14 and O31 to TPC edges, types
+the O28 to O30 edge as interpretive, retypes O26 Level II as a conjecture, corrects the O32 bibliography note, and
+reduces the CHO node to CHO's own results.
 
 Version 2.2 records the finite \(S_3\) countermodel to the published Heisenberg carrier-selection
 argument. The algebraic properties extracted from A1--A3 do not force a central commutator,
