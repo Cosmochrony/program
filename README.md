@@ -29,8 +29,10 @@ and paragraphs state the current negative results.
 
 The pass also removes the last bare-word status cells (O29 numerical, O30 conditional), defines heuristic and the
 principal-contribution rule in the conventions, reorders the graph legend on that vocabulary, and restates the
-contribution cells of H2, TopInv and ENT-E1 and the short titles of Q9, U1 and W1 so that each names the hypothesis
-its result carries.
+contribution cells of H2, TopInv and ENT-E1 and the short titles of Q9, U1 and W1, so that each names the hypothesis
+or the open
+extension its result carries. The graph node descriptions are swept against the rows, which corrects two that
+stated a retracted derivation (O4) and an unestablished observable (O19).
 
 Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
 O27 2.0, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and

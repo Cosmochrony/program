@@ -860,7 +860,7 @@
       url: BASE + "spectral/program/relaxation",
       tags: ["spt"],
       title: "Spectral Relaxation",
-      desc: "Λ_proj ≍ λ₂ for LPS expander families. Entry point for the O-series dynamics on LPS graphs."
+      desc: "Λ_proj ≍ λ₂ for LPS expander families, conditional on the capacity–isoperimetry closure hypothesis. Entry point for the O-series dynamics on LPS graphs."
     },
     {
       id: "O1", lbl: "O1", s: "proved", b: "II", key: "Beau2026a6",
@@ -881,7 +881,7 @@
       url: BASE + "spectral/program/o4",
       tags: ["mass", "BI"],
       title: "O4 — Upper Bound β ≤ 1",
-      desc: "BI flux + Cheeger isoperimetric inequality ⇒ β ≤ 1."
+      desc: "Bounded relational flux and Ramanujan expansion do not yield a cascade-exponent bound: the former β ≤ 1 derivation does not follow from the stated argument, and any structural upper bound on β by this route is open."
     },
     {
       id: "O5", lbl: "O5", s: "proved", b: "II", key: "Beau2026a9",
@@ -895,7 +895,7 @@
       url: BASE + "spectral/program/o6",
       tags: ["mass"],
       title: "O6 — Matrix Redundancy",
-      desc: "Matrix-level dynamic redundancy; structural confinement of cascade exponent β."
+      desc: "Matrix-level dynamic redundancy, R_n → 0 for the Steinberg fingerprint (proved); the confinement of the cascade exponent is a corollary conditional on a power-law Ansatz the paper's own fingerprint does not satisfy, so a genuine power-law regime remains open."
     },
     {
       id: "O7", lbl: "O7", s: "structural", b: "II", key: "Beau2026a11",
@@ -909,7 +909,7 @@
       url: BASE + "spectral/program/o8",
       tags: ["mass"],
       title: "O8 — LPS Geometric Obstruction",
-      desc: "Exponential shell growth |S_n| ∼ p^n on LPS graphs compresses the pre-saturation window to O(log q) BFS steps. Forces Heisenberg transition."
+      desc: "Exponential shell growth |S_n| ∼ p^n on LPS graphs compresses the pre-saturation window to O(log q) BFS steps, on a shell-growth premise the paper records as an empirical observation for its family. Motivates the Heisenberg transition."
     },
     {
       id: "O9", lbl: "O9", s: "proved", b: "II", key: "Beau2026a13",
@@ -944,7 +944,7 @@
       url: BASE + "spectral/program/o13",
       tags: ["mass"],
       title: "O13 — Extended Prime Range",
-      desc: "δ̂(q): 4.80 → 3.59 as q grows. Finite-size hypothesis definitively refuted."
+      desc: "δ̂(q): 4.80 → 3.59 as q grows, with no upward drift toward the target range over the five measured primes."
     },
     {
       id: "O14", lbl: "O14", s: "structural", b: "II", key: "Beau2026a18",
@@ -965,7 +965,7 @@
       url: BASE + "spectral/program/o16",
       tags: ["mass"],
       title: "O16 — Exact Pair-Exponent Doubling",
-      desc: "σ_pair = σ_c·σ_{q−c} on conjugate pairs {c, q−c}. The exact identity δ_pair = 2δ_c does not itself derive a rate exponent."
+      desc: "σ_pair = σ_c·σ_{q−c} on conjugate pairs {c, q−c}, the fibre reading resting on the parity and realisation hypotheses, neither derived. The exact identity δ_pair = 2δ_c does not itself derive a rate exponent."
     },
     {
       id: "O17", lbl: "O17", s: "proved", b: "II", key: "Beau2026a21",
@@ -986,14 +986,14 @@
       url: BASE + "spectral/program/o19",
       tags: ["mass"],
       title: "O19 — Canonical Normalisation",
-      desc: "r(c,q) ∈ {1,2,3,4} does not affect δ_pair. Observable is pipeline-independent."
+      desc: "r(c,q) ∈ {1,2,3,4} does not affect δ_pair. The pipeline-independent observable is not established for the real pipeline, where O16's conjugate-block identity forces r(c,q) ≡ 1 exactly."
     },
     {
       id: "O20", lbl: "O20", s: "conditional", b: "II", key: "Beau2026a24",
       url: BASE + "spectral/program/o20",
       tags: ["mass"],
       title: "O20 — Persistence Criterion",
-      desc: "Dynamical selection of admissible modes via projective persistence."
+      desc: "Threshold-crossing algebra for projective persistence under two explicit hypotheses; no intrinsic threshold and no selected exponent window is obtained."
     },
     {
       id: "O21", lbl: "O21", s: "conditional", b: "II", key: "Beau2026a25",
@@ -1007,7 +1007,7 @@
       url: BASE + "spectral/program/o22",
       tags: ["mass", "BI"],
       title: "O22 — Projection Locking",
-      desc: "Thm 3.2: BI projection locking forces n₃^obs onto a BFS shell."
+      desc: "Thm 3.2: BI projection locking forces n₃^obs onto a BFS shell within the stated model, on a sketch-level continuous decay law; this does not make that rank amplitude-invariant."
     },
     {
       id: "O23", lbl: "O23", s: "conditional", b: "II", key: "Beau2026a27",
@@ -1185,7 +1185,7 @@
       desc: "Gauge charges as projection-fibre invariants. Its former SU(3) and complete-group derivation relied on results withdrawn by O31 version 2.0; the colour factor and complete gauge group are open."
     },
     {
-      id: "Q6b", lbl: "Q6b", s: "structural", b: "III", key: "Beau2026q6b",
+      id: "Q6b", lbl: "Q6b", s: "conditional", b: "III", key: "Beau2026q6b",
       url: ZEN + "20257944",
       tags: ["spt"],
       title: "Q6b — Effective Spacetime",
@@ -1240,7 +1240,7 @@
       url: ZEN + "19886319",
       tags: ["spt", "emer"],
       title: "W1 — Hypothesis [H-w] Proved",
-      desc: "a_q(s) → A > 0 uniformly in s. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
+      desc: "a_q(s) → A > 0 uniformly in s, under [H1]. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
         "(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. " +
         "Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. " +
         "After W1, open former-Q5a hypotheses: [H1], [H-E1], [C] (not closed by Q5a-O2's finite-rank route), and [H2] — the last proved by the H2 paper."
@@ -1329,7 +1329,7 @@
       url: ZEN + "20735907",
       tags: ["SM"],
       title: "CHO — Chiral Orientation of the Directed Heisenberg Frontier",
-      desc: "Resolves the chiral weight σ_L left deferred by the oriented-frontier diagnostic. " +
+      desc: "Resolves, within the inherited Heisenberg central-phase lift, the chiral weight σ_L left deferred by the oriented-frontier diagnostic. " +
         "σ_L is not a function of the cascade generator T(e) (edge inversion and the residual reflection φ both " +
         "send T→−T, forcing equal arrow/φ parity), but the Weyl representation type 2 vs 2̄: group inversion " +
         "preserves it, complex conjugation exchanges it. In the inherited Heisenberg central-phase lift the edge " +
@@ -1476,21 +1476,21 @@
       url: BASE + "lc/lorentz-capacity",
       tags: ["grav", "spt", "O7"],
       title: "Lorentz Factor from Projective Capacity",
-      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction: closed by TempProj."
+      desc: "O7 saturation parameter η_n^τ → βγ under BI budget and quadratic normalization. Φ(η_n^τ) → 1/γ. Temporal projection P_τ^Q5b construction: closed by TempProj. The budget itself is a hypothesis of the paper, so the Lorentz-factor limit is conditional on it."
     },
     {
       id: "TempProj", lbl: "TempProj", s: "conditional", b: "III", key: "Beau2026tp",
       url: BASE + "lc/temporal-projection",
       tags: ["grav", "spt", "O7"],
       title: "Temporal Residual Map",
-      desc: "Constructs P_τ^Q5b explicitly as the unique map compatible with Lorentzian splitting, BI sphere, and Weil filling law. P_τ^Q5b Σ_n^tot = √(1-B_n²). Closes LorCap open problem."
+      desc: "Constructs P_τ^Q5b explicitly as the unique map compatible with Lorentzian splitting, BI sphere, and Weil filling law. P_τ^Q5b Σ_n^tot = √(1-B_n²), conditional on [U] and the Born–Infeld lift. Closes the LorCap open construction under those inputs."
     },
     {
       id: "LCII", lbl: "LCII", s: "conditional", b: "III", key: "Beau2026lco2",
       url: BASE + "lc/lc-o2",
       tags: ["grav", "spt"],
       title: "Fibrewise Capacity Lapse and Gravitational Time Dilation",
-      desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x). Gravitational time dilation dτ/dn|_x = R(x)/γ."
+      desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x); gravitational time dilation dτ/dn|_x = R(x)/γ, conditional on the imported occupancy–lapse identification."
     },
     {
       id: "LCIIo1", lbl: "LCIIo1", s: "proved", b: "III", key: "Beau2026lco2o1",
