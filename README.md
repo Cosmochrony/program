@@ -13,7 +13,7 @@ conditional, heuristic, open, synthesis), with a primary label per paper carried
 the synthesis paragraphs, the dependency figures and the interactive graph. Numerical and conditional are defined in
 the conventions; synthesis becomes a graph status. Primary labels re-audited against the papers' own status
 statements: EBJ proved with open items, O25, O28 and O32 numerical, HeisenbergStructure, O18, O21, O23, O27, Q5a,
-AOG and SRN proved with open items, Q6a open, the presentation notes and the Lorentz-capacity synthesis typed
+AOG and SRN proved with open items, O21 and O23 conditional, Q6a open, the presentation notes and the Lorentz-capacity synthesis typed
 synthesis; figure styles corrected for the white paper, Born-Infeld, Q1, Q3, Gravity, Lorentz and E2.
 
 Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
