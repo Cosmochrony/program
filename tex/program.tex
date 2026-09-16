@@ -606,21 +606,24 @@ A Structural Roadmap and Paper Inventory}
     The phenomenological window $\beta^* \in (0.09, 0.13)$ is derived from the charged-lepton
     mass ratios $m_e : m_\mu : m_\tau$ (\sstruct).
 
-    \textbf{O4}~\cite{Beau2026a8}: The structural upper bound $\beta \leq 1$ follows from the
-    BI flux constraint and the Cheeger isoperimetric inequality (\sproved).
+    \textbf{O4}~\cite{Beau2026a8}: Bounded relational flux and Ramanujan expansion do not yet yield a
+    cascade-exponent bound: the former derivation of $\beta \leq 1$ does not follow from the stated
+    argument, and any structural upper bound on $\beta$ by this route is open (\sopen).
 
     \textbf{O5}~\cite{Beau2026a9}: Obstruction theorem.
     The $\beta$~gap cannot be closed by any purely representation-theoretic or
     fixed-representation approach (\sproved).
 
-    \textbf{O6}~\cite{Beau2026a10}: Matrix-level confinement of the cascade exponent (\sproved).
+    \textbf{O6}~\cite{Beau2026a10}: Matrix-level dynamic redundancy, $R_n \to 0$ for the Steinberg
+    fingerprint; the confinement of the cascade exponent is a corollary conditional on a power-law Ansatz
+    that the paper's own fingerprint does not satisfy (\scond\ /\ \sopen).
 
     \textbf{O7}~\cite{Beau2026a11}: Reformulates the target as a capacity exponent
     $\delta \in [7.4, 10.6]$ on three-step path fingerprints (\sstruct).
 
     \textbf{O8}~\cite{Beau2026a12}: Establishes the geometric obstruction closing the LPS phase.
     Exponential shell growth $|S_n| \sim p^n$ on LPS graphs compresses the
-    pre-saturation window to $O(\log q)$ BFS steps (\sproved).
+    pre-saturation window to $O(\log q)$ BFS steps (\snum).
 
   \subsection{O9--O15: Heisenberg Transition}
 
@@ -632,10 +635,10 @@ A Structural Roadmap and Paper Inventory}
     This is the key structural transition of the O-series.
 
     \textbf{O10}~\cite{Beau2026a14}: First large-$q$ computation ($q=101$).
-    Confirms $n^4$ growth; a TensorSketch representation obstruction is identified at large~$q$ (\sproved).
+    Confirms $n^4$ growth; a TensorSketch representation obstruction is identified at large~$q$ (\snum).
 
     \textbf{O11}~\cite{Beau2026a15}: Bidimensional Fourier-character proxy overcomes the
-    TensorSketch obstruction (\sstruct).
+    TensorSketch obstruction (\snum).
 
     \textbf{O12}~\cite{Beau2026a16}: Exact Weil-block fingerprints.
     The incremental block capacity $\Sigma_n^{(c)}$ depends on the block only through a
@@ -648,7 +651,7 @@ A Structural Roadmap and Paper Inventory}
     The finite-$q$ exponent sequence ($4.42,4.80,4.51,4.27,3.59$ at $q\in\{29,61,101,151,211\}$)
     does not drift toward the phenomenological target at larger primes, consistent with O12's
     exact value $\delta_{\mathrm{exact}}=3$; measurement quality improves systematically with
-    $q$ (\sproved).
+    $q$ (\snum).
 
     \textbf{O14}~\cite{Beau2026a18}: Diagnoses the observable-class mismatch in the proposed
     $\delta \mapsto \beta^*$ relation.  Fixed-$q$ normalisation changes intercepts, not
@@ -665,7 +668,7 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{O16--O24: Pair Observable and the Fibre-Level Structure Programme}
 
-    \textbf{O16}~\cite{Beau2026a20}: Fibre admissibility hypotheses.
+    \textbf{O16}~\cite{Beau2026a20}: Fibre admissibility hypotheses (\scond).
     Conjugate blocks $\{c,q-c\}$ constitute the fibres of~$\Pi$ only under two independent,
     open premises: that $\Pi$ carries a parity involution, and that this involution is
     realised in the Weil representation as $c\mapsto q-c$.
@@ -698,14 +701,14 @@ A Structural Roadmap and Paper Inventory}
     Generic Gram--Schmidt phase invariance and the rank identity are valid, but the factor
     $r(c,q)\in\{1,2,3,4\}$ is not sourced for the real O12/O13 pipeline, the proposed
     normalisation is defined through an unspecified reference span, Tests P2/P3 are open, and
-    the pipeline-independence proof is incomplete (generic linear algebra: \sproved;
-    canonical observable: \sopen).
+    the pipeline-independence proof is incomplete (\sopen{} for the canonical observable; generic linear
+    algebra: \sproved).
 
     \textbf{O20}~\cite{Beau2026a24}: Conditional threshold-crossing template.
     Given a constant threshold and an exact decreasing power law, crossing within a fixed
     cascade window is algebraically equivalent to an exponent interval.  The map from rank
     increments to a fibre amplitude, the inherited Born--Infeld envelope, and the threshold
-    itself are open; the numerical interval $[7.4,10.6]$ is not derived (\sstruct).
+    itself are open; the numerical interval $[7.4,10.6]$ is not derived (\scond).
 
     \textbf{O21}~\cite{Beau2026a25}: Local threshold-crossing diagnostic and open transfer.
     The two-point formula for $n_3^{\mathrm{obs}}$ is a valid extrapolated crossing rank under
@@ -719,7 +722,7 @@ A Structural Roadmap and Paper Inventory}
     \textbf{O22}~\cite{Beau2026a26}: BI projection locking forces the O21-defined
     $n_3^{\mathrm{obs}}$ onto a BFS shell within O22's stated model (Theorem~3.2).
     This does not make the input rank invariant under amplitude rescaling and therefore does not
-    close O21's intrinsic-definition problem (\sproved{} within the stated model).
+    close O21's intrinsic-definition problem (\sstruct{} within the stated model).
 
     \textbf{O23}~\cite{Beau2026a27}: Conditional adjoint-dimension theorem.
     For a supplied irreducible two-dimensional unitary carrier $V_\rho\cong\mathbb{C}^2$, the
@@ -753,7 +756,7 @@ A Structural Roadmap and Paper Inventory}
     \textbf{O24}~\cite{Beau2026a28}: Capstone of the fibre-level construction.
     The Verticality Lemma (``$\ker\Pi$ is free, $\mathrm{Im}\,\Pi$ is constrained'') closes the
     $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ segment with respect to the fibre structure of $\Pi$
-    (\sproved{} under the Weil realisation and stated fibre hypotheses).
+    (\scond{} under the Weil realisation and stated fibre hypotheses).
     It does not derive the growth-equation conversion to $\beta^*$: SGN refutes the native
     Heisenberg realisation of its O4--O6 closure, frontier, pair-carrier, and exponent-coordinate
     inputs.
@@ -989,7 +992,7 @@ A Structural Roadmap and Paper Inventory}
     \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is strictly non-decreasing and
     hence compatible with an arrow of time.
-    Confirmed numerically (\sstruct) for
+    Confirmed numerically (\snum) for
     $q \in \{29, 61, 101, 151, 211\}$.
     The admissible cascade is shown to carry the structure of an oriented state machine:
     nodes are admissible projections, edges are admissible transitions, and branching weights
@@ -1002,7 +1005,7 @@ A Structural Roadmap and Paper Inventory}
     the spectral ordering to the effective geometry results of Q10~\cite{Beau2026q10}.
 
     \textbf{Fibre Erasure}~\cite{Beau2026fe}: Hub paper between ENI~\cite{Beau2026l} and the BFS
-    spectral cascade. Defines a residual fibre-information functional $I(c;\sigma(\ell))$ on the
+    spectral cascade (\scond). Defines a residual fibre-information functional $I(c;\sigma(\ell))$ on the
     BFS coarse-graining axis~$\ell$, distinct from and orthogonal to the temporal axis~$n$ of PTO.
     Conditional on the structural sufficiency hypothesis~[H-suff], the data-processing inequality
     implies that $I(c;\sigma(\ell))$ is non-increasing in~$\ell$: fibre information is erased,
@@ -1093,7 +1096,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Q5b}~\cite{Beau2026q5b}: The BFS shell stratification of $\Heis_3(\mathbb{R})$
     produces a four-dimensional Lorentzian spacetime, with the temporal direction identified
-    with the BFS depth.
+    with the BFS depth (\scond).
     Q9~\cite{Beau2026q9} proves only the conditional implication
     [H-F] $\Rightarrow$ [H-lift], with the frozen hypothesis [H-F] unestablished.
     The spatial limit input is formalised as the explicit, unestablished hypothesis [H-L], on a
@@ -1185,7 +1188,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Q12}~\cite{Beau2026q12}: Version~1.4 derives Yang--Mills dynamics from the vertical
     variation of the projective spectral entropy at an arbitrary supplied fixed base metric
-    (\sstruct, conditional on a supplied compact gauge group and admissible connection;
+    (\sproved, conditional on a supplied compact gauge group and admissible connection;
     O31 supplies no $\SU(3)$ identification). This fixed-base theorem does not depend on Q11;
     only its interpretation on the Cosmochrony emergent base is conditional on [H-L].
     The Gravity paper~\cite{Beau2026h} derived the Einstein tensor as the infrared-dominant
@@ -1226,7 +1229,7 @@ A Structural Roadmap and Paper Inventory}
     The gauge--gravity synthesis is carried out in Q13.
 
     \textbf{Q13}~\cite{Beau2026q13}: Version~1.4 gives the gauge--gravity spectral synthesis
-    on supplied geometric and gauge data (\sstruct, conditional on Q12, the Gravity paper,
+    on supplied geometric and gauge data (\scond, conditional on Q12, the Gravity paper,
     matching coefficients and a supplied compact gauge group; O31 supplies no
     $\SU(3)$ identification). Its interpretation on the Cosmochrony emergent base is separately
     conditional on [H-L]. Q13 joins the metric and connection variations of a single renormalized
@@ -1548,7 +1551,7 @@ A Structural Roadmap and Paper Inventory}
     physical mixing is produced at this stratum; a non-trivial class needs a genuine complex metaplectic phase,
     not derived here and observable only relative to a second fermionic sector.
 
-    \textbf{KUD}~\cite{Beau2026kud}: Charged-lepton Koide relation as a unit-dispersion constraint (\sstruct).
+    \textbf{KUD}~\cite{Beau2026kud}: Charged-lepton Koide relation as a unit-dispersion constraint (\sproved).
     Source note fixing the phenomenological target of the mass sector, downstream of PYL/PYO, as a single scale-free
     invariant.
     The Koide quotient is exactly $Q_\ell = (1 + \mathrm{CV}(r_\ell)^2)/3$ in the square-root mass vector $r_\ell$,
@@ -1567,7 +1570,7 @@ A Structural Roadmap and Paper Inventory}
     It is a target invariant, not a mass formula.
 
     \textbf{TPC}~\cite{Beau2026tpc}: Ternary phase carrier --- colour, generations, and Koide as one carrier
-    (\sstruct, speculative bridge).
+    (\sopen, speculative bridge).
     A single complex three-phase carrier $z_g = S + A\,e^{i(\delta + 2\pi g/3)}$ read two ways: its pure-phase part
     sums to zero ($1+\omega+\omega^2=0$), a colour-neutral class; its real part is the square-root mass profile of
     KUD.
@@ -1691,7 +1694,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Thermodynamics}~\cite{Beau2026Thermodynamics} (\emph{Einstein--Matter Coupling from
     Spectral Stationarity: A Conditional Variational Result and the Open Thermodynamic Bridge}):
-    Establishes a conditional variational core, and no thermodynamics.
+    Establishes a conditional variational core, and no thermodynamics (\scond).
     Assuming a renormalised infrared metric response (supplied by Gravity,
     where the finite Einstein coefficient is a matching datum) and an effective matter functional
     $W_\Pi[g,\psi]$, stationarity of $\Gamma_\Pi = S_\Pi^{\mathrm{ren}} - W_\Pi$ yields
@@ -1746,7 +1749,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{LorentzCapacity}~\cite{Beau2026n}: Derives the Lorentz factor and relativistic
     mobility $\beta\gamma$ from the O7 saturation parameter $\eta_n^{\mathrm{O7}}$ under the
-    Born--Infeld admissibility budget. The analytic factorization (central coordinate $c$
+    Born--Infeld admissibility budget (\scond). The analytic factorization (central coordinate $c$
     contributes only a global phase) shows the total O7 residual satisfies a linear filling law
     and does not by itself yield the Lorentz factor. The conditional mechanism via the
     temporally projected residual $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$
@@ -1755,7 +1758,7 @@ A Structural Roadmap and Paper Inventory}
     $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp}).
 
     \textbf{TempProj}~\cite{Beau2026tp}: Closes the open construction of
-    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ from LorentzCapacity.
+    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ from LorentzCapacity (\scond).
     Constructs the temporal residual map as the unique positive function compatible with the
     Lorentzian splitting of the Q5b completed co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$,
     the Born--Infeld unit capacity-flow sphere, and the exact Weil filling law
@@ -1764,7 +1767,7 @@ A Structural Roadmap and Paper Inventory}
     follows from a fibre-by-fibre uniqueness argument; Lemma~1 and Theorem~1 of LorentzCapacity
     become unconditional (\sproved{} conditional on [U]; three-input necessity: \sproved).
 
-    \textbf{LCII}~\cite{Beau2026lco2}: Extends TempProj to the non-homogeneous fibrewise regime.
+    \textbf{LCII}~\cite{Beau2026lco2}: Extends TempProj to the non-homogeneous fibrewise regime (\scond).
     A localised spectral occupancy $\epsilon(x)$ reduces the local BI capacity radius to
     $R(x)^2 = 1-\epsilon(x)$; the fibrewise map factorises as
     $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)
@@ -1866,7 +1869,8 @@ A Structural Roadmap and Paper Inventory}
     of the stabilization profile.
 
     \textbf{ENT-E1}~\cite{Beau2026ent1}: closes the open analytic strengthening of ENT-Note by
-    explicit computation. The $k{=}3$ Weil fingerprint of $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
+    explicit computation (\sproved\ /\ \sopen). The $k{=}3$ Weil fingerprint of
+    $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
     for any block $(c_1,c_2,c_3)$ factors as a global phase times a single discrete Fourier mode
     at frequency $A = c_1b_1+c_2b_2+c_3b_3 \bmod q$. Since distinct Fourier modes are orthogonal,
     every newly admitted fingerprint is already orthogonal to the current span, so the admission
@@ -1908,7 +1912,7 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Cosmological and Condensed-Matter Applications}
 
     \textbf{Cosmology}~\cite{Beau2026d}: Flat galaxy rotation curves and the Hubble tension from a
-    common effective mechanism; no dark matter or modified gravity (\sstruct; quantitative fit: \sheur).
+    common effective mechanism; no dark matter or modified gravity (\sheur; quantitative fit: \sheur).
     Version 2.0 adds a structural expansion sector: under the rank--time dictionary stated as an explicit
     hypothesis ($dt = H^{-1}dn$, hence $n = \log a$, bridging the temporal-ordering sector and the operational
     closure of its Appendix A), the accelerated component is carried by projective history
@@ -1959,7 +1963,7 @@ A Structural Roadmap and Paper Inventory}
     depth one (transfer matrix).
 
     \textbf{LowLCapacity}~\cite{Beau2026dhc}: Low-multipole suppression from distinguishable-history capacity
-    (\sstruct{} for the re-audited $8/3$ fibre-to-base stiffness; capacity ceiling: conditional theorem chain
+    (\snum{} for the re-audited $8/3$ fibre-to-base stiffness; capacity ceiling: conditional theorem chain
     in ProjCE~\cite{Beau2026pce}; saturation: \sopen; no-fit grid: numerical benchmark; TE/EE transfer:
     \sopen).
     Replaces the white-paper phenomenological low-$\ell$ envelope (two free parameters, illustrative
@@ -2056,7 +2060,7 @@ A Structural Roadmap and Paper Inventory}
           \node[P] (SpCap) at (2*\dx,-\dy)   {SpCap};
           \node[P]  (SpG)   at (3*\dx,-\dy)   {SpGram};
           \node[S]  (ThGn)  at (4*\dx,-\dy)   {3Gen};
-          \node[P]  (SpR)   at (\dx,-2*\dy)   {SpRel};
+          \node[C]  (SpR)   at (\dx,-2*\dy)   {SpRel};
 
           \draw[arr]   (WP)--(BI);
           \draw[arr]   (BI)--(SpA);
@@ -2067,10 +2071,10 @@ A Structural Roadmap and Paper Inventory}
 
           \node[P] (O1)  at (0,-3*\dy)        {O1};
           \node[S] (O3)  at (\dx,-3*\dy)      {O3};
-          \node[P] (O4)  at (2*\dx,-3*\dy)    {O4};
+          \node[Oc] (O4)  at (2*\dx,-3*\dy)    {O4};
           \node[P] (O5)  at (3*\dx,-3*\dy)    {O5};
           \node[S] (O7)  at (4*\dx,-3*\dy)    {O7};
-          \node[P] (O8)  at (5*\dx,-3*\dy)    {O8};
+          \node[N] (O8)  at (5*\dx,-3*\dy)    {O8};
 
           \draw[spine] (SpR) to[out=-90,in=90] (O1);
           \draw[arr]   (O1)--(O3);
@@ -2081,7 +2085,7 @@ A Structural Roadmap and Paper Inventory}
 
           \node[P] (O9)   at (0,-4*\dy)       {O9};
           \node[P] (O12)  at (\dx,-4*\dy)     {O12};
-          \node[P] (O13)  at (2*\dx,-4*\dy)   {O13};
+          \node[N] (O13)  at (2*\dx,-4*\dy)   {O13};
           \node[P] (O15)  at (3*\dx,-4*\dy)   {O15};
 
           \draw[spine] (O8) to[out=-90,in=90] (O9);
@@ -2089,13 +2093,13 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (O12)--(O13);
           \draw[spine] (O13)--(O15);
 
-          \node[S] (O16)  at (0,-5*\dy)       {O16};
+          \node[C] (O16)  at (0,-5*\dy)       {O16};
           \node[P] (O17)  at (\dx,-5*\dy)     {O17};
           \node[P] (O18)  at (2*\dx,-5*\dy)   {O18};
-          \node[P] (O19)  at (3*\dx,-5*\dy)   {O19};
-          \node[P] (O22)  at (4*\dx,-5*\dy)   {O22};
+          \node[Oc] (O19)  at (3*\dx,-5*\dy)   {O19};
+          \node[S] (O22)  at (4*\dx,-5*\dy)   {O22};
           \node[C] (O23)  at (5*\dx,-5*\dy)   {O23};
-          \node[P] (O24)  at (6*\dx,-5*\dy)   {O24};
+          \node[C] (O24)  at (6*\dx,-5*\dy)   {O24};
 
           \draw[spine] (O15) to[out=-90,in=90] (O16);
           \draw[arr]   (O16)--(O17);
@@ -2122,10 +2126,10 @@ A Structural Roadmap and Paper Inventory}
           \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (O33.east)
             {Weil doublets};
-          \node[S] (PTO)    at (5*\dx,-7*\dy)   {PTO};
-          \node[S] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
+          \node[N] (PTO)    at (5*\dx,-7*\dy)   {PTO};
+          \node[C] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
           \node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
-          \node[S] (LCII)   at (5*\dx,-10*\dy) {LCII};
+          \node[C] (LCII)   at (5*\dx,-10*\dy) {LCII};
           \node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
           \node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
           \node[P] (LCo3)   at (6*\dx,-11*\dy) {LCo3};
@@ -2185,7 +2189,7 @@ A Structural Roadmap and Paper Inventory}
 
           \node[P] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
           \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
-          \node[S] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
+          \node[C] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
           \node[Oc] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
           \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
           \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
@@ -2230,7 +2234,7 @@ A Structural Roadmap and Paper Inventory}
 
           \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
           \node[Oc] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
-          \node[S] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
+          \node[C] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
           \node[Oc] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
 
           \draw[arr]   (WP) to[out=-90,in=90] (Sp2);
@@ -2242,7 +2246,7 @@ A Structural Roadmap and Paper Inventory}
           \node[S] (SMcm) at (\dx,-8*\dy)      {SMcm};
           \node[Oc] (Bell) at (2*\dx,-8*\dy)   {Bell};
           \node[S] (Schw) at (3*\dx,-8*\dy)    {SchLamb};
-          \node[S] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
+          \node[H] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
           \node[S] (Supra)at (5*\dx,-8*\dy)    {Supra};
 
           \draw[arr] (Found) to[out=-90,in=90] (TopI);
@@ -2268,13 +2272,13 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr] (ENTn)  to[out=-90,in=90] (ENTe2);
           \draw[arr] (ENTe1) to[out=-150,in=30] (ENTe2);
 
-          \node[S] (Q12) at (3*\dx,-11*\dy) {Q12};
+          \node[P] (Q12) at (3*\dx,-11*\dy) {Q12};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q12.east)
             {YM from $a_4$};
           \draw[arr] (Grav) to[out=-90,in=135] (Q12);
           \draw[arr] (Q6a)  to[out=200,in=60]  (Q12);
 
-          \node[S] (Q13) at (3*\dx,-12*\dy) {Q13};
+          \node[C] (Q13) at (3*\dx,-12*\dy) {Q13};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q13.east)
             {EYM (conditional)};
           \draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
@@ -2387,16 +2391,16 @@ A Structural Roadmap and Paper Inventory}
           % ── Inputs (left column) ──────────────────────────────
           \node[P] (Q5a)   at (0,0)          {Q5a};
           \node[P] (Q5aO2) at (\dx,0)        {Q5a-O2};
-          \node[S] (Q5b)   at (0,-\dy)       {Q5b};
+          \node[C] (Q5b)   at (0,-\dy)       {Q5b};
           \node[N] (O25)   at (-\dx,-2*\dy)  {O25};
 
           % ── Core chain (centre column) ───────────────────────
           \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$}};
           \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
-          \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
-          \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
-          \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
+          \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
+          \node[C] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] under Q5a--Q5b hyp.}};
+          \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] under [H1],[H2]}};
 
           % Q11 and final result
           \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
@@ -2548,7 +2552,7 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       SpRel & Spectral relaxation & \cite{Beau2026a5} &
       $\Lambda_{\mathrm{proj}} \asymp \lambda_2$ for LPS expander families &
-      \sproved \\[3pt]
+      \scond{} on the capacity--isoperimetry closure hypothesis \\[3pt]
       \midrule
       O1 & Variable-valence graphs & \cite{Beau2026a6} &
       LPS saturation is a fixed-valence artefact; growing valence restores window &
@@ -2556,31 +2560,35 @@ A Structural Roadmap and Paper Inventory}
       O3 & Mass hierarchy & \cite{Beau2026a7} &
       First SM connection: $\beta^* \in (0.09, 0.13)$ from lepton mass ratios &
       \sstruct \\[3pt]
-      O4 & Upper bound $\beta \leq 1$ & \cite{Beau2026a8} &
-      BI flux $+$ Cheeger $\Rightarrow \beta \leq 1$ &
-      \sproved \\[3pt]
+      O4 & No cascade-exponent bound from bounded flux & \cite{Beau2026a8} &
+      Bounded relational flux and Ramanujan expansion do not yet yield a cascade-exponent bound: the
+      former derivation of $\beta \leq 1$ does not follow from the stated argument, and any structural
+      upper bound on $\beta$ by this route is open &
+      \sopen \\[3pt]
       O5 & Rep-theoretic obstruction & \cite{Beau2026a9} &
       Fixed-repr.\ approaches cannot close the $\beta$ gap &
       \sproved \\[3pt]
       O6 & Matrix redundancy & \cite{Beau2026a10} &
-      Matrix-level confinement of cascade exponent &
-      \sproved \\[3pt]
+      Matrix-level dynamic redundancy: $R_n \to 0$ for the Steinberg fingerprint (proved); the
+      confinement corollary $\beta_{\mathrm{eff}} \in \beta^*$ is conditional on a power-law Ansatz that
+      the paper's own fingerprint does not satisfy, so a genuine power-law regime remains open &
+      \scond\ /\ \sopen \\[3pt]
       O7 & Continuum target & \cite{Beau2026a11} &
       Target: $\delta \in [7.4, 10.6]$ on 3-step fingerprints &
       \sstruct \\[3pt]
       O8 & LPS geometric obstruction & \cite{Beau2026a12} &
       Exponential shell growth $\Rightarrow$ usable window $= O(\log q)$ BFS steps &
-      \sproved \\[3pt]
+      \snum \\[3pt]
       \midrule
       O9 & Heisenberg graphs & \cite{Beau2026a13} &
       Structural transition: $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ with $|B_n| \sim n^4$ replaces LPS &
       \sproved \\[3pt]
       O10 & Large-$q$ computation & \cite{Beau2026a14} &
       Confirms $n^4$ growth; TensorSketch obstruction identified &
-      \sproved \\[3pt]
+      \snum \\[3pt]
       O11 & Fourier-character proxy & \cite{Beau2026a15} &
       Bidimensional proxy overcomes TensorSketch obstruction &
-      \sstruct \\[3pt]
+      \snum \\[3pt]
       O12 & Exact Weil blocks & \cite{Beau2026a16} &
       $\delta_{\mathrm{exact}}=3$ exactly (unfolded, $q\to\infty$); finite-$q$ fitted slopes are
       crossover statistics, independent of the central coordinate $\gamma$ &
@@ -2588,7 +2596,7 @@ A Structural Roadmap and Paper Inventory}
       O13 & Extended prime range & \cite{Beau2026a17} &
       Exponent sequence at $q\in\{29,61,101,151,211\}$ does not drift toward the
       phenomenological target; consistent with $\delta_{\mathrm{exact}}=3$ &
-      \sproved \\[3pt]
+      \snum \\[3pt]
       O14 & Observable-class mismatch & \cite{Beau2026a18} &
       Fixed-$q$ normalisation $q^{-\eta}$ changes intercepts, not intra-$q$ slopes, and defines no endpoint
       correction from a fitted slope alone; the central-phase correction vanishes identically; no inter-$q$
@@ -2604,7 +2612,7 @@ A Structural Roadmap and Paper Inventory}
       Conjugate pairs $\{c,q-c\}$ are fibres of $\Pi$ under two independent open hypotheses;
       exponent doubling $\delta_{\mathrm{pair}}=2\delta_c$ holds conditionally, trivially on
       the real pipeline &
-      \sstruct \\[3pt]
+      \scond \\[3pt]
       O17 & Block-independence, toy model & \cite{Beau2026a21} &
       Raw Gram-Schmidt redundancy is exactly independent of block parameters for any two
       blocks, not only conjugate ones; scoped to a scalar toy model, not shown for the real
@@ -2617,11 +2625,11 @@ A Structural Roadmap and Paper Inventory}
       O19 & Proposed canonical normalisation & \cite{Beau2026a23} &
       Generic Gram--Schmidt identities survive; the residual factor, completed tests, and
       pipeline-independent observable are not established for the real pipeline &
-      \sproved\ /\ \sopen \\[3pt]
+      \sopen\ /\ \sproved \\[3pt]
       O20 & Conditional persistence template & \cite{Beau2026a24} &
       Threshold-crossing algebra under explicit hypotheses; no intrinsic threshold or selected
       exponent window &
-      \sstruct \\[3pt]
+      \scond \\[3pt]
       O21 & Local crossing diagnostic & \cite{Beau2026a25} &
       Two-point crossing formula under a fixed normalisation; it scales under amplitude
       rescaling, while shell alignment and the capacity-to-rate carrier remain open &
@@ -2629,7 +2637,7 @@ A Structural Roadmap and Paper Inventory}
       O22 & Projection locking & \cite{Beau2026a26} &
       BI projection locking forces the O21-defined $n_3^{\mathrm{obs}}$ onto a BFS shell
       within the stated model; this does not make that rank amplitude-invariant &
-      \sproved\ /\ \sopen \\[3pt]
+      \sstruct\ /\ \sopen \\[3pt]
       O23 & Conditional adjoint dimension & \cite{Beau2026a27} &
       For a supplied irreducible $\mathbb{C}^2$ carrier, the traceless neutral sector is
       $\mathfrak{su}(2)\cong\mathrm{Im}\,\mathbb{H}$, dimension three; $Q_8$'s two-axis neutral
@@ -2640,7 +2648,7 @@ A Structural Roadmap and Paper Inventory}
       Verticality Lemma develops $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ under the stated
       fibre hypotheses; no first-principles fibre identification and no native derivation of
       $\delta_{\mathrm{pair}} \to \beta^*$ &
-      \sproved\ /\ \sopen \\[3pt]
+      \scond\ /\ \sopen \\[3pt]
       \midrule
       O25 & Numerical campaign (extended to $q=601$) & \cite{Beau2026a29} &
       Exhaustive pair sampling through $q=211$; representative sampling of 24 pairs at $q=307$
@@ -2729,12 +2737,12 @@ A Structural Roadmap and Paper Inventory}
       PTO & Temporal ordering & \cite{Beau2026pto} &
       $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a non-decreasing
       temporal proxy; confirmed for $q \in \{29, 61, 101, 151, 211\}$ &
-      \sstruct \\[3pt]
+      \snum \\[3pt]
       Fibre\-Erase & Fibre erasure & \cite{Beau2026fe} &
       Monotone $I(c;\sigma(\ell))$ on BFS coarse-graining axis~$\ell$ via DPI (Thm~4.1,
       conditional on [H-suff]); [H-suff] proved at the rank level (Prop.~3.6); capacity-level
       numerical evidence for $q\in\{61,151,211\}$; explicitly not a $c$-theorem &
-      \sstruct \\[3pt]
+      \scond \\[3pt]
       \midrule
       Q1 & Fourier-support rigidity & \cite{Beau2026q1} &
       Exact, unconditional conjugate-sector subspace identity and its rank/support no-go
@@ -2776,7 +2784,7 @@ A Structural Roadmap and Paper Inventory}
       Spatial limit input formalised as the unestablished hypothesis [H-L], on a supplied Heisenberg
       carrier (version 2.1); Q9 proves only [H-F] $\Rightarrow$ [H-lift], with [H-F] unestablished; metric
       results conditional on [H-L]; Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
-      \sstruct{} (geometry); \scond{} on [H-F] and [H-L] (metric chain) \\[3pt]
+      \scond{} on [H-F] and [H-L] (metric chain); \sstruct{} (geometry) \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
       former full-group derivation relied on withdrawn O31 claims; colour factor and complete
@@ -2811,22 +2819,22 @@ A Structural Roadmap and Paper Inventory}
       $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
       universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
       bridge conjecture resolved (isotropic case) under [U] &
-      \sstruct \\[3pt]
-      U1 & Universality [U] proved & \cite{Beau2026u1} &
+      \scond{} on [U] \\[3pt]
+      U1 & Universality [U] under the Q5a--Q5b hypotheses & \cite{Beau2026u1} &
       $\varepsilon(q) = O(q^{-1/2})$ from Weil-generator Lipschitz bound and
       BFS--Carnot--Carathéodory convergence; no BI input required for small-$\theta$ regime &
-      \sproved \\[3pt]
-      W1 & [H-w] proved & \cite{Beau2026w1} &
+      \scond{} on the Q5a--Q5b hypotheses \\[3pt]
+      W1 & [H-w] under [H1] and [H2] & \cite{Beau2026w1} &
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
       ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$;
       after W1, the open hypotheses of the former Q5a framework remain [H1], [H-$\mathcal{E}$1],
       [C] (not closed by Q5a-O2's finite-rank route~\cite{Beau2026q5ao2}), and [H2] &
-      \sproved \\[3pt]
+      \scond{} on [H1] and [H2] \\[3pt]
       H2 & [H2] proved & \cite{Beau2026h2} &
       Strong convergence $\hat{X}_q \to x$, $\hat{P}_q \to -i\partial_x$ on
       $\Heis_3(\mathbb{Z}/q\mathbb{Z})$: quantitative Poisson aliasing lemma (rate $O(q^{-1})$),
       discrete Sobolev identity, quasi-isometry of sinc embedding;
-      closes last open hypothesis of the former Q5a framework (Theorem~7.1 of v$\le$2.1) &
+      proves hypothesis [H2] of the former Q5a framework, whose [H-E1] and [C] are not established &
       \sproved \\[3pt]
       Q11 & Temporal Casimir rigidity & \cite{Beau2026q11} &
       Under frozen, unestablished [H-F], Schur rigidity gives
@@ -2842,7 +2850,7 @@ A Structural Roadmap and Paper Inventory}
       divergence degree (proper-time scheme), no tuning-free hierarchy claimed
       (\sproved{} for the $a_4$ derivation at a supplied fixed metric and supplied compact gauge
       data; only the emergent-base reading consumes [H-L]) &
-      \sstruct \\[3pt]
+      \sproved \\[3pt]
       Q13 & Gauge--gravity spectral synthesis (version 1.4) & \cite{Beau2026q13} &
       On supplied geometric and gauge data, joint $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0$ yields a conditional
       Einstein--Yang--Mills system; metric variation of the gauge kinetic term $= 2\tau_{\mu\nu}$;
@@ -2851,7 +2859,7 @@ A Structural Roadmap and Paper Inventory}
       $8\pi G_N = 1/(2c_{\mathrm{EH}})$ by canonical matching with
       $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$; couplings are matching data, no hierarchy claimed;
       Euclidean; only the emergent-base reading consumes [H-L] &
-      \sstruct \\[3pt]
+      \scond \\[3pt]
       Q14 & Fermionic matter \& chirality (version 2.0) & \cite{Beau2026q14} &
       On a supplied Heisenberg carrier and conditional [H-L] geometry, the spinor bundle $S_\Pi$
       reproduces the $\SU(2)_L \times U(1)_Y$ gauge-sector
@@ -2969,14 +2977,14 @@ A Structural Roadmap and Paper Inventory}
       cannot reach $Q=2/3$; maximum-entropy reading ($\mathrm{CV}=1$) recorded as an open test (first-moment
       constraint + forced discrete-to-continuous bridge); target invariant, not a mass formula; scoped no-go excludes
       the linear self-adjoint determinant realisation of $s^2-d^2$ (equipartition route otherwise open) &
-      \sstruct \\[3pt]
+      \sproved \\[3pt]
       TPC & Ternary phase carrier: colour, generations, Koide as one carrier & \cite{Beau2026tpc} &
       Speculative bridge: one complex three-phase carrier $z_g = S + A\,e^{i(\delta+2\pi g/3)}$ --- pure-phase part
       sum-zero ($1+\omega+\omega^2=0$, colour-neutral), real part the square-root mass profile of KUD;
       singlet amplitude $S$ the master dial ($S=0$ colour, $S\neq0$ masses, $A=\sqrt2 S$ equipartition/Koide,
       $\delta$-node the hierarchy); candidate capacity filter $\lVert r_{\mathrm{dbl}}\rVert\le\lVert r_{\mathrm{sing}}\rVert$
       saturated at $\mathrm{CV}=1$; not a derivation, states the construction charge sheet &
-      \sstruct \\[3pt]
+      \sopen \\[3pt]
       NPI & Neutrino mixing and projective particle identity & \cite{Beau2026npi} &
       Structural note: interaction--propagation basis misalignment is generic, alignment requires an
       identity-stabilising projection channel; PMNS large mixing the unfixed default (anarchy-consistent),
@@ -3040,7 +3048,7 @@ A Structural Roadmap and Paper Inventory}
       Thermo & Conditional Einstein--matter coupling & \cite{Beau2026Thermodynamics} &
       $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from stationarity of
       $\Gamma_\Pi$, given supplied coefficients; $u \sim L^{-2}$ is not a temperature; no local first law &
-      \sstruct \\[3pt]
+      \scond \\[3pt]
       Lorentz & No quartic graviton dispersion & \cite{Beau2026i} &
       Posited local four-derivative TT kernel factorizes; massless branch exactly $\omega^2=|\vec k|^2$, no $A_4$,
       no $\ell_\chi$ bound; pole mass and in-in construction open;
@@ -3050,16 +3058,16 @@ A Structural Roadmap and Paper Inventory}
       $\eta_n^\tau \to \beta\gamma$; $\Phi(\eta_n^\tau) \to 1/\gamma$;
       BI factorization and central-phase factorization (\sproved);
       $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp} &
-      \sstruct \\[3pt]
+      \scond \\[3pt]
       TempProj & Temporal residual map & \cite{Beau2026tp} &
       $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$; uniqueness
       (three-input necessity); Lemma~1 of LorCap proved unconditionally (cond.\ on [U]) &
-      \sproved \\[3pt]
+      \scond{} on [U] and the Born--Infeld lift \\[3pt]
       LCII & Fibrewise capacity lapse & \cite{Beau2026lco2} &
       Fibrewise extension to non-homogeneous regime; $d\tau/dn|_x = R(x)/\gamma$;
       unified capacity arbitration: $1/\gamma$ (kinematic) and $R(x)$ (gravitational)
       as two facets of the same BI trade-off &
-      \sstruct \\[3pt]
+      \scond{} on the imported occupancy--lapse identification \\[3pt]
       LCIIo1 & No-go for the scalar free-fraction closure of the capacity--metric bridge &
       \cite{Beau2026lco2o1} &
       The free-fraction law $A_\tau = A_\tau^\infty(1-\epsilon)$ with $g^{\tau\tau} = -A_\tau$
@@ -3077,7 +3085,8 @@ A Structural Roadmap and Paper Inventory}
       identification holds for $n\leq R$ &
       \sproved \\[3pt]
       TopInv & Topological invariants & \cite{Beau2026k} &
-      Charge quantisation ($\pi_1 \cong \mathbb{Z}$), no monopoles, chirality (Hopf fibration) &
+      Charge quantisation ($\pi_1 \cong \mathbb{Z}$) and no monopoles on the canonical model (proved);
+      projective chirality (Hopf fibration) established at the framework level, qualitatively &
       \sproved \\[3pt]
       SMcm & Charge, mass, inertia & \cite{Beau2026e} &
       Mass and charge as BI-saturated responses &
@@ -3094,8 +3103,8 @@ A Structural Roadmap and Paper Inventory}
       single discrete Fourier mode, so the admission residual $w_j=1$ is an exact algebraic identity and
       not a numerical accident; for matched single-character blocks the closure hypothesis of ENT-Note
       becomes a theorem and the flat Schmidt spectrum
-      $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is derived analytically
-      (literal Schmidt pairing for independently sampled canonical O25 blocks: open) &
+      $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is derived analytically under the companion's supplied
+      purity of the joint state (literal Schmidt pairing for independently sampled canonical O25 blocks: open) &
       \sproved\ /\ \sopen \\[3pt]
       ENT-E2 & Two entanglement entropies of the conjugate pair & \cite{Beau2026ent2} &
       Separates the admissible pair entropy $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$ on a
@@ -3114,7 +3123,7 @@ A Structural Roadmap and Paper Inventory}
       Flat rotation curves and Hubble tension from a common effective mechanism; v2.0 adds the
       history-branching expansion sector under the explicit rank--time dictionary hypothesis ($n = \log a$),
       with the state-volume reading quantitatively excluded and QUMOND repositioned as input &
-      \sstruct \\[3pt]
+      \sheur \\[3pt]
       Supra & Super\-conductivity & \cite{Beau2026g} &
       Projective phase locking as origin of superconducting coherence &
       \sstruct \\[3pt]
@@ -3139,7 +3148,7 @@ A Structural Roadmap and Paper Inventory}
       Planck-calibrated, real-$m=0$-corrected TT benchmark changes $\chi^2$ $27.26\to17.70$ in the
       leading Bessel+$n_{\mathrm H}$ cell; TE/EE transfer and saturation remain open; staircase envelope;
       $8/3$ witness re-audited with observable $\sqrt{8/3}$ &
-      \sstruct\ /\ \sopen \\[3pt]
+      \snum\ /\ \sopen \\[3pt]
       ProjCE & Projection kernel / capacity ceiling & \cite{Beau2026pce} &
       Amplitude-level projection derived as conditional expectation onto the distinguishable-record
       algebra (two classical characterisations, graded hypotheses, operator invariant under degraded
