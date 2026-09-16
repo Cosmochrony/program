@@ -624,7 +624,7 @@
 <body>
 <header>
   <h1>Cosmochrony &mdash; Paper Graph</h1>
-  <span class="ctrl-label" id="graph-count">114 papers</span>
+  <span class="ctrl-label" id="graph-count">116 papers</span>
 
   <div class="legend">
     <div class="li" id="li-proved" style="color:var(--proved)" onclick="filterStatus('proved')">
@@ -2046,7 +2046,7 @@
     papers.forEach(p => {
       const pos = L[p.id]
       if (!pos) return
-      const c = SC[p.s] || SC.structural
+      const c = SC[p.s] || (console.warn("unknown status", p.id, p.s), SC.structural)
       const g2 = document.createElementNS(ns, "g")
       g2.setAttribute("class", "node")
       g2.setAttribute("data-id", p.id)
@@ -2145,7 +2145,7 @@
     fitNodes([...rel].filter(id => L[id]))
 
     /* sidebar */
-    const c = SC[p.s] || SC.structural
+    const c = SC[p.s] || (console.warn("unknown status", p.id, p.s), SC.structural)
     const tagsHtml = (p.tags || []).map(tid => {
       const t = TOPICS.find(x => x.id === tid)
       return t ? `<span class="ptag" style="color:${t.color};border-color:${t.color}60;background:color-mix(in srgb,${t.color} 10%,transparent)">${t.label}</span>` : ""

@@ -15,13 +15,19 @@ and conditional are defined in the conventions; synthesis becomes a graph status
 against the papers' own status statements: EBJ proved with open items; O25, O28 and O32 numerical;
 HeisenbergStructure, O18, O27, Q5a, AOG and SRN proved with open items; O21, O23 and Q9 conditional; Q6a open;
 the presentation notes and the Lorentz-capacity synthesis typed synthesis; figure styles corrected for the white
-paper, Born-Infeld, Q1, Q3, O18, O19, O22, O24, O27, O29, O30, O31, Gravity, Lorentz and E2.
+paper, Born-Infeld, Q1, Q3, O18, O22, O24, O27, O29, O30, O31, Gravity and E2, and the dependency-figure
+styles are brought into line with the rows throughout.
 
 The re-audit of every primary against the papers' own status statements also retypes O8, O10, O11, O13, PTO
 and LowLCapacity numerical; O6, O16, O20, O24, Q5b, Q10, Q13, U1, W1, LCII, LorCap, TempProj, SpectralRelaxation,
 FibreErasure, Thermodynamics, Q3, ENT-E2 and Gravity conditional on the hypothesis each names; O4, O19 and TPC
 open; Q12, KUD and Lorentz (a proved negative result about a posited truncation) proved; Cosmology heuristic; O22
 structural; the O4 and O6 rows and paragraphs state the current negative results.
+
+The pass also removes the last bare-word status cells (O29 numerical, O30 conditional), defines heuristic and the
+principal-contribution rule in the conventions, reorders the graph legend on that vocabulary, and restates the
+contribution cells of H2, TopInv and ENT-E1 and the short titles of Q9, U1 and W1 so that each names the hypothesis
+its result carries.
 
 Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
 O27 2.0, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and

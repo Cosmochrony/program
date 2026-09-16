@@ -946,7 +946,7 @@ A Structural Roadmap and Paper Inventory}
     is withdrawn and under re-audit.
 
     \textbf{O33}~\cite{Beau2026a37}: arithmetic Mackey--Hecke structure of the O12
-    three-character filtration (exact core).
+    three-character filtration (exact core, \sproved).
     The cumulative Fourier mode set is proved to be the cyclic sumset
     $K_n=c[-(n+1),n+1]+\{0,\pm(c_2+c_3)\}+\{0,\pm c_3\}$.
     This yields an exact cyclic-spacing criterion for boundary porosity and reduces the full
@@ -1158,7 +1158,8 @@ A Structural Roadmap and Paper Inventory}
     Lipschitz bound and BFS--Carnot--Carathéodory convergence (\sproved{}).
     W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
-    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1 (\sproved{}).
+    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by
+    U1 (\scond{} on the Q5a--Q5b hypotheses).
     After W1, the open hypotheses of the former Q5a framework are [H1], [H-E1], [C], and [H2].
     Q5a-O2~\cite{Beau2026q5ao2} establishes the pure-Fourier-mode structure of the
     pre-saturation pipeline, the truncation status of its three-coordinate reduction (no rank
@@ -2038,7 +2039,7 @@ A Structural Roadmap and Paper Inventory}
           Y/.style={box, fill=gray!8,    draw=csynth,   text=black},
           arr/.style={-{Stealth[length=4pt,width=3pt]}, gray!60, line width=0.9pt},
           spine/.style={-{Stealth[length=5pt,width=3.5pt]}, black!55, line width=1.4pt},
-          synth/.style={-{Stealth[length=3pt,width=2pt]}, draw=cstruct!45, line width=0.35pt, opacity=0.55},
+          gather/.style={-{Stealth[length=3pt,width=2pt]}, draw=cstruct!45, line width=0.35pt, opacity=0.55},
         ]
 
           \newcommand{\dx}{2.1cm}
@@ -2128,7 +2129,7 @@ A Structural Roadmap and Paper Inventory}
             {Weil doublets};
           \node[N] (PTO)    at (5*\dx,-7*\dy)   {PTO};
           \node[C] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
-          \node[P] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
+          \node[C] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
           \node[C] (LCII)   at (5*\dx,-10*\dy) {LCII};
           \node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
           \node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
@@ -2166,13 +2167,13 @@ A Structural Roadmap and Paper Inventory}
           \node[Y] (SpANote) at (\dx,-13*\dy) {SpAdm-Note};
           \foreach \n in {SpA,SpCap,SpG,ThGn,SpR,O1,O3,O4,O5,O7,O8,O9,O12,O13,O15,O16,O17,%
           O18,O19,O22,O23,O24,O25,O26,O27,O28,O29,O30,O31,O32,O33}
-          \draw[synth] (\n) to[out=-90,in=90] (SpANote);
+          \draw[gather] (\n) to[out=-90,in=90] (SpANote);
 
 % Non-injective foundations sub-programme synthesis (presentation note 5):
 % aggregates the four constituents of Branch I (ENI, Foundation, HeisStr, noscale).
           \node[Y] (NIFNote) at (2*\dx,\dy) {NIF-Note};
           \foreach \n in {ENI,Found,Heis,nos}
-          \draw[synth] (\n) to[out=90,in=-90] (NIFNote);
+          \draw[gather] (\n) to[out=90,in=-90] (NIFNote);
 
           \node[P] (Q1)   at (8*\dx,-4*\dy)   {Q1};
           \node[P] (Q2)   at (8*\dx,-5*\dy)   {Q2};
@@ -2183,9 +2184,9 @@ A Structural Roadmap and Paper Inventory}
 % Quantum structure sub-programme synthesis (presentation note 7):
 % aggregates Q1, Q2, Q3, and the Bell paper.
           \node[Y] (QSNote) at (10*\dx,-4*\dy) {QS-Note};
-          \draw[synth] (Q1)   to[out=0,in=180]  (QSNote);
-          \draw[synth] (Q2)   to[out=0,in=-150] (QSNote);
-          \draw[synth] (Q3)   to[out=30,in=-120] (QSNote);
+          \draw[gather] (Q1)   to[out=0,in=180]  (QSNote);
+          \draw[gather] (Q2)   to[out=0,in=-150] (QSNote);
+          \draw[gather] (Q3)   to[out=30,in=-120] (QSNote);
 
           \node[P] (Q5a)  at (8*\dx,-6*\dy)   {Q5a};
           \node[P] (Q5aO2) at (9*\dx,-6*\dy)  {Q5a-O2};
@@ -2193,7 +2194,7 @@ A Structural Roadmap and Paper Inventory}
           \node[Oc] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
           \node[S] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
           \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
-          \node[P,dashed,draw=cproved!60,fill=green!4,font=\tiny\sffamily]
+          \node[box,dashed,draw=black!45,fill=black!3,font=\tiny\sffamily]
           (geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}
                                          Q8--Q10\\U1, W1
           \end{tabular}};
@@ -2214,7 +2215,7 @@ A Structural Roadmap and Paper Inventory}
 % and the Q8--Q10/U1/W1 block).
           \node[Y] (EGNote) at (10.5*\dx,-11*\dy) {EG-Note};
           \foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
-          \draw[synth] (\n) to[out=-30,in=120] (EGNote);
+          \draw[gather] (\n) to[out=-30,in=120] (EGNote);
 
           \draw[spine] (Found) to[out=0,in=90] (Q1);
           \draw[arr]   (O18)   to[out=10,in=180] (Q1);
@@ -2259,7 +2260,7 @@ A Structural Roadmap and Paper Inventory}
 
           \node[Y] (ENTn) at (2*\dx,-9*\dy)    {ENT-Note};
           \draw[arr] (Bell) to[out=-90,in=90] (ENTn);
-          \draw[synth] (Bell) to[out=30,in=-170] (QSNote);
+          \draw[gather] (Bell) to[out=30,in=-170] (QSNote);
 
           \node[P] (ENTe1) at (3*\dx,-9*\dy)   {E1};
           \node[font=\tiny\sffamily,text=cproved,right=2pt] at (ENTe1.east)
@@ -2287,8 +2288,8 @@ A Structural Roadmap and Paper Inventory}
 % Gauge-gravity stratification sub-programme synthesis (presentation note 8):
 % aggregates Q12 and Q13.
           \node[Y] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
-          \draw[synth] (Q12) to[out=0,in=180] (GGSNote);
-          \draw[synth] (Q13) to[out=0,in=200] (GGSNote);
+          \draw[gather] (Q12) to[out=0,in=180] (GGSNote);
+          \draw[gather] (Q13) to[out=0,in=200] (GGSNote);
 
           \node[S] (Q14) at (3*\dx,-13*\dy) {Q14};
           \node[font=\tiny\sffamily,text=cstruct,right=2pt] at (Q14.east)
@@ -2332,13 +2333,13 @@ A Structural Roadmap and Paper Inventory}
 % Fermionic matter sub-programme synthesis (presentation note 6):
 % aggregates Q14, PRS, AAR, Q11OF, A4-Note and AOG-Note.
           \node[Y] (FMNote) at (4*\dx,-13*\dy) {FM-Note};
-          \draw[synth] (Q14)    to[out=0,in=180]   (FMNote);
-          \draw[synth] (PRS)    to[out=30,in=-150] (FMNote);
-          \draw[synth] (AAR)    to[out=50,in=-160] (FMNote);
-          \draw[synth] (Q11OF)  to[out=40,in=-170] (FMNote);
-          \draw[synth] (A4Note) to[out=20,in=-160] (FMNote);
-          \draw[synth] (AOG)    to[out=90,in=-90]  (FMNote);
-          \draw[synth] (CHO)    to[out=10,in=-178] (FMNote);
+          \draw[gather] (Q14)    to[out=0,in=180]   (FMNote);
+          \draw[gather] (PRS)    to[out=30,in=-150] (FMNote);
+          \draw[gather] (AAR)    to[out=50,in=-160] (FMNote);
+          \draw[gather] (Q11OF)  to[out=40,in=-170] (FMNote);
+          \draw[gather] (A4Note) to[out=20,in=-160] (FMNote);
+          \draw[gather] (AOG)    to[out=90,in=-90]  (FMNote);
+          \draw[gather] (CHO)    to[out=10,in=-178] (FMNote);
 
         \end{tikzpicture}
       }
@@ -2349,7 +2350,8 @@ A Structural Roadmap and Paper Inventory}
         \textcolor{ccond}{$\blacksquare$}~\scond{},
         \textcolor{cheur}{$\blacksquare$}~\sheur{},
         \textcolor{copen}{$\blacksquare$}~\sopen{},
-        \textcolor{csynth}{$\blacksquare$}~\ssynth{}; each node carries the primary label of its inventory row.
+        \textcolor{csynth}{$\blacksquare$}~\ssynth{}; each single-paper node carries the primary label of its
+        inventory row, while the dashed composite block gathers a sub-chain and carries no paper label.
         The interactive graph's conditional-reading and postulated
         edges (EG-Note to Q12, Q13 and Q14) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
@@ -2456,11 +2458,11 @@ A Structural Roadmap and Paper Inventory}
         [H-F] $\Rightarrow$ [H-lift] and coercivity gives $A_H>0$ under [H-F].
         \textbf{Q8}~(\sstruct{}): $A_Z = C_{\mathfrak{su}(2)} = 2$ by Casimir rigidity;
         normalisation fixed by horizontal sector.
-        \textbf{Q10}~(\sstruct{}): universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy
-        $\Rightarrow$ $A_H \to 2$, conditional on~[U].
-        \textbf{U1}~(\sproved{}): [U] proved with rate $O(q^{-1/2})$ from Weil-generator
+        \textbf{Q10}~(\scond{} on~[U]): universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy
+        $\Rightarrow$ $A_H \to 2$.
+        \textbf{U1}~(\scond{} on the Q5a--Q5b hypotheses): [U] with rate $O(q^{-1/2})$ from Weil-generator
         Lipschitz bound and BFS--Carnot--Carath\'eodory convergence (Q5b).
-        \textbf{W1}~(\sproved{}): [H-w] proved as a structural consequence of fibre-invariance
+        \textbf{W1}~(\scond{} on [H1] and [H2]): [H-w] as a structural consequence of fibre-invariance
         ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
         The metric reading of
         $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ remains conditional on the independent,
@@ -2572,7 +2574,7 @@ A Structural Roadmap and Paper Inventory}
       Matrix-level dynamic redundancy: $R_n \to 0$ for the Steinberg fingerprint (proved); the
       confinement corollary $\beta_{\mathrm{eff}} \in \beta^*$ is conditional on a power-law Ansatz that
       the paper's own fingerprint does not satisfy, so a genuine power-law regime remains open &
-      \scond\ /\ \sopen \\[3pt]
+      \scond{} on the power-law Ansatz\ /\ \sopen \\[3pt]
       O7 & Continuum target & \cite{Beau2026a11} &
       Target: $\delta \in [7.4, 10.6]$ on 3-step fingerprints &
       \sstruct \\[3pt]
@@ -2612,7 +2614,7 @@ A Structural Roadmap and Paper Inventory}
       Conjugate pairs $\{c,q-c\}$ are fibres of $\Pi$ under two independent open hypotheses;
       exponent doubling $\delta_{\mathrm{pair}}=2\delta_c$ holds conditionally, trivially on
       the real pipeline &
-      \scond \\[3pt]
+      \scond{} on the parity and realisation hypotheses \\[3pt]
       O17 & Block-independence, toy model & \cite{Beau2026a21} &
       Raw Gram-Schmidt redundancy is exactly independent of block parameters for any two
       blocks, not only conjugate ones; scoped to a scalar toy model, not shown for the real
@@ -2629,11 +2631,11 @@ A Structural Roadmap and Paper Inventory}
       O20 & Conditional persistence template & \cite{Beau2026a24} &
       Threshold-crossing algebra under explicit hypotheses; no intrinsic threshold or selected
       exponent window &
-      \scond \\[3pt]
+      \scond{} on its two persistence hypotheses \\[3pt]
       O21 & Local crossing diagnostic & \cite{Beau2026a25} &
       Two-point crossing formula under a fixed normalisation; it scales under amplitude
       rescaling, while shell alignment and the capacity-to-rate carrier remain open &
-      \scond\ /\ \sopen \\[3pt]
+      \scond{} on the shell-alignment conjecture and the cross-substrate identification\ /\ \sopen \\[3pt]
       O22 & Projection locking & \cite{Beau2026a26} &
       BI projection locking forces the O21-defined $n_3^{\mathrm{obs}}$ onto a BFS shell
       within the stated model; this does not make that rank amplitude-invariant &
@@ -2643,12 +2645,12 @@ A Structural Roadmap and Paper Inventory}
       $\mathfrak{su}(2)\cong\mathrm{Im}\,\mathbb{H}$, dimension three; $Q_8$'s two-axis neutral
       generating set rules out generator-axis counting; carrier selection and the
       $\Sigma_c$-identification are open, so $\Sigma_c(n_3)=3$ is a supplied selection rule &
-      \scond\ /\ \sopen \\[3pt]
+      \scond{} on the supplied carrier and the $\Sigma_c$ selection rule\ /\ \sopen \\[3pt]
       O24 & Observable rank rigidity & \cite{Beau2026a28} &
       Verticality Lemma develops $c_{\mathrm{BI}} \to \delta_{\mathrm{pair}}$ under the stated
       fibre hypotheses; no first-principles fibre identification and no native derivation of
       $\delta_{\mathrm{pair}} \to \beta^*$ &
-      \scond\ /\ \sopen \\[3pt]
+      \scond{} on the supplied fibre and rank-three hypotheses\ /\ \sopen \\[3pt]
       \midrule
       O25 & Numerical campaign (extended to $q=601$) & \cite{Beau2026a29} &
       Exhaustive pair sampling through $q=211$; representative sampling of 24 pairs at $q=307$
@@ -2700,7 +2702,7 @@ A Structural Roadmap and Paper Inventory}
       $\mathcal{C}_c = \langle r^4\rangle\,\mathrm{diag}(1/4,1/2,1/4)$;
       this object is distinct from O28's measured $9\times9$ covariance and does not derive its
       spectrum; factor~$2$ comes from symmetric-tensor normalisation &
-      \scond \\[3pt]
+      \scond{} on (H0)--(H3) \\[3pt]
       O31 & Withdrawal notice for colour-triplet and gauge-group claims & \cite{Beau2026a35} &
       Withdraws the proposed individual-profile co-admissibility, arithmetic criterion,
       metaplectic step, $\Delta(27)$ proposition, rank-eight test, $\SU(3)$ uniqueness, irreducibility of
@@ -2742,7 +2744,7 @@ A Structural Roadmap and Paper Inventory}
       Monotone $I(c;\sigma(\ell))$ on BFS coarse-graining axis~$\ell$ via DPI (Thm~4.1,
       conditional on [H-suff]); [H-suff] proved at the rank level (Prop.~3.6); capacity-level
       numerical evidence for $q\in\{61,151,211\}$; explicitly not a $c$-theorem &
-      \scond \\[3pt]
+      \scond{} on [H-suff] and [H-sg] \\[3pt]
       \midrule
       Q1 & Fourier-support rigidity & \cite{Beau2026q1} &
       Exact, unconditional conjugate-sector subspace identity and its rank/support no-go
@@ -2859,7 +2861,7 @@ A Structural Roadmap and Paper Inventory}
       $8\pi G_N = 1/(2c_{\mathrm{EH}})$ by canonical matching with
       $c_F I_\rho = 1/(4g_{\mathrm{YM}}^2)$; couplings are matching data, no hierarchy claimed;
       Euclidean; only the emergent-base reading consumes [H-L] &
-      \scond \\[3pt]
+      \scond{} on the matched coefficients \\[3pt]
       Q14 & Fermionic matter \& chirality (version 2.0) & \cite{Beau2026q14} &
       On a supplied Heisenberg carrier and conditional [H-L] geometry, the spinor bundle $S_\Pi$
       reproduces the $\SU(2)_L \times U(1)_Y$ gauge-sector
@@ -3048,7 +3050,7 @@ A Structural Roadmap and Paper Inventory}
       Thermo & Conditional Einstein--matter coupling & \cite{Beau2026Thermodynamics} &
       $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from stationarity of
       $\Gamma_\Pi$, given supplied coefficients; $u \sim L^{-2}$ is not a temperature; no local first law &
-      \scond \\[3pt]
+      \scond{} on the supplied renormalised coefficients \\[3pt]
       Lorentz & No quartic graviton dispersion & \cite{Beau2026i} &
       Posited local four-derivative TT kernel factorizes; massless branch exactly $\omega^2=|\vec k|^2$, no $A_4$,
       no $\ell_\chi$ bound; pole mass and in-in construction open;
@@ -3058,7 +3060,7 @@ A Structural Roadmap and Paper Inventory}
       $\eta_n^\tau \to \beta\gamma$; $\Phi(\eta_n^\tau) \to 1/\gamma$;
       BI factorization and central-phase factorization (\sproved);
       $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp} &
-      \scond \\[3pt]
+      \scond{} on the Born--Infeld mobility budget \\[3pt]
       TempProj & Temporal residual map & \cite{Beau2026tp} &
       $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$; uniqueness
       (three-input necessity); Lemma~1 of LorCap proved unconditionally (cond.\ on [U]) &
