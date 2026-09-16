@@ -8,6 +8,13 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.18 synchronises the NIF-Note 1.5 release in the Branch I synthesis, inventory row, bibliography note and
+interactive graph. It separates ENI's one-way implication from the conditional representation route, records
+temporal order under [H-acyc] and irreducibility under the representation dictionary, carries the dimension and
+generating-pair premises for non-commutation, and attributes the finite obstruction to HeisenbergStructure 2.1. The
+Heisenberg group, non-trivial central character and associated Weil action remain supplied. The Born rule and Q5b
+spatial limit [H-L] remain open. No new result or status reclassification is introduced.
+
 Version 2.17 types the status of every paper on one vocabulary of seven labels (proved, structural, numerical,
 conditional, heuristic, open, synthesis), with a primary label per paper carried identically by the inventory row,
 the synthesis paragraphs where they state a status, the dependency figures and the interactive graph. Numerical
