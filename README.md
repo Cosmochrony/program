@@ -36,6 +36,11 @@ correcting those that stated a
 retracted derivation (O4), an unestablished observable (O19) or an identification the paper does not prove (Q7),
 and Q6b is retyped conditional on the Q5a Mosco hypotheses and [H-L] on all four surfaces.
 
+The status conventions state the secondary-label rule as mandatory for an open or conditional item of the paper's
+own principal result, and it is applied by predicate over all rows. Two claims the registry itself refutes are
+withdrawn: the free-fraction identification of the capacity radius with the metric radius (LCII), and the
+gravitomagnetic reading of the Lorentz vector sector, which its paper lists as open.
+
 Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
 O27 2.0, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and
 the Gauge Structure, Gauge--Gravity Stratification, and Fermionic Matter presentation notes.
