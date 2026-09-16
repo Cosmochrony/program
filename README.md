@@ -18,11 +18,12 @@ the presentation notes and the Lorentz-capacity synthesis typed synthesis; figur
 paper, Born-Infeld, Q1, Q3, O18, O22, O24, O27, O29, O30, O31, Gravity and E2, and the dependency-figure
 styles are brought into line with the rows throughout.
 
-The re-audit of every primary against the papers' own status statements also retypes O8, O10, O11, O13, PTO
-and LowLCapacity numerical; O6, O16, O20, O24, Q5b, Q10, Q13, U1, W1, LCII, LorCap, TempProj, SpectralRelaxation,
+The re-audit of every primary against the papers' own status statements also retypes O10, O11, O13, PTO
+and LowLCapacity numerical; O16, O20, O24, Q5b, Q10, Q13, U1, W1, LCII, LorCap, TempProj, SpectralRelaxation,
 FibreErasure, Thermodynamics, Q3, ENT-E2 and Gravity conditional on the hypothesis each names; O4, O19 and TPC
 open; Q12, KUD and Lorentz (a proved negative result about a posited truncation) proved; Cosmology heuristic; O22
-structural; O6 proved with a conditional confinement corollary, O8 structural on an empirical premise, CHO
+structural; O6 keeps its proved primary with the confinement corollary now recorded conditional, O8
+structural on an empirical premise, CHO
 conditional on the inherited central-phase lift, TopInv and O31 with their secondary labels; the O4 and O6 rows
 and paragraphs state the current negative results.
 
