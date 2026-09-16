@@ -19,7 +19,8 @@ paper, Born-Infeld, Q1, Q3, O18, O19, O22, O24, O27, O29, O30, O31, Gravity, Lor
 
 The re-audit of every primary against the papers' own status statements also retypes O8, O10, O11, O13, PTO
 and LowLCapacity numerical; O6, O16, O20, O24, Q5b, Q10, Q13, U1, W1, LCII, LorCap, TempProj, SpectralRelaxation,
-FibreErasure, Thermodynamics, Q3 and ENT-E2 conditional on the hypothesis each names; O4, O19 and TPC open; Q12 and KUD proved;
+FibreErasure, Thermodynamics, Q3 and ENT-E2 conditional on the hypothesis each names; O4, O19 and TPC open; Q12 and
+KUD proved;
 Cosmology heuristic; O22 structural; the O4 and O6 rows and paragraphs state the current negative results.
 
 Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
