@@ -635,14 +635,6 @@
       <div class="dot" style="background:var(--struct-bg);border:1.5px solid var(--struct)"></div>
       structural
     </div>
-    <div class="li" id="li-heur" style="color:var(--heur)" onclick="filterStatus('heuristic')">
-      <div class="dot" style="background:var(--heur-bg);border:1.5px solid var(--heur)"></div>
-      heuristic
-    </div>
-    <div class="li" id="li-open" style="color:var(--open)" onclick="filterStatus('open')">
-      <div class="dot" style="background:var(--open-bg);border:1.5px solid var(--open)"></div>
-      open
-    </div>
     <div class="li" id="li-numerical" style="color:var(--num)" onclick="filterStatus('numerical')">
       <div class="dot" style="background:var(--num-bg);border:1.5px solid var(--num)"></div>
       numerical
@@ -650,6 +642,14 @@
     <div class="li" id="li-conditional" style="color:var(--cond)" onclick="filterStatus('conditional')">
       <div class="dot" style="background:var(--cond-bg);border:1.5px solid var(--cond)"></div>
       conditional
+    </div>
+    <div class="li" id="li-heur" style="color:var(--heur)" onclick="filterStatus('heuristic')">
+      <div class="dot" style="background:var(--heur-bg);border:1.5px solid var(--heur)"></div>
+      heuristic
+    </div>
+    <div class="li" id="li-open" style="color:var(--open)" onclick="filterStatus('open')">
+      <div class="dot" style="background:var(--open-bg);border:1.5px solid var(--open)"></div>
+      open
     </div>
     <div class="li" id="li-synthesis" style="color:var(--synth)" onclick="filterStatus('synthesis')">
       <div class="dot" style="background:var(--synth-bg);border:1.5px solid var(--synth)"></div>
@@ -1210,7 +1210,7 @@
         "Any co-metric reading additionally requires the independent, unestablished [H-L]."
     },
     {
-      id: "Q9", lbl: "Q9", s: "proved", b: "III", key: "Beau2026q9",
+      id: "Q9", lbl: "Q9", s: "conditional", b: "III", key: "Beau2026q9",
       tags: ["spt"],
       title: "Q9 — Conditional [H-F] ⇒ [H-lift]",
       desc: "Under [H-F] and along recovery sequences, the modulation-sector position energy satisfies E_q^X(f_q) ≤ C/q → 0; this is a form-contribution bound, not decay of the modulation operator norm. " +
@@ -1493,7 +1493,7 @@
       desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x). Gravitational time dilation dτ/dn|_x = R(x)/γ."
     },
     {
-      id: "LCIIo1", lbl: "LCIIo1", s: "open", b: "III", key: "Beau2026lco2o1",
+      id: "LCIIo1", lbl: "LCIIo1", s: "proved", b: "III", key: "Beau2026lco2o1",
       url: BASE + "lc/lc-o2-o1",
       tags: ["grav", "spt"],
       title: "Failure of the Scalar Free-Fraction Closure of the Local Capacity-Metric Bridge",

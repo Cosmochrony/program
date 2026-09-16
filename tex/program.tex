@@ -157,20 +157,27 @@ A Structural Roadmap and Paper Inventory}
     \sproved{} (formally proved as a theorem within the stated assumptions);
     \sstruct{} (derived from structural arguments that are internally consistent but not yet fully
     formalised);
-    \snum{} (reported measurements or exact finite computations that establish no theorem beyond the
-    data they report);
-    \scond{} (a theorem-level result whose load-bearing input is a supplied identification or an
-    unestablished hypothesis of the programme, so that the result cannot be read as established until
-    that input is);
-    \sheur{} (physically motivated and numerically supported but not yet rigorously derived);
+    \snum{} (the principal contribution is a dataset or an exact finite computation with its reproduction
+    code, and no structural or physical claim is asserted on its basis; a theorem proved about the data is a
+    secondary label);
+    \scond{} (a theorem whose conclusion is read as a claim about the programme, and at least one of whose
+    hypotheses is a programme-level identification or postulate that this inventory lists as open, such as
+    [H-L], [H-F], a carrier selection or a supplied selection rule; the label names that hypothesis; a
+    theorem about a supplied object as such, whose conclusion does not depend on the object being the
+    programme's, is \sproved{} with the supplied input stated, and the missing identification is recorded as
+    a secondary \sopen{});
+    \sheur{} (physically motivated and numerically supported but not yet rigorously derived: a physical
+    claim is asserted beyond what the numerical or structural support establishes);
     \sopen{} (explicitly conjectured or known to be unsettled).
     A seventh entry, \ssynth{}, is reserved for the sub-programme presentation
     and synthesis notes: these papers consolidate and organise results established in their
     constituent papers and carry no new result of their own, so their epistemic content is that of
     the papers they map.
-    Each paper carries one primary label, stated first in the inventory table and in the dependency
-    figures and graph, followed where useful by the labels of its secondary components; the primary
-    label is the status of the paper's principal contribution.
+    Each paper carries one primary label, stated first in the inventory table, in the dependency figures
+    and graph, and first in its synthesis paragraph where that paragraph states a status, followed where
+    useful by the labels of its secondary components; the primary label is the status of the paper's
+    principal contribution, the result named by its title: a proved no-go or countermodel is \sproved{} as a
+    negative result, and a withdrawal notice with no new theorem is \sopen{}.
     These classifications record the current audited status.
     They may therefore correct an original paper's self-classification when a published countermodel or
     obstruction establishes that a claimed implication does not follow.
@@ -706,8 +713,8 @@ A Structural Roadmap and Paper Inventory}
     $\sigma\mapsto\lambda\sigma$: it scales as $\lambda^{1/\delta}$, so it does not eliminate
     amplitude or pipeline dependence.  The threshold $9/q^2$, shell-alignment condition, and
     cross-substrate carrier remain external inputs; SGN excludes a native Heisenberg transfer
-    for the corpus-defined objects (local algebra: \sproved; intrinsic rank and transfer:
-    \sopen).
+    for the corpus-defined objects (\scond{} on the shell-alignment conjecture and the external
+    cross-substrate identification; the local algebra is \sproved; intrinsic rank and transfer \sopen).
 
     \textbf{O22}~\cite{Beau2026a26}: BI projection locking forces the O21-defined
     $n_3^{\mathrm{obs}}$ onto a BFS shell within O22's stated model (Theorem~3.2).
@@ -721,8 +728,8 @@ A Structural Roadmap and Paper Inventory}
     generator-axis counting cannot produce the three.
     The carrier selection and the identification of $\Sigma_c$ with the module dimension are open
     bridges; the threshold $\Sigma_c(n_3)=3$ is a supplied selection rule, definitional at the
-    level of O21 (\sproved{} for the adjoint dimension of the supplied carrier; threshold and
-    bridges: \sopen).
+    level of O21 (\scond{} on the supplied carrier and selection rule; the adjoint dimension is
+    \sproved; threshold and bridges \sopen).
     Version 2.1 determines what the deposited O12 shell-span filtration supplies on the carrier
     bridge.
     Its fingerprint vectors are pure Fourier modes, so every proper level is a Fourier-coordinate
@@ -754,7 +761,7 @@ A Structural Roadmap and Paper Inventory}
   \subsection{O25--O30, PTO, and Fibre Erasure: Numerical Validation, Carrier Diagnostics,
     a Conditional Covariance Model, and Information-Theoretic Axes}
 
-    \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign, extended to large primes.
+    \textbf{O25}~\cite{Beau2026a29}: Systematic pair-level numerical campaign, extended to large primes (\snum).
     Computes $\delta_{\mathrm{pair}}$ exhaustively across all conjugate pairs through $q=211$;
     the capped-BFS extension --- reproducing the observable exactly --- uses 24 representative
     pairs at $q=307$ and 12 at each of $q=401,601$.
@@ -783,13 +790,14 @@ A Structural Roadmap and Paper Inventory}
     $\mathrm{End}(V_\rho)$ computable from O25 data.
     This representation-side result does not supply the missing rate equation.
 
-    \textbf{O27}~\cite{Beau2026a31}: Quotient factorisation alone does not imply equivariance. Saturation, the supplied
+    \textbf{O27}~\cite{Beau2026a31}: Quotient factorisation alone does not imply equivariance
+    (\sproved\ /\ \sopen). Saturation, the supplied
     carrier, and parity
     covariance are explicit inputs. Under the stated equivariance hypotheses, the Schur-level
     factorisation and multiplicity counts are proved; a canonical equivariant vector lift remains
     open. The result supplies no derived interpretation of $\beta^*$.
 
-    \textbf{O28}~\cite{Beau2026a32}: Two measurements from the Q5a-O5 checkpoints.
+    \textbf{O28}~\cite{Beau2026a32}: Two measurements from the Q5a-O5 checkpoints (\snum).
     Part~A: out of sample (to $q = 601$) the calibrated linear extrapolation
     $n_1 \sim \hat\alpha\,q$ ($q \le 211$) fails, overpredicting $n_1$ by up to $+88\%$; the
     finite measurements reject only that extrapolation, and the exact law is the interval theorem
@@ -886,7 +894,7 @@ A Structural Roadmap and Paper Inventory}
     selection, not an O29 data result.
 
     \textbf{O30}~\cite{Beau2026a34}: Conditional $3\times3$ covariance model on
-    $\operatorname{Sym}^2(V_\rho)$ (\textbf{conditional}).
+    $\operatorname{Sym}^2(V_\rho)$ (\scond{} on hypotheses (H0)--(H3)).
     Under the supplied hypotheses (H0)--(H3), including Veronese data, an inter-block
     identification, weight exchange, and a fixed projected symmetric square, a lift satisfies
     $\beta_j=\varepsilon_j\bar\alpha_j$ with $\varepsilon_j\in\{\pm1\}$.
@@ -1093,7 +1101,7 @@ A Structural Roadmap and Paper Inventory}
     (\sstruct{} for the geometry; conditional on [H-L] for the metric reading).
 
     \textbf{Q6a}~\cite{Beau2026q6a}: Gauge charges are the invariants of the projection-fibre
-    equivalence classes.
+    equivalence classes (\sopen{} for the colour factor and the complete gauge group).
     $\mathrm{U}(1)$ and $\SU(2)$ are identified as fixed points of the admissibility flow.
     Its former derivation of $\SU(3)\times\SU(2)\times\mathrm{U}(1)$ used O31 and is
     unsupported after the O31 withdrawal; the colour factor and complete group are open.
@@ -1139,7 +1147,7 @@ A Structural Roadmap and Paper Inventory}
     unestablished [H-F] and along recovery sequences, the modulation-sector position-energy form
     contribution satisfies $\mathcal{E}^X_q(f_q)\leq C/q\to0$; this is not decay of the modulation
     operator norm. Then $A_H > 0$ follows by coercivity independently of the bridge
-    (\sproved{} as a conditional implication; version 1.2).
+    (\scond{} on [H-F]: the implication [H-F] $\Rightarrow$ [H-lift] is \sproved; version 1.2).
     Q10~\cite{Beau2026q10} proves $A_H \to 2$ under spectral universality~[U]:
     character-independence forces $\mathfrak{su}(2)$-isotropy of the effective form,
     and the unique such form is the Casimir with value~2 (\sstruct, conditional on [U]).
@@ -1493,7 +1501,8 @@ A Structural Roadmap and Paper Inventory}
     phase and the cascade ordering, shifts it.
 
     \textbf{EBJ}~\cite{Beau2026ebj}: The constrained jet of the Lorentzian eliminated block and the chiral
-    defect-rate identity (\sstruct). For every smooth family and every smooth unitary transport the projector jet
+    defect-rate identity (\sproved\ /\ \sopen). For every smooth family and every smooth unitary transport the
+    projector jet
     $1-P(s) = Q_0 + sQ_1 + s^2Q_2 + O(s^3)$ has $Q_1 = [A, Q_0]$ a purely off-diagonal Grassmann tangent and
     $Q_2$ diagonal blocks pinned to $Q_1^2$ with opposite signs; the parity grading holds under
     $J_\Pi$-equivariance, and with a covariant moving spinorial embedding and a $J_\Pi$-even Dirac operator the
@@ -1732,7 +1741,7 @@ A Structural Roadmap and Paper Inventory}
       \text{BI budget} \to F^\tau = 1/\gamma \to g^{\mu\nu} = 2\eta^{\mu\nu} \to \Lambda(\beta)
       \to R(x)^2 = 1-\epsilon(x) \to \text{finite-}q\text{ domain.}
     \]
-    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} gathers the six constituent papers
+    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} (\ssynth) gathers the six constituent papers
     below into this single account; their individual contributions follow.
 
     \textbf{LorentzCapacity}~\cite{Beau2026n}: Derives the Lorentz factor and relativistic
@@ -2367,6 +2376,7 @@ A Structural Roadmap and Paper Inventory}
           P/.style={box, fill=green!8,  draw=cproved,  text=black},
           S/.style={box, fill=blue!6,   draw=cstruct,  text=black},
           N/.style={box, fill=violet!6,  draw=cnum,     text=black},
+          C/.style={box, fill=orange!8,  draw=ccond,    text=black},
           spine/.style={-{Stealth[length=5pt]}, line width=1.2pt},
           arr/.style={-{Stealth[length=4pt]}, thin},
         ]
@@ -2383,7 +2393,7 @@ A Structural Roadmap and Paper Inventory}
           % ── Core chain (centre column) ───────────────────────
           \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$}};
-          \node[P] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
+          \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
           \node[S] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
           \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] proved}};
           \node[P] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] proved}};
@@ -2436,7 +2446,7 @@ A Structural Roadmap and Paper Inventory}
       modes of the pre-saturation pipeline; truncation status of the three-coordinate reduction;
       rules out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C] are not closed by a
       finite-rank route (zero-form limit on the canonical filtration, Q5a version 3.2).
-      \textbf{Q9}~(\sproved{} as a conditional implication): under the frozen, unestablished
+      \textbf{Q9}~(\scond{} on [H-F]; the implication itself is \sproved): under the frozen, unestablished
         hypothesis [H-F], the modulation-sector position-energy form contribution satisfies
         $\mathcal{E}^X_q(f_q)\leq C/q$ along recovery sequences; hence
         [H-F] $\Rightarrow$ [H-lift] and coercivity gives $A_H>0$ under [H-F].
@@ -2766,7 +2776,7 @@ A Structural Roadmap and Paper Inventory}
       Spatial limit input formalised as the unestablished hypothesis [H-L], on a supplied Heisenberg
       carrier (version 2.1); Q9 proves only [H-F] $\Rightarrow$ [H-lift], with [H-F] unestablished; metric
       results conditional on [H-L]; Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
-      \sstruct{} (geometry); conditional on [H-F] and [H-L] (metric chain) \\[3pt]
+      \sstruct{} (geometry); \scond{} on [H-F] and [H-L] (metric chain) \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
       former full-group derivation relied on withdrawn O31 claims; colour factor and complete
@@ -2785,18 +2795,18 @@ A Structural Roadmap and Paper Inventory}
       $H_{\mathrm{eff}}\cong\mathrm{Sym}^2(V_\rho)$, reduces the bridge to isotropy;
       that identification is not supplied by O29 version 2.0, so the typed bridge and its uniqueness
       are conditional on it &
-      \sstruct{} (isotropy); conditional (bridge) \\[3pt]
+      \sstruct{} (isotropy); \scond{} (bridge) \\[3pt]
       Q8 & Casimir rigidity & \cite{BeauQ8} &
       Within the frozen, unestablished Q5a hypothesis [H-F], Casimir rigidity gives
       $A_Z=C_{\mathfrak{su}(2)}=2$ and fixes $\lambda$ by horizontal-sector consistency;
       any co-metric reading additionally requires [H-L] &
       \sstruct\ /\ \sopen \\[3pt]
-      Q9 & [H-lift] proved & \cite{Beau2026q9} &
+      Q9 & [H-F] $\Rightarrow$ [H-lift] & \cite{Beau2026q9} &
       Under frozen, unestablished [H-F] and along recovery sequences, the modulation-sector
       position-energy form contribution satisfies $\mathcal{E}^X_q(f_q)\le C/q\to0$; this is
       not modulation-operator norm decay. Then $A_H>0$ follows by coercivity, independently of
       the bridge (version 1.2); result: [H-F] $\Rightarrow$ [H-lift] &
-      \sproved \\[3pt]
+      \scond{} on [H-F] (the implication is \sproved) \\[3pt]
       Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
       $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
       universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
