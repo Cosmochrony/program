@@ -22,7 +22,9 @@ The re-audit of every primary against the papers' own status statements also ret
 and LowLCapacity numerical; O6, O16, O20, O24, Q5b, Q10, Q13, U1, W1, LCII, LorCap, TempProj, SpectralRelaxation,
 FibreErasure, Thermodynamics, Q3, ENT-E2 and Gravity conditional on the hypothesis each names; O4, O19 and TPC
 open; Q12, KUD and Lorentz (a proved negative result about a posited truncation) proved; Cosmology heuristic; O22
-structural; the O4 and O6 rows and paragraphs state the current negative results.
+structural; O6 proved with a conditional confinement corollary, O8 structural on an empirical premise, CHO
+conditional on the inherited central-phase lift, TopInv and O31 with their secondary labels; the O4 and O6 rows
+and paragraphs state the current negative results.
 
 The pass also removes the last bare-word status cells (O29 numerical, O30 conditional), defines heuristic and the
 principal-contribution rule in the conventions, reorders the graph legend on that vocabulary, and restates the
