@@ -1674,7 +1674,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Gravity}~\cite{Beau2026h} (\emph{Conditions for an Infrared Einstein Sector from
     Spectral Geometry}): Determines the conditions under which the metric variation of
-    $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ supports a local infrared Einstein sector. It separates two
+    $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ supports a local infrared Einstein sector (\scond). It separates two
     regularisation statements that must not be conflated: a physical proper-time cutoff
     $\Lambda = \ell_{\mathrm{sp}}^{-1}$ carries the power-sensitive terms $a_0\Lambda^4$ and $a_2\Lambda^2$,
     while zeta regularisation carries the finite determinant and the logarithmic scale dependence governed in
@@ -1713,7 +1713,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Lorentz}~\cite{Beau2026i} (\emph{No Quartic Graviton Dispersion from the Local Covariant
     Four-Derivative Truncation}): A negative result about a posited kernel. A Lorentzian counterpart of $S_\Pi$
-    is not available --- an in-in construction on a closed time path is required and is \sopen{} --- so the local
+    is not available --- an in-in construction on a closed time path is required and is \sproved{} --- so the local
     Lorentzian transverse-traceless kernel $\mathcal{O}_{\mathrm{TT}} = \Box(c_{\mathrm{EH}} + \beta\Box)$ is posited, not derived.
     For $c_{\mathrm{EH}} \neq 0$ its kernel is the \emph{direct sum} $\ker\Box \oplus \ker(c_{\mathrm{EH}}+\beta\Box)$:
     the massless summand obeys $\omega^2 = |\vec k|^2$ exactly, with no correction at any order (\sproved{} given
@@ -2233,9 +2233,9 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (Q6a)--(Q6b);
 
           \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
-          \node[Oc] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
+          \node[C] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
           \node[C] (Thm)  at (-1.5*\dx,-7*\dy) {Thermo};
-          \node[Oc] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
+          \node[P] (Lor)  at (-1.5*\dx,-8*\dy) {Lorentz};
 
           \draw[arr]   (WP) to[out=-90,in=90] (Sp2);
           \draw[spine] (Sp2)--(Grav);
@@ -3044,7 +3044,7 @@ A Structural Roadmap and Paper Inventory}
       Cutoff ($a_0\Lambda^4$, $a_2\Lambda^2$) and zeta ($a_4 = \zeta_A(0)$) sectors separated;
       $c_{\mathrm{EH}}^{\mathrm{ren}}$, its sign and $G_N > 0$ are matching data, not predicted;
       BI determinantal UV completion under coherence-extensivity &
-      \sopen \\[3pt]
+      \scond{} on supplied renormalised coefficients; \sopen{} (gravitational coupling) \\[3pt]
       Thermo & Conditional Einstein--matter coupling & \cite{Beau2026Thermodynamics} &
       $G_{\mu\nu} + \Lambda_{\mathrm{ren}}g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$ from stationarity of
       $\Gamma_\Pi$, given supplied coefficients; $u \sim L^{-2}$ is not a temperature; no local first law &
@@ -3053,7 +3053,7 @@ A Structural Roadmap and Paper Inventory}
       Posited local four-derivative TT kernel factorizes; massless branch exactly $\omega^2=|\vec k|^2$, no $A_4$,
       no $\ell_\chi$ bound; pole mass and in-in construction open;
       gravitomagnetic constraint $g_{0i}$ (conditional on $T^{(\Pi)}_{0i}$) &
-      \sopen \\[3pt]
+      \sproved{} (negative, about the posited truncation); \sopen{} (Lorentzian construction) \\[3pt]
       LorCap & Lorentz factor from capacity & \cite{Beau2026n} &
       $\eta_n^\tau \to \beta\gamma$; $\Phi(\eta_n^\tau) \to 1/\gamma$;
       BI factorization and central-phase factorization (\sproved);
