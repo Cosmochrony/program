@@ -860,7 +860,7 @@
       url: BASE + "spectral/program/relaxation",
       tags: ["spt"],
       title: "Spectral Relaxation",
-      desc: "Λ_proj ≍ λ₂ for LPS expander families, conditional on the capacity–isoperimetry closure hypothesis. Entry point for the O-series dynamics on LPS graphs."
+      desc: "Λ_proj ≍ λ₂ for LPS expander families, conditional on the capacity–isoperimetry closure and spectral-isoperimetric saturation hypotheses. Entry point for the O-series dynamics on LPS graphs."
     },
     {
       id: "O1", lbl: "O1", s: "proved", b: "II", key: "Beau2026a6",
@@ -923,7 +923,7 @@
       url: BASE + "spectral/program/o10",
       tags: ["mass"],
       title: "O10 — Large-q Computation",
-      desc: "First computation at q=101. Confirms n⁴ growth; identifies TensorSketch representation obstruction."
+      desc: "First computation at q=101. Ball growth exponent 3.05, continuing the convergence toward D_hom = 4; identifies the TensorSketch representation obstruction."
     },
     {
       id: "O11", lbl: "O11", s: "numerical", b: "II", key: "Beau2026a15",
@@ -937,7 +937,7 @@
       url: BASE + "spectral/program/o12",
       tags: ["mass"],
       title: "O12 — Exact Weil Blocks",
-      desc: "Exact Weil-block fingerprints. δ̂_exact ≈ 4.3–4.8 for q ∈ {29,…,211}."
+      desc: "Exact Weil-block fingerprints. The unfolded intrinsic exponent is δ_exact = 3 exactly; the finite-q fitted slopes δ̂ ≈ 4.3–4.8 for q ∈ {29,…,211} are crossover statistics."
     },
     {
       id: "O13", lbl: "O13", s: "numerical", b: "II", key: "Beau2026a17",
@@ -1000,7 +1000,7 @@
       url: BASE + "spectral/program/o21",
       tags: ["mass"],
       title: "O21 — Shell Saturation",
-      desc: "Observable rank n₃^obs via Σ_c(n₃) = 3. The former δ_pair → β* continuation is a conditional cross-substrate prescription with no native Heisenberg carrier."
+      desc: "Observable rank n₃^obs via Σ_c(n₃) = 3, under a fixed normalisation it does not eliminate, since it scales under amplitude rescaling. The former δ_pair → β* continuation is a conditional cross-substrate prescription with no native Heisenberg carrier."
     },
     {
       id: "O22", lbl: "O22", s: "structural", b: "II", key: "Beau2026a26",
@@ -1115,7 +1115,7 @@
       url: BASE + "spectral/program/projective_temporal_ordering",
       tags: ["time"],
       title: "Projective Temporal Ordering",
-      desc: "I(n) = σ_pair(0)−σ_pair(n) is strictly non-decreasing: first clean numerical result on the notion of time. Confirmed for q∈{29,61,101,151}."
+      desc: "I(n) = σ_pair(0)−σ_pair(n) is a non-decreasing temporal proxy, confirmed for q∈{29,61,101,151,211}; the ordering is established numerically along the tested trajectories, not proved."
     },
     {
       id: "FibreErase", lbl: "FibreErase", s: "conditional", b: "II", key: "Beau2026fe",
@@ -1189,14 +1189,14 @@
       url: ZEN + "20257944",
       tags: ["spt"],
       title: "Q6b — Effective Spacetime",
-      desc: "Conditional on the unestablished spatial limit hypothesis [H-L], Q6b identifies g^μν = diag(−2,2,2,2), obtains the Schwarzschild exterior from flux conservation, and connects the effective operator to the Einstein tensor. Q9 proves [H-F] ⇒ [H-lift]; under the frozen, unestablished [H-F], the modulation-sector position-energy form contribution E_q^X(f_q) is O(q⁻¹) along recovery sequences. Supplied compact gauge data are independent inputs."
+      desc: "Conditional on the Q5a Mosco hypotheses ([H1], [H-w], [H-E1], Conjecture C) and on the unestablished spatial limit hypothesis [H-L], Q6b identifies g^μν = diag(−2,2,2,2), obtains the Schwarzschild exterior from flux conservation, and connects the effective operator to the Einstein tensor. Q9 proves [H-F] ⇒ [H-lift]; under the frozen, unestablished [H-F], the modulation-sector position-energy form contribution E_q^X(f_q) is O(q⁻¹) along recovery sequences. Supplied compact gauge data are independent inputs."
     },
     {
       id: "Q7", lbl: "Q7", s: "structural", b: "III", key: "Beau2026q7",
       tags: ["spt", "spec"],
       title: "Q7 — Dimensional Bridge",
       desc: "Bridge candidate between the supplied admissible dimension dim H_eff=3 (O23 selection rule, HEFF_DIM=3 in O25–O29) and three spatial dimensions (Q5b). " +
-        "Proves su(2)≇heis₃; identifies H_eff≅Sym²(V_ρ) (spin-1). " +
+        "Proves su(2)≇heis₃. Under the supplied identification H_eff≅Sym²(V_ρ), which O29 version 2.0 does not supply, the bridge reduces to isotropy; the typed bridge and its uniqueness are conditional on that identification. " +
         "Proves [F_c,L_Weil]=0, forcing k_X·k_Z=k_Y·k_Z=0 structurally. " +
         "The typed bridge and its claimed uniqueness remain under audit. " +
         "Q8 is scoped to frozen, unestablished [H-F]; any co-metric reading also requires [H-L]."
@@ -1490,7 +1490,7 @@
       url: BASE + "lc/lc-o2",
       tags: ["grav", "spt"],
       title: "Fibrewise Capacity Lapse and Gravitational Time Dilation",
-      desc: "Extends TempProj to non-homogeneous regimes. Local BI capacity radius R(x)² = -2g_ττ(x); gravitational time dilation dτ/dn|_x = R(x)/γ, conditional on the imported occupancy–lapse identification."
+      desc: "Extends TempProj to non-homogeneous regimes. Fibrewise capacity lapse R(x) with gravitational time dilation dτ/dn|_x = R(x)/γ, conditional on the imported occupancy–lapse identification."
     },
     {
       id: "LCIIo1", lbl: "LCIIo1", s: "proved", b: "III", key: "Beau2026lco2o1",
@@ -1525,7 +1525,7 @@
       url: BASE + "gauge-structure/topological-invariants",
       tags: ["SM", "BI"],
       title: "Topological Invariants",
-      desc: "Charge quantisation (π₁≅ℤ), no monopoles, chirality from Hopf fibration S¹↪S³→S². π₂(C_eff)=0: open."
+      desc: "Charge quantisation (π₁≅ℤ) and no monopoles on the canonical model; projective chirality from the Hopf fibration S¹↪S³→S², established at the framework level and qualitatively. π₂(C_eff)=0 and the extension to the full effective configuration space: open."
     },
     {
       id: "SMcm", lbl: "SMcm", s: "structural", b: "III", key: "Beau2026e",
@@ -1560,7 +1560,7 @@
       url: BASE + "cosmology",
       tags: ["spt", "SM"],
       title: "Cosmology — Rotation Curves & Hubble",
-      desc: "Flat rotation curves and Hubble tension from a common effective mechanism. No dark matter or modified gravity."
+      desc: "Flat rotation curves and Hubble tension from a common effective mechanism, phenomenological and not derived here; the expansion sector is conditional on the rank–time dictionary hypothesis. No dark matter or modified gravity."
     },
     {
       id: "TrajBr", lbl: "TrajBr", s: "proved", b: "III", key: "Beau2026tb",

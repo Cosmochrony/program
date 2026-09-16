@@ -31,8 +31,10 @@ The pass also removes the last bare-word status cells (O29 numerical, O30 condit
 principal-contribution rule in the conventions, reorders the graph legend on that vocabulary, and restates the
 contribution cells of H2, TopInv and ENT-E1 and the short titles of Q9, U1 and W1, so that each names the hypothesis
 or the open
-extension its result carries. The graph node descriptions are swept against the rows, which corrects two that
-stated a retracted derivation (O4) and an unestablished observable (O19).
+extension its result carries. The graph node descriptions are swept against the rows over the whole surface,
+correcting those that stated a
+retracted derivation (O4), an unestablished observable (O19) or an identification the paper does not prove (Q7),
+and Q6b is retyped conditional on the Q5a Mosco hypotheses and [H-L] on all four surfaces.
 
 Version 2.16 synchronises HeisenbergStructure 2.1 (15 August) and the 28--31 August release wave: O25 1.5,
 O27 2.0, Q5a 3.2, Q5b 2.1, Q12 1.4, Q13 1.4, Q14 2.0, and
@@ -51,7 +53,8 @@ Foundation, Q9, NIF-Note, ENT-Note, the white paper and SpectralAdmissibility ar
 Branch III description is restated on the open bridges, and the dependency graph gains numerical and conditional
 statuses and the edges O25 to O26/O27, O28/O29 to O30, O31 to O32 and SGN/CC-Note to the Spectral Admissibility
 note; it records the Q11OF central Weil lift resolution, the AOG proved status and the O14, O31, O32 and SGN
-row corrections, reverses the AAR/PRS edge, removes the unsupported AAR to Q11OF, Gravity to A4-Note, SRN to Q14 and O31 to TPC edges, types
+row corrections, reverses the AAR/PRS edge, removes the unsupported AAR to Q11OF, Gravity to A4-Note, SRN to Q14 and
+O31 to TPC edges, types
 the O28 to O30 edge as interpretive, retypes O26 Level II as a conjecture, corrects the O32 bibliography note, and
 reduces the CHO node to CHO's own results.
 

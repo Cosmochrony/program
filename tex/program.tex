@@ -596,7 +596,8 @@ A Structural Roadmap and Paper Inventory}
   \subsection{SpectralRelaxation: Expander Graph Dynamics}
 
     The SpectralRelaxation paper~\cite{Beau2026a5} establishes $\Lambda_{\mathrm{proj}} \asymp \lambda_2$
-    for LPS expander families (\scond{} on the capacity--isoperimetry closure hypothesis), providing the
+    for LPS expander families (\scond{} on the capacity--isoperimetry closure and spectral-isoperimetric
+    saturation hypotheses), providing the
     entry point for the O-series dynamics.
 
 \subsection{O1--O8: LPS Phase --- Cascade Exponent \texorpdfstring{$\beta$}{beta}}
@@ -1050,7 +1051,7 @@ A Structural Roadmap and Paper Inventory}
     fixed-point/sector-selection argument (\sopen).
 
     \textbf{Q3}~\cite{Beau2026q3}: Proves a theorem conditional on an explicit, undemonstrated
-    hypothesis (\scond{} on H-inv and the supplied composition): given a supplied bipartite carrier
+    hypothesis (\scond{} on [H-inv] and the supplied composition): given a supplied bipartite carrier
     $V_{\chi_{2j+1}}\otimes
     V_{\chi_{2j+1}}$ and the hypothesis that the joint state is invariant under the diagonal
     $2I$-action --- \emph{not} derived from admissibility or from Born--Infeld indiscernibility
@@ -1134,7 +1135,7 @@ A Structural Roadmap and Paper Inventory}
     Closes the geometric chain
     $\Pi_q \xrightarrow{\text{Q5a}} \mathcal{L}_\Pi \xrightarrow{\text{Q5b}} g^{\mu\nu}
     \xrightarrow{\text{Gravity}} G_{\mu\nu}$
-    (\scond{} on the Q5a Mosco hypotheses and [H-L], conditional on [H-L]).
+    (\scond{} on the Q5a Mosco hypotheses and [H-L]).
 
     \textbf{Q7}~\cite{Beau2026q7}: Bridge candidate between the supplied admissible
     dimension $\dim H_{\mathrm{eff}} = 3$ (the O23 selection rule, implemented as
@@ -1916,7 +1917,7 @@ A Structural Roadmap and Paper Inventory}
     the pair sector is part of the sector definition); the singlet identification of
     \emph{Q3}~\cite{Beau2026q3} then gives $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$ for general
     canonical blocks, conditional on both (H-carrier) and Q3's explicit, undemonstrated
-    diagonal-invariance hypothesis (H-inv) (\scond{} on (H-carrier) and (H-inv)). Q1 does not establish a singlet
+    diagonal-invariance hypothesis [H-inv] (\scond{} on (H-carrier) and [H-inv]). Q1 does not establish a singlet
     correlator
     or a Tsirelson bound. The \emph{full residual-rank entropy}
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ lives on the full Gram--Schmidt basis (rank
@@ -2374,8 +2375,8 @@ A Structural Roadmap and Paper Inventory}
         \textcolor{copen}{$\blacksquare$}~\sopen{},
         \textcolor{csynth}{$\blacksquare$}~\ssynth{}; each single-paper node carries the primary label of its
         inventory row, while the dashed composite block gathers a sub-chain and carries no paper label.
-        In both figures the grey side annotations carry no status colour: where their text states a status it is
-        that of the component named, not the primary label of the node.
+        In both figures the grey side annotations and the dashed result boxes carry no status colour: where their
+        text states a status it is that of the component named, not the primary label of the node.
         The interactive graph's conditional-reading and postulated
         edges (EG-Note to Q12, Q13 and Q14) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
@@ -2424,14 +2425,14 @@ A Structural Roadmap and Paper Inventory}
           \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$ under [H-F]}};
           \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
-          \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$}};
+          \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$ under [U]}};
           \node[C] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] under Q5a--Q5b hyp.}};
           \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] under [H1]}};
 
           % Q11 and final result
           \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
             {Q11\\{\tiny $A_\tau\!=\!2$ under [H-F]}};
-          \node[P,minimum width=4cm] (Met)
+          \node[box,dashed,draw=black!45,fill=black!3,minimum width=4cm] (Met)
           at (\dx+0.5*\dx,-7*\dy)
             {$g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$};
 
@@ -2578,7 +2579,7 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       SpRel & Spectral relaxation & \cite{Beau2026a5} &
       $\Lambda_{\mathrm{proj}} \asymp \lambda_2$ for LPS expander families &
-      \scond{} on the capacity--isoperimetry closure hypothesis \\[3pt]
+      \scond{} on the capacity--isoperimetry closure and spectral-isoperimetric saturation hypotheses \\[3pt]
       \midrule
       O1 & Variable-valence graphs & \cite{Beau2026a6} &
       LPS saturation is a fixed-valence artefact; growing valence restores window &
@@ -2634,7 +2635,7 @@ A Structural Roadmap and Paper Inventory}
       $\beta^*=1/(\delta+\tfrac12)$ does not transfer to the exact-block setting; aggregation
       bound $\alpha_{\mathrm{dyn}}\leq\hat\delta_{\mathrm{exact}}$ holds conditionally, verified
       at $q=151,211$ &
-      \sproved \\[3pt]
+      \sproved\ /\ \scond{} on the stated aggregation hypothesis \\[3pt]
       \midrule
       O16 & Pair observable & \cite{Beau2026a20} &
       Conjugate pairs $\{c,q-c\}$ are fibres of $\Pi$ under two independent open hypotheses;
@@ -2783,11 +2784,11 @@ A Structural Roadmap and Paper Inventory}
       $\lambda=18$ on $2I$; no phase coherence, Born rule, Tsirelson bound, or fixed point &
       \sproved \\[3pt]
       Q3 & Conditional universal singlet & \cite{Beau2026q3} &
-      Given an explicit, undemonstrated diagonal-$2I$-invariance hypothesis (H-inv), Schur's
+      Given an explicit, undemonstrated diagonal-$2I$-invariance hypothesis [H-inv], Schur's
       lemma identifies the proto-state as the singlet $|\Omega_j\rangle$ for all
       $j \in \{\tfrac{1}{2},1,\tfrac{3}{2},2,\tfrac{5}{2}\}$, with an explicit Casimir
-      correlator; H-inv itself, phase coherence, and the Born rule are not derived &
-      \scond{} on the diagonal-invariance hypothesis H-inv and a supplied composition \\[3pt]
+      correlator; [H-inv] itself, phase coherence, and the Born rule are not derived &
+      \scond{} on the diagonal-invariance hypothesis [H-inv] and a supplied composition \\[3pt]
       Q5a & Canonical Fourier filtration & \cite{Beau2026q5a} &
       On a supplied finite-Heisenberg carrier and non-trivial central character (version 3.2): canonical
       filtration identified exactly (toric Fourier window
@@ -2900,7 +2901,7 @@ A Structural Roadmap and Paper Inventory}
       $\gamma_5$-weighted $a_4$ constrains hypercharge, with rigidity conditional on a supplied
       colour module; a supplied rank-three carrier yields $\mathbb{C}^3_{\mathrm{gen}}$;
       colour, masses, Yukawa couplings and CKM/PMNS mixing remain open &
-      \sstruct\ /\ \sopen \\[3pt]
+      \sstruct\ /\ \scond{} on the supplied colour module\ /\ \sopen \\[3pt]
       PRS & Schur form of $E_\Pi$ + localisation of $u$ & \cite{Beau2026prs} &
       $E_\Pi = -\Pi_S\,D\,(1-P)\,D\,\Pi_S^* = -M^\dagger M$ Schur complement of eliminated sector;
       generation split $u$ controlled by $\mathcal{D}^\pm$-transported antiunitary chiral
@@ -2960,7 +2961,7 @@ A Structural Roadmap and Paper Inventory}
       $s_* = \beta/|\mathbf{E}_{\mathcal P}|$ in the affine electric gauge, $u(s_*)$ invariant under
       orientation-preserving charts; the Front~D factorisation of $u(s_*)$ is conditional on a localisation
       hypothesis not satisfied by the EBJ witness; amplitude $|u|$ dictionary-bound through $\mathcal{N}_A$ &
-      \sstruct \\[3pt]
+      \sstruct\ /\ \scond{} on the localisation hypothesis \\[3pt]
       EBJ & Constrained jet of $1-P(s)$ + chiral defect-rate identity & \cite{Beau2026ebj} &
       Constrains PRS open deliverable~1, the explicit Lorentzian $1-P(s)$, structurally: for every smooth family
       and every smooth unitary transport the self-adjoint projector jet $1-P(s) = Q_0 + sQ_1 + s^2Q_2 + O(s^3)$ is
@@ -3009,7 +3010,7 @@ A Structural Roadmap and Paper Inventory}
       cannot reach $Q=2/3$; maximum-entropy reading ($\mathrm{CV}=1$) recorded as an open test (first-moment
       constraint + forced discrete-to-continuous bridge); target invariant, not a mass formula; scoped no-go excludes
       the linear self-adjoint determinant realisation of $s^2-d^2$ (equipartition route otherwise open) &
-      \sproved \\[3pt]
+      \sproved\ /\ \sopen \\[3pt]
       TPC & Ternary phase carrier: colour, generations, Koide as one carrier & \cite{Beau2026tpc} &
       Speculative bridge: one complex three-phase carrier $z_g = S + A\,e^{i(\delta+2\pi g/3)}$ --- pure-phase part
       sum-zero ($1+\omega+\omega^2=0$, colour-neutral), real part the square-root mass profile of KUD;
@@ -3144,13 +3145,13 @@ A Structural Roadmap and Paper Inventory}
       ENT-E2 & Two entanglement entropies of the conjugate pair & \cite{Beau2026ent2} &
       Separates the admissible pair entropy $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$ on a
       hypothesised atomic carrier (the explicit hypothesis (H-carrier), stated by E2 itself and
-      derived nowhere; the singlet identification further conditional on Q3's (H-inv), for
+      derived nowhere; the singlet identification further conditional on Q3's [H-inv], for
       general canonical blocks) from the full residual-rank entropy
       $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ on the full Gram--Schmidt basis
       (unconditional for matched blocks by ENT-E1, conditional on
       $[\mathrm{H}_{\mathrm{res}}]$ and the O17 toy-model transfer gap for general blocks); excludes
       the metaplectic dilation as a bridge for $[\mathrm{H}_{\mathrm{res}}]$ &
-      \scond{} on (H-carrier) and (H-inv); \sproved{} for matched blocks \\[3pt]
+      \scond{} on (H-carrier) and [H-inv]; \sproved{} for matched blocks \\[3pt]
       SchLamb & Fine-structure constant & \cite{Beau2026f} &
       $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
       \sstruct \\[3pt]
@@ -3169,7 +3170,7 @@ A Structural Roadmap and Paper Inventory}
       $d_s \approx 4$, $f_Q(T) \sim T^{-1}$), only marginal for the single $w=2$ sector, with the
       thermal closure $\Delta_\Pi(T) = \tfrac{d_s}{2}T$ from the heat-kernel response
       (regime structural; observed exponent heuristic; asymptotic value open) &
-      \sstruct\ /\ \sheur \\[3pt]
+      \sstruct\ /\ \sheur\ /\ \sopen \\[3pt]
       TrajBr & Trajectory branching / de Sitter limit & \cite{Beau2026tb} &
       Exponential growth relocated from endpoint volumes (polynomial, Bass--Guivarc'h) to projectively
       distinguishable histories; canonical O12-compatible channel is $b$-only with exact Pell count,
@@ -3177,13 +3178,13 @@ A Structural Roadmap and Paper Inventory}
       compressive by geodesic death, pinned rate $\log 2$ and exact class count $2^{n+2}-4n-1$
       (generic $a$-mirror separation via the mixed two-anchor coefficient); v1.3.0 gates the $w(n)$
       candidate by a conditional no-go (early low-rank window only, under dictionary and minimal mappings) &
-      \sproved \\[3pt]
+      \sproved\ /\ \scond{} on the dictionary and minimal mappings \\[3pt]
       LowLCap & Low-$\ell$ from history capacity & \cite{Beau2026dhc} &
       Conditional small-$N$ capacity ceiling evaluated under a separate saturation hypothesis:
       Planck-calibrated, real-$m=0$-corrected TT benchmark changes $\chi^2$ $27.26\to17.70$ in the
       leading Bessel+$n_{\mathrm H}$ cell; TE/EE transfer and saturation remain open; staircase envelope;
       $8/3$ witness re-audited with observable $\sqrt{8/3}$ &
-      \snum\ /\ \sopen \\[3pt]
+      \snum\ /\ \scond{} on the saturation hypothesis\ /\ \sopen \\[3pt]
       ProjCE & Projection kernel / capacity ceiling & \cite{Beau2026pce} &
       Amplitude-level projection derived as conditional expectation onto the distinguishable-record
       algebra (two classical characterisations, graded hypotheses, operator invariant under degraded
@@ -3256,7 +3257,7 @@ A Structural Roadmap and Paper Inventory}
       Locates entanglement inside the spectral admissibility cascade: reduced entropy of a closed
       conjugate Weil pair as $S_{\mathrm{ent}}(n) = \log r_{\mathrm{pair}}(n)$, with structural
       monotonicity along the cascade; integrates the ENT-E1 and ENT-E2 results (version 1.2), the
-      pair-sector $\log 2$ being conditional on E2's atomic-carrier hypothesis (H-carrier) and (H-inv),
+      pair-sector $\log 2$ being conditional on E2's atomic-carrier hypothesis (H-carrier) and [H-inv],
       and records the residual epistemic stratification. Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       LC\-Synthesis & The Lorentz-capacity sub-programme synthesis & \cite{Beau2026lcsyn} &
