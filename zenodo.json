@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.20 retypes the Q7 entry for Q7 version 2.0, which states the requirements an equivariant bridge would have to meet and withdraws the Casimir reading of the central coefficient, the isotropy fit, the transfer of a discrete compression to the continuum symbol, and the coefficient values imported from Q8, Q10, U1 and Q11. The dependency graph loses the proved colour on the arrow leaving Q7, O29 is no longer listed as a supplier of the dimensional bridge, and the Q5a-to-Q5b-O3 chain is no longer recorded as closed.",
+  "notes": "Version 2.20 retypes the Q7 entry for Q7 version 2.0, which states the requirements an equivariant bridge would have to meet and withdraws the Casimir reading of the central coefficient, the isotropy fit, the transfer of a discrete compression to the continuum symbol, and the coefficient values imported from Q8, Q10, U1 and Q11. The dependency graph loses the proved colour on the arrow leaving Q7, the physical-path prose no longer lists O29 among the suppliers of the dimensional bridge, its dependency edge being kept since Q7 cites it for the audit of the measured rank, and the Q5a-to-Q5b-O3 chain is no longer recorded as closed.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }

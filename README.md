@@ -15,7 +15,8 @@ so the typed bridge, its uniqueness and any coefficient value depend on it. The 
 coefficient, the isotropy fit, the transfer of a discrete compression to the continuum symbol, and the values
 imported from Q8, Q10, U1 and Q11 are withdrawn. Status changes: the Q7 row becomes proved for the requirements on
 the supplied carrier with the identification recorded as open; the arrow leaving Q7 loses the proved colour and the
-Q7-to-Q9 edge is no longer drawn on the spine; O29 is no longer listed as a supplier of the dimensional bridge; and
+Q7-to-Q9 edge is no longer drawn on the spine; the physical-path prose no longer lists O29 among the suppliers of the dimensional bridge, the
+dependency edge being kept since Q7 cites O29 for the audit of the measured rank; and
 the Q5a-to-Q5b-O3 chain is no longer recorded as closed, with a second gap at the Q7 step and a circular junction
 beyond it. The Q8, Q10, U1, W1 and Q11 entries are pending their own steps in this cascade.
 
