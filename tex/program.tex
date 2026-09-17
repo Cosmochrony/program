@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.18}
+\date{2026\\[2pt]\small Version 2.19}
 
 \begin{document}
 
@@ -796,8 +796,14 @@ A Structural Roadmap and Paper Inventory}
     the quotient identification (Level~II) is a conjecture whose open point is the $n$-independence of
     the proportionality constant, and the canonical representation-theoretic identification in an
     isotypic sector of $2I$ (Level~III) is conditional on the admissible embedding
-    $\Phi_{q,\rho}$, with falsifiability tests through the effective dimension of the trajectory in
-    $\mathrm{End}(V_\rho)$ computable from O25 data.
+    $\Phi_{q,\rho}$.
+    Version 2.1 proves that under Hypothesis~4.4(a), in a fixed conjugation basis, the embedded
+    products are $uu^{\mathsf T}$ and span a subspace of $\mathrm{Sym}^2(V_\rho)$:
+    their rank is at most $d_\rho(d_\rho+1)/2$, hence at most three for $d_\rho=2$.
+    The rank-four target is excluded under this contract, not for other embeddings or constructions.
+    Tests~1--2 are implementation checks; the O28--O29 effective ranks are measured in
+    $\mathrm{End}(H_{\mathrm{eff}})$, not $\mathrm{End}(V_\rho)$, and occupy no row of the
+    embedded-covariance decision table.
     This representation-side result does not supply the missing rate equation.
 
     \textbf{O27}~\cite{Beau2026a31}: Quotient factorisation alone does not imply equivariance
@@ -2693,7 +2699,9 @@ A Structural Roadmap and Paper Inventory}
       hypothesis; Level~I growth-exponent identification of $\sigma_{\mathrm{pair}}$ with a
       Hilbert--Schmidt trajectory norm proved; Level~II a conjecture ($n$-independence of the
       proportionality open); Level~III conditional on the admissible embedding $\Phi_{q,\rho}$,
-      falsifiable through $r_{\mathrm{eff}}$ on O25 data; no rate equation follows &
+      version 2.1 proves the symmetric-square rank bound under Hypothesis~4.4(a)
+      (at most three for $d_\rho=2$, excluding the rank-four target under that contract);
+      measured $H_{\mathrm{eff}}$ ranks do not test the embedded covariance; no rate equation follows &
       \sstruct\ /\ \scond{} on the admissible embedding\ /\ \sopen \\[3pt]
       O27 & Quaternionic rigidity & \cite{Beau2026a31} &
       Quotient factorisation does not imply equivariance; under explicit saturation,
@@ -3281,9 +3289,11 @@ A Structural Roadmap and Paper Inventory}
       Schur commutant --- to $q \in \{307, 401\}$ is pending.
 
     \paragraph{Non-conjugate block protocol.}
-      A measurement protocol using non-conjugate block data (e.g.\ the $c$-block at
-      two independent primes) would probe the full rank $d_\rho^2 = 4$ and provide
-      a direct test of O26 Criterion~5.4 in its original formulation.
+      A measurement protocol using non-conjugate block data remains an open construction.
+      To probe $\mathrm{End}(V_\rho)$ it would require a typed bridge to that module;
+      measured $H_{\mathrm{eff}}$ ranks alone cannot supply it.
+      O26~2.1 excludes the rank-four target for $d_\rho=2$ under its conjugate-product
+      Hypothesis~4.4(a), without excluding other constructions.
 
     \paragraph{Notation consolidation: $c_{\mathrm{BI}} \to c_{\mathrm{BI}}$.}
       A coordinated rename of the BI saturation constant across all papers is planned and deferred

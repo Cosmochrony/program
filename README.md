@@ -8,6 +8,12 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.19 synchronises O26 2.1 in the synthesis, inventory row, bibliography and interactive graph.
+Under O26 Hypothesis 4.4(a), the embedded products lie in the symmetric square, with rank at most three for
+dimension two: the rank-four target is excluded under that contract alone. Tests 1–2 are implementation checks.
+The O28–O29 ranks measured in End(H_eff) do not measure End(V_rho), and occupy no row of the embedded-covariance
+decision table. The admissible embedding remains open. No primary status or dependency edge is changed.
+
 Version 2.18 synchronises the NIF-Note 1.5 release in the Branch I synthesis, inventory row, bibliography note and
 interactive graph. It separates ENI's one-way implication from the conditional representation route, records
 temporal order under [H-acyc] and irreducibility under the representation dictionary, carries the dimension and
