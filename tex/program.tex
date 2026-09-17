@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.19}
+\date{2026\\[2pt]\small Version 2.20}
 
 \begin{document}
 
@@ -1142,23 +1142,37 @@ A Structural Roadmap and Paper Inventory}
     \xrightarrow{\text{Gravity}} G_{\mu\nu}$
     (\scond{} on the Q5a Mosco hypotheses and [H-L]).
 
-    \textbf{Q7}~\cite{Beau2026q7}: Bridge candidate between the supplied admissible
-    dimension $\dim H_{\mathrm{eff}} = 3$ (the O23 selection rule, implemented as
-    $\mathrm{HEFF\_DIM}=3$ in the O25--O29 pipeline) and the three spatial dimensions of
-    Q5b.
-    Proves $[\mathrm{su}(2)] \not\cong \mathrm{heis}_3$ (the bridge cannot be a Lie algebra
-    isomorphism). The identification $H_{\mathrm{eff}}\cong\mathrm{Sym}^2(V_\rho)$ that it imports
-    from O28--O29 is not supplied by O29 version~2.0, so the typed bridge and its uniqueness are
-    conditional on a supplied identification; the paper reduces the
-    identification to the isotropy condition $A_H = A_z$ on $\sigma_2(L_{\mathrm{eff}})$.
-    Proves analytically $[F_c, L_{\mathrm{Weil}}] = 0$, which forces the cross terms
-    $k_X k_Z = k_Y k_Z = 0$ structurally.
-    Numerical evidence on O25 checkpoints ($q \in \{61,101,151,211\}$) gives
-    $A_z = 2$ universally and $|A_H - A_z| \to 0$; four-point OLS fit gives
-    $|A_H - A_z| \approx 0.364\,q^{-0.52}$ ($R^2=0.98$), consistent with $O(q^{-1/2})$
-    (Q5b Theorem~3.2).
-    (\sstruct{} for the isotropy calculations; the typed symmetric-square bridge and its uniqueness are
-    conditional on the supplied identification).
+    \textbf{Q7}~\cite{Beau2026q7}: Version~2.0 states what an equivariant bridge between the
+    supplied admissible dimension $\dim H_{\mathrm{eff}} = 3$ (the O23 selection rule, implemented
+    as $\mathrm{HEFF\_DIM}=3$ in the O25--O29 pipeline) and the three spatial directions of Q5b
+    would require, and proves the requirements that follow from representation theory on a supplied
+    carrier.
+    Proves $[\mathrm{su}(2)] \not\cong \mathrm{heis}_3$ unconditionally (the bridge cannot be a Lie
+    algebra isomorphism), and, \emph{under an explicit identification hypothesis} that no source
+    supplies, that $\mathrm{Sym}^2(V_\rho)$ is the unique irreducible three-dimensional complex
+    $\mathfrak{su}(2)$-module, that an equivariant map to the complexified adjoint is either zero or
+    unique up to one non-zero complex scalar (a real positive normalisation being a further
+    convention), and that the pullback of the Hermitian spatial form is graded, with
+    $J_3$-invariance forcing isotropy within the horizontal plane only.
+    Proves analytically $[F_c, L_{\mathrm{Weil}}] = 0$; version~2.0 withdraws the transfer of that
+    statement to the cross terms of $\sigma_2(L_{\mathrm{eff}})$, which requires the missing
+    identification.
+    Its numerical section is re-typed: the three stored basis rows of the O25 checkpoints are pure
+    Fourier modes, so every entry of the compression is the Rayleigh quotient
+    $4 - 2\cos(2\pi m/q)$ of $L_{\mathrm{Weil}} = 4I - W_a - W_a^\dagger - W_b - W_b^\dagger$.
+    Hence $A_z = 4-2-0 = 2$ is the flat-mode value, not a Casimir signature and not
+    normalisation-invariant; $A_H - 2 = 4\sin^2(\pi k/q)$ is an identity, so the vanishing of the
+    gap is equivalent to $\mathrm{dist}(k/q,\mathbb{Z}) \to 0$, a property of the pipeline's
+    mode-selection rule that the corpus does not derive; and the fit
+    $|A_H - A_z| \approx 0.364\,q^{-0.52}$ tracks that rule rather than a spectral rate.
+    Version~2.0 accordingly withdraws, as results and as supports, the Casimir reading, the isotropy
+    fit, and the downstream values imported from Q8, Q10, U1 and Q11.
+    Verdict on the bridge: \emph{missing identification} (verdict~3), neither derived nor ruled out;
+    the only obstruction in the corpus is Q5a's conditional no-go on a different route, under its
+    depth and weight hypotheses and for common scalar normalisations on toric targets.
+    (\sstruct{} for the representation-theoretic requirements on a supplied carrier; the typed
+    symmetric-square bridge, its uniqueness and any value of $A_H$ or $A_z$ remain conditional on
+    the missing identification.)
 
     \textbf{Q8--Q11, U1, W1, H2 (Geometric emergence cluster).}
     Q8~\cite{BeauQ8} establishes $A_Z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity,
@@ -1203,8 +1217,14 @@ A Structural Roadmap and Paper Inventory}
     resulting coefficients have the effective Lorentzian co-metric reading
     $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$ (Minkowski).
     The derivation chain Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$
-    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 closed is complete \emph{conditionally on
-    [H-F] and [H-L]} (Q5a version 3.2; Q5b version 2.1).
+    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 was previously recorded as complete
+    \emph{conditionally on [H-F] and [H-L]} (Q5a version 3.2; Q5b version 2.1).
+    That reading is withdrawn at its first link: Q7 version~2.0 no longer supplies the
+    symmetric-square identification the chain consumes, and it withdraws the coefficient values it
+    had imported back from Q8, Q10, U1 and Q11, whose own entries below are pending revision in
+    this cascade.
+    Until those revisions are made, the chain is to be read as a sequence of conditional steps with
+    a missing identification at its head, not as a closure.
 
     \textbf{Q12}~\cite{Beau2026q12}: Version~1.4 derives Yang--Mills dynamics from the vertical
     variation of the projective spectral entropy at an arbitrary supplied fixed base metric
@@ -2048,7 +2068,8 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Physical path.}
     Foundation $\to$ Q1 $\to$ Q2 $\to$ Q3, with O18 $+$ O22 $+$ O23 supplying a
     proposed auxiliary fibre chain whose O18 bridge is open; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
-    O23 $+$ O28 $+$ O29 $+$ Q5b $\dashrightarrow$ Q7 (proposed dimensional bridge; typed proof open);
+    O23 $+$ O28 $+$ Q5b $\dashrightarrow$ Q7 (proposed dimensional bridge; the identification is
+    missing, verdict~3, with O29 auditing the measured rank rather than supplying it);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz;
     Q5b $+$ Q11 $+$ PTO $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII $\to$ LCIIo1; LCo1, LCo3.
 
@@ -2235,7 +2256,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (O23)   to[out=-10,in=180] (Q7);
           \draw[arr]   (O28)   to[out=-10,in=180] (Q7);
           \draw[arr]   (O29)   to[out=-10,in=180] (Q7);
-          \draw[arr,dashed,draw=cproved]   (Q7)--(geom);
+          \draw[arr,dashed]   (Q7)--(geom);
           \draw[spine] (Q5a)   to[out=0,in=90]   (H2);
           \draw[arr]   (H2)    to[out=-90,in=0]  (geom);
 
@@ -2395,8 +2416,9 @@ A Structural Roadmap and Paper Inventory}
         \textbf{QS-Note}, Q12 and Q13 into the gauge--gravity stratification
         \textbf{GGS-Note}, and Q14 with the companion notes PRS, AAR, Q11OF, CHO, A4-Note and AOG-Note into the
         fermionic-matter \textbf{FM-Note}.
-        The dashed green arrow from Q7 leads to the geometric emergence closure block
-        Q8--Q10 and U1, detailed in Figure~\ref{fig:geom}.
+        The dashed uncoloured arrow from Q7 leads to the geometric emergence block Q8--Q10 and U1,
+        detailed in Figure~\ref{fig:geom}; it carries no status colour since Q7 version~2.0
+        withdraws the values it had imported from that block.
         The interactive version with clickable nodes is provided as a companion HTML file.}
       \label{fig:dag}
     \end{figure}
