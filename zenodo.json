@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.19 synchronises O26 2.1 in the synthesis, inventory row, bibliography and interactive graph. Under O26 Hypothesis 4.4(a), the embedded products lie in the symmetric square, with rank at most three for dimension two: the rank-four target is excluded under that contract alone. Tests 1-2 are implementation checks. The O28-O29 ranks measured in End(H_eff) do not measure End(V_rho), and occupy no row of the embedded-covariance decision table. The admissible embedding remains open. No primary status or dependency edge is changed.",
+  "notes": "Version 2.20 retypes the Q7 entry for Q7 version 2.0, which states the requirements an equivariant bridge would have to meet and withdraws the Casimir reading of the central coefficient, the isotropy fit, the transfer of a discrete compression to the continuum symbol, and the coefficient values imported from Q8, Q10, U1 and Q11. The dependency graph loses the proved colour on the arrow leaving Q7, O29 is no longer listed as a supplier of the dimensional bridge, and the Q5a-to-Q5b-O3 chain is no longer recorded as closed.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
