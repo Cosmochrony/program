@@ -93,8 +93,10 @@ A Structural Roadmap and Paper Inventory}
     from the Branch~I axioms and supplied Branch~II spectral data, and states a universal singlet
     correlator conditional on an explicit, undemonstrated invariance hypothesis (paper Q3; the
     Born rule remains open), the effective Lorentzian co-metric
-    $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$ under the continuum-limit
-    hypotheses (the geometric-emergence papers, with $A_\tau = 2$ from paper Q11), and the
+    $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2) \propto \eta^{\mu\nu}$ read off the geometric-emergence
+    papers under two open inputs, the continuum-limit hypothesis [H-L] and the identification of the
+    measured admissible space with the spin-$1$ module, which paper Q7 version~2.0 records as
+    supplied by no source, and the
     spectral derivation of the Einstein ($a_2$) and local Yang--Mills ($a_4$) sectors from a
     single spectral-entropy functional (papers Q12--Q13).
     This paper provides a complete inventory, a logical dependency map, and a structured account
@@ -1097,7 +1099,9 @@ A Structural Roadmap and Paper Inventory}
     At the Q7 step, Q7 version~2.0 records the identification of the measured space with that
     spin-$1$ module as supplied by no source, so the carrier of those four coefficients is itself
     open.
-    The geometric convergence results and the algebraic rigidities are independent of both.
+    The geometric convergence results are independent of both.
+    The algebraic rigidities are independent of [H-L] but not of the identification: they are
+    statements about the spin-$1$ module, and what is open is that the measured space is it.
     Their individual contributions follow.
 
     \textbf{Q5a}~\cite{Beau2026q5a}: Version 3.2 (\emph{Canonical Fourier Filtration and the
@@ -1182,11 +1186,14 @@ A Structural Roadmap and Paper Inventory}
     pipeline's mode-selection rule that the corpus does not derive; the published fit
     $\approx 0.364\,q^{-0.52}$ tracks that rule rather than a spectral rate.
     What the pipeline reports is the compression after conjugation by the covariance eigenbasis,
-    which differs from the stored-basis matrix at two pairs; the invariant content is its
-    spectrum.
+    which as a matrix coincides with the stored-basis one at nine of the twelve pairs, agreeing in
+    modulus but not in phase at a tenth and differing outright at the other two; the invariant
+    content is its spectrum.
     Version~2.0 accordingly withdraws, as results and as supports, the Casimir reading, the isotropy
     fit, and the downstream values imported from Q8, Q10, U1 and Q11.
-    Verdict on the bridge: \emph{missing identification} (verdict~3), neither derived nor ruled out;
+    Verdict on the bridge, in the three-verdict typing of the programme's bridge discipline
+    (derived; ruled out; required object missing with no impossibility proved):
+    \emph{missing identification}, the third, neither derived nor ruled out;
     the only obstruction in the corpus is Q5a's conditional no-go on a different route, under its
     depth and weight hypotheses and for common scalar normalisations on toric targets.
     (\sproved{} for the representation-theoretic requirements, on the supplied carrier of O23 and
@@ -1197,6 +1204,8 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q8--Q11, U1, W1, H2 (Geometric emergence cluster).}
     Q8~\cite{BeauQ8} establishes $A_Z = C_{\mathfrak{su}(2)} = 2$ via Casimir rigidity,
     within the frozen Q5a framework [H-F] (\sstruct).
+    This entry is pending revision in the present cascade: Q7 version~2.0 withdraws the
+    identification and the numerical reading on which that argument draws.
     Q9~\cite{Beau2026q9} proves the implication [H-F] $\Rightarrow$ [H-lift]: under the frozen,
     unestablished [H-F] and along recovery sequences, the modulation-sector position-energy form
     contribution satisfies $\mathcal{E}^X_q(f_q)\leq C/q\to0$; this is not decay of the modulation
@@ -2090,7 +2099,8 @@ A Structural Roadmap and Paper Inventory}
   \paragraph{Physical path.}
     Foundation $\to$ Q1 $\to$ Q2 $\to$ Q3, with O18 $+$ O22 $+$ O23 supplying a
     proposed auxiliary fibre chain whose O18 bridge is open; Q2 $\to$ Q5a $\to$ Q5b $\to$ Q6a $+$ Q6b;
-    O23 $+$ O28 $+$ Q5b $\dashrightarrow$ Q7 (proposed dimensional bridge; the identification is
+    O23 $+$ O28 $+$ Q5b $\dashrightarrow$ Q7 (requirements for an equivariant bridge; the
+    identification is
     missing, verdict~3, with O29 auditing the measured rank rather than supplying it);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz;
     Q5b $+$ Q11 $+$ PTO $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII $\to$ LCIIo1; LCo1, LCo3.
@@ -2265,7 +2275,7 @@ A Structural Roadmap and Paper Inventory}
           \node[C] (Q5b)  at (8*\dx,-7*\dy)   {Q5b};
           \node[Oc] (Q6a)  at (8*\dx,-8*\dy)   {Q6a};
           \node[C] (Q6b)  at (8*\dx,-9*\dy)   {Q6b};
-          \node[S] (Q7)   at (8*\dx,-10*\dy)  {Q7};
+          \node[P] (Q7)   at (8*\dx,-10*\dy)  {Q7};
           \node[box,dashed,draw=black!45,fill=black!3,font=\tiny\sffamily]
           (geom)  at (8*\dx,-11*\dy)  {\begin{tabular}{c}
                                          Q8--Q10\\U1, W1
@@ -2473,7 +2483,7 @@ A Structural Roadmap and Paper Inventory}
           \node[N] (O25)   at (-\dx,-2*\dy)  {O25};
 
           % ── Core chain (centre column) ───────────────────────
-          \node[S] (Q7)  at (\dx,-2*\dy) {Q7};
+          \node[P] (Q7)  at (\dx,-2*\dy) {Q7};
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$ under [H-F]}};
           \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
           \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$ under [U]}};
@@ -2542,7 +2552,10 @@ A Structural Roadmap and Paper Inventory}
         ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
         The metric reading of
         $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ remains conditional on the independent,
-        unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.1;
+        unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.1, and, since
+        Q7 version~2.0, on the identification of the measured admissible space with the spin-$1$
+        module, which no paper supplies: Q7 is \sproved{} for the requirements it states on the
+        supplied carrier and \sopen{} for that identification.
         [H-F] is also unestablished.}
       \label{fig:geom}
     \end{figure}
@@ -2928,7 +2941,8 @@ A Structural Roadmap and Paper Inventory}
       Under frozen, unestablished [H-F], Schur rigidity gives
       $A_\tau=C_{\mathfrak{su}(2)}=2$ within the supplied algebraic model;
       the co-metric reading $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}$
-      additionally requires the independent, unestablished [H-L] &
+      additionally requires the independent, unestablished [H-L] and the identification Q7
+      version~2.0 records as supplied by no source &
       \sstruct\ /\ \sopen \\[3pt]
       Q12 & Yang--Mills from $a_4$ (version 1.4) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
@@ -3259,7 +3273,8 @@ A Structural Roadmap and Paper Inventory}
       EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
       Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2).
       Q8/Q9 consume frozen, unestablished [H-F]; every effective co-metric or Lorentzian reading,
-      including $g^{\mu\nu}=2\eta^{\mu\nu}$, additionally requires unestablished [H-L] &
+      including $g^{\mu\nu}=2\eta^{\mu\nu}$, additionally requires unestablished [H-L] and the
+      identification Q7 version~2.0 records as supplied by no source &
       \ssynth \\[3pt]
       GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.0) & \cite{Beau2026gsnote} &
       Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12. Its former full-group
@@ -3554,7 +3569,11 @@ A Structural Roadmap and Paper Inventory}
   W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
   ($A_\tau = 2$ from Q11~\cite{Beau2026q11}) has this metric interpretation only under the
-  independent, unestablished spatial-limit hypothesis [H-L]; [H-F] remains separately open.
+  independent, unestablished spatial-limit hypothesis [H-L] and under the identification of the
+  measured admissible space with the spin-$1$ module, which Q7 version~2.0 records as supplied by no
+  source; [H-F] remains separately open.
+  The Q8, Q10, U1, W1 and Q11 entries are pending revision in the cascade that Q7 version~2.0
+  opens.
   Q12~\cite{Beau2026q12} completes the spectral derivation of gauge dynamics:
   the gauge component of the Seeley--DeWitt $a_4$ coefficient of the operator
   $A_{g,\mathcal{A}}$ on the admissible vector bundle contains the Yang--Mills density
