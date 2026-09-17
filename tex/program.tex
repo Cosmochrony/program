@@ -799,7 +799,7 @@ A Structural Roadmap and Paper Inventory}
     $\Phi_{q,\rho}$.
     Version 2.1 proves that under Hypothesis~4.4(a), in a fixed conjugation basis, the embedded
     products are $uu^{\mathsf T}$ and span a subspace of $\mathrm{Sym}^2(V_\rho)$:
-    their rank is at most $d_\rho(d_\rho+1)/2$, hence at most three for $d_\rho=2$.
+    their span has dimension at most $d_\rho(d_\rho+1)/2$, hence at most three for $d_\rho=2$.
     The rank-four target is excluded under this contract, not for other embeddings or constructions.
     Tests~1--2 are implementation checks; the O28--O29 effective ranks are measured in
     $\mathrm{End}(H_{\mathrm{eff}})$, not $\mathrm{End}(V_\rho)$, and occupy no row of the
@@ -890,7 +890,9 @@ A Structural Roadmap and Paper Inventory}
     but does not prove the projected-coordinate relation $\pi_{q-c}(v) = \overline{\pi_c(v)}$, which the
     stored data satisfy only approximately; under it every outer
     product $M_j = \pi_c(v_j) \otimes \pi_{q-c}(v_j)^*$ is complex symmetric.
-    The tested conjugate-pair protocol does not reach rank~$4$.
+    Rank three is modal in $\mathrm{End}(H_{\mathrm{eff}})$, with seed-sensitive single-sample
+    exceptions of four to nine at $q=101$ and five at $q=211$.
+    None of these measurements is an embedded-covariance rank in $\mathrm{End}(V_\rho)$.
     On the O25/Q5a checkpoints the admissible trajectory spans all three complex dimensions of
     $H_{\mathrm{eff}}$. At $q\in\{29,61\}$ the symmetric-square evaluation matrix has numerical
     rank~$3$ at the declared tolerance; fitted constraint commutators have numerical rank~$3$ in a
