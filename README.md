@@ -17,7 +17,7 @@ and any coefficient value depend on them. The Casimir reading of the central coe
 transfer of a discrete compression to the continuum symbol, and the values imported from Q8, Q10, U1 and Q11 are
 withdrawn. Status changes: the Q7 row becomes proved for the requirements on the supplied carrier with the
 identification recorded as open, and the Q7 node is redrawn accordingly in both figures, with the interactive
-graph's status letter moving from structural to proved and its description leading with the open hypotheses; the
+graph's status letter moving from structural to proved and its description naming the three open hypotheses; the
 arrow leaving Q7 loses the proved colour and the Q7-to-Q9 edge is no longer drawn on the spine; the terminal edge
 into the co-metric result box is likewise demoted and the box marked pending revision; the physical-path prose no
 longer lists O29 among the suppliers of the dimensional bridge, the dependency edge being kept since Q7 cites O29
@@ -25,7 +25,9 @@ for the audit of the measured rank; and the Q5a-to-Q5b-O3 chain is no longer rec
 at the Q7 step and a circular junction beyond it. The three edges this release is about -- O29 to Q7, Q7 to Q8 and
 Q7 to Q9 -- now carry the graph's own edge typing, which states what each does and does not supply. The Q8, Q10,
 U1, W1 and Q11 entries are marked pending revision on the surfaces that assert their results, each pending its own
-step in this cascade.
+step in this cascade. The Lorentz-capacity entries, which consume those coefficient values rather than deriving
+them, carry the same marker on the value and not on their own conclusions; the Q6b entry carries the [ID]
+condition without a pending marker, since its own result is the assembly and not the coefficient values.
 
 This registry version describes Q7 version 2.0, which is not deposited. It must not be published before Q7 2.0,
 or it would cite a version that has no record behind its DOI.
