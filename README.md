@@ -25,9 +25,10 @@ for the audit of the measured rank; and the Q5a-to-Q5b-O3 chain is no longer rec
 at the Q7 step and a circular junction beyond it. The three edges this release is about -- O29 to Q7, Q7 to Q8 and
 Q7 to Q9 -- now carry the graph's own edge typing, which states what each does and does not supply. The Q8, Q10,
 U1, W1 and Q11 entries are marked pending revision on the surfaces that assert their results, each pending its own
-step in this cascade. The Lorentz-capacity entries, which consume those coefficient values rather than deriving
-them, carry the same marker on the value and not on their own conclusions; the Q6b entry carries the [ID]
-condition without a pending marker, since its own result is the assembly and not the coefficient values.
+step in this cascade. The Q5b and Q6b entries are marked too: each asserts the co-metric on the strength of those
+values, Q6b's own remarks calling it fully explicit and fully determined. The Lorentz-capacity entries, which
+consume the values rather than deriving them, carry the marker on the value, and on their own conclusions only
+where those conclusions restate it.
 
 This registry version describes Q7 version 2.0, which is not deposited. It must not be published before Q7 2.0,
 or it would cite a version that has no record behind its DOI.
