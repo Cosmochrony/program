@@ -31,8 +31,8 @@ values, Q6b's own remarks calling it fully explicit and fully determined. The Lo
 consume the values rather than deriving them, carry the marker on the value, and on their own conclusions only
 where those conclusions restate it.
 
-This registry version describes Q7 version 2.0, which is not deposited. It must not be published before Q7 2.0,
-or it would cite a version that has no record behind its DOI.
+This registry version describes Q7 version 2.0, deposited on 19 September 2026 as version record
+10.5281/zenodo.22838313 of concept 10.5281/zenodo.19802123; the bibliography cites the concept DOI.
 
 Version 2.19 synchronises O26 2.1 in the synthesis, inventory row, bibliography and interactive graph.
 Under O26 Hypothesis 4.4(a), the embedded products lie in the symmetric square, with rank at most three for
