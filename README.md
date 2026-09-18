@@ -10,14 +10,15 @@ consult first to understand how the pieces fit together.
 
 Version 2.20 retypes the Q7 entry for Q7 version 2.0, whose central result changes. Q7 now states the
 requirements an equivariant bridge would have to meet and proves those that follow from representation theory on
-the supplied carrier. Q7 records three hypotheses that no source supplies: the identification [ID] of the measured
-space with the spin-1 module, the adjoint su(2)-action [ACT] on the real spatial sector that its Schur argument
-requires of the target, and the J_3-invariance [INV] of the admissible regime; the typed bridge, its uniqueness
-and any coefficient value depend on them. The Casimir reading of the central coefficient, the isotropy fit, the
+the supplied carrier. Q7 distinguishes the measured-space identification [ID], target action [ACT], real rotation
+compatibility [INV] and adapted unitary transport [ADAPT]. Abstract intertwiners exist once the
+isomorphic modules are supplied. The rank-two spatial principal symbol of Q5b cannot equal a
+positive rank-three Casimir form. A new positive spatial target remains to be constructed.
+The Casimir reading of the central coefficient, the isotropy fit, the
 transfer of a discrete compression to the continuum symbol, and the values imported from Q8, Q10, U1 and Q11 are
 withdrawn. Status changes: the Q7 row becomes proved for the requirements on the supplied carrier with the
 identification recorded as open, and the Q7 node is redrawn accordingly in both figures, with the interactive
-graph's status letter moving from structural to proved and its description naming the three open hypotheses; the
+graph's status letter moving from structural to proved and its description naming the open geometric hypotheses; the
 arrow leaving Q7 loses the proved colour and the Q7-to-Q9 edge is no longer drawn on the spine; the terminal edge
 into the co-metric result box is likewise demoted and the box marked pending revision; the physical-path prose no
 longer lists O29 among the suppliers of the dimensional bridge, the dependency edge being kept since Q7 cites O29
