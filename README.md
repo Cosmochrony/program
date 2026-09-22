@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.22 synchronises U1 2.0. U1 proves an unconditional equidistance obstruction for
+finite Heisenberg multiplication generators; a separate adjacent-character example excludes
+the claimed uniform modulus for their sum. Its former proof of [U], its $O(q^{-1/2})$ rate and
+the claimed Q10/Q7 closure are withdrawn, while [U] remains open. The inventory, bibliography
+and both graph surfaces now record that result. W1's quantitative step imports the withdrawn
+U1 rate and awaits its own audit; Q10 and the other downstream papers remain pending.
+U1 2.0 is deposited as [Zenodo record 22905732](https://zenodo.org/record/22905732),
+under concept DOI 10.5281/zenodo.19881146. Programme 2.22 is a candidate, not deposited.
+
 Version 2.21 synchronises Q9 2.0. The Q9 entry now records a kinetic Mosco limit conditional on [K]
 and [R], with the energy scale retained in its modulation bound. Its free kinetic form selects no
 nonzero central character, and the relative moment estimate applies to individual vectors in a

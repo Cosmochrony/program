@@ -1221,27 +1221,29 @@
       tags: ["spt", "spec"],
       title: "Q10 — Asymptotic Isotropy: A_H→2 asserted",
       desc: "Universality [U] ⇒ su(2)-isotropy ⇒ A_H→2 (Casimir). " +
-        "|A_H−2| ≤ C·ε(q) with ε(q)=O(q⁻¹/²) from U1. " +
+        "Its quoted ε(q)=O(q⁻¹/²) input from U1 is withdrawn; [U] remains open. " +
         "Its claim to resolve the isotropic case of Q7's bridge conjecture is not retained by Q7 version 2.0, which records that conjecture as neither confirmed nor refuted; this entry is pending revision."
     },
     {
-      id: "U1", lbl: "U1", s: "conditional", b: "III", key: "Beau2026u1",
+      id: "U1", lbl: "U1", s: "proved", b: "III", key: "Beau2026u1",
       tags: ["spt", "spec"],
-      title: "U1 — Spectral Universality [U]",
-      desc: "Weil-generator Lipschitz bound: |σ_c(n)−σ_{c′}(n)| ≤ 8π|c−c′|/q. " +
-        "BFS–CC convergence (Q5b) ⇒ pointwise σ_c→σ_* at O(q⁻¹/²). " +
-        "Arzelà–Ascoli on [θ₁,½] + Lipschitz triangle for small θ ⇒ ε(q)=O(q⁻¹/²). " +
-        "Closes [U] under Q5a hypotheses. No BI input for small-θ regime."
+      title: "U1 — Obstruction to the generator route to [U]",
+      desc: "Version 2.0 proves exact equidistance of finite Heisenberg multiplication generators " +
+        "at distinct characters. A separate adjacent-character example excludes the claimed " +
+        "modulus for their sum. The former proof of [U], its O(q⁻¹/²) rate and its Q10/Q7 " +
+        "closure are withdrawn. The O25 rank increment is a sampled-block observable, not an " +
+        "identified compressed operator norm. [U] remains open."
     },
     {
       id: "W1", lbl: "W1", s: "conditional", b: "III", key: "Beau2026w1",
       url: ZEN + "19886319",
       tags: ["spt", "emer"],
       title: "W1 — Hypothesis [H-w]",
-      desc: "a_q(s) → A > 0 uniformly in s, under [H1]. Two-step proof: (1) U1 gives |a_q(s)−A_q| ≤ Cq⁻¹/²·A_q; " +
-        "(2) A_q↗A>0 by summability δ_pair/2>1 and Stone–von Neumann. " +
-        "Structural origin: admissible observables live in O=Im Π (fibre-invariance), not in Ω. " +
-        "After W1, open former-Q5a hypotheses: [H1], [H-E1], [C] (not closed by Q5a-O2's finite-rank route), and [H2] — the last proved by the H2 paper."
+      desc: "a_q(s) → A > 0 uniformly in s, under [H1], is W1's claim pending audit. Its " +
+        "quantitative step imports a U1 rate withdrawn in version 2.0. " +
+        "The separate summability argument for A_q↗A>0 does not restore the withdrawn rate. " +
+        "W1 proposes fibre-invariance of observables in O=Im Π as its structural origin. " +
+        "In the former Q5a chain, [H1], [H-E1] and [C] remain open; H2 is proved separately."
     },
     {
       id: "H2", lbl: "H2", s: "proved", b: "III", key: "Beau2026h2",
@@ -1716,10 +1718,13 @@
     { f: "Q7", t: "Q9", st: "interpretive", claim: "Q9's result is independent of Q7; the edge records citation, not supply" },
     { f: "Q5a", t: "Q9", st: "interpretive", claim: "Q9 discusses the withdrawn Q5a framework; [K] and [R] are not derived from it" },
     { f: "Q9", t: "Q10", st: "interpretive", claim: "Q10 cites Q9, but Q9 no longer supplies a geometric horizontal coefficient or bridge non-obstruction" }, { f: "Q8", t: "Q10" }, { f: "O25", t: "Q10" },
-    { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
-    { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
+    { f: "Q10", t: "U1", st: "interpretive", claim: "U1 audits Q10's open hypothesis [U], not a supplied theorem" },
+    { f: "Q5b", t: "U1", st: "interpretive", claim: "U1 corrects a falsely attributed Q5b rate" },
+    { f: "U1", t: "W1", sp: 1, st: "conditional", claim: "W1 imports a quantitative U1 rate withdrawn in version 2.0" },
+    { f: "Q5a", t: "W1" },
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
-    { f: "U1", t: "Q11", sp: 1 }, { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
+    { f: "U1", t: "Q11", sp: 1, st: "conditional", claim: "U1 withdraws [U] and its rate; Q11's imported coefficient is pending audit" },
+    { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
     { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
     { f: "EGNote", t: "Q12", st: "conditional", claim: "only the emergent-base interpretation consumes [H-L]; the fixed-metric theorem does not" },
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" },

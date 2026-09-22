@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.21}
+\date{2026\\[2pt]\small Version 2.22}
 
 \begin{document}
 
@@ -1231,13 +1231,16 @@ A Structural Roadmap and Paper Inventory}
     and the unique such form is read as the Casimir with value~2 (\scond{} on [U]).
     Reading that value as a coefficient requires [ID], and Q7 version~2.0 no longer reads it as
     settling its bridge condition; this entry is pending revision.
-    U1~\cite{Beau2026u1} proves [U] with rate $\varepsilon(q) = O(q^{-1/2})$ from the Weil-generator
-    Lipschitz bound and BFS--Carnot--Carathéodory convergence
-    (\scond{} on the Q5a--Q5b hypotheses).
+    U1 version~2.0~\cite{Beau2026u1} withdraws its proof of~[U] and the claimed
+    $O(q^{-1/2})$ rate. Its unconditional result is the exact equidistance of the finite
+    Heisenberg multiplication generators at distinct central characters. A separate
+    adjacent-character example excludes a uniform modulus for their summed operator.
+    Neither result proves or refutes~[U], which remains open (\sproved{} for the obstruction;
+    \sopen{} for~[U]).
     W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
     admissibility weights) as a structural consequence of the fibre-invariance of admissible
-    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$), made quantitative by U1; W1's result is
-    \scond{} on [H1].
+    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$); its quantitative step imports the
+    rate now withdrawn by U1 and awaits W1's own revision (\scond{} on [H1]; pending).
     After W1 and H2, the open hypothesis of the former Q5a framework is [H1]; [H-$\mathcal{E}$1] and [C] are not
     closed by the finite-rank route, their disposition being the zero-form one of Q5a version 3.2.
     Q5a-O2~\cite{Beau2026q5ao2} establishes the pure-Fourier-mode structure of the
@@ -1267,8 +1270,8 @@ A Structural Roadmap and Paper Inventory}
     \emph{conditionally on [H-F] and [H-L]} (Q5a version 3.2; Q5b version 2.1).
     That reading is withdrawn at the Q7 step: Q7 version~2.0 no longer supplies the
     symmetric-square identification the chain consumes, and it withdraws the coefficient values it
-    had imported back from Q8, Q10, U1 and Q11, whose own entries above are pending revision in
-    this cascade.
+    had imported back from Q8, Q10, U1 and Q11; U1 is now revised, while the Q8, Q10 and
+    Q11 entries await their own stages in this cascade.
     Q7 further records that the support was circular rather than merely absent: Q8 fixes its scalar
     by matching $A_H$, and the absolute bound that delivers $A_H$ inserts the $A_z = 2$ that Q8
     itself supplies.
@@ -2518,8 +2521,8 @@ A Structural Roadmap and Paper Inventory}
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$ under [H-F]; pending}};
           \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny kinetic under [K], [R]}};
           \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$ under [U]; pending}};
-          \node[C] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] under Q5a--Q5b hyp.}};
-          \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] under [H1]}};
+          \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny obstruction proved; [U] open}};
+          \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] pending audit}};
 
           % Q11 and final result
           \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
@@ -2535,18 +2538,18 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (Q5aO2) to[out=-90,in=90] (W1);
           \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
           \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
-          \draw[arr]   (Q5b) to[out=-90,in=90] (U1);
+          \draw[arr,dashed] (Q5b) to[out=-90,in=90] (U1);
           \draw[arr]   (O25) to[out=0,in=180] (Q10);
 
           \draw[arr]   (Q7)--(Q9);
           \draw[arr]   (Q7) to[out=0,in=90] (Q8);
           \draw[arr] (Q9)--(Q10);
           \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
-          \draw[spine] (Q10)--(U1);
-          \draw[spine] (U1)--(W1);
+          \draw[arr,dashed] (Q10)--(U1);
+          \draw[arr,dashed] (U1)--(W1);
           \draw[arr]   (Q5a) to[out=-45,in=90] (W1);
 
-          \draw[spine] (U1)  to[out=-90,in=135] (Q11);
+          \draw[arr,dashed] (U1) to[out=-90,in=135] (Q11);
           \draw[arr]   (Q8)  to[out=-90,in=45]  (Q11);
           \draw[arr]   (W1)  to[out=-90,in=45]  (Q11);
           \draw[arr]   (Q11) -- (Met);
@@ -2557,9 +2560,9 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q9.east)
             {lift open};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (U1.east)
-            {rate $O(q^{-1/2})$};
+            {generator route withdrawn};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (W1.east)
-            {fibre-inv.\ $\Rightarrow$ uniform};
+            {U1 rate withdrawn};
 
         \end{tikzpicture}
       }
@@ -2577,10 +2580,13 @@ A Structural Roadmap and Paper Inventory}
         by Casimir rigidity; normalisation fixed by horizontal sector.
         \textbf{Q10}~(\scond{} on~[U]; pending revision): universality~[U] $\Rightarrow$
         $\mathfrak{su}(2)$-isotropy $\Rightarrow$ $A_H \to 2$.
-        \textbf{U1}~(\scond{} on the Q5a--Q5b hypotheses): [U] with rate $O(q^{-1/2})$ from Weil-generator
-        Lipschitz bound and BFS--Carnot--Carath\'eodory convergence (Q5b).
+        \textbf{U1}~(\sproved{} for an unconditional obstruction; \sopen{} for [U]):
+        exact equidistance of distinct-character Heisenberg multiplication generators;
+        a separate adjacent-character example obstructs the claimed summed-operator modulus.
+        The former [U] proof and $O(q^{-1/2})$ rate are withdrawn.
         \textbf{W1}~(\scond{} on [H1]): [H-w] as a structural consequence of fibre-invariance
-        ($\mathcal{O}=\mathrm{Im}\,\Pi$), quantitative control from~U1.
+        ($\mathcal{O}=\mathrm{Im}\,\Pi$); quantitative control formerly imported from U1
+        is withdrawn, leaving W1 pending its own audit.
         The metric reading of
         $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ remains conditional on the independent,
         unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.1, and on the
@@ -2962,18 +2968,22 @@ A Structural Roadmap and Paper Inventory}
       universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
       the isotropic case of Q7's bridge conjecture was read as resolved under [U]; Q7 version~2.0
       records that conjecture as neither confirmed nor refuted, and this row is pending revision
-      (as are the Q5b, Q6b, Q8, U1, W1 and Q11 rows, for the same reason) &
+      (as are the Q5b, Q6b, Q8, W1 and Q11 rows; U1 is revised below) &
       \scond{} on [U] \\[3pt]
-      U1 & Universality [U] under the Q5a--Q5b hypotheses & \cite{Beau2026u1} &
-      $\varepsilon(q) = O(q^{-1/2})$ from Weil-generator Lipschitz bound and
-      BFS--Carnot--Carathéodory convergence; no BI input required for small-$\theta$ regime.
-      Item~(iii) of its Corollary ``Closure of Q10'' states that Q7's bridge conjecture is
-      resolved; Q7 version~2.0 does not retain
-      that, and this row is pending revision &
-      \scond{} on the Q5a--Q5b hypotheses \\[3pt]
+      U1 & Obstruction to the generator route to [U] & \cite{Beau2026u1} &
+      Version~2.0 proves the exact equidistance of finite Heisenberg multiplication
+      generators at distinct characters.
+      A separate example excludes the claimed modulus for their sum.
+      It withdraws the former proof of [U], its
+      $O(q^{-1/2})$ rate, the small-$\theta$ conclusion and the closure of Q10 and Q7.
+      The O25 observable is a sampled-block rank increment, not an identified
+      compressed operator norm.
+      [U] remains open &
+      \sproved{} / \sopen \\[3pt]
       W1 & [H-w] under [H1] & \cite{Beau2026w1} &
       $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
-      ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the structural origin; U1 controls the rate $O(q^{-1/2})$.
+      ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the proposed structural origin; the U1 rate
+      imported for quantitative control is withdrawn, so W1's result awaits audit.
       Its passage to the effective Lorentzian geometry consumes $A_H \to 2$ from Q10, so that step is
       pending revision in the present cascade;
       after W1 and H2~\cite{Beau2026h2}, which closes [H2], the open hypothesis of the former Q5a framework is
@@ -3421,10 +3431,11 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Branch III (Q-Series and Applications)}
 
   \paragraph{Bridge existence at finite $q$ (Q7--Q10).}
-    The asymptotic isotropy $A_H \to 2 = A_Z$ is asserted by Q10 and U1 (conditionally on~[U]).
+    Q10 still asserts $A_H \to 2 = A_Z$ conditionally on~[U], which U1 version~2.0
+    leaves open rather than proving.
     Q7 version~2.0 no longer reads that as establishing the isotropic limit of its
     former bridge claim; the revised Conjecture~4.7 concerns a new positive target, and it withdraws its own use
-    of those results; the Q10 and U1 entries above are pending revision in this cascade.
+    of those results; Q10 remains pending revision in this cascade.
     The exact Q5b rank-two principal symbol cannot realise the positive rank-three target.
     The revised Conjecture~4.7 asks instead for a new spatial construction supplying the target,
     action and compatible adapted transport.
@@ -3622,8 +3633,9 @@ A Structural Roadmap and Paper Inventory}
   The geometric emergence sub-programme has advanced substantially: Q9 gives a kinetic Mosco
   limit under [K] and [R], with no derived [H-lift] or $A_H>0$ coefficient;
   Q10 asserts $A_H \to 2$ under spectral universality~[U];
-  U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability;
-  W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
+  U1 version~2.0 withdraws its proof of [U] and its $O(q^{-1/2})$ rate; it proves an
+  unconditional equidistance obstruction for finite Heisenberg generators and leaves
+  [U] open. W1's claim of [H-w] imports the withdrawn U1 rate and awaits its own audit.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
   is claimed by Q11~\cite{Beau2026q11}, whose absolute temporal value $A_\tau=2$ imports Q8's
   scalar normalisation and is itself pending revision.
@@ -3631,7 +3643,7 @@ A Structural Roadmap and Paper Inventory}
   independent, unestablished spatial-limit hypothesis [H-L] and the identification of the
   measured admissible space with the spin-$1$ module, which Q7 version~2.0 records as supplied by no
   source; [H-F] remains separately open.
-  The Q5b, Q6b, Q8, Q10, U1, W1 and Q11 entries are pending revision in the cascade that
+  The Q5b, Q6b, Q8, Q10, W1 and Q11 entries are pending revision in the cascade that
   Q7 version~2.0 opens; the marker is carried on the surfaces that assert the affected results.
   Q12~\cite{Beau2026q12} completes the spectral derivation of gauge dynamics:
   the gauge component of the Seeley--DeWitt $a_4$ coefficient of the operator

@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.21 synchronises Q9 version 2.0. Q9 proves a conditional kinetic-limit theorem under explicit kinetic Mosco convergence [K] and compatible common recovery [R]. Its modulation estimate retains the energy normalisation; the free kinetic form selects no nonzero central character, and the relative moment bound is elementwise on a cone. Q9 does not discharge [H-lift], provide a geometric horizontal coefficient or prove bridge non-obstruction. The Q5b and Q6b dependencies, Q9 inventory entry, synthesis, bibliography and dependency graph are retyped accordingly. The remaining consumer papers are pending their own correction stages.",
+  "notes": "Version 2.22 synchronises U1 version 2.0. U1 proves exact equidistance of finite Heisenberg multiplication generators at distinct central characters, with a separate adjacent-character example excluding the claimed uniform modulus for their sum. Its former proof of spectral universality [U], the O(q^-1/2) rate, and the claimed Q10/Q7 closure are withdrawn. The sampled-block O25 rank increment is not identified with a compressed operator norm, and [U] remains open. The synthesis, inventory, bibliography and dependency graph are retyped. W1 imports the withdrawn U1 rate and awaits its own audit; Q10 and other downstream papers remain pending their correction stages.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
