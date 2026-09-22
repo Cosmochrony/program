@@ -1175,7 +1175,7 @@
       url: ZEN + "19686700",
       tags: ["spt", "time"],
       title: "Q5b — 4D Lorentzian Geometry",
-      desc: "BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime. v2.1: supplied Heisenberg carrier; metric results conditional on the unestablished spatial limit hypothesis [H-L] (Q5a 3.2) and, since the Q7 2.0 audit, on the identification [ID] that no source supplies; Carnot geometry structural. Q9 proves only [H-F] ⇒ [H-lift], with the frozen hypothesis [H-F] unestablished. The co-metric reading is pending revision in the cascade Q7 version 2.0 opens."
+      desc: "BFS stratification of Heis₃(ℝ) → 4D Lorentzian spacetime. v2.1: supplied Heisenberg carrier; metric results conditional on the unestablished spatial limit hypothesis [H-L], the geometric lifting hypothesis [H-lift] and the identification [ID] that no source supplies; Carnot geometry structural. Q9 version 2.0 proves a conditional kinetic-limit theorem under [K] and [R], without discharging [H-lift]. The co-metric reading is pending revision in the cascade Q7 version 2.0 opens."
     },
     {
       id: "Q6a", lbl: "Q6a", s: "open", b: "III", key: "Beau2026q6a",
@@ -1189,7 +1189,7 @@
       url: ZEN + "20257944",
       tags: ["spt"],
       title: "Q6b — Effective Spacetime",
-      desc: "Conditional on the Q5a Mosco hypotheses ([H1], [H-w], [H-E1], Conjecture C), on the unestablished spatial limit hypothesis [H-L] and on the identification [ID] that Q7 version 2.0 records as supplied by no source, Q6b reads g^μν = diag(−2,2,2,2) — its own remarks calling that co-metric fully explicit and fully determined, which is pending revision — obtains the Schwarzschild exterior from flux conservation, and connects the effective operator to the Einstein tensor. Q9 proves [H-F] ⇒ [H-lift]; under the frozen, unestablished [H-F], the modulation-sector position-energy form contribution E_q^X(f_q) is O(q⁻¹) along recovery sequences. Supplied compact gauge data are independent inputs."
+      desc: "Conditional on the Q5a Mosco hypotheses ([H1], [H-w], [H-E1], Conjecture C), on the unestablished spatial limit hypothesis [H-L], on [H-lift] and on the identification [ID] that Q7 version 2.0 records as supplied by no source, Q6b reads g^μν = diag(−2,2,2,2) — its own remarks calling that co-metric fully explicit and fully determined, which is pending revision — obtains the Schwarzschild exterior from flux conservation, and connects the effective operator to the Einstein tensor. Q9 version 2.0 does not supply the lifting step. Supplied compact gauge data are independent inputs."
     },
     {
       id: "Q7", lbl: "Q7", s: "proved", b: "III", key: "Beau2026q7",
@@ -1213,11 +1213,8 @@
     {
       id: "Q9", lbl: "Q9", s: "conditional", b: "III", key: "Beau2026q9",
       tags: ["spt"],
-      title: "Q9 — Conditional [H-F] ⇒ [H-lift]",
-      desc: "Under [H-F] and along recovery sequences, the modulation-sector position energy satisfies E_q^X(f_q) ≤ C/q → 0; this is a form-contribution bound, not decay of the modulation operator norm. " +
-        "v1.1: the withdrawn Q5a framework is consumed as the frozen hypothesis [H-F]; " +
-        "the result is the implication [H-F] ⟹ [H-lift]. " +
-        "Under [H-F], coercivity gives A_H>0; no unconditional bridge conclusion follows."
+      title: "Q9 — Toward a kinetic limit on a supplied Schrödinger fibre",
+      desc: "Version 2.0: if kinetic forms Mosco-converge under [K] and each finite-energy limit vector has one common recovery sequence [R] with vanishing nonnegative modulation energy, the sum has the same free kinetic limit. The modulation estimate retains the energy scale r_q a_q(X) ||k f_q||²/q². An elementwise bound on a moment-bounded cone does not define a closed coercive form. The free form selects no nonzero central character or spatial metric; [H-lift] and bridge non-obstruction remain open."
     },
     {
       id: "Q10", lbl: "Q10", s: "conditional", b: "III", key: "Beau2026q10",
@@ -1716,8 +1713,9 @@
     { f: "Q5b", t: "Q7" }, { f: "O23", t: "Q7" }, { f: "O28", t: "Q7" },
     { f: "O29", t: "Q7", st: "interpretive", claim: "O29 audits the measured rank rather than supplying a carrier; no derivation runs from it to Q7's object" },
     { f: "Q7", t: "Q8", st: "interpretive", claim: "Q8 consumes Q7's identification, which Q7 version 2.0 records as supplied by no source, and Q7 records the support for these values as circular" },
-    { f: "Q7", t: "Q9", st: "interpretive", claim: "Q9's result is independent of Q7; the edge records citation, not supply" }, { f: "Q5a", t: "Q9" },
-    { f: "Q9", t: "Q10" }, { f: "Q8", t: "Q10" }, { f: "O25", t: "Q10" },
+    { f: "Q7", t: "Q9", st: "interpretive", claim: "Q9's result is independent of Q7; the edge records citation, not supply" },
+    { f: "Q5a", t: "Q9", st: "interpretive", claim: "Q9 discusses the withdrawn Q5a framework; [K] and [R] are not derived from it" },
+    { f: "Q9", t: "Q10", st: "interpretive", claim: "Q10 cites Q9, but Q9 no longer supplies a geometric horizontal coefficient or bridge non-obstruction" }, { f: "Q8", t: "Q10" }, { f: "O25", t: "Q10" },
     { f: "Q10", t: "U1" }, { f: "Q5b", t: "U1" },
     { f: "U1", t: "W1", sp: 1 }, { f: "Q5a", t: "W1" },
     { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
