@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.20}
+\date{2026\\[2pt]\small Version 2.21}
 
 \begin{document}
 
@@ -1122,8 +1122,9 @@ A Structural Roadmap and Paper Inventory}
     \textbf{Q5b}~\cite{Beau2026q5b}: The BFS shell stratification of $\Heis_3(\mathbb{R})$
     produces a four-dimensional Lorentzian spacetime, with the temporal direction identified
     with the BFS depth (\scond{} on [H-L]).
-    Q9~\cite{Beau2026q9} proves only the conditional implication
-    [H-F] $\Rightarrow$ [H-lift], with the frozen hypothesis [H-F] unestablished.
+    Q9~\cite{Beau2026q9} proves a kinetic-limit theorem under separately supplied
+    kinetic Mosco convergence [K] and compatible recovery [R].
+    It does not derive [H-lift] from the frozen, unestablished [H-F].
     The spatial limit input is formalised as the explicit, unestablished hypothesis [H-L], on a
     supplied Heisenberg carrier (version 2.1); the Carnot/$D_{\mathrm{hom}}=4$ results are independent of it
     (\sstruct{} for the geometry; conditional on [H-L], and on the identification Q7 version~2.0
@@ -1136,8 +1137,8 @@ A Structural Roadmap and Paper Inventory}
     unsupported after the O31 withdrawal; the colour factor and complete group are open.
 
     \textbf{Q6b}~\cite{Beau2026q6b}: Effective Lorentzian geometry from the admissibility filter
-    $\Pi_q$; its metric reading consumes the unestablished [H-L], while Q9 supplies only the
-    conditional implication [H-F] $\Rightarrow$ [H-lift] under the separate unestablished [H-F].
+    $\Pi_q$; its metric reading consumes the unestablished [H-L] and [H-lift].
+    Q9 supplies a conditional kinetic-limit criterion, not a discharge of the latter.
     Derives the effective metric $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature
     $(-,+,+,+)$ from the principal symbol of $\mathcal{L}_{\mathrm{eff}}$; with Q8, Q10, Q11 the
     co-metric reads $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, which Q7 version~2.0 records as also
@@ -1217,11 +1218,14 @@ A Structural Roadmap and Paper Inventory}
     within the frozen Q5a framework [H-F] (\sstruct).
     This entry is pending revision in the present cascade: Q7 version~2.0 withdraws the
     identification and the numerical reading on which that argument draws.
-    Q9~\cite{Beau2026q9} proves the implication [H-F] $\Rightarrow$ [H-lift]: under the frozen,
-    unestablished [H-F] and along recovery sequences, the modulation-sector position-energy form
-    contribution satisfies $\mathcal{E}^X_q(f_q)\leq C/q\to0$; this is not decay of the modulation
-    operator norm. Then $A_H > 0$ follows by coercivity independently of the bridge
-    (\scond{} on [H-F]: the implication [H-F] $\Rightarrow$ [H-lift] is \sproved; version 1.2).
+    Q9~\cite{Beau2026q9} proves that nonnegative modulation energy leaves a kinetic Mosco limit
+    unchanged when the kinetic forms converge under [K] and the same recovery sequences satisfy
+    [R]. Its bound $\mathcal V_q(f_q)\leq8\pi^2r_q a_q(X)\|kf_q\|^2/q^2$ retains the energy
+    normalisation. The free kinetic form neither selects a nonzero Schr\"odinger character nor
+    equals the full oscillator form. A relative moment bound gives an inequality for each
+    qualifying vector, not a closed coercive form on a derived linear domain.
+    Q5b-O1, [H-lift] and bridge non-obstruction remain open
+    (\scond{} on [K] and [R]; version 2.0).
     Q10~\cite{Beau2026q10} asserts $A_H \to 2$ under spectral universality~[U]:
     character-independence forces $\mathfrak{su}(2)$-isotropy of the effective form,
     and the unique such form is read as the Casimir with value~2 (\scond{} on [U]).
@@ -2512,7 +2516,7 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=black!55,above=1pt] at (Q7.north)
             {identification open};
           \node[S] (Q8)  at (2*\dx,-3*\dy){Q8\\{\tiny $A_Z\!=\!2$ under [H-F]; pending}};
-          \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny [H-F]$\Rightarrow$[H-lift]}};
+          \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny kinetic under [K], [R]}};
           \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$ under [U]; pending}};
           \node[C] (U1)  at (\dx,-5*\dy) {U1\\{\tiny [U] under Q5a--Q5b hyp.}};
           \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] under [H1]}};
@@ -2536,7 +2540,7 @@ A Structural Roadmap and Paper Inventory}
 
           \draw[arr]   (Q7)--(Q9);
           \draw[arr]   (Q7) to[out=0,in=90] (Q8);
-          \draw[spine] (Q9)--(Q10);
+          \draw[arr] (Q9)--(Q10);
           \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
           \draw[spine] (Q10)--(U1);
           \draw[spine] (U1)--(W1);
@@ -2551,7 +2555,7 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q5aO2.east)
             {pure modes; truncation status};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q9.east)
-            {conditional theorem; [H-F] open};
+            {lift open};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (U1.east)
             {rate $O(q^{-1/2})$};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (W1.east)
@@ -2559,16 +2563,16 @@ A Structural Roadmap and Paper Inventory}
 
         \end{tikzpicture}
       }
-      \caption{Geometric emergence sub-programme: logical chain from Q5a to the effective
+      \caption{Geometric emergence sub-programme: dependency map from Q5a to the proposed effective
       Lorentzian co-metric.
       \textbf{Q5a-O2}~\cite{Beau2026q5ao2}~(\sproved{} for its stated results): pure Fourier
       modes of the pre-saturation pipeline; truncation status of the three-coordinate reduction;
       rules out the $q^{-1}$ coercivity scale; [H-$\mathcal{E}$1] and [C] are not closed by a
       finite-rank route (zero-form limit on the canonical filtration, Q5a version 3.2).
-      \textbf{Q9}~(\scond{} on [H-F]; the implication itself is \sproved): under the frozen, unestablished
-        hypothesis [H-F], the modulation-sector position-energy form contribution satisfies
-        $\mathcal{E}^X_q(f_q)\leq C/q$ along recovery sequences; hence
-        [H-F] $\Rightarrow$ [H-lift] and coercivity gives $A_H>0$ under [H-F].
+      \textbf{Q9}~(\scond{} on [K] and [R]): a nonnegative modulation term leaves a supplied
+        kinetic Mosco limit unchanged when each finite-energy vector has one kinetic recovery
+        sequence on which the modulation energy vanishes. The bound retains its energy scale;
+        the free limit does not select a Schr\"odinger character or close [H-lift].
         \textbf{Q8}~(\sstruct{}, within the frozen [H-F]; pending revision): $A_Z = C_{\mathfrak{su}(2)} = 2$
         by Casimir rigidity; normalisation fixed by horizontal sector.
         \textbf{Q10}~(\scond{} on~[U]; pending revision): universality~[U] $\Rightarrow$
@@ -2909,9 +2913,10 @@ A Structural Roadmap and Paper Inventory}
       Q7 version~2.0 audit, under the identification [ID] that no source supplies; that reading is
       pending revision.
       Spatial limit input formalised as the unestablished hypothesis [H-L], on a supplied Heisenberg
-      carrier (version 2.1); Q9 proves only [H-F] $\Rightarrow$ [H-lift], with [H-F] unestablished; metric
-      results conditional on [H-L]; Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
-      \scond{} on [H-F] and [H-L] (metric chain); \sstruct{} (geometry) \\[3pt]
+      carrier (version 2.1); Q9 gives a conditional kinetic limit under [K] and [R], without
+      discharging [H-lift]; metric results remain conditional on [H-L] and [H-lift];
+      Carnot/$D_{\mathrm{hom}}=4$ geometry independent &
+      \scond{} on [H-L] and [H-lift] (metric chain); \sstruct{} (geometry) \\[3pt]
       Q6a & Gauge structure & \cite{Beau2026q6a} &
       $\mathrm{U}(1)$ and $\SU(2)$ from fibre fixed points;
       former full-group derivation relied on withdrawn O31 claims; colour factor and complete
@@ -2921,11 +2926,11 @@ A Structural Roadmap and Paper Inventory}
       $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ from $\Pi_q$;
       Schwarzschild from flux conservation; Einstein equations as consistency conditions;
       closes chain $\Pi_q\to\mathcal{L}_\Pi\to g^{\mu\nu}\to G_{\mu\nu}$ conditionally;
-      Q9 proves [H-F] $\Rightarrow$ [H-lift] under unestablished [H-F]; metric claims
-      conditional on the independent [H-L] and on the identification Q7 version~2.0 records as
+      Q9 supplies only a kinetic limit under [K] and [R]; metric claims
+      conditional on the independent [H-L] and [H-lift] and on the identification Q7 version~2.0 records as
       supplied by no source. Q6b's own remarks call the co-metric ``fully explicit'' and ``fully
       determined'' on the strength of Q8, Q10 and Q11, so those conclusions are pending revision &
-      \scond{} on the Q5a Mosco hypotheses ([H1], [H-w], [H-$\mathcal{E}$1], Conjecture~C), [H-L] and
+      \scond{} on the Q5a Mosco hypotheses ([H1], [H-w], [H-$\mathcal{E}$1], Conjecture~C), [H-L], [H-lift] and
       that identification \\[3pt]
       Q7 & Requirements for an equivariant bridge & \cite{Beau2026q7} &
       Proves $[\mathfrak{su}(2)]\not\cong\mathfrak{heis}_3$, the uniqueness of the spin-$1$ module and
@@ -2944,12 +2949,14 @@ A Structural Roadmap and Paper Inventory}
       circular: the scalar was fixed by matching a value itself obtained by inserting $A_Z$.
       Pending revision &
       \sstruct\ /\ \sopen \\[3pt]
-      Q9 & [H-F] $\Rightarrow$ [H-lift] & \cite{Beau2026q9} &
-      Under frozen, unestablished [H-F] and along recovery sequences, the modulation-sector
-      position-energy form contribution satisfies $\mathcal{E}^X_q(f_q)\le C/q\to0$; this is
-      not modulation-operator norm decay. Then $A_H>0$ follows by coercivity, independently of
-      the bridge (version 1.2); result: [H-F] $\Rightarrow$ [H-lift] &
-      \scond{} on [H-F] (the implication is \sproved) \\[3pt]
+      Q9 & Kinetic limit under [K] and [R] & \cite{Beau2026q9} &
+      A nonnegative modulation term leaves a supplied kinetic Mosco limit unchanged when
+      compatible recovery sequences suppress it. The bound is
+      $\mathcal V_q(f_q)\le8\pi^2r_q a_q(X)\|kf_q\|^2/q^2$.
+      The free form selects no nonzero central character; a relative moment bound gives only an
+      elementwise inequality on a cone. Q5b-O1, [H-lift] and bridge non-obstruction remain open
+      (version 2.0) &
+      \scond{} on [K] and [R] \\[3pt]
       Q10 & Asymptotic isotropy & \cite{Beau2026q10} &
       $A_H(q) \to 2$ with $|A_H - 2| \leq C\,\varepsilon(q)$;
       universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
@@ -3317,8 +3324,9 @@ A Structural Roadmap and Paper Inventory}
       \ssynth \\[3pt]
       EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
       Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2).
-      Q8/Q9 consume frozen, unestablished [H-F]; every effective co-metric or Lorentzian reading,
-      including $g^{\mu\nu}=2\eta^{\mu\nu}$, additionally requires unestablished [H-L] and the
+      Q8 consumes frozen, unestablished [H-F]; Q9 gives a conditional kinetic-limit criterion
+      under [K] and [R] but does not discharge [H-lift]. Every effective co-metric or Lorentzian reading,
+      including $g^{\mu\nu}=2\eta^{\mu\nu}$, additionally requires unestablished [H-L], [H-lift] and the
       identification Q7 version~2.0 records as supplied by no source &
       \ssynth \\[3pt]
       GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.0) & \cite{Beau2026gsnote} &
@@ -3611,9 +3619,9 @@ A Structural Roadmap and Paper Inventory}
   five admissible sectors of $2I$ via Schur's lemma, with the universal correlator
   $E(\hat{a},\hat{b}) = -j(j+1)/3\cdot(\hat{a}\cdot\hat{b})$ (\sstruct); the invariance hypothesis
   itself, phase coherence, and the Born rule remain open (\sopen).
-  The geometric emergence sub-programme has advanced substantially: Q9 proves the conditional
-  implication [H-F] $\Rightarrow$ [H-lift] and $A_H>0$ under the frozen, unestablished
-  hypothesis [H-F]; Q10 asserts $A_H \to 2$ under spectral universality~[U];
+  The geometric emergence sub-programme has advanced substantially: Q9 gives a kinetic Mosco
+  limit under [K] and [R], with no derived [H-lift] or $A_H>0$ coefficient;
+  Q10 asserts $A_H \to 2$ under spectral universality~[U];
   U1 proves [U] with rate $O(q^{-1/2})$ from BFS convergence and Weil-generator stability;
   W1 proves [H-w] as a structural consequence of the fibre-invariance of admissible observables.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
@@ -3679,7 +3687,8 @@ A Structural Roadmap and Paper Inventory}
   For the spacetime thread:
   Spectral2 $\to$ Gravity $\to$ (Thermodynamics or Lorentz);
   for the geometric emergence thread:
-  Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$ U1 $\to$ W1 $\to$ H2 $\to$ Q11.
+  Q5a, Q5b, Q7--Q11, U1, W1 and H2, with Q9's kinetic result independent of Q7 and Q8
+  and with the geometric and coefficient steps still open.
 
   \clearpage
   \bibliography{cosmochrony-bibliography}

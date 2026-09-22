@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.21 synchronises Q9 2.0. The Q9 entry now records a kinetic Mosco limit conditional on [K]
+and [R], with the energy scale retained in its modulation bound. Its free kinetic form selects no
+nonzero central character, and the relative moment estimate applies to individual vectors in a
+cone rather than defining a closed coercive form. Q9 no longer discharges [H-lift] or establishes
+bridge non-obstruction or a geometric coefficient $A_H$. The programme synthesis, Q5b/Q6b rows,
+Q9 inventory entry, bibliography and both graph surfaces carry that distinction; the Q9-to-Q10
+edge remains a citation edge, without theorem supply. The downstream paper audit continues in the
+agreed Q9–U1–W1–Q10–Q8–Q11–Q5b order.
+
 Version 2.20 retypes the Q7 entry for Q7 version 2.0, whose central result changes. Q7 now states the
 requirements an equivariant bridge would have to meet and proves those that follow from representation theory on
 the supplied carrier. Q7 distinguishes the measured-space identification [ID], target action [ACT], real rotation
