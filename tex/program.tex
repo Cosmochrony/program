@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.22}
+\date{2026\\[2pt]\small Version 2.23}
 
 \begin{document}
 
@@ -1237,12 +1237,17 @@ A Structural Roadmap and Paper Inventory}
     adjacent-character example excludes a uniform modulus for their summed operator.
     Neither result proves or refutes~[U], which remains open (\sproved{} for the obstruction;
     \sopen{} for~[U]).
-    W1~\cite{Beau2026w1} proves Hypothesis~[H-w] (convergence $a_q(s) \to A > 0$ of the
-    admissibility weights) as a structural consequence of the fibre-invariance of admissible
-    observables ($\mathcal{O} = \mathrm{Im}\,\Pi$); its quantitative step imports the
-    rate now withdrawn by U1 and awaits W1's own revision (\scond{} on [H1]; pending).
-    After W1 and H2, the open hypothesis of the former Q5a framework is [H1]; [H-$\mathcal{E}$1] and [C] are not
-    closed by the finite-rank route, their disposition being the zero-form one of Q5a version 3.2.
+    W1 version~2.0.1~\cite{Beau2026w1} withdraws its claimed proof of~[H-w].
+    Its Theorem~4 retains the summation inequality only for a separately defined partial-sum
+    proxy under a supplied relative profile estimate; even U1 version~1 did not provide that
+    relative estimate.
+    Its Lemma~6 identifies a depth-22 target when the cutoff follows the proved five-block
+    calibration, while Corollary~7 requires a separate proxy-to-Q5a-response identification.
+    Neither the current Q5a directional limits~[H-$w'$] nor the stronger common~[H-w] is proved
+    by W1; fibre constancy alone does not give cross-fibre uniformity
+    (\scond{} for the proxy bound; \sopen{} for the weight bridge).
+    H2's separate result does not close the weight hypotheses; [H-$\mathcal{E}$1] and [C] are
+    not closed by the finite-rank route, their disposition being the zero-form one of Q5a version~3.2.
     Q5a-O2~\cite{Beau2026q5ao2} establishes the pure-Fourier-mode structure of the
     pre-saturation pipeline, the truncation status of its three-coordinate reduction (no rank
     is measurable from it), and an $O(q^{-2})$ upper bound on the admissibility form that rules
@@ -2522,7 +2527,7 @@ A Structural Roadmap and Paper Inventory}
           \node[C] (Q9)  at (\dx,-3*\dy) {Q9\\{\tiny kinetic under [K], [R]}};
           \node[C] (Q10) at (\dx,-4*\dy) {Q10\\{\tiny $A_H\!\to\!2$ under [U]; pending}};
           \node[P] (U1)  at (\dx,-5*\dy) {U1\\{\tiny obstruction proved; [U] open}};
-          \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny [H-w] pending audit}};
+          \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny proxy; [H-w] open}};
 
           % Q11 and final result
           \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
@@ -2535,7 +2540,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (Q5a)--(Q5aO2);
           \draw[spine] (Q5a)--(Q5b);
           \draw[arr]   (Q5a) to[out=0,in=90] (Q7);
-          \draw[arr]   (Q5aO2) to[out=-90,in=90] (W1);
+          \draw[arr,dashed] (Q5aO2) to[out=-90,in=90] (W1);
           \draw[arr]   (Q5b) to[out=0,in=135] (Q7);
           \draw[arr]   (Q5b) to[out=-45,in=90] (Q9);
           \draw[arr,dashed] (Q5b) to[out=-90,in=90] (U1);
@@ -2547,22 +2552,20 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (Q8) to[out=-90,in=0] (Q10);
           \draw[arr,dashed] (Q10)--(U1);
           \draw[arr,dashed] (U1)--(W1);
-          \draw[arr]   (Q5a) to[out=-45,in=90] (W1);
+          \draw[arr,dashed] (Q5a) to[out=-45,in=90] (W1);
 
           \draw[arr,dashed] (U1) to[out=-90,in=135] (Q11);
           \draw[arr]   (Q8)  to[out=-90,in=45]  (Q11);
-          \draw[arr]   (W1)  to[out=-90,in=45]  (Q11);
+          \draw[arr,dashed] (W1)  to[out=-90,in=45]  (Q11);
           \draw[arr]   (Q11) -- (Met);
 
           % ── Status annotations ───────────────────────────────
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q5aO2.east)
             {pure modes; truncation status};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q9.east)
+          \node[font=\tiny\sffamily,text=black!55,left=12pt] at (Q9.west)
             {lift open};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (U1.east)
-            {generator route withdrawn};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (W1.east)
-            {U1 rate withdrawn};
+            {Q5a weight bridge open};
 
         \end{tikzpicture}
       }
@@ -2584,9 +2587,10 @@ A Structural Roadmap and Paper Inventory}
         exact equidistance of distinct-character Heisenberg multiplication generators;
         a separate adjacent-character example obstructs the claimed summed-operator modulus.
         The former [U] proof and $O(q^{-1/2})$ rate are withdrawn.
-        \textbf{W1}~(\scond{} on [H1]): [H-w] as a structural consequence of fibre-invariance
-        ($\mathcal{O}=\mathrm{Im}\,\Pi$); quantitative control formerly imported from U1
-        is withdrawn, leaving W1 pending its own audit.
+        \textbf{W1}~(\scond{} for its proxy bound; \sopen{} for [H-w]): a supplied
+        relative profile estimate bounds a separately defined finite-window sum.
+        The former proof of convergence of Q5a's response-average weights is withdrawn;
+        fibre constancy alone does not close their identification.
         The metric reading of
         $g^{\mu\nu} = \mathrm{diag}(-A_\tau,2,2,2)$ remains conditional on the independent,
         unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.1, and on the
@@ -2968,7 +2972,7 @@ A Structural Roadmap and Paper Inventory}
       universality~[U] $\Rightarrow$ $\mathfrak{su}(2)$-isotropy $\Rightarrow$ Casimir;
       the isotropic case of Q7's bridge conjecture was read as resolved under [U]; Q7 version~2.0
       records that conjecture as neither confirmed nor refuted, and this row is pending revision
-      (as are the Q5b, Q6b, Q8, W1 and Q11 rows; U1 is revised below) &
+      (as are the Q5b, Q6b, Q8 and Q11 rows; U1 and W1 are revised below) &
       \scond{} on [U] \\[3pt]
       U1 & Obstruction to the generator route to [U] & \cite{Beau2026u1} &
       Version~2.0 proves the exact equidistance of finite Heisenberg multiplication
@@ -2980,16 +2984,17 @@ A Structural Roadmap and Paper Inventory}
       compressed operator norm.
       [U] remains open &
       \sproved{} / \sopen \\[3pt]
-      W1 & [H-w] under [H1] & \cite{Beau2026w1} &
-      $a_q(s) \to A > 0$ uniformly in $s$: fibre-invariance of admissible observables
-      ($\mathcal{O}=\mathrm{Im}\,\Pi$) is the proposed structural origin; the U1 rate
-      imported for quantitative control is withdrawn, so W1's result awaits audit.
-      Its passage to the effective Lorentzian geometry consumes $A_H \to 2$ from Q10, so that step is
-      pending revision in the present cascade;
-      after W1 and H2~\cite{Beau2026h2}, which closes [H2], the open hypothesis of the former Q5a framework is
-      [H1], with [H-$\mathcal{E}$1] and [C] not closed by Q5a-O2's finite-rank
-      route~\cite{Beau2026q5ao2} &
-      \scond{} on [H1] \\[3pt]
+      W1 & Finite-window proxy; [H-w] open & \cite{Beau2026w1} &
+      Version~2.0.1 withdraws the claimed common positive limit of Q5a's
+      fingerprint-response weights.
+      Theorem~4 proves only a summation inequality for a separate proxy under a supplied
+      relative profile bound, never proved by U1.
+      Lemma~6 gives a depth-22 target under the specified five-block calibration,
+      not an infinite-series coefficient; Corollary~7 exposes the missing
+      proxy-to-weight identification.
+      Q5a's directional~[H-$w'$] and the stronger common~[H-w] remain open.
+      H2~\cite{Beau2026h2} does not discharge them &
+      \scond{} / \sopen \\[3pt]
       H2 & [H2] proved & \cite{Beau2026h2} &
       Strong convergence $\hat{X}_q \to x$, $\hat{P}_q \to -i\partial_x$ on
       $\Heis_3(\mathbb{Z}/q\mathbb{Z})$: quantitative Poisson aliasing lemma (rate $O(q^{-1})$),
@@ -3635,7 +3640,9 @@ A Structural Roadmap and Paper Inventory}
   Q10 asserts $A_H \to 2$ under spectral universality~[U];
   U1 version~2.0 withdraws its proof of [U] and its $O(q^{-1/2})$ rate; it proves an
   unconditional equidistance obstruction for finite Heisenberg generators and leaves
-  [U] open. W1's claim of [H-w] imports the withdrawn U1 rate and awaits its own audit.
+  [U] open. W1 version~2.0.1 withdraws its claimed proof of~[H-w]: its
+  conditional sum bounds a proxy, while the identification with Q5a's
+  response-average weights and their positive limits remain open.
   The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
   is claimed by Q11~\cite{Beau2026q11}, whose absolute temporal value $A_\tau=2$ imports Q8's
   scalar normalisation and is itself pending revision.
@@ -3643,7 +3650,7 @@ A Structural Roadmap and Paper Inventory}
   independent, unestablished spatial-limit hypothesis [H-L] and the identification of the
   measured admissible space with the spin-$1$ module, which Q7 version~2.0 records as supplied by no
   source; [H-F] remains separately open.
-  The Q5b, Q6b, Q8, Q10, W1 and Q11 entries are pending revision in the cascade that
+  The Q5b, Q6b, Q8, Q10 and Q11 entries are pending revision in the cascade that
   Q7 version~2.0 opens; the marker is carried on the surfaces that assert the affected results.
   Q12~\cite{Beau2026q12} completes the spectral derivation of gauge dynamics:
   the gauge component of the Seeley--DeWitt $a_4$ coefficient of the operator

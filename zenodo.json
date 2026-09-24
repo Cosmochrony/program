@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.22 synchronises U1 version 2.0. U1 proves exact equidistance of finite Heisenberg multiplication generators at distinct central characters, with a separate adjacent-character example excluding the claimed uniform modulus for their sum. Its former proof of spectral universality [U], the O(q^-1/2) rate, and the claimed Q10/Q7 closure are withdrawn. The sampled-block O25 rank increment is not identified with a compressed operator norm, and [U] remains open. The synthesis, inventory, bibliography and dependency graph are retyped. W1 imports the withdrawn U1 rate and awaits its own audit; Q10 and other downstream papers remain pending their correction stages.",
+  "notes": "Version 2.23 synchronises W1 version 2.0.1. W1 withdraws its claimed proof of a common positive admissibility weight [H-w]. Its retained summation inequality concerns a separate partial-sum proxy under a supplied relative profile bound that U1 never proved. For the specified five-block calibration the proxy target is a sum through depth 22, while the proxy-to-Q5a response-weight identification and both the directional [H-w'] and common [H-w] weight limits remain open. The synthesis, inventory, bibliography, figure and interactive dependency graph are retyped. Q10 and other downstream papers remain pending their own audits.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }

@@ -8,6 +8,18 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.23 synchronises W1 2.0.1, deposited as
+[Zenodo record 22926106](https://zenodo.org/record/22926106) under concept DOI
+10.5281/zenodo.19886319. W1 withdraws its claimed proof of [H-w]. Its exact
+summation inequality concerns a separately defined finite-window proxy under a
+relative profile estimate that U1 never proved. Under the specified five-block
+calibration, the proxy's target is a sum through depth 22, not the infinite
+series formerly claimed. The bridge to Q5a's response-average weights, their
+separate directional limits [H-w′], and a common positive limit [H-w] remain
+open. The synthesis, inventory, bibliography and dependency graph now carry
+that distinction. Q10 and the other downstream papers remain pending their
+own audits. Programme 2.23 is a candidate, not deposited.
+
 Version 2.22 synchronises U1 2.0. U1 proves an unconditional equidistance obstruction for
 finite Heisenberg multiplication generators; a separate adjacent-character example excludes
 the claimed uniform modulus for their sum. Its former proof of [U], its $O(q^{-1/2})$ rate and
@@ -15,7 +27,8 @@ the claimed Q10/Q7 closure are withdrawn, while [U] remains open. The inventory,
 and both graph surfaces now record that result. W1's quantitative step imports the withdrawn
 U1 rate and awaits its own audit; Q10 and the other downstream papers remain pending.
 U1 2.0 is deposited as [Zenodo record 22905732](https://zenodo.org/record/22905732),
-under concept DOI 10.5281/zenodo.19881146. Programme 2.22 is a candidate, not deposited.
+under concept DOI 10.5281/zenodo.19881146. Programme 2.22 was deposited as
+[Zenodo record 22913308](https://zenodo.org/record/22913308).
 
 Version 2.21 synchronises Q9 2.0. The Q9 entry now records a kinetic Mosco limit conditional on [K]
 and [R], with the energy scale retained in its modulation bound. Its free kinetic form selects no
