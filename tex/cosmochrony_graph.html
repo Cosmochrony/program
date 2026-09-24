@@ -1238,12 +1238,13 @@
       id: "W1", lbl: "W1", s: "conditional", b: "III", key: "Beau2026w1",
       url: ZEN + "19886319",
       tags: ["spt", "emer"],
-      title: "W1 — Hypothesis [H-w]",
-      desc: "a_q(s) → A > 0 uniformly in s, under [H1], is W1's claim pending audit. Its " +
-        "quantitative step imports a U1 rate withdrawn in version 2.0. " +
-        "The separate summability argument for A_q↗A>0 does not restore the withdrawn rate. " +
-        "W1 proposes fibre-invariance of observables in O=Im Π as its structural origin. " +
-        "In the former Q5a chain, [H1], [H-E1] and [C] remain open; H2 is proved separately."
+      title: "W1 — Finite-window proxy; [H-w] open",
+      desc: "Version 2.0.1 withdraws the claimed proof that Q5a's response-average weights " +
+        "converge to a common positive constant. Theorem 4 bounds a separate partial-sum proxy " +
+        "only under a supplied relative profile estimate, which U1 never proved. Lemma 6 gives " +
+        "a depth-22 target for the specified five-block calibration; Corollary 7 requires an " +
+        "independent proxy-to-Q5a-weight identification. Fibre constancy alone gives no " +
+        "cross-fibre uniformity. Q5a's directional [H-w′] and common [H-w] remain open."
     },
     {
       id: "H2", lbl: "H2", s: "proved", b: "III", key: "Beau2026h2",
@@ -1720,9 +1721,11 @@
     { f: "Q9", t: "Q10", st: "interpretive", claim: "Q10 cites Q9, but Q9 no longer supplies a geometric horizontal coefficient or bridge non-obstruction" }, { f: "Q8", t: "Q10" }, { f: "O25", t: "Q10" },
     { f: "Q10", t: "U1", st: "interpretive", claim: "U1 audits Q10's open hypothesis [U], not a supplied theorem" },
     { f: "Q5b", t: "U1", st: "interpretive", claim: "U1 corrects a falsely attributed Q5b rate" },
-    { f: "U1", t: "W1", st: "conditional", claim: "W1 imports a quantitative U1 rate withdrawn in version 2.0" },
-    { f: "Q5a", t: "W1" },
-    { f: "Q5a", t: "H2", sp: 1 }, { f: "H2", t: "W1" },
+    { f: "U1", t: "W1", st: "interpretive", claim: "W1 audits a relative profile estimate never supplied by U1; no rate transfers" },
+    { f: "Q5a", t: "W1", st: "interpretive", claim: "Q5a's response-average weights are not identified with W1's partial-sum proxy" },
+    { f: "Q5aO2", t: "W1", st: "interpretive", claim: "W1 discusses the historical weight hypothesis; Q5a-O2 supplies no proxy-to-weight bridge" },
+    { f: "Q5a", t: "H2", sp: 1 },
+    { f: "W1", t: "Q11", st: "conditional", claim: "Q11 may assume [H-w], but W1 version 2.0.1 does not prove it" },
     { f: "U1", t: "Q11", st: "conditional", claim: "U1 withdraws [U] and its rate; Q11's imported coefficient is pending audit" },
     { f: "Q8", t: "Q11" }, { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1 },
     { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
@@ -1759,7 +1762,7 @@
     { f: "Thm", t: "SGNote", syn: 1 }, { f: "Lor", t: "SGNote", syn: 1 },
     { f: "O7", t: "LorCap" }, { f: "BI", t: "LorCap" }, { f: "Q5b", t: "LorCap" }, { f: "Q11", t: "LorCap" }, { f: "PTO", t: "LorCap" },
     { f: "LorCap", t: "TempProj", sp: 1 }, { f: "TempProj", t: "LCII", sp: 1 }, { f: "Grav", t: "LCII" },
-    { f: "LCII", t: "LCIIo1", sp: 1 }, { f: "W1", t: "LCIIo1" }, { f: "Q6b", t: "LCIIo1" }, { f: "Q11", t: "LCIIo1" },
+    { f: "LCII", t: "LCIIo1", sp: 1 }, { f: "W1", t: "LCIIo1", st: "conditional", claim: "W1's former weight closure is withdrawn; consumers must retain [H-w] as a premise" }, { f: "Q6b", t: "LCIIo1" }, { f: "Q11", t: "LCIIo1" },
     { f: "TempProj", t: "LCo1" }, { f: "PTO", t: "LCo1" }, { f: "LCII", t: "LCo3" }, { f: "BI", t: "LCo3" },
     { f: "LorCap", t: "LCsyn" }, { f: "TempProj", t: "LCsyn" }, { f: "LCII", t: "LCsyn" }, { f: "LCIIo1", t: "LCsyn" }, { f: "LCo1", t: "LCsyn" }, { f: "LCo3", t: "LCsyn", sp: 1 },
     { f: "Found", t: "TopI" }, { f: "BI", t: "SMcm" }, { f: "Found", t: "Bell" }, { f: "ENI", t: "Bell" },
