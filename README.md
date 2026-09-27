@@ -8,6 +8,18 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.24 synchronises Q8 2.0 and Q10 2.0, deposited as
+[Zenodo record 23002451](https://zenodo.org/record/23002451) (concept DOI 10.5281/zenodo.19879909) and
+[Zenodo record 23002454](https://zenodo.org/record/23002454) (concept DOI 10.5281/zenodo.19880900), together
+with the Q5b 2.2 candidate. Q8 proves that the Heisenberg commutator supplies no central coefficient, that a
+positive constant central coefficient needs a term of homogeneous degree four and a length scale, and that for a
+supplied fully invariant rank-three target $A_H = A_Z = 2\lambda$ with $\lambda$ free. Q10 proves a sharp ratio
+lemma and a conditional isotropy theorem under named inputs, with the absolute value only from an independent
+scale; no coefficient value is derived. Q5b records [H-lift], the full-rank extension Q5b-O2 and the coefficient
+values Q5b-O3 as open. The synthesis, inventory, figure, bibliography and dependency graph carry these results;
+the circular Q8-to-Q10 edge is removed. Q6b, Q11, the emergent-geometry note and the other consumers of the former
+values remain marked pending revision. Programme 2.24 is a candidate, not deposited.
+
 Version 2.23 synchronises W1 2.0.1, deposited as
 [Zenodo record 22926106](https://zenodo.org/record/22926106) under concept DOI
 10.5281/zenodo.19886319. W1 withdraws its claimed proof of [H-w]. Its exact
@@ -18,7 +30,8 @@ series formerly claimed. The bridge to Q5a's response-average weights, their
 separate directional limits [H-w′], and a common positive limit [H-w] remain
 open. The synthesis, inventory, bibliography and dependency graph now carry
 that distinction. Q10 and the other downstream papers remain pending their
-own audits. Programme 2.23 is a candidate, not deposited.
+own audits. Programme 2.23 was deposited as
+[Zenodo record 22945485](https://zenodo.org/record/22945485).
 
 Version 2.22 synchronises U1 2.0. U1 proves an unconditional equidistance obstruction for
 finite Heisenberg multiplication generators; a separate adjacent-character example excludes
