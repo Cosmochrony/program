@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.24}
+\date{2026\\[2pt]\small Version 2.25}
 
 \begin{document}
 
@@ -223,7 +223,7 @@ A Structural Roadmap and Paper Inventory}
     Effective spacetime geometry, gauge structure, Standard Model charges and masses, gravitational
     waves, and cosmological observables are derived as consequences of Levels~1--2.
     The metric and co-metric results at this level are conditional on the continuum-limit hypothesis [H-L] of Q5a--Q5b
-    (unestablished; Q5a version 3.2, Q5b version 2.2), on the lifting hypothesis [H-lift] and, for the signature,
+    (unestablished; Q5a version 3.2, Q5b version 2.2.1), on the lifting hypothesis [H-lift] and, for the signature,
     on the hyperbolicity hypothesis [H-hyp].
     Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2},
     Q3~\cite{Beau2026q3}, Q5a--Q7), the gravity track
@@ -336,7 +336,7 @@ A Structural Roadmap and Paper Inventory}
     Q6b, Q8, Q10, Q11) to the results table, and a new section placing the
     four axioms relative to established formalisms
     (Hamilton--Jacobi, symplectic geometry, WKB, functional renormalisation group).
-    That co-metric entry is pending revision: Q5b version 2.2, Q8 version 2.0 and Q10 version 2.0.1 establish no
+    That co-metric entry is pending revision: Q5b version 2.2.1, Q8 version 2.0 and Q10 version 2.0.1 establish no
     coefficient value.
     v1.13 revises the entanglement framework: fibres are now defined as
     \emph{infra-projectable cells} (unsplit configurations below the resolution of $\Pi$), the
@@ -355,7 +355,7 @@ A Structural Roadmap and Paper Inventory}
     \textit{Status:} \sstruct{} for the axiomatic architecture and the consequences that do not consume
     carrier selection; the Heisenberg/Weil identification is a postulated realisation;
     \sopen{} for the continuum limit (Q5a version 3.2 withdraws the Mosco derivation; the
-    spatial limit is the unestablished hypothesis [H-L] of Q5b version 2.2).
+    spatial limit is the unestablished hypothesis [H-L] of Q5b version 2.2.1).
     \textit{Role:} Axiomatic spine.
     Cited by all Q-series papers, HeisenbergStructure~\cite{Beau2026HeisenbergStructure}
     , noscale, and recent companion papers.
@@ -1100,7 +1100,7 @@ A Structural Roadmap and Paper Inventory}
     establish no coefficient value.
     The chain now carries two distinct gaps.
     At its first link, Q5a version 3.2 withdraws the Mosco derivation of the spatial limit operator,
-    which is now the explicit, unestablished hypothesis [H-L] (Q5b version 2.2).
+    which is now the explicit, unestablished hypothesis [H-L] (Q5b version 2.2.1).
     At the Q7 step, Q7 version~2.0 records the identification of the measured space with that
     spin-$1$ module as supplied by no source, so the carrier of those four coefficients is itself
     open.
@@ -1152,7 +1152,7 @@ A Structural Roadmap and Paper Inventory}
     $\Pi_q$; its metric reading consumes the unestablished [H-L] and [H-lift].
     Q9 supplies a conditional kinetic-limit criterion, not a discharge of the latter.
     Presents an effective metric $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature
-    $(-,+,+,+)$ from the principal symbol of $\mathcal{L}_{\mathrm{eff}}$, which Q5b version 2.2 shows has rank
+    $(-,+,+,+)$ from the principal symbol of $\mathcal{L}_{\mathrm{eff}}$, which Q5b version 2.2.1 shows has rank
     three, so this reading is pending revision; with Q8, Q10, Q11 the
     co-metric reads $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$, which Q7 version~2.0 records as also
     requiring the identification of the measured admissible space with the spin-$1$ module, supplied
@@ -1282,24 +1282,31 @@ A Structural Roadmap and Paper Inventory}
     The framework itself is withdrawn in Q5a version 3.2, and the chain's residual
     conditionality includes the spatial limit hypothesis [H-L] together with the open
     former hypotheses [H1], [H-$\mathcal{E}$1], and [C] in any non-zero-form reading.
-    \textbf{Q11}~\cite{Beau2026q11}: Claims temporal rigidity under frozen [H-F], but its
-    absolute value $A_\tau=2$ additionally imports Q8's scalar normalisation, which Q8 version~2.0 shows
-    fixes no coefficient.
-    Schur alone does not fix that scalar; the claimed closure of Q5b-O3 is pending revision,
-    including its algebraic coefficient value, not only its metric interpretation.
-    With the additional, independent and unestablished spatial-limit hypothesis [H-L], and with the
-    identification of the measured admissible space with that module, which Q7 version~2.0 records
-    as supplied by no source, those coefficients give the effective Lorentzian co-metric reading
-    $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$ (Minkowski).
-    This entry is pending revision in the present cascade.
+    \textbf{Q11}~\cite{Beau2026q11} (version 2.0): Spatial $\SU(2)$ invariance leaves the temporal coefficient free
+    (\sproved).
+    On the cotangent fibre $\mathbb{R}_\tau\oplus W$, with $\SU(2)$ trivial on the ordering line and spin one on the
+    spatial sector (the supplied [ACT] of Q7 and Q8), every invariant form is
+    $\alpha\,k_\tau^2 + \beta\,Q_{\mathrm{sp}}$
+    with $\alpha$ and $\beta$ independent: invariance excludes mixed temporal--spatial terms but relates the two
+    scalars by no equation, so $A_H = 2\lambda$ gives no value of $A_\tau$.
+    For every linear $\SU(2)$ action on four real dimensions the invariant forms are the multiples of one definite
+    form or a family of dimension at least two, so no $\SU(2)$-invariance condition fixes a Lorentzian co-metric up
+    to an overall factor.
+    The identification of $\tau$ with BFS depth is a modelling input, $\tau = n\,\Delta\tau$ with a free step, and
+    temporal rescalings commute with the spatial action.
+    Under [H-L], [H-lift], [T] and [INV$^+$] the co-metric is $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$
+    with two independent scales (\scond); the temporal half of Q5b-O3 amounts to one datum coupling the temporal and
+    spatial normalisations, which no source supplies (\sopen).
+    Q11 closes a derivation route, not the possibility $A_\tau = 2$.
     The derivation chain Q5a $\to$ Q5b $\to$ Q7 $\to$ Q8 $\to$ Q9 $\to$ Q10 $\to$
-    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 is not a closure.
+    U1 $\to$ W1 $\to$ H2 $\to$ Q11 $\to$ Q5b-O3 is not a closure, and Q11 shows that its last link cannot be closed by
+    spatial $\SU(2)$ invariance.
     Q7 version~2.0 supplies no symmetric-square identification of the measured space; in Q8 version~2.0 and
     Q10 version~2.0.1 no scale is fixed by matching the other paper, Q10 taking the scale as an independent input and
-    Q8 leaving the common value free; Q5b version~2.2 records [H-lift], Q5b-O2 and Q5b-O3 as open.
+    Q8 leaving the common value free; Q5b version~2.2.1 records [H-lift], Q5b-O2 and Q5b-O3 as open.
     The chain is a sequence of conditional steps with a missing identification at the Q7 step, a missing
     extended operator for the central direction, and no established coefficient value.
-    The Q6b, Q11, EG-Note and other consumer entries asserting the former values are pending revision.
+    The Q6b, EG-Note and other consumer entries asserting the former values are pending revision.
 
     \textbf{Q12}~\cite{Beau2026q12}: Version~1.4 derives Yang--Mills dynamics from the vertical
     variation of the projective spectral entropy at an arbitrary supplied fixed base metric
@@ -1471,7 +1478,7 @@ A Structural Roadmap and Paper Inventory}
     that neither O29 nor O30's conditional model derives it, so the mechanism is read as conditional on it:
     a static $J_\Pi$-real,
     weight-preserving restriction of $E_\Pi^2$ has a degenerate outer pair (static obstruction),
-    while the oriented cascade generator $\partial_\tau$ of Q11~\cite{Beau2026q11} carries a
+    while the oriented cascade generator $\partial_\tau$, a modelling input in Q11~\cite{Beau2026q11}, carries a
     non-zero $J_3$ projection that lifts it.
     This remains a conditional diagnostic mechanism. Its amplitude is deferred to the cascade
     normalisation, and generation mixing requires further complex metaplectic input.
@@ -1861,8 +1868,9 @@ A Structural Roadmap and Paper Inventory}
     reconstructed from admissible non-injective projection? The answer is that $\gamma$ is not a
     kinematic postulate but the temporal residual of a bounded Born--Infeld capacity budget, lifted to
     special-relativistic observer transformations through the effective co-metric
-    $g^{\mu\nu} = 2\eta^{\mu\nu}$ asserted by Q11, whose coefficient values are not established and are pending
-    revision in the present cascade. A guiding distinction runs throughout: the Born--Infeld capacity
+    $g^{\mu\nu} = 2\eta^{\mu\nu}$ taken from Q11, whose coefficient values are not established: Q11 shows that
+    spatial $\SU(2)$ invariance leaves $A_\tau$ free, and this entry is pending revision.
+    A guiding distinction runs throughout: the Born--Infeld capacity
     sphere $(F^\tau)^2 + \beta^2 = 1$ supplies the load $\beta$ and the clock factor $1/\gamma$, while
     the Lorentz group acts as the isometry group of the effective metric, not of the capacity sphere.
     The chain assembled by the sub-programme is
@@ -1887,8 +1895,8 @@ A Structural Roadmap and Paper Inventory}
     \textbf{TempProj}~\cite{Beau2026tp}: Closes the open construction of
     $\mathcal{P}_\tau^{\mathrm{Q5b}}$ from LorentzCapacity (\scond{} on [U] and the Born--Infeld lift).
     Constructs the temporal residual map as the unique positive function compatible with the
-    Lorentzian splitting of the effective co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ asserted by Q11, whose
-    coefficient values are not established and are pending revision in the present cascade,
+    Lorentzian splitting of the effective co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ taken from Q11, whose
+    coefficient values are not established (Q11 leaves $A_\tau$ free; this entry is pending revision),
     the Born--Infeld unit capacity-flow sphere, and the exact Weil filling law
     $\Sigma_n^{\mathrm{tot}} = 1 - B_n$.
     The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$
@@ -1914,8 +1922,8 @@ A Structural Roadmap and Paper Inventory}
     Version~1.0 claimed to close that bridge via
     $A_{\tau}(x) = A_{\tau}^{\infty}\bigl(1-\epsilon(x)\bigr)$ together with
     $g^{\tau\tau}(x) = -A_{\tau}(x)/4$; that claim is withdrawn.
-    With the Q11 identification $g^{\tau\tau} = -A_{\tau}$ (flat-space value $-2$, pending
-    revision) and a diagonal
+    With the identification $g^{\tau\tau} = -A_{\tau}$ (flat-space value $-2$ taken from Q11, not established:
+    Q11 leaves $A_\tau$ free) and a diagonal
     temporal block, the free-fraction law gives
     $g_{\tau\tau}(x)/g_{\tau\tau}^{\infty} = 1/(1-\epsilon(x))$, which agrees with
     $R(x)^{2} = 1-\epsilon(x)$ only at $\epsilon(x) = 0$.
@@ -2548,11 +2556,11 @@ A Structural Roadmap and Paper Inventory}
           \node[C] (W1)  at (2*\dx,-5*\dy){W1\\{\tiny proxy; [H-w] open}};
 
           % Q11 and final result
-          \node[S] (Q11) at (\dx+0.5*\dx,-6*\dy)
-            {Q11\\{\tiny temporal scale from Q8; pending}};
+          \node[P] (Q11) at (\dx+0.5*\dx,-6*\dy)
+            {Q11\\{\tiny $A_\tau$ free under $\SU(2)$}};
           \node[box,dashed,draw=black!45,fill=black!3,minimum width=4cm] (Met)
           at (\dx+0.5*\dx,-7*\dy)
-            {$g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$\\{\tiny asserted by Q11; not established}};
+            {$g^{\mu\nu}=\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$\\{\tiny two free scales; no value}};
 
           % ── Edges ────────────────────────────────────────────
           \draw[arr]   (Q5a)--(Q5aO2);
@@ -2571,9 +2579,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr,dashed] (U1)--(W1);
           \draw[arr,dashed] (Q5a) to[out=-45,in=90] (W1);
 
-          \draw[arr,dashed] (U1) to[out=-90,in=135] (Q11);
           \draw[arr]   (Q8)  to[out=-90,in=45]  (Q11);
-          \draw[arr,dashed] (W1)  to[out=-90,in=45]  (Q11);
           \draw[arr]   (Q11) -- (Met);
 
           % ── Status annotations ───────────────────────────────
@@ -2608,8 +2614,11 @@ A Structural Roadmap and Paper Inventory}
         relative profile estimate bounds a separately defined finite-window sum.
         The former proof of convergence of Q5a's response-average weights is withdrawn;
         fibre constancy alone does not close their identification.
-        The co-metric $g^{\mu\nu} = \mathrm{diag}(-2,2,2,2)$ asserted by Q11 is not established: besides the
-        unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.2, the open [H-lift], a
+        \textbf{Q11} (version 2.0; \sproved): invariant forms are $\alpha\,k_\tau^2+\beta\,Q_{\mathrm{sp}}$ with
+        independent scalars; the datum coupling the temporal and spatial normalisations is \sopen.
+        No value of the co-metric $\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$ is established, and Q11 shows that
+        spatial $\SU(2)$ invariance leaves $A_\tau$ and $\lambda$ independent: besides the
+        unestablished spatial-limit hypothesis [H-L] of Q5a version 3.2/Q5b version 2.2.1, the open [H-lift], a
         full-rank extension that Q5b-O2 leaves open and the identification of the measured admissible space with the
         spin-$1$ module, which Q7 version~2.0 records as supplied by no source, the value $2$ would need full
         $\mathfrak{su}(2)$-invariance of a supplied target and an independent scale (Q8, Q10): Q7 is
@@ -3015,14 +3024,12 @@ A Structural Roadmap and Paper Inventory}
       proves hypothesis [H2] of the former Q5a framework, whose [H-$\mathcal{E}$1] and [C] are not closed by
       the finite-rank route &
       \sproved \\[3pt]
-      Q11 & Temporal Casimir rigidity & \cite{Beau2026q11} &
-      Claims $A_\tau=C_{\mathfrak{su}(2)}=2$ under frozen [H-F], but fixes the scalar by
-      importing Q8's normalisation, which Q8 version~2.0 shows fixes no coefficient; the absolute temporal
-      value therefore also requires revision;
-      the co-metric reading $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)\propto\eta^{\mu\nu}$
-      additionally requires the independent, unestablished [H-L] and the identification Q7
-      version~2.0 records as supplied by no source. Pending revision &
-      \sstruct\ /\ \sopen \\[3pt]
+      Q11 & Temporal coefficient free under spatial $\SU(2)$ (version 2.0) & \cite{Beau2026q11} &
+      Invariant forms on $\mathbb{R}_\tau\oplus W$ are $\alpha\,k_\tau^2+\beta\,Q_{\mathrm{sp}}$ with independent
+      scalars and no mixed term; no linear $\SU(2)$ action on four dimensions fixes a Lorentzian form up to scale;
+      $\tau = n\,\Delta\tau$ is a modelling input; the co-metric $\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$
+      under [H-L], [H-lift], [T], [INV$^+$]; the coupling datum fixing $A_\tau/A_H$ is missing &
+      \sproved\ /\ \scond\ /\ \sopen \\[3pt]
       Q12 & Yang--Mills from $a_4$ (version 1.4) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
       vertical variation $\delta_\mathcal{A} S_\Pi = 0$ at fixed metric yields
@@ -3354,7 +3361,7 @@ A Structural Roadmap and Paper Inventory}
       EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
       Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2).
       Q9 gives a conditional kinetic-limit criterion under [K] and [R] but does not discharge [H-lift]. The note's
-      co-metric $g^{\mu\nu}=2\eta^{\mu\nu}$ is pending revision: Q5b version 2.2, Q8 version 2.0 and Q10 version
+      co-metric $g^{\mu\nu}=2\eta^{\mu\nu}$ is pending revision: Q5b version 2.2.1, Q8 version 2.0 and Q10 version
       2.0.1 establish no coefficient value, and every co-metric reading requires [H-L], [H-lift] and the
       identification Q7 version~2.0 records as supplied by no source &
       \ssynth \\[3pt]
@@ -3652,20 +3659,22 @@ A Structural Roadmap and Paper Inventory}
   limit under [K] and [R], with no derived [H-lift] or $A_H>0$ coefficient;
   Q10 version~2.0.1 bounds the ratio $A_H/A_Z$ under [U] and three further inputs and derives no value;
   Q8 version~2.0 shows that the commutator supplies no central coefficient and that invariance leaves the
-  scale free; Q5b version~2.2 records [H-lift], the full-rank extension and the coefficient values as open;
+  scale free; Q5b version~2.2.1 records [H-lift], the full-rank extension and the coefficient values as open;
   U1 version~2.0 withdraws its proof of [U] and its $O(q^{-1/2})$ rate; it proves an
   unconditional equidistance obstruction for finite Heisenberg generators and leaves
   [U] open. W1 version~2.0.1 withdraws its claimed proof of~[H-w]: its
   conditional sum bounds a proxy, while the identification with Q5a's
   response-average weights and their positive limits remain open.
-  The effective Lorentzian co-metric $g^{\mu\nu} = \mathrm{diag}(-2, 2, 2, 2) \propto \eta^{\mu\nu}$
-  is claimed by Q11~\cite{Beau2026q11}, whose absolute temporal value $A_\tau=2$ imports Q8's
-  scalar normalisation, which fixes no coefficient, and is itself pending revision.
-  Its proposed metric interpretation additionally requires the
+  Q11~\cite{Beau2026q11} version~2.0 proves that invariance under a spatial $\SU(2)$ action leaves the temporal
+  coefficient $A_\tau$ independent of the spatial scale, so no value of the co-metric
+  $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$ is established and fixing $A_\tau/A_H$ needs a datum coupling
+  the temporal and spatial normalisations.
+  Any metric interpretation additionally requires the
   independent, unestablished spatial-limit hypothesis [H-L] and the identification of the
   measured admissible space with the spin-$1$ module, which Q7 version~2.0 records as supplied by no
   source; [H-F] remains separately open.
-  Q5b version 2.2, Q8 version 2.0 and Q10 version 2.0.1 carry the current statements; the Q6b, Q11, EG-Note and other
+  Q5b version 2.2.1, Q8 version 2.0, Q10 version 2.0.1 and Q11 version 2.0 carry the current statements; the Q6b,
+  EG-Note and other
   consumer entries
   that assert the former coefficient values are pending revision, and the marker is carried on the surfaces that
   assert the affected results.
