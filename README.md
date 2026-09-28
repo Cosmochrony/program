@@ -16,7 +16,8 @@ identification of $\tau$ with BFS depth is a modelling input with a free step, a
 coupling the temporal and spatial normalisations that no source supplies. Q11 closes a derivation route, not the
 possibility $A_\tau = 2$. Q5b 2.2.1 describes Q11 2.0 and Q10 2.0.1 as they stand. The Q11 entry, table row, figure,
 bibliography and dependency graph carry these results; the W1-to-Q11 and U1-to-Q11 edges are removed, a Q7-to-Q11
-edge records the supplied [ACT], and the edges from Q11 to its consumers are marked pending revision.
+edge in the interactive graph records the supplied spatial action, and the edges from Q11 to the consumers of the
+former values are marked pending revision.
 
 Version 2.24 synchronises Q8 2.0 and Q10 2.0, deposited as
 [Zenodo record 23002451](https://zenodo.org/record/23002451) (concept DOI 10.5281/zenodo.19879909) and
