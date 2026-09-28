@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.23 synchronises W1 version 2.0.1. W1 withdraws its claimed proof of a common positive admissibility weight [H-w]. Its retained summation inequality concerns a separate partial-sum proxy under a supplied relative profile bound that U1 never proved. For the specified five-block calibration the proxy target is a sum through depth 22, while the proxy-to-Q5a response-weight identification and both the directional [H-w'] and common [H-w] weight limits remain open. The synthesis, inventory, bibliography, figure and interactive dependency graph are retyped. Q10 and other downstream papers remain pending their own audits.",
+  "notes": "Version 2.24 synchronises Q8 version 2.0, Q10 version 2.0.1 and Q5b version 2.2. Q8 proves that the Heisenberg commutator supplies no central coefficient to the effective co-metric, that a positive constant central coefficient needs a term of homogeneous degree four and a length scale, and that for a supplied fully invariant rank-three target A_H = A_Z = 2 lambda with lambda free. Q10 proves a sharp ratio lemma and a conditional isotropy theorem under named inputs, with the absolute value only from an independent scale; no coefficient value is derived. Q5b records the lifting hypothesis [H-lift], the full-rank extension Q5b-O2 and the coefficient values Q5b-O3 as open. The synthesis, inventory, figure, bibliography and dependency graph carry these results; the circular Q8-to-Q10 edge is removed. Q6b, Q11, the emergent-geometry note and the other consumers of the former values remain marked pending revision.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
