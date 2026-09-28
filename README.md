@@ -11,7 +11,7 @@ consult first to understand how the pieces fit together.
 Version 2.24 synchronises Q8 2.0 and Q10 2.0, deposited as
 [Zenodo record 23002451](https://zenodo.org/record/23002451) (concept DOI 10.5281/zenodo.19879909) and
 [Zenodo record 23002454](https://zenodo.org/record/23002454) (concept DOI 10.5281/zenodo.19880900), together
-with the Q5b 2.2 candidate. Q8 proves that the Heisenberg commutator supplies no central coefficient, that a
+with the Q5b 2.2 and Q10 2.0.1 candidates (Q10 2.0.1 aligns Q10's description of Q5b with Q5b 2.2). Q8 proves that the Heisenberg commutator supplies no central coefficient, that a
 positive constant central coefficient needs a term of homogeneous degree four and a length scale, and that for a
 supplied fully invariant rank-three target $A_H = A_Z = 2\lambda$ with $\lambda$ free. Q10 proves a sharp ratio
 lemma and a conditional isotropy theorem under named inputs, with the absolute value only from an independent
