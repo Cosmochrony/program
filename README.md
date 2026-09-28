@@ -17,7 +17,9 @@ coupling the temporal and spatial normalisations that no source supplies. Q11 cl
 possibility $A_\tau = 2$. Q5b 2.2.1 describes Q11 2.0 and Q10 2.0.1 as they stand. The Q11 entry, table row, figure,
 bibliography and dependency graph carry these results; the W1-to-Q11 and U1-to-Q11 edges are removed, a Q7-to-Q11
 edge in the interactive graph records the supplied spatial action, and the edges from Q11 to the consumers of the
-former values are marked pending revision.
+former values are marked pending revision. Q11 2.0 was deposited as [Zenodo record 23024499](https://zenodo.org/record/23024499) (concept DOI
+10.5281/zenodo.20098387) and Q5b 2.2.1 as [Zenodo record 23024508](https://zenodo.org/record/23024508). Programme
+2.25 was deposited as [Zenodo record 23024512](https://zenodo.org/record/23024512).
 
 Version 2.24 synchronises Q8 2.0 and Q10 2.0, deposited as
 [Zenodo record 23002451](https://zenodo.org/record/23002451) (concept DOI 10.5281/zenodo.19879909) and
