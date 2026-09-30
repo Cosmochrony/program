@@ -35,6 +35,7 @@
       --edge-postulated: #f0883e;
       --edge-interpretive: #bc8cff;
       --edge-withdrawn: #f85149;
+      --edge-obstruction: #39c5cf;
       --node-text: #e6edf3;
       --chip-bg: #21262d;
       --chip-text: #c9d1d9;
@@ -87,6 +88,7 @@
         --edge-postulated: #bc4c00;
         --edge-interpretive: #8250df;
         --edge-withdrawn: #cf222e;
+        --edge-obstruction: #1b7c83;
         --node-text: #1f2328;
         --chip-bg: #eaeef2;
         --chip-text: #1f2328;
@@ -357,6 +359,7 @@
     .edge-swatch.postulated { border-color: var(--edge-postulated); border-top-style: dotted; }
     .edge-swatch.interpretive { border-color: var(--edge-interpretive); border-top-style: dashed; }
     .edge-swatch.withdrawn { border-color: var(--edge-withdrawn); border-top-style: dashed; }
+    .edge-swatch.obstruction { border-color: var(--edge-obstruction); border-top-style: dotted; border-top-width: 3px; }
     .edge-swatch.synthesis { opacity: .35; border-top-style: dotted; }
 
     .edge-legend-note {
@@ -539,6 +542,11 @@
       opacity: .65;
     }
 
+    .edge.et-obstruction {
+      stroke: var(--edge-obstruction);
+      stroke-dasharray: 4 2 1 2;
+    }
+
     .edge.hi {
       stroke: var(--accent) !important;
       stroke-width: 2.2 !important;
@@ -698,6 +706,7 @@
       <div class="edge-legend-row"><span class="edge-swatch postulated"></span>postulated</div>
       <div class="edge-legend-row"><span class="edge-swatch interpretive"></span>interpretive</div>
       <div class="edge-legend-row"><span class="edge-swatch withdrawn"></span>withdrawn</div>
+      <div class="edge-legend-row"><span class="edge-swatch obstruction"></span>obstruction (the source constrains the target; it supplies no input)</div>
       <div class="edge-legend-row"><span class="edge-swatch"></span>dependency (not yet typed as a claim)</div>
       <div class="edge-legend-row"><span class="edge-swatch synthesis"></span>synthesis</div>
       <div class="edge-legend-note">
@@ -744,6 +753,7 @@
     postulated: { label: "postulated", color: "var(--edge-postulated)" },
     interpretive: { label: "interpretive", color: "var(--edge-interpretive)" },
     withdrawn: { label: "withdrawn", color: "var(--edge-withdrawn)" },
+    obstruction: { label: "obstruction", color: "var(--edge-obstruction)" },
     dependency: { label: "dependency", color: "var(--text-faint)" },
     synthesis: { label: "synthesis", color: "var(--text-faint)" }
   }
@@ -1313,15 +1323,15 @@
         "No non-linear completion is asserted. The derivation is Euclidean."
     },
     {
-      id: "Q14", lbl: "Q14", s: "structural", b: "III", key: "Beau2026q14",
+      id: "Q14", lbl: "Q14", s: "conditional", b: "III", key: "Beau2026q14",
       url: ZEN + "20218409",
       tags: ["SM"],
-      title: "Q14 — Fermionic Matter and Chirality from Projective Dirac Admissibility",
-      desc: "Version 2.0 extends the gauge–gravity synthesis to the fermionic sector on a supplied Heisenberg carrier and on the Lorentzian geometry conditional on [H-L]. " +
-        "The Weil module V_ρ yields the spinor bundle and V−A selection relative to that carrier. " +
-        "Hypercharge rigidity and the quark sector require a supplied three-dimensional colour module; " +
-        "selection of the Standard Model pattern also uses minimal integral determinant-line normalisation. " +
-        "The three-generation factor ℂ³_gen is conditional on a supplied rank-three carrier."
+      title: "Q14 — Toward Fermionic Matter from Projective Dirac Admissibility: Chirality and Electroweak Structure Rest on a Lorentzian Spin Solder and a Distinct Weak Factor",
+      desc: "Version 3.0. On a supplied Heisenberg carrier, the finite carrier acts through SL(2, Z/q), so a real metaplectic model and a doublet carrying sl2(C) are supplied model data; on them the tensor algebra is proved. " +
+        "The Lorentz reading rests on [H-Spin], a spin solder supplied by no source; the electroweak reading rests on [H-Weak], a distinct U(2) weak factor required by Schur's lemma and supplied by no source. " +
+        "Under [H-Spin], E_Π is left-admissible on an input orientation branch; the V−A selection is the representation content of [H-Weak]. " +
+        "Under both, anomaly constraints select the hypercharge twists up to sign, rescaling and u_R ↔ d_R. " +
+        "ℂ³_gen is conditional on a supplied rank-three carrier; the generation-splitting model uses a distinct doublet, and its step generator log g is not identified with an ordering derivative."
     },
     {
       id: "CHO", lbl: "CHO", s: "conditional", b: "III", key: "Beau2026cho",
@@ -1735,7 +1745,8 @@
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" },
     { f: "EGNote", t: "Q13", st: "conditional", claim: "only the emergent-base interpretation consumes [H-L]; the supplied-data variational calculation does not" },
     { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
-    { f: "EGNote", t: "Q14", st: "postulated", claim: "spinorial construction consumes the Lorentzian geometry conditional on [H-L]" },
+    { f: "EGNote", t: "Q14", st: "postulated", claim: "Q14's spin solder [H-Spin] needs a four-dimensional Lorentzian co-metric, which the geometric branch supplies only conditionally (rank three under [H-L], [H-lift]; full rank only for a supplied extension); the solder itself is supplied by no source" },
+    { f: "Q11", t: "Q14", st: "obstruction", claim: "Q11 supplies no Lorentzian structure to Q14: it leaves A_τ free under spatial SU(2) and defines the ordering derivative only on functions of τ, so Q14's step generator log g is not identified with an ordering derivative and [H-Spin] remains a hypothesis" },
     { f: "Q14", t: "PRS", sp: 1 }, { f: "Q14", t: "AAR" }, { f: "AAR", t: "PRS" },
     { f: "Q11", t: "Q11OF", st: "interpretive", claim: "Q11OF takes its ordering arrow ∂_τ = log g as prescribed by Q11, whereas Q11 treats τ = n Δτ as a modelling input and defines no generator on the group (pending revision)" }, { f: "Q14", t: "Q11OF" },
     { f: "Q11OF", t: "CHO", sp: 1 }, { f: "Q14", t: "CHO" },

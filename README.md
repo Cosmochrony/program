@@ -8,6 +8,14 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.26 synchronises Q14 3.0. Q14 now states what the fermionic sector rests on: the finite carrier acts
+through $\mathrm{SL}(2,\mathbb{Z}/q\mathbb{Z})$, so a real metaplectic model and a doublet carrying
+$\mathfrak{sl}_2(\mathbb{C})$ are supplied model data, on which the tensor algebra is proved; the Lorentz reading
+rests on a spin solder [H-Spin] and the electroweak reading on a distinct $U(2)$ weak factor [H-Weak], neither
+supplied. The Q14 entry, table row, figure node, bibliography entry and interactive-graph node carry these results;
+a new obstruction edge type records that Q11 supplies no Lorentzian structure to Q14. FM-Note and PYL predate Q14
+3.0 and are flagged as open consumer corrections.
+
 Version 2.25 synchronises Q11 2.0 and Q5b 2.2.1. Q11 proves that invariance under a spatial $\mathrm{SU}(2)$ action
 leaves the temporal coefficient free: with the action trivial on the ordering line and spin one on the spatial sector,
 every invariant form is $\alpha\,k_\tau^2 + \beta\,Q_{\mathrm{sp}}$ with independent scalars and no mixed term, and
