@@ -16,7 +16,8 @@ supplied. The Q14 entry, table row, figure node, bibliography entry and interact
 The Q11-to-Q14 edge is typed conditional: Q11 Corollary 6.1 supplies a Lorentzian signature under its stated
 hypotheses, which is all Q14 uses; spin soldering remains an input. FM-Note, PYL, PRS, the A4-Note, CHO, AOG-Note,
 Q11OF and PYO were written against Q14 2.0 and are flagged as open consumer corrections in the registry text and
-the graph.
+the graph. Q14 3.0 was deposited as [Zenodo record 23071163](https://zenodo.org/record/23071163) (concept DOI
+10.5281/zenodo.20218409). Programme 2.26 was deposited as [Zenodo record 23071204](https://zenodo.org/record/23071204).
 
 Version 2.25 synchronises Q11 2.0 and Q5b 2.2.1. Q11 proves that invariance under a spatial $\mathrm{SU}(2)$ action
 leaves the temporal coefficient free: with the action trivial on the ordering line and spin one on the spatial sector,
