@@ -35,7 +35,6 @@
       --edge-postulated: #f0883e;
       --edge-interpretive: #bc8cff;
       --edge-withdrawn: #f85149;
-      --edge-obstruction: #39c5cf;
       --node-text: #e6edf3;
       --chip-bg: #21262d;
       --chip-text: #c9d1d9;
@@ -88,7 +87,6 @@
         --edge-postulated: #bc4c00;
         --edge-interpretive: #8250df;
         --edge-withdrawn: #cf222e;
-        --edge-obstruction: #1b7c83;
         --node-text: #1f2328;
         --chip-bg: #eaeef2;
         --chip-text: #1f2328;
@@ -359,7 +357,6 @@
     .edge-swatch.postulated { border-color: var(--edge-postulated); border-top-style: dotted; }
     .edge-swatch.interpretive { border-color: var(--edge-interpretive); border-top-style: dashed; }
     .edge-swatch.withdrawn { border-color: var(--edge-withdrawn); border-top-style: dashed; }
-    .edge-swatch.obstruction { border-color: var(--edge-obstruction); border-top-style: dotted; border-top-width: 3px; }
     .edge-swatch.synthesis { opacity: .35; border-top-style: dotted; }
 
     .edge-legend-note {
@@ -542,11 +539,6 @@
       opacity: .65;
     }
 
-    .edge.et-obstruction {
-      stroke: var(--edge-obstruction);
-      stroke-dasharray: 4 2 1 2;
-    }
-
     .edge.hi {
       stroke: var(--accent) !important;
       stroke-width: 2.2 !important;
@@ -706,7 +698,6 @@
       <div class="edge-legend-row"><span class="edge-swatch postulated"></span>postulated</div>
       <div class="edge-legend-row"><span class="edge-swatch interpretive"></span>interpretive</div>
       <div class="edge-legend-row"><span class="edge-swatch withdrawn"></span>withdrawn</div>
-      <div class="edge-legend-row"><span class="edge-swatch obstruction"></span>obstruction (the source constrains the target; it supplies no input)</div>
       <div class="edge-legend-row"><span class="edge-swatch"></span>dependency (not yet typed as a claim)</div>
       <div class="edge-legend-row"><span class="edge-swatch synthesis"></span>synthesis</div>
       <div class="edge-legend-note">
@@ -753,7 +744,6 @@
     postulated: { label: "postulated", color: "var(--edge-postulated)" },
     interpretive: { label: "interpretive", color: "var(--edge-interpretive)" },
     withdrawn: { label: "withdrawn", color: "var(--edge-withdrawn)" },
-    obstruction: { label: "obstruction", color: "var(--edge-obstruction)" },
     dependency: { label: "dependency", color: "var(--text-faint)" },
     synthesis: { label: "synthesis", color: "var(--text-faint)" }
   }
@@ -1330,8 +1320,8 @@
       desc: "Version 3.0. On a supplied Heisenberg carrier, the finite carrier acts through SL(2, Z/q), so a real metaplectic model and a doublet carrying sl2(C) are supplied model data; on them the tensor algebra is proved. " +
         "The Lorentz reading rests on [H-Spin], a spin solder supplied by no source; the electroweak reading rests on [H-Weak], a distinct U(2) weak factor required by Schur's lemma and supplied by no source. " +
         "Under [H-Spin], E_Π is left-admissible on an input orientation branch; the V−A selection is the representation content of [H-Weak]. " +
-        "Under both, anomaly constraints select the hypercharge twists up to sign, rescaling and u_R ↔ d_R. " +
-        "ℂ³_gen is conditional on a supplied rank-three carrier; the generation-splitting model uses a distinct doublet, and its step generator log g is not identified with an ordering derivative."
+        "Under both, with a supplied colour module and minimal L_Y normalisation (no ν_R, Y_e ≠ 0), anomaly constraints select the hypercharge twists up to sign, rescaling and u_R ↔ d_R. " +
+        "ℂ³_gen is conditional on a supplied rank-three selection rule; the generation-splitting model uses a distinct doublet, and its step generator log g is not identified with an ordering derivative."
     },
     {
       id: "CHO", lbl: "CHO", s: "conditional", b: "III", key: "Beau2026cho",
@@ -1346,14 +1336,14 @@
         "and N_A=θ_max≠0, q-invariant on q∈{61,101,151}. [H-orient] closed in the inherited lift; the residual " +
         "spin-Galois (√5 / ADE-spin) phase orthogonal to ζ_q is discharged by AOG's chiral-lift corollary " +
         "(the Lorentzian lift induces no √5 action), so [H-orient] holds and N_A≠0 unconditionally within the " +
-        "present spin stratum. CHO itself does not derive u≠0, which requires the Schur transport (PRS)."
+        "present spin stratum. CHO itself does not derive u≠0, which requires the Schur transport (PRS)." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "PRS", lbl: "PRS", s: "structural", b: "III", key: "Beau2026prs",
       url: BASE + "fermionic-matter/projective-residue-schur",
       tags: ["SM", "mass", "grav"],
       title: "Projective Residue as a Schur Complement",
-      desc: "Expresses E_Π=−Π_S D(1−P)DΠ_S* = −M†M as the Schur complement of eliminated spinorial directions and localises the generation split u in the transported chiral equivariance defect. A1–A3 force u=0; non-zero u requires A4; the Lorentzian Schur-transverse branch is selected in 2.1 (exact metaplectic opening, timelike Clifford symbol off the zero-mode locus), so with the electric genus of A4-Note u≠0; open: explicit 1−P(s), |u|, Yukawa sector."
+      desc: "Expresses E_Π=−Π_S D(1−P)DΠ_S* = −M†M as the Schur complement of eliminated spinorial directions and localises the generation split u in the transported chiral equivariance defect. A1–A3 force u=0; non-zero u requires A4; the Lorentzian Schur-transverse branch is selected in 2.1 (exact metaplectic opening, timelike Clifford symbol off the zero-mode locus), so with the electric genus of A4-Note u≠0; open: explicit 1−P(s), |u|, Yukawa sector." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "AAR", lbl: "AAR", s: "structural", b: "III", key: "Beau2026aar",
@@ -1367,14 +1357,14 @@
       url: BASE + "fermionic-matter/q11-oriented-frontier",
       tags: ["SM", "mass", "time"],
       title: "Oriented Frontier Observable",
-      desc: "Replaces the identically vanishing symmetric-shell observable by a directed outgoing-frontier transfer whose central increment is the Heisenberg cocycle a(g)s_b. Supplies the bias-controlled existence test for the J₃-odd cascade signal; it introduces no amplitude normalisation."
+      desc: "Replaces the identically vanishing symmetric-shell observable by a directed outgoing-frontier transfer whose central increment is the Heisenberg cocycle a(g)s_b. Supplies the bias-controlled existence test for the J₃-odd cascade signal; it introduces no amplitude normalisation." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "A4Note", lbl: "A4-Note", s: "structural", b: "III", key: "Beau2026bim",
       url: BASE + "fermionic-matter/a4-note",
       tags: ["SM", "mass", "BI", "grav"],
       title: "Born–Infeld Saturation Margin of the Chiral Modulus",
-      desc: "Defines the Lorentzian BI saturation functional along the J_Π-odd generation modulus. Antisymmetry forces a chiral two-form; the electric Lorentzian genus selects u≠0. Version 2.1: the saturation contact is the unique chart-independent A4 lock, s*=β/|E_P| in the affine gauge; the contact factorisation is conditional on a localisation hypothesis; |u| remains dictionary-bound."
+      desc: "Defines the Lorentzian BI saturation functional along the J_Π-odd generation modulus. Antisymmetry forces a chiral two-form; the electric Lorentzian genus selects u≠0. Version 2.1: the saturation contact is the unique chart-independent A4 lock, s*=β/|E_P| in the affine gauge; the contact factorisation is conditional on a localisation hypothesis; |u| remains dictionary-bound." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "EBJ", lbl: "EBJ", s: "proved", b: "III", key: "Beau2026ebj",
@@ -1388,14 +1378,14 @@
       url: BASE + "fermionic-matter/projected-yukawa-line",
       tags: ["SM", "mass"],
       title: "Projected Yukawa Line and Generation-Level Assignment",
-      desc: "Identifies L_Y=∧²(S_Π) as the functorial determinant-line carrier of the abelian Yukawa weight. The residue levels diag(1,½+u,½−u) order the three generations, but the Yukawa operator, its norm, the sign of u, and mixing remain open."
+      desc: "Identifies L_Y=∧²(S_Π) as the functorial determinant-line carrier of the abelian Yukawa weight. The residue levels diag(1,½+u,½−u) order the three generations, but the Yukawa operator, its norm, the sign of u, and mixing remain open." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "PYO", lbl: "PYO", s: "structural", b: "III", key: "Beau2026pyo",
       url: BASE + "fermionic-matter/projected-yukawa-operator",
       tags: ["SM", "mass"],
       title: "Projected Yukawa Operator and Chiral Polar Factor",
-      desc: "The residue fixes H_Π=Y_Π†Y_Π and its three squared levels, not Y_Π. Polar decomposition leaves a rephasing class [U_Π] with mixing angles and a CP phase; the derived real cascade gives [U_Π]=[I], hence no mixing at this stratum."
+      desc: "The residue fixes H_Π=Y_Π†Y_Π and its three squared levels, not Y_Π. Polar decomposition leaves a rephasing class [U_Π] with mixing angles and a CP phase; the derived real cascade gives [U_Π]=[I], hence no mixing at this stratum." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "KUD", lbl: "KUD", s: "proved", b: "III", key: "Beau2026kud",
@@ -1430,7 +1420,7 @@
       url: BASE + "fermionic-matter/arithmetic-orthogonality-adegate",
       tags: ["SM", "mass", "QM"],
       title: "Spin-Stratum Type-Rigidity and the ADE Gate",
-      desc: "Separates BI parity on Q(ζ_q) from the √5 Galois action selecting the ADE order-five locus. The gate is a no-go in the present carrier-preserving construction; the same rigidity closes the residual chiral-lift obstruction. R=3/2 is forced only after order-five selection."
+      desc: "Separates BI parity on Q(ζ_q) from the √5 Galois action selecting the ADE order-five locus. The gate is a no-go in the present carrier-preserving construction; the same rigidity closes the residual chiral-lift obstruction. R=3/2 is forced only after order-five selection." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "SRN", lbl: "SRN", s: "proved", b: "III", key: "Beau2026srn",
@@ -1444,7 +1434,7 @@
       url: BASE + "fermionic-matter",
       tags: ["SM", "mass", "QM", "grav"],
       title: "Fermionic Matter Sub-Programme (Presentation Note 6)",
-      desc: "Version 2.1 synthesis of Q14 and its companion notes. Spinor bundle and V−A selection hold relative to a supplied Heisenberg carrier and the Lorentzian geometry conditional on [H-L]; hypercharge rigidity carries a supplied colour module, and the generation factor a supplied rank-three carrier. Masses, absolute Yukawa scale, and mixing remain open."
+      desc: "Version 2.1 synthesis of Q14 and its companion notes. Spinor bundle and V−A selection hold relative to a supplied Heisenberg carrier and the Lorentzian geometry conditional on [H-L]; hypercharge rigidity carries a supplied colour module, and the generation factor a supplied rank-three carrier. Masses, absolute Yukawa scale, and mixing remain open." + " Written against Q14 2.0; alignment with Q14 3.0 ([H-Spin], [H-Weak]) is open."
     },
     {
       id: "Sp2", lbl: "Spec2", s: "structural", b: "III", key: "Beau2026a",
@@ -1746,7 +1736,7 @@
     { f: "EGNote", t: "Q13", st: "conditional", claim: "only the emergent-base interpretation consumes [H-L]; the supplied-data variational calculation does not" },
     { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "EGNote", t: "Q14", st: "postulated", claim: "Q14's spin solder [H-Spin] needs a four-dimensional Lorentzian co-metric, which the geometric branch supplies only conditionally (rank three under [H-L], [H-lift]; full rank only for a supplied extension); the solder itself is supplied by no source" },
-    { f: "Q11", t: "Q14", st: "obstruction", claim: "Q11 supplies no Lorentzian structure to Q14: it leaves A_τ free under spatial SU(2) and defines the ordering derivative only on functions of τ, so Q14's step generator log g is not identified with an ordering derivative and [H-Spin] remains a hypothesis" },
+    { f: "Q11", t: "Q14", st: "conditional", claim: "Conditional Lorentzian signature; spin soldering remains an input. Q11 Corollary 6.1 supplies Lorentzian signature under its stated hypotheses. Q14 uses only this signature. Q11 supplies neither coefficient values, Lorentzian spin soldering, nor an order generator; [H-Spin] remains an additional hypothesis, and no identification of log g with ∂τ follows." },
     { f: "Q14", t: "PRS", sp: 1 }, { f: "Q14", t: "AAR" }, { f: "AAR", t: "PRS" },
     { f: "Q11", t: "Q11OF", st: "interpretive", claim: "Q11OF takes its ordering arrow ∂_τ = log g as prescribed by Q11, whereas Q11 treats τ = n Δτ as a modelling input and defines no generator on the group (pending revision)" }, { f: "Q14", t: "Q11OF" },
     { f: "Q11OF", t: "CHO", sp: 1 }, { f: "Q14", t: "CHO" },

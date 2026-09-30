@@ -12,9 +12,11 @@ Version 2.26 synchronises Q14 3.0. Q14 now states what the fermionic sector rest
 through $\mathrm{SL}(2,\mathbb{Z}/q\mathbb{Z})$, so a real metaplectic model and a doublet carrying
 $\mathfrak{sl}_2(\mathbb{C})$ are supplied model data, on which the tensor algebra is proved; the Lorentz reading
 rests on a spin solder [H-Spin] and the electroweak reading on a distinct $U(2)$ weak factor [H-Weak], neither
-supplied. The Q14 entry, table row, figure node, bibliography entry and interactive-graph node carry these results;
-a new obstruction edge type records that Q11 supplies no Lorentzian structure to Q14. FM-Note and PYL predate Q14
-3.0 and are flagged as open consumer corrections.
+supplied. The Q14 entry, table row, figure node, bibliography entry and interactive-graph node carry these results.
+The Q11-to-Q14 edge is typed conditional: Q11 Corollary 6.1 supplies a Lorentzian signature under its stated
+hypotheses, which is all Q14 uses; spin soldering remains an input. FM-Note, PYL, PRS, the A4-Note, CHO, AOG-Note,
+Q11OF and PYO were written against Q14 2.0 and are flagged as open consumer corrections in the registry text and
+the graph.
 
 Version 2.25 synchronises Q11 2.0 and Q5b 2.2.1. Q11 proves that invariance under a spatial $\mathrm{SU}(2)$ action
 leaves the temporal coefficient free: with the action trivial on the ordering line and spin one on the spatial sector,

@@ -1464,10 +1464,11 @@ A Structural Roadmap and Paper Inventory}
     The chiral selection of the weak interaction ($V{-}A$) is the representation content of [H-Weak] and
     is not derived from left-admissibility.
     Under both hypotheses, the gauge-curvature $\gamma_5$-weighted $a_4$ terms impose anomaly constraints
-    that select the hypercharge twists up to sign, rescaling and the exchange of $u_R$ and $d_R$
-    (the classification of Geng--Marshak and Minahan--Ramond--Warner is used, not proved); the
+    that select the hypercharge twists, given a supplied three-dimensional colour module, the minimal integral normalisation of $L_Y$, the
+    Standard Model content without $\nu_R$ and $Y_e \neq 0$, up to sign, rescaling and the exchange of $u_R$
+    and $d_R$ (the classification of Geng--Marshak and Minahan--Ramond--Warner is used, not proved); the
     $E_\Pi$-dependent traces are not analysed (\scond).
-    (iii)~The supplied saturation rule $\sigma_c(n_3) = 3$ (a selection rule, not a derived constant)
+    The supplied saturation rule $\sigma_c(n_3) = 3$ (a selection rule, not a derived constant)
     admits a spinorial multiplicity reading, yielding a gauge-singlet three-generation factor
     $\mathbb{C}^3_{\mathrm{gen}} \subset \ker(\operatorname{ad}_{\SU(2)} \oplus Y)$ (\scond); no source
     supplies a geometric reading of that rule as three spatial directions.
@@ -1483,16 +1484,25 @@ A Structural Roadmap and Paper Inventory}
     of $\mathfrak{sl}_2(\mathbb{C})$ connects the outer weights; a complex metaplectic phase is therefore
     ruled out as a mixing source within this model.
     The identification of $\mathcal{G}_g$ with an emergent ordering derivative is not supplied: Q11
-    defines the ordering derivative only on functions of $\tau$ (Q11 Modelling identification~3.1), and
-    the edge Q11$\to$Q14 carries this obstruction, not a Lorentzian structure.
+    defines the ordering derivative only on functions of $\tau$ (Q11 Modelling identification~3.1).
+    The edge Q11$\to$Q14 is conditional: Q11 Corollary~6.1 supplies a Lorentzian signature under its
+    stated hypotheses, and Q14 uses only this signature; Q11 supplies neither coefficient values, nor a
+    Lorentzian spin soldering, nor an order generator, so [H-Spin] remains an additional hypothesis and no
+    identification of $\log g$ with $\partial_\tau$ follows.
     The reading of the \S6 operators as restrictions of $E_\Pi^2$ is not supplied; the value
     $\varepsilon = 1/10$ is a matching value, and the amplitude is deferred to the cascade normalisation.
 
     Q14 is the principal constituent of the \emph{fermionic matter sub-programme}, whose synthesis
     paper is the presentation note \textbf{FM-Note}~\cite{Beau2026fmnote} (Presentation Note~6,
-    working-paper version~2.1). FM-Note~2.1 predates Q14~3.0, and its alignment with [H-Spin] and
-    [H-Weak] is an open consumer correction; as deposited, FM-Note organises Theorems~A--C into the conditional chain
-    $\text{supplied Heisenberg carrier}+[\mathrm{H\! -\! L}] \Rightarrow F_n \simeq V_\rho
+    working-paper version~2.1). FM-Note~2.1 describes Q14~2.0 and rests on a closed Lorentzian geometry of
+    Q5b--Q11 (Note~2) that neither Q11~2.0 nor Q14~3.0 provides; its alignment with [H-Spin] and [H-Weak] is
+    an open consumer correction.
+    PRS, the A4-Note, CHO, AOG-Note, Q11OF and PYO, described below, were likewise written against
+    Q14~2.0: their ``present Lorentzian spin stratum'' is conditional on [H-Spin], PYO's complex-phase route
+    to mixing is excluded within Q14~3.0's step model, and Q11OF's $[\gamma_5, R_b] = 0$ needs a group-level
+    map that Q14~3.0 records as unsupplied.
+    As deposited, FM-Note organises Theorems~A--C into the conditional chain
+    $\text{supplied Heisenberg carrier}+\text{closed Lorentzian geometry (Note~2)} \Rightarrow F_n \simeq V_\rho
     \Rightarrow \mathrm{Mp}(2,\mathbb{R}) \Rightarrow
     \mathrm{mp}(2,\mathbb{R})_\mathbb{C} \simeq \mathfrak{sl}_2(\mathbb{C}) \rightsquigarrow
     \Spin(3,1) \simeq \SL(2,\mathbb{C}) \Rightarrow \mathcal{S}_\Pi$,
@@ -1651,7 +1661,8 @@ A Structural Roadmap and Paper Inventory}
     $\partial_s\Delta_\chi(P)|_0$ remain open, $|u|$ dictionary-bound.
 
     \textbf{PYL}~\cite{Beau2026pyl}: Projected Yukawa line and generation-level assignment (\sstruct).
-    Companion note opening the mass-sector frontier and closing only its first stage.
+    Companion note opening the mass-sector frontier and closing only its first stage; it is written against
+    Q14~2.0, and its alignment with [H-Spin] and [H-Weak] is open.
     The determinant line $L_Y = \wedge^2(\mathcal{S}_\Pi)$ is the unique functorial line of the rank-two admissible
     spinor carrier, invisible to the $\SU(2)_L$ adjoint sector $\mathrm{Sym}^2(\mathcal{S}_\Pi)$ (its induced action is
     $\det = 1$) and the carrier of the abelian $\mathrm{U}(1)_Y$ weight, so the projected Yukawa sector is the
@@ -2443,8 +2454,8 @@ A Structural Roadmap and Paper Inventory}
           \draw[gather] (Q13) to[out=0,in=200] (GGSNote);
 
           \node[C] (Q14) at (3*\dx,-13*\dy) {Q14};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q14.east)
-            {rests on [H-Spin], [H-Weak]};
+          \node[font=\tiny\sffamily,text=black!55,left=1pt,align=right,inner sep=0pt] at (Q14.west)
+            {rests on\\{}{[H-Spin],}\\{}{[H-Weak]}};
           \draw[arr] (Q13) to[out=-90,in=90]  (Q14);
           \draw[arr] (Grav) to[out=-90,in=160] (Q14);
           \draw[arr] (BI)   to[out=-90,in=175] (Q14);
@@ -2506,8 +2517,8 @@ A Structural Roadmap and Paper Inventory}
         In both figures the grey side annotations and the dashed result boxes carry no status colour: where their
         text states a status it is that of the component named, not the primary label of the node.
         The interactive graph's conditional-reading and postulated
-        edges (EG-Note to Q12, Q13 and Q14) and its obstruction edge Q11$\to$Q14 (Q11 supplies no
-        Lorentzian structure to Q14) are not drawn in this figure.
+        edges (EG-Note to Q12, Q13 and Q14) and its conditional edge Q11$\to$Q14 (Lorentzian signature
+        only; spin soldering remains an input) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
         The faint converging edges gather the constituent papers of each thematic sub-programme into
@@ -3062,9 +3073,10 @@ A Structural Roadmap and Paper Inventory}
       solder, not supplied) and the electroweak reading on a distinct $U(2)$ weak factor [H-Weak] (not
       supplied); under [H-Spin], $E_\Pi$ is left-admissible on an input orientation branch; $V{-}A$
       is the representation content of [H-Weak]; anomaly constraints select the hypercharge twists up to
-      sign, rescaling and $u_R \leftrightarrow d_R$; a supplied rank-three carrier yields
+      sign, rescaling and $u_R \leftrightarrow d_R$, given a supplied colour module and minimal $L_Y$
+      normalisation; a supplied rank-three selection rule yields
       $\mathbb{C}^3_{\mathrm{gen}}$; colour, masses, Yukawa couplings and CKM/PMNS mixing remain open &
-      \scond{} on [H-Spin], [H-Weak] and the supplied colour module\ /\ \sstruct{} (algebra on supplied model
+      \scond{} on [H-Spin], [H-Weak] and the supplied colour module\ /\ \sproved{} (algebra on supplied model
       data)\ /\ \sopen \\[3pt]
       PRS & Schur form of $E_\Pi$ + localisation of $u$ & \cite{Beau2026prs} &
       $E_\Pi = -\Pi_S\,D\,(1-P)\,D\,\Pi_S^* = -M^\dagger M$ Schur complement of eliminated sector;
@@ -3145,7 +3157,8 @@ A Structural Roadmap and Paper Inventory}
       of $\partial_s\Delta_\chi(P)|_0$, and generation mixing at even orders open, $|u|$ dictionary-bound &
       \sproved\ /\ \sopen \\[3pt]
       PYL & Projected Yukawa line + generation-level assignment & \cite{Beau2026pyl} &
-      Opens the mass-sector frontier, closing its first stage: the determinant line
+      Written against Q14~2.0 (alignment with [H-Spin], [H-Weak] open). Opens the mass-sector frontier,
+      closing its first stage: the determinant line
       $L_Y = \wedge^2(\mathcal{S}_\Pi)$ is the unique functorial line of the rank-two carrier, invisible to the
       $\SU(2)_L$ adjoint $\mathrm{Sym}^2(\mathcal{S}_\Pi)$ (action $\det = 1$) and carrier of the abelian
       $\mathrm{U}(1)_Y$ weight, so the projected Yukawa sector is the determinant-line sector of the spinor functorial
@@ -3398,9 +3411,9 @@ A Structural Roadmap and Paper Inventory}
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
       FM\-Note & The fermionic matter sub-programme (Note~6) & \cite{Beau2026fmnote} &
-      Version 2.1 (predates Q14~3.0; alignment with [H-Spin] and [H-Weak] open) organises
+      Version 2.1 (describes Q14~2.0; alignment with [H-Spin] and [H-Weak] open) organises
       Theorems~A--C of Q14, conditional on a supplied Heisenberg carrier and
-      [H-L], into the chain to the spinorial face of the Weil module:
+      a closed Lorentzian geometry of Q5b--Q11 (Note~2) that Q11~2.0 does not provide, into the chain to the spinorial face of the Weil module:
       $\Sym^2(\mathcal{S}_\Pi) \simeq \mathrm{ad}_\mathbb{C}(P_\Pi)$ and
       $\wedge^2(\mathcal{S}_\Pi) = L_Y$ reproducing $\SU(2)_L \times \mathrm{U}(1)_Y$, $V{-}A$ chirality
       and hypercharge constraints; rigidity additionally uses a supplied colour module and the
@@ -3492,10 +3505,12 @@ A Structural Roadmap and Paper Inventory}
     Q14~\cite{Beau2026q14} separates what the $V{-}A$ coupling rests on.
     Under the spin solder [H-Spin], the projected Dirac endomorphism $E_\Pi$ is left-admissible on an input
     orientation branch (Lorentz chirality); the chiral selection of the weak interaction is the
-    representation content of the distinct weak factor [H-Weak] and is not derived from it.
+    representation content of the distinct weak factor [H-Weak] and is not derived from left-admissibility.
     Under both hypotheses, anomaly-cancellation constraints on the gauge-curvature $\gamma_5$-weighted $a_4$
-    terms select the hypercharge twists up to sign, rescaling and $u_R \leftrightarrow d_R$.
-    The three-generation multiplicity follows from the supplied saturation rule $\sigma_c(n_3) = 3$.
+    terms select the hypercharge twists, given a supplied three-dimensional colour module, the minimal integral normalisation of $L_Y$, the
+    Standard Model content without $\nu_R$ and $Y_e \neq 0$, up to sign, rescaling and $u_R \leftrightarrow d_R$.
+    The three-generation multiplicity follows, conditionally, from the supplied saturation rule
+    $\sigma_c(n_3) = 3$.
     A qualitative mechanism for the inter-generation splitting is modelled (Q14~\S6, on a distinct supplied
     generation doublet with $\mathcal{A}_3 \otimes \mathbb{C} \cong \mathrm{Sym}^2(V_{\mathrm{gen}})$:
     static obstruction, oriented $J_\Pi$-odd lift, exact $J_3$ component of the step generator).
@@ -3708,11 +3723,13 @@ A Structural Roadmap and Paper Inventory}
   independent fermionic weak doublet is a distinct object, excluded at the operator and history
   strata~\cite{Beau2026nsr}); under [H-Spin], $E_\Pi$ is left-admissible on an input orientation branch,
   while the chiral selection of the weak interaction is the representation content of [H-Weak]; under both,
-  anomaly constraints select the hypercharge twists up to sign, rescaling and $u_R \leftrightarrow d_R$;
+  anomaly constraints select the hypercharge twists, with a supplied colour module and the minimal
+  normalisation of $L_Y$, up to sign, rescaling and $u_R \leftrightarrow d_R$;
   and the supplied saturation rule $\sigma_c(n_3) = 3$ yields a gauge-singlet three-generation factor
   $\mathbb{C}^3_{\mathrm{gen}}$.
   A qualitative mechanism for the inter-generation splitting is modelled in Q14~\S6 on a distinct supplied
-  generation doublet (a static $J_\Pi$-protected degeneracy lifted by the step generator $\log g$), its value
+  generation doublet (a static $J_\Pi$-protected degeneracy which the $J_3$ component of the step generator
+  $\log g$ can lift), its value
   being dictionary-bound.
   Together, Q12--Q14 organise a conditional common spectral framework for supplied geometric,
   gauge, colour, and carrier data. They do not derive the complete Standard Model field content
