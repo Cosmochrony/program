@@ -8,14 +8,33 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.27 synchronises FM-Note 3.0, PYL 3.0 and PYO 2.0, which type the fermionic and mass sectors on the Q14 3.0
+hypotheses. [H-Spin] (a spin solder) and [H-Weak] (a distinct $U(2)$ weak factor $E_{\mathrm{weak}}$) are separate
+hypotheses supplied by no source; the $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra is proved on supplied model data
+only; the hypercharge line $L_Y = \wedge^2(E_{\mathrm{weak}})$ rests on [H-Weak], the exterior square of the soldered
+spinor doublet being trivial under [H-Spin]; Lorentz chirality (left-admissibility, an input branch) is distinct from
+weak $V{-}A$; and $R_b = W(-I)$ commutes with $\gamma_5$ only under an unsupplied group-level Weil-to-spin map. PYL
+records a conditional weak determinant line and the ordering of the three levels of the model operator
+$\mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, read as $E_\Pi^2|_{\mathbb{C}^3_{\mathrm{gen}}}$ only under the named
+hypothesis [H-Res]; no mass value is claimed. PYO states that $E_\Pi^2$ fixes the squared Yukawa levels, not the
+morphism, under [H-Res], [H-Sq], [H-Fac] and [H-Grad]; the projection of the $\mathfrak{sl}_2$ lift onto its
+$J_\Pi$-odd anti-Hermitian part vanishes identically by definition and is not the polar generator, so the physical polar
+class is open and the choice of the $J_\Pi$-odd part is a modelling choice that no source justifies. The registry
+entries, table rows, dependency figure, bibliography entries and interactive-graph nodes carry these statements; the
+edges into PYL and PYO are typed conditional and the PYO-to-NPI edge interpretive, NPI's reference to a trivial polar
+class being an open consumer correction. FM-Note 3.0 is [Zenodo record 23111382](https://zenodo.org/record/23111382)
+(concept DOI 10.5281/zenodo.20562665), PYL 3.0 [Zenodo record 23111395](https://zenodo.org/record/23111395) (concept
+DOI 10.5281/zenodo.20767265) and PYO 2.0 [Zenodo record 23102550](https://zenodo.org/record/23102550) (concept DOI
+10.5281/zenodo.20767498).
+
 Version 2.26 synchronises Q14 3.0. Q14 now states what the fermionic sector rests on: the finite carrier acts
 through $\mathrm{SL}(2,\mathbb{Z}/q\mathbb{Z})$, so a real metaplectic model and a doublet carrying
 $\mathfrak{sl}_2(\mathbb{C})$ are supplied model data, on which the tensor algebra is proved; the Lorentz reading
 rests on a spin solder [H-Spin] and the electroweak reading on a distinct $U(2)$ weak factor [H-Weak], neither
 supplied. The Q14 entry, table row, figure node, bibliography entry and interactive-graph node carry these results.
 The Q11-to-Q14 edge is typed conditional: Q11 Corollary 6.1 supplies a Lorentzian signature under its stated
-hypotheses, which is all Q14 uses; spin soldering remains an input. FM-Note, PYL, PRS, the A4-Note, CHO, AOG-Note,
-Q11OF and PYO were written against Q14 2.0 and are flagged as open consumer corrections in the registry text and
+hypotheses, which is all Q14 uses; spin soldering remains an input. PRS, the A4-Note, CHO, AOG-Note and
+Q11OF were written against Q14 2.0 and are flagged as open consumer corrections in the registry text and
 the graph. Q14 3.0 was deposited as [Zenodo record 23071163](https://zenodo.org/record/23071163) (concept DOI
 10.5281/zenodo.20218409). Programme 2.26 was deposited as [Zenodo record 23071204](https://zenodo.org/record/23071204).
 
