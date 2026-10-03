@@ -16,9 +16,11 @@ spinor doublet being trivial under [H-Spin]; Lorentz chirality (left-admissibili
 weak $V{-}A$; and $R_b = W(-I)$ commutes with $\gamma_5$ only under an unsupplied group-level Weil-to-spin map. PYL
 records a conditional weak determinant line and the ordering of the three levels of the model operator
 $\mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, read as $E_\Pi^2|_{\mathbb{C}^3_{\mathrm{gen}}}$ only under the named
-hypothesis [H-Res]; no mass value is claimed. PYO states that $E_\Pi^2$ fixes the squared Yukawa levels, not the
+hypothesis [H-Res]; the level-to-generation map is not established and no mass value is claimed.
+PYO states that $E_\Pi^2$ fixes the squared Yukawa levels, not the
 morphism, under [H-Res], [H-Sq], [H-Fac] and [H-Grad]; the projection of the $\mathfrak{sl}_2$ lift onto its
-$J_\Pi$-odd anti-Hermitian part vanishes, by representation theory, for the projection as defined and is not the polar generator, so the physical polar
+$J_\Pi$-odd anti-Hermitian part vanishes, by representation theory, for the projection as defined
+and is not the polar generator, so the physical polar
 class is open and the choice of the $J_\Pi$-odd part is a modelling choice that no source justifies. The registry
 entries, table rows, dependency figure, bibliography entries and interactive-graph nodes carry these statements; the
 edges into PYL and PYO are typed conditional and the PYO-to-NPI edge interpretive, NPI's reference to a trivial polar
