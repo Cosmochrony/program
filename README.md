@@ -28,6 +28,7 @@ class being an open consumer correction. FM-Note 3.0 is [Zenodo record 23111382]
 (concept DOI 10.5281/zenodo.20562665), PYL 3.0 [Zenodo record 23111395](https://zenodo.org/record/23111395) (concept
 DOI 10.5281/zenodo.20767265) and PYO 2.0 [Zenodo record 23102550](https://zenodo.org/record/23102550) (concept DOI
 10.5281/zenodo.20767498).
+Programme 2.27 was deposited as [Zenodo record 23118577](https://zenodo.org/record/23118577).
 
 Version 2.26 synchronises Q14 3.0. Q14 now states what the fermionic sector rests on: the finite carrier acts
 through $\mathrm{SL}(2,\mathbb{Z}/q\mathbb{Z})$, so a real metaplectic model and a doublet carrying
