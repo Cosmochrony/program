@@ -713,6 +713,7 @@
   </div>
 </div>
 
+<!-- TODO-RELEASE: node descriptions of PRS, A4Note, Q14, FMNote, AAR, Q11OF, CHO, AOG, EBJ, PYL, PYO assert candidate versions (PRS/A4 3.0, Q14 3.1, FM-Note 3.1, PYO 2.1, PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG 1.8, EBJ 2.1); verify against the deposits. -->
 <script>
   /* ════════════════════════════════════════
      DATA
@@ -1341,8 +1342,8 @@
       url: BASE + "fermionic-matter/projective-residue-schur",
       tags: ["SM", "mass", "grav"],
       title: "Projective Residue as a Schur Complement",
-      desc: "Shows, under a contraction hypothesis and a symbol condition, that the compression remainder of the projected Dirac square is the Schur complement " +
-        "−N†N ≤ 0 with N=(1−P)^½ D Π_S*; it is the projective endomorphism E_Π of Q14 only when Π_S D² Π_S* is the Lichnerowicz operator, an identity that no " +
+      desc: "Shows, under a contraction hypothesis, that the compression remainder of the projected Dirac square is the Schur complement " +
+        "−N†N ≤ 0 with N=(1−P)^½ D Π_S* (zero-order only under a symbol condition); it is the projective endomorphism E_Π of Q14 only when Π_S D² Π_S* is the Lichnerowicz operator, an identity that no " +
         "source states. Under [H-Gen] a J_Π-commuting locking operator gives u=0, so a non-zero split needs a locking operator that breaks J_Π-equivariance, " +
         "which on an interpretive reading of A1–A4 only A4 could supply; no mechanism for it is derived. The Schur-null and Schur-transverse loci of the " +
         "locking defect form a dichotomy proved under explicit hypotheses, and which locus holds is open: the exact sl₂ opening α(x,y)=xy r/sinh r, produced by " +
@@ -1435,7 +1436,7 @@
       url: BASE + "fermionic-matter/arithmetic-orthogonality-adegate",
       tags: ["SM", "mass", "QM"],
       title: "Spin-Stratum Type-Rigidity and the ADE Gate",
-      desc: "Separates BI parity on Q(ζ_q) from the √5 Galois action selecting the ADE order-five locus. The gate is a no-go in the present carrier-preserving " +
+      desc: "Caveat: the chiral-lift half (and the R_b clause of the gate no-go) holds only under the hypothesis [H-WS] (R_b acts as the scalar −1 on the chiral carrier), supplied by no source. Separates BI parity on Q(ζ_q) from the √5 Galois action selecting the ADE order-five locus. The gate is a no-go in the present carrier-preserving " +
         "construction for every operation of the spin stratum except the central reflection R_b, for which it holds under [H-WS]; under [H-WS] the same " +
         "rigidity excludes the residual chiral-lift obstruction. R=3/2 is forced only after order-five selection." + " Written against Q14 2.0; the chiral-lift step rests on the explicit hypothesis [H-WS]; the alignment of the other statements with Q14 3.1 ([H-Spin], [H-Weak]) is open."
     },
@@ -1755,7 +1756,7 @@
     { f: "EGNote", t: "Q14", st: "postulated", claim: "Q14's spin solder [H-Spin] needs a four-dimensional Lorentzian co-metric, which the geometric branch supplies only conditionally (rank three under [H-L], [H-lift]; full rank only for a supplied extension); the solder itself is supplied by no source" },
     { f: "Q11", t: "Q14", st: "conditional", claim: "Conditional Lorentzian signature; spin soldering remains an input. Q11 Corollary 6.1 supplies Lorentzian signature under its stated hypotheses. Q14 uses only this signature. Q11 supplies neither coefficient values, Lorentzian spin soldering, nor an order generator; [H-Spin] remains an additional hypothesis, and no identification of log g with ∂τ follows." },
     { f: "Q14", t: "PRS", sp: 1 }, { f: "Q14", t: "AAR" }, { f: "AAR", t: "PRS" },
-    { f: "Q11", t: "Q11OF", st: "interpretive", claim: "Q11OF takes its ordering arrow ∂_τ = log g as prescribed by Q11, whereas Q11 treats τ = n Δτ as a modelling input and defines no generator on the group (pending revision)" }, { f: "Q14", t: "Q11OF" },
+    { f: "Q11", t: "Q11OF", st: "interpretive", claim: "Q11OF 1.1 makes no identification of its arrow with an ordering derivative ∂_τ: the arrow is that of the directed Cayley graph towards increasing BFS depth. Q11 treats τ = n Δτ as a modelling input and defines no generator on the group; the identification of the generator log g with ∂_τ is a separate hypothesis that no source supplies (Q14)" }, { f: "Q14", t: "Q11OF" },
     { f: "Q11OF", t: "CHO", sp: 1 }, { f: "Q14", t: "CHO" },
     {
       f: "PRS",

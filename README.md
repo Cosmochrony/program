@@ -9,9 +9,9 @@ documents the dependency graph between them, and tracks their status. It is the 
 consult first to understand how the pieces fit together.
 
 Version 2.28 synchronises the PRS 3.0 / A4-Note 3.0 source contract and its consumers: Q14 3.1, EBJ 2.1, PYO 2.1,
-PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2, NPI 1.0.1 and FM-Note 3.1. Statuses are typed
-per result. PRS: under a contraction and a symbol condition the compression remainder of the projected Dirac square is
-the Schur complement $-N^\dagger N \preceq 0$, equal to the projective endomorphism of Q14 only when
+PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2 and FM-Note 3.1. Statuses are typed
+per result. PRS: under a contraction hypothesis the compression remainder of the projected Dirac square is
+the Schur complement $-N^\dagger N \preceq 0$ (zero-order only under a symbol condition), equal to the projective endomorphism of Q14 only when
 $\Pi_S D^2 \Pi_S^* = \mathrm{Lich}$; under the generation-reading hypothesis [H-Gen] a $J_\Pi$-commuting locking
 operator gives $u = 0$; the Schur-null and Schur-transverse loci form a dichotomy proved under explicit hypotheses,
 which locus holds being open (the exact $\mathfrak{sl}_2$ opening, produced by $[E,F]=H$, reaches the locking operator

@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.27}
+\date{2026\\[2pt]\small Version 2.28}
 
 \begin{document}
 
@@ -1441,6 +1441,7 @@ A Structural Roadmap and Paper Inventory}
     a conditional Yang--Mills result for a supplied compact gauge group; it does not identify the
     Standard Model group.
 
+    % TODO-RELEASE: Q14 version 3.1 below is a candidate version; verify against the deposit.
     \textbf{Q14}~\cite{Beau2026q14}: Version~3.1 states what the fermionic sector rests on
     (\scond, on a supplied finite-Heisenberg carrier and central character, supplied model data, two
     explicit hypotheses [H-Spin] and [H-Weak], Q13, the Gravity and BI papers, and supplied gauge data;
@@ -1544,8 +1545,8 @@ A Structural Roadmap and Paper Inventory}
     The qualitative mechanism of the generation splitting is modelled in Q14~\S6, conditionally on the
     supplied $\mathrm{Sym}^2(V_{\mathrm{gen}})$ identification; its value is dictionary-bound.
     PRS~\cite{Beau2026prs} separates what it proves from what it leaves open.
-    Under explicit hypotheses (a contraction $\Pi_S$, a symbol condition) the compression remainder of the projected
-    Dirac square is the Schur complement $-N^\dagger N \preceq 0$; it is the projective endomorphism $E_\Pi$ of Q14 only
+    Under a contraction hypothesis the compression remainder of the projected Dirac square is the Schur complement
+    $-N^\dagger N \preceq 0$ (zero-order only under a symbol condition); it is the projective endomorphism $E_\Pi$ of Q14 only
     when $\Pi_S D^2 \Pi_S^* = \mathrm{Lich}$, an identity that no source states.
     Under the generation-reading hypothesis [H-Gen] a $J_\Pi$-commuting locking operator gives $u = 0$, so a non-zero
     split needs a locking operator that breaks $J_\Pi$-equivariance, and no mechanism for it is derived.
@@ -1596,7 +1597,8 @@ A Structural Roadmap and Paper Inventory}
     Open: [H-Tr], the explicit Lorentzian block $1-P(s)$, the amplitude $|u|$, and the projected Yukawa sector.
 
     \textbf{AAR}~\cite{Beau2026aar}: Angular amplitude reduction: the oriented shear product of the $\mathfrak{sl}_2$
-    step and the central-phase observable of the Weil cascade (\sstruct, working note).
+    step and the central-phase observable of the Weil cascade (\sstruct, working note; \scond{} on the input that $A_c$
+    carries the $J_3$ signal).
     Fixes, before any Weil--BFS computation, the precise observable whose measurement tests the absolute
     normalisation of the Q14~\S6 angular generation split.
     A short Baker--Campbell--Hausdorff reduction in $\mathfrak{sl}_2$ identifies the per-step $J_\Pi$-odd $J_3$
@@ -1692,10 +1694,13 @@ A Structural Roadmap and Paper Inventory}
     collinear purely electric ray under [H-F] it is reached at $t_* = \beta/|\mathbf{E}_{F_0}|$.
     The Front~D factorisation of the contact split,
     $u_\partial = \sqrt{2}\,\eta\,s_*\,T_{J_3}(\partial_s\Delta_\chi(P)|_0)/\langle J_3, J_3\rangle$ to first order in
-    $s_*$, is formal: it needs [H-Gen], [H-Mult], [H-Tr], [H-F], [H-Nd] and a localisation hypothesis that fails in the
+    $s_*$, is formal: it needs [H-Gen], [H-Mult], [H-Tr], [H-F], [H-Nd], the $J_\Pi$-covariance and diagonal-form premises of its
+    Lemma on the odd split, and a localisation hypothesis that fails in the
     available witnesses of~\cite{Beau2026ebj}, which lie outside [H-Gen](i); no frame satisfying these hypotheses
     together is exhibited, and it fixes no magnitude.
     The magnitude $|u|$ is not predicted.
+    In the interactive graph the edges PRS$\to$A4-Note ([H-Gen], [H-Tr]) and A4-Note$\to$EBJ (formal factorisation)
+    are typed conditional.
 
     \textbf{EBJ}~\cite{Beau2026ebj}: The constrained jet of the Lorentzian eliminated block and the chiral
     defect-rate identity (\sproved\ /\ \sopen). For every smooth family and every smooth unitary transport the
@@ -1884,6 +1889,8 @@ A Structural Roadmap and Paper Inventory}
     with an ambient enlargement beyond a single copy of $V_\rho$, a canonical inter-sector identification and the
     condensation dynamics left open.
 
+  % TODO-RELEASE: the fermionic entries above and their table rows assert candidate versions (PRS 3.0, A4-Note 3.0, Q14 3.1,
+  % EBJ 2.1, PYO 2.1, PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, FM-Note 3.1); verify against the deposits.
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -2554,7 +2561,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr] (Q11OF) to[out=-90,in=90]  (CHO);
 
           \node[C] (A4Note) at (3*\dx,-15*\dy) {A4-Note};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (A4Note.east)
+          \node[font=\tiny\sffamily,text=black!55,below=3pt] at (A4Note.south)
             {BI margin, genus open};
           \draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
 
@@ -2605,8 +2612,7 @@ A Structural Roadmap and Paper Inventory}
         edges (EG-Note to Q12, Q13 and Q14), its conditional edge Q11$\to$Q14 (Lorentzian signature
         only; spin soldering remains an input) and the conditional typing of the edges into PYL and PYO
         ([H-Weak], [H-Res]; including the dependencies PRS$\to$PYL, PRS$\to$PYO and Q14$\to$PYO,
-        typed in the graph), and the conditional typing of the edge PRS$\to$A4-Note ([H-Gen], [H-Tr]; carried by the
-        interactive graph only) and of the edge A4-Note$\to$EBJ (the A4 factorisation is formal), are not
+        typed in the graph) are not
         drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows with labels abbreviate linear sub-chains.
@@ -3169,7 +3175,7 @@ A Structural Roadmap and Paper Inventory}
       \scond{} on [H-Spin], [H-Weak] and the supplied colour module\ /\ \sproved{} (algebra on supplied model
       data)\ /\ \sopen \\[3pt]
       PRS & Schur form of the compression remainder + Schur dichotomy & \cite{Beau2026prs} &
-      Under a contraction and a symbol condition the compression remainder of the projected Dirac square is the Schur
+      Under a contraction hypothesis the compression remainder of the projected Dirac square is the Schur
       complement $-N^\dagger N \preceq 0$, $N = (1-P)^{1/2} D\,\Pi_S^*$, zero-order only under the symbol condition
       (which forces $0$ on irreducible Clifford fibres), and equal to Q14's $E_\Pi$ only when
       $\Pi_S D^2 \Pi_S^* = \mathrm{Lich}$; for any locking operator $0 \preceq P \preceq 1$ the Schur expression and its
@@ -3177,7 +3183,7 @@ A Structural Roadmap and Paper Inventory}
       under [H-Gen] ($J_\Pi$ compatible with $D$ and $\Pi_S$, reading map $\Phi$) $u[P] = 0$ for $J_\Pi$-commuting $P$,
       automatic for the reference operator, so a non-zero $u$ needs $J_\Pi P J_\Pi^{-1} \neq P$, on an interpretive
       reading of A1--A4 only A4 can supply it; a $J_\Pi$-commuting locking has $E[P] = 0$ on the left-admissible branch;
-      [H-Mult] separate (with a non-singular even sector $u \equiv 0$ or no $\Phi$);
+      [H-Mult] separate (in the chiral rank-two left-admissible frame with a non-singular even sector, $u \equiv 0$ or no $\Phi$);
       the chiral equivariance defect is related to $u$ only as a structural reading; finite sector conditional on the
       open identification of $c \leftrightarrow q-c$ with $J_\Pi$;
       Schur-null / Schur-transverse dichotomy proved under explicit hypotheses, which locus holds open: the exact
@@ -3198,7 +3204,7 @@ A Structural Roadmap and Paper Inventory}
       symmetric BFS shells give $\Theta_{\mathrm{raw}} = 0$ identically;
       capacity audit closes the onset exactly $\tfrac13$, $\theta_{\max} = 2\pi/(3q)$ (generator-dependent), still
       gated for $\varepsilon = 1/10$ &
-      \sstruct \\[3pt]
+      \sstruct\ /\ \scond{} on the input that $A_c$ carries the $J_3$ signal \\[3pt]
       Q11OF & Oriented frontier observable (version 1.1) & \cite{Beau2026q11of} &
       Symmetric-capacity obstruction makes raw shell observable vanish identically
       ($g \mapsto g^{-1}$ pairs opposite central phases);
@@ -3232,7 +3238,7 @@ A Structural Roadmap and Paper Inventory}
       chart dependence of the quartic radicand coefficient and chart independence of the first contact proved, no
       selection between a boundary contact and an interior stationary point; for a collinear purely electric ray
       under [H-F], $t_* = \beta/|\mathbf{E}_{F_0}|$;
-      Front~D factorisation of $u(s_*)$ formal (no frame satisfies its hypotheses; the EBJ witnesses lie outside
+      Front~D factorisation of $u(s_*)$ formal (needs also the $J_\Pi$-covariance and diagonal-form premises; no frame satisfies its hypotheses; the EBJ witnesses lie outside
       [H-Gen](i)), fixing no magnitude; no mechanism for a non-zero split, $|u|$ not predicted &
       \scond\ /\ \sproved{} (algebra under explicit hypotheses)\ /\ \sopen{} (genus, lock, factorisation formal) \\[3pt]
       EBJ & Constrained jet of $1-P(s)$ + chiral defect-rate identity & \cite{Beau2026ebj} &
