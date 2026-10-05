@@ -1600,8 +1600,8 @@ A Structural Roadmap and Paper Inventory}
     \textbf{AAR}~\cite{Beau2026aar}: Angular amplitude reduction: the oriented shear product of the $\mathfrak{sl}_2$
     step and the central-phase observable of the Weil cascade (\sstruct, working note; \scond{} on the input that $A_c$
     carries the $J_3$ signal).
-    Fixes, before any Weil--BFS computation, the precise observable whose measurement tests the absolute
-    normalisation of the Q14~\S6 angular generation split.
+    Fixes the precise observable whose measurement tests the absolute normalisation of the Q14~\S6 angular
+    generation split and reports the Weil--BFS computations of it.
     A short Baker--Campbell--Hausdorff reduction in $\mathfrak{sl}_2$ identifies the per-step $J_\Pi$-odd $J_3$
     component of the metaplectic cascade generator with the oriented product $ts$ of the two shear parameters,
     produced by the $\mathfrak{sl}_2$ commutator $[E,F]=H$ (Q14, Proposition~6.5), not a free shear parameter; in the
@@ -1618,8 +1618,8 @@ A Structural Roadmap and Paper Inventory}
     A direct evaluation on symmetric BFS shells returns $\Theta_{\mathrm{raw}} = 0$ identically; the orientation
     prescription is an irreducible input prior to $\mathcal{N}_A$.
     A subsequent capacity audit on the exact Heisenberg--BFS frontier fixes the onset central-phase coefficient: the
-    directed outgoing-frontier mean is a $q$-independent exact rational sequence ($\tfrac13,\tfrac59,\tfrac23,\dots$ per
-    shell, identical across $q \in \{61,101,151,211,307\}$, integer arithmetic, no fit) whose first-shell (onset) value
+    directed outgoing-frontier mean is an exact rational sequence ($\tfrac13,\tfrac59,\tfrac23,\dots$ per
+    shell, identical across $q \in \{61,101,151,211,307\}$ over the first six shells, integer arithmetic, no fit) whose first-shell (onset) value
     is $\tfrac13$, hence the maximal-locking bound at the onset shell $\theta_{\max}^{(1)} = 2\pi/(3q)$ (exact for the
     standard $\{\pm X,\pm Y\}$ campaign, generator-dependent; only $\varepsilon$ and $R = \tfrac32$ are
     generator-independent).
@@ -1671,12 +1671,14 @@ A Structural Roadmap and Paper Inventory}
     $\sigma_L = \mathrm{sign}\,\Delta A_c$ on the cocycle support, hence, by this definition,
     $\rho_\chi = 1$ and $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-stable to $0.4\,\%$
     ($\theta_{\max}\,q = 2.114, 2.122, 2.118$ at $n_3^{\mathrm{obs}} = 2$ for $q \in \{61,101,151\}$; the per-shell
-    rationals are $q$-independent) (\sproved\ within that convention and under [H-WS]).
+    rationals are $q$-independent over the first six shells, $q \in \{61,101,151,211,307\}$) (\sproved\ within that convention and under [H-WS]).
     Thus [H-orient] is established in the inherited central-phase lift and under [H-WS], not unconditionally; the only
     remaining obstruction besides [H-WS], a possible additional spin-Galois phase orthogonal to $\zeta_q$ (a
     $\sqrt{5}$ or ADE-spin factor), is examined in AOG-Note~\cite{Beau2026aog}, which, taking the Lorentzian chiral
-    lift as an input ([H-Spin] of Q14), shows that under [H-Spin], [H-WS], its modelling premise [M] and the inherited
-    central-phase convention the lift induces no action on $\mathbb{Q}(\sqrt{5})$.
+    lift as an input ([H-Spin] of Q14), shows that under [H-Spin], [H-WS], its modelling premise [M], its explicit boost
+    premise [B] (the lift supplies only the central character and the complexification unit, by complex conjugation;
+    asserted, not derived) and the inherited central-phase convention the lift induces no action on
+    $\mathbb{Q}(\sqrt{5})$.
     It fixes the frontier amplitude datum $\mathcal{N}_A \neq 0$ conditionally but does not derive $u \neq 0$, which
     would further need a transport of the oriented signal to the $J_\Pi$-odd generation sector, the only transport
     stated being the hypothesis [H-Tr] of~\cite{Beau2026prs}, supplied by no source.
@@ -1849,11 +1851,11 @@ A Structural Roadmap and Paper Inventory}
     Three archived scripts certify all computational claims.
 
     \textbf{AOG-Note}~\cite{Beau2026aog}: Spin-stratum type-rigidity --- an obstruction to the Galois action on the
-    binary icosahedral stratum, with conditional consequences for the chiral lift (\sproved\ for the character-table
-    audit of the inner conjugations, $-I$ and $J_\Pi$; \scond{} for the other clauses: [H-WS] for $R_b$, the A4
+    binary icosahedral stratum, with conditional consequences for the chiral lift (\scond{} as a whole, the
+    character-table audit of the inner conjugations, $-I$ and $J_\Pi$ being \sproved; \scond{} for the other clauses: [H-WS] for $R_b$, the A4
     hypotheses for the locking, modelling assertions for the tensor functors and the Schur projection, and the modelling
     premise [M] that the generator list is complete; the Lorentzian chiral lift is an input, the spin-solder hypothesis
-    [H-Spin] of Q14, which AOG-Note does not construct; no link between the ADE gate and the Galois action is
+    [H-Spin] of Q14, which AOG-Note does not construct, and its consequence rests on the explicit boost premise [B]; no link between the ADE gate and the Galois action is
     established).
     Transversal note isolating the logical status of the generation-split value
     $\varepsilon = 1/10$. It is shown to be a theorem modulo the ADE case-selection gate: the algebra
@@ -1873,10 +1875,13 @@ A Structural Roadmap and Paper Inventory}
     No link between the gate and $\sigma$ is established: the outer automorphism fixes the order-four class and maps
     each of the order-five and order-ten loci to itself, so the gate stays open and no obstruction or no-go for the
     gate follows.
-    The Lorentzian chiral lift being taken as input ([H-Spin] of Q14), AOG-Note shows, under [H-Spin], [H-WS], [M]
-    and the inherited central-phase convention of CHO, that the lift induces no action on $\mathbb{Q}(\sqrt{5})$, so
-    that the residual spin-Galois caveat of CHO does not arise within the present spin stratum~\cite{Beau2026cho}
-    ($\rho_\chi = 1$ holds by definition of $\sigma_L$; \scond{} on all of these inputs).
+    The Lorentzian chiral lift being taken as input ([H-Spin] of Q14), AOG-Note shows, under [H-Spin], [H-WS], [M], the
+    explicit boost premise [B] (the lift supplies only the central character and the complexification unit, by complex
+    conjugation; asserted, not derived) and the inherited central-phase convention of CHO, that the lift induces no
+    action on $\mathbb{Q}(\sqrt{5})$, so that the residual spin-Galois caveat of CHO does not arise within the present
+    spin stratum under [B]~\cite{Beau2026cho}
+    ($\rho_\chi = 1$ holds by definition of $\sigma_L$; $\mathcal{N}_A\neq0$ and the chiral-lift consequence are
+    \scond{} on all of these inputs, in particular on [B]).
     A status sharpening records the concrete generator-set form of the gate.
     Once the order-five $\sqrt{5}$-locus is selected, $R = 3/2$ is not a fit but a forced Cayley-spectral invariant of
     $2I$, the outer deficits being $\{|\lambda_1-1|,|\lambda_3-1|\} = \{\tfrac16,\tfrac14\}$ with central level
@@ -2569,7 +2574,7 @@ A Structural Roadmap and Paper Inventory}
             {BI margin, genus open};
           \draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
 
-          \node[P] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
+          \node[C] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (AOG.east)
             {$\sigma$-obstruction};
           \draw[arr,dashed] (Q14) to[out=-45,in=180] (AOG);
@@ -3337,14 +3342,15 @@ A Structural Roadmap and Paper Inventory}
       modelling premise [M] that the generator list is complete (conditional); no link between the gate and $\sigma$
       is established, the gate stays open;
       chiral-lift consequence: the lift, an input ([H-Spin] of Q14, not constructed in AOG-Note), induces no
-      $\sqrt{5}$ action, so the residual caveat of CHO does not arise in the present spin stratum, with
-      $\mathcal{N}_A\neq0$ under [H-Spin], [H-WS], [M] and the inherited central-phase convention ($\rho_\chi=1$ by
+      $\sqrt{5}$ action under the boost premise [B], so the residual caveat of CHO does not arise in the present spin
+      stratum under [B], with
+      $\mathcal{N}_A\neq0$ under [H-Spin], [H-WS], [M], [B] and the inherited central-phase convention ($\rho_\chi=1$ by
       definition of $\sigma_L$; conditional);
       concrete form: $R=3/2$ a forced Cayley invariant on the order-five locus ($\{\tfrac16,\tfrac14\}$) vs
       $R=\tfrac53$,
       $\varepsilon=\tfrac18$ on neutral order-four, residue = the order-five selection (proved/open) &
-      \sproved\ for the audit of the inner conjugations, $-I$ and $J_\Pi$\ /\ \scond{} for the other clauses and the
-      chiral-lift consequence\ /\ \sopen\ for the gate \\[3pt]
+      \scond{} (primary), the audit of the inner conjugations, $-I$ and $J_\Pi$ being \sproved\ and the other clauses and the
+      chiral-lift consequence \scond{}\ /\ \sopen\ for the gate \\[3pt]
       SRN & Spin as a transformation class of rotating wave modes & \cite{Beau2026srn} &
       Conceptual and structural audit of the rotating-wave reading of spin, companion to the
       fermionic-matter sub-programme: spin is fixed by how components transform under rotations of
@@ -3676,7 +3682,7 @@ A Structural Roadmap and Paper Inventory}
     $t_* = \beta/|\mathbf{E}_{F_0}|$ under [H-F], in a parametrisation-dependent form that selects no lock and makes
     no numerical prediction~\cite{Beau2026bim}.
     The angular onset coefficient is fixed, not the normalisation: a capacity audit on the exact Heisenberg--BFS
-    frontier returns the $q$-independent exact onset $\tfrac13$, hence $\theta_{\max}^{(1)} = 2\pi/(3q)$ at the onset
+    frontier returns the exact onset $\tfrac13$, $q$-independent over the verified primes $q \in \{61,101,151,211,307\}$, hence $\theta_{\max}^{(1)} = 2\pi/(3q)$ at the onset
     shell for the standard campaign,
     while the dictionary value $\varepsilon = 1/10$ is neither a capacity fit nor fixed by
     $\mathrm{Sym}^2(\mathbb{C}^2)$
