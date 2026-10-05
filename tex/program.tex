@@ -1674,7 +1674,9 @@ A Structural Roadmap and Paper Inventory}
     rationals are $q$-independent) (\sproved\ within that convention and under [H-WS]).
     Thus [H-orient] is established in the inherited central-phase lift and under [H-WS], not unconditionally; the only
     remaining obstruction besides [H-WS], a possible additional spin-Galois phase orthogonal to $\zeta_q$ (a
-    $\sqrt{5}$ or ADE-spin factor), is the object of AOG-Note~\cite{Beau2026aog}.
+    $\sqrt{5}$ or ADE-spin factor), is examined in AOG-Note~\cite{Beau2026aog}, which, taking the Lorentzian chiral
+    lift as an input ([H-Spin] of Q14), shows that under [H-Spin], [H-WS], its modelling premise [M] and the inherited
+    central-phase convention the lift induces no action on $\mathbb{Q}(\sqrt{5})$.
     It fixes the frontier amplitude datum $\mathcal{N}_A \neq 0$ conditionally but does not derive $u \neq 0$, which
     would further need a transport of the oriented signal to the $J_\Pi$-odd generation sector, the only transport
     stated being the hypothesis [H-Tr] of~\cite{Beau2026prs}, supplied by no source.
@@ -1846,49 +1848,42 @@ A Structural Roadmap and Paper Inventory}
     extension.
     Three archived scripts certify all computational claims.
 
-    \textbf{AOG-Note}~\cite{Beau2026aog}: Spin-stratum type-rigidity --- orthogonality of the ADE gate and closure of
-    the chiral lift (\sproved\ for the gate no-go in the present construction except for the central
-    reflection $R_b$, for which it is \scond{} on [H-WS]; the chiral-lift corollaries are \scond{} on [H-Spin], taken as
-    input from Q5b, Q11 and CHO (the spin-solder hypothesis of Q14, which AOG-Note does not derive), and, for $R_b$, on
-    [H-WS]; the full-tower generalisation is established for admissible fibre operations).
+    \textbf{AOG-Note}~\cite{Beau2026aog}: Spin-stratum type-rigidity --- an obstruction to the Galois action on the
+    binary icosahedral stratum, with conditional consequences for the chiral lift (\sproved\ for the character-table
+    audit of the inner conjugations, $-I$ and $J_\Pi$; \scond{} for the other clauses: [H-WS] for $R_b$, the A4
+    hypotheses for the locking, modelling assertions for the tensor functors and the Schur projection, and the modelling
+    premise [M] that the generator list is complete; the Lorentzian chiral lift is an input, the spin-solder hypothesis
+    [H-Spin] of Q14, which AOG-Note does not construct; no link between the ADE gate and the Galois action is
+    established).
     Transversal note isolating the logical status of the generation-split value
     $\varepsilon = 1/10$. It is shown to be a theorem modulo the ADE case-selection gate: the algebra
     $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ is trivial and
-    case-independent (\sproved), so the first-principles status of $\varepsilon$ is exactly that of the gate.
-    The obstruction to the gate is characterised as an arithmetic orthogonality: in the compositum
-    $\mathbb{Q}(\zeta_q,\sqrt{5})$ the Born--Infeld parity $c \mapsto q-c$ is complex conjugation
+    case-independent (\sproved), so the first-principles status of $\varepsilon$ is exactly that of the gate, which the
+    note does not settle.
+    In the compositum $\mathbb{Q}(\zeta_q,\sqrt{5})$ the Born--Infeld parity $c \mapsto q-c$ is complex conjugation
     $(\zeta_q \mapsto \zeta_q^{-1},\ \sqrt{5} \mapsto \sqrt{5})$, lying in a different direct factor of the Galois
-    group from the Galois-spin action $(\zeta_q \mapsto \zeta_q,\ \sqrt{5} \mapsto -\sqrt{5})$ that selection of the
-    $\sqrt{5}$-locus would require (\sproved).
-    The same fact places the order-five versus order-ten alternative below projective parity resolution.
-    The negative theorem --- that A1--A4, ENI~Corollary~6~\cite{Beau2026l} and the A4 locking do not supply the
-    Galois-spin action --- is \sproved\ as a no-go for the gate in the present corpus construction, by a character-table audit of $2I$, for
-    every operation of the spin stratum except the central reflection $R_b$, for which it is under the hypothesis
-    [H-WS] of Q11OF (parts~(i) and~(ii): $R_b$ acts on the chiral carrier as the scalar $-1$).
-    The full-tower generalisation is a scope hypothesis, not an open dependency lock: a realisation audit shows
-    the Galois exchange $\sqrt{5}\mapsto-\sqrt{5}$ does not preserve the binary-icosahedral carrier --- it maps $2I$
-    onto its opposite-chirality copy, exchanging the two two-dimensional types --- whereas the Born--Infeld parity (the
-    entrywise complex conjugation) preserves the carrier and fixes $\sqrt{5}$.
-    Hence every carrier-preserving admissible fibre operation is vertical, and a finite recursive tower preserves the
-    binary-icosahedral arithmetic type (\sproved\ for admissible fibre operations, in the sense of A1--A4 and
-    Born--Infeld parity; this is a scope hypothesis, not an absolute impossibility of any external equivalence of
-    character tables).
-    The same spin-stratum type-rigidity has a second consequence of opposite sign (the chiral-lift corollary): the
-    Lorentzian chiral lift of the ordered cascade step induces no action on $\mathbb{Q}(\sqrt{5})$ --- the chiral
-    weight $\sigma_L$ is the Weyl-conjugation type, living in the parity factor and not the $\sqrt{5}$ factor --- so,
-    under [H-Spin] (taken as input, as are the Weyl and boost lemmas that precede it) and [H-WS], it excludes the
-    residual obstruction of the chiral orientation note and closes [H-orient] with $\mathcal{N}_A \neq 0$ within the
-    present spin stratum~\cite{Beau2026cho} (\sproved\ under [H-Spin] as input and [H-WS]).
-    For the gate the rigidity is fatal, the required $\sqrt{5}$ action being absent; for the chiral lift it is the
-    closure, the feared $\sqrt{5}$ action being absent.
+    group from the Galois action $\sigma = (\zeta_q \mapsto \zeta_q,\ \sqrt{5} \mapsto -\sqrt{5})$ (\sproved).
+    The proved result is an obstruction concerning $\sigma$: a character-table audit of $2I$ shows that inner
+    conjugations, $-I$ and $J_\Pi$ act trivially on $\mathrm{Irr}(2I)$, whereas $\sigma$ induces
+    $(2\,2')(3\,3')$ (\sproved).
+    The central reflection $R_b$ acts as $-I$ under [H-WS] of Q11OF (the scalar $-1$ on the chiral carrier), the A4
+    locking contributes a parity-odd sign under the A4 hypotheses, and the tensor-functor and Schur-projection clauses
+    are modelling assertions (not audited); relative to these clauses and to [M], no listed operation realises
+    $\sigma$, and a finite recursive tower of carrier-preserving admissible operations preserves the arithmetic type.
+    No link between the gate and $\sigma$ is established: the outer automorphism fixes the order-four class and maps
+    each of the order-five and order-ten loci to itself, so the gate stays open and no obstruction or no-go for the
+    gate follows.
+    The Lorentzian chiral lift being taken as input ([H-Spin] of Q14), AOG-Note shows, under [H-Spin], [H-WS], [M]
+    and the inherited central-phase convention of CHO, that the lift induces no action on $\mathbb{Q}(\sqrt{5})$, so
+    that the residual spin-Galois caveat of CHO does not arise within the present spin stratum~\cite{Beau2026cho}
+    ($\rho_\chi = 1$ holds by definition of $\sigma_L$; \scond{} on all of these inputs).
     A status sharpening records the concrete generator-set form of the gate.
     Once the order-five $\sqrt{5}$-locus is selected, $R = 3/2$ is not a fit but a forced Cayley-spectral invariant of
     $2I$, the outer deficits being $\{|\lambda_1-1|,|\lambda_3-1|\} = \{\tfrac16,\tfrac14\}$ with central level
     $\lambda_2 = 1$; the neutral order-four half-turn class --- the programme's default admissibility convention ---
     instead gives $\{\tfrac15,\tfrac13\}$, hence $R = \tfrac53$ and $\varepsilon = \tfrac18$, not $\tfrac1{10}$.
     The residual lock is therefore the order-five-versus-order-four selection (\sproved\ for the forced ratio, \sopen\
-    for the selection); the tempting fermionic shortcut does not supply it, the spinorial grading read by the chiral
-    lift being common to both two-dimensional irreducibles and inducing no action on $\mathbb{Q}(\sqrt{5})$.
+    for the selection); the Galois action $\sigma$ is not shown to be the missing ingredient.
 
     \textbf{SRN}~\cite{Beau2026srn}: Spin as a transformation class of rotating wave modes (\sproved\ /\ \sopen).
     Companion audit of the rotating-wave reading of spin: spin is fixed by how components transform under
@@ -2576,7 +2571,7 @@ A Structural Roadmap and Paper Inventory}
 
           \node[P] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (AOG.east)
-            {ADE gate status};
+            {$\sigma$-obstruction};
           \draw[arr,dashed] (Q14) to[out=-45,in=180] (AOG);
           \draw[arr,dashed] (AOG) to[out=-135,in=-10]
             node[font=\tiny\sffamily,text=black!55,below=1pt,midway] {chiral-lift cor.} (CHO);
@@ -3329,25 +3324,27 @@ A Structural Roadmap and Paper Inventory}
       history-fibre route requires a parallel oriented substrate channel (extension, not
       derivation) &
       \sproved \\[3pt]
-      AOG-Note & Spin-stratum type-rigidity: ADE gate orthogonality + chiral-lift closure & \cite{Beau2026aog} &
+      AOG-Note & Spin-stratum type-rigidity: obstruction to the Galois action on the binary icosahedral stratum,
+      conditional consequences for the chiral lift & \cite{Beau2026aog} &
       $\varepsilon = 1/10$ is a theorem modulo the ADE case-selection gate:
       $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ trivial and
-      case-independent (proved);
-      obstruction characterised as arithmetic orthogonality in $\mathbb{Q}(\zeta_q,\sqrt{5})$: BI parity is complex
-      conjugation $(\zeta_q\mapsto\zeta_q^{-1},\sqrt{5}\mapsto\sqrt{5})$, in a distinct Galois factor from the
-      Galois-spin action $(\zeta_q\mapsto\zeta_q,\sqrt{5}\mapsto-\sqrt{5})$ (proved);
-      order-five vs order-ten below projective parity resolution;
-      negative theorem a no-go for the gate in the present construction by a character-table audit of $2I$, for every
-      operation of the spin stratum except the central reflection $R_b$, for which it is under [H-WS]; the full-tower generalisation established for admissible (carrier-preserving) fibre operations --- the
-      Galois exchange $\sqrt{5}\mapsto-\sqrt{5}$ does not preserve the binary-icosahedral carrier, so a finite recursive
-      tower preserves the arithmetic type (a scope hypothesis, not an absolute impossibility);
-      chiral-lift corollary: same rigidity excludes the residual obstruction of CHO, the Lorentzian lift inducing no
-      $\sqrt{5}$ action, closing [H-orient] with $\mathcal{N}_A\neq0$ in the present spin stratum under [H-Spin] (taken as input) and [H-WS]
-      (proved under both);
+      case-independent (proved), the first-principles status of the gate being left open;
+      BI parity is complex conjugation $(\zeta_q\mapsto\zeta_q^{-1},\sqrt{5}\mapsto\sqrt{5})$, in a distinct Galois
+      factor from $\sigma=(\zeta_q\mapsto\zeta_q,\sqrt{5}\mapsto-\sqrt{5})$ (proved);
+      character-table audit of $2I$: inner conjugations, $-I$ and $J_\Pi$ act trivially on $\mathrm{Irr}(2I)$ whereas
+      $\sigma$ induces $(2\,2')(3\,3')$ (proved); no listed operation realises $\sigma$ under [H-WS] for $R_b$, the A4
+      hypotheses for the locking, modelling assertions for the tensor functors and Schur projection, and the
+      modelling premise [M] that the generator list is complete (conditional); no link between the gate and $\sigma$
+      is established, the gate stays open;
+      chiral-lift consequence: the lift, an input ([H-Spin] of Q14, not constructed in AOG-Note), induces no
+      $\sqrt{5}$ action, so the residual caveat of CHO does not arise in the present spin stratum, with
+      $\mathcal{N}_A\neq0$ under [H-Spin], [H-WS], [M] and the inherited central-phase convention ($\rho_\chi=1$ by
+      definition of $\sigma_L$; conditional);
       concrete form: $R=3/2$ a forced Cayley invariant on the order-five locus ($\{\tfrac16,\tfrac14\}$) vs
       $R=\tfrac53$,
       $\varepsilon=\tfrac18$ on neutral order-four, residue = the order-five selection (proved/open) &
-      \sproved\ /\ \scond{} on [H-WS] for the $R_b$ clause and on [H-Spin] (input) and [H-WS] for the chiral lift\ /\ \sopen \\[3pt]
+      \sproved\ for the audit of the inner conjugations, $-I$ and $J_\Pi$\ /\ \scond{} for the other clauses and the
+      chiral-lift consequence\ /\ \sopen\ for the gate \\[3pt]
       SRN & Spin as a transformation class of rotating wave modes & \cite{Beau2026srn} &
       Conceptual and structural audit of the rotating-wave reading of spin, companion to the
       fermionic-matter sub-programme: spin is fixed by how components transform under rotations of
@@ -3691,12 +3688,13 @@ A Structural Roadmap and Paper Inventory}
     open), and the
     dictionary value reduces --- once the order-five $\sqrt{5}$-locus is selected, giving the forced invariant $R = 3/2$
     against the neutral order-four alternative $R = \tfrac53$, $\varepsilon = \tfrac18$ --- to the single ADE /
-    type-rigidity datum $R = 3/2$, equivalently the prime $5$ or the $\sqrt{5}$-gate~\cite{Beau2026aog}.
+    ADE datum $R = 3/2$, equivalently the prime $5$ or the $\sqrt{5}$-gate, which AOG-Note leaves open~\cite{Beau2026aog}.
     The third layer is a status statement: the projected-Yukawa split parameter $u$ and the angular datum
     $\varepsilon$ are the same functional of the level ratio, $\varepsilon(R_\Pi) = u$ with $R_\Pi =
     (\tfrac12+u)/(\tfrac12-u)$, so the equality $u = \varepsilon = 1/10$ is exactly the dictionary gate $R_\Pi =
-    R_{\mathrm{ADE}} = 3/2$; the representation $\mathrm{Sym}^2(\mathbb{C}^2)$ leaves $u$ free and the
-    carrier-preserving recursion cannot supply the order-five value~\cite{Beau2026pyo, Beau2026aog}.
+    R_{\mathrm{ADE}} = 3/2$; the representation $\mathrm{Sym}^2(\mathbb{C}^2)$ leaves $u$ free, and the
+    carrier-preserving recursion does not supply the Galois action $\sigma$, no link between $\sigma$ and the selection
+    of the order-five value being established~\cite{Beau2026pyo, Beau2026aog}.
     The split is moreover not the mass hierarchy: under [H-Res] and [H-Sq], at the gate the squared Yukawa levels are
     $\lambda_Y^2\{1, \tfrac35, \tfrac25\}$, order-one ratios that cannot be the observed charged-fermion hierarchy by
     direct assignment, and the single-level cascade factor is itself order one~\cite{Beau2026a5}.
