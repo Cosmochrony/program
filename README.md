@@ -8,6 +8,25 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.28 synchronises the PRS 3.0 / A4-Note 3.0 source contract and its consumers: Q14 3.1, EBJ 2.1, PYO 2.1,
+PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2, NPI 1.0.1 and FM-Note 3.1. Statuses are typed
+per result. PRS: under a contraction and a symbol condition the compression remainder of the projected Dirac square is
+the Schur complement $-N^\dagger N \preceq 0$, equal to the projective endomorphism of Q14 only when
+$\Pi_S D^2 \Pi_S^* = \mathrm{Lich}$; under the generation-reading hypothesis [H-Gen] a $J_\Pi$-commuting locking
+operator gives $u = 0$; the Schur-null and Schur-transverse loci form a dichotomy proved under explicit hypotheses,
+which locus holds being open (the exact $\mathfrak{sl}_2$ opening, produced by $[E,F]=H$, reaches the locking operator
+only under the transport hypothesis [H-Tr]); no mechanism for a non-zero split is derived. A4-Note: the radicand
+quartic coefficient is chart-dependent and selects no lock, the first contact is chart-independent when it exists, the
+Lorentzian genus is not determined, and the Front D factorisation is formal. EBJ: its finite witness has $J^2 = +1$ and
+lies outside [H-Gen](i). Q14 3.1 states $E_\Pi \preceq 0$ as an explicit hypothesis. The commutation
+$[\gamma_5, R_b] = 0$ is the hypothesis [H-WS] of Q11OF (scalar $-1$ on the chiral carrier), carried by CHO and AOG-Note;
+the $J_3$ signal comes from the $\mathfrak{sl}_2$ commutator $[E,F]=H$, not from the Heisenberg bracket (AAR 1.3).
+The registry entries, table rows, dependency figure, bibliography entries and interactive-graph nodes carry these
+statements; PRS and the A4-Note are typed conditional, the edges PRS to A4-Note and A4-Note to EBJ are typed
+conditional, and the node suffix "Written against Q14 2.0" is removed from PRS and the A4-Note and reworded for CHO,
+AOG-Note and Q11OF. TODO-RELEASE (author, at deposit time): fill in the Zenodo record numbers of the deposited
+versions listed above and of programme 2.28, and confirm that each version number matches its deposit.
+
 Version 2.27 synchronises FM-Note 3.0, PYL 3.0 and PYO 2.0, which type the fermionic and mass sectors on the Q14 3.0
 hypotheses. [H-Spin] (a spin solder) and [H-Weak] (a distinct $U(2)$ weak factor $E_{\mathrm{weak}}$) are separate
 hypotheses supplied by no source; the $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra is proved on supplied model data
