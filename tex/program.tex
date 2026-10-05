@@ -1530,7 +1530,9 @@ A Structural Roadmap and Paper Inventory}
     The upstream layers consumed are the Weil fibre (Notes~1,~5), the conditional Lorentzian geometry (Note~2), of
     which the geometric branch supplies only a rank-three degenerate part and which enters only through [H-Spin], the
     gauge bundle (Note~3), and Q13~\cite{Beau2026q13} for the gauge--gravity synthesis.
-    CHO, AOG-Note and Q11OF, described below, were written against Q14~2.0: their ``present Lorentzian spin
+    AOG-Note (version~1.8) takes the Lorentzian chiral lift as input and names it as the hypothesis [H-Spin] of Q14,
+    which it does not derive.
+    CHO and Q11OF, described below, were written against Q14~2.0: their ``present Lorentzian spin
     stratum'' is conditional on [H-Spin], and their use of $[\gamma_5, R_b] = 0$ is carried by the explicit hypothesis
     [H-WS] of Q11OF, the alignment of their other statements with [H-Spin] and [H-Weak] remaining open.
     PRS and the A4-Note (version~3.0 each) state their hypotheses explicitly ([H-Spin] and [H-Gen], [H-Mult], [H-Tr]
@@ -1615,14 +1617,21 @@ A Structural Roadmap and Paper Inventory}
     capacity $\sigma_c$, central phase $A_c$ carries the angular split under that input.
     A direct evaluation on symmetric BFS shells returns $\Theta_{\mathrm{raw}} = 0$ identically; the orientation
     prescription is an irreducible input prior to $\mathcal{N}_A$.
-    A subsequent capacity audit on the real Weil--BFS pipeline closes the angular onset coefficient: the directed
-    outgoing-frontier mean is a $q$-independent exact rational sequence (identical across
-    $q \in \{61,101,151,211,307\}$, no fit) with saturation onset exactly $\tfrac13$, hence the maximal-locking angular
-    bound $\theta_{\max} = 2\pi/(3q)$ (exact for the standard $\{\pm X,\pm Y\}$ campaign, generator-dependent; only
-    $\varepsilon$ and $R = \tfrac32$ are generator-independent).
-    This closes the coefficient, not the dictionary value: $\theta_{\max} \to 0$ with $q$, so $\varepsilon = 1/10$
-    still requires the geometric $\mathrm{Sym}^2$ normalisation $\mathcal{N}_A^{\mathrm{geom}} = 3q/(20\pi)$, gated by
-    the same ADE datum~\cite{Beau2026aog}.
+    A subsequent capacity audit on the exact Heisenberg--BFS frontier fixes the onset central-phase coefficient: the
+    directed outgoing-frontier mean is a $q$-independent exact rational sequence ($\tfrac13,\tfrac59,\tfrac23,\dots$ per
+    shell, identical across $q \in \{61,101,151,211,307\}$, integer arithmetic, no fit) whose first-shell (onset) value
+    is $\tfrac13$, hence the maximal-locking bound at the onset shell $\theta_{\max}^{(1)} = 2\pi/(3q)$ (exact for the
+    standard $\{\pm X,\pm Y\}$ campaign, generator-dependent; only $\varepsilon$ and $R = \tfrac32$ are
+    generator-independent).
+    The $\widehat I$-normalised bound at $n_3^{\mathrm{obs}} = 2$ is $2.114/q$, $2.122/q$, $2.118/q$ for
+    $q = 61,101,151$, $0.9$--$1.3\,\%$ above $2\pi/(3q)$: $\tfrac13$ is an onset coefficient, not the value of the
+    normalised bound.
+    This fixes the onset coefficient, not the dictionary value: $\theta_{\max}^{(1)} \to 0$ with $q$, so the comparison
+    with $\varepsilon = 1/10$ is a required-normalisation diagnostic, the geometric $\mathrm{Sym}^2$ normalisation
+    $\mathcal{N}_A^{\mathrm{geom}} = 3q/(20\pi)$ being the algebra at the onset shell, gated by the same ADE
+    datum~\cite{Beau2026aog}; and, within the input that $A_c$ carries the $J_3$ signal, no value of $\mathcal{N}_A$
+    turns $\Theta_{\mathrm{raw}} = 0$ into a split.
+    The per-shell rationals are recomputed from the AAR repository alone.
 
     \textbf{Q11OF}~\cite{Beau2026q11of}: The oriented frontier observable (\sstruct, diagnostic; chiral lift \scond{}
     on [H-WS]).
@@ -1659,9 +1668,10 @@ A Structural Roadmap and Paper Inventory}
     $\bar{\mathbf{2}}$: group inversion preserves the representation and complex conjugation exchanges it (\sstruct).
     In the inherited Heisenberg central-phase lift the edge phase is the linear cyclotomic character
     $\zeta_q^{\Delta A_c}$, with no Gauss, Maslov, or $\sqrt{5}$ component, and the natural branch gives
-    $\sigma_L = \mathrm{sign}\,\Delta A_c$ on the cocycle support, hence $\rho_\chi = 1$ and
-    $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-invariant on $q \in \{61,101,151\}$ (\sproved\ within that convention
-    and under [H-WS]).
+    $\sigma_L = \mathrm{sign}\,\Delta A_c$ on the cocycle support, hence, by this definition,
+    $\rho_\chi = 1$ and $\mathcal{N}_A = \theta_{\max} \neq 0$, $q$-stable to $0.4\,\%$
+    ($\theta_{\max}\,q = 2.114, 2.122, 2.118$ at $n_3^{\mathrm{obs}} = 2$ for $q \in \{61,101,151\}$; the per-shell
+    rationals are $q$-independent) (\sproved\ within that convention and under [H-WS]).
     Thus [H-orient] is established in the inherited central-phase lift and under [H-WS], not unconditionally; the only
     remaining obstruction besides [H-WS], a possible additional spin-Galois phase orthogonal to $\zeta_q$ (a
     $\sqrt{5}$ or ADE-spin factor), is the object of AOG-Note~\cite{Beau2026aog}.
@@ -1838,8 +1848,9 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{AOG-Note}~\cite{Beau2026aog}: Spin-stratum type-rigidity --- orthogonality of the ADE gate and closure of
     the chiral lift (\sproved\ for the gate no-go in the present construction except for the central
-    reflection $R_b$, for which and for the chiral lift it is \scond{} on [H-WS]; the full-tower generalisation is
-    established for admissible fibre operations).
+    reflection $R_b$, for which it is \scond{} on [H-WS]; the chiral-lift corollaries are \scond{} on [H-Spin], taken as
+    input from Q5b, Q11 and CHO (the spin-solder hypothesis of Q14, which AOG-Note does not derive), and, for $R_b$, on
+    [H-WS]; the full-tower generalisation is established for admissible fibre operations).
     Transversal note isolating the logical status of the generation-split value
     $\varepsilon = 1/10$. It is shown to be a theorem modulo the ADE case-selection gate: the algebra
     $\tfrac{1/2+\varepsilon}{1/2-\varepsilon} = \tfrac{3}{2} \Rightarrow \varepsilon = 1/10$ is trivial and
@@ -1865,8 +1876,9 @@ A Structural Roadmap and Paper Inventory}
     The same spin-stratum type-rigidity has a second consequence of opposite sign (the chiral-lift corollary): the
     Lorentzian chiral lift of the ordered cascade step induces no action on $\mathbb{Q}(\sqrt{5})$ --- the chiral
     weight $\sigma_L$ is the Weyl-conjugation type, living in the parity factor and not the $\sqrt{5}$ factor --- so,
-    under [H-WS], it excludes the residual obstruction of the chiral orientation note and closes [H-orient] with
-    $\mathcal{N}_A \neq 0$ within the present spin stratum~\cite{Beau2026cho} (\sproved\ under [H-WS]).
+    under [H-Spin] (taken as input, as are the Weyl and boost lemmas that precede it) and [H-WS], it excludes the
+    residual obstruction of the chiral orientation note and closes [H-orient] with $\mathcal{N}_A \neq 0$ within the
+    present spin stratum~\cite{Beau2026cho} (\sproved\ under [H-Spin] as input and [H-WS]).
     For the gate the rigidity is fatal, the required $\sqrt{5}$ action being absent; for the chiral lift it is the
     closure, the feared $\sqrt{5}$ action being absent.
     A status sharpening records the concrete generator-set form of the gate.
@@ -3199,8 +3211,10 @@ A Structural Roadmap and Paper Inventory}
       with dictionary $\varepsilon = 1/10$ without fitting;
       O12 fingerprint: $B_c$ carries radial $\sigma_c$, $A_c$ carries angular split;
       symmetric BFS shells give $\Theta_{\mathrm{raw}} = 0$ identically;
-      capacity audit closes the onset exactly $\tfrac13$, $\theta_{\max} = 2\pi/(3q)$ (generator-dependent), still
-      gated for $\varepsilon = 1/10$ &
+      capacity audit fixes the first-shell (onset) coefficient $\tfrac13$, $\theta_{\max}^{(1)} = 2\pi/(3q)$
+      (generator-dependent; the $\widehat I$-normalised bound at $n_3^{\mathrm{obs}}$ is $2.114/q$--$2.122/q$,
+      $0.9$--$1.3\,\%$ above), the comparison with $\varepsilon = 1/10$ being a required-normalisation diagnostic, still
+      gated &
       \sstruct\ /\ \scond{} on the input that $A_c$ carries the $J_3$ signal \\[3pt]
       Q11OF & Oriented frontier observable (version 1.1) & \cite{Beau2026q11of} &
       Symmetric-capacity obstruction makes raw shell observable vanish identically
@@ -3328,12 +3342,12 @@ A Structural Roadmap and Paper Inventory}
       Galois exchange $\sqrt{5}\mapsto-\sqrt{5}$ does not preserve the binary-icosahedral carrier, so a finite recursive
       tower preserves the arithmetic type (a scope hypothesis, not an absolute impossibility);
       chiral-lift corollary: same rigidity excludes the residual obstruction of CHO, the Lorentzian lift inducing no
-      $\sqrt{5}$ action, closing [H-orient] with $\mathcal{N}_A\neq0$ in the present spin stratum under [H-WS]
-      (proved under [H-WS]);
+      $\sqrt{5}$ action, closing [H-orient] with $\mathcal{N}_A\neq0$ in the present spin stratum under [H-Spin] (taken as input) and [H-WS]
+      (proved under both);
       concrete form: $R=3/2$ a forced Cayley invariant on the order-five locus ($\{\tfrac16,\tfrac14\}$) vs
       $R=\tfrac53$,
       $\varepsilon=\tfrac18$ on neutral order-four, residue = the order-five selection (proved/open) &
-      \sproved\ /\ \scond{} on [H-WS] for the $R_b$ clause and the chiral lift\ /\ \sopen \\[3pt]
+      \sproved\ /\ \scond{} on [H-WS] for the $R_b$ clause and on [H-Spin] (input) and [H-WS] for the chiral lift\ /\ \sopen \\[3pt]
       SRN & Spin as a transformation class of rotating wave modes & \cite{Beau2026srn} &
       Conceptual and structural audit of the rotating-wave reading of spin, companion to the
       fermionic-matter sub-programme: spin is fixed by how components transform under rotations of
@@ -3664,8 +3678,9 @@ A Structural Roadmap and Paper Inventory}
     In the A4-Note the first Born--Infeld contact of a collinear purely electric ray is
     $t_* = \beta/|\mathbf{E}_{F_0}|$ under [H-F], in a parametrisation-dependent form that selects no lock and makes
     no numerical prediction~\cite{Beau2026bim}.
-    The angular normalisation is closed at the coefficient level: a capacity audit on the real Weil--BFS pipeline
-    returns the $q$-independent exact onset $\tfrac13$, hence $\theta_{\max} = 2\pi/(3q)$ for the standard campaign,
+    The angular onset coefficient is fixed, not the normalisation: a capacity audit on the exact Heisenberg--BFS
+    frontier returns the $q$-independent exact onset $\tfrac13$, hence $\theta_{\max}^{(1)} = 2\pi/(3q)$ at the onset
+    shell for the standard campaign,
     while the dictionary value $\varepsilon = 1/10$ is neither a capacity fit nor fixed by
     $\mathrm{Sym}^2(\mathbb{C}^2)$
     alone~\cite{Beau2026aar, Beau2026aog}.
