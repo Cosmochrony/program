@@ -19,20 +19,20 @@ only under the transport hypothesis [H-Tr]); no mechanism for a non-zero split i
 quartic coefficient is chart-dependent and selects no lock, the first contact is chart-independent when it exists, the
 Lorentzian genus is not determined, and the Front D factorisation is formal. EBJ: its finite witness has $J^2 = +1$ and
 lies outside [H-Gen](i). Q14 3.1 states $E_\Pi \preceq 0$ as an explicit hypothesis. The commutation
-$[\gamma_5, R_b] = 0$ is the hypothesis [H-WS] of Q11OF (scalar $-1$ on the chiral carrier), carried by CHO and AOG-Note;
+$[\gamma_5, R_b] = 0$ is the hypothesis [H-WS] of Q11OF, part (i) (a scalar on the chiral carrier; the value $-1$, part (ii), is used only by AOG-Note), carried by CHO and AOG-Note;
 the $J_3$ signal comes from the $\mathfrak{sl}_2$ commutator $[E,F]=H$, not from the Heisenberg bracket (AAR 1.3).
 The registry entries, table rows, dependency figure, bibliography entries and interactive-graph nodes carry these
 statements; PRS and the A4-Note are typed conditional, the edges PRS to A4-Note and A4-Note to EBJ are typed
 conditional, and the node suffix "Written against Q14 2.0" is removed from PRS and the A4-Note and reworded for CHO,
-AOG-Note and Q11OF. TODO-RELEASE (author, at deposit time): fill in the Zenodo record numbers of the deposited
-versions listed above and of programme 2.28, and confirm that each version number matches its deposit.
+AOG-Note and Q11OF. The versions listed above are planned versions of their papers and programme 2.28 is a candidate;
+none of them is deposited yet, and the Zenodo record numbers of the new versions are added at deposit.
 
 Version 2.27 synchronises FM-Note 3.0, PYL 3.0 and PYO 2.0, which type the fermionic and mass sectors on the Q14 3.0
 hypotheses. [H-Spin] (a spin solder) and [H-Weak] (a distinct $U(2)$ weak factor $E_{\mathrm{weak}}$) are separate
 hypotheses supplied by no source; the $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra is proved on supplied model data
 only; the hypercharge line $L_Y = \wedge^2(E_{\mathrm{weak}})$ rests on [H-Weak], the exterior square of the soldered
 spinor doublet being trivial under [H-Spin]; Lorentz chirality (left-admissibility, an input branch) is distinct from
-weak $V{-}A$; and $R_b = W(-I)$ commutes with $\gamma_5$ only under an unsupplied group-level Weil-to-spin map. PYL
+weak $V{-}A$; and $R_b = W(-I)$ commutes with $\gamma_5$ only under the hypothesis [H-WS] of Q11OF, no group-level Weil-to-spin map being available at the primes of the corpus (superseded in 2.28). PYL
 records a conditional weak determinant line and the ordering of the three levels of the model operator
 $\mathrm{diag}(1, \tfrac12 + u, \tfrac12 - u)$, read as $E_\Pi^2|_{\mathbb{C}^3_{\mathrm{gen}}}$ only under the named
 hypothesis [H-Res]; the level-to-generation map is not established and no mass value is claimed.
