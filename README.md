@@ -40,7 +40,7 @@ record 23222683](https://zenodo.org/record/23222683) (concept DOI 10.5281/zenodo
 23222955](https://zenodo.org/record/23222955) (concept DOI 10.5281/zenodo.21207750), SRN 1.5 [Zenodo record
 23222984](https://zenodo.org/record/23222984) (concept DOI 10.5281/zenodo.21380026) and FM-Note 3.1 [Zenodo record
 23223000](https://zenodo.org/record/23223000) (concept DOI 10.5281/zenodo.20562665).
-Programme 2.28 itself is a candidate pending deposit; its Zenodo record number is added at its deposit.
+Programme 2.28 was deposited as [Zenodo record 23223649](https://zenodo.org/record/23223649) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.27 synchronises FM-Note 3.0, PYL 3.0 and PYO 2.0, which type the fermionic and mass sectors on the Q14 3.0
 hypotheses. [H-Spin] (a spin solder) and [H-Weak] (a distinct $U(2)$ weak factor $E_{\mathrm{weak}}$) are separate
