@@ -9,7 +9,7 @@ documents the dependency graph between them, and tracks their status. It is the 
 consult first to understand how the pieces fit together.
 
 Version 2.28 synchronises the PRS 3.0 / A4-Note 3.0 source contract and its consumers: Q14 3.1, EBJ 2.1, PYO 2.1,
-PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2 and FM-Note 3.1. Statuses are typed
+PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2 and FM-Note 3.1, deposited in the same cycle as NPI 1.0.1 and SRN 1.5 (registry entries unchanged). Statuses are typed
 per result. PRS: under a contraction hypothesis the compression remainder of the projected Dirac square is
 the Schur complement $-N^\dagger N \preceq 0$ (zero-order only under a symbol condition), equal to the projective endomorphism of Q14 only when
 $\Pi_S D^2 \Pi_S^* = \mathrm{Lich}$; under the generation-reading hypothesis [H-Gen] a $J_\Pi$-commuting locking
@@ -23,8 +23,8 @@ $[\gamma_5, R_b] = 0$ is the hypothesis [H-WS] of Q11OF, part (i) (a scalar on t
 the $J_3$ signal comes from the $\mathfrak{sl}_2$ commutator $[E,F]=H$, not from the Heisenberg bracket (AAR 1.3).
 The registry entries, table rows, dependency figure, bibliography entries and interactive-graph nodes carry these
 statements; PRS and the A4-Note are typed conditional, the edges PRS to A4-Note and A4-Note to EBJ are typed
-conditional, and the node suffix "Written against Q14 2.0" is removed from PRS and the A4-Note and reworded for CHO,
-AOG-Note and Q11OF. The versions listed above, together with NPI 1.0.1 and SRN 1.5, were deposited on Zenodo on 2026-10-07: PRS 3.0
+conditional, and the node suffix "Written against Q14 2.0" is removed from PRS and the A4-Note and the corresponding
+clause is removed for CHO, AOG-Note and Q11OF. The versions listed above, together with NPI 1.0.1 and SRN 1.5, were deposited on Zenodo on 2026-10-07: PRS 3.0
 [Zenodo record 23222634](https://zenodo.org/record/23222634) (concept DOI 10.5281/zenodo.20601040), A4-Note 3.0
 [Zenodo record 23222712](https://zenodo.org/record/23222712) (concept DOI 10.5281/zenodo.20633931), Q14 3.1 [Zenodo
 record 23222683](https://zenodo.org/record/23222683) (concept DOI 10.5281/zenodo.20218409), EBJ 2.1 [Zenodo record
