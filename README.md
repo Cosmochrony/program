@@ -24,8 +24,23 @@ the $J_3$ signal comes from the $\mathfrak{sl}_2$ commutator $[E,F]=H$, not from
 The registry entries, table rows, dependency figure, bibliography entries and interactive-graph nodes carry these
 statements; PRS and the A4-Note are typed conditional, the edges PRS to A4-Note and A4-Note to EBJ are typed
 conditional, and the node suffix "Written against Q14 2.0" is removed from PRS and the A4-Note and reworded for CHO,
-AOG-Note and Q11OF. The versions listed above are planned versions of their papers and programme 2.28 is a candidate;
-none of them is deposited yet, and the Zenodo record numbers of the new versions are added at deposit.
+AOG-Note and Q11OF. The versions listed above, together with NPI 1.0.1 and SRN 1.5, were deposited on Zenodo on 2026-10-07: PRS 3.0
+[Zenodo record 23222634](https://zenodo.org/record/23222634) (concept DOI 10.5281/zenodo.20601040), A4-Note 3.0
+[Zenodo record 23222712](https://zenodo.org/record/23222712) (concept DOI 10.5281/zenodo.20633931), Q14 3.1 [Zenodo
+record 23222683](https://zenodo.org/record/23222683) (concept DOI 10.5281/zenodo.20218409), EBJ 2.1 [Zenodo record
+23222741](https://zenodo.org/record/23222741) (concept DOI 10.5281/zenodo.20763532), PYO 2.1 [Zenodo record
+23222779](https://zenodo.org/record/23222779) (concept DOI 10.5281/zenodo.20767498), PYL 3.0.1 [Zenodo record
+23222840](https://zenodo.org/record/23222840) (concept DOI 10.5281/zenodo.20767265), AAR 1.3 [Zenodo record
+23222518](https://zenodo.org/record/23222518) (concept DOI 10.5281/zenodo.20601228), Q11OF 1.1 [Zenodo record
+23222547](https://zenodo.org/record/23222547) (concept DOI 10.5281/zenodo.20601245), CHO 1.1 [Zenodo record
+23222590](https://zenodo.org/record/23222590) (concept DOI 10.5281/zenodo.20735907), AOG-Note 1.8 [Zenodo record
+23222608](https://zenodo.org/record/23222608) (concept DOI 10.5281/zenodo.20693084), KUD 1.5 [Zenodo record
+23222888](https://zenodo.org/record/23222888) (concept DOI 10.5281/zenodo.21109812), TPC 1.2 [Zenodo record
+23222927](https://zenodo.org/record/23222927) (concept DOI 10.5281/zenodo.21115977), NPI 1.0.1 [Zenodo record
+23222955](https://zenodo.org/record/23222955) (concept DOI 10.5281/zenodo.21207750), SRN 1.5 [Zenodo record
+23222984](https://zenodo.org/record/23222984) (concept DOI 10.5281/zenodo.21380026) and FM-Note 3.1 [Zenodo record
+23223000](https://zenodo.org/record/23223000) (concept DOI 10.5281/zenodo.20562665).
+Programme 2.28 itself is a candidate pending deposit; its Zenodo record number is added at its deposit.
 
 Version 2.27 synchronises FM-Note 3.0, PYL 3.0 and PYO 2.0, which type the fermionic and mass sectors on the Q14 3.0
 hypotheses. [H-Spin] (a spin solder) and [H-Weak] (a distinct $U(2)$ weak factor $E_{\mathrm{weak}}$) are separate
