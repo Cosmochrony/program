@@ -15,7 +15,9 @@ block has signature $(-,+,+)$ under [H-hyp$_{\mathrm{red}}$]; $(-,+,+,+)$ needs 
 spherically symmetric, asymptotically flat extension; the Schwarzschild form needs external dynamical input, with no
 uniqueness claim; the horizon reading is interpretive; the relation to the Einstein equations is conditional on
 matching data and an assumed matter functional. The Q6b entry, its results row, its bibliography entry and its graph
-node are rewritten accordingly.
+node are rewritten accordingly. The registry also records EG-Note 2.1, which aligns the statements it takes from Q6b;
+Q12 1.4.1, whose base space is supplied and whose citation of Q5b is corrected; and Q13 1.5, in which the Lorentzian
+continuation is open in the geometric sector as well as in the gauge sector.
 
 Version 2.28 synchronises the PRS 3.0 / A4-Note 3.0 source contract and its consumers: Q14 3.1, EBJ 2.1, PYO 2.1,
 PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2 and FM-Note 3.1, deposited in the same cycle as NPI 1.0.1 and SRN 1.5 (registry entries unchanged). Statuses are typed
