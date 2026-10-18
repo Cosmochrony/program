@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.30 records Q6b version 2.0. On a supplied Heisenberg carrier, under the unestablished spatial-limit
+hypothesis [H-L] and the open lifting hypothesis [H-lift], Q6b assembles a rank-three co-metric whose non-degenerate
+block has signature $(-,+,+)$ under [H-hyp$_{\mathrm{red}}$]; $(-,+,+,+)$ needs a supplied rank-four extension
+(Q5b-O2), and no coefficient value is established. Flux conservation gives a Newtonian exterior only for a supplied
+spherically symmetric, asymptotically flat extension; the Schwarzschild form needs external dynamical input, with no
+uniqueness claim; the horizon reading is interpretive; the relation to the Einstein equations is conditional on
+matching data and an assumed matter functional. The Q6b entry, its results row, its bibliography entry and its graph
+node are rewritten accordingly.
+
 Version 2.28 synchronises the PRS 3.0 / A4-Note 3.0 source contract and its consumers: Q14 3.1, EBJ 2.1, PYO 2.1,
 PYL 3.0.1, AAR 1.3, Q11OF 1.1, CHO 1.1, AOG-Note 1.8, KUD 1.5, TPC 1.2 and FM-Note 3.1, deposited in the same cycle as NPI 1.0.1 and SRN 1.5 (registry entries unchanged). Statuses are typed
 per result. PRS: under a contraction hypothesis the compression remainder of the projected Dirac square is
