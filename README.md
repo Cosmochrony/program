@@ -11,10 +11,11 @@ consult first to understand how the pieces fit together.
 Version 2.30 records Q6b version 2.0. On a supplied Heisenberg carrier, under the unestablished spatial-limit
 hypothesis [H-L] and the open lifting hypothesis [H-lift], Q6b assembles a rank-three co-metric whose non-degenerate
 block has signature $(-,+,+)$ under [H-hyp$_{\mathrm{red}}$]; $(-,+,+,+)$ needs a supplied rank-four extension
-(Q5b-O2), and no coefficient value is established. Flux conservation gives a Newtonian exterior only for a supplied
-spherically symmetric, asymptotically flat extension; the Schwarzschild form needs external dynamical input, with no
-uniqueness claim; the horizon reading is interpretive; the relation to the Einstein equations is conditional on
-matching data and an assumed matter functional. The Q6b entry, its results row, its bibliography entry and its graph
+(Q5b-O2), and no coefficient value is established. Flux conservation gives a leading Newtonian exterior only for a
+supplied spherically symmetric, asymptotically flat extension with an asymptotically homogeneous exterior; the
+Schwarzschild form needs external dynamical input, with no uniqueness claim; the horizon reading is interpretive; the
+relation to the Einstein equations is conditional on matching data, an assumed matter functional and a Lorentzian
+formulation that is not available. The Q6b entry, its results row, its bibliography entry and its graph
 node are rewritten accordingly. The registry also records EG-Note 2.1, which aligns the statements it takes from Q6b;
 Q12 1.4.1, whose base space is supplied and whose citation of Q5b is corrected; and Q13 1.5, in which the Lorentzian
 continuation is open in the geometric sector as well as in the gauge sector.
