@@ -40,19 +40,23 @@ cd "$OUTPUT_DIR"
 BSTINPUTS="../tex:${BSTINPUTS}" BIBINPUTS="../tex:${BIBINPUTS}" bibtex "$MAIN_NAME"
 cd ..
 
-# Step 3: Second pdflatex run (for bibliography)
-echo -e "${GREEN}Step 3/5: Second pdflatex run${NC}"
-pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
-    -output-directory="$OUTPUT_DIR" \
-    -recorder \
-    "$TEX_FILE"
-
-# Step 4: Third pdflatex run (for cross-references)
-echo -e "${GREEN}Step 4/5: Third pdflatex run${NC}"
-pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
-    -output-directory="$OUTPUT_DIR" \
-    -recorder \
-    "$TEX_FILE"
+# Steps 3-4: rerun pdflatex until cross-references are stable (at most 4 more passes)
+LOG="$OUTPUT_DIR/$MAIN_NAME.log"
+for PASS in 2 3 4 5; do
+    echo -e "${GREEN}Step 3/5 (pass $PASS): pdflatex${NC}"
+    pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
+        -output-directory="$OUTPUT_DIR" \
+        -recorder \
+        "$TEX_FILE"
+    if [ "$PASS" -ge 3 ] && ! grep -aqE "Rerun to get|may have changed" "$LOG"; then
+        break
+    fi
+done
+if grep -aqE "Rerun to get|may have changed" "$LOG"; then
+    echo -e "${RED}Cross-references still unstable after pass $PASS${NC}"
+    exit 1
+fi
+echo -e "${GREEN}Step 4/5: cross-references stable after pass $PASS${NC}"
 
 # Step 5: Final check
 if [ -f "$OUTPUT_DIR/$MAIN_NAME.pdf" ]; then
