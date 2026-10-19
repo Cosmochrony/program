@@ -8,6 +8,17 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.31 records SG-Note 2.2 and GGS-Note 2.1. Both notes work on a supplied Riemannian metric; its reading
+as the emergent metric of the emergent geometry sub-programme is conditional on the unestablished spatial-limit
+hypothesis [H-L], the open lifting hypothesis [H-lift], a supplied rank-four extension and a continuation from
+Riemannian signature that is not performed, and no metric coefficient value is established. SG-Note states the
+conditions under which the Einstein tensor dominates the renormalized metric variation (a non-zero matched Einstein
+coefficient and $R L_4^2 \ll 1$) and the conditional stationarity at leading local infrared order. GGS-Note states
+the Lorentzian continuation as open in the geometric and gauge sectors and types the spectral stratification as an
+organising reading. Their registry entries, table rows, bibliography entries and graph nodes are updated; the
+emergent-geometry edges to Q12 and Q13 carry the full list of conditions, and two conditional edges from EG-Note to
+SG-Note and GGS-Note record that only the emergent reading of the metric depends on the geometric branch.
+
 Version 2.30 records Q6b version 2.0. On a supplied Heisenberg carrier, under the unestablished spatial-limit
 hypothesis [H-L] and the open lifting hypothesis [H-lift], Q6b assembles a rank-three co-metric whose non-degenerate
 block has signature $(-,+,+)$ under [H-hyp$_{\mathrm{red}}$]; $(-,+,+,+)$ needs a supplied rank-four extension

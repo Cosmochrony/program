@@ -1486,7 +1486,7 @@
       url: BASE + "spectral-gravity",
       tags: ["grav", "spt", "BI"],
       title: "Spectral Gravity Sub-Programme (Presentation Note 4)",
-      desc: "Synthesis of Gravity, Thermodynamics, Lorentz, and Born–Infeld: the conditions under which the effective metric supports an Einstein sector, its variational restatement, the Lorentzian truncation, and the determinantal completion. Consolidates constituent results and adds no new theorem."
+      desc: "Synthesis of Gravity, Thermodynamics, Lorentz, and Born–Infeld: the conditions under which a supplied Riemannian metric supports an Einstein sector (a non-zero matched Einstein coefficient and small curvature), its emergent reading being conditional on [H-L], [H-lift], a supplied rank-four extension and a continuation from Riemannian signature; its variational restatement, the Lorentzian truncation, and the determinantal completion. Consolidates constituent results and adds no new theorem."
     },
     {
       id: "LorCap", lbl: "LorCap", s: "conditional", b: "III", key: "Beau2026n",
@@ -1638,7 +1638,7 @@
         "Synthesis and entry point of the gauge–gravity stratification sub-programme, organising its two constituent papers (Q12, Q13 — Q12 shared with the gauge-structure sub-programme, Note 3) around the spectral stratification principle a_2 → gravity, a_4 → gauge. " +
         "Q12: Yang–Mills equations D_μ F^{a μν} = 0 from the vertical a_4 variation at fixed metric. Q13: the conditional Einstein–Yang–Mills system from the joint variation of a single matched local action, with 8π G_N = 1/(2 c_EH) fixed by canonical matching and the couplings as independent renormalized data. " +
         "O31 version 2.0 withdraws the former colour-factor and complete-group derivation. The a_4 calculation remains conditional on a supplied compact gauge group. " +
-        "GGS-Note 2.0 records fixed-metric isolation rather than full horizontal–vertical decoupling; its theorem-level calculations use supplied geometric data, while their reading on the Cosmochrony emergent base is conditional on [H-L]. It treats a_6 only as a representative spanning list of dimension-six invariants and asserts neither a non-linear completion nor a numerical coupling hierarchy. The proper-time scheme dependence and Euclidean-signature limitation are explicit."
+        "GGS-Note 2.1 records fixed-metric isolation rather than full horizontal–vertical decoupling; its theorem-level calculations use a supplied Riemannian base metric, while their reading on the Cosmochrony emergent base is conditional on [H-L], [H-lift], a supplied rank-four extension and a continuation from Riemannian signature that is not performed. It treats a_6 only as a representative spanning list of dimension-six invariants and asserts neither a non-linear completion nor a numerical coupling hierarchy. The proper-time scheme dependence and Euclidean-signature limitation are explicit."
     },
     {
       id: "ENTNote", lbl: "ENT-Note", s: "synthesis", b: "III", key: "Beau2026entnote",
@@ -1749,9 +1749,11 @@
     { f: "Q7", t: "Q11", st: "conditional", claim: "Q11 takes the spin-one spatial action [ACT] as a supplied hypothesis, which Q7 records as supplied by no source" },
     { f: "Q5b", t: "Q11" }, { f: "Q11", t: "Grav", sp: 1, st: "interpretive", claim: "Gravity takes diag(−A_τ, 2, 2, 2) from Q8 and Q10 and leaves A_τ open; Q11 shows that spatial SU(2) invariance does not fix A_τ, and no coefficient value is established (pending revision)" },
     { f: "Grav", t: "Q12" }, { f: "Q6a", t: "Q12" },
-    { f: "EGNote", t: "Q12", st: "conditional", claim: "only the emergent-base interpretation consumes [H-L]; the fixed-metric theorem does not" },
+    { f: "EGNote", t: "Q12", st: "conditional", claim: "only the emergent-base interpretation consumes the geometric branch, conditionally on [H-L], [H-lift], a supplied rank-four extension and a continuation from Riemannian signature; the theorem on a supplied metric does not" },
     { f: "Q12", t: "Q13" }, { f: "Grav", t: "Q13" },
-    { f: "EGNote", t: "Q13", st: "conditional", claim: "only the emergent-base interpretation consumes [H-L]; the supplied-data variational calculation does not" },
+    { f: "EGNote", t: "Q13", st: "conditional", claim: "only the emergent-base interpretation consumes the geometric branch, conditionally on [H-L], [H-lift], a supplied rank-four extension and a continuation from Riemannian signature; the supplied-data variational calculation does not" },
+    { f: "EGNote", t: "SGNote", st: "conditional", claim: "concerns only the emergent reading of the metric, conditional on [H-L], [H-lift], a supplied rank-four extension and a continuation from Riemannian signature; the calculations on a supplied Riemannian metric do not depend on a derivation by EG-Note" },
+    { f: "EGNote", t: "GGSNote", st: "conditional", claim: "concerns only the emergent reading of the base, conditional on [H-L], [H-lift], a supplied rank-four extension and a continuation from Riemannian signature; the calculations on a supplied Riemannian base metric do not depend on a derivation by EG-Note" },
     { f: "Q13", t: "Q14" }, { f: "Grav", t: "Q14" }, { f: "BI", t: "Q14" },
     { f: "EGNote", t: "Q14", st: "postulated", claim: "Q14's spin solder [H-Spin] needs a four-dimensional Lorentzian co-metric, which the geometric branch supplies only conditionally (rank three under [H-L], [H-lift]; full rank only for a supplied extension); the solder itself is supplied by no source" },
     { f: "Q11", t: "Q14", st: "conditional", claim: "Conditional Lorentzian signature; spin soldering remains an input. Q11 Corollary 6.1 supplies Lorentzian signature under its stated hypotheses. Q14 uses only this signature. Q11 supplies neither coefficient values, Lorentzian spin soldering, nor an order generator; [H-Spin] remains an additional hypothesis, and no identification of log g with ∂τ follows." },
