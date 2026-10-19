@@ -18,6 +18,7 @@ the Lorentzian continuation as open in the geometric and gauge sectors and types
 organising reading. Their registry entries, table rows, bibliography entries and graph nodes are updated; the
 emergent-geometry edges to Q12 and Q13 carry the full list of conditions, and two conditional edges from EG-Note to
 SG-Note and GGS-Note record that only the emergent reading of the metric depends on the geometric branch.
+Programme 2.31 was deposited as [Zenodo record 23473240](https://zenodo.org/record/23473240) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.30 records Q6b version 2.0. On a supplied Heisenberg carrier, under the unestablished spatial-limit
 hypothesis [H-L] and the open lifting hypothesis [H-lift], Q6b assembles a rank-three co-metric whose non-degenerate
