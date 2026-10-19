@@ -17,7 +17,7 @@ Schwarzschild form needs external dynamical input, with no uniqueness claim; the
 relation to the Einstein equations is conditional on matching data, an assumed matter functional and a Lorentzian
 formulation that is not available. The Q6b entry, its results row, its bibliography entry and its graph
 node are rewritten accordingly. The registry also records EG-Note 2.1, which aligns the statements it takes from Q6b;
-Q12 1.4.1, whose base space is supplied and whose citation of Q5b is corrected; and Q13 1.5, in which the Lorentzian
+Q12 1.5, whose base space is supplied and whose citation of Q5b is corrected; and Q13 1.5, in which the Lorentzian
 continuation is open in the geometric sector as well as in the gauge sector.
 
 Version 2.28 synchronises the PRS 3.0 / A4-Note 3.0 source contract and its consumers: Q14 3.1, EBJ 2.1, PYO 2.1,
