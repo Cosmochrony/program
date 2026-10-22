@@ -18,6 +18,7 @@ most $|1-\alpha d|$; the saturation condition applied to the Ricci endomorphism 
 non-uniqueness lies in the sector function. LC-O2 uses a supplied Lorentzian co-metric with a postulated flat
 temporal reference and the Q11 Corollary 6.1 form under its hypotheses. The edges Q11 → Gravity and Gravity → LCII
 are removed as result dependencies; conditional edges Q11 → LCII and Q5b → LCII are added.
+Programme 2.32 was deposited as [Zenodo record 23576541](https://zenodo.org/record/23576541) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.31 records SG-Note 2.2 and GGS-Note 2.1. Both notes work on a supplied Riemannian metric; its reading
 as the emergent metric of the emergent geometry sub-programme is conditional on the unestablished spatial-limit
