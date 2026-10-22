@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.32 records Gravity 3.5 and its consumer cascade (Q12 1.6, Q13 1.6, EG-Note 2.2, SG-Note 2.3,
+LC-O2 1.3). Gravity works on a supplied Riemannian metric: its identification with an operator built from the
+admissibility data is not established, [H-lift] is open, Q5b gives a rank-three co-metric, and no metric coefficient
+value is established. The infrared dominance of the Einstein term is structural and conditional (a non-zero matched
+coefficient and $R L_4^2 \ll 1$, by power counting). The Born–Infeld classification also leaves the trace parameter
+$\alpha$ of the spectral carrier free; all carriers share the linear term and differ at second order and in their
+saturation boundary. LC-O2 uses a supplied Lorentzian co-metric with a postulated flat temporal reference. The
+edges Q11 → Gravity and Gravity → LCII are removed as result dependencies.
+
 Version 2.31 records SG-Note 2.2 and GGS-Note 2.1. Both notes work on a supplied Riemannian metric; its reading
 as the emergent metric of the emergent geometry sub-programme is conditional on the unestablished spatial-limit
 hypothesis [H-L], the open lifting hypothesis [H-lift], a supplied rank-four extension and a continuation from
