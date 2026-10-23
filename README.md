@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.33 records GS-Note 2.1. GS-Note identifies no gauge group: U(1) is structural on premises carried as
+input, SU(2) is conditional on a supplied carrier, and O31 withdraws every derivation of SU(3) and of the
+composite. Q12 and Q13 take the gauge group as a supplied compact group, and GS-Note takes no metric coefficient
+from Note 2: Q5b gives a rank-three co-metric and Q11 a rank-four form only for a supplied extension, so $g =
+2\eta$ is not established. The Q6a entry, table row and graph node are aligned with the Q6a source: gauge charges
+are fibre invariants, U(1) is the residual phase symmetry, SU(2) is read as the minimal non-abelian admissible
+group under a supplied carrier, SU(3) is a structural hypothesis, Q6a does not use O31, and its connection is
+conditional on two continuum hypotheses. The GS-Note entry, table row and graph node are updated accordingly.
+
 Version 2.32 records Gravity 3.5 and its consumer cascade (Q12 1.6, Q13 1.6, EG-Note 2.2, SG-Note 2.3,
 LC-O2 1.3). Gravity works on a supplied Riemannian metric: its identification with an operator built from the
 admissibility data is not established, [H-lift] is open, Q5b gives a rank-three co-metric, and no metric coefficient
