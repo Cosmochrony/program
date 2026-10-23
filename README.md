@@ -16,6 +16,7 @@ from Note 2: Q5b gives a rank-three co-metric and Q11 a rank-four form only for 
 are fibre invariants, U(1) is the residual phase symmetry, SU(2) is read as the minimal non-abelian admissible
 group under a supplied carrier, SU(3) is a structural hypothesis, Q6a does not use O31, and its connection is
 conditional on two continuum hypotheses. The GS-Note entry, table row and graph node are updated accordingly.
+Programme 2.33 was deposited as [Zenodo record 23605095](https://zenodo.org/record/23605095) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.32 records Gravity 3.5 and its consumer cascade (Q12 1.6, Q13 1.6, EG-Note 2.2, SG-Note 2.3,
 LC-O2 1.3). Gravity works on a supplied Riemannian metric: its identification with an operator built from the
