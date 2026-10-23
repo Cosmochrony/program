@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.34 records the Q6a 2.3 cycle (Q6a 2.3, Foundation 2.3, GS-Note 2.2, Q12 1.7, Q6b 2.1). Q6a reads
+SU(2) off the spinor carrier supplied by O23, under the neutral-sector hypothesis of O27: the group acting
+faithfully on that carrier is SU(2), a consistency statement and not a selection, and no uniqueness or minimality
+of SU(2) is established. The Foundation axioms do not select the carrier, and Foundation lists the SU(2) gauge
+structure as conditional. Q6a's connection is conditional on two continuum hypotheses, one of them the spatial
+continuum that Q5a leaves open, and the Yang–Mills action is a structural motivation. The graph edge Q5b → Q6a is
+replaced by a conditional edge Q5a → Q6a, since Q6a cites Q5a and not Q5b. Entries for O31, O32, Q5a, U1, W1 and
+H2 state their current content without narrating earlier versions.
+
 Version 2.33 records GS-Note 2.1. GS-Note identifies no gauge group: U(1) is structural on premises carried as
 input, SU(2) is conditional on a supplied carrier, and O31 withdraws every derivation of SU(3) and of the
 composite. Q12 and Q13 take the gauge group as a supplied compact group, and GS-Note takes no metric coefficient
