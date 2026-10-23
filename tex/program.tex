@@ -1292,9 +1292,10 @@ A Structural Roadmap and Paper Inventory}
     H2~\cite{Beau2026h2} proves [H2] (strong convergence of the rescaled
     Weil generators $\hat{X}_q \to x$ and $\hat{P}_q \to -i\partial_x$), via a quantitative
     Poisson aliasing lemma and a discrete Sobolev identity (\sproved{}).
-    Q5a version 3.2 does not adopt that framework, and the chain's residual
-    conditionality includes the spatial limit hypothesis [H-L] together with the open
-    hypotheses [H1], [H-$\mathcal{E}$1], and [C] of a Mosco-type route in any non-zero-form reading.
+    Q5a version 3.2 proves that the published form has a zero-form Mosco limit, so this route gives no
+    spatial limit operator; the chain's residual conditionality includes the spatial limit hypothesis
+    [H-L] together with the open hypotheses [H1], [H-$\mathcal{E}$1], and [C] of a non-trivial
+    Mosco-type route.
     \textbf{Q11}~\cite{Beau2026q11} (version 2.0): Spatial $\SU(2)$ invariance leaves the temporal coefficient free
     (\sproved).
     On the cotangent fibre $\mathbb{R}_\tau\oplus W$, with $\SU(2)$ trivial on the ordering line and spin one on the
@@ -2529,9 +2530,10 @@ A Structural Roadmap and Paper Inventory}
             {\begin{tabular}{l}[H-$\mathcal{E}$1], [C]\\not closed
           \end{tabular}};
           \draw[spine] (Q5a)--(Q5b);
-          \draw[arr]   (Q5a.west) to[out=210,in=150] (Q6a.west);
+          \draw[arr,dashed] (Q5a.south west) to[out=-135,in=135,looseness=0.9] (Q6a.north west);
           % O31 supplies no edge to Q6a.
           \draw[arr]   (Q6a)--(Q6b);
+          \draw[arr]   (Q5b.south east) to[out=-45,in=45,looseness=0.9] (Q6b.north east);
 
           \node[S] (Sp2)  at (-1.5*\dx,-5*\dy) {Spec2};
           \node[C] (Grav) at (-1.5*\dx,-6*\dy) {Gravity};
@@ -2833,7 +2835,7 @@ A Structural Roadmap and Paper Inventory}
       \sproved \\[3pt]
       Found & Foundation & \cite{Beau2026m} &
       Axioms A1--A4; the published Heisenberg/Weil selection theorem is not established;
-      version 2.2: continuum-limit passages conditioned on the unestablished spatial-limit hypothesis
+      version 2.3: continuum-limit passages conditioned on the unestablished spatial-limit hypothesis
       [H-L] (Q5b version 2.0); co-metric completion conditional on [H-L]; relation to HJ, symplectic, WKB, FRG
       formalisms &
       \sstruct\ /\ \scond{} on [H-L]\ /\ \sopen \\[3pt]
@@ -3202,7 +3204,7 @@ A Structural Roadmap and Paper Inventory}
       $\tau = n\,\Delta\tau$ is a modelling input; the co-metric $\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$
       under [H-L], [H-lift], [T], [INV$^+$]; the coupling datum fixing $A_\tau/A_H$ is missing &
       \sproved\ /\ \scond\ /\ \sopen \\[3pt]
-      Q12 & Yang--Mills from $a_4$ (version 1.5) & \cite{Beau2026q12} &
+      Q12 & Yang--Mills from $a_4$ (version 1.7) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
       vertical variation $\delta_\mathcal{A} S_\Pi = 0$ at fixed metric yields
       $D_\mu F^{a\mu\nu} = 0$; induced log running $\propto I_\rho$ (non-universal),
@@ -3563,7 +3565,7 @@ A Structural Roadmap and Paper Inventory}
       hypotheses and after rescaling $\tau$, no coefficient value; the identification Q7 version~2.0 records as supplied by no source remains
       an input; the exterior and Einstein statements taken from Q6b are aligned with Q6b version~2.1 &
       \ssynth \\[3pt]
-      GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.1) & \cite{Beau2026gsnote} &
+      GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.2) & \cite{Beau2026gsnote} &
       Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12. Identifies no gauge group:
       $\mathrm{U}(1)$ structural, $\SU(2)$ conditional on a supplied carrier, $\SU(3)$ and the
       composite withdrawn at the source (O31); Q12 and Q13 take a supplied compact group.

@@ -11,11 +11,14 @@ consult first to understand how the pieces fit together.
 Version 2.34 records the Q6a 2.3 cycle (Q6a 2.3, Foundation 2.3, GS-Note 2.2, Q12 1.7, Q6b 2.1). Q6a reads
 SU(2) off the spinor carrier supplied by O23, under the neutral-sector hypothesis of O27: the group acting
 faithfully on that carrier is SU(2), a consistency statement and not a selection, and no uniqueness or minimality
-of SU(2) is established. The Foundation axioms do not select the carrier, and Foundation lists the SU(2) gauge
-structure as conditional. Q6a's connection is conditional on two continuum hypotheses, one of them the spatial
-continuum that Q5a leaves open, and the Yang–Mills action is a structural motivation. The graph edge Q5b → Q6a is
-replaced by a conditional edge Q5a → Q6a, since Q6a cites Q5a and not Q5b. Entries for O31, O32, Q5a, U1, W1 and
-H2 state their current content without narrating earlier versions.
+of SU(2) is established. The Foundation axioms do not select the carrier; Foundation lists the SU(2) gauge
+structure as conditional and the Standard Model gauge group as open, O31 version 2.0 being a withdrawal notice,
+and states the large-q continuum limit as open requirements. GS-Note states O28, O29, O30 and Q7 as they
+currently are. Q6a's connection is conditional on two continuum hypotheses, one of them the spatial continuum
+that Q5a leaves open, and the Yang–Mills action is a structural motivation. In the dependency graph the edge
+Q5b → Q6a is replaced by a conditional edge Q5a → Q6a and an edge Q5b → Q6b, since Q6a cites Q5a and not Q5b,
+while Q6b cites Q5b. Entries for O31, O32, Q5a, U1, W1 and H2 state their current content without narrating
+earlier versions.
 
 Version 2.33 records GS-Note 2.1. GS-Note identifies no gauge group: U(1) is structural on premises carried as
 input, SU(2) is conditional on a supplied carrier, and O31 withdraws every derivation of SU(3) and of the
