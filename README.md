@@ -10,7 +10,8 @@ consult first to understand how the pieces fit together.
 
 Version 2.35 records the LC/2η cycle (TempProj 1.4, LorentzCapacity 1.4, LC-O1 1.1, LC-O2-O1 2.1, LC-O3 1.1,
 LC-Synthesis 2.1, LCII 1.4; Cosmology 2.4 only corrects its import of TempProj). LCII states the fibrewise residual
-R(x)/γ as a capacity increment per ordering step, read as gravitational time dilation under [H-cone]. The Lorentz-capacity papers take a supplied
+R(x)/γ as a capacity increment per ordering step, read as gravitational time dilation under [H-cone] and the
+occupancy–lapse postulate. The Lorentz-capacity papers take a supplied
 co-metric of the conditional form of Q11 Corollary 6.1, diag(−A_τ, 2λ, 2λ, 2λ), whose two coefficients are
 independent and fixed by no source; after a rescaling of τ it is proportional to η, and the normalisation
 g = 2η is a choice of units. The identification of the light-cone speed of that co-metric with the Born–Infeld
