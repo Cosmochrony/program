@@ -17,8 +17,8 @@ incompleteness does not guarantee the initial transition; and its results table 
 Einstein–Yang–Mills results of Gravity, Q12 and Q13 with their hypotheses (the Einstein condition being sufficient),
 deriving no coupling hierarchy. QS-Note states that the axioms restrict but do not select the fibre, and that O23
 finds spinor constituents of the restricted Weil module at explicit levels without a rule selecting the spinor
-carrier. The Foundation entry, table row and graph node are aligned, and the Level-2 sentence on the spectral
-entropy functional states the Gravity conditions.
+carrier. The Foundation and QS-Note entries, table rows and graph nodes are aligned, and the white-paper sentence on
+the spectral entropy functional states the Gravity conditions.
 
 Version 2.35 records the LC/2η cycle (TempProj 1.4, LorentzCapacity 1.4, LC-O1 1.1, LC-O2-O1 2.1, LC-O3 1.1,
 LC-Synthesis 2.1, LCII 1.4; Cosmology 2.4 only corrects its import of TempProj). LCII states the fibrewise residual
