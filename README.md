@@ -18,7 +18,7 @@ Einstein–Yang–Mills results of Gravity, Q12 and Q13 with their hypotheses (t
 deriving no coupling hierarchy. QS-Note states that, under an explicit representation-theoretic reading of the
 fibre, the axioms restrict its algebraic structure but do not select it, and that, for the explicitly studied
 generic blocks at $q = 53$ and $q = 101$, O23 finds exactly two faithful $\mathrm{SU}(2)$-valued constituents of the
-restricted Weil module without a rule selecting the spinor carrier. Foundation's axiomatic level attributes
+restricted Weil module without a derived rule selecting the spinor carrier. Foundation's axiomatic level attributes
 discreteness to A3 and A4, and states that the complex carriers are supplied. The Foundation and QS-Note
 entries, table rows and graph nodes are aligned, and the white-paper sentence on
 the spectral entropy functional states the Gravity conditions.
