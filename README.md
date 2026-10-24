@@ -10,10 +10,11 @@ consult first to understand how the pieces fit together.
 
 Version 2.36 records the Foundation 2.4 cycle (Foundation 2.4, QS-Note 2.2). Foundation states the homogeneous
 dimension D_hom = 4 as a property of the supplied Heisenberg carrier, local on G_q for n ≪ √q and not identified
-with 3+1 spacetime; it writes complex amplitudes on the spinor carrier supplied conditionally by O23, coherence
-excluding a classical probability mixture but not real amplitudes; projective incompleteness does not guarantee
-the initial transition; and its results table gives the Einstein, Yang–Mills and Einstein–Yang–Mills results of
-Gravity, Q12 and Q13 with their hypotheses, deriving no coupling hierarchy. QS-Note states that the axioms
+with 3+1 spacetime; it writes complex amplitudes on the supplied carriers, coherence excluding a classical
+probability mixture but not real amplitudes; the Born weight is an additional rule; projective incompleteness does
+not guarantee the initial transition; and its results table gives the Einstein, Yang–Mills and Einstein–Yang–Mills
+results of Gravity, Q12 and Q13 with their hypotheses (the Einstein condition being sufficient), deriving no
+coupling hierarchy. QS-Note states that the axioms
 restrict but do not select the fibre. The Foundation entry, table row and graph node are aligned, and the
 Level-2 sentence on the spectral entropy functional states the Gravity conditions.
 
