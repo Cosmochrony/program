@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.34}
+\date{2026\\[2pt]\small Version 2.35}
 
 \begin{document}
 
@@ -2331,7 +2331,7 @@ A Structural Roadmap and Paper Inventory}
     identification is
     missing, verdict~3, with O29 auditing the measured rank rather than supplying it);
     parallel: Spectral2 $\to$ Gravity $\to$ Thermodynamics $\to$ Lorentz;
-    Q5b $+$ Q11 $+$ PTO $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII $\to$ LCIIo1; LCo1, LCo3.
+    Q5b $+$ Q11 $+$ BI $\to$ LorCap $\to$ TempProj $\to$ LCII $\to$ LCIIo1; TempProj $+$ PTO $\to$ LCo1; TempProj $\to$ LCo3.
 
     \begin{figure}[p]
       \centering
@@ -2442,16 +2442,16 @@ A Structural Roadmap and Paper Inventory}
           \node[C] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
           \node[C] (LCII)   at (5*\dx,-10*\dy) {LCII};
           \node[P] (LCIIo1) at (5*\dx,-11*\dy) {LCIIo1};
-          \node[P] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
+          \node[C] (LCo1)   at (4*\dx,-11*\dy) {LCo1};
           \node[P] (LCo3)   at (6*\dx,-11*\dy) {LCo3};
           \node[Y] (LCsyn)  at (5*\dx,-12*\dy) {LC-Synth};
 
-          \draw[arr]   (PTO)    -- (LorCap);
+          \draw[arr]   (PTO)    to[out=-150,in=150] (LCo1);
           \draw[spine] (LorCap) -- (TempPr);
           \draw[arr]   (TempPr) -- (LCII);
           \draw[spine] (LCII)   -- (LCIIo1);
           \draw[arr]   (TempPr) to[out=-110,in=90] (LCo1);
-          \draw[arr]   (LCII)   to[out=-50,in=90]  (LCo3);
+          \draw[arr]   (TempPr) to[out=-70,in=90]  (LCo3);
           \draw[spine] (LCIIo1) -- (LCsyn);
           \draw[arr]   (LCo1)   to[out=-90,in=160] (LCsyn);
           \draw[arr]   (LCo3)   to[out=-90,in=20]  (LCsyn);
