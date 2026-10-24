@@ -197,7 +197,9 @@ A Structural Roadmap and Paper Inventory}
     No background spacetime, no quantum postulate, and no substrate field are introduced at this level.
     The four axioms are: local projective admissibility~(A1), structural non-injectivity~(A2),
     admissibility as non-premature selection~(A3), and projection locking~(A4).
-    From~A1--A2 alone, irreversibility and the arrow of time follow.
+    From~A1--A2, non-injective transitions lose information in their immediate image; neither permanent
+    non-recovery nor the arrow of time follows, temporal order being conditional on the acyclicity
+    hypothesis [H-acyc].
     Under the published formalisation, A3 supplies irreducibility and a non-trivial commutator.
     It does not force centrality, class-two nilpotence, or the Weil representation.
     From~A4, the discreteness of quantum transitions follows.
@@ -320,19 +322,20 @@ A Structural Roadmap and Paper Inventory}
 
     The Foundation paper~\cite{Beau2026m} (v2.3) states the axiomatic basis of the programme.
     From the four axioms~A1--A4 it claims:
-    (i) irreversibility and the arrow of time (A1+A2);
+    (i) immediate information loss along non-injective transitions (A1+A2, Proposition~4.1), with
+    temporal order conditional on [H-acyc] (Theorem~4.4);
     (ii) the proto-state as a physically real unresolved configuration retaining phase coherence~(A3);
     (iii) a non-trivial commutator between conjugate generators, forced by~A3 and the minimality of~A1;
     (iv) the identification of the admissible fibre symmetry group as $\Heis_3(\mathbb{Z}/q\mathbb{Z})$
     for a prime~$q$, together with BI parity (A1--A3);
-    (v) the identification $F_n \cong V_\rho$ (Weil representation) as Theorem~5.6;
+    (v) a connection of $F_n$ to the O-series Weil module $V_\rho$, stated as a modelling dictionary
+    (Remark~3.3), not as a theorem;
     (vi) the discrete character of quantum transitions from~A4;
-    (vii) projective incompleteness (Corollary to Theorem~5.4): every admissible projection
-    $\Pi_n$ has a non-trivial kernel, so no observable description is ever complete —
-    a direct consequence of $[X, \sigma(X)] = Z \neq 0$.
-    The paper also establishes the threefold role of~$\Pi_n$ (Remark~3.5):
-    admissibility filter, generator of temporal order, and revelation operator —
-    three roles that are algebraically inseparable and all sourced in the non-commutativity.
+    (vii) projective incompleteness (Corollary~4.9): under A2 alone, a non-injective realisation map
+    $\Pi_n$ has a non-trivial fibre, so its observable description is incomplete.
+    The paper also describes the threefold role of~$\Pi_n$ (Remark~3.1):
+    admissibility filter, generator of temporal order conditionally on [H-acyc], and revelation
+    operator; these roles do not by themselves select the carrier group.
     Its results table lists the effective co-metric with no coefficient value established:
     $g^{\mu\nu}=\mathrm{diag}(-2,2,2,2)$ is not derived, since in Q10 the Casimir value $2$ determines no
     coefficient and the uniformity hypothesis [U] is not established, and Q11 leaves $A_\tau/A_H$
@@ -366,9 +369,9 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{A Finite Obstruction to Heisenberg Carrier Selection from Admissibility Constraints}
 
-    HeisenbergStructure~\cite{Beau2026HeisenbergStructure} (version~2.1) records the published proof
-    attempt for Foundation Theorem~5.6, omitted from the Foundation paper for concision, and refutes it
-    by an obstruction theorem.
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure} (version~2.1) records a proof attempt for the
+    selection of the Heisenberg carrier from the Foundation axioms and refutes it by an obstruction theorem;
+    Foundation states the obstruction as its Theorem~5.7.
     The central structural lemma --- \emph{admissible non-factorisability} --- is a direct
     formalisation of Axiom~A3.
     Its next step, ``minimality implies central commutator'', is false: a two-generator group need not be
@@ -1020,9 +1023,9 @@ A Structural Roadmap and Paper Inventory}
     The admissible cascade is shown to carry the structure of an oriented state machine:
     nodes are admissible projections, edges are admissible transitions, and branching weights
     play the role of quantum probabilities.
-    The first transition $U_0 \to U_1$ is guaranteed by projective incompleteness
-    (Foundation Corollary to Theorem~5.4): temporal ordering starts as a structural necessity,
-    not a postulate.
+    Foundation does not guarantee the first transition $U_0 \to U_1$: its projective incompleteness
+    (Corollary~4.9) applies where a step is non-injective, the existence of an admissible successor is a
+    separate condition (Remark~4.11), and temporal order is conditional on [H-acyc] (Theorem~4.4).
     Open: whether the characteristic shell $n^*(q)$ coincides with the locking depth $n_c(q)$
     at which BFS coverage transitions from locally to universally dominated — which would connect
     the spectral ordering to the effective geometry results of Q10~\cite{Beau2026q10}.
