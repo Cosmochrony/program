@@ -8,6 +8,18 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.35 records the LC/2η cycle (TempProj 1.4, LorentzCapacity 1.4, LC-O1 1.1, LC-O2-O1 2.1, LC-O3 1.1,
+LC-Synthesis 2.1; Cosmology 2.4 only corrects its import of TempProj). The Lorentz-capacity papers take a supplied
+co-metric of the conditional form of Q11 Corollary 6.1, diag(−A_τ, 2λ, 2λ, 2λ), whose two coefficients are
+independent and fixed by no source; after a rescaling of τ it is proportional to η, and the normalisation
+g = 2η is a choice of units. The identification of the light-cone speed of that co-metric with the Born–Infeld
+bound per ordering step, which Q11 names as the missing coupling datum, is the named hypothesis [H-cone] of the
+LC kinematic chain. The no-go of LC-O2-O1 holds for any postulated flat-space value, the boost mathematics of
+LC-O1 is proved for η, and the temporal projector of TempProj uses only the signature and the decoupled temporal
+block. The LC entries, table rows, graph nodes and edges are aligned accordingly; the graph edge Q6b → LCIIo1 is
+replaced by Q5b → LCIIo1, and conditional edges Q11 → TempProj and Q11 → LCo1 are added.
+Programme 2.35 was deposited as [Zenodo record RECORD_PLACEHOLDER](https://zenodo.org/record/RECORD_PLACEHOLDER) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
+
 Version 2.34 records the Q6a 2.3 cycle (Q6a 2.3, Foundation 2.3, GS-Note 2.2; Q12 1.7 and Q6b 2.1 only
 align their description of Q6a). Q6a reads
 SU(2) off the spinor carrier supplied by O23, under the neutral-sector hypothesis of O27: the group acting

@@ -94,8 +94,7 @@ A Structural Roadmap and Paper Inventory}
     correlator conditional on an explicit, undemonstrated invariance hypothesis (paper Q3; the
     Born rule remains open), a conditional effective co-metric of rank three whose non-degenerate block is
     Lorentzian, under the open inputs [H-L], [H-lift] and [H-hyp] (the full-rank extension and every coefficient
-    value remain open, and the co-metric $\mathrm{diag}(-2,2,2,2)$ still asserted by some Lorentz-capacity
-    consumers is pending revision); and the
+    value remain open); and the
     conditions for an Einstein ($a_2$) sector and the derivation of the local Yang--Mills ($a_4$) sector from a
     single spectral-entropy functional on a supplied metric, conditional on supplied renormalized matching data
     (papers Q12--Q13).
@@ -1330,7 +1329,6 @@ A Structural Roadmap and Paper Inventory}
     Q8 leaving the common value free; Q5b version~2.2.1 records [H-lift], Q5b-O2 and Q5b-O3 as open.
     The chain is a sequence of conditional steps with a missing identification at the Q7 step, a missing
     extended operator for the central direction, and no established coefficient value.
-    Consumer entries that still assert the former values are pending revision.
 
     \textbf{Q12}~\cite{Beau2026q12}: Version~1.7 derives Yang--Mills dynamics from the vertical
     variation of the projective spectral entropy at an arbitrary supplied fixed base metric
@@ -2022,44 +2020,50 @@ A Structural Roadmap and Paper Inventory}
   \subsection{Lorentz Capacity Sub-Programme}
 
     The Lorentz-capacity (LC) sub-programme isolates a single structural question: where does the
-    Lorentz factor $\gamma$ originate, given that the Lorentzian metric is itself an effective object
-    reconstructed from admissible non-injective projection? The answer is that $\gamma$ is not a
-    kinematic postulate but the temporal residual of a bounded Born--Infeld capacity budget, lifted to
-    special-relativistic observer transformations through the effective co-metric
-    $g^{\mu\nu} = 2\eta^{\mu\nu}$ taken from Q11, whose coefficient values are not established: Q11 shows that
-    spatial $\SU(2)$ invariance leaves $A_\tau$ free, and this entry is pending revision.
+    Lorentz factor $\gamma$ originate, if the Lorentzian metric is to be an effective object of admissible
+    non-injective projection? Its answer is conditional. The factor $\gamma$ is read as the temporal residual of a
+    bounded Born--Infeld capacity budget rather than as a kinematic postulate, and it is placed in
+    special-relativistic observer transformations through a supplied co-metric of the conditional form of Q11,
+    $\mathrm{diag}(-A_\tau, 2\lambda, 2\lambda, 2\lambda)$, whose two coefficients are independent and fixed by no
+    source (\scond{} on the hypotheses of Q11 Corollary~6.1). After a rescaling of $\tau$ that co-metric is
+    proportional to $\eta^{\mu\nu}$, and the normalisation $g^{\mu\nu} = 2\eta^{\mu\nu}$ used in the LC papers is a
+    choice of units. The link between capacity and kinematics is one named hypothesis, [H-cone]: the light-cone
+    speed of the co-metric equals the Born--Infeld bound per ordering step. It is the datum coupling the temporal
+    and spatial normalisations that Q11 leaves open (Q11-O1), and no source derives it.
     A guiding distinction runs throughout: the Born--Infeld capacity
     sphere $(F^\tau)^2 + \beta^2 = 1$ supplies the load $\beta$ and the clock factor $1/\gamma$, while
     the Lorentz group acts as the isometry group of the effective metric, not of the capacity sphere.
     The chain assembled by the sub-programme is
     \[
-      \text{BI budget} \to F^\tau = 1/\gamma \to g^{\mu\nu} = 2\eta^{\mu\nu} \to \Lambda(\beta)
-      \to R(x)^2 = 1-\epsilon(x) \to \text{finite-}q\text{ domain,}
+      \text{BI budget} \to F^\tau = 1/\gamma \to g^{\mu\nu} \propto \eta^{\mu\nu}\ \text{and [H-cone]}
+      \to \Lambda(\beta) \to R(x)^2 = 1-\epsilon(x) \to \text{finite-}q\text{ domain,}
     \]
-    with the co-metric step carrying the coefficient values now pending revision.
-    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} (\ssynth) gathers the six constituent papers
-    below into this single account; their individual contributions follow.
+    conditional at the co-metric and [H-cone] step, the arrow to $R(x)^2 = 1-\epsilon(x)$ being a declared
+    postulate.
+    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} (\ssynth, version~2.1) gathers the six
+    constituent papers below into this single account; their individual contributions follow.
 
-    \textbf{LorentzCapacity}~\cite{Beau2026n}: Derives the Lorentz factor and relativistic
-    mobility $\beta\gamma$ from the O7 saturation parameter $\eta_n^{\mathrm{O7}}$ under the
-    Born--Infeld admissibility budget (\scond{} on that budget). The analytic factorization (central coordinate $c$
-    contributes only a global phase) shows the total O7 residual satisfies a linear filling law
-    and does not by itself yield the Lorentz factor. The conditional mechanism via the
+    \textbf{LorentzCapacity}~\cite{Beau2026n} (version~1.4): The analytic factorization (the central coordinate $c$
+    contributes only a global phase) shows that the total O7 residual satisfies the exact linear filling law
+    $B_n + \Sigma_n^{\mathrm{tot}} = 1$ and does not by itself yield the Lorentz factor (\sproved).
+    Under the quadratic Born--Infeld mobility budget, a hypothesis expressing the capacity bound [A-cap], the
     temporally projected residual $\Sigma_n^\tau := \mathcal{P}_\tau^{\mathrm{Q5b}}\,\Sigma_n^{\mathrm{tot}}$
-    and a quadratic normalization gives $\eta_n^\tau \to \beta\gamma$ and
-    $\Phi(\eta_n^\tau) \to 1/\gamma$ (\sproved{} for the algebraic BI target and the factorization;
-    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp}).
+    gives $\eta_n^\tau \to \beta\gamma$ and $\Phi(\eta_n^\tau) \to 1/\gamma$ (\scond{} on that budget and on the
+    convergence lemma, which TempProj~\cite{Beau2026tp} establishes under its hypotheses).
+    The temporal direction is the ordering factor $\mathbb{R}_\tau$; the central direction of
+    $\mathrm{Heis}_3$ is spatial. Reading $\beta$ as a velocity relative to the light cone is \scond{} on
+    [H-cone].
 
-    \textbf{TempProj}~\cite{Beau2026tp}: Closes the open construction of
-    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ from LorentzCapacity (\scond{} on [U] and the Born--Infeld lift).
-    Constructs the temporal residual map as the unique positive function compatible with the
-    Lorentzian splitting of the effective co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$ taken from Q11, whose
-    coefficient values are not established (Q11 leaves $A_\tau$ free; this entry is pending revision),
-    the Born--Infeld unit capacity-flow sphere, and the exact Weil filling law
-    $\Sigma_n^{\mathrm{tot}} = 1 - B_n$.
-    The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$
-    follows from a fibre-by-fibre uniqueness argument; Lemma~1 and Theorem~1 of LorentzCapacity
-    become unconditional (\sproved{} conditional on [U]; three-input necessity: \sproved).
+    \textbf{TempProj}~\cite{Beau2026tp} (version~1.4): Constructs the temporal residual map
+    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ of LorentzCapacity as the unique positive function compatible with the
+    Lorentzian splitting of a supplied co-metric of the form of Q11 Corollary~6.1, the Born--Infeld unit
+    capacity-flow sphere, and the exact Weil filling law $\Sigma_n^{\mathrm{tot}} = 1 - B_n$; the splitting uses
+    the signature and the decoupled temporal block, not the coefficient values.
+    The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ follows
+    (\sproved{} under the supplied co-metric, the identification of $B_n$ with the spatial capacity flow, which is
+    a hypothesis of the paper, and the Born--Infeld lift; three-input necessity: \sproved).
+    Lemma~1 and Theorem~1 of LorentzCapacity follow under the same hypotheses; hypothesis [U] enters no step.
+    The kinematic reading, time dilation and the light cone, is \scond{} on [H-cone].
 
     \textbf{LCII}~\cite{Beau2026lco2} (version~1.3): Extends TempProj to the non-homogeneous fibrewise regime
     (\scond{} on the postulated occupancy--lapse identification and on a supplied Lorentzian co-metric whose
@@ -2078,42 +2082,39 @@ A Structural Roadmap and Paper Inventory}
     manifestations of the same BI capacity trade-off, separated in the product $R(x)/\gamma$
     (\sstruct; open problem LC-O2-O1 remains open, see~\cite{Beau2026lco2o1}).
 
-    \textbf{LCIIo1}~\cite{Beau2026lco2o1} (version~2.0): Establishes a \emph{no-go} for the scalar
+    \textbf{LCIIo1}~\cite{Beau2026lco2o1} (version~2.1): Establishes a \emph{no-go} for the scalar
     free-fraction reduction of the capacity--metric bridge of LCII.
-    Version~1.0 claimed to close that bridge via
-    $A_{\tau}(x) = A_{\tau}^{\infty}\bigl(1-\epsilon(x)\bigr)$ together with
-    $g^{\tau\tau}(x) = -A_{\tau}(x)/4$; that claim is withdrawn.
-    With the identification $g^{\tau\tau} = -A_{\tau}$ (flat-space value $-2$ taken from Q11, not established:
-    Q11 leaves $A_\tau$ free) and a diagonal
-    temporal block, the free-fraction law gives
+    With the principal-symbol identification $g^{\tau\tau} = -A_{\tau}$, any postulated flat-space value
+    $A_\tau^\infty > 0$ (Q11 leaves the temporal coefficient free) and a diagonal temporal block, the free-fraction
+    law $A_{\tau}(x) = A_{\tau}^{\infty}\bigl(1-\epsilon(x)\bigr)$ gives
     $g_{\tau\tau}(x)/g_{\tau\tau}^{\infty} = 1/(1-\epsilon(x))$, which agrees with
-    $R(x)^{2} = 1-\epsilon(x)$ only at $\epsilon(x) = 0$.
+    $R(x)^{2} = 1-\epsilon(x)$ only at $\epsilon(x) = 0$; the value of $A_\tau^\infty$ cancels.
     The paper also shows that the partial-trace form of the local coefficient is a fresh postulate
     rather than a consequence of~\cite{Beau2026w1}, and that it is mistyped (a norm-valued
     occupancy is not a trace fraction).
     What survives is the co-metric statement $g^{\tau\tau}/g^{\tau\tau}_{\infty} = 1-\epsilon$,
     which does not govern proper-time dilation.
     The result is narrow: a reciprocal scalar law would close the bridge algebraically.
-    \textbf{LC-O2-O1 is reopened} (\sproved, as a negative result).
+    LC-O2-O1 is open (\sproved, as a negative result).
 
-    \textbf{LCo1}~\cite{Beau2026lco1}: Closes LC-O1, the reconstruction of effective Lorentz
-    transformations between inertial observers from projective temporal ordering data.
-    Given a projective temporal capacity load $\beta$ from LorCap/TempProj, the unique
-    proper orthochronous transformation between the corresponding inertial splittings of
-    the effective co-metric $g^{\mu\nu} = 2\eta^{\mu\nu}$, whose coefficient values are pending
-    revision, is the standard Lorentz boost;
-    length contraction $\ell = \ell_{0}/\gamma$ follows as a corollary (\sproved).
+    \textbf{LCo1}~\cite{Beau2026lco1} (version~1.1): Reconstructs effective Lorentz transformations between
+    inertial observers from projective temporal ordering data.
+    The unique proper orthochronous isometry of $\eta$ mapping one unit timelike splitting to another is the
+    standard Lorentz boost, and length contraction $\ell = \ell_{0}/\gamma$ follows as a corollary (\sproved{} for
+    $\eta$).
+    Their reading as the transformations fixed by the projective capacity load $\beta$ of LorCap/TempProj is
+    \scond{} on a supplied co-metric of the form of Q11 Corollary~6.1, rescaled in $\tau$, and on [H-cone].
 
-    \textbf{LCo3}~\cite{Beau2026lco3}: Closes LC-O3, the finite-$q$ correction problem near
+    \textbf{LCo3}~\cite{Beau2026lco3} (version~1.1): Closes LC-O3, the finite-$q$ correction problem near
     the saturation boundary. Setting $R := (q-1)/2$ and $n = R+m$, the parabolic Carnot
     formula deviates from the exact torus capacity by $\Delta_{q}(n) = 4m^{2}/q^{2}$;
     the quadratic identity $B_{n}^{2} + (F_{n}^{\tau})^{2} = 1$ receives no correction,
     while the Carnot identification holds for $n \leq R$ and asymptotically as $m/q \to 0$
-    (\sproved).
-    With LC-O1 and LC-O3 closed, the Lorentz-capacity sub-programme is complete for
-    \emph{inertial} kinematics, up to the co-metric coefficient values it takes from Q5b--Q11,
-    which are pending revision.
-    Its non-homogeneous extension is not: LC-O2-O1 is reopened, and the identification of the
+    (\sproved). The result concerns the spatial load and uses no co-metric coefficient.
+    With LC-O1 and LC-O3, the Lorentz-capacity sub-programme is complete for
+    \emph{inertial} kinematics, conditionally on a supplied co-metric of the form of Q11 Corollary~6.1 and on
+    [H-cone].
+    Its non-homogeneous extension is not: LC-O2-O1 is open, and the identification of the
     local capacity radius with the metric lapse remains the declared postulate of
     Remark~3.2 of~\cite{Beau2026lco2}.
 
@@ -3459,13 +3460,14 @@ A Structural Roadmap and Paper Inventory}
       \sproved{} (negative, about the posited truncation); \sopen{} (Lorentzian construction, vector sector) \\[3pt]
       LorCap & Lorentz factor from capacity & \cite{Beau2026n} &
       $\eta_n^\tau \to \beta\gamma$; $\Phi(\eta_n^\tau) \to 1/\gamma$;
-      BI factorization and central-phase factorization (\sproved);
-      $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction: closed by TempProj~\cite{Beau2026tp} &
-      \scond{} on the Born--Infeld mobility budget \\[3pt]
+      central-phase factorization and linear filling law (\sproved);
+      convergence lemma: TempProj~\cite{Beau2026tp} &
+      \scond{} on the Born--Infeld mobility budget; kinematic reading \scond{} on [H-cone] \\[3pt]
       TempProj & Temporal residual map & \cite{Beau2026tp} &
       $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$; uniqueness
-      (three-input necessity); Lemma~1 of LorCap proved under [U] and the Born--Infeld lift &
-      \scond{} on [U] and the Born--Infeld lift \\[3pt]
+      (three-input necessity); Lemma~1 of LorCap; the splitting uses no coefficient value &
+      \scond{} on a supplied co-metric (Q11 Cor.~6.1), the identification of $B_n$ and the Born--Infeld lift;
+      kinematic reading \scond{} on [H-cone] \\[3pt]
       LCII & Fibrewise capacity lapse & \cite{Beau2026lco2} &
       Fibrewise extension to non-homogeneous regime; $d\tau/dn|_x = R(x)/\gamma$;
       unified capacity arbitration: $1/\gamma$ (kinematic) and $R(x)$ (gravitational)
@@ -3475,13 +3477,12 @@ A Structural Roadmap and Paper Inventory}
       \cite{Beau2026lco2o1} &
       The free-fraction law $A_\tau = A_\tau^\infty(1-\epsilon)$ with $g^{\tau\tau} = -A_\tau$
       gives $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$, matching $1-\epsilon$ only at
-      $\epsilon = 0$; LC-O2-O1 reopened &
+      $\epsilon = 0$, for any postulated $A_\tau^\infty$; LC-O2-O1 open &
       \sproved \\[3pt]
       LCo1 & Lorentz transformations from projective temporal ordering & \cite{Beau2026lco1} &
-      Effective Lorentz transformations between inertial observers are uniquely fixed by the
-      projective temporal capacity load $\beta$; length contraction $\ell=\ell_0/\gamma$ as a
-      corollary &
-      \sproved \\[3pt]
+      The boost is the unique isometry of $\eta$ between unit timelike splittings; length contraction
+      $\ell=\ell_0/\gamma$ as a corollary; fixed by the projective capacity load $\beta$ under [H-cone] &
+      \sproved{} for $\eta$; \scond{} on a supplied co-metric and [H-cone] \\[3pt]
       LCo3 & Finite-$q$ corrections to the Carnot capacity identification & \cite{Beau2026lco3} &
       Parabolic Carnot formula deviates from the exact torus capacity by
       $\Delta_q(n)=4m^2/q^2$ ($n=R+m$, $R=(q-1)/2$); quadratic identity exact, Carnot
@@ -3644,10 +3645,10 @@ A Structural Roadmap and Paper Inventory}
       \ssynth \\[3pt]
       LC\-Synthesis & The Lorentz-capacity sub-programme synthesis & \cite{Beau2026lcsyn} &
       Gathers LorCap, TempProj, LCII, LCIIo1, LCo1 and LCo3 into the single chain
-      BI budget $\to F^\tau = 1/\gamma \to g^{\mu\nu} = 2\eta^{\mu\nu} \to \Lambda(\beta) \to
-      R(x)^2 = 1-\epsilon(x) \to$ finite-$q$ domain, distinguishing the BI capacity sphere from the
-      Lorentz group as isometry group of the effective metric; the co-metric coefficient values are
-      pending revision.
+      BI budget $\to F^\tau = 1/\gamma \to g^{\mu\nu} \propto \eta^{\mu\nu}$ and [H-cone] $\to \Lambda(\beta)
+      \to R(x)^2 = 1-\epsilon(x) \to$ finite-$q$ domain, distinguishing the BI capacity sphere from the
+      Lorentz group as isometry group of the effective metric; the co-metric is supplied, of the conditional form
+      of Q11 with two independent coefficients, and [H-cone] is assumed.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
     \end{longtable}
@@ -3831,17 +3832,18 @@ A Structural Roadmap and Paper Inventory}
     the colour factor and the complete gauge group remain inputs rather than derived results.
 
   \paragraph{Lorentz Capacity Sub-Programme.}
-    The Lorentz-capacity sub-programme is closed for inertial kinematics, up to the co-metric
-    coefficient values it takes from Q5b--Q11, which are pending revision; it is open in its
-    non-homogeneous extension.
-    TempProj closes the $\mathcal{P}_\tau^{\mathrm{Q5b}}$ construction of LorCap;
-    LCIIo1~\cite{Beau2026lco2o1} (version~2.0) \emph{reopens} LC-O2-O1, establishing that the
+    The Lorentz-capacity sub-programme is closed for inertial kinematics, conditionally on a supplied co-metric
+    of the form of Q11 Corollary~6.1 and on [H-cone]; it is open in its non-homogeneous extension.
+    [H-cone], the identification of the light-cone speed of the co-metric with the Born--Infeld bound per
+    ordering step, is the coupling datum of Q11-O1, and deriving it is open.
+    TempProj constructs the $\mathcal{P}_\tau^{\mathrm{Q5b}}$ map of LorCap;
+    LC-O2-O1 is open: LCIIo1~\cite{Beau2026lco2o1} (version~2.1) establishes that the
     scalar free-fraction law $A_\tau(x) = A_\tau^\infty(1-\epsilon(x))$ does not derive
     $R(x)$ from $\epsilon(x)$: with $g^{\tau\tau} = -A_\tau$ it yields
     $g_{\tau\tau}/g_{\tau\tau}^\infty = 1/(1-\epsilon)$, agreeing with the capacity definition
-    only in the homogeneous vacuum.
-    LCo1~\cite{Beau2026lco1} closes LC-O1: the effective Lorentz transformations between
-    inertial observers are uniquely fixed by the projective temporal capacity load $\beta$,
+    only in the homogeneous vacuum, for any postulated flat-space value.
+    LCo1~\cite{Beau2026lco1} closes LC-O1 conditionally: under [H-cone] the effective Lorentz transformations
+    between inertial observers are fixed by the projective temporal capacity load $\beta$,
     yielding length contraction $\ell = \ell_0/\gamma$ as a corollary.
     LCo3~\cite{Beau2026lco3} closes LC-O3: the parabolic Carnot identification holds for
     $n \leq R := (q-1)/2$ with deviation $\Delta_q(n) = 4m^2/q^2$ for $n = R+m$, while the
@@ -3914,9 +3916,9 @@ A Structural Roadmap and Paper Inventory}
   independent, unestablished spatial-limit hypothesis [H-L] and the identification of the
   measured admissible space with the spin-$1$ module, which Q7 version~2.0 records as supplied by no
   source; [H-F] remains separately open.
-  Q5b version 2.2.1, Q8 version 2.0, Q10 version 2.0.1 and Q11 version 2.0 carry the current statements; the
-  consumer entries that still assert the former coefficient values are pending revision, and the marker is carried
-  on the surfaces that assert the affected results.
+  Q5b version 2.2.1, Q8 version 2.0, Q10 version 2.0.1 and Q11 version 2.0 carry the current statements, and the
+  Lorentz-capacity papers use the conditional form of Q11 with two independent coefficients and the named
+  hypothesis [H-cone].
   Q12~\cite{Beau2026q12} completes the spectral derivation of gauge dynamics:
   the gauge component of the Seeley--DeWitt $a_4$ coefficient of the operator
   $A_{g,\mathcal{A}}$ on the admissible vector bundle contains the Yang--Mills density
