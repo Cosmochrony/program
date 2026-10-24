@@ -21,7 +21,7 @@ LC-O1 is proved for η, and the temporal projector of TempProj uses only the sig
 block. The LC entries, table rows, graph nodes and edges are aligned accordingly; the graph edge Q6b → LCIIo1 is
 replaced by Q5b → LCIIo1, and conditional edges Q11 → TempProj and Q11 → LCo1 are added. Edges follow the LC
 citations: PTO → LorCap is removed, and LCII → LCo3 and BI → LCo3 are replaced by LorCap, TempProj and LCIIo1 → LCo3.
-Programme 2.35 was deposited as [Zenodo record RECORD_PLACEHOLDER](https://zenodo.org/record/RECORD_PLACEHOLDER) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
+Programme 2.35 was deposited as [Zenodo record 23620172](https://zenodo.org/record/23620172) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.34 records the Q6a 2.3 cycle (Q6a 2.3, Foundation 2.3, GS-Note 2.2; Q12 1.7 and Q6b 2.1 only
 align their description of Q6a). Q6a reads
