@@ -12,6 +12,7 @@ Version 2.37 records Q6a 2.4. Q6a attributes to the Foundation paper the derivat
 of the proto-state from A1 and A3, and states that the retention of phase coherence is not derived from A3 alone;
 its results are unchanged.
 The Q6a entry, table row, bibliography note and graph node carry the new version.
+Programme 2.37 was deposited as [Zenodo record 23628375](https://zenodo.org/record/23628375) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.36 records the Foundation 2.4 cycle (Foundation 2.4, QS-Note 2.2). Foundation states the homogeneous
 dimension $D_{\mathrm{hom}} = 4$ as a property of the supplied Heisenberg carrier, local on $G_q$ for $n \ll \sqrt{q}$
