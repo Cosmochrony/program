@@ -15,9 +15,11 @@ classical probability mixture but not real amplitudes; phase coherence is not de
 the open directions but not, by itself, their relative phases; the Born weight is an additional rule; projective
 incompleteness does not guarantee the initial transition; and its results table gives the Einstein, Yang–Mills and
 Einstein–Yang–Mills results of Gravity, Q12 and Q13 with their hypotheses (the Einstein condition being sufficient),
-deriving no coupling hierarchy. QS-Note states that the axioms restrict but do not select the fibre, and that O23
-finds spinor constituents of the restricted Weil module at explicit levels without a rule selecting the spinor
-carrier. The Foundation and QS-Note entries, table rows and graph nodes are aligned, and the white-paper sentence on
+deriving no coupling hierarchy. QS-Note states that, under an explicit representation-theoretic reading of the
+fibre, the axioms restrict its algebraic structure but do not select it, and that, for the explicitly studied
+generic blocks at $q = 53$ and $q = 101$, O23 finds exactly two faithful $\mathrm{SU}(2)$-valued constituents of the
+restricted Weil module without a rule selecting the spinor carrier. Foundation's axiomatic level attributes
+discreteness to A3 and A4, and states that the complex carriers are supplied. The Foundation and QS-Note entries, table rows and graph nodes are aligned, and the white-paper sentence on
 the spectral entropy functional states the Gravity conditions.
 
 Version 2.35 records the LC/2η cycle (TempProj 1.4, LorentzCapacity 1.4, LC-O1 1.1, LC-O2-O1 2.1, LC-O3 1.1,
