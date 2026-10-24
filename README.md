@@ -22,6 +22,7 @@ restricted Weil module without a derived rule selecting the spinor carrier. Foun
 discreteness to A3 and A4, and states that the complex carriers are supplied. The Foundation and QS-Note
 entries, table rows and graph nodes are aligned, and the white-paper sentence on
 the spectral entropy functional states the Gravity conditions.
+Programme 2.36 was deposited as [Zenodo record 23627504](https://zenodo.org/record/23627504) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.35 records the LC/2η cycle (TempProj 1.4, LorentzCapacity 1.4, LC-O1 1.1, LC-O2-O1 2.1, LC-O3 1.1,
 LC-Synthesis 2.1, LCII 1.4; Cosmology 2.4 only corrects its import of TempProj). LCII states the fibrewise residual
