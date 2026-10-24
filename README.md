@@ -19,7 +19,8 @@ deriving no coupling hierarchy. QS-Note states that, under an explicit represent
 fibre, the axioms restrict its algebraic structure but do not select it, and that, for the explicitly studied
 generic blocks at $q = 53$ and $q = 101$, O23 finds exactly two faithful $\mathrm{SU}(2)$-valued constituents of the
 restricted Weil module without a rule selecting the spinor carrier. Foundation's axiomatic level attributes
-discreteness to A3 and A4, and states that the complex carriers are supplied. The Foundation and QS-Note entries, table rows and graph nodes are aligned, and the white-paper sentence on
+discreteness to A3 and A4, and states that the complex carriers are supplied. The Foundation and QS-Note
+entries, table rows and graph nodes are aligned, and the white-paper sentence on
 the spectral entropy functional states the Gravity conditions.
 
 Version 2.35 records the LC/2η cycle (TempProj 1.4, LorentzCapacity 1.4, LC-O1 1.1, LC-O2-O1 2.1, LC-O3 1.1,
