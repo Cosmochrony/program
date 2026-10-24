@@ -21,6 +21,7 @@ that Q5a leaves open, and the Yang–Mills action is a structural motivation. In
 Q5b → Q6a is replaced by a conditional edge Q5a → Q6a and an edge Q5b → Q6b, since Q6a cites Q5a and not Q5b,
 while Q6b cites Q5b. Entries for O31, O32, Q5a, U1, W1 and H2 state their current content without narrating
 earlier versions.
+Programme 2.34 was deposited as [Zenodo record 23617230](https://zenodo.org/record/23617230) (concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.33 records GS-Note 2.1. GS-Note identifies no gauge group: U(1) is structural on premises carried as
 input, SU(2) is conditional on a supplied carrier, and O31 withdraws every derivation of SU(3) and of the
