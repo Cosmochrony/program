@@ -2031,7 +2031,8 @@ A Structural Roadmap and Paper Inventory}
     speed of the co-metric equals the Born--Infeld bound per ordering step. It is the datum coupling the temporal
     and spatial normalisations that Q11 leaves open (Q11-O1), and no source derives it.
     A guiding distinction runs throughout: the Born--Infeld capacity
-    sphere $(F^\tau)^2 + \beta^2 = 1$ supplies the load $\beta$ and the clock factor $1/\gamma$, while
+    sphere $(F^\tau)^2 + \beta^2 = 1$ supplies the load $\beta$ and the residual $F^\tau = 1/\gamma$, read as a
+    proper-time rate under [H-cone], while
     the Lorentz group acts as the isometry group of the effective metric, not of the capacity sphere.
     The chain assembled by the sub-programme is
     \[
@@ -2099,8 +2100,8 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{LCo1}~\cite{Beau2026lco1} (version~1.1): Reconstructs effective Lorentz transformations between
     inertial observers from projective temporal ordering data.
-    The unique proper orthochronous isometry of $\eta$ mapping one unit timelike splitting to another is the
-    standard Lorentz boost, and length contraction $\ell = \ell_{0}/\gamma$ follows as a corollary (\sproved{} for
+    The unique proper orthochronous isometry of $\eta$ mapping one unit timelike splitting to another and fixing the
+    transverse directions is, on each tangent space, the standard Lorentz boost, and length contraction $\ell = \ell_{0}/\gamma$ follows as a corollary (\sproved{} for
     $\eta$).
     Their reading as the transformations fixed by the projective capacity load $\beta$ of LorCap/TempProj is
     \scond{} on a supplied co-metric of the form of Q11 Corollary~6.1, rescaled in $\tau$, and on [H-cone].
@@ -2108,7 +2109,8 @@ A Structural Roadmap and Paper Inventory}
     \textbf{LCo3}~\cite{Beau2026lco3} (version~1.1): Closes LC-O3, the finite-$q$ correction problem near
     the saturation boundary. Setting $R := (q-1)/2$ and $n = R+m$, the parabolic Carnot
     formula deviates from the exact torus capacity by $\Delta_{q}(n) = 4m^{2}/q^{2}$;
-    the quadratic identity $B_{n}^{2} + (F_{n}^{\tau})^{2} = 1$ receives no correction,
+    the quadratic identity $B_{n}^{2} + (F_{n}^{\tau})^{2} = 1$, exact by the definition of $F_n^\tau$ under the
+    hypotheses of TempProj, receives no correction,
     while the Carnot identification holds for $n \leq R$ and asymptotically as $m/q \to 0$
     (\sproved). The result concerns the spatial load and uses no co-metric coefficient.
     With LC-O1 and LC-O3, the Lorentz-capacity sub-programme is complete for
@@ -2561,7 +2563,7 @@ A Structural Roadmap and Paper Inventory}
           \node[Oc] (Bell) at (2*\dx,-8*\dy)   {Bell};
           \node[S] (Schw) at (3*\dx,-8*\dy)    {SchLamb};
           \node[H] (Cosm) at (4*\dx,-8*\dy)    {Cosmol};
-          \node[S] (Supra)at (5*\dx,-8*\dy)    {Supra};
+          \node[S] (Supra)at (6*\dx,-8*\dy)    {Supra};
 
           \draw[arr] (Found) to[out=-90,in=90] (TopI);
           \draw[arr] (BI)    to[out=-90,in=90] (SMcm);
@@ -2587,20 +2589,20 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr] (ENTe1) to[out=-150,in=30] (ENTe2);
 
           \node[P] (Q12) at (3*\dx,-11*\dy) {Q12};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q12.east)
+          \node[font=\tiny\sffamily,text=black!55,left=2pt] at (Q12.west)
             {YM from $a_4$};
           \draw[arr] (Grav) to[out=-90,in=135] (Q12);
           \draw[arr] (Q6a)  to[out=200,in=60]  (Q12);
 
           \node[C] (Q13) at (3*\dx,-12*\dy) {Q13};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q13.east)
+          \node[font=\tiny\sffamily,text=black!55,left=2pt] at (Q13.west)
             {EYM (conditional)};
           \draw[arr] (Q12)  to[out=-90,in=90]  (Q13);
           \draw[arr] (Grav) to[out=-90,in=150] (Q13);
 
 % Gauge-gravity stratification sub-programme synthesis (presentation note 8):
 % aggregates Q12 and Q13.
-          \node[Y] (GGSNote) at (5*\dx,-12*\dy) {GGS-Note};
+          \node[Y] (GGSNote) at (4*\dx,-12*\dy) {GGS-Note};
           \draw[gather] (Q12) to[out=0,in=180] (GGSNote);
           \draw[gather] (Q13) to[out=0,in=200] (GGSNote);
 
@@ -3480,7 +3482,8 @@ A Structural Roadmap and Paper Inventory}
       $\epsilon = 0$, for any postulated $A_\tau^\infty$; LC-O2-O1 open &
       \sproved \\[3pt]
       LCo1 & Lorentz transformations from projective temporal ordering & \cite{Beau2026lco1} &
-      The boost is the unique isometry of $\eta$ between unit timelike splittings; length contraction
+      The boost is the unique isometry of $\eta$ between unit timelike splittings fixing the transverse directions,
+      on each tangent space; length contraction
       $\ell=\ell_0/\gamma$ as a corollary; fixed by the projective capacity load $\beta$ under [H-cone] &
       \sproved{} for $\eta$; \scond{} on a supplied co-metric and [H-cone] \\[3pt]
       LCo3 & Finite-$q$ corrections to the Carnot capacity identification & \cite{Beau2026lco3} &
