@@ -12,7 +12,10 @@ Version 2.39 records Foundation 2.5. Foundation cites ENI Corollary 6 with its o
 (surjectivity, observables defined by the projection, a level not isomorphic to the one below), which A1–A4 do not
 supply and which are open for the programme's strata. The ENI entry, table row and graph node state ENI's theorem as a
 one-way implication under these premises (Theorem 3), with the redundancy equivalence of Corollary 5 and colour
-confinement under the same premises at the colour stratum; ENI motivates A2 without deriving it. The effective metric
+confinement under the same premises at the colour stratum; ENI motivates A2 without deriving it. The Foundation entry
+states that the proto-state is defined and its structural indeterminacy derived from A1 and A3, that irreducibility
+and non-commutation require a representation-theoretic dictionary, and that the axioms do not select the Heisenberg
+group (Foundation Theorem 5.7). The effective metric
 read from the principal symbol is conditional on [H-L] and the open lifting hypothesis [H-lift] of Q5b; the signature
 result gives $(-,+,+)$ on the rank-three block only. Foundation writes $\mathcal W$ for the finite Weil modules of the
 supplied Heisenberg–Schrödinger carrier, one per central character $c$, the member at $c$ being the Weil block $V_c$ of
