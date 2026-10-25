@@ -15,7 +15,7 @@ one-way implication under these premises (Theorem 3), with the redundancy equiva
 confinement under the same premises at the colour stratum; ENI motivates A2 without deriving it. The Foundation entry
 states that the proto-state is defined and its structural indeterminacy derived from A1 and A3, that irreducibility
 and non-commutation require a representation-theoretic dictionary, and that the axioms do not select the Heisenberg
-group (Foundation Theorem 5.7). The effective metric
+group (Foundation Theorem 5.7); the Level 1 overview states the same conditions. The effective metric
 read from the principal symbol is conditional on [H-L] and the open lifting hypothesis [H-lift] of Q5b; the signature
 result gives $(-,+,+)$ on the rank-three block only. Foundation writes $\mathcal W$ for the finite Weil modules of the
 supplied Heisenberg–Schrödinger carrier, one per central character $c$, the member at $c$ being the Weil block $V_c$ of
