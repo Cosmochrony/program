@@ -76,8 +76,8 @@ A Structural Roadmap and Paper Inventory}
     observable states.
     The corpus comprises 116 papers across three theory branches.
     Branch~I (Foundation track) develops four admissibility axioms and their consequences.
-    A finite \(S_3\) countermodel now proves that the algebraic properties extracted from those
-    axioms in the published carrier-selection argument do not force a central commutator,
+    A finite \(S_3\) countermodel proves that the algebraic properties extracted from those
+    axioms do not force a central commutator,
     a finite Heisenberg group, or a Weil representation.
     The Heisenberg/Weil carrier is therefore a supplied realisation, not an axiomatic theorem.
     Branch~II (O-series) develops the spectral admissibility sub-programme, studies the
@@ -211,8 +211,8 @@ A Structural Roadmap and Paper Inventory}
     The O-series supplies the Heisenberg group, its irreducible Schr\"odinger representation
     $\pi_c$ on $\mathcal{H}_c=L^2(\mathbb{Z}/q\mathbb{Z})$, and the distinct associated Weil
     action of the symplectic automorphism group as its mathematical carrier data.
-    Foundation and the earlier HeisenbergStructure versions claimed to derive this carrier, but
-    HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure} refutes that selection proof.
+    The admissibility axioms do not select this carrier (Foundation Theorem~5.7;
+    HeisenbergStructure version~2.1~\cite{Beau2026HeisenbergStructure}).
     The O-series computes the spectral properties of the supplied fibre, including the capacity exponent
     $\delta_{\mathrm{pair}}$.
     Its proposed conversion to the cascade exponent $\beta^*$ is not native to the Heisenberg
@@ -377,17 +377,18 @@ A Structural Roadmap and Paper Inventory}
     (Hamilton--Jacobi, symplectic geometry, WKB, functional renormalisation group).
     In its entanglement framework, fibres are defined as
     \emph{infra-projectable cells} (unsplit configurations below the resolution of $\Pi$), the
-    admissible pair entropy $\log 2$ of \emph{Q3}~\cite{Beau2026q3} and \emph{ENT-E2}~\cite{Beau2026ent2}
-    is imported conditionally on two independent hypotheses that A1--A4 do not establish, the
-    atomic-carrier hypothesis [H-carrier] of ENT-E2 and the diagonal-invariance hypothesis [H-inv]
-    stated in Q3, while the proposed Bell non-applicability implication is not available: a non-injective
+    admissible pair entropy $\log 2$ of \emph{ENT-E2}~\cite{Beau2026ent2}, whose singlet input is
+    \emph{Q3}~\cite{Beau2026q3}, is imported conditionally on two independent hypotheses that A1--A4 do
+    not establish, the atomic-carrier hypothesis (H-carrier) of ENT-E2 and the diagonal-invariance
+    hypothesis [H-inv] stated in Q3, while the proposed Bell non-applicability implication is not available: a non-injective
     projection can possess deterministic local response functions, so A2 alone does not obstruct
     Bell factorisation.
 
     The finite \(S_3\) countermodel of item~(iv), in HeisenbergStructure
     version~2.1~\cite{Beau2026HeisenbergStructure}, has a faithful irreducible unitary carrier, a minimal
     generating pair exchanged by an involution, and a non-trivial commutator, but the commutator is not central.
-    It also shows that the prime-order step reverses Schur's lemma.
+    HeisenbergStructure also shows, by a separate application of Schur's lemma, that irreducibility
+    supplies no prime-order conclusion.
 
     \textit{Status:} \sstruct{} for the axiomatic architecture and the consequences that do not consume
     carrier selection; the Heisenberg/Weil identification is a postulated realisation;
@@ -421,10 +422,11 @@ A Structural Roadmap and Paper Inventory}
     The standard action on the two-dimensional zero-sum subspace of \(\mathbb{C}^3\) is faithful,
     unitary, and irreducible; \(\sigma\) exchanges the minimal generating pair; and
     \([X,Y]\) is non-trivial but non-central because \(Z(S_3)=\{1\}\).
-    The note independently corrects the Schur-lemma step and separates the failed selection edge from
-    downstream mathematics internal to a supplied Heisenberg/Weil carrier (\sproved).
+    The note shows, by a separate application of Schur's lemma, that irreducibility supplies no prime-order
+    conclusion, and separates the non-selection result from downstream mathematics internal to a supplied Heisenberg/Weil carrier (\sproved).
 
-    \textit{Role:} Published evidentiary basis for the Found/Heis status correction.
+    \textit{Role:} Evidentiary basis for the non-selection of the Heisenberg carrier (Foundation
+    Theorem~5.7).
 
   \subsection{No External Dimensional Scale at the Level of Admissibility}
 
@@ -1064,10 +1066,10 @@ A Structural Roadmap and Paper Inventory}
     Foundation does not guarantee the first transition $U_0 \to U_1$: its projective incompleteness
     (Corollary~4.9) applies where a step is non-injective, the existence of an admissible successor is a
     separate condition (Remark~4.11), and temporal order is conditional on [H-acyc] (Theorem~4.4).
-    Version~1.5 recomputes the stability table from the archived o25 pipeline outputs: the diagnostic
-    script now implements the tolerance test next to the exact test, and the paper repository records
-    the input files with their digests, the script commit and the unedited output; the $q = 211$ row of
-    version~1.4 (50 steps), which had no archived source, is replaced by the archived run (194 steps).
+    The stability table is computed from the archived o25 pipeline outputs: the diagnostic script
+    implements the tolerance test next to the exact test, and the paper repository records the input
+    files with their digests, the script commit and the unedited output; the $q = 211$ row is the
+    archived run (194 steps).
     Open: whether the characteristic shell $n^*(q)$ coincides with the locking depth $n_c(q)$
     at which BFS coverage transitions from locally to universally dominated — which would connect
     the spectral ordering to the effective geometry results of Q10~\cite{Beau2026q10}.
@@ -1256,7 +1258,7 @@ A Structural Roadmap and Paper Inventory}
     [ADAPT], not implied by Schur or [ACT].
     Q5b's spatial principal symbol has rank two everywhere and cannot equal a positive rank-three
     Casimir form under invertible transport.
-    The revised conjecture instead asks for a new positive spatial target with a specified
+    Its bridge-existence conjecture asks for a new positive spatial target with a specified
     operator and compatible action; lower-order terms cannot change the existing principal rank.
     Proves analytically $[F_c, L_{\mathrm{Weil}}] = 0$; its corollary does not apply to these data,
     on two counts: the three stored rows are not $F_c$-eigenvectors, so the
@@ -1268,8 +1270,9 @@ A Structural Roadmap and Paper Inventory}
     the Rayleigh quotient $4 - 2\cos(2\pi m/q)$ of
     $L_{\mathrm{Weil}} = 4I - W_a - W_a^\dagger - W_b - W_b^\dagger$, while an off-diagonal entry of
     modulus one appears exactly when two stored indices differ by $\pm c \bmod q$, which accounts
-    for the off-diagonal entries at the two pairs $(61,3)$ and $(151,5)$.
-    The entry $\tilde L_{00} = 4-2-0 = 2$, named $A_z$, is thus the flat-mode value.
+    for the modulus-one off-diagonal entries at $(q,c)=(61,3)$ and $(151,5)$.
+    The entry $\tilde L_{00} = 4-2-0 = 2$ is thus the flat-mode value; Q7 reserves $A_z$ for the
+    coefficient of $k_Z^2$ that a full-rank spatial block would carry, which it does not evaluate.
     The pipeline reports it in that slot at eleven of the twelve pairs, the flat mode being ordered
     last at $(101,3)$.
     Q7 version~2.0 records that this value follows from the $4I$ normalisation and is not
@@ -1283,8 +1286,8 @@ A Structural Roadmap and Paper Inventory}
     which as a matrix coincides with the stored-basis one at nine of the twelve pairs, agreeing in
     modulus but not in phase at a tenth and differing outright at the other two; the invariant
     content is its spectrum.
-    Accordingly, Q7 supports neither the Casimir reading nor the isotropy fit, as results or as
-    supports, and uses none of the downstream values imported from Q8, Q10, U1 and Q11.
+    Accordingly, Q7 asserts neither the Casimir reading nor the isotropy fit, as results or as
+    evidence, and relies on no value from the downstream papers Q8, Q10, U1 and Q11 as support.
     The exact Q5b principal-symbol identification is ruled out by rank preservation.
     The broader bridge to a newly supplied positive target remains a missing construction.
     Separately, Q5a supplies a conditional obstruction under its depth and weight hypotheses
@@ -2219,10 +2222,10 @@ A Structural Roadmap and Paper Inventory}
     rank, with no surviving spectral weighting.
     Structural monotonicity of $S_{\mathrm{ent}}$ along the cascade follows from the Gram--Schmidt
     construction alone. The note integrates the analytical results of ENT-E1 (Weil fingerprint
-    orthogonality theorem) and ENT-E2 (separation of the admissible pair entropy
-    $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$ from the full residual-rank entropy), upgrading
-    several previously numerical hypotheses to theorems and recording the residual epistemic
-    stratification. The note thus reduces entanglement to a pure O-series observable and
+    orthogonality theorem, which proves the admission-orthogonality identity $w_j=1$, and the pair closure
+    only for matched single-character blocks) and ENT-E2 (separation of the admissible pair entropy
+    $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$, conditional on (H-carrier) and [H-inv], from the full
+    residual-rank entropy), and records the residual epistemic stratification. The note thus reduces entanglement to a pure O-series observable and
     connects the pair-capacity exponent $\delta_{\mathrm{pair}}$ --- whose numerical comparison
     with the mass hierarchy has no native capacity-to-rate derivation --- to a downstream trace
     of the stabilization profile.
@@ -2306,7 +2309,7 @@ A Structural Roadmap and Paper Inventory}
     $q=211$.
     Supplies the structural bridge from the admissibility cascade to a de Sitter-like component independent of
     matter content.
-    Since v1.1.0 the full-history Gabor channel is itself a theorem: the Gabor span exhausts the abelian
+    The full-history Gabor channel is itself a theorem: the Gabor span exhausts the abelian
     $\ell^1$ disk, so nonzero symbols are confined to $\ell^1$-outward geodesics (geodesic death), and for a
     generic probe (Lawrence--Pfander--Walnut full spark plus a Chebotar\"ev-based separation lemma) the
     compression rate is exactly pinned at $\log 2 < \log(1+\sqrt2)$.
@@ -2336,8 +2339,7 @@ A Structural Roadmap and Paper Inventory}
     and angular dictionaries defines a saturation benchmark, not a derived prediction.
     Version 1.5.0 applies the Planck PR3 map calibration and the real-$m=0$ full-sky multiplet correction to the
     TT Bessel cells.
-    The leading TT diagnostic changes from the historical $27.39\to17.29$ reported in version 1.4.0 to the
-    active $27.26\to17.70$.
+    The leading TT diagnostic is $27.26\to17.70$.
     TE is neutral and EE mildly disfavoured under the uncorrected minimal-transfer convention; the envelope is
     a staircase in $\ell$ (integer ranks), a discrete signature.
     The $S^3$ $8/3$ stiffness witness is re-audited (geometric, not LPS-bound) and carries the separate
@@ -2390,7 +2392,7 @@ A Structural Roadmap and Paper Inventory}
 
     \begin{figure}[p]
       \centering
-      \resizebox{\textwidth}{!}{%
+      \resizebox{0.9\textwidth}{!}{%
         \begin{tikzpicture}[
           every node/.style={font=\small\sffamily},
           box/.style={draw, rounded corners=3pt, inner sep=4pt,
@@ -2408,7 +2410,7 @@ A Structural Roadmap and Paper Inventory}
         ]
 
           \newcommand{\dx}{2.1cm}
-          \newcommand{\dy}{1.35cm}
+          \newcommand{\dy}{1.05cm}
 
           \node[S] (WP)     at (0,0)          {WP};
           \node[P] (ENI)    at (\dx,0)        {ENI};
@@ -2481,16 +2483,16 @@ A Structural Roadmap and Paper Inventory}
           \node[N] (O28)  at (7*\dx,-6*\dy)   {O28};
           \node[N] (O29)  at (7*\dx,-7*\dy)   {O29};
           \node[C] (O30)  at (7*\dx,-8*\dy)   {O30};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (O30.east)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O30.south)
             {conditional $3\times3$ model};
           \node[Oc] (O31)  at (7*\dx,-9*\dy)   {O31};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (O31.east)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O31.south)
             {withdrawn claims};
           \node[N] (O32)  at (7*\dx,-10*\dy)  {O32};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (O32.east)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O32.south)
             {$q{=}61,151,211,307$ all pass};
           \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
-          \node[font=\tiny\sffamily,text=black!55,right=2pt] at (O33.east)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O33.south)
             {Weil doublets};
           \node[N] (PTO)    at (5*\dx,-7*\dy)   {PTO};
           \node[C] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
@@ -2723,6 +2725,7 @@ A Structural Roadmap and Paper Inventory}
 
         \end{tikzpicture}
       }
+      \footnotesize
       \caption{Logical dependency DAG of the Cosmochrony programme.
       Colour coding: \textcolor{cproved}{$\blacksquare$}~\sproved{},
         \textcolor{cstruct}{$\blacksquare$}~\sstruct{},
@@ -2741,8 +2744,15 @@ A Structural Roadmap and Paper Inventory}
         typed in the graph) are not
         drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
-        Dashed arrows with labels abbreviate linear sub-chains; the dashed arrow Q5a$\to$Q6a is a conditional
-        edge.
+        Dashed arrows labelled O10--O11 and O20--O21 abbreviate linear sub-chains.
+        The other dashed arrows are not derivations.
+        Q5a$\to$Q6a and AOG-Note$\to$CHO (the chiral-lift corollary, under [H-Spin], [H-WS], the modelling
+        premise, CHO's central-phase convention and the premise [B]) are conditional edges.
+        Foundation$\to$HeisStr (the Heisenberg carrier is supplied, Foundation Theorem~5.7),
+        O30$\to$Q14 (Q14 takes the Born--Infeld datum as O30's supplied hypotheses (H1)--(H2)) and
+        Q14$\to$AOG-Note (AOG-Note takes the Lorentzian chiral lift as input, with the status of Q14's
+        [H-Spin]) are postulated inputs.
+        O29$\to$O30 is interpretive: O29 does not supply the Veronese square root that O30 assumes as (H0).
         The faint converging edges gather the constituent papers of each thematic sub-programme into
         its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
@@ -2901,7 +2911,9 @@ A Structural Roadmap and Paper Inventory}
       No-go: under its premises, $\Pi$ non-injective with $S_\Pi>0$ (one-way); redundancy equivalence &
       \sproved \\[3pt]
       Found & Foundation & \cite{Beau2026m} &
-      Axioms A1--A4; the published Heisenberg/Weil selection theorem is not established;
+      Axioms A1--A4; the carrier contract extracted from A1--A3 and Born--Infeld parity does not select
+      $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ (Theorem~5.7, $\mathfrak{S}_3$ countermodel), so the Heisenberg/Weil
+      carrier is supplied;
       continuum-limit passages conditioned on the unestablished spatial-limit hypothesis
       [H-L] (Q5b), the effective metric also on [H-lift]; ENI tower under ENI's premises, not from A1--A4;
       no co-metric coefficient value established; $\SU(2)$ and complex amplitudes on supplied
@@ -3216,7 +3228,7 @@ A Structural Roadmap and Paper Inventory}
       Q7 & Requirements for an equivariant bridge & \cite{Beau2026q7} &
       Proves $[\mathfrak{su}(2)]\not\cong\mathfrak{heis}_3$, the uniqueness of the spin-$1$ module and
       $[F_c,L_{\mathrm{Weil}}]=0$, and gives the closed form of the compressions on the O25 data;
-      it supports neither the Casimir reading, the isotropy fit nor a transfer to the continuum
+      it asserts neither the Casimir reading, the isotropy fit nor a transfer to the continuum
       symbol. The identification $H_{\mathrm{eff}}\cong\mathrm{Sym}^2(V_\rho)$ is supplied by no
       source. The exact Q5b principal-symbol target is excluded by rank; a new compatible
       positive target remains open &
@@ -3588,7 +3600,7 @@ A Structural Roadmap and Paper Inventory}
       $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
       \sstruct \\[3pt]
       Cosmol & Rotation curves / Hubble & \cite{Beau2026d} &
-      Flat rotation curves and Hubble tension from a common effective mechanism; v2.0 adds the
+      Flat rotation curves and Hubble tension from a common effective mechanism, with the
       history-branching expansion sector under the explicit rank--time dictionary hypothesis ($n = \log a$),
       with the state-volume reading quantitatively excluded and QUMOND repositioned as input &
       \sheur\ /\ \scond{} on the rank--time dictionary hypothesis \\[3pt]
@@ -3608,7 +3620,7 @@ A Structural Roadmap and Paper Inventory}
       distinguishable histories; canonical O12-compatible channel is $b$-only with exact Pell count,
       $h_b = \log(1+\sqrt2)$ (generic probe, exact $q=211$ witness); full-history channel proved strictly
       compressive by geodesic death, pinned rate $\log 2$ and exact class count $2^{n+2}-4n-1$
-      (generic $a$-mirror separation via the mixed two-anchor coefficient); v1.3.0 gates the $w(n)$
+      (generic $a$-mirror separation via the mixed two-anchor coefficient); it gates the $w(n)$
       candidate by a conditional no-go (early low-rank window only, under dictionary and minimal mappings) &
       \sproved\ /\ \scond{} on the dictionary and minimal mappings \\[3pt]
       LowLCap & Low-$\ell$ from history capacity & \cite{Beau2026dhc} &
@@ -3750,7 +3762,7 @@ A Structural Roadmap and Paper Inventory}
     Q8 version~2.0 shows that a positive central coefficient needs a new operator of homogeneous degree four
     and a length scale.
     The exact Q5b rank-two principal symbol cannot realise the positive rank-three target.
-    The revised Conjecture~4.7 asks instead for a new spatial construction supplying the target,
+    Q7's bridge-existence conjecture asks for a new spatial construction supplying the target,
     action and compatible adapted transport.
     Abstract intertwiner existence is already guaranteed for the supplied isomorphic modules.
 
@@ -3916,7 +3928,7 @@ A Structural Roadmap and Paper Inventory}
     quadratic identity $B_n^2 + (F_n^\tau)^2 = 1$ is exact.
 
   \paragraph{Thermodynamics: the integrability bridge, Lorentzian extension and matter coupling.}
-    No local spectral first law follows from the determinant alone: the heat-kernel quantity
+    No local spectral first law follows from the heat kernel alone: the heat-kernel quantity
     $u \sim L^{-2}$ is an eigenvalue scale, not a temperature.
     Establishing one requires an independently defined heat one-form $\xi_{\mathrm{sp}}$ on configuration space,
     a physical energy notion, and a Carath\'{e}odory--Jauch--Roberts integrability result showing
@@ -3931,7 +3943,7 @@ A Structural Roadmap and Paper Inventory}
   physical structure from a single primitive.
   Branch~I (Foundation, ENI, and HeisenbergStructure~\cite{Beau2026HeisenbergStructure})
   is not formally closed.
-  The \(S_3\) countermodel proves that the published inputs do not force centrality or a
+  The \(S_3\) countermodel proves that the extracted inputs do not force centrality or a
   Heisenberg/Weil carrier.
   The carrier remains a supplied realisation for the downstream mathematical programme.
   The binary-polyhedral maximality conjecture (SpectralCapacity~\cite{Beau2026a2}) is proved:

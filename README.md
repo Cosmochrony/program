@@ -8,14 +8,22 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
-Version 2.40 is a narration pass on the registry. The Foundation entry states the admissible pair entropy
-$\log 2$ imported from Q3 and ENT-E2 as conditional on two independent hypotheses that A1–A4 do not establish,
-[H-carrier] of ENT-E2 and [H-inv] stated in Q3, and drops a stale pointer that called its non-selection result
-and its postulated dictionary "not established". The O4, O15, O21, Q7 and thermodynamics entries, table rows and
-graph nodes state current results and limits directly instead of recounting earlier versions; O31 remains a
-withdrawal notice. The Q13 table row carries version 1.6. The 2.36 paragraph below now states that A3 does not by
-itself forbid an erasure of relative phases. The identifications $F_n \simeq V_\rho$ in the FM-Note entry, in
-HeisenbergCarrierObstruction and on the fermionic-matter and Q14 web pages are not resolved in this version.
+Version 2.40 is a narration pass on the registry: entries, table rows, graph nodes and the abstract state
+current results and limits directly instead of recounting earlier versions; O31 remains a withdrawal notice.
+The Foundation entry, table row and graph node, the abstract, the Level 2 overview and the HeisenbergStructure
+entry state that the carrier contract extracted from A1–A3 and Born–Infeld parity does not select
+$\mathrm{Heis}_3(\mathbb Z/q\mathbb Z)$ (Foundation Theorem 5.7), so the carrier is supplied. The admissible pair
+entropy $\log 2$ is attributed to ENT-E2, with its singlet input from Q3, and is conditional on the independent
+hypotheses (H-carrier) and [H-inv], which A1–A4 do not establish; the ENT-Note entry carries the same conditions
+and limits ENT-E1 to the admission-orthogonality identity and to matched blocks for the pair closure. The Q7
+entry reserves $A_z$ for the coefficient of $k_Z^2$ of a full-rank spatial block, which Q7 does not
+evaluate. The O4 graph node carries O4's bibliographic title, and the Q13 table row version 1.6. Figure 1 shows
+the side annotations of O30–O33 and its caption types the five dashed arrows it did not explain, with matching
+edges in the interactive graph (O29→O30 interpretive; O30→Q14 and Q14→AOG-Note postulated; AOG-Note→CHO
+conditional). In Foundation 2.5's wording, A3 preserves the open directions but does not by itself forbid an
+erasure of their relative phases; the 2.36 paragraph below keeps the wording of that release. The identifications
+$F_n \simeq V_\rho$ in the FM-Note entry, in HeisenbergCarrierObstruction and on the fermionic-matter and Q14 web
+pages are not resolved in this version.
 
 Version 2.39 records Foundation 2.5. Foundation cites ENI Corollary 6 with its own premises on each projection
 (surjectivity, observables defined by the projection, a level not isomorphic to the one below), which A1–A4 do not
@@ -54,7 +62,7 @@ Version 2.36 records the Foundation 2.4 cycle (Foundation 2.4, QS-Note 2.2). Fou
 dimension $D_{\mathrm{hom}} = 4$ as a property of the supplied Heisenberg carrier, local on $G_q$ for $n \ll \sqrt{q}$
 and not identified with $3+1$ spacetime; it writes complex amplitudes on the supplied carriers, coherence excluding a
 classical probability mixture but not real amplitudes; phase coherence is not derived from A3 alone, which preserves
-the open directions but does not by itself forbid an erasure of their relative phases; the Born weight is an additional rule; projective
+the open directions but not, by itself, their relative phases; the Born weight is an additional rule; projective
 incompleteness does not guarantee the initial transition; and its results table gives the Einstein, Yang–Mills and
 Einstein–Yang–Mills results of Gravity, Q12 and Q13 with their hypotheses (the Einstein condition being sufficient),
 deriving no coupling hierarchy. QS-Note states that, under an explicit representation-theoretic reading of the
