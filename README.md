@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.39 records Foundation 2.5. Foundation cites ENI Corollary 6 with its own premises on each projection
+(surjectivity, observables defined by the projection, a level not isomorphic to the one below), which A1–A4 do not
+supply and which are open for the programme's strata; the ENI entry and graph node present ENI as a motivation for
+A2, not a derivation of it. The effective metric read from the principal symbol is conditional on [H-L] and the
+open lifting hypothesis [H-lift] of Q5b. The Weil module of the supplied Heisenberg–Schrödinger carrier is written
+$\mathcal W$, with blocks $V_c$; $V_\rho$ denotes only the spinor carrier $\mathbb C^2$ supplied conditionally by O23.
+The identifications $F_n \simeq V_\rho$ in the FM-Note entry and in HeisenbergCarrierObstruction are not resolved in
+this version.
+
 Version 2.38 records PTO 1.5, ENT-Note 1.3 and LC-Synthesis 2.2. PTO separates cumulative span retention
 (immediate), exact stepwise monotonicity (conjectural), the numerical bound, which holds within a relative
 tolerance of $10^{-6}$ after burn-in (exactly for $q \le 101$, only within tolerance for $q = 151$ and $211$),
