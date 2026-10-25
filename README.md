@@ -22,6 +22,8 @@ supplied Heisenberg–Schrödinger carrier, one per central character $c$, the m
 O27, whose Weil action is not the Heisenberg action; $V_\rho$ denotes only the spinor carrier $\mathbb C^2$ supplied
 conditionally by O23. The identifications $F_n \simeq V_\rho$ in the FM-Note entry, in HeisenbergCarrierObstruction
 and on the fermionic-matter and Q14 web pages are not resolved in this version.
+Programme 2.39 was deposited as [Zenodo record 23645389](https://zenodo.org/record/23645389)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.38 records PTO 1.5, ENT-Note 1.3 and LC-Synthesis 2.2. PTO separates cumulative span retention
 (immediate), exact stepwise monotonicity (conjectural), the numerical bound, which holds within a relative
