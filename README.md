@@ -15,6 +15,8 @@ and an order on states, which requires [H-acyc]; its stability table is recomput
 outputs, with the q = 211 row now taken from the archived run (194 steps). ENT-Note 1.3 states capacity-level
 one-way activation as a conjecture supported within tolerance; LC-Synthesis 2.2 reads PTO as a candidate
 trajectory proxy and takes the clock factor from TempProj.
+Programme 2.38 was deposited as [Zenodo record 23643977](https://zenodo.org/record/23643977)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.37 records Q6a 2.4. Q6a attributes to the Foundation paper the derivation of the structural indeterminacy
 of the proto-state from A1 and A3, and states that the retention of phase coherence is not derived from A3 alone;
