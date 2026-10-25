@@ -16,15 +16,15 @@ entry state that the carrier contract extracted from A1–A3 and Born–Infeld p
 $\mathrm{Heis}_3(\mathbb Z/q\mathbb Z)$ (Foundation Theorem 5.7), so the carrier is supplied. The admissible pair
 entropy $\log 2$ is attributed to ENT-E2, with its singlet input from Q3, and is conditional on the independent
 hypotheses (H-carrier) and [H-inv], which A1–A4 do not establish; the ENT-Note entry carries the same conditions.
-The ENT-Note and ENT-E1 entries, the ENT-E1 table row and graph node state that ENT-E1 proves the
-admission-orthogonality identity and, for matched blocks, the diagonal Schmidt pairing under a supplied purity of
-the joint state, deriving neither that purity nor the pair closure. The Q7
+The ENT-Note, ENT-E1 and ENT-E2 entries, the ENT-E1 and ENT-E2 table rows and graph nodes state that ENT-E1
+proves the admission-orthogonality identity and, for matched blocks, the diagonal Schmidt pairing and the flat
+spectrum under a supplied purity of the joint state, deriving neither that purity nor the pair closure. The Q7
 entry reserves $A_z$ for the coefficient of $k_Z^2$ of a full-rank spatial block, which Q7 does not
 evaluate. The O4 graph node carries O4's bibliographic title, and the Q13 table row version 1.6. Version narration
 is also removed from the PTO, Cosmology, TrajBr, LowLCapacity, HeisenbergStructure, SRN and LCII passages. Figure 1
 shows the side annotations of O30–O33 under their nodes, draws dashed every arrow whose edge the interactive graph
-types as conditional, postulated or interpretive, and its caption gives each typing; the graph adds the matching
-edges (O29→O30 interpretive; O30→Q14 and Q14→AOG-Note postulated; AOG-Note→CHO conditional). In Foundation 2.5's wording, A3 preserves the open directions but does not by itself forbid an
+types as conditional, postulated or interpretive, and its caption gives each typing; the graph types O29→O30 as
+interpretive and adds O30→Q14 and Q14→AOG-Note (postulated) and AOG-Note→CHO (conditional). In Foundation 2.5's wording, A3 preserves the open directions but does not by itself forbid an
 erasure of their relative phases; the 2.36 paragraph below keeps the wording of that release. The identifications
 $F_n \simeq V_\rho$ in the FM-Note entry, in HeisenbergCarrierObstruction and on the fermionic-matter and Q14 web
 pages are not resolved in this version.

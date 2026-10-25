@@ -2234,7 +2234,7 @@ A Structural Roadmap and Paper Inventory}
     $\Delta I(n)\geq 0$ is a conjecture supported numerically only within tolerance, and the temporal
     ordering it refers to is a candidate trajectory proxy, an order on states requiring [H-acyc].
 
-    \textbf{ENT-E1}~\cite{Beau2026ent1}: closes the open analytic strengthening of ENT-Note by
+    \textbf{ENT-E1}~\cite{Beau2026ent1}: analytic companion of ENT-Note, by
     explicit computation (\sproved\ /\ \sopen). The $k{=}3$ Weil fingerprint of
     $\mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$
     for any block $(c_1,c_2,c_3)$ factors as a global phase times a single discrete Fourier mode
@@ -2265,8 +2265,9 @@ A Structural Roadmap and Paper Inventory}
     correlator
     or a Tsirelson bound. The \emph{full residual-rank entropy}
     $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ lives on the full Gram--Schmidt basis (rank
-    $q$ at saturation, not rank~3) and is a pipeline-level contraction observable, unconditional
-    for matched blocks (ENT-E1) and otherwise conditional on the residual admissibility
+    $q$ at saturation, not rank~3) and is a pipeline-level contraction observable, proved for matched
+    blocks by ENT-E1 under a supplied purity of the joint state, which ENT-E1 does not derive, and
+    otherwise conditional on the residual admissibility
     indiscernibility hypothesis $[\mathrm{H}_{\mathrm{res}}]$ and on extending \emph{O17}'s
     equal-residual-dimension result beyond its own toy model to the real pipeline; the
     metaplectic dilation of \emph{O31}~\cite{Beau2026a35} is excluded as a bridge for
@@ -2485,17 +2486,9 @@ A Structural Roadmap and Paper Inventory}
           \node[N] (O28)  at (7*\dx,-6*\dy)   {O28};
           \node[N] (O29)  at (7*\dx,-7*\dy)   {O29};
           \node[C] (O30)  at (7*\dx,-8*\dy)   {O30};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O30.south)
-            {conditional $3\times3$ model};
           \node[Oc] (O31)  at (7*\dx,-9*\dy)   {O31};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O31.south)
-            {withdrawn claims};
           \node[N] (O32)  at (7*\dx,-10*\dy)  {O32};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O32.south)
-            {$q{=}61,151,211,307$ all pass};
           \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O33.south)
-            {Weil doublets};
           \node[N] (PTO)    at (5*\dx,-7*\dy)   {PTO};
           \node[C] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
           \node[C] (TempPr) at (5*\dx,-9*\dy)  {TempProj};
@@ -2725,6 +2718,15 @@ A Structural Roadmap and Paper Inventory}
           \draw[gather] (PYL) to[out=180,in=0] (FMNote);
           \draw[gather] (PYO) to[out=150,in=-30] (FMNote);
 
+          % Side annotations of O30-O33, drawn last so that arrows pass behind them.
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O30.south)
+            {conditional $3\times3$ model};
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O31.south)
+            {withdrawn claims};
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O32.south)
+            {$q{=}61,151,211,307$ all pass};
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O33.south)
+            {Weil doublets};
         \end{tikzpicture}
       }
       \caption[Logical dependency DAG of the Cosmochrony programme.]{\footnotesize Logical dependency DAG of the
@@ -2745,8 +2747,8 @@ A Structural Roadmap and Paper Inventory}
         Q14$\to$PYO ([H-Weak], [H-Res]) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows labelled O10--O11 and O20--O21 abbreviate linear sub-chains.
-        Every other dashed arrow carries the typing of its edge in the interactive graph and is not a
-        derivation.
+        Apart from the arrow from Q7 described below, every other dashed arrow carries the typing of its
+        edge in the interactive graph and is not a derivation.
         Q5a$\to$Q5b ([H-L]), Q5a$\to$Q6a (the spatial continuum that Q5a leaves open), PRS$\to$A4-Note ([H-Gen], [H-Tr]), Q14$\to$PYL ([H-Weak]),
         PYL$\to$PYO ([H-Res]) and AOG-Note$\to$CHO (the chiral-lift corollary, under [H-Spin], [H-WS], the modelling
         premise, CHO's central-phase convention and the premise [B]) are conditional edges.
@@ -3505,7 +3507,8 @@ A Structural Roadmap and Paper Inventory}
       outer-product real-form selector (proved); spinorial-soldering indeterminacy: the derived data
       fix the complex carrier and its univalence but neither the spatial realisation, the rotation
       action $\rho_{\mathrm{sp}}$, nor its normalisation;
-      $e_0$ is the weight $m=0$ of the $j=1$ module, not a $j=0$ state, as Q7 reads it;
+      in Q7's construction, $e_0$ is the weight $m=0$ of the $j=1$ module, not a $j=0$ state, the $j=0$
+      state being the antisymmetric singlet in $\wedge^2(V_\rho)$;
       an independent downstream reconnaissance: $\overline{\psi_R}\psi_L$ carries
       exact Higgs-typed electroweak quantum numbers ($H$ or $\widetilde H$) in every tree-level
       Yukawa sector under $\mathrm{Spin}(3,1)\times SU(3)_c\times SU(2)_L\times U(1)_Y$ (proved,
@@ -3595,10 +3598,10 @@ A Structural Roadmap and Paper Inventory}
       derived nowhere; the singlet identification further conditional on Q3's [H-inv], for
       general canonical blocks) from the full residual-rank entropy
       $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ on the full Gram--Schmidt basis
-      (unconditional for matched blocks by ENT-E1, conditional on
+      (proved for matched blocks by ENT-E1 under a supplied purity of the joint state, conditional on
       $[\mathrm{H}_{\mathrm{res}}]$ and the O17 toy-model transfer gap for general blocks); excludes
       the metaplectic dilation as a bridge for $[\mathrm{H}_{\mathrm{res}}]$ &
-      \scond{} on (H-carrier) and [H-inv]; \sproved{} for matched blocks \\[3pt]
+      \scond{} on (H-carrier) and [H-inv]; \sproved{} for matched blocks given a supplied purity \\[3pt]
       SchLamb & Fine-structure constant & \cite{Beau2026f} &
       $\alpha$ as projective invariant; Lamb shift and Schwinger correction &
       \sstruct \\[3pt]
