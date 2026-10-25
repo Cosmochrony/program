@@ -139,7 +139,7 @@ A Structural Roadmap and Paper Inventory}
   Heisenberg derivation of the downstream conversion $\delta_{\mathrm{pair}} \to \beta^*$.
   On the other side, the Foundation paper~\cite{Beau2026m} proposes a reformulation from
   four axioms~(A1--A4), dispensing with an explicit substrate $\chi$ and relaxation mechanism.
-  Its carrier-selection step is not derived:
+  It does not select the carrier (Theorem~5.7):
   HeisenbergStructure~\cite{Beau2026HeisenbergStructure} (version~2.1) contains a finite countermodel that
   satisfies the algebraic properties available before centrality while its commutator is non-central.
   The Q-series then builds quantum mechanics, $\SU(2)$ symmetry, and Lorentzian spacetime
@@ -321,7 +321,7 @@ A Structural Roadmap and Paper Inventory}
     intra-fibre power (law of total variance; the structural answer to the cosmic-variance objection),
     and the parameter-free capacity ceiling $(N-1)/N$ for a complex Gaussian mode supported on $N$
     distinguishable histories (one-shot rate--distortion converse) --- identically the Bessel envelope of
-    LowLCapacity~\cite{Beau2026dhc}, upgraded from estimator heuristic to information-theoretic bound.
+    LowLCapacity~\cite{Beau2026dhc}, here an information-theoretic bound rather than an estimator heuristic.
 
     \textit{Role:} Closes the entropy-to-power step of LowLCapacity as a conditional theorem chain;
     supplies the counting-to-power converter consumed by the low-$\ell$ note, the cosmological
@@ -403,8 +403,8 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{A Finite Obstruction to Heisenberg Carrier Selection from Admissibility Constraints}
 
-    HeisenbergStructure~\cite{Beau2026HeisenbergStructure} (version~2.1) records a proof attempt for the
-    selection of the Heisenberg carrier from the Foundation axioms and refutes it by an obstruction theorem;
+    HeisenbergStructure~\cite{Beau2026HeisenbergStructure} (version~2.1) proves an obstruction theorem: the
+    contract extracted from the Foundation axioms does not select a Heisenberg carrier;
     Foundation states the obstruction as its Theorem~5.7.
     The central structural lemma --- \emph{admissible non-factorisability} --- is a direct
     formalisation of Axiom~A3.
@@ -414,7 +414,7 @@ A Structural Roadmap and Paper Inventory}
     character of a central subgroup, not one non-zero eigenspace for every available character.
 
     \textit{Status:} \sstruct{} for the non-factorisability setup; \sopen{} for Heisenberg selection.
-    \textit{Role:} Documents the attempted carrier-selection proof and its conditional final
+    \textit{Role:} Contains the obstruction to carrier selection and the conditional
     Stone--von Neumann step.
 
     HeisenbergStructure gives the six-element countermodel
@@ -1271,13 +1271,13 @@ A Structural Roadmap and Paper Inventory}
     $L_{\mathrm{Weil}} = 4I - W_a - W_a^\dagger - W_b - W_b^\dagger$, while an off-diagonal entry of
     modulus one appears exactly when two stored indices differ by $\pm c \bmod q$, which accounts
     for the modulus-one off-diagonal entries at $(q,c)=(61,3)$ and $(151,5)$.
-    The entry $\tilde L_{00} = 4-2-0 = 2$ is thus the flat-mode value; Q7 reserves $A_z$ for the
-    coefficient of $k_Z^2$ that a full-rank spatial block would carry, which it does not evaluate.
-    The pipeline reports it in that slot at eleven of the twelve pairs, the flat mode being ordered
+    The entry $\tilde L_{00} = 4-2-0 = 2$ is thus the flat-mode value.
+    The pipeline reports this value in the $(0,0)$ slot at eleven of the twelve pairs, the flat mode being ordered
     last at $(101,3)$.
     Q7 version~2.0 records that this value follows from the $4I$ normalisation and is not
-    normalisation-invariant, so its agreement with the Casimir carries no evidential weight; $A_z$
-    itself is left an unevaluated parameter.
+    normalisation-invariant, so its agreement with the Casimir carries no evidential weight; Q7 reserves $A_z$
+    for the coefficient of $k_Z^2$ that a full-rank spatial block would carry, and leaves it an unevaluated
+    parameter.
     The difference between the two distinct entries, $4\sin^2(\pi k/q)$, is an identity, so the
     vanishing of the gap is equivalent to $\mathrm{dist}(k/q,\mathbb{Z}) \to 0$, a property of the
     pipeline's mode-selection rule that the corpus does not derive; the published fit
@@ -2222,8 +2222,9 @@ A Structural Roadmap and Paper Inventory}
     rank, with no surviving spectral weighting.
     Structural monotonicity of $S_{\mathrm{ent}}$ along the cascade follows from the Gram--Schmidt
     construction alone. The note integrates the analytical results of ENT-E1 (Weil fingerprint
-    orthogonality theorem, which proves the admission-orthogonality identity $w_j=1$, and the pair closure
-    only for matched single-character blocks) and ENT-E2 (separation of the admissible pair entropy
+    orthogonality theorem, which proves the admission-orthogonality identity $w_j=1$ and, for matched
+    single-character blocks only, the diagonal Schmidt pairing under a supplied purity of the joint state,
+    deriving neither that purity nor the pair closure) and ENT-E2 (separation of the admissible pair entropy
     $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$, conditional on (H-carrier) and [H-inv], from the full
     residual-rank entropy), and records the residual epistemic stratification. The note thus reduces entanglement to a pure O-series observable and
     connects the pair-capacity exponent $\delta_{\mathrm{pair}}$ --- whose numerical comparison
@@ -2240,9 +2241,10 @@ A Structural Roadmap and Paper Inventory}
     at frequency $A = c_1b_1+c_2b_2+c_3b_3 \bmod q$. Since distinct Fourier modes are orthogonal,
     every newly admitted fingerprint is already orthogonal to the current span, so the admission
     residual $w_j=1$ is an \emph{exact} algebraic identity --- not a numerical accident. For
-    matched single-character blocks the conjugate pair samples sign-reflected frequencies and the
-    closure hypothesis of ENT-Note becomes a theorem; the flat Schmidt spectrum
-    $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is then derived analytically (\sproved;
+    matched single-character blocks the conjugate pair samples sign-reflected frequencies; under a supplied
+    purity of the joint state, which ENT-E1 does not derive, the diagonal Schmidt pairing of ENT-Note's
+    closure hypothesis follows and the flat Schmidt spectrum
+    $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is derived analytically (\sproved{} given that purity;
     literal Schmidt pairing for independently sampled canonical O25 blocks: \sopen).
 
     \textbf{ENT-E2}~\cite{Beau2026ent2}: separates two genuinely distinct entanglement entropies
@@ -2279,22 +2281,22 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{Cosmology}~\cite{Beau2026d}: Flat galaxy rotation curves and the Hubble tension from a
     common effective mechanism; no dark matter or modified gravity (\sheur; quantitative fit: \sheur).
-    Version 2.0 adds a structural expansion sector: under the rank--time dictionary stated as an explicit
+    It includes a structural expansion sector: under the rank--time dictionary stated as an explicit
     hypothesis ($dt = H^{-1}dn$, hence $n = \log a$, bridging the temporal-ordering sector and the operational
     closure of its Appendix A), the accelerated component is carried by projective history
     branching~\cite{Beau2026tb} rather than by a dark-energy fluid, and the naive state-volume reading is
     quantitatively excluded ($N_{\mathrm{dist}} \sim a^{0.881} \neq a^3$); the QUMOND relation is repositioned
     precisely (interpolation structure as phenomenological input; falsifiable content in the
     $a_\star \sim \kappa c H(z)$ closure, the environmental $H_0$ bias, and void signatures); the dimensional
-    chain of the saturation scale is corrected ($a_\star \sim \kappa\,c_{\mathrm{BI}}^2/\ell$); $H_\infty$, $w(n)$ and
+    chain of the saturation scale gives $a_\star \sim \kappa\,c_{\mathrm{BI}}^2/\ell$; $H_\infty$, $w(n)$ and
     the low-$\ell$ D4 re-audit are left open, with the phenomenological core independent of them
     (H-dict: explicit hypothesis; expansion reading: \sstruct; open items: \sopen).
-    Version 2.2 upgrades the asymptotic de Sitter limit from a free late-time fit to a calibrated spectral
+    The asymptotic de Sitter limit is a calibrated spectral
     steady state driven by the history-entropy production rate (structural carrier: \sstruct, conditional on
     the [H-ent-id] identification; numerical value of $H_\infty$: explicitly not derived, with the two
-    extraction routes closed conditionally), and gates the $w(n)$ candidate by the conditional no-go
+    extraction routes closed conditionally); the $w(n)$ candidate is gated by the conditional no-go
     of~\cite{Beau2026tb}.
-    Cosmology 2.2 also records the interpretive consequence of the low-rank Pell count: the earliest
+    Cosmology also records the interpretive consequence of the low-rank Pell count: the earliest
     projectable epoch is naturally read as finite-resolution rather than infinitely hot, while the standard
     hot classical regime is left unchanged.
 
@@ -2313,7 +2315,7 @@ A Structural Roadmap and Paper Inventory}
     $\ell^1$ disk, so nonzero symbols are confined to $\ell^1$-outward geodesics (geodesic death), and for a
     generic probe (Lawrence--Pfander--Walnut full spark plus a Chebotar\"ev-based separation lemma) the
     compression rate is exactly pinned at $\log 2 < \log(1+\sqrt2)$.
-    Version 1.2.0 upgrades the class count itself to a theorem,
+    The class count is itself a theorem,
     $N^{\mathrm{V3}}_{\mathrm{dist}}(n) = 2^{n+2}-4n-1$ ($n \ge 2$, window $q > (4n-1)(2n+3)$): the last
     separation step ($a$-mirror pairs at equal $|b|$) is closed by the generic non-vanishing of a mixed
     two-anchor coefficient --- a Hermitian jet at the orthogonal point of an anchor moment domain --- combined
@@ -2337,7 +2339,7 @@ A Structural Roadmap and Paper Inventory}
     contain only $3$, $7$, $17$ distinguishable histories (canonical Pell count~\cite{Beau2026tb}).
     Under a separate saturation hypothesis, a quadrupole-anchored, parameter-free $2\times2$ grid of envelopes
     and angular dictionaries defines a saturation benchmark, not a derived prediction.
-    Version 1.5.0 applies the Planck PR3 map calibration and the real-$m=0$ full-sky multiplet correction to the
+    The paper applies the Planck PR3 map calibration and the real-$m=0$ full-sky multiplet correction to the
     TT Bessel cells.
     The leading TT diagnostic is $27.26\to17.70$.
     TE is neutral and EE mildly disfavoured under the uncorrected minimal-transfer convention; the envelope is
@@ -2392,7 +2394,7 @@ A Structural Roadmap and Paper Inventory}
 
     \begin{figure}[p]
       \centering
-      \resizebox{0.9\textwidth}{!}{%
+      \resizebox{\textwidth}{!}{%
         \begin{tikzpicture}[
           every node/.style={font=\small\sffamily},
           box/.style={draw, rounded corners=3pt, inner sep=4pt,
@@ -2410,7 +2412,7 @@ A Structural Roadmap and Paper Inventory}
         ]
 
           \newcommand{\dx}{2.1cm}
-          \newcommand{\dy}{1.05cm}
+          \newcommand{\dy}{1.12cm}
 
           \node[S] (WP)     at (0,0)          {WP};
           \node[P] (ENI)    at (\dx,0)        {ENI};
@@ -2421,7 +2423,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[spine] (WP)--(ENI);
           \draw[spine] (ENI)--(Found);
           \draw[arr,dashed] (Found)--(Heis);
-          \draw[arr]   (Found)--(nos);
+          \draw[arr]   (Found.north east) to[out=25,in=155] (nos.north west);
 
           \node[S]  (BI)    at (0,-\dy)       {BornInfeld};
           \node[P]  (SpA)   at (\dx,-\dy)     {SpAdm};
@@ -2483,16 +2485,16 @@ A Structural Roadmap and Paper Inventory}
           \node[N] (O28)  at (7*\dx,-6*\dy)   {O28};
           \node[N] (O29)  at (7*\dx,-7*\dy)   {O29};
           \node[C] (O30)  at (7*\dx,-8*\dy)   {O30};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O30.south)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O30.south)
             {conditional $3\times3$ model};
           \node[Oc] (O31)  at (7*\dx,-9*\dy)   {O31};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O31.south)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O31.south)
             {withdrawn claims};
           \node[N] (O32)  at (7*\dx,-10*\dy)  {O32};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O32.south)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O32.south)
             {$q{=}61,151,211,307$ all pass};
           \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
-          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north east] at ([xshift=-2pt,yshift=-1pt]O33.south)
+          \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O33.south)
             {Weil doublets};
           \node[N] (PTO)    at (5*\dx,-7*\dy)   {PTO};
           \node[C] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
@@ -2517,7 +2519,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (O24) -- (O26);
           \draw[arr]   (O25) -- (O26);
           \draw[arr]   (O25) to[out=-30,in=-150] (O27);
-          \draw[arr]   (O28) to[out=200,in=160] (O30);
+          \draw[arr,dashed]   (O28) to[out=200,in=160] (O30);
           \draw[arr]   (O31) -- (O32);
           \draw[arr]   (O26) -- (O27);
           \draw[arr]   (O24) -- (PTO);
@@ -2574,7 +2576,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (Q5b)   to[out=-30,in=30]  (Q7);
           \draw[arr]   (O23)   to[out=-10,in=180] (Q7);
           \draw[arr]   (O28)   to[out=-10,in=180] (Q7);
-          \draw[arr]   (O29)   to[out=-10,in=180] (Q7);
+          \draw[arr,dashed]   (O29)   to[out=-10,in=180] (Q7);
           \draw[arr,dashed]   (Q7)--(geom);
           \draw[spine] (Q5a)   to[out=0,in=90]   (H2);
           \draw[arr]   (H2)    to[out=-90,in=0]  (geom);
@@ -2586,7 +2588,7 @@ A Structural Roadmap and Paper Inventory}
           \foreach \n in {Q5a,Q5aO2,Q5b,Q6b,Q7,H2,geom}
           \draw[gather] (\n) to[out=-30,in=120] (EGNote);
 
-          \draw[spine] (Found) to[out=0,in=90] (Q1);
+          \draw[spine] (Found.north east) to[out=35,in=90] (Q1);
           \draw[arr]   (O18)   to[out=10,in=180] (Q1);
           \draw[arr]   (O22)   to[out=10,in=180] (Q1);
           \draw[arr]   (O23)   to[out=10,in=180] (Q1);
@@ -2597,7 +2599,7 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (Q5aO2.east)
             {\begin{tabular}{l}[H-$\mathcal{E}$1], [C]\\not closed
           \end{tabular}};
-          \draw[spine] (Q5a)--(Q5b);
+          \draw[spine,dashed] (Q5a)--(Q5b);
           \draw[arr,dashed] (Q5a.south west) to[out=-120,in=120,looseness=0.6] (Q6a.north west);
           % O31 supplies no edge to Q6a.
           \draw[arr]   (Q6a)--(Q6b);
@@ -2691,7 +2693,7 @@ A Structural Roadmap and Paper Inventory}
           \node[C] (A4Note) at (3*\dx,-15*\dy) {A4-Note};
           \node[font=\tiny\sffamily,text=black!55,below=3pt] at (A4Note.south)
             {BI margin, genus open};
-          \draw[arr] (PRS) to[out=-90,in=90]  (A4Note);
+          \draw[arr,dashed] (PRS) to[out=-90,in=90]  (A4Note);
 
           \node[C] (AOG) at (4*\dx,-15*\dy) {AOG-Note};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (AOG.east)
@@ -2715,18 +2717,18 @@ A Structural Roadmap and Paper Inventory}
           \node[C] (PYL) at (5*\dx,-13*\dy) {PYL};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (PYL.east)
             {weak det.\ line};
-          \draw[arr] (Q14) to[out=40,in=120] (PYL);
+          \draw[arr,dashed] (Q14) to[out=40,in=120] (PYL);
           \node[C] (PYO) at (5*\dx,-14*\dy) {PYO};
           \node[font=\tiny\sffamily,text=black!55,right=2pt] at (PYO.east)
             {polar class open};
-          \draw[arr] (PYL) to[out=-90,in=90] (PYO);
+          \draw[arr,dashed] (PYL) to[out=-90,in=90] (PYO);
           \draw[gather] (PYL) to[out=180,in=0] (FMNote);
           \draw[gather] (PYO) to[out=150,in=-30] (FMNote);
 
         \end{tikzpicture}
       }
-      \footnotesize
-      \caption{Logical dependency DAG of the Cosmochrony programme.
+      \caption[Logical dependency DAG of the Cosmochrony programme.]{\footnotesize Logical dependency DAG of the
+        Cosmochrony programme.
       Colour coding: \textcolor{cproved}{$\blacksquare$}~\sproved{},
         \textcolor{cstruct}{$\blacksquare$}~\sstruct{},
         \textcolor{cnum}{$\blacksquare$}~\snum{},
@@ -2739,20 +2741,22 @@ A Structural Roadmap and Paper Inventory}
         text states a status it is that of the component named, not the primary label of the node.
         The interactive graph's conditional-reading and postulated
         edges (EG-Note to Q12, Q13, Q14, SG-Note and GGS-Note), its conditional edge Q11$\to$Q14 (Lorentzian signature
-        only; spin soldering remains an input) and the conditional typing of the edges into PYL and PYO
-        ([H-Weak], [H-Res]; including the dependencies PRS$\to$PYL, PRS$\to$PYO and Q14$\to$PYO,
-        typed in the graph) are not
-        drawn in this figure.
+        only; spin soldering remains an input) and the conditional dependencies PRS$\to$PYL, PRS$\to$PYO and
+        Q14$\to$PYO ([H-Weak], [H-Res]) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
         Dashed arrows labelled O10--O11 and O20--O21 abbreviate linear sub-chains.
-        The other dashed arrows are not derivations.
-        Q5a$\to$Q6a and AOG-Note$\to$CHO (the chiral-lift corollary, under [H-Spin], [H-WS], the modelling
+        Every other dashed arrow carries the typing of its edge in the interactive graph and is not a
+        derivation.
+        Q5a$\to$Q5b ([H-L]), Q5a$\to$Q6a (the spatial continuum that Q5a leaves open), PRS$\to$A4-Note ([H-Gen], [H-Tr]), Q14$\to$PYL ([H-Weak]),
+        PYL$\to$PYO ([H-Res]) and AOG-Note$\to$CHO (the chiral-lift corollary, under [H-Spin], [H-WS], the modelling
         premise, CHO's central-phase convention and the premise [B]) are conditional edges.
         Foundation$\to$HeisStr (the Heisenberg carrier is supplied, Foundation Theorem~5.7),
         O30$\to$Q14 (Q14 takes the Born--Infeld datum as O30's supplied hypotheses (H1)--(H2)) and
         Q14$\to$AOG-Note (AOG-Note takes the Lorentzian chiral lift as input, with the status of Q14's
         [H-Spin]) are postulated inputs.
-        O29$\to$O30 is interpretive: O29 does not supply the Veronese square root that O30 assumes as (H0).
+        O28$\to$O30, O29$\to$O30 and O29$\to$Q7 are interpretive: O28 is cited as motivation only, O29 does
+        not supply the Veronese square root that O30 assumes as (H0), and O29 audits the measured rank
+        rather than supplying Q7's object.
         The faint converging edges gather the constituent papers of each thematic sub-programme into
         its synthesis node: the Branch~I foundational papers (ENI, Foundation, HeisStr, noscale) into
         \textbf{NIF-Note}, the spectral admissibility papers into \textbf{SpAdm-Note}, the
@@ -2925,7 +2929,7 @@ A Structural Roadmap and Paper Inventory}
       conditions and on matching data\ /\ \sopen \\[3pt]
       HeisStr & Heisenberg carrier obstruction & \cite{Beau2026HeisenbergStructure} &
       Contains the explicit \(S_3\) countermodel to the carrier-selection
-      implication and corrects the central-subgroup/Schur step (version 2.1); the conditional Stone--von Neumann
+      implication and shows that irreducibility supplies no prime-order conclusion; the conditional Stone--von Neumann
       endpoint remains valid when the Heisenberg carrier and central character are supplied &
       \sproved\ /\ \scond{} on a supplied carrier and central character\ /\ \sopen \\[3pt]
       noscale & No external scale & \cite{Beau2026j} &
@@ -3501,9 +3505,8 @@ A Structural Roadmap and Paper Inventory}
       outer-product real-form selector (proved); spinorial-soldering indeterminacy: the derived data
       fix the complex carrier and its univalence but neither the spatial realisation, the rotation
       action $\rho_{\mathrm{sp}}$, nor its normalisation;
-      corrects Q7 version 1.3 ($e_0$ is the weight $m=0$ of the $j=1$ module, not a $j=0$ state;
-      version 2.0 carries the corrected reading);
-      Version 1.4 adds an independent downstream reconnaissance: $\overline{\psi_R}\psi_L$ carries
+      $e_0$ is the weight $m=0$ of the $j=1$ module, not a $j=0$ state, as Q7 reads it;
+      an independent downstream reconnaissance: $\overline{\psi_R}\psi_L$ carries
       exact Higgs-typed electroweak quantum numbers ($H$ or $\widetilde H$) in every tree-level
       Yukawa sector under $\mathrm{Spin}(3,1)\times SU(3)_c\times SU(2)_L\times U(1)_Y$ (proved,
       exact representation audit), permitting but not deriving a composite Higgs condensate;
@@ -3581,10 +3584,10 @@ A Structural Roadmap and Paper Inventory}
       ENT-E1 & Weil fingerprint orthogonality & \cite{Beau2026ent1} &
       The $k{=}3$ Weil fingerprint of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ factors as a global phase times a
       single discrete Fourier mode, so the admission residual $w_j=1$ is an exact algebraic identity and
-      not a numerical accident; for matched single-character blocks the closure hypothesis of ENT-Note
-      becomes a theorem and the flat Schmidt spectrum
-      $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is derived analytically under the companion's supplied
-      purity of the joint state (literal Schmidt pairing for independently sampled canonical O25 blocks: open) &
+      not a numerical accident; for matched single-character blocks, under the companion's supplied purity
+      of the joint state, which ENT-E1 does not derive, the diagonal Schmidt pairing of ENT-Note's closure
+      hypothesis follows and the flat Schmidt spectrum
+      $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ is derived analytically (literal Schmidt pairing for independently sampled canonical O25 blocks: open) &
       \sproved\ /\ \sopen \\[3pt]
       ENT-E2 & Two entanglement entropies of the conjugate pair & \cite{Beau2026ent2} &
       Separates the admissible pair entropy $S_{\mathrm{ent}}^{\mathrm{adm}} = \log 2$ on a
