@@ -8,12 +8,13 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
-The 2.38 working candidate aligns the PTO entry, table, bibliography note and graph with the reviewed PTO 1.5
-sources. It distinguishes cumulative span retention, conjectured exact shellwise monotonicity, the reported
-post-burn-in numerical bound with tolerance, and state order conditional on [H-acyc]. The two numerical
-reproducibility gaps remain explicit. It also records the PTO-aligned consumer versions ENT-Note 1.3
-(capacity-level one-way activation as a conjecture supported within tolerance) and LC-Synthesis 2.2 (candidate
-trajectory proxy; clock factor from TempProj). This candidate is not deposited.
+Version 2.38 records PTO 1.5, ENT-Note 1.3 and LC-Synthesis 2.2. PTO separates cumulative span retention
+(immediate), exact stepwise monotonicity (conjectural), the numerical bound, which holds within a relative
+tolerance of $10^{-6}$ after burn-in (exactly for $q \le 101$, only within tolerance for $q = 151$ and $211$),
+and an order on states, which requires [H-acyc]; its stability table is recomputed from archived pipeline
+outputs, with the q = 211 row now taken from the archived run (194 steps). ENT-Note 1.3 states capacity-level
+one-way activation as a conjecture supported within tolerance; LC-Synthesis 2.2 reads PTO as a candidate
+trajectory proxy and takes the clock factor from TempProj.
 
 Version 2.37 records Q6a 2.4. Q6a attributes to the Foundation paper the derivation of the structural indeterminacy
 of the proto-state from A1 and A3, and states that the retention of phase coherence is not derived from A3 alone;

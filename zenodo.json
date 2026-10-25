@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.38 records PTO 1.5, ENT-Note 1.3 and LC-Synthesis 2.2. PTO now separates cumulative span retention (immediate), exact stepwise monotonicity of the cumulative projected capacity (conjectural), the reported numerical bound, which holds only within a relative tolerance of 1e-6 after burn-in, and an order on states, which requires the unestablished acyclicity hypothesis [H-acyc]; the first transition is not guaranteed. Two numerical reproducibility gaps are stated. ENT-Note and LC-Synthesis carry the same reading of the PTO input. The PTO entry, table row, bibliography note and graph node, and the ENT-Note and LC-Synthesis entries and table row, carry the new versions.",
+  "notes": "Version 2.38 records PTO 1.5, ENT-Note 1.3 and LC-Synthesis 2.2. PTO separates cumulative span retention (immediate), exact stepwise monotonicity of the cumulative projected capacity (conjectural), the numerical bound, which holds within a relative tolerance of 1e-6 after burn-in (exactly for q <= 101, only within tolerance for q = 151 and 211), and an order on states, which requires the unestablished acyclicity hypothesis [H-acyc]; the first transition is not guaranteed. Its stability table is recomputed from archived pipeline outputs. ENT-Note and LC-Synthesis carry the same reading of the PTO input. The PTO entry, table row, bibliography note and graph node are rewritten; the PTO, ENT-Note and LC-Synthesis entries and the LC-Synthesis graph node carry the new versions.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }

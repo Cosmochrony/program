@@ -268,7 +268,7 @@ A Structural Roadmap and Paper Inventory}
       derived as the Mosco limit of the discrete oriented admissibility cascade.
       \item \textit{Extended numerical scope:} PTO reports no decrease of $I(n)$ exceeding
       $10^{-6}I_{\max}$ after burn-in for $q \in \{29,61,101,151,211\}$,
-      with~274 conjugate pairs and~360 post-burn-in steps; this gives no order on states.
+      with~274 conjugate pairs and~504 post-burn-in steps; this gives no order on states.
     \end{itemize}
 
     \textit{Role:} Programme overview; structural motivation; first formulation of the BI constraint
@@ -1035,12 +1035,15 @@ A Structural Roadmap and Paper Inventory}
     with no exception;
     no Standard-Model or Dirac-mass identification is claimed.
 
-    \textbf{PTO}~\cite{Beau2026pto}: The cumulative projected capacity
+    \textbf{PTO}~\cite{Beau2026pto} (version~1.5): The cumulative projected capacity
     $I(n) = \sigma_{\mathrm{pair}}(0) - \sigma_{\mathrm{pair}}(n)$ is a candidate temporal proxy
     along a BFS trajectory, not an established function of the effective state.
     For $q \in \{29, 61, 101, 151, 211\}$, the reported numerical result (\snum) is
     $I(n+1)-I(n) \geq -10^{-6}I_{\max}$ after burn-in ($n \geq 2$), where $I_{\max}$
-    is the plateau value for the pair, across 274 pairs and 360 post-burn-in steps.
+    is the plateau value for the pair, across 274 pairs and 504 post-burn-in steps.
+    The traces are exactly non-decreasing for $q \leq 101$; for $q = 151$ and $211$, exact plateau
+    decreases of order $10^{-10}$ occur, so the pair-averaged trace is non-decreasing only within the
+    tolerance, which neither confirms nor refutes the exact conjecture.
     Mode retention, $V_n \subseteq V_{n+1}$, follows from the cumulative span definition;
     it does not imply exact stepwise monotonicity, which remains conjectural.
     The admissible cascade is a directed state machine; a strict partial order on states requires
@@ -1048,9 +1051,10 @@ A Structural Roadmap and Paper Inventory}
     Foundation does not guarantee the first transition $U_0 \to U_1$: its projective incompleteness
     (Corollary~4.9) applies where a step is non-injective, the existence of an admissible successor is a
     separate condition (Remark~4.11), and temporal order is conditional on [H-acyc] (Theorem~4.4).
-    Numerical reproducibility remains incomplete: the raw output needed to verify the exact
-    pair-mean monotonicity is not archived, and the threshold used for the regression count and
-    monotone fraction is applied outside the diagnostic script.
+    Version~1.5 recomputes the stability table from the archived o25 pipeline outputs: the diagnostic
+    script now implements the tolerance test next to the exact test, and the paper repository records
+    the input files with their digests, the script commit and the unedited output; the $q = 211$ row of
+    version~1.4 (50 steps), which had no archived source, is replaced by the archived run (194 steps).
     Open: whether the characteristic shell $n^*(q)$ coincides with the locking depth $n_c(q)$
     at which BFS coverage transitions from locally to universally dominated — which would connect
     the spectral ordering to the effective geometry results of Q10~\cite{Beau2026q10}.
