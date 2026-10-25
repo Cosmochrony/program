@@ -11,7 +11,9 @@ consult first to understand how the pieces fit together.
 The 2.38 working candidate aligns the PTO entry, table, bibliography note and graph with the reviewed PTO 1.5
 sources. It distinguishes cumulative span retention, conjectured exact shellwise monotonicity, the reported
 post-burn-in numerical bound with tolerance, and state order conditional on [H-acyc]. The two numerical
-reproducibility gaps remain explicit. This candidate is not deposited.
+reproducibility gaps remain explicit. It also records the PTO-aligned consumer versions ENT-Note 1.3
+(capacity-level one-way activation as a conjecture supported within tolerance) and LC-Synthesis 2.2 (candidate
+trajectory proxy; clock factor from TempProj). This candidate is not deposited.
 
 Version 2.37 records Q6a 2.4. Q6a attributes to the Foundation paper the derivation of the structural indeterminacy
 of the proto-state from A1 and A3, and states that the retention of phase coherence is not derived from A3 alone;
