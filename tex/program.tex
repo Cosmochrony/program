@@ -227,7 +227,8 @@ A Structural Roadmap and Paper Inventory}
     waves, and cosmological observables are derived as consequences of Levels~1--2.
     The metric and co-metric results at this level are conditional on the continuum-limit hypothesis [H-L] of Q5a--Q5b
     (unestablished; Q5a version 3.2, Q5b version 2.2.1), on the lifting hypothesis [H-lift] and, for the signature,
-    on the hyperbolicity hypothesis [H-hyp].
+    on the hyperbolicity hypothesis [H-hyp], which gives $(-,+,+)$ on the rank-three non-degenerate block only, a
+    Lorentzian signature requiring a full-rank extension that is not constructed.
     Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2},
     Q3~\cite{Beau2026q3}, Q5a--Q7), the gravity track
     (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
@@ -279,25 +280,23 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{Non-Injectivity as a Structural Necessity of Genuine Emergence}
 
-    The ENI paper~\cite{Beau2026l} proves the following no-go theorem.
-    Any genuinely emergent (non-isomorphic effective) physical description is necessarily non-injective
-    and intrinsically compressive.
-    The argument is purely structural: given a surjective $\Pi : \Omega \to \mathcal{O}$ such that
-    $\mathcal{O}$ carries no independent microstate-resolving structure beyond~$\Pi$,
-    non-isomorphism of levels forces non-injectivity.
-    A projection entropy $S_\Pi \geq 0$ is defined, and the equivalence
-    $\text{genuine emergence} \Leftrightarrow \Pi \text{ non-injective} \Leftrightarrow S_\Pi > 0$
-    is established (\sproved, Theorem~2.1 and Corollary~3.1).
+    The ENI paper~\cite{Beau2026l} proves the following no-go theorem (\sproved, Theorem~3).
+    A surjective projection $\Pi : \Omega \to \mathcal{O}$ whose observables are defined by~$\Pi$ and whose
+    description is effectively non-trivial is necessarily non-injective, with projection entropy $S_\Pi > 0$ on
+    non-degenerate measures.
+    The implication is one-way.
+    Under the same hypotheses, Corollary~5 gives the equivalence
+    $\text{descriptive redundancy} \Leftrightarrow \Pi \text{ non-injective} \Leftrightarrow S_\Pi > 0$.
 
-    \textit{Role:} Motivation for Axiom~A2, not a derivation of it: Foundation does not import the theorem,
-    whose three premises are not established for the local transition map of~A2, and retains A2 as a local axiom.
+    \textit{Role:} Motivation for Axiom~A2, not a derivation of it: Foundation does not import its non-injectivity
+    conclusion, whose three premises are not established for the local transition map of~A2, and retains A2 as a local axiom.
     Corollary~6 establishes recursive non-injectivity under the same premises at each stratum (surjectivity,
     observables defined by the projection, a level not isomorphic to the one below): such a tower carries one
     independent non-injective projection per stratum, with projection entropies adding across strata; these
     premises are not consequences of A1--A4, and their verification for the strata proposed by the programme is
     open;
-    Section~5 covers towers of emergence and structural colour confinement as projective
-    necessity.
+    Section~5 covers towers of emergence and, under the same premises at the colour stratum, colour confinement
+    as projective necessity; the identification of a colour stratum is open.
     A Remark (algebraic route) shows that in frameworks whose fibre carries a Heisenberg
     algebra $[X,Y]=Z\neq 0$, $S_\Pi > 0$ also follows directly from fibre non-commutativity:
     a trivial-kernel projection would require simultaneous diagonalisation of $X$ and $Y$,
@@ -343,8 +342,9 @@ A Structural Roadmap and Paper Inventory}
     for a prime~$q$, together with BI parity (A1--A3);
     (v) the identification $F_n \simeq \mathcal{H}_c$ with the supplied Heisenberg--Schr\"odinger
     carrier, stated as a modelling dictionary (Remark~3.3), not as a theorem, and distinct from the Weil
-    module $\mathcal{W}$ used by the spectral construction (blocks $V_c$; $V_\rho$ denotes only the spinor carrier
-    $\mathbb{C}^2$ supplied conditionally by O23);
+    modules $\mathcal{W}$ used by the spectral construction (one per non-trivial central character~$c$, the member
+    at~$c$ being the Weil block $V_c$ of O27, whose Weil action is not the Heisenberg action; $V_\rho$ denotes only
+    the spinor carrier $\mathbb{C}^2$ supplied conditionally by O23);
     (vi) the discrete character of quantum transitions under~A3 and~A4 (Theorem~5.12);
     (vii) projective incompleteness (Corollary~4.9): under A2 alone, a non-injective realisation map
     $\Pi_n$ has a non-trivial fibre, so its observable description is incomplete.
@@ -1177,7 +1177,7 @@ A Structural Roadmap and Paper Inventory}
     the spatial limit operator is the hypothesis [H-L] and Q5 is open
     (\sproved{} for the negative results; \sopen{} for the spatial continuum).
 
-    \textbf{Q5b}~\cite{Beau2026q5b}: Version~2.2 (\emph{Toward Four-Dimensional Lorentzian Geometry from
+    \textbf{Q5b}~\cite{Beau2026q5b}: Version~2.2.1 (\emph{Toward Four-Dimensional Lorentzian Geometry from
     BFS Shell Stratification}) proves that the BFS shells of $\Heis_3(\mathbb{Z}/q\mathbb{Z})$ converge, on
     balls of radius $n \ll \sqrt q$, to the sphere foliation of a sub-Finsler Carnot--Carath\'eodory metric on
     $\Heis_3(\mathbb{R})$, of homogeneous dimension four (\sstruct).
@@ -2893,7 +2893,7 @@ A Structural Roadmap and Paper Inventory}
       Programme overview; substrate~$\chi$; iterated projection; BI constraint; relaxation cascade &
       \sstruct \\[3pt]
       ENI & Emergence \& non-injectivity & \cite{Beau2026l} &
-      No-go: genuine emergence $\Leftrightarrow$ $\Pi$ non-injective; projection entropy $S_\Pi$ &
+      No-go: under its premises, $\Pi$ non-injective with $S_\Pi>0$ (one-way); redundancy equivalence &
       \sproved \\[3pt]
       Found & Foundation & \cite{Beau2026m} &
       Axioms A1--A4; the published Heisenberg/Weil selection theorem is not established;

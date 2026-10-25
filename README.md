@@ -10,12 +10,15 @@ consult first to understand how the pieces fit together.
 
 Version 2.39 records Foundation 2.5. Foundation cites ENI Corollary 6 with its own premises on each projection
 (surjectivity, observables defined by the projection, a level not isomorphic to the one below), which A1–A4 do not
-supply and which are open for the programme's strata; the ENI entry and graph node present ENI as a motivation for
-A2, not a derivation of it. The effective metric read from the principal symbol is conditional on [H-L] and the
-open lifting hypothesis [H-lift] of Q5b. The Weil module of the supplied Heisenberg–Schrödinger carrier is written
-$\mathcal W$, with blocks $V_c$; $V_\rho$ denotes only the spinor carrier $\mathbb C^2$ supplied conditionally by O23.
-The identifications $F_n \simeq V_\rho$ in the FM-Note entry and in HeisenbergCarrierObstruction are not resolved in
-this version.
+supply and which are open for the programme's strata. The ENI entry, table row and graph node state ENI's theorem as a
+one-way implication under these premises (Theorem 3), with the redundancy equivalence of Corollary 5 and colour
+confinement under the same premises at the colour stratum; ENI motivates A2 without deriving it. The effective metric
+read from the principal symbol is conditional on [H-L] and the open lifting hypothesis [H-lift] of Q5b; the signature
+result gives $(-,+,+)$ on the rank-three block only. Foundation writes $\mathcal W$ for the finite Weil modules of the
+supplied Heisenberg–Schrödinger carrier, one per central character $c$, the member at $c$ being the Weil block $V_c$ of
+O27, whose Weil action is not the Heisenberg action; $V_\rho$ denotes only the spinor carrier $\mathbb C^2$ supplied
+conditionally by O23. The identifications $F_n \simeq V_\rho$ in the FM-Note entry, in HeisenbergCarrierObstruction
+and on the fermionic-matter and Q14 web pages are not resolved in this version.
 
 Version 2.38 records PTO 1.5, ENT-Note 1.3 and LC-Synthesis 2.2. PTO separates cumulative span retention
 (immediate), exact stepwise monotonicity (conjectural), the numerical bound, which holds within a relative
