@@ -16,6 +16,8 @@ for independently sampled blocks, ENT-E2's further conditions; the general-block
 row and graph node, and the ENT-Note, ENT-E1 and ENT-E2 bibliography notes, now carry that purity, and the ENT-Note
 and ENT-E2 notes also the general-block conditions, including the O17 transfer gap; the ENT-E1 table row's status
 separates $w_j=1$ from the flat spectrum given a supplied purity.
+Programme 2.41 was deposited as [Zenodo record 23666558](https://zenodo.org/record/23666558)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.40 is a narration pass on the registry. In the passages it corrects, listed here, entries, table rows,
 graph nodes and the abstract state current results and limits directly instead of recounting earlier versions;
