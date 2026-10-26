@@ -28,6 +28,8 @@ interpretive and adds O30→Q14 and Q14→AOG-Note (postulated) and AOG-Note→C
 erasure of their relative phases; the 2.36 paragraph below keeps the wording of that release. The identifications
 $F_n \simeq V_\rho$ in the FM-Note entry, in HeisenbergCarrierObstruction and on the fermionic-matter and Q14 web
 pages are not resolved in this version.
+Programme 2.40 was deposited as [Zenodo record 23662275](https://zenodo.org/record/23662275)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.39 records Foundation 2.5. Foundation cites ENI Corollary 6 with its own premises on each projection
 (surjectivity, observables defined by the projection, a level not isomorphic to the one below), which A1–A4 do not
