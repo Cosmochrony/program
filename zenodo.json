@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.42 records the joint F/G correction: Q14 3.2 distinguishes the supplied Heisenberg dictionary F_n \u2243 H_c (model), the associated Weil block V_c and the supplied spinor doublet V_rho. No map selecting that doublet is supplied. Q14 3.2, FM-Note 3.2 and GGS-Note 2.2 retain both unproved continuum hypotheses of Q6a for connection-dependent admissible interpretations: a smooth effective fibre bundle and a differentiable spatial continuum, the latter open in Q5a. Registry entries, the Q14 table row, bibliography notes and graph nodes and edge record these conditions.",
+  "notes": "Version 2.42 records the joint F/G correction: Q14 3.2 distinguishes the supplied Heisenberg dictionary F_n ≃ H_c (model), the associated Weil block V_c and the supplied spinor doublet V_rho. No map selecting that doublet is supplied. Q14 3.2, FM-Note 3.2 and GGS-Note 2.2 retain both unproved continuum hypotheses of Q6a for connection-dependent admissible interpretations: a smooth effective fibre bundle and a differentiable spatial continuum, the latter open in Q5a. Registry entries, the Q14 table row, bibliography notes and graph nodes and edge record these conditions.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
