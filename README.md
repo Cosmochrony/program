@@ -10,9 +10,11 @@ consult first to understand how the pieces fit together.
 
 Version 2.41 records ENT-E2 2.2, ENT-Note 1.3.1 and Foundation 2.5.1. These versions state that the matched-block
 result $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ of ENT-E1 holds under a supplied purity of the joint state,
-which ENT-E1 does not derive; ENT-E2 2.2 no longer calls it unconditional. In the registry, the ENT-E1 and ENT-E2
-bibliography notes, the ENT-Note entry, table row and graph node, and the general-block conditions of the ENT-E2
-entry, table row and graph node now carry that purity.
+which ENT-E1 does not derive; ENT-E2 2.2 no longer calls it unconditional. In the registry, the ENT-Note entry, table
+row and graph node state the formula under ENT-Note's closure hypothesis (supplied purity with diagonal pairing) and,
+for independently sampled blocks, ENT-E2's further conditions; the general-block conditions of the ENT-E2 entry, table
+row and graph node, and the ENT-E1 and ENT-E2 bibliography notes, now carry that purity, and the ENT-E2 note also the
+O17 transfer gap; the ENT-E1 table row's status separates $w_j=1$ from the flat spectrum given a supplied purity.
 
 Version 2.40 is a narration pass on the registry. In the passages it corrects, listed here, entries, table rows,
 graph nodes and the abstract state current results and limits directly instead of recounting earlier versions;
