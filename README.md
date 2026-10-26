@@ -16,6 +16,8 @@ selecting it, using neither the coefficient values nor the signature. The Lorent
 signature and the hypothesis [H-cone]; the light cone $B = 1$ is reached by the exact torus load of LC-O3. In LCII
 the factor $\sqrt{f(2-f)}$ is a normalised capacity factor, not a Lorentzian structure. Registry entries, table row
 and graph nodes record these statements.
+Programme 2.44 was deposited as [Zenodo record 23675486](https://zenodo.org/record/23675486)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.43 records the I-1 correction in Q7 2.1, SpinRotationNote 1.6, H2 1.1, U1 2.1, Q5a-O2 2.1 and
 EG-Note 2.3. No source supplies a value of $A_z$, $A_H$ or $A_\tau$ on established inputs: Q8 leaves the common value
