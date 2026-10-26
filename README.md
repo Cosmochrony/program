@@ -19,6 +19,8 @@ reading. The white paper proposes the substrate $\chi$ and the relaxation mechan
 A1--A4. In Gravity and SG-Note the coherence extensivity hypothesis [H-ext] stays explicit and distinct from the sector
 reading. These corrections close the attributions to Foundation; the existence of a locking depth and the status of
 O22's own integrality argument remain open. Registry entries, table rows and graph nodes record these statements.
+Programme 2.45 was deposited as [Zenodo record 23678698](https://zenodo.org/record/23678698)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.44 records the I-2 correction in TempProj 1.5, LCII 1.5, LC-O1 1.2 and LC-Synthesis 2.3. In TempProj the
 quadratic Born-Infeld law and the Weil filling law alone fix the scalar temporal residual at the attained values of
