@@ -8,8 +8,6 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
-Local candidate 2.42; last deposited registry version 2.41.
-
 Version 2.42 records the joint F/G correction in Q14 3.2, FM-Note 3.2 and GGS-Note 2.2.
 The supplied Heisenberg dictionary, associated Weil action and spinor doublet are distinct.
 Connection-dependent admissible readings retain both unproved continuum hypotheses of Q6a:
@@ -17,6 +15,8 @@ a smooth effective fibre bundle and a differentiable spatial continuum, the latt
 No map selecting the doublet is constructed. Entries, table row, bibliography and graph carry these conditions.
 The retired standalone obstruction note audits the earlier selection claim; its present-tense wording
 does not describe Foundation 2.5.1, which states non-selection. Its integrated successor is the cited source.
+Programme 2.42 was deposited as [Zenodo record 23667596](https://zenodo.org/record/23667596)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.41 records ENT-E2 2.2, ENT-Note 1.3.1 and Foundation 2.5.1. These versions state that the matched-block
 result $S_{\mathrm{ent}}(n)=\log r_{\mathrm{pair}}(n)$ of ENT-E1 holds under a supplied purity of the joint state,
