@@ -15,6 +15,8 @@ under its scale input [S], U1 leaves [U] open, and the O-series exponent data do
 statement formulated as [H2] in Q5a version 2.0 (Hypothesis 4.3 there), the last deposited version of that framework,
 and discharges no hypothesis of the current Q5a; [H-w] is open. Entries, table rows, bibliography notes and graph
 nodes carry these statements.
+Programme 2.43 was deposited as [Zenodo record 23672098](https://zenodo.org/record/23672098)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
 
 Version 2.42 records the joint F/G correction in Q14 3.2, FM-Note 3.2 and GGS-Note 2.2.
 The supplied Heisenberg dictionary, associated Weil action and spinor doublet are distinct.
