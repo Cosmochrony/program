@@ -8,6 +8,14 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.43 records the I-1 correction in Q7 2.1, SpinRotationNote 1.6, H2 1.1, U1 2.1, Q5a-O2 2.1 and
+EG-Note 2.3. No source supplies a value of $A_z$, $A_H$ or $A_\tau$ on established inputs: Q8 leaves the common value
+of an invariant form free, Q10 bounds the ratio $A_H/A_Z$ under [U], [W], [R] and [T] and gives an absolute value only
+under its scale input [S], U1 leaves [U] open, and the O-series exponent data do not support [U]. H2 proves the
+statement formulated as [H2] in Q5a version 2.0 (Hypothesis 4.3 there), the last deposited version of that framework,
+and discharges no hypothesis of the current Q5a; [H-w] is open. Entries, table rows, bibliography notes and graph
+nodes carry these statements.
+
 Version 2.42 records the joint F/G correction in Q14 3.2, FM-Note 3.2 and GGS-Note 2.2.
 The supplied Heisenberg dictionary, associated Weil action and spinor doublet are distinct.
 Connection-dependent admissible readings retain both unproved continuum hypotheses of Q6a:
