@@ -9,7 +9,7 @@ documents the dependency graph between them, and tracks their status. It is the 
 consult first to understand how the pieces fit together.
 
 Version 2.45 records the I-3 correction in Foundation 2.6 and its consumers NIF-Note 1.6, Q6a 2.5, FM-Note 3.3, Q5a 3.3,
-Q5b 2.3, Q14 3.3, E2 2.3, Gravity 3.6 and SG-Note 2.4. Irreducibility of the
+Q5b 2.3, Q14 3.3, E2 2.3, Gravity 3.6, SG-Note 2.4 and QS-Note 2.3. Irreducibility of the
 admissible fibre follows from A1 and A3 and a representation-theoretic dictionary only under an additional sector
 reading of A3, not derived, on which a generator-stable decomposition counts as premature selection. The
 discreteness of quantum transitions is postulated by A4, not derived: on the supplied Heisenberg shell realisation a
