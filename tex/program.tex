@@ -29,7 +29,7 @@
   urlcolor=blue!60!black,
   pdftitle={The Cosmochrony Research Programme: A Structural Roadmap and Paper Inventory},
   pdfauthor={Jérôme Beau},
-  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.43},
+  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.44},
   pdfkeywords={Cosmochrony, projective non-injectivity, spectral admissibility, emergent geometry,
     gauge--gravity stratification, paper inventory, dependency graph}
 }
@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.43}
+\date{2026\\[2pt]\small Version 2.44}
 
 \begin{document}
 
@@ -2097,11 +2097,11 @@ A Structural Roadmap and Paper Inventory}
     \]
     conditional at the co-metric and [H-cone] step, the arrow to $R(x)^2 = 1-\epsilon(x)$ being a declared
     postulate.
-    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} (\ssynth, version~2.2) gathers the six
+    The synthesis paper \textbf{LC-Synthesis}~\cite{Beau2026lcsyn} (\ssynth, version~2.3) gathers the six
     constituent papers below into this single account; their individual contributions follow.
-    Version~2.2 aligns its PTO input with PTO~1.5: the projective temporal ordering is a candidate
-    trajectory proxy, non-decreasing only within a numerical tolerance, and the clock factor is that of
-    TempProj, not of PTO.
+    It takes the projective temporal ordering of PTO~1.5 as a candidate trajectory proxy, non-decreasing only
+    within a numerical tolerance, the clock factor being that of TempProj, not of PTO; for TempProj it separates
+    the scalar uniqueness, the identification of the temporal component and the Lorentzian kinematic reading.
 
     \textbf{LorentzCapacity}~\cite{Beau2026n} (version~1.4): The analytic factorization (the central coordinate $c$
     contributes only a global phase) shows that the total O7 residual satisfies the exact linear filling law
@@ -2114,18 +2114,26 @@ A Structural Roadmap and Paper Inventory}
     $\mathrm{Heis}_3$ is spatial. Reading $\beta$ as a velocity relative to the light cone is \scond{} on
     [H-cone].
 
-    \textbf{TempProj}~\cite{Beau2026tp} (version~1.4): Constructs the temporal residual map
-    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ of LorentzCapacity as the unique positive function compatible with the
-    Lorentzian splitting of a supplied co-metric of the form of Q11 Corollary~6.1, the Born--Infeld unit
-    capacity-flow sphere, and the exact Weil filling law $\Sigma_n^{\mathrm{tot}} = 1 - B_n$; the splitting uses
-    the signature and the decoupled temporal block, not the coefficient values.
-    The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ follows
+    \textbf{TempProj}~\cite{Beau2026tp} (version~1.5): Constructs the temporal residual map
+    $\mathcal{P}_\tau^{\mathrm{Q5b}}$ of LorentzCapacity from the Born--Infeld unit capacity-flow sphere, the exact
+    Weil filling law $\Sigma_n^{\mathrm{tot}} = 1 - B_n$ and the temporal splitting of a supplied co-metric of the
+    form of Q11 Corollary~6.1, which play three distinct roles.
+    The explicit formula $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$ holds
     (\sproved{} under the supplied co-metric, the identification of $B_n$ with the spatial capacity flow, which is
-    a hypothesis of the paper, and the Born--Infeld lift; three-input necessity: \sproved).
+    a hypothesis of the paper, and the Born--Infeld lift).
+    Scalar uniqueness: the quadratic law and the Weil filling law alone fix the values of any non-negative map at
+    the attained values of $\Sigma_n^{\mathrm{tot}}$, the $R+1$ points with $n \le R = (q-1)/2$, and only there; the
+    splitting is not necessary for it (\sproved).
+    Identification: the splitting identifies the value so fixed as the $\partial_\tau$-component of the capacity
+    flow without selecting it; it uses the decoupled temporal block, neither the coefficient values nor the
+    signature.
+    The three candidate maps of LorentzCapacity all fail the quadratic law.
     Lemma~1 and Theorem~1 of LorentzCapacity follow under the same hypotheses; hypothesis [U] enters no step.
-    The kinematic reading, time dilation and the light cone, is \scond{} on [H-cone].
+    The kinematic reading, time dilation and the light cone, uses the Lorentzian signature and is \scond{} on
+    [H-cone]; in the window $n \le R$ the load stays below $1/2 + 1/(2q^2)$, and the light cone $B = 1$ is reached
+    by the exact torus load of LCo3.
 
-    \textbf{LCII}~\cite{Beau2026lco2} (version~1.4): Extends TempProj to the non-homogeneous fibrewise regime
+    \textbf{LCII}~\cite{Beau2026lco2} (version~1.5): Extends TempProj to the non-homogeneous fibrewise regime
     (\scond{} on the postulated occupancy--lapse identification and on a supplied Lorentzian co-metric whose
     flat temporal reference $A_\tau^\infty$ is postulated, Q11 leaving $A_\tau$ free).
     Its weak-field corollary restates the general-relativistic lapse of a supplied weak-field metric in the
@@ -2133,7 +2141,9 @@ A Structural Roadmap and Paper Inventory}
     A localised spectral occupancy $\epsilon(x)$ reduces the local BI capacity radius to
     $R(x)^2 = 1-\epsilon(x)$; the fibrewise map factorises as
     $\mathcal{P}_{\tau,x}^{\mathrm{Q5b}}\Sigma^{\mathrm{tot}}(x,n)
-    = R(x)\sqrt{f(x,n)(2-f(x,n))}$.
+    = R(x)\sqrt{f(x,n)(2-f(x,n))}$, its values fixed fibre by fibre by the local BI sphere and the filling law, the
+    splitting identifying them as temporal; the factor $\sqrt{f(2-f)}$ is a normalised capacity factor, not a
+    Lorentzian structure.
     The temporal residual capacity per ordering step is $|F^\tau(x,n)| = R(x)/\gamma$, a capacity increment distinct
     from the constant ordering step $d\tau/dn = \Delta\tau$; its reading as gravitational time dilation, the
     proper-time rate of an observer at $x$ relative to the rescaled ordering coordinate, is \scond{} on [H-cone] and
@@ -2160,7 +2170,7 @@ A Structural Roadmap and Paper Inventory}
     The result is narrow: a reciprocal scalar law would close the bridge algebraically.
     LC-O2-O1 is open (\sproved, as a negative result).
 
-    \textbf{LCo1}~\cite{Beau2026lco1} (version~1.1): Reconstructs effective Lorentz transformations between
+    \textbf{LCo1}~\cite{Beau2026lco1} (version~1.2): Reconstructs effective Lorentz transformations between
     inertial observers from projective temporal ordering data.
     The unique proper orthochronous isometry of $\eta$ mapping one unit timelike splitting to another and fixing the
     transverse directions is, on each tangent space, the standard Lorentz boost, and length contraction $\ell = \ell_{0}/\gamma$ follows as a corollary (\sproved{} for
@@ -3558,10 +3568,12 @@ A Structural Roadmap and Paper Inventory}
       convergence lemma: TempProj~\cite{Beau2026tp} &
       \scond{} on the Born--Infeld mobility budget; kinematic reading \scond{} on [H-cone] \\[3pt]
       TempProj & Temporal residual map & \cite{Beau2026tp} &
-      $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$; uniqueness
-      (three-input necessity); Lemma~1 of LorCap; the splitting uses no coefficient value &
+      $\mathcal{P}_\tau^{\mathrm{Q5b}}\Sigma_n^{\mathrm{tot}} = \sqrt{1-B_n^2}$; values at the attained
+      $\Sigma_n^{\mathrm{tot}}$ fixed by the quadratic law and the Weil filling law (the splitting not necessary);
+      the splitting identifies the temporal component, using no coefficient value and not the signature;
+      Lemma~1 of LorCap &
       \scond{} on a supplied co-metric (Q11 Cor.~6.1), the identification of $B_n$ and the Born--Infeld lift;
-      kinematic reading \scond{} on [H-cone] \\[3pt]
+      kinematic reading \scond{} on [H-cone] and the Lorentzian signature \\[3pt]
       LCII & Fibrewise capacity lapse & \cite{Beau2026lco2} &
       Fibrewise extension to non-homogeneous regime; residual $|F^\tau(x,n)| = R(x)/\gamma$, read as a proper-time
       rate under [H-cone];

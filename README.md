@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.44 records the I-2 correction in TempProj 1.5, LCII 1.5, LC-O1 1.2 and LC-Synthesis 2.3. In TempProj the
+quadratic Born-Infeld law and the Weil filling law alone fix the scalar temporal residual at the attained values of
+the total residual (depths $n \le (q-1)/2$), and only there; the temporal splitting of the supplied co-metric is
+not necessary for that uniqueness and identifies the value as the temporal component of the capacity flow without
+selecting it, using neither the coefficient values nor the signature. The Lorentzian kinematic reading uses the
+signature and the hypothesis [H-cone]; the light cone $B = 1$ is reached by the exact torus load of LC-O3. In LCII
+the factor $\sqrt{f(2-f)}$ is a normalised capacity factor, not a Lorentzian structure. Registry entries, table row
+and graph nodes record these statements.
+
 Version 2.43 records the I-1 correction in Q7 2.1, SpinRotationNote 1.6, H2 1.1, U1 2.1, Q5a-O2 2.1 and
 EG-Note 2.3. No source supplies a value of $A_z$, $A_H$ or $A_\tau$ on established inputs: Q8 leaves the common value
 of an invariant form free, Q10 bounds the ratio $A_H/A_Z$ under [U], [W], [R] and [T] and gives an absolute value only
