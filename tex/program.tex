@@ -29,7 +29,7 @@
   urlcolor=blue!60!black,
   pdftitle={The Cosmochrony Research Programme: A Structural Roadmap and Paper Inventory},
   pdfauthor={Jérôme Beau},
-  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.45},
+  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.46},
   pdfkeywords={Cosmochrony, projective non-injectivity, spectral admissibility, emergent geometry,
     gauge--gravity stratification, paper inventory, dependency graph}
 }
@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.45}
+\date{2026\\[2pt]\small Version 2.46}
 
 \begin{document}
 
@@ -1217,8 +1217,9 @@ A Structural Roadmap and Paper Inventory}
     (\sstruct{} for the geometry; \scond{} on [H-L], [H-lift] and [H-hyp] for the co-metric and its
     signature).
 
-    \textbf{Q6a}~\cite{Beau2026q6a}: Version~2.5. Gauge charges are the invariants of the projection-fibre
-    equivalence classes, and the gauge group is the group of fibre-preserving transformations
+    \textbf{Q6a}~\cite{Beau2026q6a}: Version~2.6. Gauge charges are functions constant on the projection
+    fibres, hence functions of the observable state, whose identification with conserved physical charges is
+    not established, and the gauge group is the group of fibre-preserving transformations
     (\sopen{} for the colour factor and the complete gauge group).
     $\mathrm{U}(1)$ is the residual phase symmetry when the projection is defined through span-based
     observables.
@@ -1227,9 +1228,13 @@ A Structural Roadmap and Paper Inventory}
     $\SU(2)$; this is a consistency statement about a supplied carrier, not a selection, and no uniqueness or
     minimality of $\SU(2)$ is established.
     $\SU(3)$ is a structural hypothesis whose identification is open.
-    Q6a does not use O31 and determines no complete gauge group; its connection and field strength
-    are conditional on two continuum hypotheses that it does not prove, the second being the open spatial
-    continuum of Q5a, and the Yang--Mills action is a structural motivation.
+    Q6a does not use O31 and determines no complete gauge group.
+    Its two continuum hypotheses, which it does not prove, the second being the open spatial continuum of
+    Q5a, do not determine a connection: the structure group, its representation and the connection are
+    supplied.
+    On these data the curvature measures the path dependence of transport, flatness gives a path-independent
+    identification of fibres only locally, and the Yang--Mills action is a structural motivation whose
+    uniqueness is the standard result under an explicit truncation.
 
     \textbf{Q6b}~\cite{Beau2026q6b}: Version~2.1 assembles, on a supplied Heisenberg carrier, the effective
     spacetime geometry that the admissibility framework yields conditionally.
@@ -1394,9 +1399,10 @@ A Structural Roadmap and Paper Inventory}
     The chain is a sequence of conditional steps with a missing identification at the Q7 step, a missing
     extended operator for the central direction, and no established coefficient value.
 
-    \textbf{Q12}~\cite{Beau2026q12}: Version~1.7 derives Yang--Mills dynamics from the vertical
+    \textbf{Q12}~\cite{Beau2026q12}: Version~1.8 derives Yang--Mills dynamics from the vertical
     variation of the projective spectral entropy at an arbitrary supplied fixed base metric
-    (\sproved, conditional on a supplied compact gauge group and admissible connection;
+    (\sproved, conditional on a supplied compact gauge group and a supplied connection, which no result
+    derives from the Foundation constraints and which Q6a's continuum hypotheses do not determine;
     O31 supplies no $\SU(3)$ identification). This fixed-base theorem does not depend on Q11;
     only its interpretation on the Cosmochrony emergent base is conditional, on [H-L], [H-lift] and a supplied
     rank-four extension, and on a
@@ -1510,7 +1516,7 @@ A Structural Roadmap and Paper Inventory}
     all from the single functional
     $S_\Pi[g,A] = \tfrac{1}{2}\log\det'\mathcal{A}_{g,\mathcal{A}}$, an organising reading rather than a theorem,
     whose $a_2$ entry holds under the matching conditions of Note~4.
-    Q12 is shared with the gauge-structure sub-programme (Note~3), whose version~2.2 records that
+    Q12 is shared with the gauge-structure sub-programme (Note~3), whose version~2.3 records that
     the compact gauge group is supplied rather than derived; GGS-Note draws on Q12's $a_4$ vertical
     variation, on the
     fixed-metric isolation of the Yang--Mills sector (Lemma~1; full horizontal--vertical
@@ -1528,7 +1534,7 @@ A Structural Roadmap and Paper Inventory}
     sectors, and the coupled equations with fermionic matter currents from Q14 (Note~6).
     Its admissible-transport reading assumes Q6a's two unproved continuum hypotheses: a smooth
     effective fibre bundle and a differentiable spatial continuum, the latter open in Q5a.
-    GGS-Note~2.2 is aligned with Q12 and Q13: on supplied smooth geometric and gauge data it records
+    GGS-Note~2.3 is aligned with Q12 and Q13: on supplied smooth geometric and gauge data it records
     the fixed-metric isolation of the gauge
     sector rather than a full horizontal--vertical decoupling, presents $a_6$ only as a
     representative spanning list of dimension-six invariants modulo integrations by parts and
@@ -2213,7 +2219,7 @@ A Structural Roadmap and Paper Inventory}
     The papers Foundation, TopologicalInvariants, SMchargemass, O23, O27--O32, Q6a, Q7, and Q12
     form (in their gauge-group identification aspect) the \emph{gauge structure sub-programme},
     whose synthesis paper is the working paper \textbf{The Gauge Structure Sub-Programme}
-    (GS-Note, Presentation Note~3, version~2.2)~\cite{Beau2026gsnote}.
+    (GS-Note, Presentation Note~3, version~2.3)~\cite{Beau2026gsnote}.
     It identifies no gauge group.
     O31 withdraws every derivation of $\SU(3)$ and of the composite
     $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$; the colour factor and complete group are
@@ -3259,8 +3265,9 @@ A Structural Roadmap and Paper Inventory}
       [H-lift] open (Q9 does not discharge it); Q5b-O2 open (no lower-order term fills the central slot);
       no coefficient value established &
       \scond{} on [H-L], [H-lift], [H-hyp] (metric chain); \sstruct{} (geometry) \\[3pt]
-      Q6a & Toward gauge structure (version 2.5) & \cite{Beau2026q6a} &
-      Gauge charges as fibre invariants; $\mathrm{U}(1)$ residual phase symmetry (span-based projection);
+      Q6a & Toward gauge structure (version 2.6) & \cite{Beau2026q6a} &
+      Gauge charges as fibre-constant functions of the observable state; connection supplied, not determined
+      by the continuum hypotheses; $\mathrm{U}(1)$ residual phase symmetry (span-based projection);
       $\SU(2)$ read off a supplied carrier (O23, O27), not selected; no use of O31; $\SU(3)$, colour factor and
       complete gauge group open &
       \sopen \\[3pt]
@@ -3337,7 +3344,7 @@ A Structural Roadmap and Paper Inventory}
       $\tau = n\,\Delta\tau$ is a modelling input; the co-metric $\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$
       under [H-L], [H-lift], [T], [INV$^+$]; the coupling datum fixing $A_\tau/A_H$ is missing &
       \sproved\ /\ \scond\ /\ \sopen \\[3pt]
-      Q12 & Yang--Mills from $a_4$ (version 1.7) & \cite{Beau2026q12} &
+      Q12 & Yang--Mills from $a_4$ (version 1.8) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
       vertical variation $\delta_\mathcal{A} S_\Pi = 0$ at fixed metric yields
       $D_\mu F^{a\mu\nu} = 0$; induced log running $\propto I_\rho$ (non-universal),
@@ -3704,7 +3711,7 @@ A Structural Roadmap and Paper Inventory}
       hypotheses and after rescaling $\tau$, no coefficient value; the identification Q7 version~2.1 records as supplied by no source remains
       an input; the exterior and Einstein statements taken from Q6b are aligned with Q6b version~2.1 &
       \ssynth \\[3pt]
-      GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.2) & \cite{Beau2026gsnote} &
+      GS\-Note & The Gauge Structure Sub-Programme (Note~3, version 2.3) & \cite{Beau2026gsnote} &
       Organises Foundation, TopInv, SMcm, O23, O27--O32, Q6a, Q7 and Q12. Identifies no gauge group:
       $\mathrm{U}(1)$ structural, $\SU(2)$ conditional on a supplied carrier, $\SU(3)$ and the
       composite withdrawn at the source (O31); Q12 and Q13 take a supplied compact group.
@@ -3760,7 +3767,7 @@ A Structural Roadmap and Paper Inventory}
       Weil module, with no derived selection rule.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
-      GGS\-Note & The gauge--gravity stratification sub-programme (Note~8, version 2.2) & \cite{Beau2026ggsnote} &
+      GGS\-Note & The gauge--gravity stratification sub-programme (Note~8, version 2.3) & \cite{Beau2026ggsnote} &
       On supplied smooth geometric and gauge data, with both unproved Q6a continuum hypotheses
       for the admissible-transport reading, organises Q12 and Q13 around the spectral stratification principle
       ($a_2 \to$ gravity, $a_4 \to$ gauge), an organising reading rather than a theorem, with fixed-metric isolation

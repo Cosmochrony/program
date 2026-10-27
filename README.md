@@ -8,6 +8,16 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.46 records the I-4 correction in Q6a 2.6 and its consumers GS-Note 2.3, Q12 1.8 and GGS-Note 2.3.
+A gauge charge in Q6a, a function constant on the projection fibres, is a function of the observable state; its
+identification with a conserved physical charge is open. Q6a's two continuum hypotheses do not determine a connection:
+the structure group, its representation and the connection are supplied, curvature measures the path dependence of
+transport, flatness is only local, and the uniqueness of the Yang–Mills action holds under an explicit truncation.
+Q12 takes the connection of the admissible principal bundle as supplied, not as the unique one compatible with the
+Foundation constraints. Registry entries, table rows, graph nodes and the Q6a bibliography note record these statements.
+Programme 2.46 was deposited as [Zenodo record 23713025](https://zenodo.org/record/23713025)
+(concept DOI [10.5281/zenodo.19759956](https://doi.org/10.5281/zenodo.19759956)).
+
 Version 2.45 records the I-3 correction in Foundation 2.6 and its consumers NIF-Note 1.6, Q6a 2.5, FM-Note 3.3, Q5a 3.3,
 Q5b 2.3, Q14 3.3, E2 2.3, Gravity 3.6, SG-Note 2.4 and QS-Note 2.3. Irreducibility of the
 admissible fibre follows from A1 and A3 and a representation-theoretic dictionary only under an additional sector
