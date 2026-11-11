@@ -15,7 +15,7 @@ withdrawn: the proof used premises absent from the cited papers, and each case h
 model does not fix the dimension of \(c_{\mathrm{BI}}\); a dimensional-homogeneity observation on the bound holds under a
 supplied dimensional assignment. The no-scale title becomes "Is Admissibility Restricted to a Single Dimensional Scale?"; the noscale entry, table row
 ("Single-scale admissibility: open question"), Fig. 1 node and graph node move from proved to open, the homogeneity
-observation being mentioned separately; the untyped graph edge Foundation→noscale is removed;
+observation being mentioned separately; the untyped Foundation→noscale edge is removed from the graph and from Fig. 1;
 Gram rigidity 1.16 records its classification as scale-free. The Fig. 1 caption now states that O5→O7 and O13→O15
 abbreviate sub-chains of the interactive graph.
 
