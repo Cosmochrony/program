@@ -8,6 +8,17 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.47 records the I-5 correction in no-scale 2.0 and its consumers NIF-Note 1.7, SAN 2.1 and Gram rigidity
+1.16. The Level 1 rigidity theorem of no-scale (no dimensional parameter independent of \(c_{\mathrm{BI}}\) can enter the
+admissibility constraints), its corollary and its Reissner–Nordström / Schwarzschild–de Sitter application are
+withdrawn: the proof used premises absent from the cited papers, and each case had internal gaps. Level 1 is open. The
+model does not fix the dimension of \(c_{\mathrm{BI}}\); a dimensional-homogeneity observation on the bound holds under a
+supplied dimensional assignment. The no-scale title becomes "Is Admissibility Restricted to a Single Dimensional Scale?"; the noscale entry, table row
+("Single-scale admissibility: open question"), Fig. 1 node and graph node move from proved to open, the homogeneity
+observation being mentioned separately; the untyped Foundation→noscale edge is removed from the graph and from Fig. 1;
+Gram rigidity 1.16 records its classification as scale-free. The Fig. 1 caption now states that O5→O7 and O13→O15
+abbreviate sub-chains of the interactive graph.
+
 Version 2.46 records the I-4 correction in Q6a 2.6 and its consumers GS-Note 2.3, Q12 1.8 and GGS-Note 2.3.
 A gauge charge in Q6a, a function constant on the projection fibres, is a function of the observable state; its
 identification with a conserved physical charge is open. Q6a's two continuum hypotheses do not determine a connection:
