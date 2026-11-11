@@ -789,8 +789,8 @@
       id: "nos", lbl: "noscale", s: "open", b: "I", key: "Beau2026j",
       url: ZEN + "19744767",
       tags: ["BI"],
-      title: "No External Scale",
-      desc: "Version 2.0 withdraws the Level 1 rigidity theorem (no dimensional parameter independent of c_BI can enter the admissibility constraints), its corollary and its Reissner–Nordström / Schwarzschild–de Sitter application: the proof used premises absent from the cited papers, and each case had gaps. Level 1 is open. The model does not fix the dimension of c_BI; under a supplied dimensional assignment, and if the bound's right-hand side has the amplitude's dimension, a constant factor depending only on a parameter of dimension outside the span of the bound's ingredients cannot make the bound depend on it, and a dimensionless factor rescales c_BI."
+      title: "Single-Scale Admissibility: Open Question",
+      desc: "Version 2.0 withdraws the Level 1 rigidity theorem (no dimensional parameter independent of c_BI can enter the admissibility constraints), its corollary and its Reissner–Nordström / Schwarzschild–de Sitter application: the proof used premises absent from the cited papers, and each case had gaps. Level 1 is open. The model does not fix the dimension of c_BI; under a supplied dimensional assignment, and if the bound's right-hand side has the amplitude's dimension, a constant factor depending only on a parameter of dimension outside the span of the bound's ingredients cannot make the bound depend on it, and a dimensionless factor rescales c_BI. That observation is established separately and gives the former result no mixed status. The note discusses Foundation's axioms only to correct version 1's attributions; it imports no result from Foundation, so no dependency edge is drawn."
     },
     {
       id: "EComp", lbl: "EffComp", s: "proved", b: "I", key: "Beau2026esub",
@@ -818,7 +818,7 @@
       url: BASE + "non-injective",
       tags: ["emer", "QM", "BI"],
       title: "Non-Injective Foundations Sub-Programme (Presentation Note 5)",
-      desc: "Version 1.7 synthesis of ENI, Foundation, HeisenbergStructure and No External Scale, whose Level 1 rigidity is withdrawn and open. ENI's implication uses its own hypotheses; immediate information loss and projective incompleteness under A2 are proved. Temporal order requires [H-acyc]; irreducibility requires a representation dictionary and the sector reading of A3, and non-commutation requires dimension greater than one and a generating pair; discreteness is postulated by Foundation's A4. HeisenbergStructure 2.1 supplies the finite S₃ obstruction. The Heisenberg group, non-trivial central character and associated Weil action are supplied. Carrier selection, the Born rule and Q5b's spatial limit [H-L] remain open. Adds no new theorem."
+      desc: "Version 1.7 synthesis of ENI, Foundation, HeisenbergStructure and the no-scale note (single-scale admissibility, an open question). ENI's implication uses its own hypotheses; immediate information loss and projective incompleteness under A2 are proved. Temporal order requires [H-acyc]; irreducibility requires a representation dictionary and the sector reading of A3, and non-commutation requires dimension greater than one and a generating pair; discreteness is postulated by Foundation's A4. HeisenbergStructure 2.1 supplies the finite S₃ obstruction. The Heisenberg group, non-trivial central character and associated Weil action are supplied. Carrier selection, the Born rule and Q5b's spatial limit [H-L] remain open. Adds no new theorem."
     },
     {
       id: "BI", lbl: "BornInfeld", s: "structural", b: "II", key: "Beau2026c",
@@ -1681,10 +1681,6 @@
   const edges = [
     { f: "WP", t: "ENI", sp: 1 }, { f: "ENI", t: "Found", sp: 1 },
     { f: "Found", t: "Heis", sp: 1, st: "postulated", claim: "a Heisenberg carrier and associated Weil action are supplied data" },
-    {
-      f: "Found",
-      t: "nos"
-    },
     { f: "ENI", t: "NIFNote", syn: 1 }, { f: "Found", t: "NIFNote", syn: 1 },
     { f: "Heis", t: "NIFNote", syn: 1 },
     { f: "nos", t: "NIFNote", syn: 1 },
