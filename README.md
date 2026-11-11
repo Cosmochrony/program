@@ -14,7 +14,7 @@ admissibility constraints), its corollary and its Reissner–Nordström / Schwar
 withdrawn: the proof used premises absent from the cited papers, and each case had internal gaps. Level 1 is open. The
 model does not fix the dimension of \(c_{\mathrm{BI}}\); a dimensional-homogeneity observation on the bound holds under a
 supplied dimensional assignment. The noscale entry, table row, Fig. 1 node and graph node move from proved to open;
-the Gram rigidity classification is recorded as scale-free. The Fig. 1 caption now states that O5→O7 and O13→O15
+Gram rigidity 1.16 records its classification as scale-free. The Fig. 1 caption now states that O5→O7 and O13→O15
 abbreviate sub-chains of the interactive graph.
 
 Version 2.46 records the I-4 correction in Q6a 2.6 and its consumers GS-Note 2.3, Q12 1.8 and GGS-Note 2.3.
