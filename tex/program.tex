@@ -29,7 +29,7 @@
   urlcolor=blue!60!black,
   pdftitle={The Cosmochrony Research Programme: A Structural Roadmap and Paper Inventory},
   pdfauthor={Jérôme Beau},
-  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.46},
+  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.47},
   pdfkeywords={Cosmochrony, projective non-injectivity, spectral admissibility, emergent geometry,
     gauge--gravity stratification, paper inventory, dependency graph}
 }
@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.46}
+\date{2026\\[2pt]\small Version 2.47}
 
 \begin{document}
 
@@ -443,13 +443,23 @@ A Structural Roadmap and Paper Inventory}
 
   \subsection{No External Dimensional Scale at the Level of Admissibility}
 
-    The noscale paper~\cite{Beau2026j} establishes a structural rigidity result~(Level~1):
+    Version~1 of the noscale paper~\cite{Beau2026j} claimed a structural rigidity theorem~(Level~1):
     any deformation of the admissibility constraints that introduces a dimensional parameter
-    independent of~$c_{\mathrm{BI}}$ breaks at least one of BFS-consistent spectral scaling, structural
-    non-injectivity~(A2/ENI), or bounded admissibility closure~(A3--A4).
-    Dimensional analysis within the framework is therefore fully constrained by~$c_{\mathrm{BI}}$ alone (\sproved).
+    independent of~$c_{\mathrm{BI}}$ breaks BFS-consistent spectral scaling, structural non-injectivity or
+    bounded admissibility closure.
+    Version~2.0 withdraws that theorem, its corollary and its application to Reissner--Nordstr\"om and
+    Schwarzschild--de~Sitter exteriors: the proof used premises that the cited papers do not contain (a power
+    law for $\sigma_{\mathrm{pair}}$, a continuum limit, a fibre-weight requirement, axioms fixing a unique
+    primitive scale), and each case had internal gaps.
+    The failure of the proof does not decide the question: Level~1 is open (\sopen), as is Level~2.
+    The model does not fix the physical dimension of~$c_{\mathrm{BI}}$, so the paper defines independent
+    dimensional parameters relative to a supplied dimensional assignment; under such an assignment a constant
+    factor in the bound $A_n\le c_{\mathrm{BI}}/\sqrt{\lambda_n}$ that depends only on a parameter whose
+    dimension lies outside the span of the bound's ingredients is constant, and a dimensionless factor
+    rescales $c_{\mathrm{BI}}$ (\sproved).
 
-    \textit{Role:} Closes the naturalness question for dimensional parameters.
+    \textit{Role:} Records that the naturalness question for dimensional parameters is open, and that
+    any statement on it needs a dimensional assignment the model does not supply.
 
   \subsection{Support and Preparation Criteria for Independent Effective Subsystems}
     \label{sec:ecomp}
@@ -2464,7 +2474,7 @@ A Structural Roadmap and Paper Inventory}
           \node[P] (ENI)    at (\dx,0)        {ENI};
           \node[S] (Found)  at (2*\dx,0)      {Found};
           \node[P] (Heis)   at (3*\dx,0)      {HeisStr};
-          \node[P] (nos)    at (4*\dx,0)      {noscale};
+          \node[Oc] (nos)   at (4*\dx,0)      {noscale};
 
           \draw[spine] (WP)--(ENI);
           \draw[spine] (ENI)--(Found);
@@ -2792,7 +2802,8 @@ A Structural Roadmap and Paper Inventory}
         only; spin soldering remains an input) and the conditional dependencies PRS$\to$PYL, PRS$\to$PYO and
         Q14$\to$PYO ([H-Weak], [H-Res]) are not drawn in this figure.
         Thick arrows indicate the main logical spine; thin arrows indicate supporting dependencies.
-        Dashed arrows labelled O10--O11 and O20--O21 abbreviate linear sub-chains.
+        Dashed arrows labelled O10--O11 and O20--O21 abbreviate linear sub-chains, and the arrows O5$\to$O7 and
+        O13$\to$O15 abbreviate the sub-chains O5$\to$O6$\to$O7 and O13$\to$O14$\to$O15 of the interactive graph.
         Apart from the arrow from Q7 described below, every other dashed arrow carries the typing of its
         edge in the interactive graph and is not a derivation.
         Q5a$\to$Q5b ([H-L]), Q5a$\to$Q6a (the spatial continuum that Q5a leaves open), PRS$\to$A4-Note ([H-Gen], [H-Tr]), Q14$\to$PYL ([H-Weak]),
@@ -2983,8 +2994,11 @@ A Structural Roadmap and Paper Inventory}
       endpoint remains valid when the Heisenberg carrier and central character are supplied &
       \sproved\ /\ \scond{} on a supplied carrier and central character\ /\ \sopen \\[3pt]
       noscale & No external scale & \cite{Beau2026j} &
-      No independent dimensional parameter beyond $c_{\mathrm{BI}}$ &
-      \sproved \\[3pt]
+      Version 2.0 withdraws the Level~1 rigidity theorem (no independent dimensional parameter beyond
+      $c_{\mathrm{BI}}$) and its Reissner--Nordstr\"om / Schwarzschild--de~Sitter application; the dimension
+      of $c_{\mathrm{BI}}$ is not fixed by the model; a dimensional-homogeneity observation on the bound under a
+      supplied assignment &
+      \sopen{} (Level~1)\ /\ \sproved{} (observation) \\[3pt]
       EffComp & Effective composition prerequisites (K4) & \cite{Beau2026esub} &
       Independence blocks $=$ bicliques of the projected support; full simplex lifts all products;
       cylindrical-conditioning closure iff $\operatorname{rank} W = 1$; support rectangularity does not imply
@@ -3696,7 +3710,8 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       \midrule
       SpAdm\-Note & The spectral admissibility sub-programme (Note~1) & \cite{Beau2026a1note} &
-      Version 2.0 maps the five precursor papers, O1 and O3--O33 and the SGN/CC companions along
+      Version 2.1 (noscale's Level~1 recorded as withdrawn and unused) maps the five precursor papers, O1 and
+      O3--O33 and the SGN/CC companions along
       bounded flux $\Rightarrow$ envelope $\Rightarrow$ Weil-sector capacity $\Rightarrow
       \dim_{\mathrm{pair}}$ on a supplied carrier; the reciprocal $\beta^*$ prescription has no carrier
       on the measurement substrate (coincidence check); SU(2) carrier supplied conditionally; O31
@@ -3726,9 +3741,9 @@ A Structural Roadmap and Paper Inventory}
       truncation, and the determinantal BI completion. Consolidation of the constituent papers;
       no new result &
       \ssynth \\[3pt]
-      NIF\-Note & The non-injective foundations sub-programme (Note~5, version 1.6) & \cite{Beau2026ninote} &
+      NIF\-Note & The non-injective foundations sub-programme (Note~5, version 1.7) & \cite{Beau2026ninote} &
       Synthesises ENI, Foundation, HeisenbergStructure and noscale with separate proved, conditional and supplied
-      ingredients: ENI's one-way implication under its own hypotheses; immediate information loss and
+      ingredients: noscale's Level~1 rigidity withdrawn and open; ENI's one-way implication under its own hypotheses; immediate information loss and
       projective incompleteness under A2; temporal order conditional on [H-acyc]; irreducibility conditional
       on a representation dictionary and the sector reading of A3, with non-commutation requiring dimension
       greater than one and a generating pair; discreteness postulated by A4.
