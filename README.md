@@ -8,6 +8,16 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.49 records Gravity 3.8, a scientific scope correction. Gravity 3.8 withdraws the statement, which it does
+not establish, that fibre curvature contributes to the effective Ricci curvature: its scalar operator involves no
+fibre connection, and the Einstein-sector contribution comes from the spectral functional of a supplied metric,
+conditional on renormalised matching. The section is retitled "Projection structure and the scope of the Einstein
+response"; the scoped citation of the white paper's Theorem A.1 and Corollary A.1 is unchanged, and the necessity of a
+non-injective projection still rests on the ENI no-go theorem alone. Q13 is cited for a distinct dynamical mechanism
+(a conditional Euclidean Einstein–Yang–Mills coupling of a gauge field on a supplied bundle, whose connection is not
+derived from the projection), which does not establish the withdrawn link. Two bibliography entries are completed. No
+theorem, numerical result, status, graph node or edge changes.
+
 Version 2.48 records the Gravity restoration lot, Gravity 3.7 and Foundation 2.7. Gravity 3.7 cites the white paper's
 theorem that admissible injective projections have trivial holonomy (Appendix A.9, Theorem A.1) in its exact scope (a
 smooth fibre-bundle map supporting a connection, principal case), states that its own projection is not shown to
