@@ -11,10 +11,12 @@ consult first to understand how the pieces fit together.
 Version 2.48 records the Gravity restoration lot, Gravity 3.7 and Foundation 2.7. Gravity 3.7 cites the white paper's
 theorem that admissible injective projections have trivial holonomy (Appendix A.9, Theorem A.1) in its exact scope (a
 smooth fibre-bundle map supporting a connection, principal case), states that its own projection is not shown to
-satisfy these hypotheses, and removes the conclusion it drew on the curvature of the effective geometry. It also
-corrects the provenance of the finite-\(q\) admissibility-weight values withdrawn in version 3.5: they are
-reproducible from the Q5a simulation code; their modulation terms equal 2 exactly by the fingerprint normalisation on
-full-rank pairs, their shift terms are only numerically close to 2, and they do not bear on [H-w], which remains open.
+satisfy these hypotheses, and removes the conclusion it drew on the curvature of the effective geometry; the
+necessity of a non-injective projection rests on the ENI no-go theorem alone. It also
+corrects the provenance of the finite-\(q\) admissibility-weight values withdrawn in version 3.5: a rerun of the Q5a
+simulation code with its committed parameter tables reproduces them; on full-rank pairs their modulation terms equal 2
+exactly (every fingerprint entry has the same modulus), their shift terms are only numerically close to 2, and they do
+not bear on [H-w], which remains open.
 Foundation 2.7 withdraws the sentence that read these values as consistent with a \(q\)-independent attractor. No
 status, graph node or edge changes.
 
