@@ -8,6 +8,17 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.50 records white paper 3.15, a scientific correction of Appendices A.9 and A.10. The fibre-to-base
+curvature relation (Proposition A.2) is restated as a conditional Kaluza–Klein identity between Ricci tensors, under
+hypotheses that are not derived (a connection metric with an Ad-invariant fibre inner product, the identification of
+the effective metric with its base metric, and a total-space field equation for a sourcing reading); its earlier
+derivation from the Hessian metric is withdrawn. Appendix A.10 withdraws a sub-principal-symbol argument for the
+infrared Einstein–Hilbert term: the \(R/6\) term belongs to the \(a_2\) heat-kernel coefficient, the bundle and base
+curvatures are not related without an explicit construction, and the required operator-level construction is stated
+as missing, not as excluded. Theorem A.1 and Corollary A.1 are unchanged, and the necessity of a non-injective
+projection still rests on the ENI no-go theorem alone. No theorem of another paper, numerical result, status, graph
+node or edge changes.
+
 Version 2.49 records Gravity 3.8, a scientific scope correction. Gravity 3.8 withdraws the statement, which it does
 not establish, that fibre curvature contributes to the effective Ricci curvature: its scalar operator involves no
 fibre connection, and the Einstein-sector contribution comes from the spectral functional of a supplied metric,
