@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.52 records white paper 3.17, Q6a 2.7 and O18 2.1. White-paper Proposition A.1 is restated: for a fixed
+principal connection over a connected base, trivial holonomy is equivalent to a global horizontal section, so any
+nontrivial holonomy, of any dimension, excludes such a section. Holonomy decides neither the topological triviality
+of the bundle nor the existence of gauge transformations: a trivial bundle can carry a connection with full U(1)
+holonomy, and a flat trivial bundle still admits nontrivial gauge transformations. Appendix B.23, the Q6a remark on
+the holonomy argument and the two O18 motivation passages now ground the exclusion of fibre gauge structure under
+injectivity on injectivity itself, in the principal-bundle setting. Proposition 5.3 and Theorem A.1 are unchanged.
+No paper status, graph node or edge changes.
+
 Version 2.51 records white paper 3.16. Former Theorem 5.1 is replaced by Proposition 5.3: nontrivial vertical re-
 identification, fibre holonomy or principal connection curvature requires non-injectivity in the admissible
 principal-bundle setting. This does not exclude base geometry, gravity or diffeomorphism covariance under
