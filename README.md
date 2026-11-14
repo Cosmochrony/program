@@ -8,6 +8,8 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.53 records white paper 3.18. Appendix A.11 now restates the companion gravity paper's conditional result: under its completion conditions and the open coherence-extensivity hypothesis, the determinantal Born–Infeld density is an admissible, not uniquely selected, completion of a supplied Einstein term, and the saturation condition selects the Ricci endomorphism as carrier; the Einstein term is not derived from the coherence functional. Appendix A.12 states the Newton coupling as an open matching problem; the former formula for $G_{\mathrm{eff}}$ in terms of $c_{\mathrm{BI}}$ and $\hbar_\chi$, and its presentation as a robust prediction, are withdrawn. The relation $K_0\chi_c^2 \sim c^4/(16\pi G)$, whose only stated basis was that normalisation and which is not dimensionally consistent in the white paper's conventions, is withdrawn, together with the $K_0$ and $\hbar_\chi$ estimates of the cosmological cascade section and Appendices C and D that depended on it. No paper status, graph node or edge changes.
+
 Version 2.52 records white paper 3.17, Q6a 2.7 and O18 2.1. White-paper Proposition A.1 is restated: for a fixed
 principal connection over a connected base, trivial holonomy is equivalent to a global horizontal section, so any
 nontrivial holonomy, of any dimension, excludes such a section. Nontrivial holonomy does not make the bundle
