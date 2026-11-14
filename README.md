@@ -8,6 +8,15 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
+Version 2.51 records white paper 3.16. Former Theorem 5.1 is replaced by Proposition 5.3: nontrivial vertical re-
+identification, fibre holonomy or principal connection curvature requires non-injectivity in the admissible
+principal-bundle setting. This does not exclude base geometry, gravity or diffeomorphism covariance under
+injectivity. Bounded flux remains an unproved candidate gravitational selector; a unique Born–Infeld completion,
+its coefficients and a microscopic prediction of G are not derived. The ENI necessity statement retains its own
+transported-structure and non-isomorphism hypotheses. The infrared action construction and the conditional fibre-
+to-base curvature relation keep their explicit open inputs. Direct white-paper consumers and the programme
+inventory and graph description are aligned. No paper status, graph node or edge changes.
+
 Version 2.50 records white paper 3.15, a scientific correction of Appendices A.9 and A.10. The fibre-to-base
 curvature relation (Proposition A.2) is restated as a conditional Kaluza–Klein identity between Ricci tensors, under
 hypotheses that are not derived (a connection metric with an Ad-invariant fibre inner product, the identification of
