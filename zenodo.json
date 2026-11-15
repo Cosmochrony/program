@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.57 records the O18/TopologicalInvariants correction in O18 2.2, TopologicalInvariants 1.1, white paper 3.21 and GS-Note 2.4. O18's Born-Infeld-type action of the gradient of chi is its adopted model, not supplied by BornInfeld. TopologicalInvariants keeps charge quantisation and pi_2 = 0 on a chosen domain of the Hopf base; the phase-gradient bound is a hypothesis, the domain is a choice, and the absence of magnetic monopoles is open.",
+  "notes": "Version 2.58 records the LC correction in LorentzCapacity 1.5, TempProj 1.6, LC-O1 1.3 and LC-Synthesis 2.4. The quadratic Born-Infeld budget is a hypothesis of LorentzCapacity, motivated by the capacity axiom [A-cap] of BornInfeld and including the choice of c_BI equal to the [A-cap] bound; it is not derived from [A-cap], a per-node inequality on the relaxation rate, and BornInfeld leaves that passage open. LC-O2 and LC-O3 are unchanged.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
