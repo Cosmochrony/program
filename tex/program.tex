@@ -29,7 +29,7 @@
   urlcolor=blue!60!black,
   pdftitle={The Cosmochrony Research Programme: A Structural Roadmap and Paper Inventory},
   pdfauthor={Jérôme Beau},
-  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.55},
+  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.56},
   pdfkeywords={Cosmochrony, projective non-injectivity, spectral admissibility, emergent geometry,
     gauge--gravity stratification, paper inventory, dependency graph}
 }
@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.55}
+\date{2026\\[2pt]\small Version 2.56}
 
 \begin{document}
 
@@ -237,7 +237,9 @@ A Structural Roadmap and Paper Inventory}
     Papers at this level: the Q-series (Q1~\cite{Beau2026q1}, Q2~\cite{Beau2026q2},
     Q3~\cite{Beau2026q3}, Q5a--Q7), the gravity track
     (Spectral2~\cite{Beau2026a}, Gravity~\cite{Beau2026h}, Thermodynamics, Lorentz~\cite{Beau2026i}),
-    and the companion papers~(\cite{Beau2026b,Beau2026c,Beau2026d,Beau2026e,Beau2026f,Beau2026g,Beau2026k}).
+    and the companion papers~(\cite{Beau2026b,Beau2026d,Beau2026e,Beau2026f,Beau2026g,Beau2026k}).
+    BornInfeld~\cite{Beau2026c} supplies a discrete capacity axiom and conditional continuum results,
+    not a derivation of these physical observables from Levels~1--2.
 
   \section{Branch I: Axiomatic Foundations}
   \label{sec:foundations}
@@ -245,7 +247,7 @@ A Structural Roadmap and Paper Inventory}
   \subsection{The White Paper}
 
     The white paper~\cite{Cosmochrony} (``Cosmochrony: A Non-Injective Projection Theory of Emergent
-  Physics,'' v3.19) is the programme's primary overview document.
+  Physics,'' v3.20) is the programme's primary overview document.
     It introduces the substrate field~$\chi$, the non-injective projection~$\Pi$, the BI saturation
     constraint, the relaxation mechanism, and the qualitative derivation of spacetime and quantum structure.
     The spectral entropy functional $S_\Pi[g] = \tfrac{1}{2}\log\det' A_g$ appears here; on a supplied metric
@@ -311,8 +313,9 @@ A Structural Roadmap and Paper Inventory}
       that carrier (Foundation Theorem~5.7).
       \item \textit{Structural fluctuations:} along non-injective steps the kernel is non-trivial, so
       fluctuations are structural there rather than contingent; A2 does not exclude injective steps.
-      \item \textit{Schr\"{o}dinger as Mosco limit:} the continuous Schr\"{o}dinger equation is
-      derived as the Mosco limit of the discrete oriented admissibility cascade.
+      \item \textit{Discrete-to-continuum Schr\"{o}dinger bridge:} unitary dynamics is obtained in the
+      continuous-parameter regime; no Mosco convergence theorem for the discrete admissibility cascade
+      is supplied by the white paper or BornInfeld.
       \item \textit{Extended numerical scope:} PTO reports no decrease of $I(n)$ exceeding
       $10^{-6}I_{\max}$ after burn-in for $q \in \{29,61,101,151,211\}$,
       with~274 conjugate pairs and~504 post-burn-in steps; this gives no order on states.
@@ -2074,6 +2077,13 @@ A Structural Roadmap and Paper Inventory}
     with an ambient enlargement beyond a single copy of $V_\rho$, a canonical inter-sector identification and the
     condensation dynamics left open.
 
+  \paragraph{BI-1 qualification of the companion inputs.}
+    Q12 adopts Gravity's cutoff as a shared regularization premise.
+    Cosmology adopts its continuum speed, the identification with $c$, and the phenomenological
+    $f_{\max}$ window; [A-cap] supplies none of these.
+    ENI carries FibreErasure's [H-suff], proved for rank and numerically supported for full capacity,
+    and Gravity's scheme-separated conditional infrared Einstein term, not an exact bare-determinant equation.
+
   \subsection{Gravity and Spacetime Track}
 
     \textbf{Spectral2}~\cite{Beau2026a}: Derives operational metric distances from graph Laplacians
@@ -2294,17 +2304,21 @@ A Structural Roadmap and Paper Inventory}
     derivation of Yang--Mills dynamics belongs to the gauge--gravity spectral stratification
     sub-programme.
 
-    \textbf{BornInfeld}~\cite{Beau2026c}: capacity axiom [A-cap] bounding the per-node
-    relaxation rate, with the BI action as the saturation candidate compatible with it;
-    the constitutive, propagation, and gauge-sector bridges to continuum physics are stated
-    as open problems (\sstruct).
+    \textbf{BornInfeld}~\cite{Beau2026c}: [A-cap] posits a discrete per-node relaxation-rate bound;
+    the BI action is a saturation candidate, neither derived nor unique (\sstruct).
+    Lorentzian signature requires a continuum limit and [H-hyp]; the Newtonian exterior profile requires
+    stationary spherical flux conservation (\scond).
+    Schwarzschild additionally requires external dynamical input; no Einstein equation is derived here.
+    The axiom fixes no continuum field-strength, flux or curvature bound, length scale, or relation of
+    $c_{\mathrm{BI}}$ to a continuum scale; the constitutive and gauge-sector bridges remain open (\sopen).
 
     \textbf{TopologicalInvariants}~\cite{Beau2026k}: Charge quantisation ($\pi_1(S^1) \cong \mathbb{Z}$)
     and absence of magnetic monopoles from the Hopf fibration $S^1 \hookrightarrow S^3 \to S^2$
     of the projection fibre (\sproved; $\pi_2(\mathcal{C}_{\mathrm{eff}}) = 0$ beyond the canonical model:
     \sopen, Remark~4.2).
 
-    \textbf{SMchargemass}~\cite{Beau2026e}: Mass and electric charge as BI-saturated responses
+    \textbf{SMchargemass}~\cite{Beau2026e}: interpretive mass and charge responses within an adopted
+    BI-type constitutive model, not a necessary consequence of [A-cap]
     (\sstruct; baryon-to-photon ratio~$\eta$: \sopen).
 
     \textbf{Bell}~\cite{Beau2026b}: The claimed derivation of Bell-inequality violations from
@@ -2318,7 +2332,7 @@ A Structural Roadmap and Paper Inventory}
     coupling across measurement contexts (Fine's theorem) (\sproved).
 
     The Bell paper opens the \emph{entanglement sub-programme}, whose presentation paper is
-    \textbf{ENT-Note}~\cite{Beau2026entnote} (v1.3.1).
+    \textbf{ENT-Note}~\cite{Beau2026entnote} (v1.4).
     The note locates entanglement \emph{inside} the spectral admissibility cascade: for a closed
     conjugate Weil pair $\{c,q-c\}$, under ENT-Note's closure hypothesis (a supplied purity of the joint
     state, which neither ENT-Note nor ENT-E1 derives, with the diagonal Schmidt pairing, which ENT-E1 proves
@@ -2335,9 +2349,8 @@ A Structural Roadmap and Paper Inventory}
     deriving neither that purity nor the pair closure) and ENT-E2 (separation of the admissible pair entropy
     $S_{\mathrm{ent}}^{\mathrm{adm}}=\log 2$, conditional on (H-carrier) and [H-inv], from the full
     residual-rank entropy), and records the residual epistemic stratification. The note thus reduces entanglement to a pure O-series observable and
-    connects the pair-capacity exponent $\delta_{\mathrm{pair}}$ --- whose numerical comparison
-    with the mass hierarchy has no native capacity-to-rate derivation --- to a downstream trace
-    of the stabilization profile.
+    discusses a possible mass interpretation of the stabilization profile without deriving a map to masses.
+    Neither the pair-capacity exponent $\delta_{\mathrm{pair}}$ nor [A-cap] supplies that map.
     Version~1.3 aligns its PTO inputs with PTO~1.5: capacity-level one-way activation
     $\Delta I(n)\geq 0$ is a conjecture supported numerically only within tolerance, and the temporal
     ordering it refers to is a candidate trajectory proxy, an order on states requiring [H-acyc].
@@ -3074,8 +3087,9 @@ A Structural Roadmap and Paper Inventory}
       \sproved\ /\ \scond{} on its postulate H2 for the instantiation \\[3pt]
       \midrule
       Born\-Infeld & Bounded relational capacity & \cite{Beau2026c} &
-      Capacity axiom [A-cap]; BI action as saturation candidate; bridges open &
-      \sstruct\ /\ \sopen \\[3pt]
+      Discrete rate-bound axiom; non-unique BI candidate; conditional signature and Newtonian profile;
+      Schwarzschild needs external dynamics; no continuum scale fixed; bridges open &
+      \sstruct\ /\ \scond\ /\ \sopen \\[3pt]
       SpAdm & Spectral admissibility ($Q_8$) & \cite{Beau2026a1} &
       $A^{\max}_n = c_{\mathrm{BI}}/\sqrt{\lambda_n}$; first tractable instance &
       \sproved \\[3pt]
@@ -3178,6 +3192,7 @@ A Structural Roadmap and Paper Inventory}
       \scond{} on the shell-alignment conjecture and the cross-substrate identification\ /\ \sopen \\[3pt]
       O22 & Projection locking & \cite{Beau2026a26} &
       BI projection locking forces the O21-defined $n_3^{\mathrm{obs}}$ onto a BFS shell
+      for a supplied saturation scale, whose value [A-cap] does not fix
       within the stated model, on a sketch-level continuous decay law and the observable-space shell
       decomposition; this does not make that rank amplitude-invariant &
       \sstruct\ /\ \sopen \\[3pt]
@@ -3411,7 +3426,7 @@ A Structural Roadmap and Paper Inventory}
       $\tau = n\,\Delta\tau$ is a modelling input; the co-metric $\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$
       under [H-L], [H-lift], [T], [INV$^+$]; the coupling datum fixing $A_\tau/A_H$ is missing &
       \sproved\ /\ \scond\ /\ \sopen \\[3pt]
-      Q12 & Yang--Mills from $a_4$ (version 1.8) & \cite{Beau2026q12} &
+      Q12 & Yang--Mills from $a_4$ (version 1.9) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
       vertical variation $\delta_\mathcal{A} S_\Pi = 0$ at fixed metric yields
       $D_\mu F^{a\mu\nu} = 0$; induced log running $\propto I_\rho$ (non-universal),
@@ -3694,7 +3709,7 @@ A Structural Roadmap and Paper Inventory}
       to the full effective configuration space is open &
       \sproved\ /\ \sopen \\[3pt]
       SMcm & Charge, mass, inertia & \cite{Beau2026e} &
-      Mass and charge as BI-saturated responses &
+      Interpretive mass and charge responses in an adopted BI-type constitutive model &
       \sstruct \\[3pt]
       Bell & Bell factorisation bridge & \cite{Beau2026b} &
       Non-injectivity alone refuted as sufficient; global-coupling obstruction not derived &

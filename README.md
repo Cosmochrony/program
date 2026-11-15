@@ -578,3 +578,7 @@ pdflatex -output-directory=out tex/program.tex
 Portions of the editorial refinement benefited from iterative interactions with large language
 models, used as analytical assistants. All claims and final formulations remain the sole
 responsibility of the author.
+
+## BI-1 correction candidate
+
+Version 2.56, pending independent review and publication. Records the BI-1 corrections in Q12, Cosmology, ENI, O22, ENT-Note, SM-charge-mass and the white paper. BornInfeld supplies a discrete capacity axiom, a non-unique BI candidate, and conditional continuum results, not derived physical observables or a continuum scale. ENI-colour and the separate LC/public/local/bibliographic debts remain outside this lot.
