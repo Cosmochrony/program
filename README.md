@@ -8,7 +8,7 @@ It is the **central registry** of the whole Cosmochrony corpus: it inventories e
 documents the dependency graph between them, and tracks their status. It is the reference to
 consult first to understand how the pieces fit together.
 
-Version 2.58 records the LC correction in LorentzCapacity 1.5, TempProj 1.6, LC-O1 1.3 and LC-Synthesis 2.4. The quadratic Born–Infeld budget is a hypothesis of LorentzCapacity, motivated by the capacity axiom [A-cap] of BornInfeld and including the choice of $c_{\mathrm{BI}}$ equal to the [A-cap] bound; it is not derived from [A-cap], a per-node inequality, and BornInfeld leaves that passage open. LC-O2 and LC-O3 are unchanged.
+Version 2.58 records the LC correction in LorentzCapacity 1.5, TempProj 1.6, LC-O1 1.3 and LC-Synthesis 2.4. The quadratic Born–Infeld budget is a hypothesis of LorentzCapacity, motivated by the capacity axiom [A-cap] of BornInfeld and including the choice of $c_{\mathrm{BI}}$ equal to the [A-cap] bound; it is not derived from [A-cap], a per-node inequality, and BornInfeld leaves that passage open. LC-O2 and LC-O3 are not re-deposited.
 
 Version 2.57 records the O18/TopologicalInvariants correction in O18 2.2, TopologicalInvariants 1.1, white paper 3.21 and GS-Note 2.4. O18's Born–Infeld-type action of the gradient of $\chi$ is O18's adopted model; BornInfeld supplies a motivation and the capacity axiom, not that action or its saturation of a constitutive relation. TopologicalInvariants keeps charge quantisation and $\pi_2 = 0$ on a chosen domain of the Hopf base; the phase-gradient bound is a hypothesis, the domain is a choice, and the absence of magnetic monopoles is open.
 
