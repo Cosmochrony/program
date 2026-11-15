@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.59 records the O6/O4 correction in O6 1.2, O7 1.16, O8 1.1 and the Span-Growth Note 2.2. O4 is reported in its own terms: no bound on β follows from the bounded-flux and Cheeger argument, and its candidate would read β ≤ 2 in the raw exponent of O3, not β ≤ 1. The square-root growth inequality dp/dn ≲ c_BI √p(n) is an unestablished hypothesis (G) of O6, and the O6 conversion law β_eff = 1/(1/2 + α) is conditional on (G) and on the power-law redundancy Ansatz.",
+  "notes": "Version 2.59 records the O6/O4 correction in O6 1.2, O7 1.16, O8 1.1 and the Span-Growth Note 2.2. O4 is reported in its own terms: no bound on β follows from the bounded-flux and Cheeger argument, and its candidate would read β ≤ 2 in the raw exponent of O3, not β ≤ 1. The square-root growth inequality dp/dn ≲ c_BI √p(n) is an unestablished hypothesis (G) of O6; the effective hypothesis (G_R), with the redundancy inserted, is a separate premise. Under (G_R) and the power-law redundancy Ansatz, O6 proves only the upper bound β_eff ≤ 1/(1/2 + α), not an equality: the window β* = (0.09, 0.13) is then possible only if α < 10.611, and [7.4, 10.6] is the range in which the bound lies inside β*, not a condition for it.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
