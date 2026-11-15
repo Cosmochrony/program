@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.58 records the LC correction in LorentzCapacity 1.5, TempProj 1.6, LC-O1 1.3 and LC-Synthesis 2.4. The quadratic Born-Infeld budget is a hypothesis of LorentzCapacity, motivated by the capacity axiom [A-cap] of BornInfeld and including the choice of c_BI equal to the [A-cap] bound; it is not derived from [A-cap], a per-node inequality on the relaxation rate, and BornInfeld leaves that passage open. LC-O2 and LC-O3 are not re-deposited.",
+  "notes": "Version 2.59 records the O6/O4 correction in O6 1.2, O7 1.16, O8 1.1 and the Span-Growth Note 2.2. O4 is reported in its own terms: no bound on β follows from the bounded-flux and Cheeger argument, and its candidate would read β ≤ 2 in the raw exponent of O3, not β ≤ 1. The square-root growth inequality dp/dn ≲ c_BI √p(n) is an unestablished hypothesis (G) of O6, and the O6 conversion law β_eff = 1/(1/2 + α) is conditional on (G) and on the power-law redundancy Ansatz.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
