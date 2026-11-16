@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.60 records the ENI-colour correction in ENI 2.9, the Non-Injective Foundations Note 1.8, Foundation 2.7.1 and KUD 1.6. ENI's Section 6 states the sum-zero arithmetic of conjugate pairs and triples without identifying it with colour, leptons, quarks or a spin-1/2 module, and its tower is a template whose premises are open. The colour implication runs in the direction the theorem supports: a projection onto colour-neutral observables is non-injective under the premises of ENI Corollary 6; colour neutrality is the premise, so the non-observability of free colour is not derived. No colour stratum is supplied by the programme. The ENI entry also cites ENI's main theorem as Theorem 3 and its colour material as Section 6. Both NIF-Note version lines read 1.8.",
+  "notes": "Version 2.61 records the Hopf-Dirac correction in TopologicalInvariants 1.2, the white paper 3.22 and GS-Note 2.5. The integer winding of the Hopf fibre is invariant for configurations in a fixed fibre or over a trivialising domain of the base, not in the whole fibre S^3; its identification with electric charge is not derived, since no relation between the internal fibre and an emergent electromagnetic potential is supplied, and charge quantisation is listed as open. The Hopf bundle is the bundle of the unit Dirac monopole over the internal base. The TopologicalInvariants entry, table row, open problems and graph node, the GS-Note entry and version lines, and the white paper version line are aligned, and TopologicalInvariants carries its new title.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
