@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.62 synchronises the white-paper version line with version 3.23 (BF-1). The white paper states the hypotheses of the modal envelope, separates rate bounds from selection and signature assumptions, compares specified spin-sector windows in 2I, and treats the cubic density correction as a proposed model. No source-paper result or dependency relation changes in this registry version.",
+  "notes": "Version 2.63 records alpha-1: O14 1.2, O15 1.17, O18 2.3, O20 1.17 and O21 1.2 withdraw the reciprocal equality as a consequence of O6/O7, the numerical-window inference resting on it, and O21's former transfer theorem. O6 supplies only a conditional upper growth bound and an explicit countermodel to equality. Independent results retain their stated scope. Remaining W2 consumers are reserved for alpha-2.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }

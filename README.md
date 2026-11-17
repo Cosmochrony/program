@@ -1,5 +1,12 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.63 records the alpha-1 correction in O14 1.2, O15 1.17, O18 2.3, O20 1.17 and O21 1.2.
+The reciprocal equality is withdrawn as an O6/O7 consequence: O6 proves only an upper growth bound under
+its effective growth hypothesis and power-law redundancy Ansatz, with an explicit countermodel to equality.
+The associated physical-window inference and O21 transfer theorem are withdrawn; numerical reciprocals
+remain explicitly defined legacy diagnostics. Independent rank, parity, covariance and aggregation results
+retain their stated scope. The remaining W2 wording is reserved for alpha-2.
+
 This repository contains the source of the **programme synthesis paper**
 *The Cosmochrony Research Programme: A Structural Roadmap and Paper
 Inventory*.
