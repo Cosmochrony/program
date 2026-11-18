@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.63}
+\date{2026\\[2pt]\small Version 2.64}
 
 \begin{document}
 
@@ -673,6 +673,8 @@ A Structural Roadmap and Paper Inventory}
   conditionally; the O31 withdrawal; O32's numerical-only status; O33's exact finite architecture; and
   three open deliverables: hypothesis $[\mathrm{H\text{-}color}]$ (the two levels established in O32
   stand), the identification of the spin-$\tfrac12$ sector, and a full-breadth campaign beyond $q = 211$.
+  Version~2.2 reads O7's interval $[7.4,10.6]$ as a historical comparison range rather than a derived decay
+  condition, and the expander-side conversion as a legacy prescription.
   Their individual contributions follow.
 
   \subsection{Precursor Papers: SU(2) Admissibility Sub-Programme}
@@ -778,7 +780,7 @@ A Structural Roadmap and Paper Inventory}
 
     \textbf{O13}~\cite{Beau2026a17}: Extended prime range $q \in \{101, 151, 211\}$.
     The finite-$q$ exponent sequence ($4.42,4.80,4.51,4.27,3.59$ at $q\in\{29,61,101,151,211\}$)
-    does not drift toward the phenomenological target at larger primes, consistent with O12's
+    does not drift toward the historical comparison range at larger primes, consistent with O12's
     exact value $\delta_{\mathrm{exact}}=3$; measurement quality improves systematically with
     $q$ (\snum).
 
@@ -912,15 +914,20 @@ A Structural Roadmap and Paper Inventory}
     The inter-pair concentration establishes a stable fixed-$q$ pair statistic; it does not
     prove independence from~$q$.
     Central result of the extension: the \emph{raw} exponent $\delta_{\mathrm{global}}(q)$ descends
-    monotonically into the admissible window $[7.4, 10.6]$ on its own, reaching $7.61$ at $q = 601$,
-    with no correction; the O14 finite-size correction, needed at small $q$, becomes unnecessary and
-    eventually \emph{overcorrects} at large $q$ (sending $\delta_{\mathrm{corr}}$ below $7.4$).
+    monotonically into the historical comparison range $[7.4, 10.6]$ (not a derived condition) on its
+    own, reaching $7.61$ at $q = 601$, with no correction; the O14 finite-size correction, which brought
+    the small-$q$ values into that range, becomes unnecessary and eventually \emph{overcorrects} at large
+    $q$ (sending $\delta_{\mathrm{corr}}$ below $7.4$).
     The asymptotic value $\delta_\infty$ is not pinned ($1/q$ and $1/\sqrt{q}$ laws remain equally
     viable at $q \le 601$).  The reported $\log(n+1)$ convention inflates finite-window slopes
     relative to the paper-level $\log n$ definition.  As a separate numerical comparison the
     legacy reciprocal image stays in the narrow band $0.108$--$0.123$, near the mass-fitted window.
     SGN proves that this agreement is not a native capacity-to-rate derivation (\sstruct{} as a
     phenomenological coincidence check).
+    Version 1.6 requalifies the interval as a historical comparison range throughout and makes the
+    extended-campaign figure reproducible: its original generator was not recovered, and an independent
+    reconstruction from the checkpoints, now distributed with the paper, reproduces every published value
+    (the label $8.09$ at $q=401$ was a double rounding of $8.0848$, now $8.08$).
 
     \textbf{O26}~\cite{Beau2026a30}: Dictionary between conjugate Weil blocks and rank-1 matrices in
     $M_2(\mathbb{C})$, connecting the Heisenberg fibre to $2I \subset \SU(2)$ (\sstruct).
@@ -3179,7 +3186,7 @@ A Structural Roadmap and Paper Inventory}
       \sproved \\[3pt]
       O13 & Extended prime range & \cite{Beau2026a17} &
       Exponent sequence at $q\in\{29,61,101,151,211\}$ does not drift toward the
-      phenomenological target; consistent with $\delta_{\mathrm{exact}}=3$ &
+      historical comparison range; consistent with $\delta_{\mathrm{exact}}=3$ &
       \snum \\[3pt]
       O14 & Observable-class mismatch & \cite{Beau2026a18} &
       Fixed-$q$ normalisation $q^{-\eta}$ changes intercepts, not intra-$q$ slopes, and defines no endpoint
@@ -3811,7 +3818,8 @@ A Structural Roadmap and Paper Inventory}
       \sstruct \\[3pt]
       \midrule
       SpAdm\-Note & The spectral admissibility sub-programme (Note~1) & \cite{Beau2026a1note} &
-      Version 2.1 (noscale's Level~1 recorded as withdrawn and unused) maps the five precursor papers, O1 and
+      Version 2.2 (O7's range read as a historical comparison, not a derived decay condition; noscale's
+      Level~1 recorded as withdrawn and unused) maps the five precursor papers, O1 and
       O3--O33 and the SGN/CC companions along
       bounded flux $\Rightarrow$ envelope $\Rightarrow$ Weil-sector capacity $\Rightarrow
       \dim_{\mathrm{pair}}$ on a supplied carrier; the reciprocal $\beta^*$ prescription has no carrier
