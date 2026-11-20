@@ -356,7 +356,7 @@ A Structural Roadmap and Paper Inventory}
     The two derivations are complementary: Theorem~3 answers \emph{what} is forced
     (framework-independently); the algebraic route answers \emph{why} in Heisenberg-fibred frameworks.
     Cited by Foundation, HeisenbergStructure~\cite{Beau2026HeisenbergStructure},
-    Q1~\cite{Beau2026q1}, Bell, O32~\cite{Beau2026a36}.
+    Q1~\cite{Beau2026q1}, Bell.
 
   \subsection{Projection as Conditional Expectation and the Capacity Ceiling}
 
@@ -670,9 +670,10 @@ A Structural Roadmap and Paper Inventory}
   It records that the reciprocal prescription $\beta^* \approx 1/(\dim_{\mathrm{pair}} + \tfrac12)$ has
   no carrier on the Heisenberg measurement substrate, so the agreement $\beta^* \approx 0.126$ with the
   charged-lepton window is a coincidence check and not a derivation; that the SU(2) carrier is supplied
-  conditionally; the O31 withdrawal; O32's numerical-only status; O33's exact finite architecture; and
-  three open deliverables: hypothesis $[\mathrm{H\text{-}color}]$ (the two levels established in O32
-  stand), the identification of the spin-$\tfrac12$ sector, and a full-breadth campaign beyond $q = 211$.
+  conditionally; the O31 withdrawal; O32's proof that its colour-triplet diagnostic cannot test
+  $[\mathrm{H\text{-}color}]$; O33's exact finite architecture; and three open deliverables: hypothesis
+  $[\mathrm{H\text{-}color}]$ (no level established), the identification of the spin-$\tfrac12$ sector, and
+  a full-breadth campaign beyond $q = 211$.
   Version~2.2 reads O7's interval $[7.4,10.6]$ as a historical comparison range rather than a derived decay
   condition, and the expander-side conversion as a legacy prescription.
   Their individual contributions follow.
@@ -1089,19 +1090,23 @@ A Structural Roadmap and Paper Inventory}
     criterion. The remaining scalar, arithmetic and discrete-group material is under re-audit.
     O31 supplies no positive conclusion about $\SU(3)$, a gauge factor, or the Standard Model
     gauge group.
-    \textbf{O32}~\cite{Beau2026a36}: tests [H-color] numerically on
-    $q\in\{61,151,211,307\}$ (test, $q\equiv 1\pmod{3}$) and $q\in\{29,101\}$ (controls).
-    Noise floor $\mathtt{ctrl\_ref} = 1.657\times10^{-3}$.
-    Normalised ratios: $R = 2.1$ ($q=61$, 1/4 triplets valid),
-    $R = 0.4$ ($q=151$), $R = 1.0$ ($q=211$), $R = 0.7$ ($q=307$).
-    All four pass $R\leq 3$; $\delta_{\mathrm{tri}}\approx 3\delta_c$ at the percent level ($0.7\%$ at
-    $q=151$, $1.3$ to $2.2\%$ elsewhere); $C_{\mathrm{color}}$ numerical rank~1 at $q\in\{61,151,211\}$.
-    The rank and pointwise levels of $[\mathrm{H\text{-}color}]$ are open, O31 version~2.0 supplying neither; the
-    averaged level ($O(q^{-1})$, O32 Proposition~1) and the effective level stand as O32's own results. The O32
-    numerical values remain reported measurements; they do not establish individual-profile co-admissibility or
-    identify a gauge group.
-    Status: \snum for the reported measurements; no structural interpretation of them is established,
-    and their reading is under re-audit.
+    \textbf{O32}~\cite{Beau2026a36}: report on the limits of a colour-triplet capacity diagnostic
+    (version~2.0, which invalidates and replaces the interpretation of version~1.5).
+    The O12 three-character capacity profile is exactly invariant under multiplication of the whole
+    character block by any unit of $\mathbb{Z}/q\mathbb{Z}$: fingerprints are single Fourier characters,
+    rank increments count distinct frequencies, and the unit permutes them.
+    Under the campaign sampling law every character therefore has the same profile distribution, with no
+    $O(q^{-1})$ term and no role for cube roots of unity; the inter-triplet variance ratio, the slope relation
+    $\delta_{\mathrm{tri}}\approx3\delta_c$ (an identity of least-squares fitting) and the rank of
+    $C_{\mathrm{color}}$ cannot distinguish colour triplets from other sets of characters, as null controls
+    at $q = 61$ and $151$ confirm.
+    The stored campaign is reproduced exactly and its calibration rebuilt on shells unaffected by rank
+    saturation.
+    Withdrawn from version~1.5: the test of $[\mathrm{H\text{-}color}]$ and its ``passes'' verdict, Proposition~1
+    and the averaged and effective levels, the levels imported from O31, the noise floors and ratios $R$,
+    and the $\mathrm{SU}(3)$, quark, baryon, confinement and $\beta^*$ readings.
+    Status: \sproved{} for the invariance; $[\mathrm{H\text{-}color}]$ is \sopen{} and not testable with this
+    observable.
 
     \textbf{O33}~\cite{Beau2026a37}: arithmetic Mackey--Hecke structure of the O12
     three-character filtration (exact core, \sproved).
@@ -1176,10 +1181,14 @@ A Structural Roadmap and Paper Inventory}
     $I(c;\sigma(\ell))$ on the
     BFS coarse-graining axis~$\ell$, distinct from and orthogonal to the temporal axis~$n$ of PTO.
     Conditional on the structural sufficiency hypothesis~[H-suff], the data-processing inequality
-    implies that $I(c;\sigma(\ell))$ is non-increasing in~$\ell$: fibre information is erased,
-    not created, under admissible coarse-graining (Thm~4.1). [H-suff] is proved unconditionally
-    at the BFS rank level (Prop.~3.6, label-blindness from Schur's lemma); for the full
-    Born--Infeld capacity it is numerically supported for $q \in \{61, 151, 211\}$.
+    implies that $I(c;\sigma(\ell))$ is non-increasing in~$\ell$. [H-suff] is proved at the BFS rank
+    level, where for the uniform O12 seed the rank is $\min(2\ell+1,q)$, independent of the label
+    (version~2.0 corrects the earlier coset-count formula). For the O12 capacity under the campaign
+    sampling law, O32's unit-scaling invariance makes the label independent of the whole profile:
+    $I(c;\sigma(\ell)) = 0$ at every depth, [H-suff] holds and the bound is $0\leq0$, so no
+    non-trivial erasure and no erasure mechanism is shown for that observable; this is independence in
+    law, not per-draw equality. Version~2.0 also removes O31 attributions and the colour readings of
+    its numerical tests.
     Strictly not a $c$-theorem: no counting of effective degrees of freedom is claimed (listed
     as open problem [O-2]). Together with PTO, constitutes the information-theoretic architecture
     of the admissibility cascade: resolution axis~$\ell$ (Fibre Erasure) and temporal axis~$n$
@@ -2007,8 +2016,9 @@ A Structural Roadmap and Paper Inventory}
     further hypothesis that the cited sources (A4-Note, ENI) do not supply.
     Explicitly not a derivation: it reorganises the open questions and states the construction charge sheet
     (exact colour singlet, three generations after neutralisation, electroweak quantum numbers, anomaly
-    cancellation, quark/lepton selection); the colour-to-generation breaking it needs along the neutralisation
-    route is the one already closed by the exact colour degeneracy.
+    cancellation, quark/lepton selection); whether the neutralisation route can supply the colour-to-generation
+    breaking is open (version~1.3 withdraws the earlier closure, whose premise rested on withdrawn O31 results
+    and a colour-blind O32 diagnostic).
 
     \textbf{NPI}~\cite{Beau2026npi}: Neutrino mixing and projective particle identity (\sstruct).
     Structural companion note on the ontology of fermionic identity: the misalignment between the weak flavour
@@ -2105,7 +2115,8 @@ A Structural Roadmap and Paper Inventory}
     Q12 adopts Gravity's cutoff as a shared regularization premise.
     Cosmology adopts its continuum speed, the identification with $c$, and the phenomenological
     $f_{\max}$ window; [A-cap] supplies none of these.
-    ENI carries FibreErasure's [H-suff], proved for rank and numerically supported for full capacity,
+    ENI carries FibreErasure's [H-suff], proved for rank and holding in law for the O12 capacity, where
+    the erasure bound is trivial,
     and Gravity's scheme-separated conditional infrared Einstein term, not an exact bare-determinant equation.
 
   \subsection{Gravity and Spacetime Track}
@@ -2644,7 +2655,7 @@ A Structural Roadmap and Paper Inventory}
           \node[N] (O29)  at (7*\dx,-7*\dy)   {O29};
           \node[C] (O30)  at (7*\dx,-8*\dy)   {O30};
           \node[Oc] (O31)  at (7*\dx,-9*\dy)   {O31};
-          \node[N] (O32)  at (7*\dx,-10*\dy)  {O32};
+          \node[P] (O32)  at (7*\dx,-10*\dy)  {O32};
           \node[P] (O33)  at (7*\dx,-11*\dy)  {O33};
           \node[N] (PTO)    at (5*\dx,-7*\dy)   {PTO};
           \node[C] (LorCap) at (5*\dx,-8*\dy)  {LorCap};
@@ -2881,7 +2892,7 @@ A Structural Roadmap and Paper Inventory}
           \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O31.south)
             {withdrawn claims};
           \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O32.south)
-            {$q{=}61,151,211,307$ all pass};
+            {diagnostic colour-blind};
           \node[font=\tiny\sffamily,text=black!55,fill=white,inner sep=0.8pt,anchor=north] at ([yshift=-1pt]O33.south)
             {Weil doublets};
         \end{tikzpicture}
@@ -3308,16 +3319,12 @@ A Structural Roadmap and Paper Inventory}
       $\mathrm{SO}(3)$, $T^2$ and
       $\{1,2,q-3\}$ counterexamples; remaining material under re-audit &
       \sopen\ /\ \sproved \\[3pt]
-      O32 & [H-color] numerical test & \cite{Beau2026a36} &
-      [H-color] passes for all $q\in\{61,151,211,307\}$
-      ($R\leq 3$, ctrl\_ref $=1.657\times10^{-3}$;
-      $R=2.1,\,0.4,\,1.0,\,0.7$ respectively);
-      $C_{\mathrm{color}}$ rank~1 at $q\in\{61,151,211\}$;
-      $\delta_{\mathrm{tri}}\approx 3\delta_c$ at the percent level ($0.7\%$ at $q=151$, $1.3$ to $2.2\%$
-      elsewhere); the rank and pointwise levels of $[\mathrm{H\text{-}color}]$ are open (O31 supplies
-      neither), the averaged ($O(q^{-1})$, O32 Proposition~1) and effective levels stand; no
-      gauge-group reading is established &
-      \snum\ /\ \sopen \\[3pt]
+      O32 & Limits of a colour-triplet capacity diagnostic & \cite{Beau2026a36} &
+      Exact unit-scaling invariance of the O12 profile; character-independent law under the campaign
+      sampling; variance ratio, slope relation and $C_{\mathrm{color}}$ rank colour-blind (null controls);
+      stored campaign reproduced, calibration rebuilt; version-1.5 test, verdict, Proposition~1 and colour
+      readings withdrawn; $[\mathrm{H\text{-}color}]$ not testable with this observable &
+      \sproved\ /\ \sopen \\[3pt]
       O33 & Arithmetic Weil doublets and mixing & \cite{Beau2026a37} &
       Closed sumset formula and spacing theorem proved;
       stabiliser reduced exactly to $A_K$, with an orbit-divisibility sieve, uniform
@@ -3340,9 +3347,10 @@ A Structural Roadmap and Paper Inventory}
       state order requires [H-acyc] &
       \snum{} (reported bound); \scond{} (state order) \\[3pt]
       Fibre\-Erase & Fibre erasure & \cite{Beau2026fe} &
-      Monotone $I(c;\sigma(\ell))$ on BFS coarse-graining axis~$\ell$ via DPI (Thm~4.1,
-      conditional on [H-suff]); [H-suff] proved at the rank level (Prop.~3.6); capacity-level
-      numerical evidence for $q\in\{61,151,211\}$; explicitly not a $c$-theorem &
+      Monotone $I(c;\sigma(\ell))$ on BFS coarse-graining axis~$\ell$ via DPI (conditional on
+      [H-suff]); [H-suff] proved at the rank level (uniform seed); for the O12 capacity
+      $I(c;\sigma(\ell)) = 0$ in law, bound $0\leq0$, no non-trivial erasure; explicitly not a
+      $c$-theorem &
       \scond{} on [H-suff] and [H-sg] \\[3pt]
       \midrule
       Q1 & Fourier-support rigidity & \cite{Beau2026q1} &
@@ -3826,8 +3834,8 @@ A Structural Roadmap and Paper Inventory}
       bounded flux $\Rightarrow$ envelope $\Rightarrow$ Weil-sector capacity $\Rightarrow
       \dim_{\mathrm{pair}}$ on a supplied carrier; the reciprocal $\beta^*$ prescription has no carrier
       on the measurement substrate (coincidence check); SU(2) carrier supplied conditionally; O31
-      withdrawal; O32 measurements; O33 exact finite structure; open: $[\mathrm{H\text{-}color}]$ beyond
-      O32's two levels, the spin-$\tfrac12$ sector, campaign beyond $q = 211$ &
+      withdrawal; O32 diagnostic proved colour-blind; O33 exact finite structure; open:
+      $[\mathrm{H\text{-}color}]$ (no level established), the spin-$\tfrac12$ sector, campaign beyond $q = 211$ &
       \ssynth \\[3pt]
       EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
       Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2).
@@ -3973,10 +3981,11 @@ A Structural Roadmap and Paper Inventory}
 
   \paragraph{Full Standard Model gauge group (Q6a, O31--O32).}
     O31 version~2.0 withdraws every derivation of $\SU(3)$ and of
-    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$. O32 reports finite-sample numerical observations,
-    but these do not identify a group or restore the withdrawn individual-profile claim.
-    The colour factor, the complete gauge group, the interpretation of the O32 measurements, a
-    transfer chain to $\alpha_s$, and the identification of quarks remain open.
+    $\SU(3)\times\SU(2)\times\mathrm{U}(1)$. O32 proves that its colour-triplet diagnostic cannot
+    test $[\mathrm{H\text{-}color}]$, so it supplies no evidence for a colour factor.
+    The colour factor, the complete gauge group, an observable able to test
+    $[\mathrm{H\text{-}color}]$, a transfer chain to $\alpha_s$, and the identification of quarks remain
+    open.
 
   \paragraph{Baryon-to-photon ratio (SMchargemass).}
     Quantitative derivation of $\eta \sim 10^{-10}$ is open.
@@ -4168,8 +4177,8 @@ A Structural Roadmap and Paper Inventory}
   which remains empirical.
   O31 version~2.0 is a withdrawal notice: the proposed colour-triplet co-admissibility,
   arithmetic and group-identification results do not survive audit. The colour factor and complete
-  Standard Model gauge group are open, and O32 numerical measurements supply no replacement group
-  derivation~\cite{Beau2026a35}.
+  Standard Model gauge group are open, and O32 shows that its colour-triplet diagnostic cannot test
+  $[\mathrm{H\text{-}color}]$~\cite{Beau2026a35,Beau2026a36}.
   Branch~III (Q-series and companions) develops conditional mathematical models toward quantum
   mechanics, spacetime, and Standard Model observables. It contains proved internal results but
   does not derive those physical structures from the foundational axioms as a closed chain.
