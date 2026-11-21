@@ -1,5 +1,22 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.68 records lot B (C13–C15). O6 2.0, retitled *Matrix-Level Dynamic Redundancy and a Conditional Upper
+Bound on the Cascade Exponent β*, corrects its saturation results: the Steinberg-matrix fingerprint has span dimension
+$q^2$ (the Steinberg module has dimension $q$), its breadth-first span cannot grow again after a plateau, so the
+saturation radius is at most $q^2-1$ and at most the graph diameter, and ranks certified by exact arithmetic on
+$X_{5,q}$ reach $q^2$ at radius 4, 5, 5 for $q=29,41,61$. The float32 table of version 1.2, its saturation radius
+common to all $q$, its $O(q^2)$ and $O(1/q)$ bounds on the saturation cardinality and its no-go for every fixed
+finite-dimensional representation are withdrawn; the conditional upper bound $\beta_{\mathrm{eff}}\le1/(1/2+\alpha)$
+is unchanged. O5 2.1 states that bound as an inequality ($\alpha<10.611$, no $\alpha\approx9.5$); its registry entry
+now records the class-function span bound and no longer an obstruction for every representation-theoretic approach.
+O7 1.17 and O8 1.2 no longer import the O6 no-go; O8's subtitle compares with the historical range
+$\delta\in[7.4,10.6]$ and its O4–O6 grouping is corrected. The Span-Growth Note 2.3 subtitle names an expander-side
+bound, not a derived law. O25 1.7 and O28 2.2 no longer read the inter-pair concentration as a structural invariant
+(an interpretation correction; slope additivity is not at issue). The O7 label "Continuum target" becomes a historical
+comparison range. O9 1.1.1, O10 1.1.1, O12 1.1.1, O13 1.2.1, O14 1.2.1, O15 1.17.1, O18 2.4.1, O20 1.18.1, O21 1.3.2,
+O32 2.0.1 and SAN 2.2.4 print the new O6 and O5 titles; nineteen further bibliographies are synchronised without a
+change to their PDF.
+
 Version 2.67 records the correction of the canonical observable of O19 and of the factor $r(c,q)$. O19 1.3, retitled *Canonical
 Pair Observables in Weil Blocks: Exact Saturation and the Limits of a Proposed Canonical Normalisation*, corrects its Lemma 2.4: on the finite Cayley graph the cumulative spans reach $q$ for every seed, so for its
 own asymptotic definition $r(c,q)\equiv1$, the fourth case holds and Cases A–C concern only an undefined

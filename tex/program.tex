@@ -29,7 +29,7 @@
   urlcolor=blue!60!black,
   pdftitle={The Cosmochrony Research Programme: A Structural Roadmap and Paper Inventory},
   pdfauthor={Jérôme Beau},
-  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.67},
+  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.68},
   pdfkeywords={Cosmochrony, projective non-injectivity, spectral admissibility, emergent geometry,
     gauge--gravity stratification, paper inventory, dependency graph}
 }
@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.67}
+\date{2026\\[2pt]\small Version 2.68}
 
 \begin{document}
 
@@ -740,12 +740,25 @@ A Structural Roadmap and Paper Inventory}
     read $\beta \leq 2$ in the raw exponent of O3, not $\beta \leq 1$), and any structural upper bound on
     $\beta$ by this route is open (\sopen).
 
-    \textbf{O5}~\cite{Beau2026a9}: Obstruction theorem.
-    The $\beta$~gap cannot be closed by any purely representation-theoretic or
-    fixed-representation approach (\sproved).
+    \textbf{O5}~\cite{Beau2026a9}: Obstruction for class-function encodings.
+    Any class-function encoding of the vertex boundary spans a space of dimension at most
+    $|\mathrm{Cl}(G)| = O(q)$ (\sproved); the character-trace, fixed-matrix and Steinberg transition
+    fingerprints it examines leave no pre-saturation window in which an exponent could be measured
+    (\snum).
+    A redundancy mechanism bounding $\beta_{\mathrm{eff}}$ by $1/(1/2+\alpha)$ is not supported by these
+    constructions, and the eigenvalue-level frontier is left open (\sopen).
 
-    \textbf{O6}~\cite{Beau2026a10}: Matrix-level dynamic redundancy, $R_n \to 0$ for the Steinberg
-    fingerprint; under two premises, the unestablished effective growth hypothesis~(G$_R$), which does
+    \textbf{O6}~\cite{Beau2026a10}: Matrix-level dynamic redundancy (version~2.0).
+    The Steinberg-matrix fingerprint $\mathrm{vec}(P_v - J/(q+1))$ spans a space of dimension $q^2$; its
+    BFS-ball span increases strictly until saturation and never grows again after a plateau, so the
+    redundancy functional vanishes from then on, with saturation radius at most $q^2-1$ and at most the
+    graph diameter (\sproved).
+    Ranks certified by exact arithmetic on $X_{5,q}$, $q \in \{29,41,61\}$, reach $q^2$ at radius $4$,
+    $5$, $5$ (\snum).
+    Version~2.0 withdraws the floating-point table of version~1.2, its saturation radius common to
+    all~$q$, its $O(q^2)$ and $O(1/q)$ bounds on the saturation cardinality and its no-go for every fixed
+    finite-dimensional representation.
+    Under two premises, the unestablished effective growth hypothesis~(G$_R$), which does
     not follow from the square-root hypothesis~(G), and a power-law Ansatz that the paper's own fingerprint
     does not satisfy, only the upper bound $\beta_{\mathrm{eff}} \le 1/(1/2+\alpha)$ follows, so that
     $\beta^*$ is possible only if $\alpha < 10.611$; no attained exponent follows, and a genuine power-law
@@ -3198,17 +3211,20 @@ A Structural Roadmap and Paper Inventory}
       no bound on $\beta$ follows from the stated argument (candidate $\beta \leq 2$ in O3's raw exponent),
       and any structural upper bound on $\beta$ by this route is open &
       \sopen \\[3pt]
-      O5 & Rep-theoretic obstruction & \cite{Beau2026a9} &
-      Fixed-repr.\ approaches cannot close the $\beta$ gap &
-      \sproved \\[3pt]
+      O5 & Class-function span bound & \cite{Beau2026a9} &
+      Class-function vertex spans have dimension at most $|\mathrm{Cl}(G)|$; the transition
+      fingerprints examined leave no measurable window &
+      \sproved\ /\ \snum \\[3pt]
       O6 & Matrix redundancy & \cite{Beau2026a10} &
-      Matrix-level dynamic redundancy: $R_n \to 0$ for the Steinberg fingerprint (proved); the
-      corollary gives only the upper bound $\beta_{\mathrm{eff}} \le 1/(1/2+\alpha)$ under the unestablished
+      Steinberg-matrix span of dimension $q^2$, no regrowth after a plateau, saturation radius at
+      most $q^2-1$ and at most the diameter (proved); certified full rank at radius $4$--$5$ on
+      $X_{5,q}$, $q \in \{29,41,61\}$ (numerical); the corollary gives only the upper bound $\beta_{\mathrm{eff}} \le 1/(1/2+\alpha)$ under the unestablished
       effective growth hypothesis~(G$_R$) and a power-law Ansatz that the paper's own fingerprint does not
       satisfy, so $\beta^*$ requires $\alpha < 10.611$ and a genuine power-law regime remains open &
       \sproved\ /\ \scond{} on (G$_R$) and the power-law Ansatz\ /\ \sopen \\[3pt]
-      O7 & Continuum target & \cite{Beau2026a11} &
-      Range $\delta \in [7.4, 10.6]$ where O6's bound lies in $\beta^*$, on 3-step fingerprints &
+      O7 & Historical comparison range & \cite{Beau2026a11} &
+      Range $\delta \in [7.4, 10.6]$ where O6's bound lies in $\beta^*$, on 3-step fingerprints; a
+      historical comparison, neither a necessary condition nor a predicted value &
       \sstruct \\[3pt]
       O8 & LPS geometric obstruction & \cite{Beau2026a12} &
       Exponential shell growth $\Rightarrow$ usable window $= O(\log q)$ BFS steps, on a shell-growth

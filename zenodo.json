@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.67 records the correction of the O19 canonical observable and of the factor r(c,q): O19 1.3 (retitled; for its own asymptotic definition r = 1 by the corrected Lemma 2.4, so the fourth case holds; the former Corollary 2.5 is withdrawn and the former Proposition 7.2 is an open problem on a pre-saturation window), with its consumers O18 2.4, O20 1.18, O21 1.3.1, O22 1.20, O25 1.6.2, O26 2.3, O27 2.0.1, SAN 2.2.3 and ENT-Note 1.4.1; AAR 1.3.3 carries the new O19 title. The reported values r(c,q) in {1,2,3,4} are a historical hypothesis; O16 forces r = 1 on the real pipeline's exact block observable; O17's normalisation statement is internal to its toy model; O26's symmetric-square bound is unchanged.",
+  "notes": "Version 2.68 records lot B: O6 2.0 (retitled; span dimension q², no regrowth after a plateau, certified ranks; float32 table, q-independent saturation radius, saturation-cardinality bounds and fixed-representation no-go withdrawn), O5 2.1 (inequality form), O7 1.17, O8 1.2, Span-Growth Note 2.3, O25 1.7 and O28 2.2 (no structural-invariant reading), the O7 label as a historical comparison range, and eleven consumers printing the new O6 and O5 titles.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
