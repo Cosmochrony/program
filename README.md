@@ -6,7 +6,9 @@ Tests*, no longer claims to identify which case holds or to construct a pipeline
 P2/P3 are open and the former Proposition 7.2 is Open Problem 7.2. The values $r(c,q)\in\{1,2,3,4\}$ are a historical
 hypothesis; on the real O12/O13 pipeline O16's conjugate-block identity forces $r\equiv1$ within its contract, and
 O17's normalisation statement is internal to its toy model. Consumers: O18 2.3.1, O20 1.18, O21 1.3.1, O22 1.20,
-O26 2.3 (O16/O17 attributions corrected; symmetric-square bound unchanged), O27 2.0.1 and SAN 2.2.3.
+O25 1.6.2, O26 2.3 (O16/O17 attributions corrected; symmetric-square bound unchanged), O27 2.0.1, SAN 2.2.3 and
+ENT-Note 1.4.1; AAR 1.3.3 carries the new O19 title; fourteen further bibliographies are synchronised without a
+change to their PDF.
 
 Version 2.66 records the O21–O22 correction lot. O21 1.3 states that its two-point crossing rank is not
 invariant under $\sigma\mapsto\lambda\sigma$ (it scales as $\lambda^{1/\delta}$, so it is defined for the canonical
@@ -587,8 +589,8 @@ states. The corpus comprises **116 papers** across three theory branches:
 - **Branch I — Foundation track**: four axioms organise the admissibility framework. Their published
   carrier-selection argument is refuted by a finite \(S_3\) countermodel; the Heisenberg/Weil carrier
   remains a supplied realisation.
-- **Branch II — O-series** (spectral admissibility): derives the canonical pair-capacity
-  observable and its fibre/representation structure. The proposed
+- **Branch II — O-series** (spectral admissibility): proposes the canonical pair-capacity
+  observable (O19, open tests) and its fibre/representation structure. The proposed
   $\delta_{\mathrm{pair}}\to\beta^*$ continuation is now recorded as a refuted native
   Heisenberg transfer and retained only as a cross-substrate phenomenological prescription.
 - **Branch III — Q-series and companion papers**: develops conditional mathematical models toward
