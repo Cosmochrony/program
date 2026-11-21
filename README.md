@@ -1,5 +1,15 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.66 records the O21–O22 correction lot. O21 1.3 states that its two-point crossing rank is not
+invariant under $\sigma\mapsto\lambda\sigma$ (it scales as $\lambda^{1/\delta}$, so it is defined for the canonical
+normalisation of O19) and withdraws the identification of the pair observable as the relevant quantity for the
+lepton mass hierarchy, which no O-series result establishes. O22 1.19, retitled *Projection Locking of the
+Saturation Depth*, withdraws Corollary 5.1: its proof identified the O21 rank with the Born–Infeld saturation depth
+by citing an O21 proposition that does not state the identification. Theorem 4.8 places a realisable saturation
+depth on a BFS shell under O22's definition of realisability; the O21 shell-alignment conjecture remains open.
+Consumers are aligned by what they import: O24 1.5 (Corollary 4.2 rests on rank stability alone), SGN 2.2.1,
+SAN 2.2.2 and QS-Note 2.3.1. The threshold $\Sigma_c(n_3)=3$ stays a supplied selection rule (O24).
+
 Version 2.65 records the O32 2.0 correction lot. O32 is now a report on the limits of its colour-triplet
 capacity diagnostic: the O12 three-character profile is exactly invariant under multiplication of the whole
 character block by any unit (the colour orbit being the case $\lambda=\omega$), so under the campaign sampling
