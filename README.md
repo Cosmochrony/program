@@ -591,7 +591,7 @@ states. The corpus comprises **116 papers** across three theory branches:
   carrier-selection argument is refuted by a finite \(S_3\) countermodel; the Heisenberg/Weil carrier
   remains a supplied realisation.
 - **Branch II — O-series** (spectral admissibility): proposes the canonical pair-capacity
-  observable (O19, open tests) and its fibre/representation structure. The proposed
+  observable (O19, not established as pipeline independent) and its fibre/representation structure. The proposed
   $\delta_{\mathrm{pair}}\to\beta^*$ continuation is now recorded as a refuted native
   Heisenberg transfer and retained only as a cross-substrate phenomenological prescription.
 - **Branch III — Q-series and companion papers**: develops conditional mathematical models toward
