@@ -14,8 +14,8 @@ $\delta\in[7.4,10.6]$ and its O4–O6 grouping is corrected. The Span-Growth Not
 bound, not a derived law. O25 1.7 and O28 2.2 no longer read the inter-pair concentration as a structural invariant
 (an interpretation correction; slope additivity is not at issue). The O7 label "Continuum target" becomes a historical
 comparison range. O9 1.1.1, O10 1.1.1, O12 1.1.1, O13 1.2.1, O14 1.2.1, O15 1.17.1, O18 2.4.1, O20 1.18.1, O21 1.3.2,
-O32 2.0.1 and SAN 2.2.4 print the new O6 and O5 titles; nineteen further bibliographies are synchronised without a
-change to their PDF.
+O32 2.0.1 and SAN 2.2.4 print the new O6 and O5 titles, and SAN's O6 entry no longer imports the withdrawn
+saturation reading; nineteen further bibliographies are synchronised without a change to their PDF.
 
 Version 2.67 records the correction of the canonical observable of O19 and of the factor $r(c,q)$. O19 1.3, retitled *Canonical
 Pair Observables in Weil Blocks: Exact Saturation and the Limits of a Proposed Canonical Normalisation*, corrects its Lemma 2.4: on the finite Cayley graph the cumulative spans reach $q$ for every seed, so for its
