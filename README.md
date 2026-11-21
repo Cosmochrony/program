@@ -7,8 +7,9 @@ law every character has the same law of profiles and the diagnostic has no discr
 [H-color], which it neither confirms nor refutes; the version-1.5 colour reading is withdrawn. Consumers are
 aligned by what they import: SAN 2.2.1, GS-Note 2.5.1, Q12 1.9.1, AAR 1.3.1; FibreErasure 2.0 (corrected
 rank proposition; the O12 bound is $0 \le 0$, no erasure mechanism); the Ternary Phase Carrier 1.3 and FM-Note
-3.3.1 (O31 cascade: the colour-to-generation route is open); Foundation 2.7.2, Q13 1.6.1 and Q14 3.3.1 carry
-the corrected O32 reference.
+3.3.1 (O31 cascade: the colour-to-generation route is open); E2 2.3.1 attributes the unit-scaling equality to
+O12 and O32 2.0 rather than to the withdrawn O31 dilation; SpectralAdmissibility 2.0.4 states the withdrawn status
+of the O31 SU(3) derivation; Foundation 2.7.2, Q13 1.6.1 and Q14 3.3.1 carry the corrected O32 reference.
 
 Version 2.64 records the alpha-2 correction in O9–O11, O13, O19, O22, O24, O25, O26, O28 and the SAN note.
 
