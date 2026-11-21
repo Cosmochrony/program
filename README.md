@@ -6,8 +6,9 @@ Tests*, no longer claims to identify which case holds or to construct a pipeline
 P2/P3 are open and the former Proposition 7.2 is Open Problem 7.2. The values $r(c,q)\in\{1,2,3,4\}$ are a historical
 hypothesis; on the real O12/O13 pipeline O16's conjugate-block identity forces $r\equiv1$ within its contract, and
 O17's normalisation statement is internal to its toy model. Consumers: O18 2.3.1, O20 1.18, O21 1.3.1, O22 1.20,
-O25 1.6.2, O26 2.3 (O16/O17 attributions corrected; symmetric-square bound unchanged); the historical value $\delta_{\mathrm{pair}}\approx7.44$ is no longer attributed to O16 in O18, O19, O20, O21 and O25, O27 2.0.1, SAN 2.2.3 and
-ENT-Note 1.4.1; AAR 1.3.3 carries the new O19 title; fourteen further bibliographies are synchronised without a
+O25 1.6.2, O26 2.3 (O16/O17 attributions corrected; symmetric-square bound unchanged), O27 2.0.1, SAN 2.2.3 and
+ENT-Note 1.4.1; AAR 1.3.3 carries the new O19 title. The historical value $\delta_{\mathrm{pair}}\approx7.44$ is no
+longer attributed to O16 in O18, O19, O20, O21 and O25; fourteen further bibliographies are synchronised without a
 change to their PDF.
 
 Version 2.66 records the O21–O22 correction lot. O21 1.3 states that its two-point crossing rank is not
