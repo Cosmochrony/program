@@ -1,5 +1,13 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.67 records lot A: the canonical observable of O19 and the factor $r(c,q)$. O19 1.3, retitled *Canonical
+Pair Observables in Weil Blocks: The Residual Amplitude Factor and a Proposed Canonical Normalisation with Open
+Tests*, no longer claims to identify which case holds or to construct a pipeline-independent observable: Tests
+P2/P3 are open and the former Proposition 7.2 is Open Problem 7.2. The values $r(c,q)\in\{1,2,3,4\}$ are a historical
+hypothesis; on the real O12/O13 pipeline O16's conjugate-block identity forces $r\equiv1$ within its contract, and
+O17's normalisation statement is internal to its toy model. Consumers: O18 2.3.1, O20 1.18, O21 1.3.1, O22 1.20,
+O26 2.3 (O16/O17 attributions corrected; symmetric-square bound unchanged), O27 2.0.1 and SAN 2.2.3.
+
 Version 2.66 records the O21–O22 correction lot. O21 1.3 states that its two-point crossing rank is not
 invariant under $\sigma\mapsto\lambda\sigma$ (it scales as $\lambda^{1/\delta}$, so it is defined for the canonical
 normalisation of O19) and withdraws the identification of the pair observable as the relevant quantity for the
