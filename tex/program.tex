@@ -29,7 +29,7 @@
   urlcolor=blue!60!black,
   pdftitle={The Cosmochrony Research Programme: A Structural Roadmap and Paper Inventory},
   pdfauthor={Jérôme Beau},
-  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.64},
+  pdfsubject={Inventory and dependency graph of the Cosmochrony research programme, version 2.65},
   pdfkeywords={Cosmochrony, projective non-injectivity, spectral admissibility, emergent geometry,
     gauge--gravity stratification, paper inventory, dependency graph}
 }
@@ -63,7 +63,7 @@ A Structural Roadmap and Paper Inventory}
 \small Independent Researcher\\
 \small \texttt{jerome.beau@cosmochrony.org}}
 
-\date{2026\\[2pt]\small Version 2.64}
+\date{2026\\[2pt]\small Version 2.65}
 
 \begin{document}
 
@@ -672,7 +672,9 @@ A Structural Roadmap and Paper Inventory}
   charged-lepton window is a coincidence check and not a derivation; that the SU(2) carrier is supplied
   conditionally; the O31 withdrawal; O32's proof that its colour-triplet diagnostic cannot test
   $[\mathrm{H\text{-}color}]$; O33's exact finite architecture; and three open deliverables: hypothesis
-  $[\mathrm{H\text{-}color}]$ (no level established), the identification of the spin-$\tfrac12$ sector, and
+  $[\mathrm{H\text{-}color}]$ (no level established as a colour statement: the equalities O32 proves, exact
+  invariance under every unit and equality in law under the sampling law, carry no colour content), the
+  identification of the spin-$\tfrac12$ sector, and
   a full-breadth campaign beyond $q = 211$.
   Version~2.2 reads O7's interval $[7.4,10.6]$ as a historical comparison range rather than a derived decay
   condition, and the expander-side conversion as a legacy prescription.
@@ -2008,9 +2010,10 @@ A Structural Roadmap and Paper Inventory}
     \textbf{TPC}~\cite{Beau2026tpc}: Ternary phase carrier --- colour, generations, and Koide as one carrier
     (\sopen, speculative bridge).
     A single complex three-phase carrier $z_g = S + A\,e^{i(\delta + 2\pi g/3)}$ read two ways: its pure-phase part
-    sums to zero ($1+\omega+\omega^2=0$), a colour-neutral class; its real part is the square-root mass profile of
+    sums to zero ($1+\omega+\omega^2=0$), an identity read, as an assumption of the note, as a triality-zero shadow
+    of colour neutrality; its real part is the square-root mass profile of
     KUD.
-    The singlet amplitude $S$ is the master dial --- $S=0$ colour (confined), $S\neq0$ masses, $A=\sqrt2\,S$
+    The singlet amplitude $S$ is the master dial --- $S=0$ the pure-phase regime (read as colour), $S\neq0$ masses, $A=\sqrt2\,S$
     equipartition (Koide, $\mathrm{CV}=1$), $\delta$ near a node the hierarchy --- with a candidate capacity-balance
     filter $\lVert r_{\mathrm{dbl}}\rVert \le \lVert r_{\mathrm{sing}}\rVert$ saturated at $\mathrm{CV}=1$, whose reading as the saturated admissible edge selected by projection locking is a
     further hypothesis that the cited sources (A4-Note, ENI) do not supply.
@@ -2328,11 +2331,12 @@ A Structural Roadmap and Paper Inventory}
     The papers Foundation, TopologicalInvariants, SMchargemass, O23, O27--O32, Q6a, Q7, and Q12
     form (in their gauge-group identification aspect) the \emph{gauge structure sub-programme},
     whose synthesis paper is the working paper \textbf{The Gauge Structure Sub-Programme}
-    (GS-Note, Presentation Note~3, version~2.5)~\cite{Beau2026gsnote}.
+    (GS-Note, Presentation Note~3, version~2.5.1)~\cite{Beau2026gsnote}.
     It identifies no gauge group.
     O31 withdraws every derivation of $\SU(3)$ and of the composite
     $G_\Pi = \SU(3) \times \SU(2) \times \mathrm{U}(1)$; the colour factor and complete group are
-    open, and O32 measurements do not supply the missing group-identification bridge.
+    open, and O32's colour-triplet diagnostic, being blind to the choice of characters, supplies no
+    group-identification bridge.
     $\mathrm{U}(1)$ is structural as a phase symmetry on premises carried as input, with the
     identification of its fibre winding with electric charge open, and $\SU(2)$ is conditional on a
     supplied carrier.
@@ -2682,6 +2686,7 @@ A Structural Roadmap and Paper Inventory}
           \draw[arr]   (O25) to[out=-30,in=-150] (O27);
           \draw[arr,dashed]   (O28) to[out=200,in=160] (O30);
           \draw[arr]   (O31) -- (O32);
+          \draw[arr]   (O12) to[out=-60,in=180] (O32);
           \draw[arr]   (O26) -- (O27);
           \draw[arr]   (O24) -- (PTO);
           \draw[spine] (O25) -- (O28);
@@ -3474,7 +3479,7 @@ A Structural Roadmap and Paper Inventory}
       $\tau = n\,\Delta\tau$ is a modelling input; the co-metric $\mathrm{diag}(-A_\tau,2\lambda,2\lambda,2\lambda)$
       under [H-L], [H-lift], [T], [INV$^+$]; the coupling datum fixing $A_\tau/A_H$ is missing &
       \sproved\ /\ \scond\ /\ \sopen \\[3pt]
-      Q12 & Yang--Mills from $a_4$ (version 1.9) & \cite{Beau2026q12} &
+      Q12 & Yang--Mills from $a_4$ (version 1.9.1) & \cite{Beau2026q12} &
       Seeley--DeWitt $a_4 \supset \tfrac{1}{12}\mathrm{tr}_\rho(F^2)$ (gauge component);
       vertical variation $\delta_\mathcal{A} S_\Pi = 0$ at fixed metric yields
       $D_\mu F^{a\mu\nu} = 0$; induced log running $\propto I_\rho$ (non-universal),
@@ -3484,7 +3489,7 @@ A Structural Roadmap and Paper Inventory}
       data; only the emergent-base reading consumes [H-L], [H-lift] and a supplied rank-four extension,
       and a Riemannian-to-Lorentzian continuation that is not performed) &
       \sproved\ /\ \scond{} on [H-L], [H-lift] and a supplied rank-four extension for the emergent-base reading \\[3pt]
-      Q13 & Gauge--gravity spectral synthesis (version 1.6) & \cite{Beau2026q13} &
+      Q13 & Gauge--gravity spectral synthesis (version 1.6.1) & \cite{Beau2026q13} &
       On supplied geometric and gauge data, joint $\delta_{g,\mathcal{A}} S^{\mathrm{ren}} = 0$ yields a conditional
       Einstein--Yang--Mills system; metric variation of the gauge kinetic term $= 2\tau_{\mu\nu}$;
       $a_6$ given as a spanning list modulo IBP and Bianchi (no unique cross-term, no UV
@@ -3495,7 +3500,7 @@ A Structural Roadmap and Paper Inventory}
       rank-four extension &
       \scond{} on the matched coefficients and, for the emergent-base reading, on [H-L], [H-lift] and a supplied
       rank-four extension \\[3pt]
-      Q14 & Fermionic matter \& chirality (version 3.3) & \cite{Beau2026q14} &
+      Q14 & Fermionic matter \& chirality (version 3.3.1) & \cite{Beau2026q14} &
       On a supplied Heisenberg dictionary, distinct spinor doublet and supplied real metaplectic model,
       with both Q6a continuum hypotheses for the admissible connection reading, the
       $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra is proved; the Lorentz reading rests on [H-Spin] (spin
@@ -3526,7 +3531,7 @@ A Structural Roadmap and Paper Inventory}
       no sign of the Born--Infeld genus, no $u \neq 0$ and no mechanism for a non-zero split derived;
       open: [H-Tr], explicit $1-P(s)$ (structurally constrained by EBJ), amplitude $|u|$, Yukawa &
       \scond\ /\ \sproved{} (algebra under explicit hypotheses)\ /\ \sopen \\[3pt]
-      AAR & Angular amplitude reduction: oriented shear product and central-phase observable (version 1.3) & \cite{Beau2026aar} &
+      AAR & Angular amplitude reduction: oriented shear product and central-phase observable (version 1.3.1) & \cite{Beau2026aar} &
       BCH reduction in $\mathfrak{sl}_2$ identifies the per-step $J_\Pi$-odd $J_3$ component of the metaplectic cascade
       generator with the oriented shear product $ts$, produced by $[E,F]=H$ (Q14 Proposition~6.5), no Heisenberg
       bracket entering (no map between the two brackets supplied);
@@ -3632,8 +3637,9 @@ A Structural Roadmap and Paper Inventory}
       \sproved\ /\ \sopen \\[3pt]
       TPC & Ternary phase carrier: colour, generations, Koide as one carrier & \cite{Beau2026tpc} &
       Speculative bridge: one complex three-phase carrier $z_g = S + A\,e^{i(\delta+2\pi g/3)}$ --- pure-phase part
-      sum-zero ($1+\omega+\omega^2=0$, colour-neutral), real part the square-root mass profile of KUD;
-      singlet amplitude $S$ the master dial ($S=0$ colour, $S\neq0$ masses, $A=\sqrt2 S$ equipartition/Koide,
+      sum-zero ($1+\omega+\omega^2=0$, an identity read by assumption as colour neutrality), real part the
+      square-root mass profile of KUD; singlet amplitude $S$ the master dial ($S=0$ pure phase, read as colour,
+      $S\neq0$ masses, $A=\sqrt2 S$ equipartition/Koide,
       $\delta$-node the hierarchy); candidate capacity filter $\lVert r_{\mathrm{dbl}}\rVert\le\lVert
       r_{\mathrm{sing}}\rVert$
       saturated at $\mathrm{CV}=1$, whose selection of the saturated admissible edge by projection locking is a further
@@ -3834,8 +3840,9 @@ A Structural Roadmap and Paper Inventory}
       bounded flux $\Rightarrow$ envelope $\Rightarrow$ Weil-sector capacity $\Rightarrow
       \dim_{\mathrm{pair}}$ on a supplied carrier; the reciprocal $\beta^*$ prescription has no carrier
       on the measurement substrate (coincidence check); SU(2) carrier supplied conditionally; O31
-      withdrawal; O32 diagnostic proved colour-blind; O33 exact finite structure; open:
-      $[\mathrm{H\text{-}color}]$ (no level established), the spin-$\tfrac12$ sector, campaign beyond $q = 211$ &
+      withdrawal; O32 diagnostic proved colour-blind (its equalities hold for every unit or every pair of
+      characters); O33 exact finite structure; open: $[\mathrm{H\text{-}color}]$ (no level established as a
+      colour statement), the spin-$\tfrac12$ sector, campaign beyond $q = 211$ &
       \ssynth \\[3pt]
       EG\-Note & The emergent geometry sub-programme (Note~2) & \cite{Beau2026egnote} &
       Maps the twelve constituents (Q5a, Q5a-O2, Q5b, Q6b, Q7--Q11, U1, W1, H2).
@@ -3872,7 +3879,7 @@ A Structural Roadmap and Paper Inventory}
       carrier selection, the Born rule and Q5b's spatial limit [H-L] remain open.
       Consolidation of the constituent papers; no new result &
       \ssynth \\[3pt]
-      FM\-Note & The fermionic matter sub-programme (Note~6, version 3.3) & \cite{Beau2026fmnote} &
+      FM\-Note & The fermionic matter sub-programme (Note~6, version 3.3.1) & \cite{Beau2026fmnote} &
       Supplied Heisenberg dictionary, distinct Weil block and spinor doublet; both Q6a continuum hypotheses
       for connection-dependent admissible readings. Layered conditional status of fermions, chirality, hypercharge and generations, each layer naming its
       hypotheses: the $\mathfrak{sl}_2(\mathbb{C})$ tensor algebra is proved on supplied model data;

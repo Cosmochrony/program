@@ -1,5 +1,17 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.65 records the O32 2.0 correction lot. O32 is now a report on the limits of its colour-triplet
+capacity diagnostic: the O12 three-character profile is exactly invariant under multiplication of the whole
+character block by any unit (the colour orbit being the case $\lambda=\omega$), so under the campaign sampling
+law every character has the same law of profiles and the diagnostic has no discriminating power for
+[H-color], which it neither confirms nor refutes; the version-1.5 colour reading is withdrawn. Consumers are
+aligned by what they import: SAN 2.2.1, GS-Note 2.5.1, Q12 1.9.1, AAR 1.3.1; FibreErasure 2.0 (corrected
+rank proposition; the O12 bound is $0 \le 0$, no erasure mechanism); the Ternary Phase Carrier 1.3 and FM-Note
+3.3.1 (O31 cascade: the colour-to-generation route is open); Foundation 2.7.2, Q13 1.6.1 and Q14 3.3.1 carry
+the corrected O32 reference.
+
+Version 2.64 records the alpha-2 correction in O9–O11, O13, O19, O22, O24, O25, O26, O28 and the SAN note.
+
 Version 2.63 records the alpha-1 correction in O14 1.2, O15 1.17, O18 2.3, O20 1.17 and O21 1.2.
 The reciprocal equality is withdrawn as an O6/O7 consequence: O6 proves only an upper growth bound under
 its effective growth hypothesis and power-law redundancy Ansatz, with an explicit countermodel to equality.
