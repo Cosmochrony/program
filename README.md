@@ -2,8 +2,10 @@
 
 Version 2.67 records the correction of the canonical observable of O19 and of the factor $r(c,q)$. O19 1.3, retitled *Canonical
 Pair Observables in Weil Blocks: The Residual Amplitude Factor and a Proposed Canonical Normalisation with Open
-Tests*, no longer claims to identify which case holds or to construct a pipeline-independent observable: Tests
-P2/P3 are open and the former Proposition 7.2 is Open Problem 7.2. The values $r(c,q)\in\{1,2,3,4\}$ are a historical
+Tests*, corrects its Lemma 2.4: on the finite Cayley graph the cumulative spans reach $q$ for every seed, so for its
+own asymptotic definition $r(c,q)\equiv1$, the fourth case holds and Cases A–C concern only an undefined
+pre-saturation factor; the former Corollary 2.5 is withdrawn and the former Proposition 7.2 is an open problem on a
+pre-saturation window. The values $r(c,q)\in\{1,2,3,4\}$ are a historical
 hypothesis; on the real O12/O13 pipeline O16's conjugate-block identity forces $r\equiv1$ within its contract, and
 O17's normalisation statement is internal to its toy model. Consumers: O18 2.4, O20 1.18, O21 1.3.1, O22 1.20,
 O25 1.6.2, O26 2.3 (O16/O17 attributions corrected; symmetric-square bound unchanged), O27 2.0.1, SAN 2.2.3 and
