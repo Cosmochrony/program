@@ -1,5 +1,13 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.69 records lot C04 (ENI/NIF premises, measures and inequality status). ENI 2.10 keeps Theorems 3 and 7
+and their proofs; it states strict positivity of the projection entropy pointwise on non-degenerate measures,
+restricts the entropic clauses to finite or countable configuration spaces (renormalisation-group and
+loop-quantum-gravity applications conditional), gives Corollary 6 its finite-entropy condition and marks the proposed
+algebraic route from fibre non-commutativity as not established. NIF-Note 1.9 aligns its ENI summaries and no longer
+lists Gravity, Q12 and Q13 as consumers of ENI's entropy result. White paper 3.24 corrects the projection-entropy
+definition of Appendix B.23 and Section 13, distinguishing it from the entropy $H(\nu)$ of the image measure.
+
 Version 2.68 records lot B (C13–C15). O6 2.0, retitled *Matrix-Level Dynamic Redundancy and a Conditional Upper
 Bound on the Cascade Exponent β*, corrects its saturation results: the Steinberg-matrix fingerprint has span dimension
 $q^2$ (the Steinberg module has dimension $q$), its breadth-first span cannot grow again after a plateau, so the
