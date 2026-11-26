@@ -1,5 +1,15 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.70 records ENI 2.11's gauge statements. Definition 3 fixes a minimal sense of gauge structure arising
+from $\Pi$: an effective, fibre-preserving action of a group $G_\Pi$ on $\Omega$ by automorphisms, that is, a subgroup
+of the group $\mathcal{G}_\Pi$ of projection-preserving automorphisms. Proposition 4 (proved, elementary and
+independent of Theorem 3) shows that an injective $\Pi$ admits only the trivial such structure, so a non-trivial one
+requires non-injectivity. In that minimal sense the converse holds for a non-injective $\Pi$ exactly when
+$\mathcal{G}_\Pi \neq \{e\}$: always for a non-injective projection between bare sets, not in general when
+automorphisms must preserve further structure. No gauge structure in the physical sense is derived: a Lie structure
+group, a principal or associated bundle, a representation, a connection and its dynamics are supplied hypotheses, and
+the structure group is not $\mathcal{G}_\Pi$. The dependency graph is unchanged.
+
 Version 2.69 records lot C04 (ENI/NIF premises, measures and inequality status). ENI 2.10 keeps Theorems 3 and 7
 and their proofs; it states strict positivity of the projection entropy pointwise on non-degenerate measures,
 restricts the entropic clauses to finite or countable configuration spaces (renormalisation-group and
