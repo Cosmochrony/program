@@ -1,5 +1,14 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.71 records GS-Note 2.6's clarified import of ENI 2.11 and Q6a. The note distinguishes
+$\mathcal{G}_\Pi$, the projection-preserving automorphism group in a category incorporating admissibility
+constraints, from Q12's supplied physical structure group $G_\Pi$, which is not the group $G_\Pi$ of ENI
+Definition 3. Non-trivial minimal gauge structure requires non-injectivity (ENI Proposition 4); for a
+non-injective projection such a structure exists exactly when $\mathcal{G}_\Pi \neq \{e\}$ (ENI Remark 4).
+Global phase rotations belong to that group on the supplied complex carrier insofar as the projection is
+defined through span-based observables (Q6a). Physical gauge structure remains supplied. The GS-Note entry,
+inventory row and graph node are aligned; dependency edges are unchanged.
+
 Version 2.70 records ENI 2.11's gauge statements. Definition 3 fixes a minimal sense of gauge structure arising
 from $\Pi$: an effective, fibre-preserving action of a group $G_\Pi$ on $\Omega$ by automorphisms, that is, a subgroup
 of the group $\mathcal{G}_\Pi$ of projection-preserving automorphisms. Proposition 4 (proved, elementary and
