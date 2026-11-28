@@ -1,5 +1,7 @@
 # The Cosmochrony Research Programme — Roadmap and Paper Inventory
 
+Version 2.72 records the alignment of seven fermionic-matter papers with the current contract of Q14: NPI 1.1, A4-Note 3.1, PYL 3.1, PYO 2.2, PRS 3.1, EBJ 2.2 and KUD 1.8. Their statements imported from Q14 now carry its hypotheses and status; the generation model built on the doublet soldered by [H-Spin] in PRS and the A4-Note is stated to lie outside Q14's contract, and PYL's self-adjointness of the projective endomorphism is an explicit hypothesis. Only the inventory version lines change; entry texts, graph nodes and dependency edges are unchanged.
+
 Version 2.71 records GS-Note 2.6's clarified import of ENI 2.11 and Q6a. The note distinguishes
 $\mathcal{G}_\Pi$, the projection-preserving automorphism group in a category incorporating admissibility
 constraints, from Q12's supplied physical structure group $G_\Pi$, which is not the group $G_\Pi$ of ENI

@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.71 records GS-Note 2.6's clarified import of ENI 2.11 and Q6a. The note distinguishes the projection-preserving automorphism group in a category incorporating admissibility constraints from Q12's supplied physical structure group; the latter is not the group acting effectively within the automorphism group of ENI Definition 3. Non-trivial minimal gauge structure requires non-injectivity (ENI Proposition 4); for a non-injective projection such a structure exists exactly when the projection-preserving automorphism group is non-trivial (ENI Remark 4). Global phase rotations belong to that group on the supplied complex carrier insofar as the projection is defined through span-based observables (Q6a). Physical gauge structure remains supplied. The GS-Note entry, inventory row and graph node are aligned; dependency edges are unchanged.",
+  "notes": "Version 2.72 records the alignment of seven fermionic-matter papers with the current contract of Q14: NPI 1.1, A4-Note 3.1, PYL 3.1, PYO 2.2, PRS 3.1, EBJ 2.2 and KUD 1.8. Their statements imported from Q14 now carry its hypotheses and status; the generation model built on the doublet soldered by [H-Spin] in PRS and the A4-Note is stated to lie outside Q14's contract, and PYL's self-adjointness of the projective endomorphism is an explicit hypothesis. Only the inventory version lines change; entry texts, graph nodes and dependency edges are unchanged.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
