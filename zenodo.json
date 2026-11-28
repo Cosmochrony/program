@@ -2,7 +2,7 @@
   "bib_key": "program",
   "web_url": "https://cosmochrony.org/science/cosmochrony_graph",
   "main_tex": "tex/program.tex",
-  "notes": "Version 2.73 records white paper 3.25, which aligns its remaining conceptual claims with their sources (lot C08): the commutator argument for a non-trivial kernel is withdrawn; only descriptive redundancy is co-extensive with non-injectivity, gauge structure requires it without being implied by it, and non-injectivity alone neither implies nor bounds a Bell violation; the three-sphere fibre is proposed, not derived, and a principal structure on it would have group SU(2); Section 7.5 no longer derives the Schwarzschild exterior or perihelion precession from flux conservation; the \"forced\" complex Hilbert space, the cutoff replacing renormalisation and the derivation of S = A/4 are withdrawn. Only the white-paper entry changes; graph nodes and dependency edges are unchanged.",
+  "notes": "Version 2.74 records white paper 3.26, which corrects its dimensional and dynamical residuals (lot C09): the nonlinear Poisson relation and the source terms of its effective Lagrangian are withdrawn as they stand, with the dimensional normalization stated as an open problem; the Einstein equations of Section 8.6 are restricted to the conditional Riemannian result of the gravity paper, the Lorentzian continuation being open; the fine-structure functional, the Lamb-shift estimate and the unsourced penalized-capacity table are withdrawn, and the 2T exclusion is restated. Only the white-paper version line changes; entry texts, graph nodes and dependency edges are unchanged.",
   "zenodo_id": 19759956,
   "doi": "10.5281/zenodo.19759956"
 }
